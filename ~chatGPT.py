@@ -6,8 +6,9 @@ API_key = os.getenv('OPENAI_API_KEY')
 if not API_key: raise ValueError("❌ Key has no value!")
 
 client = OpenAI(api_key=API_key)
+
 # Load the smell reference JSON
-with open("ChatGPT Smell_Reference.json", "r") as f:
+with open("chatGPT Smell_Reference.json", "r") as f:
     smell_reference = json.load(f)
 
 # Load your UML model (XMI)
