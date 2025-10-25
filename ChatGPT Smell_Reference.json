@@ -1,0 +1,123 @@
+{
+    "High Detectability": [
+        {
+            "id": "G5",
+            "name": "Unused Element / Empty Diagram",
+            "heuristic": "Model element has no incoming or outgoing references. Unused class, attribute, association, or empty diagram."
+        },
+        {
+            "id": "G6",
+            "name": "Redundancy / Model Clones",
+            "heuristic": "Two or more elements or diagrams are identical or nearly identical in structure, attributes, or relationships."
+        },
+        {
+            "id": "G17",
+            "name": "Over-Decomposition / Mixed Detail Levels",
+            "heuristic": "Model mixes multiple abstraction or decomposition levels (e.g., system-level + design-level classes)."
+        },
+        {
+            "id": "N1",
+            "name": "Non-Expressive Name",
+            "heuristic": "Name does not describe its nature (e.g., 'Class1', 'Temp', 'DataObj')."
+        },
+        {
+            "id": "N5",
+            "name": "Too Short or Generic Diagram Name",
+            "heuristic": "Diagram name is generic or minimal, like 'Model1' or 'MainDiagram'."
+        },
+        {
+            "id": "G4",
+            "name": "Poorly Written Text",
+            "heuristic": "Comments or documentation fields have poor grammar, unclear terms, or are excessively long."
+        },
+        {
+            "id": "G8",
+            "name": "Inconsistent Representation",
+            "heuristic": "Same concepts modeled in different ways (e.g., inconsistent attribute names or stereotypes)."
+        },
+        {
+            "id": "G9",
+            "name": "High Coupling",
+            "heuristic": "Element depends on too many others; large number of associations or cross-package dependencies."
+        },
+        {
+            "id": "G10",
+            "name": "No Clear Focus / Overloaded Element",
+            "heuristic": "Diagram or element mixes unrelated concepts or has multiple unrelated responsibilities."
+        }
+    ],
+    "Moderate Detectability": [
+        {
+            "id": "G11",
+            "name": "Information in Unexpected Place",
+            "heuristic": "Text or metadata appears in comments or wrong diagram, not in model metadata fields."
+        },
+        {
+            "id": "G12",
+            "name": "Too Few Details",
+            "heuristic": "Model or process is too abstract \u2014 missing internal actions, states, or relationships."
+        },
+        {
+            "id": "G15",
+            "name": "Imprecise Model",
+            "heuristic": "Missing key relationships or constraints, ambiguous attributes, or vague actor definitions."
+        },
+        {
+            "id": "G14",
+            "name": "Hidden Dependencies",
+            "heuristic": "Logical dependencies exist that are not explicitly linked in the model."
+        },
+        {
+            "id": "G7",
+            "name": "Mixed Abstraction Levels",
+            "heuristic": "Model mixes conceptual, logical, and physical layers together."
+        },
+        {
+            "id": "G13",
+            "name": "Modeler Doesn\u2019t Understand Process",
+            "heuristic": "Incomplete or illogical sequence of actions; missing decision points."
+        },
+        {
+            "id": "G2",
+            "name": "Expired Model Element",
+            "heuristic": "Element describes obsolete or outdated concepts no longer relevant to the system."
+        },
+        {
+            "id": "S1",
+            "name": "Too Big Diagram",
+            "heuristic": "Diagram has too many elements or connections, overloaded even structurally in XMI."
+        },
+        {
+            "id": "S3",
+            "name": "Not Following Modeling Style",
+            "heuristic": "Non-standard stereotypes, inconsistent association directionality, irregular UML element use."
+        }
+    ],
+    "Low Detectability": [
+        {
+            "id": "T1",
+            "name": "Model Testing Takes Too Long",
+            "heuristic": "Model or test diagrams are excessively complex or unscalable."
+        },
+        {
+            "id": "T2",
+            "name": "Incomplete Model Testing",
+            "heuristic": "Missing coverage for some modeled elements or processes."
+        },
+        {
+            "id": "T3\u2013T9",
+            "name": "Testing Tracking / Borderline Issues Ignored",
+            "heuristic": "Missing test linkage or weak traceability among model elements."
+        },
+        {
+            "id": "G0",
+            "name": "Not Remembering History",
+            "heuristic": "No model version metadata or versioning evidence."
+        },
+        {
+            "id": "G1",
+            "name": "Metadata in Wrong Place",
+            "heuristic": "Author/time/version stored as comments instead of metadata."
+        }
+    ]
+}
