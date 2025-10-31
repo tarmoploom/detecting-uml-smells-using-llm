@@ -10,7 +10,7 @@ os.makedirs(destination_folder, exist_ok=True)
 
 # Loop files ending with .xmi
 for filename in os.listdir(source_folder):
-    if filename.endswith('.xmi'):
+    if filename.lower().endswith('.xmi'):
         new_filename = os.path.splitext(filename)[0] + '.txt'
         # Full path for new file
         new_file_path = os.path.join(destination_folder, new_filename)
