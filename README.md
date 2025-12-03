@@ -1,3 +1,22 @@
-# Applying-LLMs-to-detect-bad-smells-in-UML-models
+# Detecting Model Smells in UML Diagrams Using Large Language Models
 
-Study of Applying Large Language Models to detect bad smells in UML models <br />
+This repository contains the source code, test data, and results for my Bachelor's thesis: **"Applying Large Language Models for the Detection of Bad Smells in UML Diagrams"**.
+
+### 📄 Project Overview
+
+The goal of this project is to test and analyze the detection of "Model Smells" (design flaws) in UML diagrams using LLMs (e.g., Gemini, Claude, ChatGPT).
+
+- **Input:** UML diagrams (PDF) + Prompts (TXT).
+- **Engine:** Large Language Models (LLMs).
+- **Output:** JSON-structured analysis including empirical testing of identifying smells like _Redundancy_, _Inconsistencies_, etc.
+- **Analysis:** Detailed results and comparisons are processed in **Jupyter Notebooks**.
+
+### 🛠️ Tech Stack
+
+- **Language:** Python
+- **Models:** Gemini 3.0 / GPT-4o / Claude
+- **Format:** JSON (ISO 8601 Timestamps)
+
+---
+
+_Created by [Your Name] for [University Name], 2025._
