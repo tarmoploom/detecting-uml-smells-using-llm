@@ -1,31 +1,21 @@
 {
+  "timestamp": "2025-12-03T09:30:00Z",
+  "llm_model": "gemini3.0",
   "smell_analysis": [
     {
-      "category_id": "G6",
-      "category_name": "Redundancy/Duplicate Elements",
-      "findings": [
-        {
-          "smell_id": "G6.1",
-          "detected": true,
-          "justification": "Found a use case diagram that has two use cases whose names describe the same activity (e.g., 'Add Ticket', 'Register Ticket')..."
-        },
-        {
-          "smell_id": "G6.2",
-          "detected": false,
-          "justification": "Smell was not found..."
-        }
-      ]
+      "rule_id": "G5.1",
+      "detected": false,
+      "justification": "No empty diagrams were found."
     },
     {
-      "category_id": "G8",
-      "category_name": "Inconsistencies of Representation",
-      "findings": [
-        {
-          "smell_id": "G8.1",
-          "detected": true,
-          "justification": "Inconsistent language or style is used in naming similar elements in..."
-        }
-      ]
+      "rule_id": "G5.2",
+      "detected": false,
+      "justification": "All packages in the diagram are connected."
+    },
+    {
+      "rule_id": "G8.1",
+      "detected": true,
+      "justification": "Found inconsistent naming conventions: 'Isik' (Estonian) vs 'User' (English)."
     }
   ]
 }
