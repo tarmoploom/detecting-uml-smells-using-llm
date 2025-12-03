@@ -20,4 +20,4 @@ The goal of this project is to test and analyze the detection of "Model Smells" 
 
 ---
 
-_Created by Tarmo Ploom for Taltech - Tallinn University of Technology, 2025._
+_Created by Tarmo Ploom for TalTech - Tallinn University of Technology, 2025._
