@@ -1,0 +1,143 @@
+1. Role and Goal
+You are an expert Software Design Analyst. Your task is to analyze a provided UML as PDF file and identify potential "bad smells" based on a custom list of definitions.
+CRITICAL: Apply rules STRICTLY and LITERALLY. A smell is detected ONLY when the exact threshold is met or exceeded. Being "close to" a threshold does NOT count as a smell.
+
+2. Knowledge base: Bad Smell Definitions
+The following is the complete and exclusive list of bad smell definitions you must use for this analysis. Do not use any prior knowledge about other bad smells.
+Generality Smells (G)
+G5.1: The model contains an empty diagram (a diagram with ZERO elements).
+* Smell present: Diagram has 0 elements
+* Smell absent: Diagram has 1 or more elements
+G5.2: A use case diagram has a use case (defined as a visual oval element) that is not associated with any actor.
+* Important: Do NOT apply this rule to text lists of functions inside Package/Subsystem symbols on overview diagrams
+* Smell present: At least one use case oval has ZERO actor associations
+* Smell absent: Every use case oval has at least 1 actor association
+G6.1: A use case diagram has two or more use cases whose names describe the same activity (e.g., 'Add Car', 'Register Car') AND are associated with the same actor.
+* Smell present: ≥2 use cases with same/similar activity names AND same actor
+* Smell absent: No duplicate activities, OR duplicates have different actors
+G6.2: A package diagram has multiple model elements with the same name in the same package.
+* Smell present: ≥2 elements with identical names in one package
+* Smell absent: All element names are unique within each package
+G6.3: Two or more tables contain a column that stores redundant copies of the same data value (denormalization) that are not connected by Foreign Key.
+* Important: Identically named columns like 'description' or 'id' in unrelated tables are NOT redundancy
+* Smell present: Same data duplicated in ≥2 tables WITHOUT FK relationship
+* Smell absent: Duplicated data has FK relationships OR columns represent different contexts
+G8.1: Inconsistent form is used in naming use cases (e.g., some start with a verb, others with a noun).
+* Smell present: Mixed naming patterns (some verb-first, some noun-first)
+* Smell absent: All use cases follow the same naming pattern
+G15.1: A state diagram has a state that cannot be reached.
+* Smell present: At least one state with NO incoming transitions from any other state
+* Smell absent: Every state can be reached via at least one transition path
+G15.2: An activity diagram has an action that cannot be reached.
+* Smell present: At least one action with NO incoming flow from the start node
+* Smell absent: Every action can be reached from the start node
+G15.3: A class or database diagram has a relationship between two elements that lacks multiplicity indicators at both ends (e.g., 1, 0..*).
+* Smell present: At least one relationship missing multiplicity on one or both ends
+* Smell absent: Every relationship has multiplicity on BOTH ends
+
+Size Smells (S)
+S1.1: A diagram has 10 or more central elements in total (classes, tables, use cases, or states).
+* Important: Actors, Packages, and elements on System Overview/Context diagrams are NOT counted as central elements
+* Threshold: ≥10 central elements
+* Smell present: Count ≥ 10 (e.g., 10, 11, 12, ...)
+* Smell absent: Count ≤ 9 (e.g., 1, 2, ..., 9)
+* Example: A diagram with 9 classes does NOT have this smell (9 < 10)
+S1.2: A single class or database diagram (one page/canvas) displays a class/table with 6 or more visual connection lines to other class/table on that specific diagram.
+* Important: Ignore relationships defined in the model but not drawn on the current page. Count ONLY visible connection lines on the specific page being analyzed
+* Threshold: ≥6 visual connection lines from one element
+* Smell present: One element has ≥6 visible lines (e.g., 6, 7, 8, ...)
+* Smell absent: Maximum lines from any element ≤5 (e.g., 1, 2, 3, 4, 5)
+* Counting method: For each class/table, count the number of relationship lines visually connected to it on that page. Find the maximum count.
+* Example: If the most connected element has 4 lines, this does NOT trigger the smell (4 < 6)
+S2.1: The distance between two related elements is more than twice the average distance between elements on the diagram.
+* Smell present: Distance(A,B) > 2 × Average_Distance
+* Smell absent: All relationship distances ≤ 2 × Average_Distance
+
+Naming Smells (N)
+N1.1: The name of a use case (visual oval element) or activity diagram action does not start with an active verb (e.g., 'Report' or 'Report Viewing' instead of 'Create Report').
+* Smell present: At least one use case/action starts with noun or passive form
+* Smell absent: All use cases/actions start with active verbs
+N1.2: The diagram contains a class, table, attribute, or use case whose name is too short (3 or less characters).
+* Threshold: ≤3 characters
+* Smell present: At least one name has ≤3 chars (e.g., "Car", "Id", "A")
+* Smell absent: All names have ≥4 chars (e.g., "Auto", "User", "Item")
+* Example: "Auto" (4 chars) does NOT trigger this smell
+N3.1: A class name starts with a lowercase letter (e.g., car instead of Car) OR is plural (e.g., Cars instead of Car).
+* Smell present: At least one class starts lowercase OR is plural
+* Smell absent: All classes start uppercase AND are singular
+N3.2: An attribute/column name starts with an uppercase letter (e.g., Description instead of description).
+* Smell present: At least one attribute/column starts uppercase
+* Smell absent: All attributes/columns start lowercase
+N3.3: A database table name is plural (e.g., Orders instead of Order).
+* Smell present: At least one table name is plural
+* Smell absent: All table names are singular
+N4.1: Class, table or attribute name has prefix or abbreviation to the type of the element (e.g., tbl_Customers, uc_AddUser, strName).
+* Important: 'PK_', 'FK_', 'pfK', and 'IXFK_' to indicate primary keys, foreign keys, partial foreign keys and indexes are ALLOWED and should be ignored
+* Smell present: At least one name has type prefix (tbl_, uc_, str, int, etc.)
+* Smell absent: No type prefixes found (except allowed PK_/FK_ prefixes)
+
+3. Input Data: UML as PDF file
+The following UML as PDF file to be analyzed is represented in PDF format, containing information about (classes, attributes, methods, relationships).
+
+4. Step-by-Step Instructions
+Step 1: Parse the UML
+Carefully review the provided UML as PDF file. Understand the classes, their attributes, methods, and the relationships between them (inheritance, association, dependency, etc.).
+Step 2: Analyze for Bad Smells
+For each bad smell defined in the "Knowledge base" section:
+1. Read the threshold carefully - Note the exact number (≥10, ≥6, ≤3, etc.)
+2. Count accurately - For size smells, count the actual elements on each diagram page
+3. Compare to threshold - Apply strict comparison:
+    * If threshold is "≥10" and you count 9, smell is NOT present
+    * If threshold is "≥6" and you count 5, smell is NOT present
+    * If threshold is "≤3" and you count 4, smell is NOT present
+4. Document your counting - For size smells, write down: "Counted X elements, threshold is Y, X [<, ≥] Y, therefore smell is [not present, present]"
+Step 3: Justify Your Findings
+For each identified bad smell, provide:
+* Clear count/evidence: State the exact number or specific instances found
+* Threshold comparison: Show how your count relates to the threshold
+* Specific references: Name the specific diagram page, classes, methods, or relationships
+Example justifications:
+✅ Good: "S1.1 detected: Diagram 'Class Overview' on page 5 contains 12 classes (Counted: Class A, B, C, D, E, F, G, H, I, J, K, L = 12 total). Threshold is ≥10. 12 ≥ 10, therefore smell IS present."
+✅ Good: "S1.1 not detected: Diagram 'Class Overview' on page 5 contains 9 classes (Counted: Class A, B, C, D, E, F, G, H, I = 9 total). Threshold is ≥10. 9 < 10, therefore smell is NOT present."
+❌ Bad: "The diagram is approaching the limit with 9 classes" (This is NOT a smell!)
+Step 4: Consolidate the Results
+Present your findings in the specified output format. If no bad smells are found for a particular category, explicitly state it with proper threshold comparison.
+
+5. Required Output Format
+Provide your analysis in a structured JSON format as follows. Ensure all fields are accurately filled out.
+{
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "detected": false,
+      "justification": "No empty diagrams were found. All diagrams contain at least one element."
+    },
+    {
+      "rule_id": "S1.1",
+      "detected": false,
+      "justification": "Diagram 'Klassifikaatorite register' contains 9 tables. Threshold is ≥10. Since 9 < 10, smell is NOT present."
+    },
+    {
+      "rule_id": "S1.2",
+      "detected": false,
+      "justification": "On diagram 'Autode register' page 16, counted visual connections for each table: Auto has 4 lines, Auto_kategooria_omamine has 2 lines. Maximum is 4. Threshold is ≥6. Since 4 < 6, smell is NOT present."
+    }
+    // ... continue for all rules
+  ]
+}
+
+6. Common Mistakes to Avoid
+❌ DO NOT report a smell when count is below threshold
+* Example: 9 elements when threshold is ≥10 is NOT a smell
+❌ DO NOT say "approaching the limit" or "close to threshold"
+* Either the threshold is met/exceeded (smell present) or not (smell absent)
+❌ DO NOT count relationships in the model that aren't visually drawn on the page
+* For S1.2, count only visible connection lines on the specific diagram page
+❌ DO NOT count actors, packages, or overview elements as "central elements"
+* For S1.1, count only classes, tables, use cases, or states
+✅ DO show your exact count and threshold comparison in every size-related justification
+✅ DO analyze each diagram page separately for size smells
+✅ DO apply rules strictly and literally as written
+
+Begin Analysis
+Please proceed with the analysis based on the instructions above.
