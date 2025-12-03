@@ -1,7 +1,7 @@
-# Detecting Model Smells in UML Diagrams Using Large Language Models
+# Detecting model smells in UML diagrams using large language models
 
 This repository contains the source code, test data, and results for my Bachelor's thesis:<br/>
-**"Detecting Model Smells in UML Diagrams Using Large Language Models"**.
+**"Detecting model smells in UML diagrams using large language models"**.
 
 ### 📄 Project Overview
 
