@@ -24,14 +24,14 @@ S1.2: a single class or database diagram (one page/canvas) displays a class/tabl
 
 S2.1: the distance between two related elements is more than twice the average distance between elements on the diagram.
 
-N1.1: the name of a use case (visual oval element) or activity diagram action does not start with an active verb (e.g., 'Report' or 'Report Viewing' instead of 'Report Viewing').
+N1.1: the name of a use case (visual oval element) or activity diagram action does not start with an active verb (e.g., 'Report' or 'Report Viewing' instead of 'View Report').
 N1.2: the diagram contains a class, table, attribute, or use case whose name is too short (3 or less characters).
 
 N3.1: a class name starts with a lowercase letter (e.g., car instead of Car) or is plural (e.g., Cars instead of Car).
 N3.2: an attribute/column name starts with an uppercase letter (e.g., Description instead of description).
 N3.3: a database table name is plural (e.g., Orders instead of Order).
 
-N4.1: class, table or attribute name has prefix or abbreviation to the type of the element (e.g., tbl_Customers, uc_AddUser, strName). (Note: PK_', 'FK_', 'pfK', and 'IXFK_' to indicate primary keys, foreign keys, partial foreign keys and indexes are allowed).
+N4.1: class, table or attribute name has prefix or abbreviation to the type of the element (e.g., tbl_Customers, uc_AddUser, strName). (Note: 'PK_', 'FK_', 'pfK', and 'IXFK_' to indicate primary keys, foreign keys, partial foreign keys and indexes are allowed).
 
 **## 3. Input Data: UML as PDF file**
 

@@ -54,7 +54,7 @@ S2.1: The distance between two related elements is more than twice the average d
 * Smell absent: All relationship distances ≤ 2 × Average_Distance
 
 Naming Smells (N)
-N1.1: The name of a use case (visual oval element) or activity diagram action does not start with an active verb (e.g., 'Report' or 'Report Viewing' instead of 'Create Report').
+N1.1: The name of a use case (visual oval element) or activity diagram action does not start with an active verb (e.g., 'Report' or 'Report Viewing' instead of 'View Report').
 * Smell present: At least one use case/action starts with noun or passive form
 * Smell absent: All use cases/actions start with active verbs
 N1.2: The diagram contains a class, table, attribute, or use case whose name is too short (3 or less characters).
