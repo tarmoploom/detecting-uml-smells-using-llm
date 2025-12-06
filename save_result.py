@@ -124,9 +124,9 @@ def main():
     # 5. Perform Validation Checks
     # -------------------------------------------------
 
-    # 3.1 Check Count
+    # 1 Check Count
     if len(target_list) != len(check_list):
-        sys.exit(f"Error (Condition 3.1): Smell count mismatch. Expected {len(check_list)}, found {len(target_list)}.")
+        sys.exit(f"Error (Condition 1): Smell count mismatch. Expected {len(check_list)}, found {len(target_list)}.")
 
     found_ids = []
 
@@ -134,20 +134,20 @@ def main():
         values = list(item.values())
         keys = list(item.keys())
 
-        # 3.2 Part A: 3 Keys exactly
+        # 2.1 Part A: 3 Keys exactly
         if len(keys) != 3:
-            sys.exit(f"Error (Condition 3.2): Item at index {index} does not have exactly 3 keys.")
+            sys.exit(f"Error (Condition 2.1): Item at index {index} does not have exactly 3 keys.")
 
-        # 3.2 Part B: No empty values
+        # 2.2 Part B: No empty values
         for k, v in item.items():
             if v is None or v == "":
-                sys.exit(f"Error (Condition 3.2): Found empty value for key '{k}' at index {index}.")
+                sys.exit(f"Error (Condition 2.2): Found empty value for key '{k}' at index {index}.")
 
-        # 3.2 Part C: 2nd Value is Boolean
+        # 2.3 Part C: 2nd Value is Boolean
         if not isinstance(values[1], bool):
-            sys.exit(f"Error (Condition 3.2): The second value (key: '{keys[1]}') at index {index} is not a boolean.")
+            sys.exit(f"Error (Condition 2.3): The second value (key: '{keys[1]}') at index {index} is not a boolean.")
 
-        # ID Collection for 3.3
+        # ID Collection for condition 3
         current_rule_id = values[0]
         found_ids.append(current_rule_id)
 
@@ -173,10 +173,10 @@ def main():
         target_list[index] = ordered_item
         # -------------------------------------------------
 
-    # 3.3 check_list against found_ids
+    # 3 check_list against found_ids
     for val in check_list:
         if val not in found_ids:
-            sys.exit(f"Error (Condition 3.3): Required rule_id '{val}' not found in the input data.")
+            sys.exit(f"Error (Condition 3): Required rule_id '{val}' not found in the input data.")
 
     print("--- All Validation Checks Passed ---")
 
