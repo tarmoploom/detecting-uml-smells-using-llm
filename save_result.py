@@ -1,6 +1,6 @@
-import json
-import sys
 import os
+import sys
+import json
 from datetime import datetime, timezone
 
 # ==========================================
@@ -35,17 +35,17 @@ json_input_text = """
 check_list = ["G5.1", "G5.2", "G8.1"]
 
 # Path Configuration
-end_folder = "Oppejoud"
+end_path = "Oppejoud"
 llm_model_name = "gemini3.0"
 
 # Calculate absolute paths based on script location
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
 # 1. Output Folder Path
-output_path = os.path.join(script_dir, "Results/Gemini", end_folder)
+output_path = os.path.join(script_dir, "Results/Gemini", end_path)
 
 # 2. Ground Truth Folder Path
-ground_truth_path = os.path.join(script_dir, "Data", end_folder)
+ground_truth_path = os.path.join(script_dir, "Data", end_path)
 
 
 # ==========================================
@@ -86,7 +86,7 @@ def main():
 
     # Ensure Output File does NOT exist
     if os.path.exists(full_output_path):
-        sys.exit(f"Error (Condition 8): The output file '{full_output_path}' already exists. Operation aborted.")
+        sys.exit(f"Error (Condition 4): The output file '{full_output_path}' already exists. Operation aborted.")
 
     # Ensure Ground Truth File Exists
     if not os.path.exists(full_ground_truth_path):
@@ -147,7 +147,7 @@ def main():
         if not isinstance(values[1], bool):
             sys.exit(f"Error (Condition 2.3): The second value (key: '{keys[1]}') at index {index} is not a boolean.")
 
-        # ID Collection for condition 3
+        # ID collection for condition 3
         current_rule_id = values[0]
         found_ids.append(current_rule_id)
 
@@ -158,7 +158,7 @@ def main():
         # Calculate ground truth (if present -> True, else False)
         is_present = current_rule_id in gt_content
 
-        # Create a new, ordered dictionary
+        # Create a new, ordered dict
         ordered_item = {}
         
         # Iterate over keys by index
