@@ -124,9 +124,9 @@ def main():
     # 5. Perform Validation Checks
     # -------------------------------------------------
 
-    # 3.3 Check Count
+    # 3.1 Check Count
     if len(target_list) != len(check_list):
-        sys.exit(f"Error (Condition 3.3): Smell count mismatch. Expected {len(check_list)}, found {len(target_list)}.")
+        sys.exit(f"Error (Condition 3.1): Smell count mismatch. Expected {len(check_list)}, found {len(target_list)}.")
 
     found_ids = []
 
@@ -147,7 +147,7 @@ def main():
         if not isinstance(values[1], bool):
             sys.exit(f"Error (Condition 3.2): The second value (key: '{keys[1]}') at index {index} is not a boolean.")
 
-        # ID Collection for 3.1
+        # ID Collection for 3.3
         current_rule_id = values[0]
         found_ids.append(current_rule_id)
 
@@ -173,10 +173,10 @@ def main():
         target_list[index] = ordered_item
         # -------------------------------------------------
 
-    # 3.1 check_list against found_ids
+    # 3.3 check_list against found_ids
     for val in check_list:
         if val not in found_ids:
-            sys.exit(f"Error (Condition 3.1): Required rule_id '{val}' not found in the input data.")
+            sys.exit(f"Error (Condition 3.3): Required rule_id '{val}' not found in the input data.")
 
     print("--- All Validation Checks Passed ---")
 
