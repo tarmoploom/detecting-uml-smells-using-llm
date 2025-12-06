@@ -199,7 +199,7 @@ def main():
             print(f"Success: File saved as '{full_output_path}'")
             
     except FileExistsError:
-        sys.exit(f"Error (Condition 8): The file '{full_output_path}' already exists.")
+        sys.exit(f"Error (Condition 4): The file '{full_output_path}' already exists.")
     except Exception as e:
         sys.exit(f"Error: Could not save file. {e}")
 
