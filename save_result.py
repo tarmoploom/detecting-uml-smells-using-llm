@@ -31,7 +31,7 @@ json_input_text = """
 }
 """
 
-# The list to check against
+# The smell list to check against
 check_list = ["G5.1", "G5.2", "G8.1"]
 
 # Path Configuration
@@ -123,7 +123,7 @@ def main():
     # -------------------------------------------------
     # 5. Perform Validation Checks
     # -------------------------------------------------
-    
+
     # 3.3 Check Count
     if len(target_list) != len(check_list):
         sys.exit(f"Error (Condition 3.3): Smell count mismatch. Expected {len(check_list)}, found {len(target_list)}.")
@@ -155,7 +155,7 @@ def main():
         # Compare against Ground Truth & Reorder Keys (Index Based)
         # -------------------------------------------------
         
-        # Calculate ground truth
+        # Calculate ground truth (if present -> True, else False)
         is_present = current_rule_id in gt_content
 
         # Create a new, ordered dictionary
@@ -165,19 +165,18 @@ def main():
         for i, k in enumerate(keys):
             # Add existing key/value
             ordered_item[k] = item[k]
-            
             # at index 0, we inject "actual" immediately after
             if i == 0:
                 ordered_item["actual"] = is_present
-
+        
         # Replace the item in the list with the new ordered dictionary
         target_list[index] = ordered_item
         # -------------------------------------------------
 
-    # 3.1 Check check_List Presence
-    for check_val in check_list:
-        if check_val not in found_ids:
-            sys.exit(f"Error (Condition 3.1): Required ID '{check_val}' not found in the input data.")
+    # 3.1 check_list against found_ids
+    for val in check_list:
+        if val not in found_ids:
+            sys.exit(f"Error (Condition 3.1): Required rule_id '{val}' not found in the input data.")
 
     print("--- All Validation Checks Passed ---")
 
