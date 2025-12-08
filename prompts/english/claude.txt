@@ -106,6 +106,7 @@ Present your findings in the specified output format. If no bad smells are found
 5. Required Output Format
 Provide your analysis in a structured JSON format as follows. Ensure all fields are accurately filled out.
 {
+  "file_name": "pdf_name_goes_here",
   "smell_analysis": [
     {
       "rule_id": "G5.1",
