@@ -7,10 +7,26 @@ from datetime import datetime, timezone
 # INPUT VARIABLES
 # ==========================================
 
-# 1. Your JSON input variable
+# The smell list to check against
+check_list = ["G5.1", "G5.2", "G6.1", "G6.2", "G6.3", "G8.1", "G15.1", "G15.2", "G15.3", "S1.1", "S1.2", "S2.1", "N1.1", "N1.2", "N3.1", "N3.2", "N3.3", "N4.1"]
+
+# Path Configuration
+end_path = "Synthetic/Single"
+llm_model_name = "Gemini 3 Pro"
+
+# Calculate absolute paths based on script location
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# 1. Output Folder Path
+output_path = os.path.join(script_dir, "Results/Gemini", end_path)
+
+# 2. Ground Truth Folder Path
+ground_truth_path = os.path.join(script_dir, "Data", end_path)
+
+# 3. Your JSON input variable
 json_input_text = """
 {  
-  "file_name": "test_script",
+  "file_name": "filename",
   "smell_analysis": [
     {
       "rule_id": "G5.1",
@@ -30,23 +46,6 @@ json_input_text = """
   ]
 }
 """
-
-# The smell list to check against
-check_list = ["G5.1", "G5.2", "G8.1"]
-
-# Path Configuration
-end_path = "Oppejoud"
-llm_model_name = "gemini3.0"
-
-# Calculate absolute paths based on script location
-script_dir = os.path.dirname(os.path.abspath(__file__))
-
-# 1. Output Folder Path
-output_path = os.path.join(script_dir, "Results/Gemini", end_path)
-
-# 2. Ground Truth Folder Path
-ground_truth_path = os.path.join(script_dir, "Data", end_path)
-
 
 # ==========================================
 # LOGIC
