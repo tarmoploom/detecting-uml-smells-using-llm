@@ -1,0 +1,26 @@
+G5.1: the model contains an empty diagram.
+G5.2: a use case diagram has a use case (defined as a visual oval element) that is not associated with any actor. (Note: Do not apply this rule to text lists of functions inside Package/Subsystem symbols on overview diagrams).
+
+G6.1: a use case diagram has two or more use cases whose names describe the same activity (e.g., 'Add Car', 'Register Car') and are associated with the same actor.
+G6.2: a package diagram has multiple model elements with the same name in the same package.
+G6.3: two or more tables contain a column that stores redundant copies of the same data value (denormalization) that are not connected by Foreign Key. (Note: Identically named columns like 'description' or 'id' in unrelated tables are NOT redundancy).
+
+G8.1: inconsistent form is used in naming use cases (e.g., some start with a verb, others with a noun).
+
+G15.1: a state diagram has a state that cannot be reached.
+G15.2: an activity diagram has an action that cannot be reached.
+G15.3: a class or database diagram has a relationship between two elements that lacks multiplicity indicators at both ends (e.g., 1, 0..*).
+
+S1.1: a diagram has 10 or more central elements in total (classes, tables, use cases, or states). (Note: Actors, Packages, and elements on System Overview/Context diagrams are NOT counted as central elements).
+S1.2: a single class or database diagram (one page/canvas) displays a class/table with 6 or more visual connection lines to other class/table on that specific diagram. (Ignore relationships defined in the model but not drawn on the current page).
+
+S2.1: the distance between two related elements is more than twice the average distance between elements on the diagram.
+
+N1.1: the name of a use case (visual oval element) or activity diagram action does not start with an active verb (e.g., 'Report' or 'Report Viewing' instead of 'View Report').
+N1.2: the diagram contains a class, table, attribute, or use case whose name is too short (3 or less characters).
+
+N3.1: a class name starts with a lowercase letter (e.g., car instead of Car) or is plural (e.g., Cars instead of Car).
+N3.2: an attribute/column name starts with an uppercase letter (e.g., Description instead of description).
+N3.3: a database table name is plural (e.g., Orders instead of Order).
+
+N4.1: class, table or attribute name has prefix or abbreviation to the type of the element (e.g., tbl_Customers, uc_AddUser, strName). (Note: 'PK_', 'FK_', 'pfK', and 'IXFK_' to indicate primary keys, foreign keys, partial foreign keys and indexes are allowed).

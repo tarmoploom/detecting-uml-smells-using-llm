@@ -1,0 +1,115 @@
+{
+  "file_name": "s_21",
+  "timestamp": "2025-12-08T14:20:31Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All pages in the PDF contain non-empty diagrams with visible elements."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases in the diagrams (Pages 2 and 3) are associated with actors, either directly or via <<include>> relationships to use cases that are connected to actors."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use cases associated with the same actor describe distinct activities (e.g., 'Vaata aktiivseid autosid' vs 'Vaata k\u00f5iki autosid'). No redundant names found."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No distinct model elements with the same name were found within the same package on any single diagram."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Tables are normalized. Foreign keys are used correctly (e.g., 'riik_kood'), and descriptive columns (e.g., 'nimetus') appearing in multiple tables are distinct attributes for those specific entities, not redundant data copies."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use case naming is consistent, using the 'Verb + Noun' form in Estonian (e.g., 'Registreeri auto', 'Vaata k\u00f5iki autosid')."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the State Diagram (Page 9), all states ('Ootel', 'Aktiivne', etc.) are reachable from the 'Algus' start node."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the Activity Diagram (Page 4), all actions are reachable through the decision flows."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Relationships on class and data diagrams (e.g., Pages 5, 6, 17) include multiplicity indicators (e.g., '1', '0..*') where applicable."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No diagram exceeds the limit of 10 central elements. The most populated diagram (Page 15) contains 9 tables."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No single class or table has 6 or more visual connection lines on a single diagram. The maximum observed is 4 connections (e.g., 'Auto' table on Page 17)."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "The layout of diagrams is uniform, with related elements placed reasonably close together."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All Use Cases and Activity Actions start with active verbs (e.g., 'Vaata' (View), 'Otsi' (Search), 'L\u00f5peta' (Finish))."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All class, table, and attribute names exceed 3 characters (e.g., 'Isik', 'Riik', 'kood', 'auto_kood')."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class names start with uppercase letters and are singular (e.g., 'Auto', 'Isik', 'T\u00f6\u00f6taja')."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute and column names start with lowercase letters (e.g., 'eesnimi', 'mudel')."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database table names are singular (e.g., 'Isik', 'Kasutajakonto', 'Auto')."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No type prefixes (e.g., 'tbl_', 'str') were found in element names. Standard key prefixes ('PK_', 'FK_') are allowed by the rule."
+    }
+  ]
+}

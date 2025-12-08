@@ -1,0 +1,115 @@
+{
+  "file_name": "s_26",
+  "timestamp": "2025-12-08T14:37:49Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All provided diagram pages contain meaningful content and elements."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases in the diagrams (Pages 2 and 3) are associated with actors, either directly or via <<include>> relationships from use cases that have actors."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No instances of multiple use cases describing the same activity with the same actor were found."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No distinct model elements with the same name were found within the same package/namespace context on the provided diagrams."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "The database schemas (Pages 14-19) appear to be normalized. No obvious redundant data columns without foreign keys were identified."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use case names consistently use the imperative verb form (e.g., 'Vaata', 'Tuvasta', 'Registreeri')."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the state diagram (Page 9), all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, L\u00f5petatud) are reachable from the Start node."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the activity diagram (Page 4), all actions are connected in a flow that leads from the start to the end."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All visible relationships on class and database diagrams (e.g., Pages 5, 6, 12, 14) have multiplicity indicators (e.g., 1, 0..*) at both ends."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No single diagram page contains 10 or more central elements. The densest diagram (Page 15) has 9 tables."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No single class or table has 6 or more visual connection lines on a single page. The class 'auto' on Page 12 has 5 connections."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The layout of elements in all diagrams is reasonably uniform; no related elements are placed excessively far apart compared to the average distance."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases and activity actions start with an active verb (e.g., 'Vaata', 'Otsi', 'Vali')."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All element names (Classes, Tables, Attributes) are longer than 3 characters (e.g., 'Isik', 'Riik', 'auto', 'kood')."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The class named 'auto' (found on Page 5 'Kontseptuaalne eskiismudel', Page 11, and Page 12) starts with a lowercase letter, violating the convention that class names should be capitalized."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All attributes and columns start with lowercase letters as required."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All table names are singular (e.g., 'Isik', 'auto', 'Klient')."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No standard Hungarian notation or type prefixes (like 'tbl_', 'str_') were found on classes, tables, or attributes. 'AK_' is used for constraints, which does not violate the rule for element names."
+    }
+  ]
+}

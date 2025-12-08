@@ -1,0 +1,115 @@
+{
+  "file_name": "s_02",
+  "timestamp": "2025-12-08T12:24:50Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The diagram on Page 13, titled 'Autode register (T\u00f6\u00f6taja)', contains a diagram frame but is completely empty inside, lacking any classes or associations."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": true,
+      "justification": "On the use case diagram 'Autode halduse funktsionaalne alls\u00fcsteem (Muuda)' (Page 3), the use case 'Unusta auto' is not connected to any actor and has no relationships (include/extend) with other use cases."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No use cases were found that describe the same activity with different names for the same actor."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate model element names were found within the same package context."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "The database schemas do not show redundant data storage (denormalization) across tables without appropriate Foreign Key connections."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases follow a consistent naming convention, starting with an imperative verb (e.g., 'Vaata', 'Tuvasta', 'Registreeri')."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All states in the 'Auto seisundidiagramm' (Page 9) are reachable through defined transitions."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All actions in the 'Auto l\u00f5petamise tegevusdiagramm' (Page 4) are reachable from the start node."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Relationships on class and database diagrams include multiplicity indicators (e.g., '1', '0..*') where appropriate."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No single diagram contains 10 or more central elements. The most populated diagram (Page 16) has 9 tables."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class or table was found to have 6 or more visual connection lines to other elements on a single diagram."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The layout of the diagrams is balanced, and the distance between related elements is not excessive."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases and activity actions begin with active verbs (e.g., 'Vaata', 'Otsi', 'Vali')."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute, or use case names were found to be 3 characters or less (e.g., 'Isik', 'Auto', 'Riik' are all 4 characters or more)."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class names are consistently capitalized and singular (e.g., 'Isik', 'Auto')."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute and column names start with lowercase letters (e.g., 'eesnimi', 'isikukood')."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database table names are singular (e.g., 'Isik', 'Klient', 'Auto')."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No inappropriate Hungarian notation or type prefixes were found in element names."
+    }
+  ]
+}

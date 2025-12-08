@@ -1,0 +1,115 @@
+{
+  "file_name": "s_12",
+  "timestamp": "2025-12-08T13:32:33Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All 19 diagrams in the provided file contain visual elements and are not empty."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases in the diagrams (e.g., Pages 2 and 3) are associated with at least one actor, either directly or via include relationships."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No use cases with synonymous names associated with the same actor were found."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate model element names were found within the same package."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No redundant data copies were found in tables without Foreign Key connections. Shared column names like 'reg_aeg' represent distinct data for different entities (Isik vs Auto)."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases are consistently named using the verb-noun form in Estonian (e.g., 'Vaata aktiivseid autosid', 'Registreeri auto')."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": true,
+      "detected": false,
+      "justification": "In the state diagram (Page 9), all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, L\u00f5petatud) are reachable from the Start state."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the activity diagram (Page 4), all actions (Otsi autot, Vali auto, etc.) are reachable through valid decision paths."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All relationships in class and database diagrams (e.g., Pages 6, 12, 17) have appropriate multiplicity indicators (e.g., 1, 0..*, 0..1) at both ends."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No diagram exceeds the limit of 10 central elements. The densest diagrams (e.g., Page 15) contain 9 tables."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class or table has 6 or more visual connection lines on a single diagram. The maximum observed is 5 connections for 'Isik' on Page 6."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The layout of elements is reasonably compact and uniform across all diagrams; no extreme distance outliers were observed."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases and activity diagram actions start with active verbs (e.g., 'Vaata', 'Tuvasta', 'Otsi', 'Vali')."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute, or use case names were found with 3 or fewer characters (shortest observed were 4 characters, e.g., 'Isik', 'Riik')."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class names start with an uppercase letter and are singular (e.g., 'Isik', 'Auto', 'Klient')."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All attribute and column names start with a lowercase letter (e.g., 'eesnimi', 'reg_number', 'isik_id')."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All database table names are singular (e.g., 'Isik', 'Auto', 'Kasutajakonto')."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No Hungarian notation or type prefixes (e.g., tbl_, str) were found in element names."
+    }
+  ]
+}

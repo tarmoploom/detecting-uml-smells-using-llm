@@ -1,0 +1,115 @@
+{
+  "file_name": "s_25",
+  "timestamp": "2025-12-08T14:34:40Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All diagrams in the provided file contain visible elements and are not empty."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases in the diagrams are associated with actors, either directly or via '<<include>>' relationships (e.g., 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid autosid' is included by user-triggered use cases)."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No use cases were found with synonymous names associated with the same actor."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No distinct elements with the same name were found within the same package scope."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No redundant data copies were found in the database schemas; shared column names like 'nimetus' or 'on_aktiivne' are standard descriptors in unrelated tables or handle distinct data."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use case names consistently start with a verb (e.g., 'Vaata', 'Tuvasta', 'Registreeri', 'Muuda')."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All states in the 'Auto seisundidiagramm' are reachable from the Start state."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All actions in the 'Auto l\u00f5petamise tegevusdiagramm' are reachable through the defined decision flows."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": true,
+      "justification": "On the 'Autode register (Klassifikaator)' diagram (Page 12), the association between the 'Auto' class and the 'Auto_k\u00fctuse_liik' class lacks a multiplicity indicator (e.g., '0..*') on the 'Auto' end of the relationship line."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No single diagram contains 10 or more central elements (classes, use cases, etc.). The largest counts are around 7-9 elements."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No single element has 6 or more visual connection lines on any single diagram page. The most connected element ('Isik' on Page 6) has 5 connections."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The layout of the diagrams is uniform, with no related elements placed at excessive distances."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases and activity diagram actions start with active verbs."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": true,
+      "detected": true,
+      "justification": "The attribute 'vin' found in the 'Auto' class (visible on Page 11 and 12) consists of only 3 characters, which triggers the 'too short' rule."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class names start with an uppercase letter and are singular (e.g., 'Isik', 'Auto')."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All attribute and column names start with a lowercase letter (e.g., 'eesnimi', 'mudel')."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All database table names are singular (e.g., 'Isik', 'Tootaja')."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No non-standard type prefixes (like 'tbl', 'str') were found in element names. Standard key prefixes (PK, FK) are allowed."
+    }
+  ]
+}

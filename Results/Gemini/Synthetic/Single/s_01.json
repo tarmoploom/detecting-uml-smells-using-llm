@@ -1,0 +1,115 @@
+{
+  "file_name": "s_01",
+  "timestamp": "2025-12-08T12:08:52Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Page 2 ('Diagram: Autode funktsionaalne alls\u00fcsteem (Kustuta)') contains a package frame but no internal content or other elements, and the title '(Kustuta)' (Delete) indicates it is an empty or abandoned artifact."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases are connected to actors, either directly or via inclusion relationships."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate use case names describing the same activity were found."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No distinct elements with the same name were found within the same package scope."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "The database schema is normalized; no redundant data copying was detected."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases consistently use the 'Verb + Noun' naming convention."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All states in the state diagram (Page 10) are reachable from the start node."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All actions in the activity diagram (Page 5) are reachable."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Multiplicities are defined on both ends of relationships in the class and database diagrams."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No diagram contains 10 or more central elements."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No element exceeds the threshold of 6 visual connections on a single diagram."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Element spacing is consistent across diagrams."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use cases and activity actions start with active verbs."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All element names are longer than 3 characters."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class names are singular and capitalized."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute names start with lowercase letters."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Table names are singular."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No invalid type prefixes (Hungarian notation) were found on classes or attributes."
+    }
+  ]
+}

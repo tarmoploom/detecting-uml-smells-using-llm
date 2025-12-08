@@ -23,29 +23,6 @@ output_path = os.path.join(script_dir, "Results/Gemini", end_path)
 # 2. Ground Truth Folder Path
 ground_truth_path = os.path.join(script_dir, "Data", end_path)
 
-# 3. Your JSON input variable
-json_input_text = """
-{  
-  "file_name": "filename",
-  "smell_analysis": [
-    {
-      "rule_id": "G5.1",
-      "detected": false,
-      "justification": "No empty diagrams were found."
-    },
-    {
-      "rule_id": "G5.2",
-      "detected": false,
-      "justification": "All packages in the diagram are connected."
-    },
-    {
-      "rule_id": "G8.1",
-      "detected": true,
-      "justification": "Found inconsistent naming conventions."
-    }
-  ]
-}
-"""
 
 # ==========================================
 # LOGIC
@@ -58,7 +35,8 @@ def main():
     # 1. Parse JSON and Extract Filename
     # -------------------------------------------------
     try:
-        data = json.loads(json_input_text)
+        with open('result.json', 'r') as file:
+            data = json.load(file)
     except json.JSONDecodeError as e:
         sys.exit(f"Error: Invalid JSON format. {e}")
 

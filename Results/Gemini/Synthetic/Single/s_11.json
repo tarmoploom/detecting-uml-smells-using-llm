@@ -1,0 +1,115 @@
+{
+  "file_name": "s_11",
+  "timestamp": "2025-12-08T13:09:20Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No empty diagrams were found; all pages contain visible model elements."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases in the diagrams are properly associated with at least one actor."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No distinct use cases with synonymous names associated with the same actor were found."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate model element names were found within the same package scope."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No redundant data columns (denormalization) without foreign key connections were identified in the database diagrams."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use case naming is consistent, using the 'Verb Noun' format (e.g., 'Registreeri auto', 'L\u00f5peta auto')."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": true,
+      "detected": true,
+      "justification": "In the 'Auto seisundidiagramm' (Page 9), the state 'Mitteaktiiv ne' (Inactive) appears unreachable. There are transitions originating from it (to 'Aktiiv ne' and 'L\u00f5petatud'), but there is no visible transition arrow pointing INTO it from 'Ootel', 'Aktiiv ne', or the Start node."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All actions in the activity diagram 'Auto l\u00f5petamise tegevusdiagramm' (Page 4) are reachable via the decision branches."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Relationships in class and database diagrams generally utilize multiplicity indicators (e.g., 0..*, 1) or FK notation to define cardinality."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No single diagram contains 10 or more central elements. The largest database diagrams (e.g., Page 15) contain fewer than 10 distinct table nodes."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No single class or table was found to have 6 or more visual connection lines on a specific diagram page. The maximum observed was 5 (e.g., 'Isik' on Page 6)."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The layout of elements is generally compact and balanced."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases and activity actions start with an active verb (e.g., 'Vaata', 'Otsi', 'Vali')."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No element names were found to be 3 characters or less (e.g., 'Riik', 'Isik', 'Auto' are all 4 letters)."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class names (e.g., 'Isik', 'Auto', 'Klient') correctly start with an uppercase letter and are singular."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute/column names (e.g., 'eesnimi', 'mudel') correctly start with a lowercase letter."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database table names (e.g., 'Isik', 'Auto') are singular."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No Hungarian notation or type prefixes (e.g., tbl_, str_) were found in element names."
+    }
+  ]
+}

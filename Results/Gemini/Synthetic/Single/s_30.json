@@ -1,0 +1,115 @@
+{
+  "file_name": "s_30",
+  "timestamp": "2025-12-08T14:51:29Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All diagrams in the provided PDF contain visible elements and are not empty."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases (visual oval elements) are either directly associated with an actor or connected via an 'include' relationship to a use case that is associated with an actor (e.g., 'Vaata k\u00f5iki ootel...' on Page 3)."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No use cases with identical names associated with the same actor were found in the diagrams."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No distinct model elements with the exact same name were found defined within the same package scope."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No obvious data redundancy (denormalization without Foreign Keys) was detected. Repeated columns like 'reg_aeg' represent distinct timestamps for different entities (Person vs Car)."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use case naming is consistent; all use cases start with an active verb in the imperative mood (e.g., 'Vaata', 'Tuvasta', 'Registreeri')."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the state diagram (Page 9), all states (Ootel, Aktiivne, Mitteaktiivne, etc.) are reachable via transitions from the start node or other reachable states."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the activity diagram (Page 4), all actions are reachable through the decision branches."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": true,
+      "justification": "On Page 12, the association between the 'Auto' class and the 'Auto_kategooria_omamine' class is missing a multiplicity indicator on the 'Auto_kategooria_omamine' end (only '0..*' is shown on the Auto end)."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No single diagram contains 10 or more central elements (classes, tables, use cases, or states). The most populated diagrams (e.g., Page 15) contain fewer than 10 distinct central table elements."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No single element has 6 or more visual connection lines on a single diagram page. For example, 'Autod' has multiple relationships, but they are distributed across Pages 17 and 18, never exceeding 5 lines on one canvas."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The layout of the diagrams is balanced, with no related elements placed at excessively large distances compared to the average."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases and activity diagram actions start with active verbs (e.g., 'Vaata', 'Otsi', 'Vali')."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute, or use case names were found to be 3 characters or less (excluding allowed abbreviations like 'id' within stereotypes)."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class names are consistently capitalized and singular (e.g., 'Isik', 'Auto', 'Klient')."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute and column names start with lowercase letters (e.g., 'nimetus', 'eesnimi')."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": true,
+      "detected": true,
+      "justification": "On Pages 17 and 18, the database table is named 'Autod' (plural for 'Cars'), whereas it should be singular (e.g., 'Auto') to be consistent with N3.3."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No type prefixes (like 'tbl_', 'str') were found. Prefixes used are 'PK_', 'FK_', 'IXFK_', and 'AK_' (Alternate Key), which fall under standard database key notation allowed or similar to the allowed exceptions."
+    }
+  ]
+}

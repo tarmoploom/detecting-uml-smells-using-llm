@@ -1,0 +1,115 @@
+{
+  "file_name": "s_31",
+  "timestamp": "2025-12-08T14:54:34Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All diagrams in the provided file contain visual elements and content; no empty diagrams were found."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases are associated with an actor, either directly (e.g., 'Registreeri auto' to 'Autode haldur') or indirectly via include relationships (e.g., 'Vaata k\u00f5iki ootel...' is included by 'Aktiveeri auto', which connects to an actor)."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No use cases with redundant names describing the same activity were found associated with the same actor."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate model element names were found within the same package. Names like 'Isik' appearing in different diagrams refer to the same element or are properly namespaced/imported."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No obvious redundant data columns without foreign keys were found. Tables rely on foreign keys (e.g., 'PK_Auto_kategooria_tyyp' referenced in 'Auto_kategooria') to link data rather than duplicating values."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use cases are consistently named using a 'Verb + Noun' structure (e.g., 'Registreeri auto', 'Tuvasta kasutaja', 'Vaata aktiivseid autosid')."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All states in the state diagram (Page 9) are reachable from the Start state via defined transitions."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All actions in the activity diagram (Page 4) are reachable from the Start node through the decision flows."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Relationships on class and data model diagrams include multiplicity indicators (e.g., '0..*', '1', '0..1') at both ends."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No single diagram contains 10 or more central elements (classes, use cases, etc.). The most populated diagrams (e.g., Page 15) contain 9 tables, which is within the limit."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No single class or table has 6 or more visual connection lines on a single diagram. The most connected element, 'Isik' on Page 6, has 5 connections."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The layout of elements on the diagrams is relatively uniform with no excessive distances between related elements."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases and actions start with active verbs (e.g., 'Vaata', 'Otsi', 'L\u00f5peta')."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute, or use case names were found to be 3 characters or less. Shortest names like 'Riik', 'Isik', 'Auto' are 4 characters."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class names in the Conceptual/Class diagrams (e.g., 'Isik', 'Klient', 'Auto') are singular and capitalized."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute and column names start with lowercase letters (e.g., 'eesnimi', 'mudel', 'nimetus')."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": true,
+      "detected": true,
+      "justification": "Found database tables with plural names on data model diagrams (Pages 14, 16, 17, 18): 'Isikud', 'Kliendid', 'Autod', 'Tootajad', 'Kasutajakontod'. These should be singular (e.g., 'Isik', 'Klient')."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No type prefixes (e.g., 'tbl_', 'str') were found on element names. Allowed prefixes like 'PK_', 'FK_' are present but exempt."
+    }
+  ]
+}

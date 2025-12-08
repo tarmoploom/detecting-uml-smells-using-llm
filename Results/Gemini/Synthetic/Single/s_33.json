@@ -1,0 +1,115 @@
+{
+  "file_name": "s_33",
+  "timestamp": "2025-12-08T15:00:56Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All diagrams in the PDF contain visible content; no empty diagrams were found."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases are associated with actors either directly (e.g., 'Registreeri auto' to 'Autode haldur') or indirectly via '<<include>>' relationships (e.g., 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid autosid' is included by 'Aktiveeri auto', which connects to an actor)."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No distinct use cases with synonymous names describing the same activity for the same actor were found."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No package contains multiple elements with the exact same name. Elements like 'Isik' appearing in multiple views refer to the same underlying class/table."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No obvious data redundancy (denormalization) without foreign keys was detected between tables. Repeated column names like 'nimetus' appear in different contexts (e.g., distinct lookup tables) rather than storing redundant copies of the same data."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use case names consistently follow the 'Imperative Verb + Noun' pattern in Estonian (e.g., 'Registreeri auto', 'Vaata aktiivseid autosid', 'Tuvasta kasutaja')."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the state diagram (Page 9), all states ('Ootel', 'Aktiivne', 'Mitteaktiivne', 'Unustatud', 'L\u00f5petatud') are reachable from the 'Algus' state via valid transitions."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the activity diagram (Page 4), all actions are part of a connected flow originating from the start node, and logical branches (decisions) allow access to all subsequent actions."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All visible relationships in the class and database diagrams include multiplicity indicators at both ends (e.g., '1' and '0..*')."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No single diagram contains 10 or more central elements. The densest diagram (Page 15) contains 9 tables."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No single class or table has 6 or more visual connection lines on a specific diagram. The highest count observed is 5 (e.g., 'Klassifikaator' on Page 7 and 'T\u00f6\u00f6taja' on Page 5)."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The layout of the diagrams is generally uniform, and no related elements are placed at a distance significantly exceeding twice the average."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases and activity diagram actions start with active verbs (e.g., 'Vaata', 'Otsi', 'Vali', 'L\u00f5peta')."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute, or use case names were found to be 3 characters or less. The shortest class/table names are 'Isik', 'Riik', and 'Auto' (4 characters)."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class names are correctly capitalized and singular (e.g., 'Auto', 'Isik', 'T\u00f6\u00f6taja')."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute and column names start with lowercase letters (e.g., 'eesnimi', 'isikukood', 'nimetus')."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Table names are singular (e.g., 'Tbl_Isik', 'Tbl_Auto', 'Tbl_Klient')."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Database tables in the diagrams (Pages 14-19) utilize the prefix 'Tbl_' (e.g., 'Tbl_Isik', 'Tbl_Auto', 'Tbl_Riik'), which describes the element type."
+    }
+  ]
+}

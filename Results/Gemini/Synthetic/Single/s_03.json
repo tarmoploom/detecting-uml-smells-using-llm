@@ -1,0 +1,115 @@
+{
+  "file_name": "s_03",
+  "timestamp": "2025-12-08T12:31:39Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All diagrams in the provided document contain elements; no empty diagrams were found."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": true,
+      "detected": false,
+      "justification": "All use cases (visual ovals) in the Use Case diagrams (Pages 2, 3) are connected to at least one actor."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No use cases with synonymous names describing the same activity were found associated with the same actor."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate model element names were found within the same package."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No obvious redundant data columns (denormalization) were detected across tables without Foreign Key connections."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use case naming is consistent. All use cases start with a verb (e.g., 'Vaata', 'Tuvasta', 'Registreeri', 'Muuda')."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All states in the State Diagram (Page 9) are reachable via transitions from the Start node."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All actions in the Activity Diagram (Page 4) are reachable via the control flow."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": true,
+      "justification": "On the Class Diagram 'Autode register (Klassifikaator)' (Page 12), the association line between the 'Auto' class and the 'Auto_kategooria_omamine' class is missing a multiplicity indicator on the 'Auto' end (the other end shows '0..*')."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No single diagram contains 10 or more central elements (classes, tables, use cases, or states)."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No single class or table was found with 6 or more visual connection lines on a specific diagram page."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": true,
+      "justification": "On the Database Diagram 'Autode register (Klassifikaator)' (Page 17), the distance between the 'Auto' table (far left) and the 'Auto_mark' table (far right) is significantly large. This connection spans the entire width of the page and is visually more than twice the distance of other related elements on the diagram (e.g., 'Auto_kategooria' to 'Auto_kategooria_omamine')."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases and activity diagram actions start with active verbs (e.g., 'Vaata', 'Otsi', 'Vali')."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute, or use case names with 3 or fewer characters were found (abbreviations like 'Riik' or 'Isik' are 4 characters)."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class names start with an uppercase letter and are singular (e.g., 'Auto', 'Isik', 'Tootaja')."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All attributes/columns found start with a lowercase letter (e.g., 'nimetus', 'kood', 'reg_number')."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database table names are singular (e.g., 'Isik', 'Auto', 'Kasutajakonto')."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No Hungarian notation or type prefixes (like 'tbl_', 'str') were found in class, table, or attribute names."
+    }
+  ]
+}
