@@ -1,0 +1,115 @@
+{
+  "file_name": "Treeningkeskus",
+  "timestamp": "2025-12-09T01:27:08Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No empty diagrams were found. All provided pages contain model elements."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases in the 'Treeningute funktsionaalne alls\u00fcsteem' diagram (Page 2) are connected to at least one actor."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No actors have multiple use cases with synonymous names."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate model element names were found within the same package context on the provided diagrams."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No clear evidence of redundant data columns across unrelated tables without foreign keys. Attributes like 'on_nous_t\u00fclitamisega' appear in both Klient and K\u00fclastaja, but these represent attributes of distinct subclasses/roles rather than disconnected redundancy of the same data instance."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases follow the 'Verb + Noun' naming convention (e.g., 'Registreeri treening', 'Vaata k\u00f5iki treeninguid')."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the state diagram (Page 7), all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, L\u00f5petatud) are reachable from the start node via the defined transitions."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the activity diagram (Page 3), all actions are reachable through the decision flows."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All visible relationships on class and database diagrams (e.g., Page 5, Page 17) have multiplicity indicators defined at both ends (e.g., '1' and '0..*')."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The use case diagram 'Treeningute funktsionaalne alls\u00fcsteem' (Page 2) contains 12 use cases, exceeding the threshold of 9 central elements."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": true,
+      "detected": true,
+      "justification": "On the 'Isikute register' diagram (Page 5), the class 'Isik' has 6 visual connection lines (3 associations and 3 generalizations). Similarly, on the 'Treeningute register' diagram (Page 9), the class 'Treening' has 6 visual connections."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The diagram layouts are generally compact and consistent; no related elements are separated by excessive distances relative to the average."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases and activity actions start with active verbs (e.g., 'Vaata', 'Otsi', 'Vali')."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute, or use case names were found with 3 or fewer characters (shortest classes found were 'Isik', 'Riik', 'Ruum', which are 4 characters)."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class and table names start with an uppercase letter and use the singular form (e.g., 'Isik', 'Klient', 'Treening')."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": true,
+      "detected": true,
+      "justification": "On the 'Klientide register (transformed)' diagram (Page 15), the table 'Klient' contains the column 'Kliendi_number', which starts with an uppercase letter."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All table names are in the singular form (e.g., 'Tootaja', 'Klient')."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No Hungarian notation or disallowed prefixes were found in element names. Prefixes like 'PK_', 'FK_', 'pfK' found in the database models are explicitly allowed."
+    }
+  ]
+}

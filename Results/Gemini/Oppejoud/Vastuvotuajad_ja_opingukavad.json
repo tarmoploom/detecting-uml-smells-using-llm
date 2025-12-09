@@ -1,93 +1,113 @@
 {
   "file_name": "Vastuvotuajad_ja_opingukavad",
+  "timestamp": "2025-12-09T01:40:45Z",
+  "llm_model": "Gemini 3 Pro",
   "smell_analysis": [
     {
       "rule_id": "G5.1",
+      "actual": true,
       "detected": true,
-      "justification": "The document contains empty diagrams. Page 16 ('Diagram: Õpingukavade allsüsteem') shows an empty frame labeled 'sd Õpingukavade allsüsteem', and Page 28 ('Diagram: Õpingukavade AB disaini diagramm (õingukava sündmus)') appears completely blank."
+      "justification": "The document contains empty diagrams. Page 16 ('Diagram: \u00d5pingukavade alls\u00fcsteem') shows an empty frame labeled 'sd \u00d5pingukavade alls\u00fcsteem', and Page 28 ('Diagram: \u00d5pingukavade AB disaini diagramm (\u00f5ingukava s\u00fcndmus)') appears completely blank."
     },
     {
       "rule_id": "G5.2",
+      "actual": false,
       "detected": false,
       "justification": "All use cases in the provided diagrams (Pages 17 and 18) are associated with at least one actor."
     },
     {
       "rule_id": "G6.1",
+      "actual": false,
       "detected": false,
       "justification": "No distinct use cases with synonymous names associated with the same actor were found."
     },
     {
       "rule_id": "G6.2",
+      "actual": false,
       "detected": false,
       "justification": "No duplicate model element names were found within the same package."
     },
     {
       "rule_id": "G6.3",
+      "actual": true,
       "detected": true,
       "justification": "Redundant data storage detected. On Page 29 (and 24), the table 'tootaja' contains columns 'eesnimi', 'perenimi', and 'elukoht'. These columns are also present in the 'Isik' table (Page 21), and 'tootaja' has a foreign key to 'Isik' ('isikukood'). This constitutes denormalization without necessity being shown."
     },
     {
       "rule_id": "G8.1",
+      "actual": true,
       "detected": true,
-      "justification": "Inconsistent naming form in use case diagrams (Page 17). Some use cases start with an active verb (e.g., 'Tuvasta kasutaja' - Identify user), while others use a noun/gerund form (e.g., 'Õpingukava esitamine' - Submission of study plan, 'Semestrite haldamine' - Management of semesters)."
+      "justification": "Inconsistent naming form in use case diagrams (Page 17). Some use cases start with an active verb (e.g., 'Tuvasta kasutaja' - Identify user), while others use a noun/gerund form (e.g., '\u00d5pingukava esitamine' - Submission of study plan, 'Semestrite haldamine' - Management of semesters)."
     },
     {
       "rule_id": "G15.1",
+      "actual": false,
       "detected": false,
       "justification": "All states in the state diagrams (Pages 4, 9, 12, 14) appear to be reachable via transitions from the start node."
     },
     {
       "rule_id": "G15.2",
+      "actual": false,
       "detected": false,
       "justification": "All actions in the activity diagrams (Pages 15, 19, 20) appear reachable through the control flow."
     },
     {
       "rule_id": "G15.3",
+      "actual": false,
       "detected": false,
       "justification": "No clear violations of missing multiplicity were found on the class or database diagrams; most associations explicitly show multiplicity (e.g., 1..0..*)."
     },
     {
       "rule_id": "S1.1",
+      "actual": true,
       "detected": true,
-      "justification": "Diagram 'Õpingukavade_registri_kontseptuaalne_diagramm_1' (Page 6) contains approximately 17 central elements (classes), which exceeds the limit of 10."
+      "justification": "Diagram '\u00d5pingukavade_registri_kontseptuaalne_diagramm_1' (Page 6) contains approximately 17 central elements (classes), which exceeds the limit of 10."
     },
     {
       "rule_id": "S1.2",
+      "actual": true,
       "detected": true,
-      "justification": "On Page 6, the class 'Õpingukava' has visual connection lines to 6 other elements (Õpingukava_seisundi_liik, Üliõpilase_õppekava, Üliõpilane, Aine_õpingukavas, Tüüpõpingukava, Semester)."
+      "justification": "On Page 6, the class '\u00d5pingukava' has visual connection lines to 6 other elements (\u00d5pingukava_seisundi_liik, \u00dcli\u00f5pilase_\u00f5ppekava, \u00dcli\u00f5pilane, Aine_\u00f5pingukavas, T\u00fc\u00fcp\u00f5pingukava, Semester)."
     },
     {
       "rule_id": "S2.1",
+      "actual": true,
       "detected": true,
-      "justification": "On Page 17, the distance between the actor 'Dekanaadi sekretär' and the use case 'Semestrite haldamine' is significantly larger (spanning half the diagram diagonally) than the average distance between other related elements (e.g., 'Subjekt' to 'Tuvasta kasutaja')."
+      "justification": "On Page 17, the distance between the actor 'Dekanaadi sekret\u00e4r' and the use case 'Semestrite haldamine' is significantly larger (spanning half the diagram diagonally) than the average distance between other related elements (e.g., 'Subjekt' to 'Tuvasta kasutaja')."
     },
     {
       "rule_id": "N1.1",
+      "actual": true,
       "detected": true,
-      "justification": "Several use cases on Page 17 do not start with an active verb. Examples include 'Õpingukava esitamine' (Presentation/Submission...), 'Semestrite haldamine' (Management...), 'Teatele vastamine' (Answering...), and 'Vastuste lugemine' (Reading...)."
+      "justification": "Several use cases on Page 17 do not start with an active verb. Examples include '\u00d5pingukava esitamine' (Presentation/Submission...), 'Semestrite haldamine' (Management...), 'Teatele vastamine' (Answering...), and 'Vastuste lugemine' (Reading...)."
     },
     {
       "rule_id": "N1.2",
+      "actual": true,
       "detected": false,
       "justification": "No class, table, attribute, or use case names were found to be 3 characters or less."
     },
     {
       "rule_id": "N3.1",
+      "actual": true,
       "detected": true,
       "justification": "On the Database Design diagrams (Pages 29-32), the elements modeled as classes (representing tables) start with lowercase letters: 'aine', 'tootaja', 'opingukava', 'yliopilane', 'teade', 'vastus'."
     },
     {
       "rule_id": "N3.2",
+      "actual": false,
       "detected": false,
       "justification": "Attributes and columns consistently start with lowercase letters (e.g., 'eesnimi', 'kirjeldus')."
     },
     {
       "rule_id": "N3.3",
+      "actual": false,
       "detected": false,
       "justification": "Database table names are singular (e.g., 'Isik', 'Tootaja', 'aine'), complying with the rule."
     },
     {
       "rule_id": "N4.1",
+      "actual": false,
       "detected": false,
       "justification": "No prefixes indicating type (like 'tbl_', 'str') were found on class or attribute names."
     }

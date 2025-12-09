@@ -1,0 +1,115 @@
+{
+  "file_name": "E_pood",
+  "timestamp": "2025-12-09T01:16:09Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All diagrams in the provided file contain visible elements and are not empty."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases in the 'Kaupade halduse funktsionaalne alls\u00fcsteem' diagram (Page 2) are connected to at least one actor (e.g., 'Tuvasta kasutaja' to 'Klient' and 'Uudistaja', 'L\u00f5peta kaup' to 'Juhataja', etc.)."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate use case names associated with the same actor were found in the use case diagram."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No multiple model elements with the same name were found within the same package context."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No redundant data copies without Foreign Keys were detected. Common column names like 'nimetus' (name) or 'on_aktiivne' (is_active) in classifier tables (e.g., Brand, Riik) represent distinct data for those entities, falling under the exception for similarly named columns in unrelated tables."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use case naming is consistent. All use cases start with an imperative verb (e.g., 'Tuvasta', 'Vaata', 'L\u00f5peta', 'Registreeri', 'Muuda')."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the 'Kauba seisundidiagramm' (Page 8), all states ('Ootel', 'Aktiivne', 'Mitteaktiivne', 'Unustatud', 'L\u00f5petatud') are reachable via transitions starting from the initial state 'Alg'."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the 'Kauba l\u00f5petamise tegevusdiagramm' (Page 3), all actions (e.g., 'Otsi kaupa', 'Vali kaup') are reachable through the defined decision flows."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Relationships in the diagrams generally display multiplicity (e.g., 1, 0..*). While some ends might be implicit in specific views, no relationship was found that lacks multiplicity indicators at *both* ends."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Several diagrams exceed the limit of 10 central elements: \n1. 'Kaupade halduse funktsionaalne alls\u00fcsteem' (Page 2) contains 11 Use Cases.\n2. 'Klassifikaatorite register' (Page 6) contains 12 Classes.\n3. 'Kaupade register' (Page 10) contains 16 Classes.\n4. 'Klassifikaatorite register (transformed)' (Page 12) contains 15 Tables."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": true,
+      "detected": true,
+      "justification": "Several classes/tables have 6 or more visual connections on a single diagram:\n1. On Page 6, class 'Klassifikaator' has 11 inheritance connections.\n2. On Page 10, class 'Nutitelefon' has 8 associations/inheritances, and class 'Kaup' has 6 connections.\n3. On Page 15, table 'Nutitelefon' has 6 visual relationship lines."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The layout of the diagrams is balanced, and no related elements are placed excessively far apart compared to the average distance."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All Use Cases and Activity Actions start with active verbs (e.g., 'Tuvasta', 'Vaata', 'Otsi', 'Vali')."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute, or use case names were found to be 3 characters or less. Acronyms like 'Alg' refer to States, which are not covered by this rule."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class names start with an uppercase letter and are singular (e.g., 'Isik', 'Kaup', 'Nutitelefon')."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All visible attribute/column names start with a lowercase letter (e.g., 'nimetus', 'hind', 'eesnimi')."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All table names in the transformed diagrams are singular (e.g., 'Kaup', 'Isik', 'Brand')."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No Hungarian notation or type prefixes (e.g., tbl_, str) were found in class, table, or attribute names."
+    }
+  ]
+}
