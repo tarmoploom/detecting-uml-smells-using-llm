@@ -1,0 +1,115 @@
+{
+  "file_name": "m_10",
+  "timestamp": "2025-12-08T15:52:23Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All diagrams in the file contain visible elements; no empty diagrams were found."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases in the diagrams (Pages 2 and 3) are associated with at least one actor."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No distinct use cases with synonymous names describing the same activity for the same actor were found."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No packages were found containing multiple model elements with the same name."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "The data models appear normalized. For example, the 'Auto' table links to 'Auto_mark' via a foreign key code and does not redundantly store the mark's name."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Inconsistent naming form found on Page 2. The use case 'Aktiivsed autod' is a noun phrase, while others like 'Vaata k\u00f5iki autosid' and 'Tuvasta kasutaja' are verb phrases."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All states in the State Diagram (Page 9) appear to be reachable via transitions from the Start node."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All actions in the Activity Diagram (Page 4) are reachable through the defined control flows."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Relationships in class and database diagrams (e.g., Pages 5, 12, 14) generally show multiplicity indicators (e.g., 1, 0..*) at both ends."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No single diagram contains 10 or more central elements (classes, tables, use cases, or states). The largest diagrams (e.g., Page 15) contain 9 tables."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No single class or table was found with 6 or more visual connection lines on a specific diagram page."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The layout of elements is relatively compact, with no related elements placed at excessive distances."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The use case named 'Aktiivsed autod' (Page 2) does not start with an active verb."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All class, table, attribute, and use case names found are longer than 3 characters (e.g., 'Riik' is 4 characters)."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class names (e.g., 'Isik', 'Auto') are capitalized and singular."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute/column names (e.g., 'eesnimi', 'reg_aeg') start with lowercase letters."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": true,
+      "detected": true,
+      "justification": "On Page 16, the database table 'Kliendid' is named in the plural form (Estonian for 'Clients'), whereas others like 'Isik' are singular."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Element names do not use Hungarian notation or type prefixes (e.g., no 'tbl_Customer'). Technical prefixes like 'PK_' and 'FK_' found in constraints are allowed exceptions."
+    }
+  ]
+}

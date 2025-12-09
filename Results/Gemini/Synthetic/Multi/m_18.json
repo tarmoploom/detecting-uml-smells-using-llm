@@ -1,0 +1,115 @@
+{
+  "file_name": "m_18",
+  "timestamp": "2025-12-09T00:29:33Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The diagram 'Autode register (T\u00f6\u00f6taja)' on page 13 is empty, containing only the diagram frame with no model elements inside."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases in the diagrams (Pages 2, 3) are connected to actors."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No use cases with synonymous names for the same actor were found. 'Muuda autot' and 'Muuda auto mitteaktiivseks' describe different scopes of action."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate model element names were found within the same package."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No redundant data value copies were found in tables without foreign keys. Common column names like 'reg_aeg' (Registration Time) or 'nimetus' (Name) in tables like 'Isik' and 'Auto' represent different data instances, not denormalization."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases start with a verb in the imperative form (e.g., 'Vaata', 'Tuvasta', 'Registreeri')."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All states in the 'Auto seisundidiagramm' (Page 9) are reachable from the Start node."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": true,
+      "detected": false,
+      "justification": "All actions in the 'Auto l\u00f5petamise tegevusdiagramm' (Page 4) are reachable."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All relationships in the class diagrams (e.g., Page 5, 12, 18) display multiplicity indicators (e.g., 1, 0..*)."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No single diagram contains 10 or more central elements. The largest class/table diagram (Page 16) has 9 tables."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class or table has 6 or more visual connection lines on a single page. The maximum observed is 5 connections for the 'Isik' class on Page 6."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The layout of elements appears standard with no excessive distances between related elements."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases and activity actions start with active verbs (e.g., 'Otsi autot', 'Registreeri auto')."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute, or use case names were found with 3 or fewer characters. Shortest names found were 4 characters (e.g., 'Isik', 'Riik', 'Auto', 'kood')."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class names begin with an uppercase letter and are singular (e.g., 'Isik', 'Auto')."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All attributes/columns start with a lowercase letter (e.g., 'eesnimi', 'nimetus')."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All database table names are singular (e.g., 'Isik', 'Kasutajakonto')."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No Hungarian notation or type prefixes were found in element names (standard PK/FK indicators in tool-generated schemas are allowed)."
+    }
+  ]
+}

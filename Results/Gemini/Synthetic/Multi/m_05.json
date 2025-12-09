@@ -1,0 +1,115 @@
+{
+  "file_name": "m_05",
+  "timestamp": "2025-12-08T15:38:44Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All diagrams in the provided PDF (Packages, Use Cases, Activities, Classes, States, ERDs) contain elements; none are empty."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases are associated with actors either directly (visual association lines) or indirectly via \u00abinclude\u00bb relationships (e.g., 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid autosid' is included by use cases connected to the 'Autode haldur')."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No distinct use cases associated with the same actor were found to have synonymous names."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No distinct model elements with the same name were found within the same package scope."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": true,
+      "detected": false,
+      "justification": "The database models show normalized tables with Foreign Keys. No obvious redundant data columns (excluding keys and generic names like 'nimetus') were found."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use case names follow a consistent verb-noun structure in Estonian (e.g., 'Registreeri auto', 'Vaata k\u00f5iki autosid')."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the 'Auto seisundidiagramm' (Page 9), all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, L\u00f5petatud) are reachable from the Start node via defined transitions."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the 'Auto l\u00f5petamise tegevusdiagramm' (Page 4), all actions are reachable through the decision flows."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All class and database diagram relationships display multiplicity indicators (e.g., 1, 0..*, 0..1) at the connection ends."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No single diagram contains 10 or more central elements (classes, tables, use cases, or states). The largest diagrams contain approximately 6-7 central elements."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No single class or table is displayed with 6 or more visual connection lines on a single page. The maximum observed is 5 connections for the 'isik' class on Page 6."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The diagram layouts are generally compact and uniform; no elements are positioned at an excessively large distance compared to the average."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases and activity actions start with active verbs (e.g., 'Vaata', 'Otsi', 'Vali', 'Registreeri')."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute, or use case names were found with 3 or fewer characters. Shortest names found were 4 characters (e.g., 'isik', 'auto', 'riik', 'kood')."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Several class names start with a lowercase letter, violating standard naming conventions. Examples include 'isik', 'auto', 't\u00f6\u00f6taja', 'kasutajakonto', 'riik', 'klassifikaator', and 'klient' (seen on Pages 5, 6, 7, 10, 11, 12, 13)."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attributes and columns generally start with lowercase letters (e.g., 'eesnimi', 'mudel', 'reg_aeg')."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Table names in the database diagrams are singular (e.g., 'Isik', 'Auto', 'Klient'), even though the diagram titles refer to them in plural ('Isikute register')."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No technical prefixes (Hungarian notation) regarding element types (like 'tbl_', 'str_') were found. Prefixes used are limited to standard key indicators (PK_, FK_, IXFK_) or constraints (AK_)."
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "file_name": "m_08",
+  "timestamp": "2025-12-08T15:46:53Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All diagrams in the provided file contain elements and are not empty."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases in the diagrams (Pages 2 and 3) are connected to at least one actor."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No distinct use cases with synonymous names describing the same activity were found associated with the same actor."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No package contains multiple model elements with the same name."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "While some tables share column names (e.g., 'nimetus'), these represent different attributes (e.g., Car Name vs. Brand Name) rather than redundant data copies."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Inconsistent naming forms are used for use cases. On the 'Autode funktsionaalne alls\u00fcsteem (Vaata & Tuvasta)' diagram (Page 2), use cases like 'Aktiivsed autod' and 'K\u00f5ik autod' use Noun phrases, while 'Tuvasta kasutaja' uses a Verb phrase. The 'Muuda' diagram (Page 3) uses Verb phrases ('Registreeri auto')."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All states in the 'Auto seisundidiagramm' (Page 9) appear reachable via transitions from the Start node."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All actions in the 'Auto l\u00f5petamise tegevusdiagramm' (Page 4) are reachable through the decision paths defined."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Relationships on class and database diagrams generally have multiplicity indicators (e.g., '1', '0..*') visible on at least one end, or explicitly defined on both ends."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No single diagram contains 10 or more central elements (classes, tables, use cases, or states). The most populated diagrams have fewer than 10 central nodes."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No single class or table has 6 or more visual connection lines on a single diagram. The 'Isik' class (Page 6) has 5 connections, which is below the threshold."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The layout of elements on all diagrams is reasonably compact with no outliers exceeding the distance threshold."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "On the 'Autode funktsionaalne alls\u00fcsteem (Vaata & Tuvasta)' diagram (Page 2), several use cases do not start with an active verb: 'Aktiivsed autod', 'K\u00f5ik autod', and 'Autode koondaruanne'."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All class, table, and attribute names found are longer than 3 characters (e.g., 'Isik', 'Riik', 'Auto' are 4 characters)."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class names obey the convention (Singular and Capitalized, e.g., 'Isik', 'Auto', 'T\u00f6\u00f6taja')."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute names obey the convention (lowercase start, e.g., 'eesnimi', 'nimetus')."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": true,
+      "detected": true,
+      "justification": "On the 'Autode register (Klassifikaator)' database diagram (Page 17) and 'Autode register (T\u00f6\u00f6taja)' (Page 18), the table name 'Autod' is plural, whereas other tables are singular (e.g., 'Tootaja', 'Klient')."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No inappropriate type prefixes (e.g., tbl_, str) were found on element names. Allowed prefixes like PK_ and FK_ are used in database diagrams."
+    }
+  ]
+}

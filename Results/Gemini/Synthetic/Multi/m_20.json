@@ -1,0 +1,115 @@
+{
+  "file_name": "m_20",
+  "timestamp": "2025-12-09T00:35:44Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All diagrams in the provided file contain visible content and elements; no empty diagrams were found."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases (oval elements) on pages 2 and 3 are associated with at least one actor."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No distinct use cases with synonymous names for the same activity and actor were found. Use cases like 'View active cars' and 'View all cars' (Page 2) represent different data scopes, not duplicate activities."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate model elements with the same name were found within the same package context on any single diagram."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No redundant data without foreign keys was detected. While 'nimetus' appears in multiple tables (e.g., Auto, Auto_mark), these represent distinct names (Car name vs Make name) or are connected via Foreign Keys."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Inconsistent naming is found in the Use Case diagrams (Page 3). 'Auto registreerimine' (Car registration) is a Noun phrase, whereas other use cases like 'L\u00f5peta auto' (Finish car) and 'Aktiveeri auto' (Activate car) use an active Verb phrase."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All states in the State Diagram (Page 9) are reachable via transitions from the Start node or other reachable states."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All actions in the Activity Diagram (Page 4) are reachable from the Start node through the decision flows."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All class and database diagram relationships (e.g., Pages 5, 6, 14, 17) display explicit multiplicity indicators (e.g., 1, 0..*, 0..1) at the association ends."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No single diagram contains 10 or more central elements (classes, tables, use cases, or states). The largest diagrams (e.g., Page 15) contain fewer than 10 central elements."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No single class or table has 6 or more visual connection lines on a specific diagram page. The 'Isik' class/table has multiple connections across the model, but they are distributed across different diagram views (Pages 6, 14, 16, 19)."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The layout of elements in the diagrams is consistent, and no related elements are placed at an excessive distance relative to the average."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The use case 'Auto registreerimine' (Page 3) does not start with an active verb; it uses a noun (gerund) form. It should be 'Registreeri auto' to match the active verb convention used in other use cases."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All class, table, attribute, and use case names exceed 3 characters. Identifiers like 'kood' or 'Isik' are 4 characters long."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class names (e.g., Isik, Auto, T\u00f6\u00f6taja) start with an uppercase letter and are singular."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All attributes and columns (e.g., e_meil, on_aktiivne, nimetus) start with a lowercase letter."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All table names (e.g., Isik, Auto, Klient) are singular."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No inappropriate prefixes (like tbl_, str, int) were found on class, table, or attribute names. Technical prefixes for keys (PK_, FK_, IXFK_) are allowed."
+    }
+  ]
+}

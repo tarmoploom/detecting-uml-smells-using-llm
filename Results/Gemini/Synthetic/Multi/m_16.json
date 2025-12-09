@@ -1,0 +1,115 @@
+{
+  "file_name": "m_16",
+  "timestamp": "2025-12-09T00:23:24Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No empty diagrams were found; all pages contain visual elements."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases are associated with actors. The use case 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid autosid' (Page 3) is connected via '<<include>>' relationships to 'Aktiveeri auto' and 'Muuda autot', which are directly connected to actors, thus establishing a valid association."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No distinct use cases with synonymous names describing the same activity for the same actor were found."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No multiple model elements with the same name were found within the same package context. Appearances of classes like 'Auto' in different diagrams represent different views of the same element, not duplicates."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No evidence of redundant data columns (denormalization) without foreign keys was found. Shared column names like 'nimetus' across different tables (e.g., Auto, Auto_mark) represent different data (car name vs. brand name) or are handled via Foreign Keys."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use case naming is consistent, generally following a 'Verb + Noun' pattern (e.g., 'Aktiveeri auto', 'Muuda autot', 'Registreeri auto')."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the state diagram (Page 8), all states (Ootel, Aktiivne, Mitteaktiivne, L\u00f5petatud, Unustatud) are reachable from the Start node via defined transitions."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the activity diagram (Page 4), all actions (e.g., 'Vali auto', 'L\u00f5peta valitud auto') are reachable through the decision flows."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": true,
+      "justification": "On the 'Autode register (Klassifikaator)' diagram (Page 11), the association line connecting 'Auto' and 'Auto_kategooria_omamine' is missing a multiplicity indicator on the 'Auto' end. Similarly, the association between 'Auto_kategooria' and 'Auto_kategooria_omamine' lacks multiplicity on the 'Auto_kategooria' end."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The 'Klassifikaatorite register' diagram (Page 7) contains 11 central class elements (Klassifikaator, Riik, Isiku_seisundi_liik, T\u00f6\u00f6taja_seisundi_liik, Kliendi_seisundi_liik, T\u00f6\u00f6taja_roll, Auto_mark, Auto_seisundi_liik, Auto_k\u00fctuse_liik, Auto_kategooria, Auto_kategooria_t\u00fc\u00fcp), exceeding the limit of 10."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": true,
+      "justification": "On the 'Klassifikaatorite register' diagram (Page 7), the class 'Klassifikaator' has 10 visual connection lines (inheritance relationships) to other classes on the same page, exceeding the limit of 6."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The layout of elements on the diagrams appears generally compact and uniform; no related elements were found with excessive distances between them."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases and activity diagram actions start with active verbs (e.g., 'Vaata', 'Tuvasta', 'Otsi', 'Vali')."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No element names were found with 3 or fewer characters. Shortest names found were 4 characters (e.g., 'Isik', 'Riik', 'Auto')."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The class 't\u00f6\u00f6taja' (appearing on pages 5, 9, 10) and the class 'klient' (appearing on pages 6, 12, 15) start with a lowercase letter, which violates the naming convention."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All attributes and columns found (e.g., 'nimetus', 'isikukood', 'reg_aeg') start with lowercase letters."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database table names are singular (e.g., 'Isik', 'Auto', 'Tootaja'), complying with the rule."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No prohibited Hungarian notation or type prefixes were found in element names. Standard key indicators like 'PK_' and 'FK_' are permitted."
+    }
+  ]
+}

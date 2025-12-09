@@ -1,0 +1,115 @@
+{
+  "file_name": "m_13",
+  "timestamp": "2025-12-09T00:11:56Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No empty diagrams were found; all pages contain model elements."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases are associated with actors either directly, through generalization ('Tuvasta kasutaja'), or via inclusion ('Vaata k\u00f5iki ootel...')."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No distinct use cases with synonymous names describing the same activity were found associated with the same actor."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Package contents appear unique. Elements with similar names across diagrams (e.g., 'Isik', 'Klassifikaator') refer to the same underlying model element."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": true,
+      "detected": true,
+      "justification": "Detected redundancy in the 'parool' (password) attribute. It appears in the 'Kasutajakonto' table (Page 14), 'Klient' table (Page 16), and 'Tootaja' table (Page 18). Since 'Klient' and 'Tootaja' are subtypes of 'Isik' (which is linked to 'Kasutajakonto'), storing 'parool' as a separate column in the subtype tables creates redundant copies of the same data value without a direct Foreign Key connection for that specific attribute."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Naming is consistent. Use cases primarily use the 'Verb Object' form (e.g., 'Aktiveeri auto', 'L\u00f5peta auto', 'Vaata aktiivseid autosid')."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the state diagram (Page 9), all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, L\u00f5petatud) are reachable via transitions from the start state."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the activity diagram (Page 4), all actions are part of a reachable flow logic."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Class and database relationships display multiplicity indicators (e.g., 1, 0..*, 0..1) on both ends where applicable."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No single diagram contains 10 or more central elements. The largest diagrams (e.g., Page 15, Page 17) have fewer than 10 tables/classes."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": true,
+      "detected": true,
+      "justification": "On the 'Autode register' database diagram (Page 17), the 'Auto' table has exactly 6 visual connection lines to other tables: 'Auto_mark', 'Auto_seisundi_liik', 'Auto_kytuse_liik', 'Auto_kategooria_omamine', and two separate lines to 'Tootaja' (one for 'registreerija' and one for 'viimane_muutja')."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The layout of the diagrams is balanced, with no elements placed at an excessive distance relative to the average."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases and activity actions start with active verbs (e.g., 'Vaata', 'Otsi', 'Vali')."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All element names (Classes, Tables, Attributes) are longer than 3 characters (e.g., 'Isik', 'Auto', 'Riik' are 4 characters long)."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class names are capitalized and singular (e.g., 'Isik', 'Klient', 'Auto')."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute/column names start with lowercase letters (e.g., 'eesnimi', 'parool', 'mudel')."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database table names are singular (e.g., 'Isik', 'Kasutajakonto', 'Auto')."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No type prefixes (e.g., strName, tblCar) were found. Allowed prefixes like 'PK_', 'FK_', and 'IXFK_' are used correctly."
+    }
+  ]
+}

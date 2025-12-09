@@ -1,0 +1,115 @@
+{
+  "file_name": "m_06",
+  "timestamp": "2025-12-08T15:41:31Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All 19 pages of the provided PDF contain diagrams or model content; no empty diagrams were found."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases (oval elements) in the diagrams (Page 2, Page 3) are associated with at least one actor, either directly or via inclusion from a use case that is connected to an actor."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No distinct use cases with synonymous names associated with the same actor were found. Names like 'Muuda autot' and 'Muuda auto mitteaktiivseks' describe different levels of specificity."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No instances of multiple model elements with the exact same name existing within the same package were definitively identified. Classes and Tables sharing names (e.g., 'Isik') are typically separated into Logical and Physical packages/models."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "The database diagrams (Pages 14-19) appear properly normalized. Data is referenced via Foreign Keys (e.g., 'FK auto_mark_kood' in 'Auto' table) rather than duplicating redundant data values. Common column names like 'nimetus' are exempt."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Inconsistent naming is present in the Use Case diagram (Page 2). The use case 'Aktiivsed autod' (Active cars) uses a Noun phrase, while others like 'Tuvasta kasutaja' (Identify user) and 'Vaata k\u00f5iki autosid' (View all cars) use Verb phrases."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the State Diagram (Page 9), all states (Ootel, Aktiivne, Mitteaktiivne, etc.) are reachable from the Start node via defined transitions."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": true,
+      "detected": false,
+      "justification": "In the Activity Diagram (Page 4), all actions (e.g., 'Otsi autot', 'Vali auto') are reachable through the various decision branches."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All associations on the class and database diagrams (e.g., Pages 5, 14, 18) define multiplicity at both ends (e.g., '1' and '0..*') or are inheritance/dependency relationships where multiplicity is not applicable."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No single diagram contains 10 or more central elements. The largest class/database diagrams (e.g., Page 15) contain fewer than 10 tables."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No single class or table has 6 or more visual connections on a single diagram. The class 'Isik' on Page 6 has 5 connections (Kasutajakonto, Riik, Isiku_seisundi_liik, T\u00f6\u00f6taja, Klient), which is below the threshold."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The layout of elements across all diagrams is reasonably balanced, with no related elements placed excessively far apart compared to the average distance."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "On Page 2, the use case 'Aktiivsed autod' (Active cars) does not start with an active verb, violating the naming convention."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All class, table, attribute, and use case names found are longer than 3 characters (e.g., 'Isik', 'Auto', 'kood' is 4 chars, 'Riik' is 4 chars)."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class names obey the convention (Capitalized, Singular). Examples: 'Isik', 'Auto', 'T\u00f6\u00f6taja'."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute/column names obey the convention (lowercase). Examples: 'eesnimi', 'mudel', 'nimetus'."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database table names are singular. Examples: 'Isik', 'Klient', 'Auto'."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No type prefixes (like 'tbl_', 'str') were found in element names. Standard key prefixes like 'PK_', 'FK_', 'IXFK_' found in the database diagrams are allowed exceptions."
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "file_name": "m_19",
+  "timestamp": "2025-12-09T00:32:38Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No empty diagrams were found in the provided file."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases in the diagrams (Pages 2 and 3) are associated with at least one actor (e.g., 'Aktiivsed autod' is connected to 'Uudistaja')."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No use cases with synonymous names for the same actor were found. 'Vaata autode koondaruannet' and 'Vaata k\u00f5iki autosid' describe different activities (summary vs list)."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate model element names were found within the same package."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No redundant data columns without Foreign Key connections were detected. For example, 'Auto' contains foreign keys like 'auto_mark_kood' pointing to 'Auto_mark', avoiding redundancy of the mark name."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Inconsistent naming form found on Page 2: The use case 'Aktiivsed autod' starts with a noun (Noun Phrase), while others like 'Tuvasta kasutaja' and 'Vaata k\u00f5iki autosid' start with a verb (Verb Phrase)."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the state diagram (Page 9), all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, L\u00f5petatud) are reachable via transitions from the start node."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the activity diagram (Page 4), all actions (e.g., 'Otsi autot', 'Vali auto') are reachable through the decision flows."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All relationships in class and database diagrams have multiplicity indicators where appropriate (e.g., 0..* to 1)."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No single diagram contains 10 or more central elements. The most populated diagram (Page 15) has 9 tables."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No single class or table has 6 or more visual connections on a single page. The Class 'Isik' on Page 6 has 5 connections (Kasutajakonto, Riik, Isiku_seisundi_liik, T\u00f6\u00f6taja, Klient)."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The layout of the diagrams is balanced, and no related elements are placed excessively far apart compared to the average distance."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "On Page 2, the use case 'Aktiivsed autod' does not start with an active verb; it is a noun phrase describing a set of objects."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No element names (class, table, attribute, use case) were found with 3 or fewer characters. Shortest names like 'Isik', 'Riik', and 'Auto' are 4 characters long."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class names (e.g., Isik, Auto, T\u00f6\u00f6taja) start with an uppercase letter and are singular."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All attribute/column names (e.g., e_meil, nimetus, reg_aeg) start with a lowercase letter."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All table names (e.g., Isik, Auto, Riik) are in the singular form."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No type prefixes (like tbl_, str_) were found in class, table, or attribute names. (Note: PK_, FK_ are allowed by the rule)."
+    }
+  ]
+}

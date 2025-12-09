@@ -1,0 +1,115 @@
+{
+  "file_name": "m_09",
+  "timestamp": "2025-12-08T15:49:40Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All diagrams in the provided file contain elements and are not empty."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases in the diagrams are either directly connected to actors or connected via <<include>> relationships to use cases that are connected to actors."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No instances were found where an actor is associated with multiple use cases having synonymous names."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No packages were found containing multiple elements with the exact same name."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "While multiple tables contain similar audit columns (e.g., 'reg_aeg'), these represent entity-specific data rather than redundant copies of the same value. No denormalization lacking foreign keys was detected."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use case naming appears consistent, following the 'Verb Noun' pattern (e.g., 'Registreeri auto', 'Vaata aktiivseid autosid')."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All states in the 'Auto seisundidiagramm' (Page 9) are reachable via transitions."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All actions in the 'Auto l\u00f5petamise tegevusdiagramm' (Page 4) are reachable through the decision flows."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": true,
+      "justification": "On the 'Autode register (Klassifikaator)' class diagram (Page 12), the association line between the class 'Auto' and the class 'Auto_k\u00fctuse_liik' has a multiplicity indicator '1' at the classifier end, but is missing a visible multiplicity indicator (e.g., '0..*') at the 'Auto' end."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No single diagram exceeds the threshold of 10 central elements (classes, tables, use cases, or states). The largest diagrams contain fewer than 10 such elements."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No single class or table displays 6 or more visual connection lines on a single page. The maximum observed is 4 connections for 'Auto' on Page 17."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The layout of elements across all diagrams is reasonably uniform, with no distance between related elements exceeding twice the average."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases and activity actions start with an active verb (e.g., 'Vaata', 'Tuvasta', 'Registreeri', 'Otsi')."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No names for classes, tables, attributes, or use cases were found to be 3 characters or less. Shortest names like 'Isik', 'Riik', and 'Auto' are 4 characters long."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class names consistently start with uppercase letters and are singular (e.g., 'Isik', 'Auto', 'Klient')."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": true,
+      "detected": true,
+      "justification": "On the 'T\u00f6\u00f6tajate register' class diagram (Page 10), the class 'T\u00f6\u00f6taja_rolli_omamine' contains attributes 'Alguse_aeg' and 'L\u00f5pu_aeg' which incorrectly start with an uppercase letter."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database table names are consistently singular (e.g., 'Isik', 'Auto', 'Klient')."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": true,
+      "detected": true,
+      "justification": "On the 'Klassifikaatorite register (Auto)' class diagram (Page 7) and related pages, the 'Klassifikaator' class contains attributes with type prefixes: 'bool_on_aktiivne' (boolean), 'chr_nimetus' (char), and 'chr_kood' (char)."
+    }
+  ]
+}

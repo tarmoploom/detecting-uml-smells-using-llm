@@ -1,0 +1,115 @@
+{
+  "file_name": "m_17",
+  "timestamp": "2025-12-09T00:26:19Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No empty diagrams were found."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": true,
+      "justification": "In the use case diagram 'Autode halduse funktsionaalne alls\u00fcsteem (Muuda)' (Page 3), the use case 'Lisa auto' is visually present but is not associated with any actor, nor is it connected via include/extend relationships to other use cases."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The model contains two use cases, 'Lisa auto' (Add Car) and 'Registreeri auto' (Register Car), which describe the same activity. Both appear in the package list (Page 1) and on the use case diagram (Page 3) within the context of the 'Autode haldur' actor."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate model element names were found within the same package."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No obvious redundant data columns (denormalization) lacking Foreign Keys were found in the database diagrams."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use case names consistently follow the 'Verb + Noun' convention (e.g., 'Vaata aktiivseid autosid', 'Registreeri auto')."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All states in the 'Auto seisundidiagramm' (Page 9) are reachable from the start state."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All actions in the 'Auto l\u00f5petamise tegevusdiagramm' (Page 4) are reachable via the defined decision paths."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All visible relationships in the class and database diagrams include multiplicity indicators (e.g., 1, 0..*)."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No diagram contains 10 or more central elements. The most populated diagram (Page 15) contains 9 tables."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No single element has 6 or more visual connection lines on any specific diagram. The 'Isik' class on Page 6 has 5 connections."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "The layout of elements on the diagrams is balanced, with no instances of excessive distance between related elements."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases and activity diagram actions start with active verbs."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All class, table, attribute, and use case names exceed 3 characters (e.g., 'Riik' is 4 characters)."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class names are capitalized and singular (e.g., 'Isik', 'Auto')."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute and column names start with lowercase letters (e.g., 'eesnimi', 'mudel')."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database table names are singular (e.g., 'Klient', 'Auto')."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No elements use invalid prefixes (Hungarian notation). Technical prefixes like 'PK_', 'FK_', 'IXFK_' are compliant."
+    }
+  ]
+}
