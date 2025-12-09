@@ -1,0 +1,115 @@
+{
+  "file_name": "Kultuurireisid",
+  "timestamp": "2025-12-09T12:59:06Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All diagrams in the provided document contain visual elements or text content; no empty diagrams were found."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases in the diagrams are connected to at least one actor, either directly or via 'include' relationships to use cases that are connected to actors."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No actors were found to have multiple use cases with synonymous names describing the same activity."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No instances of multiple model elements with the same name existing within the same package were found."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": true,
+      "detected": true,
+      "justification": "The table 'Reisija' (Passenger) contains columns 'eesnimi', 'perenimi', and 'e_meil', which duplicate the data structure of the 'Isik' (Person) table. While passengers are not always registered users, there is no Foreign Key relationship connecting 'Reisija' to 'Isik' to prevent data redundancy when a passenger is a registered person."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": true,
+      "justification": "The use case naming is inconsistent. Most use cases use the imperative form (e.g., 'Lisa uus kultuurireis', 'T\u00fchista kultuurireis'), but the use case 'Identifitseerib ennast' uses the indicative form."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All states in the 'Kultuurireisi eluts\u00fcklid' state diagram are reachable via transitions from the initial state."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All actions in the provided activity diagrams (Joonis3 and Joonis4) are reachable through the defined control flows."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": true,
+      "detected": false,
+      "justification": "All relationships in the class and conceptual diagrams include valid multiplicity indicators (e.g., 1, 0..*)."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The use case diagram 'Kultuurireiside funktsionaalne alls\u00fcsteem' contains 13 use cases, which exceeds the threshold of 10 central elements."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No single class or table was found to have 6 or more visual connection lines on a single diagram page (The maximum found was 5 for 'Kultuurireis')."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": true,
+      "justification": "On the DDL diagram (Page 14), the connection between 'Klienditellimus' (bottom left) and 'Klienditellimuse_seisundi_liik' (top left) spans the full height of the diagram, which is visually more than twice the average distance of closely clustered elements (e.g., 'Klienditellimus' to 'Reisija')."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": true,
+      "justification": "On the activity diagram 'Joonis4', the action 'S\u00fcsteem kontrollib, kas kultuurireisil on aktiivseid broneeringuid' starts with the noun 'S\u00fcsteem' instead of an active verb."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No classes, tables, attributes, or use cases were found with names of 3 characters or less (The element 'Aeg' is an Actor, not a class/table/attribute)."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class names start with an uppercase letter and are singular (e.g., 'Kultuurireis', 'Isik')."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All attribute/column names start with a lowercase letter (e.g., 'aadress', 'hind')."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All database table names are singular (e.g., 'Kultuurireis', 'Amet')."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No inappropriate prefixes (Hungarian notation) were found in class, table, or attribute names."
+    }
+  ]
+}

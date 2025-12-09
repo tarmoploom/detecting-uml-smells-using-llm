@@ -1,0 +1,115 @@
+{
+  "file_name": "Filmid",
+  "timestamp": "2025-12-09T14:03:22Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All diagrams in the provided file contain model elements."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the Use Case diagram (Page 2), all use cases are associated with an actor, either directly (yellow ovals) or indirectly via inclusion/generalization relationships (the grey oval 'Tuvasta kasutaja' is connected to use cases that have actors)."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No distinct use cases with synonymous names describing the same activity were found for the same actor."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate element names were found within the same package."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Tables appear to use Foreign Keys correctly to reference data (e.g., 'riik_kood') without storing redundant value copies (like 'riik_nimetus') in the referencing table."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All Use Cases on Page 2 start with a verb (e.g., 'Vaata', 'Tuvasta', 'L\u00f5peta'), maintaining a consistent naming form."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the State Diagram (Page 11), all states ('Ootel', 'Aktiivne', etc.) are reachable from the Start state via the defined transitions."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All actions in the Activity Diagrams (Pages 3 and 4) have incoming flows and are reachable from the Start node."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Class and Database diagrams display multiplicity (e.g., '1', '0..*') on the association ends where applicable."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The Use Case diagram 'Filmide funktsionaalne alls\u00fcsteem' (Page 2) contains 11 central elements (Use Cases), which exceeds the threshold of 10."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No single class or table in the Class/Database diagrams has 6 or more visual connection lines. (Note: The Use Case 'Tuvasta kasutaja' has 7 connections, but this rule applies to Class or Database diagrams)."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The layout of the diagrams is balanced, and related elements are placed in reasonable proximity."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "On the Activity Diagram (Page 4), the actions 'Filmi aktiveerimine edukas' and 'Filmi aktiveerimine eba\u00f5nnestub' start with a Noun ('Filmi') instead of an active verb."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute, or use case names were found to be 3 characters or less (excluding standard abbreviations like 'id' inside tags or state names which are not covered by the rule)."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All Class names start with an uppercase letter and are singular (e.g., 'Isik', 'Film')."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute and column names start with lowercase letters (e.g., 'nimetus', 'e_meil')."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Table names are singular (e.g., 'Isik', 'Film', 'Klient')."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No hungarian notation or type prefixes (e.g., tbl_, str) were found in class, table, or attribute names."
+    }
+  ]
+}

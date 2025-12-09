@@ -1,0 +1,115 @@
+{
+  "file_name": "Labor",
+  "timestamp": "2025-12-09T13:09:00Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Page 18 ('Diagram: Klassifikaatorite register (transformed)') is completely empty. Page 1 ('Diagram: Anal\u00fc\u00fcs') contains a container 'class Anal\u00fc\u00fcs' but no internal modeling elements."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases in the 'CNV-de funktsionaalse alls\u00fcsteemi kasutusjuhtude diagramm' (Page 3) are associated with actors either directly or through <<include>> relationships to use cases that are connected to actors."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No use cases with synonymous names describing the same activity were found."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No distinct model elements with the same name were found within the same package scope."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No obvious redundant data columns (denormalization) without foreign keys were detected across the transformed database tables."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use case naming appears consistent (e.g., 'Tuvasta', 'Muuda', 'Vaata', 'Lisa'), all starting with verbs."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All states in the 'CNV seisundidiagramm' (Page 6) are reachable via transitions."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All actions in the activity diagrams (Pages 4 and 5) are reachable from the Start node."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": true,
+      "detected": true,
+      "justification": "On Page 7 and Page 16, the relationship between 'Proband' and 'Anal\u00fc\u00fcs' ('+Peres esimesena...') has a multiplicity indicator ('0..1') on the Anal\u00fc\u00fcs end but lacks a multiplicity indicator on the Proband end."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The 'Klassifikaatorite register' diagram (Page 8) contains 16 central class elements (e.g., Klassifikaator, Positsioon plaadil, T\u00e4hendus, etc.), exceeding the limit of 10."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": true,
+      "detected": true,
+      "justification": "On Page 8, the class 'Klassifikaator' is visually connected to 15 other classes (via generalization), exceeding the limit of 6 connections."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": true,
+      "justification": "On Page 21 ('CNVde register (transformed)'), the vertical distance between the 'CNV' table and the 'Analyys' table is significantly larger (more than twice) than the distance between 'CNV' and other related tables like 'Kromosoom' or 'CNV_annotatsioon'."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "On Page 5, the action 'T\u00f6\u00f6 l\u00f5pp' (Work end) is a noun phrase, not starting with an active verb. On Page 4, the actions 'L\u00f5ppenud CNV lisamisega' use a past participle rather than an imperative verb."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": true,
+      "detected": true,
+      "justification": "The class names 'DNA' (Page 11) and 'CNV' (Page 9) consist of 3 characters, which meets the criteria for being too short (3 or less)."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class names begin with uppercase letters and appear to be singular (e.g., 'Anal\u00fc\u00fcs', 'Patsient')."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": true,
+      "detected": true,
+      "justification": "In the 'DNA' class (Page 11), attributes 'DNA_karp', 'DNA_kontsentratsioon', and 'DNA_kood' start with an uppercase letter."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Table names in the transformed diagrams (e.g., 'Analyys', 'Patsient') are singular."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No Hungarian notation or type prefixes were found specifically on Class, Table, or Attribute names (e.g., 'Analyys', 'nimi', 'kood'). Note: Prefixes like 'pkg' and 'act' appear on Diagram/Package names, but strictly not on Classes/Tables/Attributes."
+    }
+  ]
+}

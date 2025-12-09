@@ -1,0 +1,115 @@
+{
+  "file_name": "Padel",
+  "timestamp": "2025-12-09T13:34:35Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All pages in the PDF contain diagrams or model information; no empty diagrams were found."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the use case diagram (Page 2), all use cases (including included ones like 'Authenticate user') are visually connected to at least one actor (Player, Administrator, Referee, or Organization Representative) either directly or through connections to other use cases."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The use case diagram does not contain distinct use cases with synonymous names (e.g., 'Create Tournament' and 'Register Tournament') associated with the same actor. Only 'Register tournament' appears as a visual oval."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate model element names were found within the same package."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "The transformed database diagrams use foreign keys (e.g., *_id, *_code) to reference data. No redundant data columns (denormalization) without foreign keys were identified."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use case naming is consistent, following the Verb-Noun pattern (e.g., 'Register tournament', 'Modify tournament', 'View registered pairs')."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the State Diagram (Page 10), all states (Pending, Active, Cancelled, Deleted, Completed) have incoming transitions and are reachable from the Initial state."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the Activity Diagrams (Page 3 and Page 4), all actions are part of the flow and reachable from the Start node."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All associations in the class and conceptual diagrams display multiplicity indicators at both ends (e.g., 1..0..*) where applicable."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The 'Tournaments functional subsystem' use case diagram (Page 2) contains 14 visual use cases (ovals), which exceeds the threshold of 10."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": true,
+      "detected": true,
+      "justification": "The 'tournament' element in the 'Tournaments register (transformed)' diagram (Page 12) has 7 visual connection lines to other tables (organizer_person, referee_person, tournament_category, tournament_status, tournament_pair, tournament_court_link, player_tournament_points), exceeding the limit of 6."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": true,
+      "justification": "On the 'Preliminary conceptual model' (Page 5), the distance between the related elements 'Tournament' (top) and 'Person' (bottom, connected via 'is hosted by'/'is officiated by') spans the entire vertical length of the diagram, which is more than twice the average distance of closer relationships like 'Person' to 'Account'."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases and activity diagram actions start with active verbs (e.g., 'Register', 'Create', 'Navigate', 'Select')."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute, or use case names were found to be 3 characters or less (e.g., 'code' and 'name' are 4 characters)."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": true,
+      "detected": true,
+      "justification": "In the transformed diagrams (Pages 12-16), elements representing classes/tables start with lowercase letters (e.g., 'tournament', 'person', 'court'). Additionally, the class 'PlayerTournamentPoints' (Page 5) is plural."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attributes and columns start with lowercase letters (e.g., 'name', 'created_at')."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": true,
+      "detected": true,
+      "justification": "The table 'player_tournament_points' in the 'Players register (transformed)' diagram (Page 13) has a plural name."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No Hungarian notation or type prefixes (like tbl_, uc_) were found in element names."
+    }
+  ]
+}

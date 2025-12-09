@@ -1,0 +1,115 @@
+{
+  "file_name": "Tarkvaraarenduse_tellimused",
+  "timestamp": "2025-12-09T13:41:45Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The diagram '\u00dclesannete registri eskiismudel' on page 9 is empty."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": true,
+      "justification": "In the use case diagram '\u00dclesannete funktsionaalne alls\u00fcsteem' (page 2), the use case 'Tuvasta kasutaja' is not associated with any actor."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate use case names associated with the same actor were found."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No packages containing multiple elements with the same name were found."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No obvious redundant data columns without foreign keys were found."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use case naming appears consistent (Verb-Noun structure in Estonian)."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": true,
+      "justification": "In the state diagram '\u00dclesande seisundidiagramm' (page 7), the state 'L\u00f5petatud' has no incoming transitions, making it unreachable from the start state."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All actions in the activity diagrams appear to be reachable."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All relevant relationships in class/database diagrams have multiplicity indicators."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The use case diagram '\u00dclesannete funktsionaalne alls\u00fcsteem' (page 2) contains 16 central elements (use cases), which exceeds the limit of less than 10."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": true,
+      "detected": true,
+      "justification": "In the diagram '\u00dclesannete register' (page 8), the class '\u00dclesanne' has 7 visual connection lines to other classes (Projekt, T\u00f6\u00f6taja, Klassifikaator, Vastutaja_\u00fclesandes, Tagasil\u00fckkamise_p\u00f5hjendus, T\u00fchistamise_p\u00f5hjendus, Ootele_panemise_p\u00f5hjendus), exceeding the limit of less than 6."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "No elements were found to be excessively distant from related elements."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "In the activity diagram '\u00dclesande kinnitamise tegevusdiagramm' (page 3), the action '\u00dclesande kinnitamise otsustamine' is a noun phrase ('Deciding...') rather than starting with an active verb (e.g., 'Otsusta...')."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No element names with 3 or fewer characters were found (excluding standard abbreviations like 'id' within stereotypes or suffixes)."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class names start with uppercase letters and are singular."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute/column names start with lowercase letters."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Table names are singular."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No invalid Hungarian notation or prefixes were found in element names."
+    }
+  ]
+}

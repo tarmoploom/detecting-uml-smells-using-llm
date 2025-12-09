@@ -1,0 +1,115 @@
+{
+  "file_name": "Hoonete_typoloogia",
+  "timestamp": "2025-12-09T12:27:54Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All diagrams in the provided file contain elements and are not empty."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases are associated with an actor, either directly (e.g., 'Koosta arhet\u00fc\u00fcp' to 'Tehnik') or indirectly via <<include>> relationships from use cases that are connected to actors (e.g., 'Vaata kinnitamata arhet\u00fc\u00fcpe' is included by 'Koosta arhet\u00fc\u00fcp')."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No use cases with redundant names describing the same activity were found."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate model element names were found within the same package."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No redundant data columns lacking Foreign Keys were identified in the data models."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use case naming is consistent, using the 'Verb + Noun' format (e.g., 'Koosta arhet\u00fc\u00fcp', 'Tuvasta kasutaja')."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All states in the state diagram (Page 7) are reachable via transitions from the start state or other reachable states."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All actions in the activity diagrams (Pages 3 and 4) are reachable through the defined flows and decisions."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All relationships in the class and conceptual diagrams display multiplicity indicators at both ends (e.g., 1..0..*)."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The Use Case diagram 'Arhet\u00fc\u00fcpide funktsionaalne alls\u00fcsteem' on Page 2 contains exactly 10 central elements (use cases), which meets the threshold of 10 or more central elements."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No single class or table has 6 or more visual connection lines. The maximum found is 5 (for the 'Arhet\u00fc\u00fcp' class/table)."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "The layout of the diagrams is reasonably compact, with no elements placed at an excessive distance (more than twice the average) from their related elements."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases and activity actions start with active verbs (e.g., 'Koosta', 'Vaatab', 'Otsib')."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute, or use case names were found to be 3 characters or less. (Note: 'Isik' is 4 characters)."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class names start with an uppercase letter and are singular (e.g., 'Arhet\u00fc\u00fcp', 'Hoone')."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All attribute/column names start with a lowercase letter (e.g., 'nimetus', 'kood')."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All table names are singular (e.g., 'Isik', 'Hoone', 'Arhetuup')."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No Hungarian notation or type prefixes (like 'tbl_', 'str') were found in class, table, or attribute names."
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "file_name": "Lennufirma",
+  "timestamp": "2025-12-09T13:27:10Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All diagrams in the provided PDF contain visible elements and are not empty."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases in the 'Lendude funktsionaalne alls\u00fcsteem' diagram (Page 2) are connected to an actor, either directly or via 'include' relationships to use cases that are connected to actors."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No actors were found associated with multiple use cases having synonymous names."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No distinct elements with identical names were found within the same package scope."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No redundant data copies without Foreign Keys were detected in the database models. Data duplication (like 'lennukituup_kood' in 'Lend') is supported by Foreign Key constraints."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use case naming is consistent on Page 2, using the imperative verb form (e.g., 'Vaata', 'Registreeri', 'T\u00fchista')."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All states in the 'Lennu seisundidiagramm' (Page 12) are reachable via transitions from the start node."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All actions in the activity diagrams (Pages 3 and 4) are reachable from the start nodes."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All visible relationships in the class and database diagrams define multiplicity (e.g., 0..*, 1) at both ends."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The Use Case diagram on Page 2 contains 19 central elements (use cases). The State diagram on Page 12 contains 13 central elements (states). Both exceed the threshold of 10."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": true,
+      "detected": true,
+      "justification": "On Page 11 (Class Diagram), the class 'Lend' has 7 visual connection lines to other elements. On Page 19 (Database Diagram), the table 'Lend' has 6 visual connection lines."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "The layout of the diagrams is generally compact and consistent; no significant outliers in element distance were observed."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": true,
+      "detected": false,
+      "justification": "All use cases and activity actions start with a verb (e.g., 'Vaata', 'Algatab', 'M\u00e4\u00e4rab')."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute, or use case names were found with 3 or fewer characters."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The class/table name 'kuup\u00e4evade_vahemiku_maandumiskeeld' (Page 14 and Page 23) starts with a lowercase letter."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": true,
+      "detected": true,
+      "justification": "The attribute 'Kood' in class 'Lennujaam' (Page 14) starts with an uppercase letter."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": true,
+      "detected": true,
+      "justification": "The database table 'Lennujaama_vastuvoetavad_lennukituubid' (Page 23) uses a plural name ('lennukituubid')."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No type prefixes (like tbl_, str_) were found in element names. Prefixes like 'lj_' in 'lj_nimetus' appear to be abbreviations of the table name, not data type indicators."
+    }
+  ]
+}

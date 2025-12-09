@@ -1,93 +1,113 @@
 {
   "file_name": "Tooaeg",
+  "timestamp": "2025-12-09T13:47:20Z",
+  "llm_model": "Gemini 3 Pro",
   "smell_analysis": [
     {
       "rule_id": "G5.1",
+      "actual": false,
       "detected": false,
       "justification": "All diagrams in the provided file contain visible model elements."
     },
     {
       "rule_id": "G5.2",
+      "actual": false,
       "detected": true,
-      "justification": "On the Use Case diagram (Page 2), the use case 'Kustuta töögraafik' (located at the bottom right) is not visually associated with any actor, whereas the adjacent use case 'Kustuta mitteaktiivne töögraafik' is connected to the actor 'Aeg'."
+      "justification": "On the Use Case diagram (Page 2), the use case 'Kustuta t\u00f6\u00f6graafik' (located at the bottom right) is not visually associated with any actor, whereas the adjacent use case 'Kustuta mitteaktiivne t\u00f6\u00f6graafik' is connected to the actor 'Aeg'."
     },
     {
       "rule_id": "G6.1",
+      "actual": false,
       "detected": false,
       "justification": "No duplicate use case names associated with the same actor were found on the use case diagram."
     },
     {
       "rule_id": "G6.2",
+      "actual": true,
       "detected": true,
-      "justification": "On Page 1, inside the package symbol 'Töögraafiku funktsionaalne allsüsteem', the function/element names '+ Kustuta töögraafik' and '+ Lisa töövälistus' are listed twice, indicating duplicate named elements within the same package."
+      "justification": "On Page 1, inside the package symbol 'T\u00f6\u00f6graafiku funktsionaalne alls\u00fcsteem', the function/element names '+ Kustuta t\u00f6\u00f6graafik' and '+ Lisa t\u00f6\u00f6v\u00e4listus' are listed twice, indicating duplicate named elements within the same package."
     },
     {
       "rule_id": "G6.3",
+      "actual": false,
       "detected": false,
       "justification": "No redundant data copies (denormalization) without foreign key connections were found in the class or transformed database diagrams."
     },
     {
       "rule_id": "G8.1",
+      "actual": false,
       "detected": false,
       "justification": "Use case naming is consistent; all use cases start with a verb (e.g., 'Vaata', 'Koosta', 'Kinnita')."
     },
     {
       "rule_id": "G15.1",
+      "actual": false,
       "detected": false,
-      "justification": "All states in the state diagram 'Töögraafiku seisundidiagramm' (Page 11) are reachable via transitions from the start node."
+      "justification": "All states in the state diagram 'T\u00f6\u00f6graafiku seisundidiagramm' (Page 11) are reachable via transitions from the start node."
     },
     {
       "rule_id": "G15.2",
+      "actual": false,
       "detected": false,
       "justification": "All actions in the activity diagrams (Pages 3 and 4) are reachable through the defined decision flows."
     },
     {
       "rule_id": "G15.3",
+      "actual": false,
       "detected": false,
       "justification": "All associations in the class and database diagrams include multiplicity indicators (e.g., '1', '0..*') at both ends."
     },
     {
       "rule_id": "S1.1",
+      "actual": true,
       "detected": true,
-      "justification": "The Use Case diagram 'Töögraafiku funktsionaalne allsüsteem' (Page 2) contains 14 use cases (central elements), which exceeds the threshold of 10."
+      "justification": "The Use Case diagram 'T\u00f6\u00f6graafiku funktsionaalne alls\u00fcsteem' (Page 2) contains 14 use cases (central elements), which exceeds the threshold of 10."
     },
     {
       "rule_id": "S1.2",
+      "actual": false,
       "detected": false,
       "justification": "No single class or table was found to have 6 or more visual connection lines on any single diagram page (the maximum observed was 5)."
     },
     {
       "rule_id": "S2.1",
+      "actual": true,
       "detected": false,
       "justification": "The spatial layout of the diagrams is balanced, with no related elements placed excessively far apart compared to the average distance."
     },
     {
       "rule_id": "N1.1",
+      "actual": false,
       "detected": false,
       "justification": "All use cases and activity actions begin with active verbs (e.g., 'Vaata', 'Vali', 'Kustuta')."
     },
     {
       "rule_id": "N1.2",
+      "actual": false,
       "detected": false,
       "justification": "No class, table, attribute, or use case names were found to be 3 characters or less. (Note: The actor 'Aeg' is 3 characters but actors are excluded from this rule)."
     },
     {
       "rule_id": "N3.1",
+      "actual": false,
       "detected": false,
-      "justification": "All class names start with an uppercase letter and are singular (e.g., 'Isik', 'Kauplus', 'Töötaja')."
+      "justification": "All class names start with an uppercase letter and are singular (e.g., 'Isik', 'Kauplus', 'T\u00f6\u00f6taja')."
     },
     {
       "rule_id": "N3.2",
+      "actual": false,
       "detected": false,
       "justification": "All attribute and column names start with a lowercase letter (e.g., 'isik_id', 'aadress')."
     },
     {
       "rule_id": "N3.3",
+      "actual": false,
       "detected": false,
       "justification": "Table names in the transformed diagrams are singular (e.g., 'Tootaja', 'Toograafik')."
     },
     {
       "rule_id": "N4.1",
+      "actual": false,
       "detected": false,
       "justification": "No prefixes indicating element types (Hungarian notation) were found on classes, tables, or attributes."
     }

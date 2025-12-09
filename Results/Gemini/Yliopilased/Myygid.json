@@ -1,0 +1,115 @@
+{
+  "file_name": "Myygid",
+  "timestamp": "2025-12-09T13:30:35Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All diagrams in the provided document contain elements; no empty diagrams were found."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": true,
+      "justification": "In the Use Case diagram 'Tellimuste funktsionaalne alls\u00fcsteem' (Page 11), the use case 'Tuvasta kasutaja' is visually isolated and not associated with any actor."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate use case names associated with the same actor were found."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No distinct model elements with the same name were found within the same package scope."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No redundant copies of data values disconnected by Foreign Keys were detected in the database schema diagrams."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": true,
+      "detected": true,
+      "justification": "In the Use Case diagram (Page 11), there is an inconsistent naming convention. Most use cases start with a verb (e.g., 'Koosta tellimus', 'T\u00fchista esitatud tellimus'), but 'Klient kustutab poolelioleva tellimuse' and 'Aeg kustutab poolelioleva tellimuse' start with a noun (Subject)."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All states in the state diagram 'Tellimuse seisundidiagramm' (Page 3) appear to be reachable from the start node."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All actions in the activity diagrams (Pages 12, 13, 14) appear to be reachable."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All relationships in the class and database diagrams define multiplicity (e.g., 1, 0..*, 0..1)."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The Use Case diagram 'Tellimuste funktsionaalne alls\u00fcsteem' (Page 11) contains 13 central elements (use cases), which exceeds the threshold of 10."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": true,
+      "detected": true,
+      "justification": "In the Class diagram 'Tellimuste register' (Page 2), the class 'Tellimus' has 6 visual connection lines to other classes (Tellimuse rida, Klient, T\u00f6\u00f6taja, Pank, Pakiautomaat, Tellimuse_seisundi_liik), meeting the threshold of 6."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": true,
+      "justification": "In the Use Case diagram (Page 11), the distance between the actor 'Apteeker' and the use case 'Vaata tellimuste ja saadetiste seisu' is significantly large (crossing the entire width of the diagram), exceeding twice the average distance between connected elements."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "In the Use Case diagram (Page 11), the use cases 'Klient kustutab poolelioleva tellimuse' and 'Aeg kustutab poolelioleva tellimuse' start with nouns ('Klient', 'Aeg') instead of active verbs."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute, or use case names were found with 3 or fewer characters (The Actor 'Aeg' has 3 characters, but the rule restricts the check to classes, tables, attributes, or use cases)."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class names start with an uppercase letter and are singular (e.g., 'Tellimus', 'Klient')."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All attribute/column names start with a lowercase letter (e.g., 'summa', 'eesnimi')."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All database table names are singular (e.g., 'Tellimus', 'Isik')."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No type prefixes (Hungarian notation) were found in class, table, or attribute names."
+    }
+  ]
+}

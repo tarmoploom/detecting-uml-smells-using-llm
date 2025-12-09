@@ -1,0 +1,115 @@
+{
+  "file_name": "Kaubad_turuplatsil",
+  "timestamp": "2025-12-09T12:36:53Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All diagrams contain visual elements; no empty diagrams were found."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases in the 'Use Case model' diagram are associated with an actor, either directly or via \u00abinclude\u00bb relationships to other use cases connected to actors."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No use cases with redundant names describing the same activity for the same actor were found."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": true,
+      "detected": true,
+      "justification": "In the 'Diagram: subsystems' (Page 1), the package 'Classifier Register' lists the element 'Product Location' twice in its text content."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No redundant data copies lacking Foreign Key connections were found in the database diagrams. Similar columns (e.g., name, country_code) are properly linked via Foreign Keys."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": true,
+      "detected": true,
+      "justification": "In the 'Product Functional Subsystem' package on Page 1, the naming form of the listed use cases is inconsistent. One starts with a verb ('Change any product'), while another starts with a noun ('Seller hides product')."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All states in the 'State diagram' (Page 4) are reachable from the Start node."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All actions in the activity diagrams (Page 8 and 9) are reachable."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": true,
+      "detected": false,
+      "justification": "All relationships in class and database diagrams appear to have multiplicity indicators (e.g., 1, 0..*) at both ends."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The 'Use Case model' diagram (Page 7) contains 13 use cases (visual oval elements), which exceeds the threshold of 10 central elements."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": true,
+      "detected": true,
+      "justification": "On the 'Classifier Register' diagram (Page 6), the class 'Classifier' has 7 visual connection lines (inheritance relationships) to other classes (User Role, Product Location, Product category, Country, Product Status, Category Attribute, Category Attribute Unit), exceeding the limit of 6."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "The layout of elements in the diagrams is generally uniform, with no instances of distances exceeding twice the average."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases and activity actions start with active verbs (e.g., View, Search, Set, Insert, Save)."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No classes, tables, attributes, or use cases were found with names of 3 characters or less (e.g., 'User', 'Time', 'name' are 4 chars)."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": true,
+      "detected": false,
+      "justification": "All class names start with an uppercase letter and are singular."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All attribute/column names start with a lowercase letter."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All database table names are singular."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No element names were found using Hungarian notation or type prefixes/abbreviations (e.g., tbl_, str). 'app_user' uses a prefix, but it denotes the module/application context rather than the element type (table)."
+    }
+  ]
+}
