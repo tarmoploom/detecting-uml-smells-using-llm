@@ -1,0 +1,4 @@
+Autorent.pdf on siin kaustas puhas mudeli versioon (puuduvad lõhnad), millest loodi edasised ühesed ja mitmesed lõhna versioonid (Single) / (Multi) kausta.
+
+
+Puhta mudeli aluseks võeti Oppejou -> Autorent mudel.

@@ -4,8 +4,8 @@ Esitatud on kõige viimane mudelite versioon.
 
 
 
-Filmid.pdf, pärineb:
+*Filmid.pdf, pärineb:
 Arvestatud töövihiku projektid õppeainest "Andmebaasid I" 2025. aasta kevadest.
-Valitud on projektid, mis said arvestuse peale eksamisessiooni algust.
+Valitud on projekt, mis sai arvestuse peale eksamisessiooni algust.
 
-Esitatud on kõige viimane mudelite versioon.
+Esitatud on kõige viimane mudeli versioon.
