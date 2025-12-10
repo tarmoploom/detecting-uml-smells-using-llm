@@ -11,14 +11,14 @@ from datetime import datetime, timezone
 check_list = ["G5.1", "G5.2", "G6.1", "G6.2", "G6.3", "G8.1", "G15.1", "G15.2", "G15.3", "S1.1", "S1.2", "S2.1", "N1.1", "N1.2", "N3.1", "N3.2", "N3.3", "N4.1"]
 
 # Path Configuration
-end_path = "Yliopilased"
-llm_model_name = "Gemini 3 Pro"
+end_path = "Synthetic/Single"
+llm_model_name = "Claude Opus 4.5"
 
 # Calculate absolute paths based on script location
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
 # 1. Output Folder Path
-output_path = os.path.join(script_dir, "Results/Gemini", end_path)
+output_path = os.path.join(script_dir, "Results/Claude", end_path)
 
 # 2. Ground Truth Folder Path
 ground_truth_path = os.path.join(script_dir, "Data", end_path)

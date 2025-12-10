@@ -1,0 +1,115 @@
+{
+  "file_name": "s_02",
+  "timestamp": "2025-12-09T16:17:41Z",
+  "llm_model": "Claude Opus 4.5",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Page 13 'Autode register (T\u00f6\u00f6taja)' is an empty diagram. The diagram contains only the container label 'class Autode register (T\u00f6\u00f6taja)' with ZERO elements inside. Threshold is 0 elements. Since count = 0, smell IS present."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Analyzed use case diagrams on pages 2 and 3. On page 2, use cases 'Vaata aktiivseid autosid', 'Vaata k\u00f5iki autosid', 'Vaata autode koondaruannet' are connected to actors (Uudistaja, Klienditeenindaja, Juhataja, Klient, Autode haldur). 'Tuvasta kasutaja' is connected to 'S\u00fcsteem' which functions as an actor. On page 3, all use cases (Registreeri auto, L\u00f5peta auto, Muuda autot, Aktiveri auto, Muuda auto mittaktiivseks, Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid autosid, Unusta auto) are associated with actors Autode haldur and/or Juhataja. Every use case oval has at least 1 actor association."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Reviewed all use cases across pages 2 and 3. No two use cases have identical or similar activity names associated with the same actor. Each use case describes a distinct activity (Vaata/View, Registreeri/Register, L\u00f5peta/Terminate, Muuda/Modify, Aktiveri/Activate, Unusta/Forget, Tuvasta/Identify)."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Analyzed package diagram on page 1. Each package (Autode register, Isikute register, Klassifikaatorite register, T\u00f6\u00f6tajate register, Klientide register) contains uniquely named elements. No duplicate element names within any single package."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Analyzed database diagrams (pages 15-20). Similar column names like 'nimetus' appear in multiple classifier tables (Riik, Isiku_seisundi_liik, Tootaja_roll, etc.) but these represent different data contexts (each classifier has its own name). Shared data between tables is connected via FK relationships (e.g., isik_id, riik_kood). No redundant data without FK relationship detected."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases follow consistent verb-first naming pattern: 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Vaata k\u00f5iki autosid', 'Vaata autode koondaruannet', 'Registreeri auto', 'L\u00f5peta auto', 'Muuda autot', 'Aktiveri auto', 'Muuda auto mittaktiivseks', 'Unusta auto'. All start with active verbs (Tuvasta, Vaata, Registreeri, L\u00f5peta, Muuda, Aktiveri, Unusta)."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Analyzed state diagram on page 9. States: Algus (initial), Ootel, Aktiivne, Mitteaktiivne, L\u00f5petatud, Unustatud. All states are reachable: Algus\u2192Ootel (initial transition), Ootel\u2192Aktiivne, Ootel\u2192Unustatud, Aktiivne\u2192Mitteaktiivne, Aktiivne\u2192L\u00f5petatud, Mitteaktiivne\u2192Aktiivne, Mitteaktiivne\u2192L\u00f5petatud. Every state has at least one incoming transition path."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Analyzed activity diagram on page 4. All actions are reachable from start node: Algus\u2192'Vaata k\u00f5iki autosid mida saab l\u00f5petada'\u2192decision nodes\u2192'Otsi autot', 'Vali auto', 'L\u00f5peta valitud auto'. Flow paths connect all actions to the start node through the control flow."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Reviewed all class and database diagrams. All relationships have multiplicity indicators on both ends. Examples: Page 5 shows '1' and '0..*' multiplicities; Page 6 shows '0..*', '1', '0..1'; Database diagrams (pages 15-20) show multiplicities like '1', '0..*', '0..1' on all FK relationships."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Counted central elements on each diagram. Page 2: 4 use cases. Page 3: 7 use cases. Page 5: 3 classes. Page 6: 6 classes. Page 7: 6 classes. Page 8: 6 classes. Page 9: 6 states. Page 10: 5 classes. Page 11: 3 classes. Page 12: 7 classes. Page 14: 3 classes. Page 15: 4 tables. Page 16: 9 tables (Tootaja_roll, Isiku_seisundi_liik, Auto_kategooria_tyyp, Riik, Tootaja_seisundi_liik, Auto_kytuse_liik, Kliendi_seisundi_liik, Auto_mark, Auto_kategooria). Page 17: 3 tables. Page 18: 6 tables. Page 19: 2 tables. Page 20: 5 tables. Maximum count is 9 (page 16). Threshold is \u226510. Since 9 < 10, smell is NOT present."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Counted visual connection lines per element on each diagram. Page 18 'Autode register (Klassifikaator)': Auto has 5 visible connections (to Auto_kategooria_omamine, Auto_kytuse_liik, Auto_mark, Auto_seisundi_liik, Auto_kategooria_omamine FK). Page 20: Tootaja has 4 connections (Isik, Tootaja_seisundi_liik, Tootaja_rolli_omamine, self-reference mentor). Maximum across all diagrams is 5. Threshold is \u22656. Since 5 < 6, smell is NOT present."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Visual inspection of all diagrams shows elements are reasonably positioned with related elements placed in proximity. No relationship spans a distance greater than twice the average element distance on any diagram."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use case names start with active verbs: Tuvasta (Identify), Vaata (View), Registreeri (Register), L\u00f5peta (Terminate), Muuda (Modify), Aktiveri (Activate), Unusta (Forget). Activity diagram actions on page 4 also start with verbs: Vaata, Otsi, Vali, L\u00f5peta. No noun-first or passive form names found."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Reviewed all class, table, attribute, and use case names. Shortest names found: 'Isik' (4 chars), 'Auto' (4 chars), 'Riik' (4 chars). All names have \u22654 characters. Threshold is \u22643 characters. No names with \u22643 characters found, smell is NOT present."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class names start with uppercase and are singular: Isik, Kasutajakonto, T\u00f6\u00f6taja, Auto, Klassifikaator, Klient, Auto_kategooria, Auto_mark, etc. No lowercase-starting or plural class names found."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All attribute/column names start with lowercase: e_meil, eesnimi, isikukood, perenimi, reg_aeg, nimetus, on_aktiivne, auto_kood, mudel, etc. No uppercase-starting attribute/column names found."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All database table names are singular: Isik, Kasutajakonto, Riik, Tootaja, Tootaja_rolli_omamine, Auto, Auto_kategooria_omamine, Klient, etc. No plural table names found."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No type prefixes (tbl_, uc_, str, int, etc.) found in class, table, or attribute names. Prefixes found are PK_, FK_, pfK, IXFK_ which are explicitly allowed for indicating primary keys, foreign keys, and indexes per the rules."
+    }
+  ]
+}
