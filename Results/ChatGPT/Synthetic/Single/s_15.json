@@ -1,0 +1,115 @@
+{
+  "file_name": "s_15",
+  "timestamp": "2025-12-10T10:58:45Z",
+  "llm_model": "GPT-5.1",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No empty diagrams were found; each analyzed page that shows a clear diagram type (use case, activity, class, state, or database-style class) contains visible elements."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": true,
+      "justification": "On the use case diagram 'Autode halduse funktsionaalne alls\u00fcsteem (Muuda)' (page 3), the use case oval 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid autosid' appears to have no direct association line to any actor; it is only connected via 'include' relationships, so it is not visibly associated with an actor. "
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Across the use case diagrams on pages 2 and 3, no two or more use cases with names describing the same activity and associated with the same actor are clearly visible."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the package-style overview on page 1, the listed primary element names within each package section do not show clear duplicates within the same package; repeated tool-generated metadata-style labels are not treated as separate elements."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "The database-oriented diagrams on pages 14 to 19 do not clearly show two or more tables storing redundant copies of the same data value without a Foreign Key connection; identically common column themes are not enough to claim redundancy."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use case names on pages 2 and 3 appear consistently in active verb form such as 'Tuvasta', 'Vaata', 'Registreeri', 'Muuda', 'Aktiveeri', 'L\u00f5peta', and 'Unusta'."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the state diagram 'Auto seisundidiagramm' (page 9), the states 'Ootel', 'Aktiivne', 'Mitteaktiivne', 'L\u00f5petatud', and 'Unustatud' appear to be connected by visible transitions from the initial state, so no clearly unreachable state is shown."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the activity diagram 'Auto l\u00f5petamise tegevusdiagramm' (page 4), the visible actions such as 'Vaata...', 'Otsi autot', 'Vali auto', and 'L\u00f5peta valitud auto' appear connected through the flow from start to end, with no clearly unreachable action."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": true,
+      "detected": false,
+      "justification": "The class and database diagrams show multiplicities or standard FK-style connectors where applicable (e.g., pages 5, 6, 10 to 13, and 14 to 19), and no UML-style relationship line is clearly missing multiplicity indicators at both ends."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No single analyzed diagram clearly shows 10 or more central elements; the use case diagrams (pages 2 and 3), state diagram (page 9), and individual class/database diagrams appear below this threshold, and the overview/package page 1 is not counted for central-element totals."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No single class/table on the displayed class or database diagrams shows 6 or more distinct visible relationship lines on the same page; for example, 'Auto' on pages 17 and 18 appears to have fewer than six drawn connectors."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No relationship with a distance more than twice the average distance between elements is explicitly and unambiguously visible on any single diagram; the layouts do not present a clear, measurable outlier by visual inspection."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All visible use case names on pages 2 and 3 and the action names on page 4 appear to start with active verbs (e.g., 'Tuvasta', 'Vaata', 'Registreeri', 'Muuda', 'Aktiveeri', 'Unusta', 'Vali', 'Otsi')."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute/column, or use case name of 3 or fewer characters is clearly visible in the diagrams; the shortest prominent names such as 'Isik', 'Auto', and 'Riik' exceed three characters."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Visible class names in the conceptual class diagrams (e.g., 'Isik', 'Kasutajakonto', 'T\u00f6\u00f6taja', 'Klient', 'Auto', 'Klassifikaator') start with uppercase letters and do not appear plural."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute and column names in the class and database diagrams appear to start with lowercase letters (e.g., 'eesnimi', 'perenimi', 'isikukood', 'auto_kood', 'reg_number'), with no clear uppercase-starting attribute/column name shown."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database table names shown in the database-style diagrams (pages 14 to 19) appear to be singular entity names such as 'Isik', 'Kasutajakonto', 'Auto', 'Klient', 'Riik', and classifier tables; plural 'register' contexts are treated as registers and not flagged."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, or attribute names visibly use a type-indicating prefix such as 'tbl_' or 'uc_'; allowed prefixes like 'PK_' and 'FK_' appear only in key/constraint annotations."
+    }
+  ]
+}

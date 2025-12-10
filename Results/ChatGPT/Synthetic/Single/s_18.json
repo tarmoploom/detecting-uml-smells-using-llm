@@ -1,0 +1,115 @@
+{
+  "file_name": "s_18",
+  "timestamp": "2025-12-10T11:20:06Z",
+  "llm_model": "GPT-5.1",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No empty diagrams were found on pages 1-18; each page that appears to be a diagram contains named elements or listed content. "
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On the use case diagrams on pages 2 and 3, actors are shown alongside the use cases and no specific use case is explicitly visible as having no association to any actor. A clear unassociated oval is not evident from the provided content."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The use case names on pages 2 and 3 appear to describe distinct activities, and there is no explicit pair of differently named use cases shown as describing the same activity with the same actor."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the package-style overview on page 1, the listed elements within each package section do not visibly repeat the same primary element name within the same package. Repeated tool-like metadata is not clearly presented as separate elements."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Across the database diagrams on pages 13-18, no explicit case is shown where the same data value is redundantly stored in multiple tables without a foreign key connection. Identically themed columns are not sufficient evidence of denormalization by this rule."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use case names on pages 2 and 3 consistently appear to start with active verbs in the same language form, such as Tuvasta, Vaata, Registreeri, L\u00f5peta, Muuda, Aktiveeri, and Unusta."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the state diagram on page 8, states such as Aktiivne, Mitteaktiivne, L\u00f5petatud, Ootel, and Unustatud are shown, but the provided content does not unambiguously demonstrate that any named state lacks a reachable path."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the activity diagram on page 4, the visible action names appear arranged in a flow with decisions, and no action is explicitly indicated as unreachable."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "The class diagrams on pages 5-12 show multiplicities in several places, and the database diagrams on pages 13-18 use standard FK-style notation. No UML-style relationship is clearly visible as lacking multiplicity indicators at both ends."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The class diagram titled Klassifikaatorite register on page 7 appears to display 10 or more central elements, including Klassifikaator and multiple specific classifier classes such as Riik, Isiku_seisundi_liik, T\u00f6\u00f6taja_seisundi_liik, T\u00f6\u00f6taja_roll, Kliendi_seisundi_liik, Auto_mark, Auto_seisundi_liik, Auto_k\u00fctuse_liik, Auto_kategooria, and Auto_kategooria_t\u00fc\u00fcp."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No single class or table is explicitly shown on any one class or database diagram as having 6 or more distinct visible relationship lines. The provided content does not allow an unambiguous count meeting this threshold."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The PDF content does not provide an explicit, unambiguous visual indication that any pair of related elements is placed at a distance more than twice the average distance between elements on a diagram."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All clearly listed use case names on pages 2 and 3 start with active verbs. The activity diagram on page 4 shows action-like phrases starting with verbs such as Vaata, Otsi, Vali, and L\u00f5peta, and decision questions beginning with Kas are not unambiguously presented as actions."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute, or use case name is clearly visible as being 3 or fewer characters long. Examples like Auto, Isik, Riik, and Klient exceed the threshold."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Visible class names such as Isik, T\u00f6\u00f6taja, Auto, Klient, and Klassifikaator begin with uppercase letters and are not explicitly pluralized."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute and column names shown across class and database diagrams appear to start with lowercase letters, for example isikukood, eesnimi, perenimi, reg_aeg, auto_kood, and vin_kood."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database table names visible on pages 13-18, such as Isik, Kasutajakonto, Klient, Auto, Auto_mark, and Riik, are not explicitly plural."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute, or use case name is clearly shown with a type-indicating prefix or abbreviation like 'tbl_', 'uc_', or 'str'. The visible PK_, FK_, and IXFK_ style prefixes appear only in constraint or index annotations, which are allowed or not treated as element names by this rule."
+    }
+  ]
+}

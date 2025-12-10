@@ -1,0 +1,115 @@
+{
+  "file_name": "s_09",
+  "timestamp": "2025-12-10T02:00:22Z",
+  "llm_model": "GPT-5.1",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No empty diagrams were found. The PDF shows labeled diagrams across pages 1-19 with visible elements or structured content. "
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No explicit case was visible where a use case oval is not associated with any actor on the use case diagrams on pages 2 and 3. The overview list on page 1 is a package/overview style listing and is excluded by the rule note. "
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No two or more use cases were clearly shown to describe the same activity and be associated with the same actor on pages 2 or 3. The naming appears distinct and no explicit actor-sharing duplication is unambiguously visible. "
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the package-style overview on page 1, no repeated primary element names within the same package are explicitly visible. Repeated classifier-type text such as 'Klassifikaatori t\u00fc\u00fcp' on pages 7-8 appears to be tool metadata and is excluded by the clarification. "
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": true,
+      "detected": false,
+      "justification": "No explicit denormalized redundant columns storing the same data value across tables without a foreign key connection are clearly shown in the database diagrams on pages 14-19. Shared generic column names like 'nimetus' or standard identifiers are not sufficient to trigger this rule. "
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use case names on page 2 ('Tuvasta kasutaja', 'Vaata ...') and page 3 ('Registreeri auto', 'L\u00f5peta auto', 'Muuda ...', 'Aktiveeri auto', 'Unusta auto') consistently start with verbs, so no inconsistent form is clearly visible. "
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "On the state diagram 'Auto seisundidiagramm' (page 9), no state is explicitly shown as unreachable based on the visible content. Without an unambiguous missing incoming path, this rule is not triggered. "
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On the activity diagram 'Auto l\u00f5petamise tegevusdiagramm' (page 4), no action is explicitly shown as unreachable. The flow appears to include decisions and repeated paths, with no clear isolated action. "
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Class relationships shown on pages 5-13 include visible multiplicities such as '1', '0..*', and '0..1'. Database diagrams on pages 14-19 use FK-style notation, which is exempt. No UML-style relationship lacking multiplicity at both ends is explicitly visible. "
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No single eligible diagram clearly displays 10 or more central elements. The use case diagrams show about 4 (page 2) and about 7 (page 3) use cases; the state diagram shows about 5 states (page 9); and the larger database/class diagrams appear below the threshold based on visible elements. Packages and overview elements on page 1 are excluded. "
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class or table is explicitly shown with 6 or more distinct visible relationship lines on any single class or database diagram page. The parsed content indicates typical few associations/FKs per element, and no clear hub with 6+ separate drawn lines is unambiguously visible. "
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The PDF text does not provide explicit visual evidence that any pair of related elements is placed at a distance more than twice the average distance on a diagram. Without clear, unambiguous layout indication, this rule is not triggered. "
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use case names on pages 2-3 appear to start with active verbs. Activity diagram labels on page 4 include actions like 'Vaata', 'Otsi', 'Vali', 'L\u00f5peta', which also begin with verbs. No explicit non-verb-starting action or use case is clearly visible. "
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute, or use case name of 3 or fewer characters is clearly visible. Common elements such as 'Isik', 'Auto', 'Riik', and longer attribute/column names exceed this threshold. "
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Entity class names visible across class diagrams (pages 5-13) such as 'Isik', 'T\u00f6\u00f6taja', 'Klient', 'Kasutajakonto', and 'Auto' start with uppercase letters and appear singular. No explicit lowercase-starting or plural entity class name is shown. "
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute and column names visible in class and database diagrams (pages 6, 11-12, 14-19) appear to start with lowercase letters (e.g., 'e_meil', 'eesnimi', 'isikukood', 'auto_kood'). No explicit uppercase-starting attribute/column name is visible. "
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database table names shown in the database diagrams (pages 14-19) appear singular (e.g., 'Isik', 'Kasutajakonto', 'Klient', 'Auto', 'Riik', 'Auto_mark'). No explicit plural table name that violates the rule is visible. "
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, or attribute names visibly use type-indicating prefixes like 'tbl_', 'uc_', or 'str'. Constraint/index prefixes such as 'PK_', 'FK_', 'pfK_', or 'IXFK_' appear in database notation and are explicitly allowed. "
+    }
+  ]
+}

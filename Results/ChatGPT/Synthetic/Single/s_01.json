@@ -1,0 +1,115 @@
+{
+  "file_name": "s_01",
+  "timestamp": "2025-12-10T00:16:56Z",
+  "llm_model": "GPT-5.1",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Reviewed the diagrams visible across the PDF (package overview on p1, use case diagrams on p2-p4, activity diagram on p5, class/conceptual diagrams on p6-p9 and p11-p14, state diagram on p10, and database-style diagrams on p15-p20). None appear to be empty. "
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the use case diagrams where use cases are clearly listed (p3 and p4), actors are present and no use case is explicitly shown as unassociated with all actors. The text-list functions inside the package/overview on p1 were not evaluated for this rule, per the note."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Within the visible use case diagrams (notably p3 and p4), no two or more use cases with names describing the same activity and associated with the same actor are explicitly shown."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On the package-style overview diagram (p1), there is no clear evidence of multiple model elements with the same primary element name within the same package. Repeated classifier-type text such as 'Klassifikaatori t\u00fc\u00fcp' (seen on p8-p9) appears to be display metadata and is not treated as separate model elements."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Across the database-style diagrams (p15-p20), no explicit case is visible where two or more tables store redundant copies of the same data value without a foreign key connecting them. Repeated generic columns or attributes like names/identifiers are not sufficient to trigger this rule."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use case names visible on p3 and p4 consistently appear to be verb-initiated forms (e.g., 'Tuvasta kasutaja', 'Vaata ...', 'Registreeri auto', 'Muuda ...', 'Aktiveeri auto', 'Unusta auto'), so no inconsistent form is explicitly shown."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The state diagram on p10 lists states (Aktiivne, Mitteaktiivne, L\u00f5petatud, Ootel, Unustatud) with a clear start node ('Algus'). The parsed content does not unambiguously show any state that cannot be reached, so no violation is explicitly visible."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "The activity diagram on p5 shows a coherent-looking flow of steps and decisions (e.g., 'Vaata ...', 'Otsi autot', 'Vali auto', 'L\u00f5peta valitud auto'). No action is explicitly shown as unreachable in the visible content."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "In the class/conceptual diagrams (e.g., p6-p9, p11-p14), multiplicity indicators like '1', '0..*', and '0..1' are visible near associations. In the database-style diagrams (p15-p20), FK-style relationships are present; per the interpretation rules, these do not trigger G15.3 even if UML-style multiplicity labels are not fully printed."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No single analyzed diagram clearly shows 10 or more central elements of the specified types. The use case diagrams on p3 (about 4 use cases) and p4 (about 7 use cases) are below the threshold. The state diagram on p10 shows fewer than 10 states. The database-style 'Klassifikaatorite register' page (p16) appears to show about 9 tables. The package/overview on p1 is treated as an overview/context-style diagram, so its listed items are not counted."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class/table is explicitly shown with 6 or more distinct visible relationship lines on a single diagram page based on the available text. Without unambiguous visual confirmation of separately drawn lines, this rule is not triggered."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The parsed content does not provide precise visual layout distances. No explicit, unambiguous evidence is visible that the distance between related elements exceeds twice the average distance on any diagram."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Visible use case names on p3-p4 begin with active verbs (e.g., 'Tuvasta', 'Vaata', 'Registreeri', 'L\u00f5peta', 'Muuda', 'Aktiveeri', 'Unusta'). The clearly action-like labels in the activity diagram on p5 also begin with verbs (e.g., 'Vaata', 'Otsi', 'Vali', 'L\u00f5peta'). No non-verb-starting use case/action name is explicitly shown."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute/column, or use case name of 3 or fewer characters is clearly visible. Apparent tags or annotations (e.g., stereotypes like \u00abid\u00bb, or OP references in text on p10) are not treated as element names."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Entity class names visible in conceptual class diagrams (e.g., 'Isik', 'T\u00f6\u00f6taja', 'Auto', 'Klient', 'Kasutajakonto') start with uppercase letters and appear singular. No explicit lowercase-starting or plural entity class name is visible."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute/column names visible across class and database-style diagrams (e.g., 'nimetus', 'on_aktiivne', 'eesnimi', 'perenimi', 'reg_aeg', 'vin_kood') appear to start with lowercase letters."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No plural database table name representing a singular domain object is explicitly visible. Plural 'register' style names (e.g., 'Isikute register', 'Autode register', 'Klientide register', 'T\u00f6\u00f6tajate register') are treated as domain register tables and are exempt per the interpretation rules."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, or attribute name is explicitly shown with a type-indicating prefix such as 'tbl_', 'uc_', or similar. Allowed database prefixes such as PK_, FK_, pfK_, and IXFK_ appear in constraints/index listings and do not trigger this rule."
+    }
+  ]
+}
