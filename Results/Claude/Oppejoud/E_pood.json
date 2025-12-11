@@ -1,0 +1,115 @@
+{
+  "file_name": "E_pood",
+  "timestamp": "2025-12-11T15:40:15Z",
+  "llm_model": "Claude Opus 4.5",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No empty diagrams were found. All 17 diagram pages contain at least one element. For example, page 1 contains package elements, page 2 contains use cases and actors, page 8 contains states, etc."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": true,
+      "justification": "On page 2 (Use case diagram 'Kaupade halduse funktsionaalne alls\u00fcsteem'), the use case 'Tuvasta kasutaja' (from L\u00e4bivad huvid) is a visual oval element that has NO direct actor associations. It is only connected via \u00abinclude\u00bb relationships from other use cases, but has zero direct lines to any actor. Therefore, smell IS present."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate activity use cases with the same actor found. The 'Vaata' (View) use cases on page 2 (Vaata kaupade koondaruannet, Vaata aktiivseid kaupu, Vaata k\u00f5iki kaupu, Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid kaupu) describe different viewing activities (summary report, active products, all products, pending products). The 'Muuda' use cases (Muuda kaupa, Muuda kaup mittaktiivseks) describe different modification activities. None are synonymous activities like 'Add Car'/'Register Car'."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate element names within the same package were found. Checking page 1 overview: Kaupade register contains Kauba_kategooria_omamine, Kauba_variant, Kaup, Nutitelefon - all unique. Klassifikaatorite register contains 16 unique classifiers. Each package has uniquely named elements."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No redundant data copies without FK relationships found. Common columns like 'nimetus' and 'on_aktiivne' appearing in multiple classifier tables (pages 12-13) represent different contextual data (each classifier has its own name/status), not duplicated values. The Kauba_kategooria table properly references Kauba_kategooria_tyyp via FK. All shared data is connected through FK relationships."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases on page 2 follow consistent verb-first naming in Estonian imperative form: Tuvasta (Identify), Vaata (View), L\u00f5peta (End), Registreeri (Register), Muuda (Modify), Aktiveeri (Activate), Unusta (Forget). No noun-first or mixed naming patterns found."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "On page 8 (Kauba seisundidiagramm), all states are reachable: Alg has initial marker; Ootel receives transition from Alg; Unustatud receives from Ootel; Aktiivne receives from Ootel and Mitteaktiivne; Mitteaktiivne receives from Aktiivne; L\u00f5petatud receives from Aktiivne and Mitteaktiivne. No unreachable states exist."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On page 3 (Kauba l\u00f5petamise tegevusdiagramm), all actions are reachable from the start node 'Algus': Vaata k\u00f5iki kaupu mida saab l\u00f5petada flows from Algus; decision nodes lead to Otsi kaupa, Vali kaup, L\u00f5peta valitud kaubad, and L\u00f5pp. The flow is complete with no unreachable actions."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All relationships in class and database diagrams have multiplicity indicators on both ends. Examples from page 10 (Kaupade register): '+registreerija 1' and '0..*'; from page 5 (Isikute register): '1' and '0..*' on all associations. Database diagrams (pages 12-17) show FK relationships with '0..*' and '1' multiplicities consistently."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Multiple diagrams exceed the threshold of \u226510 central elements: (1) Page 2 'Kaupade halduse funktsionaalne alls\u00fcsteem' contains 11 use cases (Tuvasta kasutaja, Vaata kaupade koondaruannet, L\u00f5peta kaup, Registreeri kaup, Muuda kaupa, Aktiveeri kaup, Muuda kaup mittaktiivseks, Vaata aktiivseid kaupu, Vaata k\u00f5iki kaupu, Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid kaupu, Unusta kaup). 11 \u2265 10 = TRUE. (2) Page 6 'Klassifikaatorite register' contains 12 classes (Klassifikaator, Riik, T\u00f6\u00f6taja_roll, Kauba_kategooria, Kauba_kategooria_t\u00fc\u00fcp, Br\u00e4nd, Ekraani_resolutsioon, Diagonaal, Protsessor, Sisem\u00e4lu, V\u00e4rv, Kaamera). 12 \u2265 10 = TRUE. (3) Page 10 'Kaupade register' contains 16 classes including referenced packages. 16 \u2265 10 = TRUE. (4) Page 12 'Klassifikaatorite register (transformed)' contains 15 tables. 15 \u2265 10 = TRUE."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": true,
+      "detected": true,
+      "justification": "Multiple elements have \u22656 visual connection lines: (1) Page 10 'Kaupade register': Nutitelefon has 8 visible connections (to Ekraani_resolutsioon, Diagonaal, Protsessor, Sisem\u00e4lu, V\u00e4rv, Kaamera-tagumine, Kaamera-eesmine, and Kaup inheritance). 8 \u2265 6 = TRUE. (2) Page 14 'Kaupade register (transformed)': Kaup table has 6 visible FK lines (to Brand, Kauba_seisundi_liik, Tootaja-registreerija, Tootaja-viimane_muutja, and from Kauba_variant and Kauba_kategooria_omamine). 6 \u2265 6 = TRUE. (3) Page 15: Nutitelefon has 6 FK connections (Diagonaal, Ekraani_resolutsioon, Protsessor, Sisemalu, Kaamera-eesmine, Kaamera-tagumine). 6 \u2265 6 = TRUE."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Cannot measure visual distances from document content representation. No evidence of unusually distant related elements can be determined from the available diagram information. Diagrams appear to have related elements grouped logically within their respective register sections."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases (page 2) start with active verbs in Estonian imperative form: Tuvasta, Vaata, L\u00f5peta, Registreeri, Muuda, Aktiveeri, Unusta. All activity diagram actions (page 3) also start with verbs: Vaata, Otsi, Vali, L\u00f5peta. No noun-first or passive form naming found."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All names have \u22654 characters. Checking short names: Isik (4 chars), Kaup (4 chars), Riik (4 chars), V\u00e4rv (4 chars), hind (4 chars). All attribute names like 'nimetus', 'kirjeldus', 'on_aktiivne', 'isik_id', 'kauba_kood' etc. are >3 characters. No names with \u22643 characters found."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class names start with uppercase and are singular: Isik, Kaup, Klient, T\u00f6\u00f6taja, Klassifikaator, Br\u00e4nd, Nutitelefon, Kasutajakonto, etc. No lowercase-starting class names or plural forms (which would end in '-d' or '-id' in Estonian) were found."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": true,
+      "detected": true,
+      "justification": "Several attribute/column names start with uppercase letters. On page 16 (Klientide register transformed): 'Kliendi_seisundi_liik_kood' starts with uppercase 'K'. On page 17 (T\u00f6\u00f6tajate register transformed): 'Tootaja_seisundi_liik_kood' starts with uppercase 'T'. These FK column names violate the lowercase-first convention. Smell IS present."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All database table names are singular: Isik, Kaup, Klient, Tootaja, Brand, Riik, Varv, Kaamera, Nutitelefon, Kasutajakonto, Tootaja_rolli_omamine, Kauba_kategooria_omamine, Kauba_variant, etc. No plural table names found (Estonian plurals would end in '-d' or '-id')."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No prohibited type prefixes found. All PK_, FK_, pfK_, and IXFK_ prefixes are explicitly allowed per the rule. Searching for tbl_, uc_, str, int, or similar type prefixes yielded no results. Class and table names like 'Isik', 'Kaup', 'Brand' do not have type prefixes."
+    }
+  ]
+}
