@@ -95,7 +95,7 @@
     },
     {
       "rule_id": "N3.2",
-      "actual": false,
+      "actual": true,
       "detected": false,
       "justification": "All visible attribute/column names start with a lowercase letter (e.g., 'nimetus', 'hind', 'eesnimi')."
     },
