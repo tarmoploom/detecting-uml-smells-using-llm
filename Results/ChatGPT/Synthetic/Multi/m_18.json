@@ -1,0 +1,115 @@
+{
+  "file_name": "m_18",
+  "timestamp": "2025-12-11T15:07:05Z",
+  "llm_model": "GPT-5.1",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The diagram titled 'Autode register (T\u00f6\u00f6taja)' on page 13 shows only the diagram header ('class Autode register (T\u00f6\u00f6taja)') and no visible classes, tables, use cases, states, or other central elements, so it is effectively an empty diagram. "
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "The two use case diagrams ('Autode funktsionaalne alls\u00fcsteem (Vaata & Tuvasta)' on page 2 and 'Autode halduse funktsionaalne alls\u00fcsteem (Muuda)' on page 3) each present use cases alongside several actors; there is no use case that is explicitly shown as unconnected to all actors, and no isolated use-case oval is visible in the extracted content. "
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Across the use case diagrams, the use case names are all distinct in meaning: e.g., 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Vaata k\u00f5iki autosid', 'Vaata autode koondaruannet', 'Registreeri auto', 'L\u00f5peta auto', 'Muuda autot', 'Aktiveeri auto', 'Muuda auto mittaktiivseks', 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid autosid', and 'Unusta auto' each describe different activities and are not duplicate descriptions of the same activity for the same actor. "
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the package and class diagrams, no package contains multiple distinct model elements with exactly the same primary name; repeated labels such as 'Klassifikaator' or 'Klassifikaatori t\u00fc\u00fcp' appear as classifier-type annotations or metadata next to more specific qualified names (e.g., 'Klassifikaatorite register::Isiku_seisundi_liik') and thus fall under the allowed metadata interpretation. "
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "In the database diagrams, columns that represent the same logical value (such as 'auto_kood' in 'Auto' and in 'Auto_kategooria_omamine', or 'isik_id' in 'Isik' and its referencing tables) are always connected via explicit FK relationships; there is no clear instance where the same data value is stored in two tables without a foreign-key connector. Common columns like identifiers or names are either uniquely located or connected by FK lines. "
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use case names follow a consistent verbal form in Estonian, beginning with an active verb: for example 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Vaata k\u00f5iki autosid', 'Vaata autode koondaruannet', 'Registreeri auto', 'L\u00f5peta auto', 'Muuda autot', 'Aktiveeri auto', 'Muuda auto mittaktiivseks', 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid autosid', and 'Unusta auto', so there is no inconsistent mixture of verb- and noun-based forms. "
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the state diagram 'Auto seisundidiagramm' (page 9), each named state (Ootel, Aktiivne, Mitteaktiivne, L\u00f5petatud, Unustatud) is connected by transitions, and there is an initial node 'Algus' leading into the state graph; no state is visibly isolated without any incoming path from the initial node. "
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": true,
+      "detected": false,
+      "justification": "In the activity diagram 'Auto l\u00f5petamise tegevusdiagramm' (page 4), all actions such as 'Vaata k\u00f5iki autosid, mida saab l\u00f5petada', 'Otsi autot (koodi, nime, seisundi p\u00f5hjal)', 'Vali auto', and 'L\u00f5peta valitud auto' are connected via control flows from the initial node 'Algus'; the remaining textual nodes beginning with 'Kas ...' correspond to decision points rather than isolated actions, so no action node is clearly unreachable. "
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "In the UML class diagrams, each association between classes shows multiplicity labels (e.g., '1', '0..*', '0..1') at one or both ends, such as between 'Isik' and 'Kasutajakonto' or between 'Auto' and various classifier entities; in the database diagrams, relationships are drawn as standard FK connectors (often with crow's-foot semantics and/or textual multiplicities like '0..*' and '1'), which are explicitly exempt. No relationship line is clearly drawn without any multiplicity indication at both ends. "
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "For every diagram, the number of central elements (classes, tables, use cases, or states) is below 10: for example the largest diagrams include at most about nine tables ('Klassifikaatorite register' database diagram) or seven classes/use cases (e.g., 'Autode register (Klassifikaator)' conceptual diagram and 'Autode halduse funktsionaalne alls\u00fcsteem (Muuda)' use case diagram); no single diagram reaches or exceeds ten such elements. "
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class or table is shown with six or more distinct relationship lines within a single diagram. For instance, the 'Auto' table in the 'Autode register (Klassifikaator)' database diagram connects to four classifier tables and one link table, and 'Isik' or 'Tootaja' in their respective diagrams each show at most four or five connectors, staying under the threshold of six visible relationship lines. "
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Based on the available renderings and extracted structure, related elements (e.g., tables linked by FKs, classes connected by associations, states joined by transitions) are laid out relatively close to one another, with connectors of roughly comparable length; there is no clear case where a related pair is placed at a distance more than twice the average spacing between elements on the same diagram, and precise distances cannot be measured from the provided data. "
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use case names begin with active verbs (e.g., 'Tuvasta', 'Vaata', 'Registreeri', 'L\u00f5peta', 'Muuda', 'Aktiveeri', 'Unusta'), and all activity actions in 'Auto l\u00f5petamise tegevusdiagramm' also start with verbs (e.g., 'Vaata', 'Otsi', 'Vali', 'L\u00f5peta'); the non-verb phrases beginning with 'Kas' appear only as decision-node questions, not as action names. "
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute, or use case name in the diagrams is 3 characters or shorter; names such as 'Auto', 'Isik', 'Riik', 'Klient', 'Tootaja', and attributes like 'e_meil', 'vin_kood', 'reg_aeg' all exceed three characters, and short tokens like 'OP3' or 'OP5' appear only inside descriptive text on transitions rather than as element names. "
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class names representing domain entities (e.g., 'Isik', 'T\u00f6\u00f6taja', 'Auto', 'Kasutajakonto', 'Klient', 'Klassifikaator', 'Isiku roll', 'Auto_kategooria_omamine') begin with uppercase letters and are singular; plural forms are used only in package or register names (like 'Isikute register', 'Autode register'), which are explicitly excluded from this rule. "
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute and column names consistently start with lowercase letters (e.g., 'e_meil', 'isikukood', 'reg_aeg', 'auto_kood', 'on_aktiivne'), and where uppercase prefixes occur (PK_, FK_, pfK_, IXFK_), they belong to the allowed primary/foreign-key and index naming conventions rather than to the attribute names themselves. "
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database table names such as 'Isik', 'Kasutajakonto', 'Auto', 'Klient', 'Tootaja', 'Auto_kategooria', 'Auto_mark', 'Kliendi_seisundi_liik', and similar are all singular forms representing individual entities or classifier values; pluralized table names are not used, and high-level register names are not tables. "
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class and table names do not include technical type prefixes like 'tbl_', 'uc_', or 'str'; they use domain-centric names instead (e.g., 'Auto', 'Isik', 'Klient', 'Tootaja'). Column names sometimes include PK/FK-style prefixes such as 'PK', 'FK', or 'pfK', and index/constraint names use prefixes like 'IXFK_' or 'AK_', but PK_, FK_, pfK_, and IXFK_ are explicitly allowed and the remaining prefixes apply only to constraints, not to class/table/attribute identifiers. "
+    }
+  ]
+}

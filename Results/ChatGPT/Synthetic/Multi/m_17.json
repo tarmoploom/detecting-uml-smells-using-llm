@@ -1,0 +1,115 @@
+{
+  "file_name": "m_17",
+  "timestamp": "2025-12-11T15:05:13Z",
+  "llm_model": "GPT-5.1",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Every diagram in the PDF (use case on pages 2-3, activity on page 4, state on page 9, and class/database diagrams on pages 5-8, 10-19) contains at least one central element, so there is no empty diagram. "
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the two use case diagrams (pages 2-3), all listed use cases appear within a context that includes actors; the PDF does not clearly show any oval use case completely lacking an association line to an actor, so no unambiguous violation can be confirmed. "
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Although there are similarly named use cases such as 'Registreeri auto' and 'Lisa auto' in the Autode halduse funktsionaalne alls\u00fcsteem (Muuda) diagram (page 3), the PDF does not clearly show that these two are associated with exactly the same actor, so the rule\u2019s condition cannot be conclusively met. "
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "The package diagram on page 1 lists elements under several registers and subsystems, but within each package box (e.g., Isikute register, Autode register, Klassifikaatorite register) no two distinct model elements share the same primary name; repeated text such as 'Klassifikaatori t\u00fc\u00fcp' is classifier-type metadata and excluded by the interpretation rules. "
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "In the database/class diagrams, repeated business concepts are linked via foreign keys (e.g., riik_kood from Isik to Riik, auto_seisundi_liik_kood from Auto to Auto_seisundi_liik); there is no clear case where the same data value is stored redundantly in multiple tables without an FK relationship. "
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use case names in the use case diagrams (e.g., 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Registreeri auto', 'L\u00f5peta auto', 'Unusta auto') follow a consistent imperative verb-first form, so no inconsistent naming form is observed. "
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the Auto seisundidiagramm (page 9), each state (Ootel, Aktiivne, Mitteaktiivne, L\u00f5petatud, Unustatud) is connected by transitions and there is an initial node; no state appears visually isolated from all incoming paths, so no unreachable state can be confirmed. "
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the Auto l\u00f5petamise tegevusdiagramm (page 4), every action such as 'Vaata k\u00f5iki autosid, mida saab l\u00f5petada', 'Otsi autot', 'Vali auto', and 'L\u00f5peta valitud auto' lies on a path from the initial node, with decisions routing control between them; there is no clearly unreachable action node. "
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All relationships in the class and database diagrams show explicit multiplicities (e.g., '1', '0..*') or represent standard database foreign-key connectors between tables (e.g., between Auto and Auto_mark, Isik and Riik), so there is no association that clearly lacks multiplicity indicators at both ends. "
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "For each individual diagram, the count of central elements (classes/tables/use cases/states) stays below 10; for example, the largest classifier diagrams such as Klassifikaatorite register (Isik) and Klassifikaatorite register (database view) show at most around nine central tables/classes once metadata labels like 'Klassifikaatori t\u00fc\u00fcp' are excluded. "
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No single class or table in any one class or database diagram has six or more distinct relationship lines; elements like Isik and Auto have at most about four or five visible connectors in their respective diagrams, so the threshold for this smell is not reached. "
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Based on the page layouts, related elements (e.g., Auto and its classifier tables, Isik and related role tables) are placed in reasonably close proximity; the diagrams do not exhibit any pair of related elements whose distance is clearly more than twice the average element spacing, so no explicit layout-spacing violation can be identified. "
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use case names and observable action labels begin with active verbs in Estonian (e.g., 'Vaata', 'Tuvasta', 'Registreeri', 'L\u00f5peta', 'Muuda', 'Unusta'); question-style labels such as 'Kas soovib otsida?' in the activity diagram appear on decision nodes rather than action nodes, so they do not violate the rule. "
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Across the diagrams, names of classes, tables, attributes, and use cases are longer than three characters (e.g., 'Auto', 'Isik', 'vin_kood', 'reg_number'); there is no clearly modeled class/table/attribute/use case with a name of length three or less such as 'id'. "
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class and table names start with uppercase letters and are generally singular domain entities (e.g., Auto, Isik, Klient, T\u00f6\u00f6taja); plural names like 'Isikute register' or 'Autode register' are register tables explicitly excluded by the interpretation rules, so no violation of lowercase or improper pluralization for entity classes is found. "
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute/column names such as e_meil, isikukood, reg_aeg, auto_kood, on_nous_tylitamisega all start with lowercase letters; uppercase prefixes appear only in constraint and index names like PK_Isik or FK_Auto_Auto_mark, which are not attributes, so the rule is not violated. "
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Entity tables such as Auto, Isik, Klient, T\u00f6\u00f6taja, Auto_mark are singular; plural-like labels (e.g., 'Klassifikaatorite register', 'Klientide register') denote register tables and are explicitly exempt from this rule, so no plural table name smell is detected. "
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Names of classes, tables, and attributes do not use technical type prefixes such as 'tbl_', 'uc_', or 'strName'; the only prefixes present (PK_, FK_, pfK_, IXFK_) are primary/foreign key or index markers explicitly allowed by the rule, so there is no type-encoding prefix smell. "
+    }
+  ]
+}

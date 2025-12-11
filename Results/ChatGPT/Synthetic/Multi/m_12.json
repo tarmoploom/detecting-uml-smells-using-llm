@@ -1,0 +1,115 @@
+{
+  "file_name": "m_12",
+  "timestamp": "2025-12-11T02:18:21Z",
+  "llm_model": "GPT-5.1",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No empty diagrams were found in the PDF; each labeled diagram page appears to contain elements or listed contents. "
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On the use case diagrams (pages 2 and 3), the presence or absence of actor associations is not explicitly and unambiguously visible from the provided content; no clearly isolated use case oval without any actor association is explicitly indicated. Text lists on the package/overview page were not evaluated under this rule."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No pairs of use cases with names clearly describing the same activity and associated with the same actor were explicitly visible on the use case diagrams; the listed use case names on pages 2 and 3 appear distinct."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": true,
+      "detected": true,
+      "justification": "On the package diagram page 1, within the textual list for the Klassifikaatorite register, the element name 'Auto_mark' appears twice in the same package list, indicating multiple model elements with the same primary name in that package."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No explicit evidence was visible of two or more tables storing redundant copies of the same data value without a foreign key connecting them; repeated generic columns such as names or identifiers were not clearly shown to represent denormalized duplicates."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Within each use case diagram, the use case names appear consistently verb-led (e.g., 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Registreeri auto', 'Muuda autot'), so no inconsistent naming form was explicitly visible."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The state diagram on page 9 lists states such as Ootel, Aktiivne, Mitteaktiivne, L\u00f5petatud and Unustatud, but unreachable states are not explicitly and unambiguously indicated from the visible content."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "The activity diagram on page 4 does not explicitly show any action that is clearly unreachable; reachability issues were not unambiguously visible."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Class diagram relationships shown in the parsed content include multiplicities (e.g., 1, 0..*, 0..1) on pages 5, 6, 10, 12 and 13, and the database-style diagrams (pages 14-19) use FK-style connectors that are exempt; no UML-style relationship line was explicitly visible without multiplicity indicators at both ends."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No single analyzed diagram clearly displays 10 or more central elements. The use case diagrams appear to show fewer than 10 use cases, and the class/state/activity diagrams do not unambiguously exceed the threshold based on visible elements."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No single class or table was explicitly shown with 6 or more distinct visible relationship lines on any one class or database diagram page; the number of separately drawn connectors cannot be confirmed as meeting this threshold from the provided content."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The PDF content does not provide explicit, measurable evidence that the distance between two related elements is more than twice the average distance on any diagram; no clear layout-based violation was visible."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The activity diagram on page 4 includes action labels such as 'Otsimine' and 'Valimine' that appear to be nouns rather than active-verb starts, indicating at least one activity action name that does not start with an active verb."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute, or use case names of 3 or fewer characters were clearly visible as actual element names; apparent short tokens like PK, FK, or id-like markers appear as notation or metadata rather than names of model elements."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class names visible in conceptual and register class diagrams (e.g., Isik, T\u00f6\u00f6taja, Auto, Klient, Klassifikaator, Kasutajakonto) start with uppercase letters and do not clearly appear plural."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute and column names shown in the class and database diagrams appear to start with lowercase letters; uppercase prefixes visible alongside columns are part of PK/FK notation rather than the attribute/column names themselves."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database table names visible on pages 14-19 (e.g., Isik, Kasutajakonto, Klient, Auto, Riik, Auto_kategooria) do not clearly appear plural."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute, or use case names were explicitly visible with disallowed type-indicating prefixes or abbreviations such as 'tbl_', 'uc_', or 'str'; allowed PK_/FK_-style prefixes appear only in constraint or key notation."
+    }
+  ]
+}
