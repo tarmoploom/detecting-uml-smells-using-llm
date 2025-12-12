@@ -1,0 +1,115 @@
+{
+  "file_name": "Tooaeg",
+  "timestamp": "2025-12-12T13:53:04Z",
+  "llm_model": "Claude Opus 4.5",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No empty diagrams were found. All 16 diagrams contain at least one element: Page 1 contains packages and actors, Page 2 contains 14 use cases and 3 actors, Pages 3-4 contain activity nodes, Pages 5-10 contain classes, Page 11 contains states, Pages 12-16 contain database tables."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": true,
+      "justification": "On diagram 'T\u00f6\u00f6graafiku funktsionaalne alls\u00fcsteem' (page 2), the use case 'Tuvasta kasutaja' (Identify user) appears to be an included use case without direct actor association. Additionally, 'Lisa vahetus', 'Lisa t\u00f6\u00f6v\u00e4listus', 'Kustuta t\u00f6\u00f6v\u00e4listus', and 'Kustuta vahetus' appear to be secondary use cases that are likely included by main use cases but lack direct actor connections. At least 5 use case ovals have ZERO direct actor associations."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate use case names describing the same activity for the same actor were found. All 14 use cases on page 2 have unique names: Vaata enda t\u00f6\u00f6graafikut, Koosta t\u00f6\u00f6graafik, Kinnita t\u00f6\u00f6graafik, M\u00e4\u00e4ra t\u00f6\u00f6graafik mitteaktiivseks, Kustuta t\u00f6\u00f6graafik, Muuda t\u00f6\u00f6graafikut, Vaata t\u00f6\u00f6graafikuid, Tuvasta kasutaja, Kustuta mitteaktiivne t\u00f6\u00f6graafik, Lisa vahetus, Lisa t\u00f6\u00f6v\u00e4listus, Kustuta t\u00f6\u00f6v\u00e4listus, Kustuta vahetus, Vaata t\u00f6\u00f6tajaid."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": true,
+      "detected": false,
+      "justification": "No duplicate element names within the same package were found. Each package (Klassifikaatorite register, Isikute register, Kaupluste register, T\u00f6\u00f6graafikute register, T\u00f6\u00f6tajate register) contains uniquely named elements."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No redundant data columns without FK relationships were found. The columns 'alguse_aeg' and 'lopp_aeg' appear in Toograafik, Vahetus, and Toovalistus tables but represent different contexts (schedule dates vs shift dates vs exclusion dates). All shared identifiers (isik_id, kauplus_id, etc.) are properly connected via FK relationships."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases on page 2 follow consistent verb-first naming pattern in Estonian: Vaata (View), Koosta (Create), Kinnita (Confirm), M\u00e4\u00e4ra (Set), Kustuta (Delete), Muuda (Modify), Tuvasta (Identify), Lisa (Add). All 14 use cases start with active verbs."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "On diagram 'T\u00f6\u00f6graafiku seisundidiagramm' (page 11), all states are reachable: 'Ootel' is reached from initial state via 'Loo uus graafik' and from 'Aktiivne' via 'Tekib soov graafiku perioodi muuta'. 'Aktiivne' is reached from 'Ootel' via 'graafik kinnitatakse'. 'Mitteaktiivne' is reached from both 'Ootel' (via 'kustutamine') and 'Aktiivne' (via 'kehtiv periood saab l\u00e4bi')."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On activity diagrams (pages 3-4), all actions are reachable from the start node. Page 3: Algus -> decision -> Vaata t\u00f6\u00f6graafikut (reachable via [jah]). Page 4: Algus -> decision paths lead to all actions including 'Vaata ootel seisundis t\u00f6\u00f6graafikute nimekirja', 'Vali t\u00f6\u00f6graafik', and 'Kustuta t\u00f6\u00f6graafik'."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All relationships have multiplicity indicators on both ends. Page 5 (Kontseptuaalne eskiismudel) shows: 0..*-1, 1-0..*, 0..*-1 patterns. Pages 6-10 class diagrams show similar complete multiplicities. Pages 12-16 database diagrams show FK relationships with multiplicities like 0..*-1, 0..1-1. All relationships have multiplicity on BOTH ends."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Diagram 'T\u00f6\u00f6graafiku funktsionaalne alls\u00fcsteem' (page 2) contains 14 use cases: 1) Vaata enda t\u00f6\u00f6graafikut, 2) Koosta t\u00f6\u00f6graafik, 3) Kinnita t\u00f6\u00f6graafik, 4) M\u00e4\u00e4ra t\u00f6\u00f6graafik mitteaktiivseks, 5) Kustuta t\u00f6\u00f6graafik, 6) Muuda t\u00f6\u00f6graafikut, 7) Vaata t\u00f6\u00f6graafikuid, 8) Tuvasta kasutaja, 9) Kustuta mitteaktiivne t\u00f6\u00f6graafik, 10) Lisa vahetus, 11) Lisa t\u00f6\u00f6v\u00e4listus, 12) Kustuta t\u00f6\u00f6v\u00e4listus, 13) Kustuta vahetus, 14) Vaata t\u00f6\u00f6tajaid. Threshold is \u226510. Since 14 \u2265 10, smell IS present."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Maximum visual connection lines counted per element: Page 5 (Kontseptuaalne eskiismudel): T\u00f6\u00f6taja has 5 connections (to Isik, Kauplus, Amet, T\u00f6\u00f6v\u00e4listus, Vahetus). Page 9 (T\u00f6\u00f6tajate register): T\u00f6\u00f6taja has 5 lines. Page 16 (T\u00f6\u00f6tajate register transformed): Tootaja has 5 lines (to Amet, Kauplus, Isik, from Vahetus, from Toovalistus). Maximum is 5. Threshold is \u22656. Since 5 < 6, smell is NOT present."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Visual inspection of all diagrams shows elements are reasonably distributed without extreme distances. Related elements are positioned adjacent to each other in all class and database diagrams. No relationship distance appears to exceed twice the average distance between elements."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": true,
+      "justification": "On activity diagram 'Vaata enda graafikut tegevusdiagramm' (page 3), the action 'Vajalik info on k\u00e4tte saadud' (Necessary information has been received) does not start with an active verb. It starts with the adjective 'Vajalik' (Necessary) and uses passive voice 'k\u00e4tte saadud' (received). This should be rephrased to start with an active verb like 'Kinnita info k\u00e4ttesaamine' or similar."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All class, table, attribute, and use case names have \u22654 characters. Shortest names found: 'Isik' (4 chars), 'Amet' (4 chars), 'nimi' (4 chars), 'kood' (4 chars). The element 'Aeg' (3 chars) is an actor, which is not covered by this rule. Threshold is \u22643. Since minimum found is 4 and 4 > 3, smell is NOT present."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class names start with uppercase and are singular: T\u00f6\u00f6graafik, Vahetus, Isik, Kauplus, T\u00f6\u00f6taja, Amet, T\u00f6\u00f6v\u00e4listus, Klassifikaator, T\u00f6\u00f6graafiku seisund, T\u00f6\u00f6v\u00e4listuse t\u00fc\u00fcp. No lowercase first letters or plural forms found."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All attribute/column names start with lowercase: nimetus, kood, aadress, hoone_kood, nimi, eesnimi, elukoht, isik_id, kasutajanimi, meiliaadress, parool, perenimi, s\u00fcnni_kp, isikukood, on_aktiivne, alguse_aeg, lopp_aeg, toograafik_id, vahetus_id, amet_kood, amet_nimetus, etc. No uppercase first letters found."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All database table names are singular: Amet, Toograafiku_seisund, Toovalistuse_tyyp, Isik, Kauplus, Toograafik, Vahetus, Tootaja, Toovalistus. No plural table names found."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No type prefixes like tbl_, uc_, str, int were found in class, table, or attribute names. The PK_ and FK_ prefixes found (e.g., PK_Amet, FK_Kauplus_id, FK_Isik_id) are explicitly allowed for indicating primary keys and foreign keys. The pfK prefix in 'pfK isik_id' on page 16 is also allowed for partial foreign keys."
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "file_name": "Kaubad_turuplatsil",
+  "timestamp": "2025-12-12T01:58:18Z",
+  "llm_model": "Claude Opus 4.5",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No empty diagrams were found. All 12 diagrams contain at least one element: subsystems diagram (page 1) has packages and actors, Conceptual Model (page 2) has 2 classes, Product Register (page 3) has 8 elements, State diagram (page 4) has 5 states, etc."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": true,
+      "justification": "On page 7 (Use Case model), the use case 'Authorize User' (marked as 'from Cross-cutting interests') is a visual oval element that has NO direct actor association. It only has <<include>> relationships from other use cases (Add Product, Change Own Product, etc.), but <<include>> is a use case-to-use case relationship, not an actor association. Therefore, at least one use case oval has ZERO actor associations."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Examining all use cases on page 7: Add Product, Change Own Product, Change Any Product, Set own product status to 'Pending Deletion', View Own Products, View All Products, Hide Own Product, Search for Product, View Inactive Products, Authorize User, View Product Details, Delete Product from Database, Set Own Product Status to 'Active'. No two use cases describe the same activity AND are associated with the same actor. For example, 'Change Own Product' (Seller) and 'Change Any Product' (Product Maintainer) describe different scopes with different actors."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": true,
+      "detected": true,
+      "justification": "On page 1 (subsystems diagram), within the 'Classifier Register' package, 'Product Location' appears twice in the element list: '+ Product Location' and '+ Product Location'. This constitutes \u22652 elements with identical names in one package."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Examining database tables on pages 10-12: Columns with similar names like 'name' appear in multiple tables (app_user, product, user_role, etc.), but these represent different contextual data (user name vs. product name vs. role name). The 'creation_time' in app_user and product are independent timestamps for different entities. All shared data references use proper FK relationships (e.g., seller_email in product references email in app_user via FK). No redundant data copies exist without FK relationships."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": true,
+      "detected": false,
+      "justification": "All use cases on page 7 follow a consistent verb-first naming pattern: Add Product, Change Own Product, Set own product status, View Own Products, View All Products, Hide Own Product, Change Any Product, Search for Product, View Inactive Products, Authorize User, View Product Details, Delete Product from Database, Set Own Product Status to 'Active'. All start with active verbs (Add, Change, Set, View, Hide, Search, Authorize, Delete)."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "On page 4 (State diagram), all states can be reached: Active - has incoming from Start (two conditions) and from Inactive (un-hides) and Suspended (un-suspends); Inactive - has incoming from Active (hide/deplete) and Start (stock=0); Suspended - has incoming from Active and Inactive; Deleted - has incoming from Suspended, Active, and Pending Deletion; Pending Deletion - has incoming from Active and Inactive. Every state has at least one incoming transition path."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On page 8 (Seller hides product scenario): All actions (View all seller's products, Search for products, Set product status to 'hidden') are reachable from Start via control flow. On page 9 (Change any product scenario): All actions (View all products, Search for products, View product information, Insert new information, Save product information) are reachable from Start. Every action can be reached from the start node in both activity diagrams."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": true,
+      "detected": true,
+      "justification": "On page 2 (Conceptual Model), the relationship between 'User Register::User' and 'Product Register::Product' labeled 'Creates product if is verified' lacks multiplicity indicators at both ends. The diagram shows the association line but no multiplicity notation (like 1, 0..*, etc.) is specified on either end of this relationship."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "On page 7 (Use Case model), counted 13 use case ovals: 1) Add Product, 2) Change Own Product, 3) Set own product status to 'Pending Deletion', 4) View Own Products, 5) View All Products, 6) Hide Own Product, 7) Change Any Product, 8) Search for Product, 9) View Inactive Products, 10) Authorize User, 11) View Product Details, 12) Delete Product from Database, 13) Set Own Product Status to 'Active'. Total = 13 use cases. Threshold is \u226510. Since 13 \u2265 10, smell IS present. Note: Actors (Seller, Buyer, Product Maintainer, Unregistered User, Time) are NOT counted as central elements per the rule."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": true,
+      "detected": true,
+      "justification": "On page 6 (Classifier Register), the 'Classifier' class has 7 visual inheritance/generalization lines connecting it to subtypes: User Role, Product Location, Product category, Product Status, Country, Category Attribute, Category Attribute Unit. Counted 7 connection lines from Classifier. Threshold is \u22656. Since 7 \u2265 6, smell IS present."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Visual inspection of all diagrams shows elements are reasonably positioned with consistent spacing. No relationship appears to span a distance more than twice the average distance between elements. Elements in class diagrams (pages 2, 3, 5, 6, 10-12) and use case diagram (page 7) are organized with relationships between adjacent or nearby elements."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases on page 7 start with active verbs: Add, Change, Set, View, Hide, Search, Authorize, Delete. All actions in activity diagrams (pages 8-9) also start with verbs: View, Search, Set, Insert, Save. No use case or action starts with a noun or passive form."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Examining all names in the diagrams: Classes/Tables have names \u22654 characters (User=4, Product=7, Country=7, etc.). Attributes examined: name=4 chars, email=5, price=5, id_code=7, creation_time=13, etc. Use case names are all multi-word phrases well exceeding 3 characters. No name with \u22643 characters was found. All names have \u22654 characters."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": true,
+      "detected": false,
+      "justification": "All class names in conceptual/logical diagrams (pages 2, 3, 5, 6) start with uppercase and are singular: User, Product, Classifier, Country, Category Attribute, Category Attribute Value, Category Attribute Unit, Product Location, Product category, Product Status, User Role. No class name starts with lowercase or is plural."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All attribute/column names in the diagrams start with lowercase: creation_time, id_code, is_verified, name, surname, email, description, price, stock_quantity, update_time, product_code, country_code, role_name, seller_email, location_name, status_name, category_name, attribute_value_id, attribute_value_numeric, attribute_value_varchar, attribute_name. No attribute or column starts with uppercase."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All database table names on pages 10-12 are singular: app_user, country, user_role, product_location, product_category, product_status, category_attribute, category_attribute_unit, product, category_attribute_value. No table name is plural."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No type prefixes like tbl_, uc_, str, int were found in class, table, or attribute names. The 'app_' prefix in 'app_user' is a domain prefix (application user), not a type indicator. Prefixes PK_, FK_, and IXFK_ are used for keys and indexes which are explicitly allowed per the rule. No prohibited type prefixes detected."
+    }
+  ]
+}

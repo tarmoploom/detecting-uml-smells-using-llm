@@ -1,0 +1,115 @@
+{
+  "file_name": "Kobarkino",
+  "timestamp": "2025-12-12T02:09:46Z",
+  "llm_model": "Claude Opus 4.5",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No empty diagrams were found. All 16 diagrams contain at least one element. For example: 'Filmide register' has Film, Keel, Film_vanuse_pr, Kinoseanss; 'Klassifikaatorite register' has Klassifikaator, Keel, Seanss_olek, Film_vanuse_pr; etc."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On page 10 'Kinoseansside kasutusjuhtude diagramm', all 9 use case ovals are associated with at least one actor: 'Loo kinoseanss' \u2192 Kinoseansside haldur; 'Muuda mitteaktiivse kinoseansi andmeid' \u2192 Kinoseansside haldur; 'Kustuta mitteaktiivse kinoseansi' \u2192 Kinoseansside haldur; 'Vaata loppenud kinoseansside statistikat' \u2192 Organisatsiooni juht; 'Vaata aktiivsete kinoseansside nimekirja' \u2192 Uudistaja; 'Tuhista aktiivse kinoseansi' \u2192 Kinoseansside haldur; 'Aktiveeri mitteaktiivse kinoseansi' \u2192 Kinoseansside haldur; 'Vaata mitteaktiivsete kinoseansside nimekirja' \u2192 Isik; 'Lopeta aktiivse kinoseansi' \u2192 Aeg. Every use case has at least 1 actor association."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "On page 10, all use cases describe different activities: 'Loo' (create), 'Muuda' (modify), 'Kustuta' (delete), 'Vaata...statistikat' (view statistics), 'Vaata...nimekirja' (view lists - but for different types: aktiivsete/mitteaktiivsete), 'Tuhista' (cancel), 'Aktiveeri' (activate), 'Lopeta' (end). While there are three 'Vaata' use cases, they describe viewing different things (statistics, active list, inactive list) and have different actors (Organisatsiooni juht, Uudistaja, Isik). No duplicate activities with same actor found."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On page 4 'Klassifikaatorite register', elements are: Klassifikaator, Keel, Seanss_olek, Film_vanuse_pr - all unique names. On page 14 'Klassifikaatorid', tables are: seanss_olek, film_vanuse_pr, keel - all unique names. No duplicate element names found within any package."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Columns like 'nimetus', 'kirjeldus', 'on_aktiivne' appear in multiple classifier tables (seanss_olek, keel, film_vanuse_pr on page 14), but these represent different contexts (session status name vs language name vs age rating name). These are not redundant copies of the same data values - they are semantically different attributes that happen to share a column name pattern. All relationships between tables are properly connected via Foreign Keys (FK columns are present and defined)."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases on page 10 start with active verbs in Estonian: 'Loo' (Create), 'Muuda' (Modify), 'Kustuta' (Delete), 'Vaata' (View - appears 3 times), 'Tuhista' (Cancel), 'Aktiveeri' (Activate), 'Lopeta' (End). All follow the same verb-first naming pattern consistently."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "On page 11 'Kinoseansside seisundi diagramm', all 5 states can be reached: 'Mitteaktiivne' \u2190 initial state (OP2.1); 'Aktiivne' \u2190 from Mitteaktiivne (OP2.2); 'Kustutatud' \u2190 from Mitteaktiivne (OP2.3); 'Loppenud' \u2190 from Aktiivne (OP2.6); 'Tuhistatud' \u2190 from Aktiivne (OP2.4). Every state has at least one incoming transition."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On page 7 'arimudel 1', all actions are reachable from start: 'Vaatab mitteaktiivsete kinoseansside nimekirja' is first action from start. On page 8 'arimudel 2', 'Valib saali, kuupaeva ja kellaaja kinoseansi jaoks' is first action from start. All subsequent actions are reachable via flow arrows. No unreachable actions found."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": true,
+      "detected": true,
+      "justification": "On database diagrams pages 12-16, relationship lines between tables lack explicit multiplicity indicators on both ends. For example: page 12 'Film' shows lines from film table to Klassifikaatorid::keel and Klassifikaatorid::film_vanuse_pr without '1' or '0..*' notation visible. Page 13 'Saal_koht' shows line between saal and koht without multiplicity at both ends. Page 15 'Kinoseanss' shows connections to Pilet::pilet, Klassifikaatorid::seanss_olek, Film::film, Saal::saal without explicit multiplicity notation. In contrast, class diagrams (pages 1-6) properly show multiplicities like '0..*' and '1' on relationships."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Counted central elements on each diagram: Page 1 'Filmide register': 4 classes (Film, Keel, Film_vanuse_pr, Kinoseanss); Page 2 'Saalide register': 3 classes; Page 3 'Kinoseansside register': 5 classes; Page 4 'Klassifikaatorite register': 4 classes; Page 5 'Kohtade register': 3 classes; Page 6 'Piletite register': 3 classes; Page 10 'Kinoseansside kasutusjuhtude diagramm': 9 use cases; Page 11 state diagram: 5 states; Pages 12-16 database diagrams: 1-4 tables each. Maximum count is 9 use cases. Threshold is \u226510. Since 9 < 10, smell is NOT present."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Counted visual connection lines per element on each diagram: Page 1 'Filmide register': Film has 3 lines (to Keel, Film_vanuse_pr, Kinoseanss); Page 3 'Kinoseansside register': Kinoseanss has 4 lines (to Saal, Film, Pilet, Seanss_olek); Page 15 'Kinoseanss': kinoseanss table has 4 lines (to pilet, seanss_olek, film, saal). Maximum connection count is 4. Threshold is \u22656. Since 4 < 6, smell is NOT present."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Visual inspection of all diagrams shows related elements are placed in reasonable proximity. No obvious cases where distance between related elements exceeds twice the average distance. Elements on each diagram page are arranged in a compact manner with connections spanning similar distances."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases on page 10 start with active verbs (Estonian): 'Loo' (Create), 'Muuda' (Modify), 'Kustuta' (Delete), 'Vaata' (View), 'Tuhista' (Cancel), 'Aktiveeri' (Activate), 'Lopeta' (End). Activity diagram actions on pages 7-8 also start with verbs: 'Valib' (Selects), 'Vaatab' (Views), 'Kontrollib' (Checks), 'Otsustab' (Decides). All use cases and actions start with active verbs."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Checked all class, table, attribute, and use case names. Shortest names found: 'Film' (4 chars), 'Saal' (4 chars), 'Koht' (4 chars), 'Keel' (4 chars), 'kood' (4 chars), 'aasta' (5 chars). Threshold is \u22643 chars. All names have \u22654 characters. Note: 'Aeg' (3 chars) is an actor name, which is not covered by this rule. Smell is NOT present."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": true,
+      "detected": false,
+      "justification": "All class names on pages 1-6 start with uppercase and are singular: Film (uppercase, singular), Saal (uppercase, singular), Koht (uppercase, singular), Pilet (uppercase, singular), Kinoseanss (uppercase, singular), Keel (uppercase, singular), Seanss_olek (uppercase, singular), Film_vanuse_pr (uppercase, singular), Klassifikaator (uppercase, singular). No lowercase starts or plural names found."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All attribute/column names start with lowercase. Class diagram attributes (pages 1-6): aasta, kestus, nimetus, tutvustus, koht_nr, rida_nr, saal_nr, alguse_aeg, kuupaev, lopu_aeg, kirjeldus, kood, on_aktiivne. Database columns (pages 12-16): film_id, nimetus, aasta, tutvustus, keel_kood, kestus, film_vanuse_pr_kood, saal_nr, on_saal_saadaval, etc. All start with lowercase letters."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All database table names on pages 12-16 are singular: film (singular), saal (singular), koht (singular), seanss_olek (singular), keel (singular), film_vanuse_pr (singular), kinoseanss (singular), pilet (singular). No plural table names found."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No disallowed type prefixes found. Table names (film, saal, koht, etc.) have no 'tbl_' prefix. Use case names have no 'uc_' prefix. Attribute names have no 'str', 'int' type prefixes. The prefixes 'PK', 'FK', 'pfK' found in database columns (e.g., '*PK film_id', '*FK keel_kood', '*pfK saal_nr') are explicitly allowed per the rule. No Hungarian notation or type prefixes detected."
+    }
+  ]
+}

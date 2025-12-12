@@ -1,0 +1,115 @@
+{
+  "file_name": "Padel",
+  "timestamp": "2025-12-12T13:30:53Z",
+  "llm_model": "Claude Opus 4.5",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No empty diagrams were found. All 16 diagrams contain at least one element. Page 1 (Overview) has packages and actors, Page 2 (Use case) has 12 use cases and 5 actors, Pages 3-4 (Activity) have multiple actions, Pages 5-11 (Class diagrams) have classes, Page 10 (State) has 5 states, Pages 12-16 (Database) have tables."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On Page 2 (Tournaments functional subsystem use case diagram), all visual oval use case elements are associated with at least one actor. The actors (Player, Administrator, Organization Representative, Observer, Referee) connect to the use cases inside the System boundary. 'Authenticate user' is marked '(from Common actions)' indicating it's a shared/included use case, not an orphaned one."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate use case activities found. On Page 2, the use cases have distinct activities: 'Register tournament', 'Register tournament pair', 'Register tournament court' are different registrations (tournament vs pair vs court). 'Delete tournament', 'Delete tournament pair', 'Delete tournament court' are similarly distinct deletion activities targeting different entities."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All element names are unique within each package. Examined all register packages: Person register (Person, PersonRoleAssignment, Account), Classifier register (Classifier, Gender, TournamentCategory, TournamentStatus, PersonRole), Players register (Player, PlayerTournamentPoints), Tournaments register (Tournament, TournamentCourtLink, TournamentPair), Courts register (Court). No duplicate names found within any single package."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No redundant data columns found without FK relationships. Examined transformed database diagrams (Pages 12-16). Columns like 'name' in tournament, tournament_status, tournament_category, person_role, gender, and court tables represent different contextual data (tournament name, status name, etc.), not redundant copies of the same data. All shared data columns (tournament_id, player_id, person_id) are connected via proper FK relationships."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Consistent naming form is used for all use cases on Page 2. All 12 use cases start with active verbs: Authenticate user, Complete tournament, Register tournament pair, Activate tournament, Register tournament, Delete tournament, Modify tournament, View registered pairs, Cancel tournament, Delete tournament pair, Register tournament court, Delete tournament court. All follow verb-first naming pattern."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "On Page 10 (Tournament state diagram), all states can be reached: Initial (start pseudo-state), Pending (reached from Initial via 'Create tournament'), Active (reached from Pending via 'Activate'), Cancelled (reached from Pending or Active via 'Cancel'), Completed (reached from Active via 'Complete'), Deleted (reached from Pending via 'Delete'). Every state has at least one incoming transition path."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On Page 3 (Register player for tournament activity diagram), all actions are reachable from Start: Navigate to tournament list \u2192 Select desired tournament \u2192 Start registration \u2192 Identify teammate \u2192 Submit registration \u2192 (system receives) \u2192 decision \u2192 Display registration. On Page 4 (Create tournament activity diagram), all actions reachable: Start tournament creation \u2192 Enter details \u2192 Assign referee \u2192 Assign courts \u2192 Submit \u2192 Validate \u2192 (decision) \u2192 Save/Set status/Assign code \u2192 Display. No unreachable actions found."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All relationships in class and database diagrams have multiplicity indicators on both ends. Verified on Pages 5-9 (class diagrams) and Pages 12-16 (database diagrams). Examples: Page 5 shows '0..* has status 1', '0..* uses courts 0..*', '1 is officiated by +Referee 0..*'. Page 12 shows '+FK... 0..*' and '+PK... 1' on all relationship ends."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Detected on two diagrams. (1) Page 2 'Tournaments functional subsystem' contains 12 use cases: Authenticate user, Complete tournament, Register tournament pair, Activate tournament, Register tournament, Delete tournament, Modify tournament, View registered pairs, Cancel tournament, Delete tournament pair, Register tournament court, Delete tournament court. Count = 12, threshold is \u226510, 12 \u2265 10, smell IS present. (2) Page 5 'Preliminary conceptual model' contains 11 classes: Tournament, TournamentPair, Player, Person, TournamentCategory, TournamentStatus, Court, PersonRole, Account, PlayerTournamentPoints, Gender. Count = 11, threshold is \u226510, 11 \u2265 10, smell IS present."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": true,
+      "detected": true,
+      "justification": "Detected on Page 12 'Tournaments register (transformed)'. The 'tournament' table has 7 visual connection lines: (1) to tournament_status, (2) to tournament_category, (3) to person (organizer_person_id), (4) to person (referee_person_id), (5) from tournament_pair, (6) from tournament_court_link, (7) from player_tournament_points. Count = 7, threshold is \u22656, 7 \u2265 6, smell IS present. Other diagrams: Page 5 Tournament has 5 visible connections (5 < 6), Page 9 Tournament has approximately 5-6 connections, being conservative count is 5."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Cannot definitively determine from text/image content. Visual inspection of diagram layouts does not show obvious cases where related element distances exceed twice the average distance. Elements appear reasonably distributed in all diagrams."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases (Page 2) start with active verbs: Authenticate, Complete, Register, Activate, Delete, Modify, View, Cancel. All activity diagram actions (Pages 3-4) start with active verbs: Navigate, Select, Start, Identify, Submit, Receive, Display, Link, Enter, Assign, Validate, Save, Set. No use cases or actions start with nouns or passive forms."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All names have 4 or more characters. Shortest class/table names: Court (5), Player (6), Person (6), Gender (6). Shortest attribute names: name (4), code (4), email (5). All column names in transformed diagrams are \u22654 characters. Threshold is \u22643 characters. No names found with 3 or fewer characters."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": true,
+      "detected": false,
+      "justification": "All class names start with uppercase and are singular. Verified across Pages 5-11: Tournament, TournamentPair, Player, Person, Court, Account, Classifier, Gender, TournamentStatus, TournamentCategory, PersonRole, PersonRoleAssignment, PlayerTournamentPoints, TournamentCourtLink. 'PlayerTournamentPoints' uses 'Points' as a value concept (point total), not a plural entity name, which is acceptable naming convention."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All attribute/column names start with lowercase. Verified on Pages 6-9 and 11-16: created_at, date_of_birth, email, given_name, is_active, surname, updated_at, password, end_date, start_date, code, name, points_earned, description, max_players, registered_at, location, tournament_id, player_id, person_id, etc. No attributes/columns start with uppercase."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": true,
+      "detected": false,
+      "justification": "All database table names are singular. Verified on Pages 12-16: tournament, tournament_pair, tournament_court_link, player, player_tournament_points, person, person_role_assignment, account, court, tournament_status, tournament_category, person_role, gender. 'player_tournament_points' uses 'points' as a value concept representing earned points, not as a plural form of 'point' entity (similar to 'account_balance' or 'user_settings')."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No type prefixes found in class, table, or attribute names. Examined all names across diagrams. Found only allowed prefixes: PK_ (e.g., PK_tournament, PK_player), FK_ (e.g., FK_tournament_person), IXFK_ (e.g., IXFK_tournament_person) which are explicitly permitted for primary keys, foreign keys, and indexes. No prohibited prefixes like tbl_, uc_, str, int found."
+    }
+  ]
+}

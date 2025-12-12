@@ -1,0 +1,115 @@
+{
+  "file_name": "Hoonete_typoloogia",
+  "timestamp": "2025-12-12T01:51:56Z",
+  "llm_model": "Claude Opus 4.5",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No empty diagrams were found. All 14 diagrams contain at least one element. Page 1 contains packages and actors, Page 2 contains use cases, Pages 3-4 contain activity actions, Pages 5-10 contain classes, Page 7 contains states, Pages 11-14 contain database tables."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On Page 2 (use case diagram), all use case ovals are associated with actors. Use cases like 'Koosta arhet\u00fc\u00fcp', 'Muuda kinnitamata arhet\u00fc\u00fcpi', 'Kustuta arhet\u00fc\u00fcp', 'Esita arhet\u00fc\u00fcp' are connected to Tehnik. Use cases like 'Kinnita arhet\u00fc\u00fcp', 'Muuda kinnitatud arhet\u00fc\u00fcpi', 'L\u00fckka tagasi arhet\u00fc\u00fcp' are connected to Muutja. 'Tuvasta kasutaja' and 'Vaata kinnitatud arhet\u00fc\u00fcpe' marked as '(from L\u00e4bivad huvid)' are included by other use cases that have actor associations. Page 1 shows package contents as text lists, not use case ovals, so the rule does not apply there."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "On Page 2, all use case names are unique and describe different activities: Tuvasta kasutaja, Koosta arhet\u00fc\u00fcp, Muuda kinnitamata arhet\u00fc\u00fcpi, Kustuta arhet\u00fc\u00fcp, L\u00fckka tagasi arhet\u00fc\u00fcp, Muuda kinnitatud arhet\u00fc\u00fcpi, Vaata kinnitatud arhet\u00fc\u00fcpe, Vaata kinnitamata arhet\u00fc\u00fcpe, Esita arhet\u00fc\u00fcp, Kinnita arhet\u00fc\u00fcp. No duplicate activities with same actor found."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Examining all package diagrams: In 'Klassifikaatorite register' (Pages 6 and 11), elements have unique names: Klassifikaator, Kasutaja_liik, Kasutusotstarve, Arhet\u00fc\u00fcbi_alamt\u00fc\u00fcp, Arhet\u00fc\u00fcbi_seisundi_liik. In 'Arhet\u00fc\u00fcpide register' (Pages 8 and 14), element names are unique: Arhet\u00fc\u00fcp plus referenced external elements. No duplicate element names found within any single package."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Examining database diagrams (Pages 11-14): The 'nimetus' column appears in multiple classifier tables (Arhetuubi_alamtuup, Kasutusotstarve, Kasutaja_liik, Arhetuubi_seisundi_liik) but these represent different classification contexts (archetype subtype name, usage purpose name, user type name, status type name), not redundant copies of the same data. Per the rule, 'Identically named columns like description or id in unrelated tables are NOT redundancy.' All data relationships are properly connected via Foreign Keys (FK_isik_kasutaja_liik, FK_hoone_kasutusotstarve, FK_Arhetuup_Arhetuubi_alamtuup, etc.)."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "On Page 2 (use case diagram), all use case names follow a consistent verb-first naming pattern: Tuvasta (Identify), Koosta (Compose), Muuda (Modify), Kustuta (Delete), L\u00fckka tagasi (Reject), Vaata (View), Esita (Submit), Kinnita (Confirm). All names start with active verbs in Estonian."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "On Page 7 (state diagram), all states can be reached: 'Koostamisel' is reached from initial state. 'Esitatud' is reached from 'Koostamisel' and 'Tagasi l\u00fckatud'. 'Kinnitatud' is reached from 'Esitatud'. 'Tagasi l\u00fckatud' is reached from 'Esitatud'. 'Kustutatud' is reached from 'Koostamisel', 'Esitatud', 'Kinnitatud', and 'Tagasi l\u00fckatud'. All 5 states have at least one incoming transition path."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On Page 3 (activity diagram): All actions are reachable from start - 'Vaatab k\u00f5ikide arhet\u00fc\u00fcpide nimekirja' \u2192 'Otsib kinnitamiseks arhet\u00fc\u00fcpi' \u2192 decision nodes \u2192 'Vaatab esitatud arhet\u00fc\u00fcbi detaile' \u2192 'Kinnitab arhet\u00fc\u00fcbi' or 'L\u00fckkab tagasi arhet\u00fc\u00fcbi'. On Page 4 (activity diagram): All actions are reachable - 'Vaatab kinnitatud arhet\u00fc\u00fcpide nimekirja' \u2192 decisions \u2192 'Valib potentsiaalselt ebat\u00e4psete andmetega kinnitatud arhet\u00fc\u00fcbi' \u2192 'Vaatab arhet\u00fc\u00fcbi detaile' \u2192 'Teeb muudatusi arhet\u00fc\u00fcbi andmetes'. No unreachable actions found."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Examining all class/database diagrams: Page 5 shows multiplicities (1, 0..*, 0..1). Page 8 shows multiplicities on all relationships (0..*, 1, 0..1). Pages 9-10 show multiplicities (1, 0..*). Pages 12-14 (database diagrams) show multiplicities on FK relationships (0..*, 1). All relationships have multiplicity indicators on both ends."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "On Page 2 (use case diagram 'Arhet\u00fc\u00fcpide funktsionaalne alls\u00fcsteem'), counted 10 use cases (central elements): 1. Tuvasta kasutaja, 2. Koosta arhet\u00fc\u00fcp, 3. Muuda kinnitamata arhet\u00fc\u00fcpi, 4. Kustuta arhet\u00fc\u00fcp, 5. L\u00fckka tagasi arhet\u00fc\u00fcp, 6. Muuda kinnitatud arhet\u00fc\u00fcpi, 7. Vaata kinnitatud arhet\u00fc\u00fcpe, 8. Vaata kinnitamata arhet\u00fc\u00fcpe, 9. Esita arhet\u00fc\u00fcp, 10. Kinnita arhet\u00fc\u00fcp = 10 total. Actors (Subjekt, Tehnik, Muutja) are NOT counted per the rule. Threshold is \u226510. 10 \u2265 10, therefore smell IS present."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Analyzing visible connection lines on each diagram page: Page 5 - Arhet\u00fc\u00fcp has 3 connections (to Hoone, to Isik as Koostaja, to Isik as Kinnitaja). Page 8 - Arhet\u00fc\u00fcp has 5 connections (to Hoone, to Isik x2, to Arhet\u00fc\u00fcbi_alamt\u00fc\u00fcp, to Arhet\u00fc\u00fcbi_seisundi_liik). Page 9 - Isik has 1 connection. Page 10 - Hoone has 1 connection. Pages 11-14 - maximum connections from any table is 5 (Arhetuup on Page 14 connects to Isik x2, Hoone, Arhetuubi_alamtuup, Arhetuubi_seisundi_liik = 5 lines). Maximum is 5. Threshold is \u22656. Since 5 < 6, smell is NOT present."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Visual inspection of all diagrams shows related elements are positioned reasonably close together. On class/database diagrams, connected elements are arranged in proximity. No relationship line appears to span more than twice the average distance between elements. Without precise coordinate measurements, no obvious distance violations are apparent."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases on Page 2 start with active verbs: Tuvasta, Koosta, Muuda, Kustuta, L\u00fckka, Vaata, Esita, Kinnita. All activity diagram actions on Pages 3-4 start with active verbs: Vaatab, Otsib, Otsustab, Kinnitab, L\u00fckkab, Valib, Teeb. No use case or action starts with a noun or passive form."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Checking all element names for \u22643 characters: Class/Table names - Isik (4 chars), Hoone (5 chars), Arhet\u00fc\u00fcp (8 chars), Klassifikaator (13 chars). Attribute names - nimetus (7 chars), kood (4 chars), email (5 chars), parool (6 chars), eesnimi (7 chars), perenimi (8 chars). Use case names - all multi-word. No names found with \u22643 characters. Threshold is \u22643 chars. All names have \u22654 chars, therefore smell is NOT present."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Examining all class names: Arhet\u00fc\u00fcp (uppercase A, singular), Hoone (uppercase H, singular), Isik (uppercase I, singular), Klassifikaator (uppercase K, singular), Kasutaja_liik (uppercase K, singular), Kasutusotstarve (uppercase K, singular), Arhet\u00fc\u00fcbi_alamt\u00fc\u00fcp (uppercase A, singular), Arhet\u00fc\u00fcbi_seisundi_liik (uppercase A, singular). All class names start with uppercase letters and are in singular form."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Examining all attribute/column names across diagrams: Page 8 shows lowercase attributes - kasutuselev\u00f5tu_aasta_alumine_piir, kommentaar, korruste_arvu_alumine_piir, nimetus, viimase_muudatuse_kuup\u00e4ev. Page 9 shows - eesnimi, email, kasutajanimi, on_aktiivne, parool, perenimi. Page 10 shows - ehitusalune_pindala, k\u00f6etav_pindala, korterite_arv, l\u00fchikirjeldus, on_lodzad. Database columns on Pages 11-14 - nimetus, kood, isik_id, hoone_id, arhetuup_id all start lowercase. All attributes/columns start with lowercase letters."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Examining database table names on Pages 11-14: Arhetuubi_alamtuup (singular), Kasutusotstarve (singular), Kasutaja_liik (singular), Arhetuubi_seisundi_liik (singular), Isik (singular), Hoone (singular), Arhetuup (singular). All database table names are in singular form."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Examining all class, table, and attribute names for type prefixes: No 'tbl_', 'uc_', 'str', 'int' prefixes found on any names. The PK_, FK_, and IXFK_ prefixes found on constraint names (e.g., PK_Isik, FK_isik_kasutaja_liik, IXFK_Isik_Kasutaja_liik) are explicitly ALLOWED per the rule and should be ignored. Column names like 'isik_id', 'hoone_id' use semantic suffixes not type prefixes. No type abbreviation prefixes detected."
+    }
+  ]
+}

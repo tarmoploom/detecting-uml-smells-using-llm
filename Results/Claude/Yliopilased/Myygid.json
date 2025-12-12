@@ -1,0 +1,115 @@
+{
+  "file_name": "Myygid",
+  "timestamp": "2025-12-12T03:31:44Z",
+  "llm_model": "Claude Opus 4.5",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No empty diagrams were found. All 20 diagrams contain at least one element. The package diagram (page 1) contains packages and actors, class diagrams contain classes, state diagram contains states, activity diagrams contain actions, and use case diagram contains use cases."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On page 11 'Tellimuste funktsionaalne alls\u00fcsteem' use case diagram, all use cases (ovals) are associated with at least one actor. For example: 'Koosta tellimus' is associated with Klient, 'Alusta tellimuse komplekteerimist' is associated with Laot\u00f6\u00f6taja, 'M\u00e4rgi tellimus kohaletoimetatuks' is associated with Kuller. Every use case has at least one actor connection."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate use case names describing the same activity with the same actor were found. All use cases in the diagram 'Tellimuste funktsionaalne alls\u00fcsteem' (page 11) have unique names: Koosta tellimus, Esita ja maksa tellimuse eest, T\u00fchista esitatud tellimus, etc. No duplicates exist."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the package diagram on page 1, all elements within each package have unique names. For example, in 'Klassifikaatorite register': Isiku_seisundi_liik, Klassifikaator, Kliendi_seisundi_liik, Pakiautomaadi firma, Pakiautomaat, Pank, Riik, etc. are all unique. No duplicate names within any single package."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "In the database diagrams (pages 15-20), columns with similar names like 'nimetus', 'on_aktiivne', 'kood' appear in multiple tables, but these represent different contexts (each is specific to that classifier type, e.g., Isiku_seisundi_liik has its own nimetus for person status names, Riik has its own nimetus for country names). These are not redundant data copies. All actual data relationships are properly connected via Foreign Keys."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": true,
+      "detected": true,
+      "justification": "On page 11 'Tellimuste funktsionaalne alls\u00fcsteem', inconsistent naming forms are used. Most use cases start with verbs: 'Koosta tellimus', 'Esita ja maksa tellimuse eest', 'T\u00fchista esitatud tellimus', 'Alusta tellimuse komplekteerimist', 'L\u00f5peta tellimuse komplekteerimine', 'Anna tellimus kullerile', 'M\u00e4rgi tellimus kohaletoimetatuks', 'Vaata tellimuste ja saadetiste seisu', 'Tuvasta kasutaja'. However, two use cases start with nouns: 'Klient kustutab poolelioleva tellimuse' (starts with 'Klient'=Client) and 'Aeg kustutab poolelioleva tellimuse' (starts with 'Aeg'=Time). This is a mixed naming pattern."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "On page 3 'Tellimuse seisundidiagramm', all states can be reached. Starting from 'Algus' (initial state): Koostamisel is reached from Algus, Unustatud from Koostamisel, Esitatud from Koostamisel, T\u00fchistatud from Esitatud, Komplekteerimine alanud from Esitatud, Komplekteerimine l\u00f5ppenud from Komplekteerimine alanud, Kohaletoimetamisel from Komplekteerimine l\u00f5ppenud, Kohaletoimetamata from Kohaletoimetamisel, Kohaletoimetatud from Kohaletoimetamisel. All 9 states have incoming transitions."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Activity diagrams on pages 12-14 have all actions reachable from start. Page 12 'Aluste tellimuse komplekteerimist': Algus \u2192 V\u00f5ta k\u00f5ik v\u00e4ljastamiseks sobivad tellimused \u2192 subsequent actions. Page 13 'Koosta tellimus': Algus \u2192 V\u00f5ta k\u00f5ik tooted, mida saab tellida \u2192 subsequent actions. Page 14 'Registreeri klient': Algus \u2192 V\u00f5ta uued isikud, kes soovivad registreeruda \u2192 subsequent actions. All actions are reachable via flow paths from start."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All relationships in class and database diagrams have multiplicity indicators on both ends. Page 2 shows relationships with multiplicities like '1', '0..*', '1..*', '0..1'. Database diagrams (pages 15-20) show FK relationships with proper multiplicities. For example, on page 18: FK_Tellimus_Pank (0..* to 1), FK_Tellimus_Klient (0..* to 1), FK_Tellimuse_rida_Tellimus (1..* to 1). All relationship ends have multiplicity specified."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Two diagrams exceed the threshold of \u226510 central elements: (1) Page 11 'Tellimuste funktsionaalne alls\u00fcsteem' contains 13 use cases (counted: Koosta tellimus, Klient kustutab poolelioleva tellimuse, Aeg kustutab poolelioleva tellimuse, Esita ja maksa tellimuse eest, T\u00fchista esitatud tellimus, Alusta tellimuse komplekteerimist, L\u00f5peta tellimuse komplekteerimine, Anna tellimus kullerile, M\u00e4rgi tellimus kohaletoimetatuks, Vaata tellimuste ja saadetiste seisu, Vaata tellimuste ja saadetiste infot, M\u00e4rgi tellimus kohaletoimetamatuks, Tuvasta kasutaja = 13 total). 13 \u2265 10, smell IS present. (2) Page 16 'Klassifikaatorite register (transformed)' contains 11 tables (counted: Isiku_seisundi_liik, Kliendi_seisundi_liik, Pakiautomaadi_firma, Pakiautomaat, Pank, Riik, Tellimuse_seisundi_liik, Tootaja_roll, Tootaja_seisundi_liik, Toote_kategooria, Toote_seisundi_liik = 11 total). 11 \u2265 10, smell IS present."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": true,
+      "detected": true,
+      "justification": "Two diagrams have elements with \u22656 visual connection lines: (1) Page 2 'Tellimuste register': Tellimus has 6 visible connection lines to: Tellimuse_seisundi_liik, Tellimuse rida, Klient (tellib), Pank, Pakiautomaat, T\u00f6\u00f6taja (komplekteerib) = 6 lines. 6 \u2265 6, smell IS present. (2) Page 18 'Tellimuste register (transformed)': Tellimus has 6 visible connection lines via: FK_Tellimus_Pank, FK_Tellimus_Klient, FK_Tellimus_Pakiautomaat, FK_Tellimuse_rida_Tellimus, FK_Tellimus_Tellimuse_seisundi_liik, FK_Tellimus_Tootaja = 6 lines. 6 \u2265 6, smell IS present."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Visual inspection of the diagrams shows that related elements are positioned reasonably close to each other. No relationship distances appear to exceed twice the average distance between elements on any diagram. Elements are distributed in a relatively uniform manner across all pages."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "On page 11 use case diagram, two use cases do not start with active verbs: 'Klient kustutab poolelioleva tellimuse' starts with 'Klient' (noun = Client), and 'Aeg kustutab poolelioleva tellimuse' starts with 'Aeg' (noun = Time). These should start with verbs like 'Kustuta pooleliolev tellimus' instead. All activity diagram actions on pages 12-14 start with active verbs (V\u00f5ta, Otsi, Vali, Kontrolli, Komplekteeri, Uuenda, T\u00e4ida, Kinnita, Paranda, Esita)."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All class, table, attribute, and use case names have 4 or more characters. Checked examples: 'Isik' (4 chars), 'Riik' (4 chars), 'Pank' (4 chars), 'nimi' (4 chars), 'kood' (4 chars) - all meet the \u22654 character requirement. The actor 'Aeg' (3 chars) is not counted as it's an actor, not a class/table/attribute/use case. Threshold is \u22643 characters. No names with \u22643 characters found among applicable element types."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class names start with uppercase and are singular. Examples: Tellimus (singular, uppercase T), Isik (singular, uppercase I), Klient (singular, uppercase K), Toode (singular, uppercase T), Klassifikaator (singular, uppercase K), T\u00f6\u00f6taja (singular, uppercase T). No class names start with lowercase or are plural."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All attribute and column names start with lowercase letters. Examples from class diagrams: j\u00e4lgimisnumber, kommentaar, summa, viimase_muutm_aeg, kogus, hind_ostjale, kirjeldus, nimi, kood, nimetus, on_aktiivne. Database columns: isik_id, e_meil, eesnimi, elukoht, isikukood, perenimi, reg_aeg, synni_kp. All start with lowercase."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All database table names are singular. Examples from transformed diagrams (pages 15-20): Isik (not Isikud), Klient (not Kliendid), Tellimus (not Tellimused), Toode (not Tooted), Tootaja (not Tootajad), Klassifikaator (not Klassifikaatorid), Riik (not Riigid), Pank (not Pangad). All table names are in singular form."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No disallowed type prefixes found in class, table, or attribute names. No 'tbl_', 'uc_', 'str', 'int' prefixes present. The prefixes PK_, FK_, pfK, and IXFK_ are present in the database diagrams but these are explicitly allowed per the rule for indicating primary keys, foreign keys, partial foreign keys, and indexes. Examples of allowed prefixes: PK_Isik, FK_Tellimus_Pank, IXFK_Klient_Kliendi_seisundi_liik."
+    }
+  ]
+}

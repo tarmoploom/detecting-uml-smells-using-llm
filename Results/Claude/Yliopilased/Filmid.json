@@ -1,0 +1,115 @@
+{
+  "file_name": "Filmid",
+  "timestamp": "2025-12-11T19:41:42Z",
+  "llm_model": "Claude Opus 4.5",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No empty diagrams were found. All 18 diagrams contain at least one element."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": true,
+      "justification": "On page 2 (Filmide funktsionaalne alls\u00fcsteem use case diagram), the use case 'Tuvasta kasutaja' (from L\u00e4bivad huvid) has ZERO direct actor associations. It only has \u00abinclude\u00bb relationships from other use cases but no association line connecting it to any actor."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate use case activity names with the same actor were found. All 11 use cases on page 2 have unique activity names (Aktiveeri film, L\u00f5peta film, Muuda film, Registreeri film, Vaata aktiivseid filme, etc.)."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate element names were found within the same package. Each package (Filmide register, Isikute register, Klassifikaatorite register, etc.) contains uniquely named elements."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No redundant data columns without FK relationships were found. Similar column names like 'nimetus' and 'on_aktiivne' appear in different tables but represent contextually different data for their respective entities, which is not redundancy per the rule definition."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases on page 2 follow a consistent verb-first naming pattern in Estonian: Tuvasta (Identify), Vaata (View), L\u00f5peta (End), Registreeri (Register), Muuda (Change), Aktiveeri (Activate), Unusta (Forget)."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "On page 11 (Filmi seisundidiagramm), all 6 states are reachable: Alg\u2192Ootel (initial transition), Ootel\u2192Aktiivne/L\u00f5petatud/Unustatud, Aktiivne\u2192Mitteaktiivne/L\u00f5petatud, Mitteaktiivne\u2192Aktiivne/L\u00f5petatud. Every state has at least one incoming transition path."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On pages 3 and 4 (activity diagrams), all actions are reachable from the start node (Algus). Each action has incoming flows from previous actions or decision nodes forming complete paths."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All relationships in class and database diagrams have multiplicity indicators on both ends. Examples include: '1 to 0..*', '0..1 to 1', '0..* to 1' patterns consistently used across all diagrams (pages 5-18)."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Page 2 (Filmide funktsionaalne alls\u00fcsteem) contains 11 use cases: (1) Tuvasta kasutaja, (2) Vaata filmide koondaruannet, (3) L\u00f5peta film, (4) Registreeri film, (5) Muuda film, (6) Aktiveeri film, (7) Muuda film mittaktiivseks, (8) Vaata aktiivseid filme, (9) Vaata k\u00f5iki filme, (10) Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid filme, (11) Unusta film. Counted 11 use cases. Threshold is \u226510. Since 11 \u2265 10, smell IS present."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On page 10 (Filmide register), Film class has 5 visual connection lines: (1) to T\u00f6\u00f6taja for registreerija, (2) to T\u00f6\u00f6taja for viimane muutja, (3) to Filmi_seisundi_liik, (4) to Filmi_kategooria_omamine, (5) to Filmi_t\u00fc\u00fcp. On page 18 (transformed), Film similarly has 5 FK relationships. Maximum is 5. Threshold is \u22656. Since 5 < 6, smell is NOT present."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Visual inspection of all diagrams shows reasonably organized layouts with related elements positioned near each other. No relationship distances appear to significantly exceed twice the average distance between elements."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "On page 4 (Filmi aktiveerimise tegevusdiagramm), two actions start with nouns instead of active verbs: 'Filmi aktiveerimine eba\u00f5nnestub' and 'Filmi aktiveerimine edukas'. Both start with 'Filmi' (Film's - genitive noun form) followed by 'aktiveerimine' (activation - noun), rather than using verb-first format like 'M\u00e4rgi aktiveerimine eba\u00f5nnunuks'."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All class, table, attribute, and use case names have 4 or more characters. Shortest names found: 'Isik' (4 chars), 'Film' (4 chars), 'Riik' (4 chars), 'kood' (4 chars), 'type' (4 chars). Threshold is \u22643 characters. Since minimum found is 4, and 4 > 3, smell is NOT present."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class names start with uppercase letters and are singular: Isik, Film, Klassifikaator, T\u00f6\u00f6taja, Klient, Kasutajakonto, Filmi_kategooria, Filmi_t\u00fc\u00fcp, etc. No lowercase starts or plural forms found."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All attribute and column names start with lowercase letters: e_meil, eesnimi, elukoht, isikukood, perenimi, reg_aeg, nimetus, on_aktiivne, kirjeldus, filmi_kood, aasta, etc."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All database table names in transformed diagrams (pages 13-18) are singular: Isik, Kasutajakonto, Tootaja, Klient, Film, Riik, Filmi_kategooria, Filmi_tyyp, Tootaja_roll, etc. No plural table names found."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No prohibited type prefixes (tbl_, uc_, str, int, etc.) were found in class, table, or attribute names. The PK_, FK_, pfK, and IXFK_ prefixes present are explicitly allowed per the rule for indicating primary keys, foreign keys, partial foreign keys, and indexes."
+    }
+  ]
+}

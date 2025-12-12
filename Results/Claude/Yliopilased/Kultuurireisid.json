@@ -1,0 +1,115 @@
+{
+  "file_name": "Kultuurireisid",
+  "timestamp": "2025-12-12T02:27:13Z",
+  "llm_model": "Claude Opus 4.5",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No empty diagrams were found. All 21 pages contain at least one element. Each diagram (package overview, use case, activity, class, state, and DDL diagrams) has multiple elements."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On page 2 (Kultuurireiside funktsionaalne alls\u00fcsteem use case diagram), all use case ovals are associated with actors. Use cases like 'Lisa uus kultuurireis', 'Kinnita kultuurireis', etc. connect to actors (Reisikonsultant, Reisikorraldusjuht, Klient, Aeg, Giid, Isik). Sub-use cases are connected via \u00abinclude\u00bb relationships to main use cases which have actor associations."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate use cases with same activity found. While multiple use cases use the verb 'Lisa' (Add), they add different entities: 'Lisa uus kultuurireis' (add trip), 'Lisa uus reisip\u00e4ev' (add travel day), 'Lisa teenuse pakkumine' (add service offering). Similarly, 'Muuda' (Modify) use cases modify different entities. These represent distinct activities, not duplicates."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate element names within the same package. Each register (Kultuurireiside register, Klassifikaatorite register, Klienditellimuste register, etc.) contains uniquely named elements. For example, Klassifikaatorite register contains: Klassifikaator, Amet, Kliendi_seisundi_liik, Klienditellimuse_seisundi_liik, Kultuurireisi_seisundi_liik, Tootaja_seisundi_liik - all unique names."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": true,
+      "detected": false,
+      "justification": "Similar column names like 'isikukood', 'eesnimi', 'perenimi', 'e_meil' appear in both Isik and Reisija tables, but these represent different contexts: Isik stores registered system users while Reisija stores travel document information for travelers (who may not be registered users). This is intentional design for different business purposes, not redundant copies of the same data."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases on page 2 follow consistent verb-first naming pattern in Estonian: Lisa (Add), Kinnita (Confirm), Vaata (View), T\u00fchista (Cancel), Muuda (Modify), Otsi (Search), Tuvasta (Identify), Arhiveeri (Archive). All 13 use case names start with active verbs."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "On page 6 (Kultuurireisi eluts\u00fcklid state diagram), all 5 states are reachable: 'Kavandamisel' from initial state via 'Lisa uus kultuurireis', 'Kinnitatud' from Kavandamisel, 'Toimunud' from Kinnitatud, 'T\u00fchistatud' from Kavandamisel or Kinnitatud, 'Arhiveeritud' from Kavandamisel, Toimunud, or T\u00fchistatud. Every state has at least one incoming transition."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On pages 3-4 (Joonis3, Joonis4 activity diagrams), all actions are reachable from start nodes. Page 3: Ava s\u00fcsteem \u2192 Vali kultuurireis \u2192 decision branches lead to all subsequent actions. Page 4: Ava s\u00fcsteem \u2192 Vali funktsioon \u2192 Sisesta reisi detailid \u2192 all paths are connected from start."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": true,
+      "detected": false,
+      "justification": "All relationships in class and database diagrams have multiplicity indicators on both ends. Examples from page 14 DDL: FK_Klient_Isik shows '0..1' and '1', FK_Klienditellimus_Klient shows '0..*' and '1'. Pages 5, 7, 8, 20, 21 all show multiplicities like '1', '0..*', '0..1' on both relationship ends."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "DETECTED on page 2: 'Kultuurireiside funktsionaalne alls\u00fcsteem' use case diagram contains 13 use case ovals (Lisa uus kultuurireis, Kinnita kultuurireis, Vaata kultuurireiside koondaruannet, T\u00fchista kultuurireis, Muuda kultuurireisi andmeid, Otsi kultuurireisi, Tuvasta kasutaja roll, Arhiveeri kultuurireis, Lisa uus reisip\u00e4ev, Muuda reisip\u00e4eva andmeid, Lisa teenuse pakkumine, Muuda teenuse pakkumise andmeid, Vaata kultuurireise). Threshold is \u226510. 13 \u2265 10, therefore smell IS present. ALSO DETECTED on page 14: DDL diagram contains 14 tables (Amet, Kliendi_seisundi_liik, Klienditellimuse_seisundi_liik, Kultuurireisi_seisundi_liik, Tootaja_seisundi_liik, Isik, Klienditellimus, Reisija, Klient, Koostoopartner, Kultuurireis, Reisipaev, Teenuse_pakkumine, Tootaja). 14 \u2265 10, therefore smell IS present."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On page 14 (DDL), counted visual connections for each table: Kultuurireis has 5 lines (to Kultuurireisi_seisundi_liik, to Tootaja, from Klienditellimus, from Reisipaev, from Teenuse_pakkumine). Klienditellimus has 4 lines. Tootaja has 4 lines. Isik has 2 lines. Maximum is 5. Threshold is \u22656. Since 5 < 6, smell is NOT present. Other diagram pages (15-21) have fewer tables and connections."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Visual distance analysis from text representation cannot be accurately measured. Based on the diagram descriptions, elements appear to be positioned in logical groupings without excessive distances between related elements."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases on page 2 start with active verbs in Estonian: Lisa (Add), Kinnita (Confirm), Vaata (View), T\u00fchista (Cancel), Muuda (Modify), Otsi (Search), Tuvasta (Identify), Arhiveeri (Archive). All activity diagram actions on pages 3-4 also start with active verbs: Ava (Open), Vali (Select), Sisesta (Enter), Salvesta (Save), Paranda (Fix), Katkesta (Cancel)."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All names have 4 or more characters. Class/table names: Amet (4), Isik (4), Klient (6), Reisija (7), etc. Attribute/column names: nimi (4), hind (4), kood (4), aadress (7), etc. Threshold is \u22643 characters. All names have \u22654 characters, therefore smell is NOT present."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class names start with uppercase and are singular: Kultuurireis, Isik, Tootaja, Teenuse_pakkumine, Klienditellimus, Klient, Koostoopartner, Reisipaev, Reisija, Klassifikaator, Amet, Kliendi_seisundi_liik, Klienditellimuse_seisundi_liik, Kultuurireisi_seisundi_liik, Tootaja_seisundi_liik. No lowercase starts or plural forms found."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All attribute/column names start with lowercase letters. Examples from DDL (page 14): amet_kood, ameti_nimetus, isik_id, e_meil, kasutajanimi, parool, isikukood, aadress, eesnimi, perenimi, telefon, klienditellimus_kp, koguhind, nimi, kirjeldus, hind. No uppercase-starting attribute names found."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All database table names are singular: Amet (not Amets), Isik (not Isikud), Klient (not Kliendid), Klienditellimus, Reisija, Koostoopartner, Kultuurireis, Reisipaev, Teenuse_pakkumine, Tootaja, and all _seisundi_liik tables. No plural table names found."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No type prefixes found in names. Column names like amet_kood, isik_id, klienditellimus_kp, kultuurireis_id do not use prefixes like tbl_, uc_, str, int. The PK_, FK_, pfK, IXFK_ prefixes used for primary keys, foreign keys, and indexes are explicitly allowed per the rule and were ignored in this analysis."
+    }
+  ]
+}
