@@ -47,11 +47,6 @@ def main():
 
     if not filename or not isinstance(filename, str):
         sys.exit("Error: The value for 'file_name' is empty or invalid.")
-    
-    if not filename.__contains__('Claude_'):
-        sys.exit("Error: The value does not have Claude_ in it, check the result.json")
-
-    filename = filename.removeprefix('Claude_')
 
     # -------------------------------------------------
     # 2. Setup and Check Paths (Strict Mode)
