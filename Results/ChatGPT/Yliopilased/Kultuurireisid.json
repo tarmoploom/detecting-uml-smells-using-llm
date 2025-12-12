@@ -1,0 +1,115 @@
+{
+  "file_name": "Kultuurireisid",
+  "timestamp": "2025-12-12T02:29:43Z",
+  "llm_model": "GPT-5.1",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All identified diagrams (overview/package, use case, activity, state, class/database) contain visible elements such as actors, use cases, classes, tables, states, or actions; no page labelled as a diagram is empty. "
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "The main use case diagram 'Kultuurireiside funktsionaalne alls\u00fcsteem' shows each use case (for example 'Lisa uus kultuurireis', 'T\u00fchista kultuurireis', 'Otsi kultuurireisi') connected to at least one actor such as Giid, Reisikonsultant or Klient; the function list inside the package on the overview diagram is treated as text only per the rule note, not as use case ovals. "
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "On the use case diagram, all use case names describe distinct activities; there are no pairs like 'Add trip' versus 'Register trip' that represent the same activity for the same actor, and no obviously duplicated synonyms can be seen. "
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the package/overview diagram, each package lists contained elements (such as 'Kultuurireis', 'Reisipaev', 'Teenuse_pakkumine' in the 'Kultuurireiside register' package) with unique primary names; there are no multiple model elements with the same name in the same package when display metadata is ignored. "
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": true,
+      "detected": false,
+      "justification": "Although several tables share column names like 'nimi', 'kirjeldus' or 'e_meil', these clearly represent attributes of different entities (for example customer name versus partner name), and cases where the same business entity might be split across tables are joined by explicit foreign keys in the database diagrams, so redundant denormalized copies of the same data value without FK connections are not clearly present. "
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All visible use case names in the use case diagram follow a consistent imperative-verb style (for example 'Lisa uus kultuurireis', 'Muuda kultuurireisi andmeid', 'Vaata kultuurireise', 'Arhiveeri kultuurireis'); no mixture of verb-based and purely noun-based use case names is apparent. "
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the state machine 'Kultuurireisi eluts\u00fcklid', each state such as 'Kavandamisel', 'Kinnitatud', 'Toimunud', 'T\u00fchistatud' and 'Arhiveeritud' has at least one incoming transition from the initial creation ('Lisa uus kultuurireis') or from another state, so no state is clearly unreachable. "
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In both activity diagrams 'Joonis3' and 'Joonis4', all actions and decisions (for example 'Ava s\u00fcsteem', 'Vali funktsioon Lisa uus kultuurireis', 'Paranda reisi detaile', 'T\u00fchista kultuurireis') appear along continuous control-flow paths starting from the initial node; there are no isolated actions without incoming control flows. "
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": true,
+      "detected": false,
+      "justification": "The conceptual class diagram and register diagrams show associations annotated with multiplicities such as '0..*' and '1', while the detailed database diagrams use standard foreign-key style connectors and crow's-foot-like cardinality annotations, which are explicitly exempted; no association line is clearly drawn without any multiplicity or implied notation at both ends. "
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Several diagrams contain 10 or more central elements: for example, the use case diagram 'Kultuurireiside funktsionaalne alls\u00fcsteem' shows well over ten use cases within the system boundary, and the large DDL diagram includes more than ten tables such as Amet, Klienditellimus, Reisija, Klient, Koostoopartner, Kultuurireis, Reisipaev and Teenuse_pakkumine on a single diagram. "
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the class and database diagrams, individually inspected central tables such as 'Kultuurireis', 'Klienditellimus', 'Isik' and 'Tootaja' each participate in at most about four or five distinct relationships on any single diagram; there is no clear case where a single class or table has six or more separate visible relationship lines on the same page. "
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Element spacing in the diagrams appears relatively balanced; while some connectors span across the page (particularly in the DDL diagram), there is no clearly extreme case where a pair of related elements is placed at a distance more than twice the average distance between other related elements on the same diagram in an unambiguous way. "
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": true,
+      "justification": "Most use case names and many activity actions start with active verbs, but several activity nodes use result-style or noun-leading phrases instead, such as 'Uus kultuurireis lisatud' in activity diagram 'Joonis3' and 'Kultuurireis t\u00fchistatud' or 'Kultuurireisi ei t\u00fchistatud' in 'Joonis4', which begin with adjectives or nouns rather than active verbs. "
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": true,
+      "justification": "The diagram named 'DDL' declares a class element literally named 'DDL', which has only three characters and therefore counts as a too-short name for a class or table according to this rule. "
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Domain class and table names like 'Kultuurireis', 'Isik', 'Klienditellimus', 'Reisija' and 'Koostoopartner' start with uppercase letters and are singular; pluralized names are used only in register titles such as 'Isikute register', which are excluded by the rule for plural table names. "
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute and column names in both the conceptual and DDL-style diagrams consistently start with lowercase letters (for example 'algus_kp', 'klienditellimus_kp', 'eesnimi', 'isiku_kood'); no attribute or column name visibly begins with an uppercase letter. "
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "The actual data tables/classes are named in singular form (for example 'Klienditellimus', 'Reisija', 'Kultuurireis', 'Koostoopartner'); plural wording appears only in register names like 'Klienditellimuste register', which correspond to domain registers and are explicitly not to be treated as entity table names for this rule. "
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class, table, and attribute names do not use type-indicating prefixes such as 'tbl_', 'uc_' or 'str'; the only prefixes present are technical ones like 'PK_', 'FK_', 'pfK_' and 'IXFK_' used for key and index names, which the rule explicitly allows. "
+    }
+  ]
+}

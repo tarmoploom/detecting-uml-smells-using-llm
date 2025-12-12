@@ -81,7 +81,7 @@ Return your findings in the following JSON structure:
   ]
 }
 
-Set "file_name" to have prefix of "chatGPT_", join prefix with the exact uploaded PDF filename, without extension (e.g., chatGPT_Autorent).
+Set "file_name" to the exact uploaded PDF filename, without extension (e.g., Autorent).
 If the filename is not visible, use: <FILENAME_HERE>.
 
 

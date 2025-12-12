@@ -1,0 +1,115 @@
+{
+  "file_name": "Kobarkino",
+  "timestamp": "2025-12-12T02:15:40Z",
+  "llm_model": "GPT-5.1",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Every page labeled as a diagram (Filmide register, Saalide register, Kinoseansside register, Klassifikaatorite register, Kohtade register, Piletite register, activity models, use case diagram, state/status diagram, and database models Film, Saal_koht, Klassifikaatorid, Kinoseanss, Pilet) contains at least one visible central element (class/table/use case/state or at least one structured element with attributes), so no diagram is completely empty. "
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "The single use case diagram 'Kinoseansside kasutusjuhtude diagramm' lists several use cases (for example 'Loo kinoseanss', 'Muuda mitteaktiivse kinoseansi andmeid', 'Kustuta mitteaktiivse kinoseansi', 'Vaata ... nimekirja' and others) together with multiple actors, but the extracted text does not show any explicit use case that is clearly depicted as an isolated oval without an association to an actor; there is also no separate textual list of unconnected use cases. Because the PDF text does not unambiguously indicate a use case with no actor association, this rule cannot be marked as violated."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the use case diagram, use case names such as 'Loo kinoseanss', 'Muuda mitteaktiivse kinoseansi andmeid', 'Kustuta mitteaktiivse kinoseansi', 'Vaata l\u00f5ppenud kinoseansside statistikat', 'Vaata aktiivsete kinoseansside nimekirja', 'T\u00fchista aktiivse kinoseansi', 'Aktiveeri mitteaktiivse kinoseansi', 'Vaata mitteaktiivsete kinoseansside nimekirja' and 'Lopeta aktiivse ...' describe clearly different activities (creation, modification, deletion, viewing lists/statistics, cancelling, activating, ending). The definitions do not indicate any pair that obviously describes the same activity, and the text does not explicitly show that such potentially similar use cases are associated with the same actor, so no violation can be confirmed."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "There is no explicit package diagram in the provided content. The 'Klassifikaatorite register' diagram is labeled as a class diagram, not a package diagram, and other diagrams are data models, class-like register diagrams, or use case/activity/state models. Even on 'Klassifikaatorite register', repeated labels such as 'Klassifikaatori tuup' appear in positions consistent with classifier-type metadata rather than separate model elements, matching the interpretation rule that such text is metadata and not distinct elements. Therefore, there is no clear case of multiple model elements with the same primary name inside one package diagram."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database/data-model diagrams (Film, Saal_koht, Klassifikaatorid, Kinoseanss, Pilet) show repeated domain values consistently modeled via keys and foreign keys, not via unlinked redundant columns. For example: 'film' stores 'keel_kood' and 'film_vanuse_pr_kood' with corresponding classifier tables; 'kinoseanss' stores 'saal_nr', 'film_id' and 'seanss_olek_kood' with foreign-key constraints; and 'pilet' references 'kinoseanss_id' and the seat key via foreign keys. Generic names like 'nimetus', 'kirjeldus', and 'id'-style fields appear in multiple tables but are explicitly allowed by the rule as non-redundant system fields. No pair of tables clearly stores the same domain datum without a foreign key between them."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use case names in the 'Kinoseansside kasutusjuhtude diagramm' all follow a consistent verb-first form in Estonian (for example 'Loo kinoseanss', 'Muuda ...', 'Kustuta ...', 'Vaata ...', 'T\u00fchista ...', 'Aktiveeri ...', 'Lopeta ...'). None of the use case names is purely noun-based or in a distinctly different naming form, so there is no inconsistent use-case naming form according to this rule."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The 'Kinoseansside seisundi diagramm' shows several states such as 'Mitteaktiivne', 'Aktiivne', 'T\u00fchistatud', 'L\u00f5ppenud' and 'Kustutatud', along with transition descriptions like 'Kinoseansside haldur loob uue kinoseansi OP2.1', '... aktiveerib kinoseansi OP2.2', '... kustutab kinoseansi OP2.3', 'Kinoseanss on l\u00f5ppenud OP2.6', and '... t\u00fchistab kinoseansi OP2.4'. The extracted text does not show any state name that appears only once with no incoming or outgoing transition text, so there is no clearly unreachable state."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "The two activity diagrams 'arimudel 1 (kinoseansi kustutamine)' and 'arimudel 2 (uue kinoseansi loomine)' each list a sequence of actions and decisions (for example 'Valib kinoseansi...', 'Vaatab ... nimekirja', 'Otsustab kas j\u00e4tkata', 'Kontrollib kas valitud saal on ...', 'Valib saali, kuup\u00e4eva ja kellaaja', plus decision questions like 'kas leidus?', 'kas on vaba?', 'kas on kindel?' and guards '[JAH]'/'[EI]'). No action appears as an isolated label with no surrounding decision or flow text, and given the lack of explicit disconnected elements, there is no action that can be clearly identified as unreachable."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": true,
+      "detected": false,
+      "justification": "On the class/register diagrams (Filmide register, Saalide register, Kinoseansside register, Klassifikaatorite register, Kohtade register, Piletite register) where associations are textually visible, multiplicities like '0..*' and '1' are shown on both sides of relationships (for example between 'Film' and 'Kinoseanss', between 'Saal' and 'Kinoseanss', and between 'Kinoseanss' and 'Pilet'). On the pure database diagrams (dm Film, dm Saal_koht, dm Klassifikaatorid, dm Kinoseanss, dm Pilet), relationships are database foreign-key connectors which are exempt per the interpretation rules even when textual '1'/'0..*' labels are not printed. The remaining diagrams either do not show explicit association lines in the text extraction or use generalization-like links where multiplicities are normally omitted. There is no unambiguous case of a UML-style association between two elements that clearly lacks multiplicity at both ends."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": false,
+      "justification": "No single diagram contains 10 or more central elements (classes, tables, use cases, or states). For example: 'Filmide register' shows only a handful of elements such as 'Film', associated classifier instances and 'Kinoseanss'; 'Saalide register' shows 'Saal', 'Kinoseanss' and 'Koht'; 'Kinoseansside register' shows 'Kinoseanss', 'Saal', 'Film', 'Pilet', 'Seanss_olek'; the use case diagram has roughly 9 use cases; the state/status diagram has about 5 states; and each database diagram (Film, Saal_koht, Klassifikaatorid, Kinoseanss, Pilet) contains at most 4\u20135 tables. Therefore, no diagram reaches the threshold of 10 central elements."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Across all class/register and database diagrams, no single class or table is shown with 6 or more distinct, visually separate relationship lines. For instance, 'Kinoseanss' on the register diagram connects to 'Saal', 'Film', 'Pilet' and 'Seanss_olek' (about 4 connections), 'Film' on the data model connects to classifier tables only via a couple of foreign keys, and 'pilet' on the ticket model connects to 'kinoseanss' and the seat key. There is no evidence of any element with 6 separate relationship lines on a single diagram."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "This rule depends on geometric distances between related elements compared to the average distance on each diagram. The extracted PDF content provides names, attributes and textual multiplicities, but not precise or relative spatial distances. Without explicit layout information showing a particular related pair being more than twice as far apart as the average, no violation can be identified, so this rule cannot be marked as detected."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use case names in the use case diagram all start with active verbs in Estonian (for example 'Loo', 'Muuda', 'Kustuta', 'Vaata', 'T\u00fchista', 'Aktiveeri', 'Lopeta'). In the activity diagrams, the action labels that are clearly action-like likewise begin with verbs such as 'Valib ...', 'Vaatab ...', 'Otsustab ...', 'Kontrollib ...'. Question-style texts like 'kas leidus?' and 'kas on kindel?' are most plausibly guard/decision labels rather than action nodes, and thus are not treated as actions under this rule. Therefore, there is no use case or confirmed action whose name fails to start with an active verb."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute/column, or use case name consists of 3 or fewer characters. Class and table names such as 'Film', 'Saal', 'Koht', 'Pilet', 'Kinoseanss', 'Klassifikaator', 'seanss_olek', 'film_vanuse_pr', 'keel' all exceed three characters, and attribute names such as 'film_id', 'kuupaev', 'alguse_aeg', 'lopu_aeg', 'nimetus', 'kirjeldus', 'on_aktiivne', 'saal_nr', 'rida_nr', 'koht_nr' are also longer than three characters. There are no use case names that are shorter than or equal to three characters."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": true,
+      "detected": false,
+      "justification": "UML class names on the register-style diagrams (for example 'Film', 'Saal', 'Koht', 'Pilet', 'Kinoseanss', 'Klassifikaator', 'Keel', 'Seanss_olek', 'Film_vanuse_pr') all start with uppercase letters and appear in singular form. Lowercase names like 'film', 'saal', 'koht', 'kinoseanss', 'pilet' occur in the data-model diagrams representing database tables and are therefore treated under the table-naming rules, not as UML class names. No class name both represents a domain entity and starts with a lowercase letter or is plural."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All attributes and columns shown in the diagrams use lowercase or lowercase-with-underscores naming (for example 'aasta', 'kestus', 'nimetus', 'tutvustus', 'keel_kood', 'film_vanuse_pr_kood', 'alguse_aeg', 'lopu_aeg', 'kuupaev', 'saal_nr', 'rida_nr', 'koht_nr', 'on_aktiivne'). There are no attribute or column names beginning with an uppercase letter, so this rule is not violated."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database table names in the data-model diagrams (for example 'film', 'saal', 'koht', 'kinoseanss', 'pilet', 'seanss_olek', 'film_vanuse_pr', 'keel') are singular domain nouns in Estonian, not plural forms. Register-style names like 'Filmide register', 'Saalide register', 'Klassifikaatorite register' describe registers, and are excluded by the interpretation rule for domain register tables. No table representing a single domain entity is named in a plural form."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Neither class/table names nor attribute names include type-indicating prefixes such as tbl_, uc_, str_ or similar. Names like 'film', 'saal', 'koht', 'kinoseanss', 'pilet', and attributes such as 'film_id', 'saal_nr', 'keel_kood' and 'seanss_olek_kood' are descriptive domain or key names without technical type prefixes. The only visible prefixes are key-notation ones like 'PK', 'FK' or 'pfK' around keys, which are explicitly allowed by the rule. Therefore, there is no violation of this naming constraint."
+    }
+  ]
+}

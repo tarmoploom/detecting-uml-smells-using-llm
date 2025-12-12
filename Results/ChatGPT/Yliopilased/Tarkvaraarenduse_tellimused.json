@@ -1,0 +1,115 @@
+{
+  "file_name": "Tarkvaraarenduse_tellimused",
+  "timestamp": "2025-12-12T03:57:40Z",
+  "llm_model": "GPT-5.1",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Among the diagrams, the page titled Diagram: \u00dclesannete registri eskiismudel (class \u00dclesannete registri eskiismudel) shows only the diagram frame and title text but no visible classes, tables, or other central elements inside the diagram area, so it constitutes an empty diagram. All other diagrams contain at least one clear central element. "
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On the use case diagram \u00dclesannete funktsionaalne alls\u00fcsteem, every visible use case oval is part of the cluster of use cases that are connected by solid lines to the three actors on the left; there is no clearly isolated oval that is shown without any actor-related connection. Because the PDF does not unambiguously depict a use case with zero actor association, this smell cannot be confirmed. "
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The use case names on the \u00dclesannete funktsionaalne alls\u00fcsteem diagram (for example, Lisa \u00fclesanne, Muuda \u00fclesande andmeid, Vaata \u00fclesande detaile, T\u00fchista \u00fclesanne, Pane \u00fclesanne ootele, M\u00e4\u00e4ra \u00fclesande vastutaja, Eemalda \u00fclesande vastutaja, Vaheta \u00fclesande vastutaja) each describe distinct activities; there are no two or more use cases whose names clearly describe the same activity while being linked to the same actor. "
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the package-style overview diagram \u00dclesannete FASiga seotud p\u00e4devusalad ja registrid and in the other diagrams that show elements within packages (\u00dclesannete register, Projektide register, T\u00f6\u00f6tajate register, Klassifikaatorite register), no package contains multiple model elements with the same primary name. Repeated labels such as Klassifikaatori t\u00fc\u00fcp match the given examples of classifier-type metadata and are therefore ignored for this rule. "
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Across the database-oriented diagrams (\u00dclesannete register, Projektide register, T\u00f6\u00f6tajate register, Klassifikaatorite register and their transformed versions), shared data such as ylesanne_id, projekt_id, tootaja_id or various *_kood columns always appear as foreign key columns with explicit FK connectors between the tables. There is no situation where the same data value is clearly stored redundantly in multiple tables without a foreign key connecting them; similarly named generic columns like nimetus or kirjeldus appear in different contexts and are not shown as denormalized copies of the same fact. "
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use case names on the \u00dclesannete funktsionaalne alls\u00fcsteem diagram consistently use an imperative-verb form (e.g., Lisa \u00fclesanne, Vaata k\u00f5iki \u00fclesandeid, M\u00e4\u00e4ra \u00fclesande vastutaja, T\u00fchista \u00fclesanne, Pane \u00fclesanne ootele, Kinnita l\u00f5petatud \u00fclesanne, Alusta \u00fclesande t\u00e4itmist, J\u00e4tka \u00fclesande t\u00e4itmist). There is no visible mixing of noun-only names with verb-based names, so the naming form is consistent. "
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the state diagram \u00dclesande seisundidiagramm, the initial node has a transition into the Avatud state, and all other states (Pooleli, Ootel, L\u00f5petatud, \u00dclevaatusel, Kinnitatud, T\u00fchistatud) show at least one incoming transition from a reachable state (for example, Alusta \u00fclesande t\u00e4itmist to Pooleli, Pane \u00fclesanne ootele or Peata t\u00f6\u00f6 to Ootel, M\u00e4rgi \u00fclesanne l\u00f5petatuks to L\u00f5petatud, Vaata \u00fcle to \u00dclevaatusel, Anna heakskiit to Kinnitatud, and several T\u00fchista \u00fclesanne transitions to T\u00fchistatud). No state is shown without an incoming path from the initial node, so there is no unreachable state. "
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "The activity diagrams \u00dclesande kinnitamise tegevusdiagramm and \u00dclesande ootele panemise tegevusdiagramm each start from an Algus node and show flows through all actions (such as Vaata l\u00f5petatud \u00fclesannete nimekirja, Vali konkreetne \u00fclesanne, Kinnita \u00fclesanne, Saada \u00fclesanne parandusse, J\u00e4tka \u00fclesande t\u00e4itmist, M\u00e4rgi \u00fclesanne l\u00f5petatuks, T\u00fchista \u00fclesanne, Vaata projekti \u00fclesannete nimekirja, Vali \u00fclesanne, T\u00e4ida p\u00f5hjendus) leading eventually to a final node (T\u00f6\u00f6 l\u00f5pp or L\u00f5pp). Every action lies on at least one path from the start to an end, so there is no clearly unreachable action node. "
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "In the conceptual and logical class/database diagrams (Kontseptuaalne eskiismudel, Klassifikaatorite register, \u00dclesannete register, Projektide register, T\u00f6\u00f6tajate register, and their transformed versions), UML-style association lines that are not generalizations show explicit multiplicity labels such as 0..* and 1 at both ends, and the database diagrams use standard FK/crow's-foot connectors which are exempt by the interpretation rules. No association line is clearly drawn without any multiplicity or implied cardinality notation at both ends, so this smell does not occur. "
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The use case diagram \u00dclesannete funktsionaalne alls\u00fcsteem contains at least sixteen distinct use case ovals (Tuvasta kasutaja, Lisa \u00fclesanne, M\u00e4\u00e4ra \u00fclesande vastutaja, Eemalda \u00fclesande vastutaja, Vaheta \u00fclesande vastutaja, Alusta \u00fclesande t\u00e4itmist, J\u00e4tka \u00fclesande t\u00e4itmist, Alusta \u00fclesande \u00fclevaatust, Kinnita l\u00f5petatud \u00fclesanne, L\u00fckka \u00fclesanne tagasi, T\u00fchista \u00fclesanne, Pane \u00fclesanne ootele, Vaata k\u00f5iki \u00fclesandeid, Vaata \u00fclesande detaile, M\u00e4rgi \u00fclesanne l\u00f5petatuks, Muuda \u00fclesande andmeid). Actors and packages are excluded from the count, so this diagram exceeds the threshold of 10 central elements and triggers the smell. Other diagrams stay below this threshold. "
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": true,
+      "detected": false,
+      "justification": "In the various class and database diagrams, central entities such as \u00dclesanne, Projekt, T\u00f6\u00f6taja, Ylesanne and Projekt in the transformed schemas, and Klassifikaator are connected to multiple other elements, but no single class or table has six or more clearly distinct relationship lines on a single diagram. The visually central elements appear to have at most about five separate connectors each, so the threshold for this smell is not explicitly reached on any one diagram. "
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Across the diagrams, related elements (for example, \u00dclesanne and Projekt, \u00dclesanne and T\u00f6\u00f6taja, Projekt and T\u00f6\u00f6taja_projektis, Ylesanne and its various **pohjendus tables) are laid out at roughly similar distances, with connectors spanning comparable lengths within each diagram. There is no relationship where the distance between connected elements is clearly more than twice the typical spacing on that same diagram, so this layout-based smell is not evident. "
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": true,
+      "detected": false,
+      "justification": "All visible use case names on the \u00dclesannete funktsionaalne alls\u00fcsteem diagram and all visible activity actions in the two activity diagrams begin with an active verb (e.g., Lisa, Vaata, M\u00e4\u00e4ra, Eemalda, Vaheta, Alusta, J\u00e4tka, Kinnita, L\u00fckka, T\u00fchista, Pane, Vali, T\u00e4ida, Saada, M\u00e4rgi). Decision labels such as Kas on \u00fclesandeid? or Kas l\u00f5petada? are guards, not actions. Therefore, every use case and activity action name complies with the requirement to start with an active verb. "
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Names of classes, tables, attributes/columns, and use cases are all longer than three characters (examples include ylesanne_id, projekt_id, staatus_kood, loomise_aeg, kirjeldus, on_aktiivne, eesnimi, perenimi). No central element or attribute uses an extremely short name like id or pk as its sole name, so this smell does not appear. "
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Domain classes and entity tables have names that start with an uppercase letter and are grammatically singular in the intended domain sense, such as \u00dclesanne, T\u00f6\u00f6taja, Projekt, Klassifikaator, \u00dclesande_staatuse_liik, T\u00f6\u00f6taja_projekti_rolli_liik, Toote_projektis, Ylesanne, Vastutaja_ylesandes. Names of register packages/tables like \u00dclesannete register or T\u00f6\u00f6tajate register are plural but are explicitly registers and thus excluded by the interpretation rules. No standard entity class or table is plural or begins with a lowercase letter, so this smell is not detected. "
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute and column names in the class and database diagrams (e.g., alg_aeg, lopp_aeg, kirjeldus, loomise_aeg, nimetus, tahtaeg, on_aktiivne, eesnimi, email, perenimi, staatus_kood, roll_kood, ylesanne_id, projekt_id, tootaja_id) all start with lowercase letters. Names beginning with uppercase letters are used for classes/tables, not for attributes or columns. Therefore, no attribute or column violates this rule. "
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database tables representing entities or value objects, such as Ylesanne, Projekt, Toote_projektis, Tootaja, Ootele_panemise_pohjendus, Tagasilykkamise_pohjendus, Tyhistamise_pohjendus, Vastutaja_ylesandes, Ylesande_staatuse_liik and Tootaja_projekti_rolli_liik, are all singular in form. Only register names like \u00dclesannete register or T\u00f6\u00f6tajate register are plural, and these are explicitly excluded as they are register tables. Thus, no entity table name is plural under this rule. "
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class, table, and attribute names do not use type-indicating prefixes such as tbl*, uc_, str_ or similar. The only prefixed identifiers are constraint and key names beginning with PK_ or FK_, which are specifically allowed by the rule (e.g., PK_Ylesanne, FK_Ylesanne_Projekt, PK_Projekt, FK_Tootaja_projektis_Projekt). No element name uses a disallowed type or notation prefix, so this smell is absent. "
+    }
+  ]
+}

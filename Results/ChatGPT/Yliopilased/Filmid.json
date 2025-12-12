@@ -1,0 +1,115 @@
+{
+  "file_name": "Filmid",
+  "timestamp": "2025-12-11T19:50:20Z",
+  "llm_model": "GPT-5.1",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Every identified diagram page (use-case on page 2, activity diagrams on pages 3-4, class/database diagrams on pages 5-10 and 12-18, and the state diagram on page 11) contains multiple visible elements; no diagram appears empty. "
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On the use-case diagram 'Filmide funktsionaalne alls\u00fcsteem' (page 2), each listed use case (e.g., 'L\u00f5peta film', 'Registreeri film', 'Vaata k\u00f5iki filme', 'Unusta film') is drawn within the system boundary alongside several actors. The PDF text does not explicitly show any use case oval that is clearly isolated from all actors, so no unambiguous violation is visible."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The use cases on the use-case diagram (page 2) have distinct meanings: for example, 'L\u00f5peta film', 'Unusta film', 'Aktiveeri film', 'Muuda film' and 'Muuda film mittaktiivseks' describe different actions. There are no pairs of use cases whose names clearly describe the same activity while being associated with the same actor."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the package/overview diagram on page 1, each package lists different contained elements (e.g., 'Isik', 'Kasutajakonto' in 'Isikute register', 'Film' in 'Filmide register'). There is no package that shows two distinct model elements with the same primary name inside the same package."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "In the transformed database diagrams (pages 13-18), repeated column names such as 'nimetus' or 'on_aktiivne' appear in classification tables but represent separate attributes for different entities. All obviously shared identifiers (e.g., 'isik_id', 'filmi_kood') are linked through explicit foreign keys shown in the diagrams, so there is no clear case where the same data value is stored redundantly in multiple tables without a foreign key connection."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use-case names on the use-case diagram (page 2) are phrased in a consistent verb-object style, such as 'Aktiveeri film', 'L\u00f5peta film', 'Registreeri film', 'Vaata filmide koondaruannet', 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid filme'. There is no mixture of clearly noun-only names alongside verb-based names."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The state diagram 'Filmi seisundidiagramm' on page 11 shows multiple named states ('Ootel', 'Aktiivne', 'Mitteaktiivne', 'L\u00f5petatud', 'Unustatud') together with narrative transition descriptions between them and from an initial node. The diagram text and structure do not reveal any state that is obviously isolated from all incoming paths, so no unreachable state can be clearly identified. "
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the activity diagrams for finishing and activating a film (pages 3 and 4), all named actions (e.g., 'Vaata k\u00f5iki filme, mida saab l\u00f5petada', 'Otsi film', 'Vali film', 'L\u00f5peta valitud film', 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid filme', 'Aktiveeri valitud film') appear as part of the main flow with incoming and outgoing control flows implied by the surrounding decisions and start/end nodes. There is no action node text that is clearly disconnected from the rest of the flow."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "For class and database diagrams (pages 5-10 and 12-18), visible relationships either show textual multiplicities like '1', '0..*' alongside association ends (e.g., 'Isik'-'Kasutajakonto', 'Film'-'Filmi_kategooria_omamine') or are standard database foreign-key connectors in the transformed diagrams. There is no unmistakable relationship line between two elements that lacks multiplicity or implied cardinality at both ends."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The use-case diagram 'Filmide funktsionaalne alls\u00fcsteem' (page 2) shows at least 11 use cases ('Tuvasta kasutaja', 'Vaata filmide koondaruannet', 'L\u00f5peta film', 'Registreeri film', 'Muuda film', 'Aktiveeri film', 'Muuda film mittaktiivseks', 'Vaata aktiivseid filme', 'Vaata k\u00f5iki filme', 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid filme', 'Unusta film'), exceeding the threshold of 10 central elements on a single diagram. "
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Across all class and database diagrams (conceptual and transformed), no single class or table clearly has six or more distinct relationship lines drawn to other classes/tables. For example, in the transformed 'Filmide register' diagram (page 18), the 'Film' table connects to 'Filmi_seisundi_liik', 'Filmi_tyyp', 'Tootaja' and 'Filmi_kategooria_omamine', which is at most four distinct connectors."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "From the available PDF rendering, related elements (e.g., classes connected by associations or tables linked by foreign keys) appear to be placed in reasonably close proximity within each diagram. There is no clearly extreme case where a related pair is obviously more than twice as far apart as the general spacing between elements."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Most use cases and activity actions start with active verbs (e.g., 'L\u00f5peta film', 'Registreeri film', 'Otsi film', 'Vali film'). However, in the film activation activity diagram on page 4, there are actions labelled 'Filmi aktiveerimine eba\u00f5nnestub' and 'Filmi aktiveerimine edukas', which begin with a noun phrase ('Filmi aktiveerimine') rather than an active verb, violating the naming rule for action nodes. "
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute, or use-case name in the diagrams is shorter than or equal to three characters. Even the shortest relevant names such as 'Isik', 'Film', 'Riik' and column names like 'aasta' are at least four characters long; symbols like 'PK' or 'FK' are constraint labels, not names of classes, tables, attributes, or use cases."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All entity class and table names start with uppercase letters and are singular in form (e.g., 'Isik', 'Klient', 'T\u00f6\u00f6taja', 'Film', 'Filmi_kategooria', 'Isiku_seisundi_liik'). Register names that are plural (e.g., 'Klassifikaatorite register') represent domain registers and are excluded per the interpretation rules."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute and column names such as 'isikukood', 'e_meil', 'reg_aeg', 'on_aktiivne', 'nimetus', 'kirjeldus', 'aasta' all start with lowercase letters. Uppercase prefixes like 'PK_Isik' or 'FK_Film_Filmi_tyyp' refer to keys and constraints, not to attribute/column names themselves."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database table names in the transformed diagrams (e.g., 'Isik', 'Klient', 'Tootaja', 'Film', 'Filmi_kategooria', 'Filmi_kategooria_omamine', 'Riik') are singular. Plural phrases only appear in register/package labels such as 'Klassifikaatorite register' or 'Filmide register', which represent registers and are excluded from this naming rule."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class, table, and attribute names do not include type-indicating prefixes like 'tbl_', 'uc_' or 'strName'. Names that begin with 'PK_', 'FK_', 'pfK_' or 'IXFK_' are key or index identifiers and are explicitly allowed by the rule, so there is no violation of this naming constraint."
+    }
+  ]
+}

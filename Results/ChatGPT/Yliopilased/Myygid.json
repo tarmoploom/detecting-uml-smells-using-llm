@@ -1,0 +1,115 @@
+{
+  "file_name": "Myygid",
+  "timestamp": "2025-12-12T03:35:33Z",
+  "llm_model": "GPT-5.1",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Every diagram page (package, class/database, state, activity, and use case) contains at least one visible central element such as a class/table, use case, state, or action; no page shows an empty diagram frame. "
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the use case diagram 'Tellimuste funktsionaalne alls\u00fcsteem' (page 11), all listed use cases appear inside the system boundary in the context of multiple actors; there is no explicit evidence of an unassociated (orphan) use case oval. "
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The use case names on the 'Tellimuste funktsionaalne alls\u00fcsteem' diagram are distinct (e.g., 'Koosta tellimus', 'Esita ja maksa tellimuse eest', 'T\u00fchista esitatud tellimus', 'Vaata tellimuste ja saadetiste infot'), and there is no clear pair of use cases that describe the same activity while being associated with the same actor. "
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the package diagram 'Tellimuste paketidiagramm' (page 1), each package or subsystem (e.g., 'Tellimuste funktsionaalne alls\u00fcsteem', 'Tellimuste register', 'Toodete register', 'Klientide register', 'Klassifikaatorite register', 'T\u00f6\u00f6tajate register') has a unique primary name within the package; no duplicate model element names appear in the same package. "
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Across the class/database diagrams, columns that clearly represent the same data (e.g., various '*_id' or '**kood' fields) are connected via foreign-key relationships and are shown with FK labels and connectors; there is no explicit case where the same data is redundantly stored in multiple tables without an FK connector. "
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Use case naming on 'Tellimuste funktsionaalne alls\u00fcsteem' is inconsistent: some use cases start with an active verb such as 'Koosta tellimus', 'Esita ja maksa tellimuse eest', 'Tuvasta kasutaja', while others begin with a noun phrase like 'Klient kustutab poolelioleva tellimuse' and 'Aeg kustutab poolelioleva tellimuse', which mix actor or time nouns with verbs. "
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the state diagram 'Tellimuse seisundidiagramm' (page 3), all listed states (e.g., 'Koostamisel', 'Esitatud', 'Komplekteerimine alanud', 'Kohaletoimetatud') are part of transition descriptions around the diagram; there is no explicitly isolated state shown without incoming transitions from the initial state or from other states. "
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the activity diagrams 'Aluste tellimuse komplekteerimist', 'Koosta tellimus', and 'Registreeri klient' (pages 12\u201314), each action label appears within the main flow from the initial node to the final node, and no action box is visibly isolated without a path from the start; decision questions (e.g., 'Kas klient soovib otsida?') appear as branching points rather than unreachable actions. "
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "On the class and database diagrams (e.g., 'Tellimuste register', 'Toodete register', 'Isikute register', and the transformed database diagrams), association and FK lines either show explicit multiplicity indicators like '1' and '0..*' or are standard crow\u2019s-foot/FK connectors typical of database notation; there is no clearly drawn UML-style relationship line that entirely lacks multiplicity notation at both ends. "
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "At least two diagrams exceed the threshold of 10 central elements: for example, the class diagram 'Tellimuste register' (page 2) includes around ten domain classes such as Tellimus, Tellimuse rida, Isik, Klient, Tellimuse_seisundi_liik, Pank, Pakiautomaat, Pakiautomaadi firma, Toode, and T\u00f6\u00f6taja; and the database diagram 'Klassifikaatorite register (transformed)' (page 16) contains eleven tables (Isiku_seisundi_liik, Kliendi_seisundi_liik, Pakiautomaadi_firma, Pakiautomaat, Pank, Riik, Tellimuse_seisundi_liik, Tootaja_roll, Tootaja_seisundi_liik, Toote_kategooria, Toote_seisundi_liik). "
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": true,
+      "detected": true,
+      "justification": "In the database diagram 'Tellimuste register (transformed)' (page 18), the table 'Tellimus' is connected by distinct FK relationship lines to at least six other tables: Tellimuse_seisundi_liik, Pakiautomaat, Pank, Klient, Tootaja, and Tellimuse_rida, resulting in six or more visible relationship connectors from a single central element. "
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Within the available static diagrams, related elements (classes/tables and their connectors) appear clustered in relatively compact groups, and there is no clearly drawn relationship line that spans a distance more than twice the typical spacing between other connected elements on the same diagram; no extreme outlier distances are evident. "
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Some use case names on 'Tellimuste funktsionaalne alls\u00fcsteem' do not start with an active verb but with a noun phrase (e.g., 'Klient kustutab poolelioleva tellimuse', 'Aeg kustutab poolelioleva tellimuse'), while others follow the verb-first pattern (e.g., 'Koosta tellimus', 'Tuvasta kasutaja'); this violates the requirement that each use case or activity action name start with an active verb. "
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute, or use case names of length three characters or fewer are used as primary identifiers; names such as 'Tellimus', 'Isik', 'Toode', 'kommentaar', and 'isik_id' are all longer than three characters, and the short label 'Aeg' appears only as an actor, not as a class/table/attribute or use case name. "
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class and table names start with an uppercase letter and are singular domain concepts (e.g., 'Tellimus', 'Tellimuse rida', 'Isik', 'Klient', 'Toode', 'Toimeaine', 'Kasutajakonto'); there are no class names beginning with a lowercase letter or clearly pluralized entity names. "
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute and column names across the diagrams consistently start with lowercase letters (e.g., 'j\u00e4lgimisnumber', 'kommentaar', 'summa', 'viimase_muutm_aeg', 'e_meil', 'isikukood', 'laos_toodete_arv'); the only uppercase words are data types or constraint labels (e.g., VarChar, Integer, PK, FK) rather than attribute names. "
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database table names refer to singular concepts such as 'Isik', 'Klient', 'Tellimus', 'Tellimuse_rida', 'Toode', and 'Toimeaine'; plural register names are used only at the diagram level (e.g., 'Isikute register', 'Tellimuste register') and not as individual table names, so no entity table is named in the plural form. "
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class, table, and attribute names do not use type-indicating prefixes such as 'tbl*', 'uc_', or 'strName'; the only prefixes present are schema/constraint markers like 'PK_', 'FK_', 'pfK_', and 'IXFK_', which are explicitly allowed by the rule. "
+    }
+  ]
+}

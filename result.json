@@ -1,95 +1,95 @@
 {
-  "file_name": "chatGPT_Vastuvotuajad_ja_opingukavad",
+  "file_name": "chatGPT_Tooaeg",
   "smell_analysis": [
     {
       "rule_id": "G5.1",
-      "detected": true,
-      "justification": "The diagram 'Õpingukavade allsüsteem' on page 16 and the heading page 'Õpingukavade AB disaini diagramm (õpingukava sündmus)' on page 28 contain only the diagram titles and no visible classes, tables, use cases, states, or relationships, so the model includes empty diagrams. "
+      "detected": false,
+      "justification": "No empty diagrams were found; each of the 16 pages that is labeled as a diagram contains at least one visible element such as a class, table, use case, state, or action. "
     },
     {
       "rule_id": "G5.2",
       "detected": false,
-      "justification": "In the use case diagrams 'Õpingukavade allsüsteemi kasutusjuhtude diagramm' (page 17) and 'Vastuvõtuaegade allsüsteemi kasutusjuhtude diagramm' (page 18), every named use case appears in the midst of association multiplicities, include-relations, or textual descriptions that reference actors (e.g., 'identifitseerib ennast', 'arvab kuulajaskonnast välja'), and there is no clearly isolated use case oval without any actor connections."
+      "justification": "The only explicit use case diagram ('Töögraafiku funktsionaalne allsüsteem') lists multiple use case names, but the text extraction does not clearly show which ovals are connected or disconnected from actors; no use case is explicitly indicated as unconnected, so per the 'when in doubt' rule, no violation is recorded."
     },
     {
       "rule_id": "G6.1",
       "detected": false,
-      "justification": "Across both use case diagrams, each use case name describes a distinct activity (such as 'Õpingukava koostamine', 'Tuvasta kasutaja', 'Teatele vastamine', 'Lisa vastuvõtuaeg', 'Tühista vastuvõtule tulek') and there is no pair of differently worded use cases that obviously describe the same activity while being associated with the same actor."
+      "justification": "On the use case diagram 'Töögraafiku funktsionaalne allsüsteem', all named use cases (e.g., 'Vaata enda töögraafikut', 'Vaata töögraafikuid', 'Koosta töögraafik', 'Kinnita töögraafik', 'Kustuta töögraafik', 'Kustuta mitteaktiivne töögraafik') describe distinguishable activities. There are no clearly duplicated activities with different names that can be confirmed as associated to the same actor from the text alone."
     },
     {
       "rule_id": "G6.2",
       "detected": false,
-      "justification": "The PDF does not contain any explicit package diagrams; all structural diagrams are class or database/entity diagrams, so there is no package diagram where multiple model elements share the same primary name in the same package."
+      "justification": "In the package/overview diagram 'Töögraafiku FASiga seotud pädevusalad ja registrid', each listed model element name inside a package is unique at the primary element level (e.g., 'Amet', 'Klassifikaator', 'Töögraafiku seisund', 'Töövälistuse tüüp'). Repeated phrases such as 'Klassifikaatori tüüp' are classifier-type metadata and are explicitly excluded from this rule."
     },
     {
       "rule_id": "G6.3",
       "detected": false,
-      "justification": "Where the same logical identifiers occur in multiple tables (for example 'matrikli_nr' in 'Yliopilane' and in link tables on pages 25, 26, 30, and 31), the diagrams show corresponding foreign key connectors and FK annotations between the tables; there is no clear case where the same data value is stored redundantly in multiple tables without a foreign key relationship."
+      "justification": "Several tables share column names such as 'alguse_aeg' and 'lopp_aeg' across different entities (e.g., 'Töögraafik', 'Vahetus', 'Töövälistus', 'Toovalistus'), but these represent different time intervals for different domain objects rather than explicit redundant copies of the same data value. Moreover, the conceptual and transformed database diagrams show foreign key relationships between related tables, so there is no clear case where the same real-world value is duplicated across tables without an FK link."
     },
     {
       "rule_id": "G8.1",
-      "detected": true,
-      "justification": "Use case naming is inconsistent: some use cases start with an imperative verb, such as 'Tuvasta kasutaja', 'Registreeri vastuvõtule tulek', 'Tühista vastuvõtule tulek', 'Lisa vastuvõtuaeg', while others are noun or noun-phrase forms like 'Õpingukava koostamine', 'Õpingukava esitamine', 'Semestrite haldamine', 'Õpingukavade kinnitamine', and 'Kuulajaskonna vaatamine' on pages 17–18."
+      "detected": false,
+      "justification": "All clearly identified use case names in the use case diagram (e.g., 'Vaata enda töögraafikut', 'Koosta töögraafik', 'Kinnita töögraafik', 'Määra töögraafik mitteaktiivseks', 'Kustuta töögraafik', 'Muuda töögraafikut', 'Vaata töögraafikuid', 'Tuvasta kasutaja', 'Kustuta mitteaktiivne töögraafik', 'Lisa vahetus', 'Lisa töövälistus', 'Kustuta töövälistus', 'Kustuta vahetus', 'Vaata töötajaid') follow a consistent verb-first naming form; no mixture of fundamentally different naming styles is evident."
     },
     {
       "rule_id": "G15.1",
       "detected": false,
-      "justification": "In the state diagrams 'Õpingukava seisundidiagramm' (pages 4 and 9) and 'Vastuvõtuaja seisundidiagramm' (pages 12 and 14), all listed states (e.g., 'Koostamisel', 'Aktuaalne', 'Täiendamisel', 'Kustutatud', 'Vaba', 'Hõivatud', 'Aegunud', 'Tühistatud') have associated transition descriptions and appear as part of the transition structure; there is no state that is clearly isolated without any incoming transition from an initial state."
+      "justification": "The state diagram 'Töögraafiku seisundidiagramm' shows the states 'Ootel', 'Aktiivne', and 'Mitteaktiivne' plus an initial node 'Algus' with multiple labeled transitions (e.g., 'Loo uus graafik /OP1, OP5', 'graafik kinnitatakse...', 'kehtiv periood saab läbi...', 'Seadusest tulenev töögraafiku säilitamise vajadus aegub /OP4'). From the textual extraction all named states appear in transition labels, and no state is explicitly isolated or unreachable. There is no unambiguous evidence that any state cannot be reached."
     },
     {
       "rule_id": "G15.2",
       "detected": false,
-      "justification": "The activity diagrams 'Õpingukava koostamise tegevusdiagramm' (page 15), 'Vastuvõtule tuleku registreerimine' (page 19), and 'Vastuvõtule tuleku tühistamine' (page 20) show each action node (such as 'Õpingukava koostamine', 'Eksmatrikuleerimine', 'Registreerib enda vastuvõtule tuleku', 'Valib tühistatava vastuvõtule tuleku') described in the flow of decisions and guards; no action appears as a standalone node without incoming control flow from earlier steps."
+      "justification": "In both activity diagrams ('Vaata enda graafikut tegevusdiagramm' and 'Kasutusjuhu 'Kustuta töögraafik' stsenaariumid'), the actions that are clearly identified as such (e.g., 'Vaata töögraafikut', 'Vaata 'ootel' seisundis töögraafikute nimekirja', 'Vali töögraafik', 'Kustuta töögraafik') appear in flows starting from 'Algus' and leading toward 'Töö lõpp'. The remaining labeled nodes are decision questions or start/end markers. No action is explicitly disconnected from the flow, so there is no demonstrably unreachable action."
     },
     {
       "rule_id": "G15.3",
-      "detected": true,
-      "justification": "On the class-style overview diagrams 'Õpingukavade FASiga seotud pädevusalad ja registrid' (page 2) and 'Vastuvõtuaegade FASiga seotud pädevusalad ja registrid' (page 3), relationships between the central subsystem box and the surrounding register classes and actors are drawn with textual labels like 'Loeb' and 'Teenindab' but have no multiplicity indicators (no '1' or '0..*') and no crow's-foot or FK notation at either end, so these relationships lack multiplicities on both ends. "
+      "detected": false,
+      "justification": "In the conceptual class diagram and all detailed class/database diagrams, associations either show explicit multiplicities like '0..*' and '1' near each end (e.g., between 'Isik' and 'Töötaja', 'Töötaja' and 'Vahetus', 'Töögraafik' and 'Kauplus') or are drawn as standard database foreign key connectors (e.g., in the transformed register diagrams with '«FK»' labels). According to the interpretation rules, such FK or crow's-foot style connectors are exempt, and no UML-style association is visible that completely lacks multiplicity indication at both ends."
     },
     {
       "rule_id": "S1.1",
       "detected": true,
-      "justification": "Several class/database diagrams display ten or more central elements. For example, the conceptual diagram 'Õpingukavade_registri_kontseptuaalne_diagramm_1' on page 6 contains at least 17 entities (Isik, Amet, Aine_õpingukavas, Õppekava, Õpingukava, Üliõpilane, Piirang, etc.), and the database design diagrams for Õpingukava and Õppekava on pages 30–31 each include more than ten tables."
+      "justification": "The use case diagram 'Töögraafiku funktsionaalne allsüsteem' contains at least 14-15 use cases ('Vaata enda töögraafikut', 'Koosta töögraafik', 'Kinnita töögraafik', 'Määra töögraafik mitteaktiivseks', 'Kustuta töögraafik', 'Muuda töögraafikut', 'Vaata töögraafikuid', 'Tuvasta kasutaja', 'Kustuta mitteaktiivne töögraafik', 'Lisa vahetus', 'Lisa töövälistus', 'Kustuta töövälistus', 'Kustuta vahetus', 'Vaata töötajaid', and possibly 'Aeg'), exceeding the threshold of 10 central elements. In addition, the conceptual class diagram 'Kontseptuaalne eskiismudel' shows exactly 10 central elements (Töögraafik, Vahetus, Klassifikaator, Töögraafiku seisund, Isik, Kauplus, Töötaja, Amet, Töövälistus, Töövälistuse tüüp), also meeting the S1.1 criterion."
     },
     {
       "rule_id": "S1.2",
       "detected": false,
-      "justification": "Across the class and database diagrams, no single class or table is visibly connected to six or more distinct relationship lines on the same diagram; even heavily connected elements like 'Õpingukava' in the Õpingukava AB design diagram (page 30) appear to have at most five separate connectors to other tables."
+      "justification": "The most highly connected classes/tables (e.g., 'Töötaja' in 'Töötajate register' and 'Töötajate register (transformed)', and 'Töögraafik' in 'Töögraafikute register' diagrams) appear, from the text, to have relationships to at most about five other elements (such as 'Isik', 'Amet', 'Vahetus', 'Kauplus', 'Töövälistus' or 'Toovalistus'). There is no diagram where a single class or table is clearly shown with six or more distinct visible relationship lines."
     },
     {
       "rule_id": "S2.1",
       "detected": false,
-      "justification": "The diagrams generally place related elements in relatively compact clusters (for example, tables arranged around 'Õpingukava' on page 30 and the cluster around 'Vastuvõtt' on page 26), and there is no clear instance where the distance between a related pair is more than twice the apparent average distance between elements on the same diagram."
+      "justification": "The provided text extraction does not include spatial information about the distances between elements, so it is impossible to determine whether any related elements are more than twice the average distance apart. No explicit notations suggest exceptional spacing, so this rule cannot be confirmed as violated."
     },
     {
       "rule_id": "N1.1",
-      "detected": true,
-      "justification": "Many use case names and activity actions do not begin with an active verb. Examples include 'Õpingukava koostamine', 'Õpingukava esitamine', 'Semestrite haldamine', 'Õpingukavade kinnitamine', and 'Õpingukavade muutmine mitteaktuaalseks' in the use case diagram on page 17 and the action 'Esitamata jätmise põhjendamine' in the activity diagram on page 15, all of which start with a noun phrase rather than a verb."
+      "detected": false,
+      "justification": "All clearly identified use cases on the use case diagram and all clearly identified activity actions in the activity diagrams begin with active verbs (e.g., 'Vaata enda töögraafikut', 'Koosta töögraafik', 'Kinnita töögraafik', 'Vali töögraafik', 'Kustuta töögraafik', 'Vaata töögraafikut'). Labels such as 'Algus', 'Töö lõpp', 'Kas on töögraafikuid?' and 'Kas soovid jätkata?' appear to denote initial/final or decision nodes rather than actions, and the diagrams do not explicitly mark them as actions. Therefore, no use case or confirmed action name is seen that fails the verb-first requirement."
     },
     {
       "rule_id": "N1.2",
       "detected": false,
-      "justification": "All class, table, attribute, and use case names contain more than three characters; even the shortest central names such as 'Isik', 'Ruum', 'Hoone', 'Teade', 'Vastus', and 'Aktuaalne' exceed three characters, while very short tokens like 'PK', 'FK', and 'dm' are stereotypes or diagram type abbreviations rather than element names."
+      "justification": "No class, table, attribute/column, or confirmed use case name of length three characters or fewer is clearly identifiable. The short label 'Aeg' (three characters) appears in a context that seems to indicate either a supporting actor or subsystem rather than a use case, class, table, or attribute, and per the 'when in doubt' rule, it cannot be treated as a violation of N1.2."
     },
     {
       "rule_id": "N3.1",
-      "detected": true,
-      "justification": "Several entity and table names that represent singular domain objects start with a lowercase letter, such as 'moodul_r', 'haridusaste_r', 'aine_opingukavas', 'aine_tyypopingukavas', 'opingukava', 'yliopilane', and 'tootaja' in the AB design diagrams on pages 27, 29, 30, and 31, violating the convention that class names should start with an uppercase letter."
+      "detected": false,
+      "justification": "All entity class and table names begin with uppercase letters and are singular (e.g., 'Töögraafik', 'Vahetus', 'Isik', 'Kauplus', 'Töötaja', 'Amet', 'Töövälistus', 'Toograafik', 'Toovalistus'). Names that are plural, such as 'Isikute register', 'Kaupluste register' and other 'register' names, are explicitly domain register tables and are excluded from N3.1 by the interpretation rules."
     },
     {
       "rule_id": "N3.2",
       "detected": false,
-      "justification": "Attribute and column names throughout the diagrams consistently begin with lowercase letters or with allowed technical prefixes (e.g., 'ruum_id', 'korrus', 'matrikli_nr', 'toimumise_kuupaev'); there are no attributes or columns whose identifiers start with an uppercase letter."
+      "justification": "In all class and database diagrams, attribute and column names start with lowercase letters (e.g., 'nimetus', 'kood', 'aadress', 'hoone_kood', 'kauplus_id', 'isik_id', 'kasutajanimi', 'meiliaadress', 'parool', 'isikukood', 'on_aktiivne', 'alguse_aeg', 'lopp_aeg'). Uppercase prefixes such as 'PK_', 'FK_', 'AK_' or 'pfK' appear as constraint or key identifiers, not as part of the attribute/column name itself, and are allowed by the rules."
     },
     {
       "rule_id": "N3.3",
       "detected": false,
-      "justification": "Database table/entity names that represent singular domain objects are given in singular form (e.g., 'Isik', 'Yliopilane', 'Tootaja', 'Ruum', 'Hoone', 'Vastuvott', 'Oppekava'); the plural words are used only in register names like 'Isikute register' or 'Üliõpilaste register', which are domain registers and are exempt from this rule."
+      "justification": "All entity table names representing singular domain objects in the transformed database diagrams are singular (e.g., 'Amet', 'Toograafiku_seisund', 'Toovalistuse_tyyp', 'Isik', 'Kauplus', 'Toograafik', 'Vahetus', 'Tootaja', 'Toovalistus'). Plural 'register' names are explicitly exempt as domain register tables, so no violation of N3.3 is present."
     },
     {
       "rule_id": "N4.1",
       "detected": false,
-      "justification": "Class, table, and attribute names do not use type-indicating prefixes such as 'tbl_', 'uc_', or 'str'; naming patterns like 'moodul_r', 'aine_opingukavas', 'tootaja_id', and 'matrikli_nr' either use suffixes or descriptive words, and the only prefixes present (e.g., 'PK', 'FK', 'pfK', 'idx_') are for keys and indexes or are explicitly allowed."
+      "justification": "No class, table, or attribute name uses a type-indicating prefix such as 'tbl_', 'uc_', 'strName', or similar. The only observed prefixes are key/constraint prefixes like 'PK_', 'FK_', 'pfK_' and 'AK_', which are explicitly permitted by the rule and appear only in constraint names, not in the underlying column names."
     }
   ]
 }

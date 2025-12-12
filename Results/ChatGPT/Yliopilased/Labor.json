@@ -1,0 +1,115 @@
+{
+  "file_name": "Labor",
+  "timestamp": "2025-12-12T02:44:58Z",
+  "llm_model": "GPT-5.1",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Every page labeled as a diagram contains at least one central element such as a class, table, use case, state, or activity node (for example, 'class Anal\u00fc\u00fcs' on page 1 and multiple tables/classes on pages 7-26), so there are no empty diagrams. "
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On the use case diagram 'CNV-de funktsionaalse alls\u00fcsteemi kasutusjuhtude diagramm' (page 3), all visible use case ovals (e.g., 'Lisa CNV registrisse', 'Muuda CNVd', 'M\u00e4rgi CNV artefaktiks', 'Vaata k\u00f5iki anal\u00fc\u00fcsi CNVsid') are connected by association lines to at least one actor such as Administraator, Laborispetsialist or Juhataja; there is no isolated use case with no actor association. "
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The use cases on the use case diagram have distinct meanings even when verbs repeat (e.g., 'M\u00e4rgi CNV artefaktiks' vs 'M\u00e4rgi CNV aktiivseks' refer to marking CNV as different states, and 'Vaata k\u00f5iki anal\u00fc\u00fcsi CNVsid' vs 'Vaata k\u00f5iki aktiivseid CNVsid' refer to different subsets of CNVs); no pair clearly describes the same activity for the same actor as required by this rule. "
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the package/overview diagram 'CNV FASiga seotud p\u00e4devusalad ja registrid' (page 2), each register or subsystem within the package has a unique primary name (e.g., 'Kasutajate register', 'Patsientide register', 'DNA register'); no duplicate model element names appear within the same package. "
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Where the same concept appears across tables (for example, keys like analyys_id, cnv_id, plaat_id, kasutaja_id, patsient_id), these are consistently implemented via foreign key columns with explicit FK connectors between tables (e.g., between 'Analyys' and 'DNA', 'Plaat', 'Kasutaja', and between 'CNV' and classifier tables, etc.); there is no clear case where the same data value is stored redundantly in multiple tables without an FK relationship. "
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use case names on the use case diagram are expressed in a consistent imperative-verb form (e.g., 'Lisa CNV registrisse', 'Muuda CNVd', 'M\u00e4rgi CNV artefaktiks', 'Ekspordi aktiivsed CNVd tekstifaili', 'Tuvasta kasutaja', 'Vaata k\u00f5iki aktiivseid CNVsid'); none are pure noun phrases, so there is no inconsistency of form. "
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the CNV state diagram 'CNV seisundidiagramm' (page 6), each state such as 'Toorandmed anal\u00fcsaatorist', 'Aktiivne', 'Artefakt', 'Kustutatud' and 'Muutmine' has at least one incoming and one outgoing transition described by labeled events (e.g., OP2.3, OP4.3, patient deletion scenarios), so no state is clearly unreachable from the initial node. "
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In both activity diagrams ('CNV registrisse lisamise tegevusdiagramm' on page 4 and 'CNV artefaktiks m\u00e4rkimise tegevusdiagramm' on page 5), every action node (e.g., 'Vaata anal\u00fc\u00fcside nimekirja', 'Lisa CNV registrisse', 'Otsi anal\u00fc\u00fcse plaadi numbri j\u00e4rgi', 'Vali konkreetne anal\u00fc\u00fcs', 'M\u00e4rgi CNV artefaktiks') is connected via control flow from the initial node and to subsequent decisions or end nodes; there are no action boxes that appear isolated or unreachable. "
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": true,
+      "detected": false,
+      "justification": "All visible associations on class and database diagrams either show explicit multiplicity labels at both ends (e.g., '0..*' and '1' around CNV, Anal\u00fc\u00fcs, DNA, Patsient relationships in conceptual diagrams) or use standard FK / crow\u2019s-foot-style connectors in the transformed database diagrams (pages 17-26), which are exempt; no relationship line is drawn without any multiplicity or implied notation at both ends. "
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Several diagrams contain 10 or more central elements: for example, the conceptual class diagram 'Klassifikaatorite register' (page 8) shows at least 16 classifier classes such as 'Kromosoom', 'Server', 'Kasutaja roll', 'Anal\u00fc\u00fcsi t\u00fc\u00fcp', 'T\u00e4hendus', 'P\u00e4ritolu', 'Koopiaarv', 'Positsioon plaadil', 'CNV seisund', 'Annotatsiooni t\u00fc\u00fcp', 'Anal\u00fc\u00fcsi seisund', 'Partii_seisund', 'Plaadi_seisund', 'Annotatsiooni_seisund', 'Kasutaja_seisund', and 'Klassifikaator'; the transformed version 'Klassifikaatorite register (transformed)' (pages 18-19) likewise contains more than 10 tables, triggering this size smell. "
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": true,
+      "detected": true,
+      "justification": "Some central classes/tables participate in six or more distinct relationships on a single diagram. For example, in the conceptual 'Anal\u00fc\u00fcside register' diagram (page 16) the class 'Anal\u00fc\u00fcs' has visible association lines to at least 'DNA', 'Plaat', 'Kasutaja', 'Patsient' (as Proband), and multiple classifier classes ('Anal\u00fc\u00fcsi seisund', 'Anal\u00fc\u00fcsi t\u00fc\u00fcp', 'Positsioon plaadil', 'Genoomi versioon'), exceeding six connections; similarly, in the 'CNVde register' diagram (page 9) class 'CNV' is connected to multiple classifier classes plus 'Anal\u00fc\u00fcs' and 'Annotatsioon', again giving six or more distinct relationship lines. "
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Across the diagrams, related elements are generally placed at comparable distances with relationship lines of similar lengths; no relationship appears to span a distance that is clearly more than twice the average spacing between elements on the same diagram, so this layout smell cannot be identified. "
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": true,
+      "detected": false,
+      "justification": "All use case names and activity actions start with an active verb: use cases use forms like 'Lisa', 'Muuda', 'M\u00e4rgi', 'Vaata', 'Ekspordi', 'Tuvasta'; actions in activity diagrams use verbs such as 'Vaata anal\u00fc\u00fcside nimekirja', 'Lisa CNV registrisse', 'Otsi anal\u00fc\u00fcse plaadi numbri j\u00e4rgi', 'Vali konkreetne anal\u00fc\u00fcs', 'M\u00e4rgi CNV artefaktiks'. Question nodes beginning with 'Kas ...?' are decision nodes, not actions, so they are outside the scope of this rule. "
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": true,
+      "detected": true,
+      "justification": "There are classes and tables whose names are three characters long: for example, the class 'DNA' in the 'DNA register' diagram (page 11) and the class 'CNV' in the 'CNVde register' diagram (page 9), as well as their corresponding transformed tables, all have names with length \u2264 3, which this rule considers too short. "
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All entity class and table names begin with an uppercase letter and appear to be singular in their language (e.g., 'Anal\u00fc\u00fcs', 'Kasutaja', 'Patsient', 'Partii', 'Plaat', 'CNV', 'Annotatsioon', 'Kasutaja_roll', 'Patsiendi_seisund'); there are no names that clearly start with a lowercase letter or use an obvious plural form for a domain entity class/table. "
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": true,
+      "detected": true,
+      "justification": "Several attribute/column names start with uppercase letters, such as 'DNA_karp', 'DNA_kontsentratsioon' and 'DNA_kood' in the 'DNA register' conceptual diagram (page 11) and the column 'DNA_kood' in the transformed 'DNA' table (page 22), as well as 'RGB_v\u00e4rv' in the 'Klassifikaatorite register' diagram (page 8), violating the convention that attribute/column names should start with lowercase letters. "
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database tables representing entities use singular-style names such as 'Kasutaja', 'Patsient', 'DNA', 'Plaat', 'Partii', 'Analyys', 'Kasutaja_roll', 'Patsiendi_seisund'; plural table names are not used for these entity tables, and register names in diagram titles (e.g., 'Patsientide register') are not themselves table names, so no violation is detected. "
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class, table, and attribute names do not have technical prefixes or type abbreviations like 'tbl_', 'uc_' or 'strName'; the only prefixed identifiers are constraint and key names such as 'PK_Analyys', 'FK_CNV_Analyys', 'IXFK_Analyys_Analyysi_seisund', which are PK_/FK_/IXFK_ prefixes explicitly allowed by the rule, so no naming-type prefix smell is present. "
+    }
+  ]
+}

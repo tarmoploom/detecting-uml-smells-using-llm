@@ -1,0 +1,115 @@
+{
+  "file_name": "Kaubad_turuplatsil",
+  "timestamp": "2025-12-12T02:06:17Z",
+  "llm_model": "GPT-5.1",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Each page labeled as a diagram (subsystems, conceptual model, product register, state diagram, user register, classifier register, use case model, two activity diagrams, and three database/register diagrams) contains visible modeled elements; none of these diagrams is empty. "
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "The use case diagram 'Use Case model' shows multiple use cases inside the system boundary along with several actors, but the PDF text does not explicitly show any use case oval without at least one association to an actor, and the connections themselves are not listed textually; there is no unambiguous evidence of an unassociated use case, so this rule cannot be considered violated. "
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The listed use cases on the use case diagram (such as 'Add Product', 'Change Own Product', 'View Own Products', 'View All Products', 'Delete Product from Database') describe different activities; there are no two use cases with names clearly describing the same activity for the same actor visible in the diagram. "
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": true,
+      "detected": true,
+      "justification": "On the subsystem/package diagram, within the package 'Classifier Register', the list of contained elements includes the name 'Product Location' twice, indicating multiple model elements with the same primary name in the same package, which matches the definition of this smell. "
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "In the database/register diagrams (Users Register, Classifiers Register, Products Register), repeated domain values such as seller_email, status_name, category_name, and location_name are always represented via foreign key columns with explicit FK connectors between tables; there is no clear case where the same real-world data is stored in multiple tables without a foreign key relationship. "
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": true,
+      "detected": false,
+      "justification": "All use case names in the use case diagram start with a verb phrase such as 'Add Product', 'Change Own Product', 'View Own Products', 'Hide Own Product', 'Search for Product', 'Authorize User', and 'Delete Product from Database'; there is no mixture of verb-based and noun-based naming forms. "
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the state diagram, the named states Active, Inactive, Suspended, Pending Deletion, and Deleted all have incoming transitions either directly from the initial state (for example, Active and Inactive) or from other states (for example, transitions from Active/Inactive to Suspended and Pending Deletion, and from Pending Deletion to Deleted), so no state is unreachable. "
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Both activity diagrams describing the Seller hides product and Change any product scenarios show actions connected in flows from Start to End with intermediate decisions; there is no action node that appears isolated or without a path from the initial node. "
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": true,
+      "detected": false,
+      "justification": "In the Product Register, User Register, and Classifier Register class diagrams, associations have multiplicity labels such as 0..* and 1, and in the database diagrams relationships are drawn using foreign key or crow's-foot style connectors, which per the interpretation rules imply multiplicities; the conceptual model diagram does not clearly show missing multiplicities in the extracted text, and without unambiguous evidence of an association lacking multiplicities at both ends, this smell cannot be confirmed. "
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The use case diagram 'Use Case model' contains 13 distinct use cases (including Add Product, Change Own Product, Hide Own Product, Change Any Product, View Own Products, View All Products, View Inactive Products, Search for Product, View Product Details, Authorize User, Delete Product from Database, and the two Set Own Product Status variants), exceeding the threshold of 10 central elements in a single diagram; other class, state, and database diagrams contain fewer central elements. "
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": true,
+      "detected": false,
+      "justification": "In the class and database diagrams, no single class or table visibly has six or more distinct relationship lines: for example, Product in the Product/Register diagrams connects to at most about five other elements through associations or FKs, and other entities such as app_user or category_attribute have fewer connections; therefore the threshold for this smell is not reached. "
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Across the diagrams, related elements (such as products and their classifiers, users and roles, or products and their states) are drawn relatively close together within the same page, and there is no clearly extreme case where a related pair is more than twice as far apart as other related elements on the same diagram; thus no explicit layout outlier can be identified. "
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use case names and the action names in the activity diagrams use leading active verbs, such as Add, Change, View, Hide, Search, Set, Authorize, Delete, Insert, and Save; decision labels like 'Anything found?' or 'Wish to continue?' are not modeled as actions, so there is no use case or action whose name fails to start with an active verb. "
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute, or use case name appears with a length of three characters or fewer; for example, entity names such as User, Product, app_user, product_status, and attribute names like email, price, id_code, and stock_quantity all exceed three characters, and a scan of attribute lines in the text shows no shorter names like 'id'. "
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Class names in the conceptual and register diagrams (User, Product, Product Location, Product Status, Country, Category Attribute, Category Attribute Unit, User Role, etc.) all begin with uppercase letters and refer to singular concepts; there are no class names starting with a lowercase letter or in plural form among these domain classes. "
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute and database column names such as creation_time, description, name, price, stock_quantity, update_time, product_code, id_code, is_verified, email, and country_code are written in lower case (often with underscores) and do not start with uppercase letters; uppercase fragments like PK, FK, CHK, IXFK, and AK are part of constraint or key annotations rather than the attribute names themselves. "
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database tables that represent domain entities, including app_user, user_role, product, product_location, product_category, product_status, country, category_attribute, category_attribute_unit, and category_attribute_value, all use singular names; plural terms appear only in register titles such as Users Register or Products Register, which are considered register tables and are excluded by the interpretation rules. "
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The model does not use type-indicating prefixes for class, table, or attribute names: there are no names like tbl_Customers, uc_AddUser, or strName; instead, names are semantic (such as app_user, product_status, category_attribute_value) and the only technical prefixes present are PK_, FK_, IXFK_, and AK_ used in constraint and key names, which are explicitly allowed exceptions. "
+    }
+  ]
+}
