@@ -109,10 +109,10 @@ def plot_confusion_matrix_per_llm(df, title_prefix="Overall"):
         
         sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', ax=ax, 
                     xticklabels=['Detected', 'Not Detected'], 
-                    yticklabels=['Actual', 'Not Actual'])
+                    yticklabels=['Present', 'Not Present'])
         ax.set_title(f"{llm}")
         ax.set_xlabel('Prediction')
-        ax.set_ylabel('Ground Truth')
+        ax.set_ylabel('Smell')
     
     plt.suptitle(f'{title_prefix} Confusion Matrices', y=1.05, fontsize=16)
     plt.tight_layout()
