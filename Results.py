@@ -152,6 +152,7 @@ def plot_custom_aggregates(df, custom_aggregates):
     for group_name, target_categories in custom_aggregates.items():
         print(" ")
         print(f"--- Analysis for {group_name} ---")
+        print(" ")
     
         # Filter the main dataframe for only the categories in this group
         group_df = df[df['Category'].isin(target_categories)]
@@ -183,6 +184,7 @@ def plot_per_category(df, target_order):
         
         print(" ")
         print(f"--- Analysis for {cat} ---")
+        print(" ")
     
         # Filter data for this category
         cat_df = df[df['Category'] == cat]
