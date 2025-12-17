@@ -150,7 +150,7 @@ def plot_benchmark_bars(metrics_df, title):
 
 def plot_custom_aggregates(df, custom_aggregates):
     for group_name, target_categories in custom_aggregates.items():
-        print()
+        print(" ")
         print(f"--- Analysis for {group_name} ---")
     
         # Filter the main dataframe for only the categories in this group
@@ -181,7 +181,7 @@ def plot_per_category(df, target_order):
             print(f"Skipping {cat} (Not found in loaded data)")
             continue
         
-        print()
+        print(" ")
         print(f"--- Analysis for {cat} ---")
     
         # Filter data for this category
