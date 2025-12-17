@@ -11,9 +11,9 @@ sns.set_theme(style="whitegrid")
 plt.rcParams['figure.figsize'] = [10, 6]
 
 llm_colors = {
-    'ChatGPT': "#25D899",  # OpenAI Teal
-    'Claude':  "#FF9436",  # Anthropic Clay/Orange
-    'Gemini':  '#4285F4'   # Google Blue
+    'ChatGPT 5.1': "#25D899",  # OpenAI Teal
+    'Claude Opus 4.5':  "#FF9436",  # Anthropic Clay/Orange
+    'Gemini 3 Pro':  '#4285F4'   # Google Blue
 }
 
 # Define root directory of your results
@@ -23,7 +23,7 @@ def load_data(models):
     all_records = []
 
     for llm in models:
-        llm_path = os.path.join(base_dir, llm)
+        llm_path = os.path.join(base_dir, llm.split()[0]) # We use split()[0] to get LLM first name only
         
         if not os.path.exists(llm_path):
             print(f"Warning: Path not found for {llm}")
@@ -99,7 +99,7 @@ def plot_confusion_matrix_per_llm(df, title_prefix="Overall"):
     Plots a row of confusion matrices, one for each LLM.
     """
     llms = df['LLM'].unique()
-    _, axes = plt.subplots(1, len(llms), figsize=(5 * len(llms), 4))
+    _, axes = plt.subplots(1, len(llms), figsize=(4.5 * len(llms), 4))
     
     if len(llms) == 1: axes = [axes] # Handle single case
 
@@ -130,7 +130,7 @@ def plot_benchmark_bars(metrics_df, title):
                              value_vars=['Accuracy', 'Precision', 'Recall', 'F1-Score'], 
                              var_name='Metric', value_name='Score')
     
-    plt.figure(figsize=(10, 6))
+    plt.figure(figsize=(9, 6))
 
     # barplot with LLM Colors
     ax = sns.barplot(
@@ -246,13 +246,13 @@ def plot_hardest_smells(df):
     display(HTML("<br>"))
 
 
-def plot_hallucinations(df, llm_models):
+def plot_hallucinations(df):
     # 1. Filter for False Positives (Actual=False, Detected=True)
     fp_df = df[(df['Actual'] == False) & (df['Detected'] == True)]
 
     # 2. Count occurrences per LLM
     # We reindex to ensure all LLMs show up even if they have 0 hallucinations
-    fp_counts = fp_df['LLM'].value_counts().reindex(llm_models, fill_value=0).reset_index()
+    fp_counts = fp_df['LLM'].value_counts().reindex(fp_df['LLM'].unique(), fill_value=0).reset_index()
     fp_counts.columns = ['LLM', 'False_Positives']
 
     # 3. Plot
@@ -301,7 +301,7 @@ def plot_paranoia_heatmap(df):
         )
 
         # 2. PLOTTING
-        plt.figure(figsize=(10, 8))
+        plt.figure(figsize=(9, 8))
 
         sns.heatmap(
             fpr_data, 
@@ -362,9 +362,9 @@ def plot_strategy_map(df, custom_aggregates):
         # 3. Add Labels to the dots
         for i in range(strategy_metrics.shape[0]):
             plt.text(
-                x=strategy_metrics.Precision[i]+0.01, 
-                y=strategy_metrics.Recall[i]+0.01, 
-                s=strategy_metrics.LLM[i], 
+                x=strategy_metrics.Precision[i]+0.00, 
+                y=strategy_metrics.Recall[i]+0.03, 
+                s=strategy_metrics.LLM[i].split()[0], # we take LLM first name, better when dots are close together 
                 fontdict=dict(color='black', size=12, weight='bold')
             )
 

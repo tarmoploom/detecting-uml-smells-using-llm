@@ -15,7 +15,7 @@ The goal of this project is to test and analyze the detection of "Model Smells" 
 ### 🛠️ Tech Stack
 
 - **Language:** Python
-- **Models:** Gemini 3 Pro / GPT-5.1 / Claude Opus 4.5
+- **Models:** Gemini 3 Pro / ChatGPT 5.1 / Claude Opus 4.5
 - **Format:** JSON (ISO 8601 Timestamps)
 
 ---
