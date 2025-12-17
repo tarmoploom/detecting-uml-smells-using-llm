@@ -143,12 +143,12 @@ def plot_benchmark_bars(metrics_df, title):
     
     plt.title(title, fontsize=15)
     plt.ylim(0, 1.05)
-    plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
+    plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left')
     
     # Add numbers on top of bars
     for container in ax.containers:
         ax.bar_label(container, fmt='%.2f')
-        
+    
     plt.show()
     # Force a blank space after the plot
     display(HTML("<br>"))
