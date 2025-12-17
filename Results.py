@@ -373,5 +373,4 @@ def plot_strategy_map(df):
     plt.axhline(0.5, color='gray', linestyle=':', alpha=0.5)
 
     plt.show()
-    # Force a blank space after the plot
-    display(HTML("<br>"))
+
