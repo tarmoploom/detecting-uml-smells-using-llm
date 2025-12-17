@@ -16,8 +16,10 @@ llm_colors = {
     'Gemini':  '#4285F4'   # Google Blue
 }
 
+# Define root directory of your results
+base_dir = 'Results'
 
-def load_data(base_dir, models):
+def load_data(models):
     all_records = []
 
     for llm in models:
@@ -61,17 +63,17 @@ def load_data(base_dir, models):
     return pd.DataFrame(all_records)
 
 
-def calculate_metrics(dataframe, grouping_col=None):
+def calculate_metrics(df, grouping_col=None):
     """
     Calculates Accuracy, Precision, Recall, and F1 for given data.
     """
     results = []
     
     # Identify unique groups (e.g., unique LLMs)
-    groups = dataframe[grouping_col].unique() if grouping_col else [None]
+    groups = df[grouping_col].unique() if grouping_col else [None]
     
     for group in groups:
-        subset = dataframe[dataframe[grouping_col] == group] if group else dataframe
+        subset = df[df[grouping_col] == group] if group else df
         
         y_true = subset['Actual'].astype(int)
         y_pred = subset['Detected'].astype(int)
@@ -92,17 +94,17 @@ def calculate_metrics(dataframe, grouping_col=None):
     return pd.DataFrame(results)
 
 
-def plot_confusion_matrix_per_llm(dataframe, title_prefix="Overall"):
+def plot_confusion_matrix_per_llm(df, title_prefix="Overall"):
     """
     Plots a row of confusion matrices, one for each LLM.
     """
-    llms = dataframe['LLM'].unique()
+    llms = df['LLM'].unique()
     _, axes = plt.subplots(1, len(llms), figsize=(5 * len(llms), 4))
     
     if len(llms) == 1: axes = [axes] # Handle single case
 
     for ax, llm in zip(axes, llms):
-        subset = dataframe[dataframe['LLM'] == llm]
+        subset = df[df['LLM'] == llm]
         cm = confusion_matrix(subset['Actual'], subset['Detected'], labels=[True, False])
         
         sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', ax=ax, 
@@ -299,7 +301,7 @@ def plot_paranoia_heatmap(df):
         )
 
         # 2. PLOTTING
-        plt.figure(figsize=(12, 10))
+        plt.figure(figsize=(10, 8))
 
         sns.heatmap(
             fpr_data, 
@@ -327,50 +329,62 @@ def plot_paranoia_heatmap(df):
     display(HTML("<br>"))
 
 
-def plot_strategy_map(df):
-    # 1. Calculate Overall Metrics
-    strategy_metrics = calculate_metrics(df, grouping_col='LLM')
+def plot_strategy_map(df, custom_aggregates):
+    for group_name, target_categories in custom_aggregates.items():
+        print(" ")
+        print(f"--- Analysis for {group_name} ---")
+        print(" ")
+        
+        # Filter the main dataframe for only the categories in this group
+        group_df = df[df['Category'].isin(target_categories)]
+    
+        if group_df.empty:
+            print(f"No data found for {group_name}. Check category names.")
+            continue   
+     
+        # 1. Calculate Overall Metrics
+        strategy_metrics = calculate_metrics(group_df, grouping_col='LLM')
 
-    # 2. PLOTTING
-    plt.figure(figsize=(10, 8))
+        # 2. PLOTTING
+        plt.figure(figsize=(10, 8))
 
-    # Create the scatter plot
-    ax = sns.scatterplot(
-        data=strategy_metrics, 
-        x='Precision', 
-        y='Recall', 
-        hue='LLM', 
-        s=400, # Make dots big
-        palette=llm_colors,
-        edgecolor='black'
-    )
-
-    # 3. Add Labels to the dots
-    for i in range(strategy_metrics.shape[0]):
-        plt.text(
-            x=strategy_metrics.Precision[i]+0.01, 
-            y=strategy_metrics.Recall[i]+0.01, 
-            s=strategy_metrics.LLM[i], 
-            fontdict=dict(color='black', size=12, weight='bold')
+        # Create the scatter plot
+        sns.scatterplot(
+            data=strategy_metrics, 
+            x='Precision', 
+            y='Recall', 
+            hue='LLM', 
+            s=400, # Make dots big
+            palette=llm_colors,
+            edgecolor='black'
         )
 
-    # 4. Add "Zone" Annotations for context
-    plt.text(0.95, 0.1, "THE SAFE ZONE\n(Conservative)\nHigh Precision, Low Recall", 
-            horizontalalignment='right', color='green', alpha=0.5, weight='bold')
+        # 3. Add Labels to the dots
+        for i in range(strategy_metrics.shape[0]):
+            plt.text(
+                x=strategy_metrics.Precision[i]+0.01, 
+                y=strategy_metrics.Recall[i]+0.01, 
+                s=strategy_metrics.LLM[i], 
+                fontdict=dict(color='black', size=12, weight='bold')
+            )
 
-    plt.text(0.1, 0.9, "THE PARANOID ZONE\n(Aggressive)\nLow Precision, High Recall", 
-             horizontalalignment='left', color='red', alpha=0.5, weight='bold')
+        # 4. Add "Zone" Annotations for context
+        plt.text(0.95, 0.1, "THE SAFE ZONE\n(Conservative)\nHigh Precision, Low Recall", 
+                 horizontalalignment='right', color='green', alpha=0.5, weight='bold')
 
-    plt.text(0.95, 0.95, "THE IDEAL ZONE\n(Perfect)", 
-             horizontalalignment='right', color='gold', alpha=0.8, weight='bold')
+        plt.text(0.1, 0.9, "THE PARANOID ZONE\n(Aggressive)\nLow Precision, High Recall", 
+                horizontalalignment='left', color='red', alpha=0.5, weight='bold')
 
-    # Style
-    plt.title('LLM Strategy Map: Who is playing it safe?', fontsize=16)
-    plt.xlim(0, 1.05)
-    plt.ylim(0, 1.05)
-    plt.grid(True, linestyle='--')
-    plt.axvline(0.5, color='gray', linestyle=':', alpha=0.5) # Center crosshair
-    plt.axhline(0.5, color='gray', linestyle=':', alpha=0.5)
+        plt.text(0.95, 0.95, "THE IDEAL ZONE\n(Perfect)", 
+                horizontalalignment='right', color='gold', alpha=0.8, weight='bold')
 
-    plt.show()
+        # Style
+        plt.title('LLM Strategy Map: Who is playing how?', fontsize=16)
+        plt.xlim(0, 1.05)
+        plt.ylim(0, 1.05)
+        plt.grid(True, linestyle='--')
+        plt.axvline(0.5, color='gray', linestyle=':', alpha=0.5) # Center crosshair
+        plt.axhline(0.5, color='gray', linestyle=':', alpha=0.5)
+
+        plt.show()
 
