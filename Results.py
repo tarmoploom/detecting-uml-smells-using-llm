@@ -1,5 +1,5 @@
 from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score, f1_score
-from IPython.display import display
+from IPython.display import display, HTML
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
@@ -115,6 +115,8 @@ def plot_confusion_matrix_per_llm(dataframe, title_prefix="Overall"):
     plt.suptitle(f'{title_prefix} Confusion Matrices', y=1.05, fontsize=16)
     plt.tight_layout()
     plt.show()
+    # Force a blank space after the plot
+    display(HTML("<br>"))
 
 
 def plot_benchmark_bars(metrics_df, title):
@@ -146,6 +148,9 @@ def plot_benchmark_bars(metrics_df, title):
         ax.bar_label(container, fmt='%.2f')
         
     plt.show()
+    # Force a blank space after the plot
+    display(HTML("<br>"))
+
 
 
 def plot_custom_aggregates(df, custom_aggregates):
@@ -170,6 +175,8 @@ def plot_custom_aggregates(df, custom_aggregates):
     
         # 3. Plot Confusion Matrices
         plot_confusion_matrix_per_llm(group_df, title_prefix=group_name)
+        # Force a blank space after the plot
+        display(HTML("<br>"))
 
 
 def plot_per_category(df, target_order):
@@ -198,6 +205,8 @@ def plot_per_category(df, target_order):
     
         # Plot Confusion Matrix
         plot_confusion_matrix_per_llm(cat_df, title_prefix=cat)
+        # Force a blank space after the plot
+        display(HTML("<br>"))
 
 
 
@@ -231,6 +240,8 @@ def plot_hardest_smells(df):
         plt.show()
     else:
         print("Not enough data to calculate per-rule recall.")
+    # Force a blank space after the plot
+    display(HTML("<br>"))
 
 
 def plot_hallucinations(df, llm_models):
@@ -267,6 +278,8 @@ def plot_hallucinations(df, llm_models):
 
     plt.tight_layout()
     plt.show()
+    # Force a blank space after the plot
+    display(HTML("<br>"))
 
 
 def plot_paranoia_heatmap(df):
@@ -310,6 +323,8 @@ def plot_paranoia_heatmap(df):
 
     else:
         print("No negative samples found (Everything was a smell?), cannot calc False Positive Rate.")
+    # Force a blank space after the plot
+    display(HTML("<br>"))
 
 
 def plot_strategy_map(df):
@@ -358,3 +373,5 @@ def plot_strategy_map(df):
     plt.axhline(0.5, color='gray', linestyle=':', alpha=0.5)
 
     plt.show()
+    # Force a blank space after the plot
+    display(HTML("<br>"))
