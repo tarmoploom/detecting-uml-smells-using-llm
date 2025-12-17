@@ -6,10 +6,15 @@ import pandas as pd
 import json
 import os
 
-
 # Style configuration for nicer plots
 sns.set_theme(style="whitegrid")
 plt.rcParams['figure.figsize'] = [10, 6]
+
+llm_colors = {
+    'ChatGPT': "#25D899",  # OpenAI Teal
+    'Claude':  "#FF9436",  # Anthropic Clay/Orange
+    'Gemini':  '#4285F4'   # Google Blue
+}
 
 
 def load_data(base_dir, models):
@@ -112,7 +117,7 @@ def plot_confusion_matrix_per_llm(dataframe, title_prefix="Overall"):
     plt.show()
 
 
-def plot_benchmark_bars(metrics_df, title, llm_colors):
+def plot_benchmark_bars(metrics_df, title):
     """
     Plots a grouped bar chart comparing LLMs across metrics.
     """
@@ -143,9 +148,10 @@ def plot_benchmark_bars(metrics_df, title, llm_colors):
     plt.show()
 
 
-def plot_custom_aggregates(df, custom_aggregates, llm_colors):
+def plot_custom_aggregates(df, custom_aggregates):
     for group_name, target_categories in custom_aggregates.items():
-        print(f"--- Analysis for: {group_name} ---")
+        print()
+        print(f"--- Analysis for {group_name} ---")
     
         # Filter the main dataframe for only the categories in this group
         group_df = df[df['Category'].isin(target_categories)]
@@ -159,13 +165,13 @@ def plot_custom_aggregates(df, custom_aggregates, llm_colors):
         display(group_metrics)
     
         # 2. Plot Bar Chart
-        plot_benchmark_bars(group_metrics, f"Performance: {group_name}", llm_colors)
+        plot_benchmark_bars(group_metrics, f"Performance: {group_name}")
     
         # 3. Plot Confusion Matrices
         plot_confusion_matrix_per_llm(group_df, title_prefix=group_name)
 
 
-def plot_per_category(df, target_order, llm_colors):
+def plot_per_category(df, target_order):
     # Get list of what actually exists in the data (to avoid errors if a folder is empty)
     available_categories = set(df['Category'].unique())
 
@@ -175,7 +181,8 @@ def plot_per_category(df, target_order, llm_colors):
             print(f"Skipping {cat} (Not found in loaded data)")
             continue
         
-        print(f"--- Analysis for: {cat} ---")
+        print()
+        print(f"--- Analysis for {cat} ---")
     
         # Filter data for this category
         cat_df = df[df['Category'] == cat]
@@ -185,12 +192,11 @@ def plot_per_category(df, target_order, llm_colors):
         display(cat_metrics)
     
         # Plot Bar Chart
-        plot_benchmark_bars(cat_metrics, f"Performance: {cat}", llm_colors)
+        plot_benchmark_bars(cat_metrics, f"Performance: {cat}")
     
         # Plot Confusion Matrix
         plot_confusion_matrix_per_llm(cat_df, title_prefix=cat)
-    
-        print("\n" + "="*50 + "\n")
+
 
 
 def plot_hardest_smells(df):
@@ -225,7 +231,7 @@ def plot_hardest_smells(df):
         print("Not enough data to calculate per-rule recall.")
 
 
-def plot_hallucinations(df, llm_models, llm_colors):
+def plot_hallucinations(df, llm_models):
     # 1. Filter for False Positives (Actual=False, Detected=True)
     fp_df = df[(df['Actual'] == False) & (df['Detected'] == True)]
 
@@ -234,11 +240,7 @@ def plot_hallucinations(df, llm_models, llm_colors):
     fp_counts = fp_df['LLM'].value_counts().reindex(llm_models, fill_value=0).reset_index()
     fp_counts.columns = ['LLM', 'False_Positives']
 
-    # 3. Display the Data Table
-    print("False Positive Data Table:")
-    display(fp_counts)
-
-    # 4. Plot
+    # 3. Plot
     plt.figure(figsize=(8, 6))
     ax = sns.barplot(
         data=fp_counts, 
@@ -308,7 +310,7 @@ def plot_paranoia_heatmap(df):
         print("No negative samples found (Everything was a smell?), cannot calc False Positive Rate.")
 
 
-def plot_strategy_map(df, llm_colors):
+def plot_strategy_map(df):
     # 1. Calculate Overall Metrics
     strategy_metrics = calculate_metrics(df, grouping_col='LLM')
 
