@@ -12,13 +12,13 @@ check_list = ["G5.1", "G5.2", "G6.1", "G6.2", "G6.3", "G8.1", "G15.1", "G15.2", 
 
 # Path Configuration
 end_path = "Yliopilased"
-llm_model_name = "Gemini 3 Pro"
+llm_model_name = "GPT-5.1"
 
 # Calculate absolute paths based on script location
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
 # 1. Output Folder Path
-output_path = os.path.join(script_dir, "Results/Gemini", end_path)
+output_path = os.path.join(script_dir, "Results/ChatGPT", end_path)
 
 # 2. Ground Truth Folder Path
 ground_truth_path = os.path.join(script_dir, "Data", end_path)
@@ -47,6 +47,11 @@ def main():
 
     if not filename or not isinstance(filename, str):
         sys.exit("Error: The value for 'file_name' is empty or invalid.")
+
+    if not filename.__contains__('chatGPT_'):
+        sys.exit("Error: The value does not have chatGPT_ in it, check the result.json")
+
+    filename = filename.removeprefix('chatGPT_')
 
     # -------------------------------------------------
     # 2. Setup and Check Paths (Strict Mode)
