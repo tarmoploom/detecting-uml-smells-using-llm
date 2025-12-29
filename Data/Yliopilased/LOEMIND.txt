@@ -1,11 +1,16 @@
+(Hoonete_typoloogia, Kaubad_turuplatsil, Kobarkino, Kultuurireisid, Labor, Lennufirma, Myygid, Padel, Tarkvaraarenduse_tellimused, Tooaeg) ->
+
 Arvestatud omaloomingu projektid õppeainest "Andmebaasid I" 2025. aasta kevadest.
 
 Esitatud on kõige viimane mudelite versioon.
 
 
 
-*Filmid.pdf, pärineb:
-Arvestatud töövihiku projektid õppeainest "Andmebaasid I" 2025. aasta kevadest.
-Valitud on projekt, mis sai arvestuse peale eksamisessiooni algust.
 
-Esitatud on kõige viimane mudeli versioon.
+
+Ülejäänud failid ->
+
+Arvestatud töövihiku projektid õppeainest "Andmebaasid I" 2025. aasta kevadest.
+Valitud on projektid, mis said arvestuse peale eksamisessiooni algust.
+
+Esitatud on kõige viimane mudelite versioon.
