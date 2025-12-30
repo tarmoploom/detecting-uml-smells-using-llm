@@ -1,0 +1,115 @@
+{
+  "file_name": "Loomade_varjupaiga_loomad",
+  "timestamp": "2025-12-30T13:27:11Z",
+  "llm_model": "Claude Opus 4.5",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No empty diagrams were found. All 20 diagrams (pages 1-20) contain at least one element. Examples include: Page 2 use case diagram with 11 use cases, Page 7 class diagram with 15 classes, Page 10 state diagram with 4 states."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": true,
+      "justification": "On diagram 'Loomade funktsionaalne alls\u00fcsteem' (page 2), the use case 'Tuvasta kasutaja' (marked as 'from L\u00e4bivad huvid') is a visual oval element that has ZERO direct actor associations. It only has \u00abinclude\u00bb relationships pointing to it from other use cases, but no actor line connects to it directly. This violates the rule requiring every use case oval to have at least 1 actor association."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "On diagram 'Loomade funktsionaalne alls\u00fcsteem' (page 2), all 11 use cases describe distinct activities: Tuvasta kasutaja, Vaata loomade koondaruannet, M\u00e4rgi loom surnuks, Registreeri loom, Muuda looma infot, Aktiveeri loom, Muuda loom mittaktiivseks, Vaata aktiivseid loomi, Vaata k\u00f5iki loomi, Vaata k\u00f5iki mitteaktiivseid loomi, Otsi looma kiibi j\u00e4rgi. No two use cases describe the same activity with the same actor."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Examined all package diagrams including 'Loomade FASiga seotud p\u00e4devusalad ja registrid' (page 1). Each package contains uniquely named elements: Isikute register (Isik, Kasutajakonto), Klassifikaatorite register (14 unique classifiers), T\u00f6\u00f6tajate register (T\u00f6\u00f6taja, T\u00f6\u00f6taja_rolli_omamine), Loomade register (Loom, Loom_Looma_kategooria, Looma eluts\u00fcklid). No duplicate element names within any single package."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Examined transformed database diagrams (pages 14-20). Columns like 'nimetus' and 'on_aktiivne' appear in multiple tables but represent different contexts for each entity (each classifier has its own name/status). All shared data relationships between tables are properly connected via Foreign Key relationships (e.g., FK_Adopteerimine_Loom, FK_Isik_Isiku_seisundi_liik). No redundant data duplication without FK relationships found."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "On diagram 'Loomade funktsionaalne alls\u00fcsteem' (page 2), all use cases follow a consistent verb-first naming pattern in Estonian: Tuvasta (Identify), Vaata (View), M\u00e4rgi (Mark), Registreeri (Register), Muuda (Change), Aktiveeri (Activate), Otsi (Search). All names begin with imperative verbs."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "On diagram 'Looma seisundidiagramm' (page 10), all 4 states are reachable: Alg (initial state with outgoing transition), Aktiivne (reachable from Alg via 'Varjupaika saabub uus loom'), Mitteaktiivne (reachable from Aktiivne via 'Loom lahkub varjupaigast'), Surnud (reachable from both Aktiivne and Mitteaktiivne). Every state has at least one incoming transition path."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On activity diagram 'Looma sissekande l\u00f5petamise tegevusdiagramm' (page 3), all actions are reachable from Algus: 'Vaata k\u00f5iki loomi, keda saab surnuks m\u00e4\u00e4rata' directly from start, then 'Otsi loom', 'Vali loom', 'L\u00f5peta valitud looma sissekanne' via decision flows. Similarly on page 4 'Registreeri_loom', all actions connect via flow from Algus through decision nodes to L\u00f5pp."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Examined all class and database diagrams. All relationships have multiplicity indicators on both ends. Examples: Page 5 shows '0..*' and '1' on T\u00f6\u00f6taja-Loom relationship, Page 9 shows '0..*', '1', '0..1' multiplicities on all Loom relationships, transformed diagrams (pages 14-20) show multiplicities like '0..*' and '1' or '0..1' on all FK relationships."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Multiple diagrams exceed the threshold of \u226510 central elements: (1) Page 2 'Loomade funktsionaalne alls\u00fcsteem' contains 11 use cases (Tuvasta kasutaja, Vaata loomade koondaruannet, M\u00e4rgi loom surnuks, Registreeri loom, Muuda looma infot, Aktiveeri loom, Muuda loom mittaktiivseks, Vaata aktiivseid loomi, Vaata k\u00f5iki loomi, Vaata k\u00f5iki mitteaktiivseid loomi, Otsi looma kiibi j\u00e4rgi). 11 \u2265 10. (2) Page 7 'Klassifikaatorite register' contains 15 classes (Klassifikaator, Riik, Loom_seisundi_liik, T\u00f6\u00f6taja_seisundi_liik, Isiku_seisundi_liik, T\u00f6\u00f6taja_roll, Loom_kategooria, Loom_kategooria_t\u00fc\u00fcp, Loom_t\u00f5ug, Loom_asukoht, Kommentaar_t\u00fc\u00fcp, Adopteerimine_staatus, Vaktsiin_t\u00fc\u00fcp, Protseduur_t\u00fc\u00fcp, Terviseseisund_t\u00fc\u00fcp). 15 \u2265 10. (3) Page 15 'Klassifikaatorite register (transformed)' contains 14 tables (Adopteerimine_staatus, Isiku_seisundi_liik, Kommentaar_tyyp, Loom_asukoht, Loom_kategooria_tyyp, Loom_seisundi_liik, Loom_toug, Protseduur_tyyp, Riik, Terviseseisund_tyyp, Tootaja_roll, Tootaja_seisundi_liik, Vaktsiin_tyyp, Loom_kategooria). 14 \u2265 10."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": true,
+      "detected": true,
+      "justification": "Multiple diagrams have elements with \u22656 visual connection lines: (1) Page 5 'Kontseptuaalne eskiismudel': T\u00f6\u00f6taja has 6 connections (to Isik, Loom, Kommentaar, Protseduur, Adopteerimine, and mentor self-reference). 6 \u2265 6. (2) Page 7 'Klassifikaatorite register': Klassifikaator has 13 'Klassifikaatori t\u00fc\u00fcp' relationship lines connecting to all subtype classes. 13 \u2265 6. (3) Page 9 'Loomade register': Loom has 6 connections (to T\u00f6\u00f6taja/viimane muutja, Loom_seisundi_liik, Loom_kategooria, Loom_Looma_kategooria, Loom_t\u00f5ug, Loom_asukoht). 6 \u2265 6. (4) Page 18 'Loomade register (transformed)': Loom has 7 FK lines (to Loom_asukoht, Loom_seisundi_liik, Loom_toug, Tootaja via registreerija, Tootaja via viimane_muutja, Loom_Looma_kategooria, Loom_kategooria). 7 \u2265 6. (5) Page 20 'T\u00f6\u00f6tajate register (transformed)': Tootaja has 7 connections (FK_Tootaja_Isik, FK_Tootaja_Tootaja_seisundi_liik, FK_mentor, FK_Tootaja_rolli_omamine_Tootaja, FK_Loom_registreerija, FK_viimane_muutja, FK_Adopteerimine_Tootaja_02). 7 \u2265 6."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Visual inspection of all diagrams shows related elements are positioned within reasonable proximity. No relationship distance appears to exceed twice the average distance between elements on any diagram. Elements on larger diagrams (pages 7, 15) are distributed relatively uniformly."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases on page 2 start with active imperative verbs in Estonian: Tuvasta (Identify), Vaata (View), M\u00e4rgi (Mark), Registreeri (Register), Muuda (Change), Aktiveeri (Activate), Otsi (Search). Activity diagram actions on pages 3-4 also start with verbs: Vaata, Otsi, Vali, L\u00f5peta, Lisa. No use case or action starts with a noun or passive form."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Examined all class, table, attribute, and use case names. Shortest names found are 4 characters: 'Isik' (4 chars), 'Loom' (4 chars), 'Riik' (4 chars), 'nimi' (4 chars), 'kood' (4 chars), 'Otsi' (4 chars). Threshold is \u22643 characters. Since all names have \u22654 characters, smell is NOT present."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class names start with uppercase letters: Isik, Kasutajakonto, Klassifikaator, T\u00f6\u00f6taja, Loom, Kommentaar, Protseduur, Adopteerimine, etc. All class names are singular in Estonian: Isik (Person), Loom (Animal), T\u00f6\u00f6taja (Worker), not plural forms. No violations found."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": true,
+      "detected": true,
+      "justification": "On page 15 'Klassifikaatorite register (transformed)', multiple column names start with uppercase letters: 'Adopt_stat_kood' (starts with uppercase 'A'), 'Isiku_seisundi_liik_kood' (starts with uppercase 'I'), 'Loom_seisundi_liik_kood' (starts with uppercase 'L'), 'Terviseseisund_tyyp_kood' (starts with uppercase 'T'), 'Kommentaar_tyyp_kood' (starts with uppercase 'K'). These are regular column names (not PK_/FK_ prefixes which are allowed) that violate the lowercase naming convention."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All database table names in transformed diagrams (pages 14-20) are singular: Adopteerimine (singular), Isik (singular), Tootaja (singular), Loom (singular), Kasutajakonto (singular), Kommentaar (singular), Protseduur (singular), and all classifier tables (Adopteerimine_staatus, Isiku_seisundi_liik, etc.). No plural table names found."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Examined all class, table, and attribute names. No type prefixes like 'tbl_', 'uc_', 'str', 'int' were found. The PK_, FK_, and IXFK_ prefixes used in transformed diagrams are allowed per the rule definition. Table names do not have 'tbl_' prefix, attribute names do not have type prefixes like 'strName' or 'intCount'."
+    }
+  ]
+}

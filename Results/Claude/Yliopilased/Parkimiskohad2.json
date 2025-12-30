@@ -1,0 +1,115 @@
+{
+  "file_name": "Parkimiskohad2",
+  "timestamp": "2025-12-30T14:27:10Z",
+  "llm_model": "Claude Opus 4.5",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No empty diagrams were found. All 18 pages contain at least one element. The diagrams include package diagrams, use case diagrams, activity diagrams, class diagrams, state diagrams, and database diagrams, all populated with elements."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": true,
+      "justification": "On page 2 'Parklakoha funktsionaalne alls\u00fcsteem' use case diagram, the use case 'Tuvasta kasutaja' (marked as 'from L\u00e4bivad huvid') is a visual oval element that has NO direct actor associations. It only has \u00abinclude\u00bb relationships from other use cases (Aktiveeri parklakoht and L\u00f5peta parklakoht include it), but no actor directly connects to it. This violates G5.2."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "On page 2 use case diagram, all use case names are unique and describe distinct activities: Tuvasta kasutaja, Vaata parklakohtade koondaruannet, L\u00f5peta parklakoht, Registreeri parklakoht, Muuda parklakoht, Aktiveeri parklakoht, Muuda parklakoht mitteaktiivseks, Vaata aktiivseid parklakohti, Vaata k\u00f5iki parklakohti, Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid parklakohti, Unusta parklakoht. No two use cases describe the same activity with the same actor."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Examining all package diagrams (page 1), each package contains uniquely named elements. For example, 'Klassifikaatorite register' contains: Isiku_seisundi_liik, Klassifikaator, Kliendi_seisundi_liik, Parklakoha_kategooria, etc. - all unique names within their package. No duplicate element names found within any single package."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Examining the database diagrams (pages 13-18), columns with similar names like 'nimetus' and 'on_aktiivne' appear in multiple classifier tables, but these represent different contexts (different status types). All data relationships are properly connected via FK relationships. For example, Isik connects to Isiku_seisundi_liik via FK_Isik_Isiku_seisundi_liik. No redundant data copies without FK relationships were found."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "On page 2 use case diagram, all use cases consistently start with active verbs in Estonian: Tuvasta (Identify), Vaata (View), L\u00f5peta (End), Registreeri (Register), Muuda (Modify), Aktiveeri (Activate), Unusta (Forget). The naming pattern is consistent - all verb-first format."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "On page 11 'Parklakoha seisundidiagramm', all states are reachable: Ootel is reached from initial state (Alg), Aktiivne is reached from Ootel and Mitteaktiivne, Mitteaktiivne is reached from Aktiivne, L\u00f5petatud is reached from Aktiivne and Mitteaktiivne, Unustatud is reached from Ootel. Every state has at least one incoming transition."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On pages 3-4 activity diagrams, all actions are reachable from their start nodes. Page 3: Algus -> Vaata k\u00f5iki parklakohti -> decision nodes with paths to Otsi parklakoht, Vali parklakoht, L\u00f5peta valitud parklakoht -> L\u00f5pp. Page 4: Algus -> Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid parklakohti -> decision nodes -> Vali parklakoht -> Aktiveeri valitud parklakoht -> Salvesta andmed -> L\u00f5pp. All actions have incoming flows."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All relationships in class and database diagrams have multiplicity indicators on both ends. Examples from page 5: '1 0..*' between Isik and T\u00f6\u00f6taja, '0..* 1' between Parklakoht and Parklakoha_seisundi_liik, '0..1 1' between Isik and Kasutajakonto. Database diagrams (pages 13-18) show multiplicities like '0..1', '1', '0..*' on all FK relationships."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Multiple diagrams exceed the threshold of \u226510 central elements:\n1. Page 2 'Parklakoha funktsionaalne alls\u00fcsteem': 11 use cases counted (Tuvasta kasutaja, Vaata parklakohtade koondaruannet, L\u00f5peta parklakoht, Registreeri parklakoht, Muuda parklakoht, Aktiveeri parklakoht, Muuda parklakoht mitteaktiivseks, Vaata aktiivseid parklakohti, Vaata k\u00f5iki parklakohti, Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid parklakohti, Unusta parklakoht). 11 \u2265 10, smell IS present.\n2. Page 5 'Kontseptuaalne andmemudel': 16 classes counted (Isik, T\u00f6\u00f6taja, Klient, Klassifikaator, Kliendi_seisundi_liik, Parklakoha_seisundi_liik, Parklakoha_kategooria, Parklakoha_kategooria_t\u00fc\u00fcp, Kasutajakonto, Isiku_seisundi_liik, Riik, T\u00f6\u00f6taja_roll, T\u00f6\u00f6taja_seisundi_liik, Parklakoha_kategooria_omamine, T\u00f6\u00f6taja_rolli_omamine, Parklakoht). 16 \u2265 10, smell IS present.\n3. Page 8 'Klassifikaatorite register': 10 classes counted (Klassifikaator, Riik, Parklakoha_seisundi_liik, T\u00f6\u00f6taja_seisundi_liik, Isiku_seisundi_liik, T\u00f6\u00f6taja_roll, Parklakoha_kategooria, Parklakoha_kategooria_t\u00fc\u00fcp, Kliendi_seisundi_liik, Parklakoha_tsoon). 10 \u2265 10, smell IS present."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Counted visual connection lines for each class/table on each diagram. Maximum connections found:\n- Page 5: Isik has 5 visible connections (to Kasutajakonto, T\u00f6\u00f6taja, Klient, Isiku_seisundi_liik, Riik). 5 < 6.\n- Page 13: Isik table has 5 FK connections visible on diagram (Kasutajakonto, Klient, Tootaja, Isiku_seisundi_liik, Riik). 5 < 6.\n- Page 17: Parklakoht has 5 visible connections (to Parklakoha_kat_omamine, Parklakoha_seisundi_liik, Parklakoha_tsoon, plus registreerija and viimane_muutja FKs not shown as tables). 5 < 6.\nThreshold is \u22656. Maximum found is 5 < 6, therefore smell is NOT present."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Visual inspection of all diagrams shows related elements are placed in reasonable proximity. No obvious cases where the distance between two related elements exceeds twice the average distance between elements on any diagram. Elements connected by relationships are generally positioned close to each other."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases on page 2 start with active verbs (Estonian): Tuvasta (Identify), Vaata (View), L\u00f5peta (End), Registreeri (Register), Muuda (Modify), Aktiveeri (Activate), Unusta (Forget). All activity diagram actions on pages 3-4 also start with verbs: Vaata, Otsi (Search), Vali (Select), L\u00f5peta, Aktiveeri, Salvesta (Save). No noun-first or passive form names found."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Checked all class, table, attribute, and use case names for length \u22643 characters. Shortest names found: 'Isik' (4 chars), 'Riik' (4 chars), 'kood' (4 chars in compound names). All names have \u22654 characters. Threshold is \u22643 characters. Since minimum found is 4 > 3, smell is NOT present."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class names start with uppercase letters: Isik, T\u00f6\u00f6taja, Klient, Klassifikaator, Kasutajakonto, Parklakoht, etc. All class names are singular: Isik (not Isikud), Klient (not Kliendid), T\u00f6\u00f6taja (not T\u00f6\u00f6tajad). No lowercase-starting or plural class names found."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All attribute/column names start with lowercase letters. Examples from page 5: e_meil, eesnimi, elukoht, isikukood, perenimi, reg_aeg, s\u00fcnni_kp, viimase_muutm_aeg, kommentaar, k\u00f5rgus, laius, parklakoha_kood, pikkus, on_nous_tylitamisega. Examples from database diagrams: nimetus, on_aktiivne, parool, mentor. No uppercase-starting attribute names found."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All database table names are singular. Examples from transformed diagrams (pages 13-18): Isik (not Isikud), Kasutajakonto, Klient, Tootaja, Riik, Parklakoha_kat, Parklakoha_kat_tyyp, Parklakoha_tsoon, Tootaja_roll, Parklakoht, Tootaja_rolli_omamine, Parklakoha_kat_omamine. No plural table names found."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Examined all class, table, and attribute names for type prefixes. Found prefixes: PK_ (primary key), FK_ (foreign key), pfK (partial foreign key), IXFK_ (index for FK), CHK_ (check constraints), AK_ (alternate keys). Per the rule, PK_, FK_, pfK, and IXFK_ are ALLOWED and should be ignored. No disallowed type prefixes like tbl_, uc_, str, int found in actual class/table/attribute names. Constraint names (CHK_, AK_) are not class/table/attribute names."
+    }
+  ]
+}

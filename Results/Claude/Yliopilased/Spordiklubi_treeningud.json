@@ -1,0 +1,115 @@
+{
+  "file_name": "Spordiklubi_treeningud",
+  "timestamp": "2025-12-30T19:55:58Z",
+  "llm_model": "Claude Opus 4.5",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No empty diagrams were found. All 18 diagrams contain at least one element. Each page contains either classes, use cases, states, actions, or tables."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": true,
+      "justification": "On page 2 ('Treeningu funktsionaalne alls\u00fcsteem' use case diagram), the use case 'Tuvasta kasutaja' (Identify user) marked as '(from L\u00e4bivad huvid)' is not directly associated with any actor. It only has \u00abinclude\u00bb relationships to other use cases but no direct actor connection line."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate use cases describing the same activity with the same actor found. While there are multiple 'Vaata' (View) and 'Muuda' (Modify) use cases, they each describe distinct activities (e.g., 'Vaata aktiivseid treeninguid', 'Vaata k\u00f5iki treeninguid', 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid treeninguid' are all different viewing operations)."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate element names within the same package were found. All registers (Isikute register, Klassifikaatorite register, T\u00f6\u00f6tajate register, etc.) contain uniquely named elements."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Common columns like 'nimetus', 'on_aktiivne' appear in multiple tables but represent different data contexts (e.g., nimetus in Riik vs. nimetus in Treeningu_kategooria store different types of names). All similar data columns are connected via proper FK relationships."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases follow a consistent naming pattern starting with active verbs (Estonian imperative form): Vaata (View), L\u00f5peta (End), Registreeri (Register), Muuda (Modify), Aktiveeri (Activate), Unusta (Forget), Tuvasta (Identify)."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "On page 11 ('Treeningu seisundidiagramm'), all states can be reached: Alg (initial) starts the diagram, Ootel is reached from Alg via registration, Aktiivne is reached from Ootel and Mitteaktiivne, Mitteaktiivne is reached from Aktiivne, L\u00f5petatud is reached from Aktiivne and Mitteaktiivne, Unustatud is reached from Ootel."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Activity diagrams on pages 3 and 4 have all actions reachable from the start node (Algus). Each action is connected via decision nodes or direct flows from the initial node."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All relationships in class and database diagrams have multiplicity indicators on both ends. Examples: Isik-Kasutajakonto shows '1' and '0..1'; Treening-Tootaja shows '1' and '0..*'; transformed diagrams consistently show multiplicities like '0..*', '1', '0..1' on all FK relationships."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "On page 2 ('Treeningu funktsionaalne alls\u00fcsteem'), counted 11 use cases (visual oval elements): (1) Tuvasta kasutaja, (2) Vaata treeningute koondaruannet, (3) L\u00f5peta treening, (4) Registreeri treening, (5) Muuda treening, (6) Aktiveeri treening, (7) Muuda treening mittaktiivseks, (8) Vaata aktiivseid treeninguid, (9) Vaata k\u00f5iki treeninguid, (10) Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid treeninguid, (11) Unusta treening. Threshold is \u226510. Since 11 \u2265 10, smell IS present. Note: Actors (Juhataja, treeningute haldur, Uudistaja, Klient, Koristaja, Treener) are NOT counted per the rule."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": true,
+      "detected": true,
+      "justification": "On page 18 ('Treeningute register (transformed)'), the 'Treening' table has 6 visual connection lines: (1) FK_Treening_Tootaja_registreerija \u2192 Tootaja, (2) FK_Treening_Tootaja_treener \u2192 Tootaja, (3) FK_Treening_Tootaja_viimane_muutja_id \u2192 Tootaja, (4) FK_Treening_Treeningu_seisundi_liik \u2192 Treeningu_seisundi_liik, (5) FK_Treening_Treeningu_asukoht \u2192 Treeningu_asukoht, (6) FK_Treening_kategooria_omamine_Treening_02 \u2192 Treening_kategooria_omamine. Counted 6 visual lines from Treening. Threshold is \u22656. Since 6 \u2265 6, smell IS present."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Based on visual inspection of the diagrams, no relationships appear to have distances more than twice the average distance between elements. Elements are reasonably distributed within their diagram boundaries."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases start with active verbs: Vaata (View), L\u00f5peta (End), Registreeri (Register), Muuda (Modify), Aktiveeri (Activate), Unusta (Forget), Tuvasta (Identify). Activity diagram actions on pages 3-4 also start with verbs: Vaata, Otsi, Vali, L\u00f5peta, Aktiveeri, Kuva."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Checked all class, table, attribute, and use case names. Shortest names found: 'Isik' (4 chars), 'Riik' (4 chars), 'kood' (4 chars). All names have \u22654 characters. Note: 'Alg' (3 chars) is a state name, not a class/table/attribute/use case, so it does not trigger this rule. Threshold is \u22643 characters."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class names start with uppercase letters and are singular: Isik, Kasutajakonto, T\u00f6\u00f6taja/Tootaja, Treening, Klient, Klassifikaator, Riik, etc."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": true,
+      "detected": true,
+      "justification": "Multiple attribute/column names start with uppercase letters. On page 7 (Klassifikaatorite register): 'Kirjeldus' in T\u00f6\u00f6taja_roll starts with uppercase 'K'. On page 18 (Treeningute register transformed): 'Maksumus', 'Treeningu_id', 'Treeneri_kood', 'Treeningu_asukoha_kood', 'Treeningu_seisundi_liik_kood' all start with uppercase letters."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All database table names are singular: Isik, Kasutajakonto, Tootaja, Treening, Klient, Riik, Tootaja_roll, Treeningu_asukoht, Treeningu_kategooria, Treening_kategooria_omamine, etc."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No prohibited type prefixes (tbl_, uc_, str, int) found in class, table, or attribute names. The prefixes used are PK_ (Primary Key), FK_ (Foreign Key), pfK (partial foreign key), and IXFK_ (Index Foreign Key), which are explicitly allowed per the rule."
+    }
+  ]
+}

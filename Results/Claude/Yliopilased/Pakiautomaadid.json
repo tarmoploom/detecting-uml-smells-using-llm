@@ -1,0 +1,115 @@
+{
+  "file_name": "Pakiautomaadid",
+  "timestamp": "2025-12-30T13:53:38Z",
+  "llm_model": "Claude Opus 4.5",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No empty diagrams were found. All 18 diagrams contain at least one element. Each diagram (package, use case, activity, class, state, and database diagrams) has visible elements."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": true,
+      "justification": "On Page 2 (Use case diagram 'Pakiautomaatide funktsionaalne alls\u00fcsteem'), the use case 'Tuvasta kasutaja' (marked as 'from L\u00e4bivad huvid') is a visual oval element that has NO direct actor associations. It only has \u00abinclude\u00bb relationships from other use cases but no actor is directly connected to it."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate use case activities with the same actor were found. While multiple use cases start with 'Vaata' (View), they describe different activities: 'Vaata pakiautomaatide koondaruannet', 'Vaata aktiivseid pakiautomaate', 'Vaata k\u00f5iki pakiautomaate', 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid pakiautomaate'. These are distinct viewing operations, not duplicates."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate element names within the same package were found. Each package (Isikute register, Klassifikaatorite register, T\u00f6\u00f6tajate register, Pakiautomaatide register, Klientide register) contains uniquely named elements."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No redundant data columns without FK relationships were found. Columns like 'nimetus' and 'on_aktiivne' appear in multiple tables but represent different contexts (category name vs. region name vs. country name, etc.). All shared data across tables is properly connected via FK relationships (e.g., isik_id, riik_kood, seisundi_liik_kood)."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases follow consistent verb-first naming pattern. Verified on Page 2: 'Tuvasta kasutaja', 'Vaata pakiautomaatide koondaruannet', 'L\u00f5peta pakiautomaat', 'Registreeri pakiautomaat', 'Muuda pakiautomaati', 'Aktiveeri pakiautomaat', 'Muuda pakiautomaat mittaktiivseks', 'Vaata aktiivseid pakiautomaate', 'Vaata k\u00f5iki pakiautomaate', 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid pakiautomaate', 'Unusta pakiautomaat'. All start with Estonian verbs (Tuvasta=Identify, Vaata=View, L\u00f5peta=End, Registreeri=Register, Muuda=Change, Aktiveeri=Activate, Unusta=Forget)."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "On Page 11 (State diagram 'Pakiautomaadi seisundidiagramm'), all states are reachable: 'Ootel' is reached from initial state 'Alg'; 'Aktiivne' is reached from 'Ootel' and 'Mitteaktiivne'; 'Mitteaktiivne' is reached from 'Aktiivne'; 'L\u00f5petatud' is reached from 'Ootel', 'Aktiivne', and 'Mitteaktiivne'; 'Unustatud' is reached from 'Ootel'. No unreachable states exist."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On Pages 3-4 (Activity diagrams), all actions are reachable from the start node 'Algus'. Page 3: Algus \u2192 Vaata k\u00f5iki pakiautomaate \u2192 decision branches \u2192 Otsi/Vali/L\u00f5peta actions \u2192 L\u00f5pp. Page 4: Algus \u2192 Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid pakiautomaate \u2192 decision branches \u2192 Otsi/Vali/Aktiveeri/N\u00e4eb actions \u2192 L\u00f5pp. All actions have incoming flows."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All relationships across class and database diagrams have multiplicity indicators on both ends. Verified on Pages 5-18: relationships show multiplicities like '1', '0..1', '0..*', '1..*'. Examples: Page 9 shows '+juhendatav 0..*' and '+mentor 0..1'; Page 13 shows '+FK_Isik_Riik 0..*' and '+PK_Riik 1'; Page 17 shows '+FK_Pakiautomaat_Pakiautomaadi_piirkond 0..*' and '+PK_Pakiautomaadi_piirkond 1'."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "On Page 2 (Use case diagram 'Pakiautomaatide funktsionaalne alls\u00fcsteem'), counted 11 use cases (visual oval elements): 1. Tuvasta kasutaja, 2. Vaata pakiautomaatide koondaruannet, 3. L\u00f5peta pakiautomaat, 4. Registreeri pakiautomaat, 5. Muuda pakiautomaati, 6. Aktiveeri pakiautomaat, 7. Muuda pakiautomaat mittaktiivseks, 8. Vaata aktiivseid pakiautomaate, 9. Vaata k\u00f5iki pakiautomaate, 10. Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid pakiautomaate, 11. Unusta pakiautomaat. Threshold is \u226510. Since 11 \u2265 10, smell IS present."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": true,
+      "justification": "On Page 9 (Class diagram 'T\u00f6\u00f6tajate register'), the class 'T\u00f6\u00f6taja' has 6 visual connection lines: 1. To Isik (Isiku roll inheritance), 2. Self-loop (mentor/juhendatav relationship), 3. To T\u00f6\u00f6taja_rolli_omamine, 4. To T\u00f6\u00f6taja_seisundi_liik, 5. To Pakiautomaat (+registreerija), 6. To Pakiautomaat (+viimane muutja). Threshold is \u22656. Since 6 \u2265 6, smell IS present."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Cannot accurately measure pixel distances from the textual representation of the PDF. Based on the diagram layouts described, related elements appear to be positioned reasonably close together without extreme distance variations that would exceed twice the average distance."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use case and activity action names start with active verbs. Use cases (Page 2): Tuvasta (Identify), Vaata (View), L\u00f5peta (End), Registreeri (Register), Muuda (Change), Aktiveeri (Activate), Unusta (Forget). Activity actions (Pages 3-4): Vaata (View), Otsi (Search), Vali (Select), L\u00f5peta (End), Aktiveeri (Activate), N\u00e4eb (Sees). All are active verb forms in Estonian."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All class, table, attribute, and use case names have 4 or more characters. Verified shortest names: 'Isik' (4 chars), 'Riik' (4 chars), 'L\u00f5pp' (4 chars), 'kood' (4 chars). Threshold is \u22643 characters. Since all names have \u22654 characters, smell is NOT present."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": true,
+      "detected": true,
+      "justification": "On Page 15 (Klassifikaatorite register seisundiklassifikaatorid transformed), the table 'pakiautomaadi_seisundi_liik' starts with lowercase 'p'. On Pages 10 and 17 (Pakiautomaatide register), the class/table 'pakiautomaadi_kategooria_omamine' starts with lowercase 'p'. All other class/table names start with uppercase. Since at least one class/table name starts with lowercase, smell IS present."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All attribute/column names start with lowercase letters. Verified across all database diagrams (Pages 13-18): isik_id, isikukood, riik_kood, e_meil, synni_kp, reg_aeg, nimetus, on_aktiivne, parool, aadress, laiuskraad, pikkuskraad, mentor, alguse_aeg, lopu_aeg, etc. No attribute/column names start with uppercase."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All database table names are singular. Verified on Pages 13-18: Isik (Person), Kasutajakonto (User account), Riik (Country), Tootaja_roll (Employee role), Pakiautomaadi_kategooria (Parcel locker category), Pakiautomaadi_piirkond (Parcel locker region), Klient (Client), Tootaja (Employee), Pakiautomaat (Parcel locker), etc. No plural table names found."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No prohibited type prefixes (tbl_, uc_, str, int, etc.) were found in class, table, or attribute names. The only prefixes present are the allowed PK_, FK_, pfK, and IXFK_ prefixes used for primary keys, foreign keys, partial foreign keys, and indexes respectively. Examples: PK_Isik, FK_Isik_Riik, pfK isik_id, IXFK_Isik_riik_kood."
+    }
+  ]
+}

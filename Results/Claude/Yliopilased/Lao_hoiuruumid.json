@@ -1,0 +1,115 @@
+{
+  "file_name": "Lao_hoiuruumid",
+  "timestamp": "2025-12-30T13:15:41Z",
+  "llm_model": "Claude Opus 4.5",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No empty diagrams were found. All 18 diagrams in the PDF contain at least one element. Each diagram (pages 1-18) has visible elements including classes, tables, use cases, states, or actions."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On the use case diagram (page 2 'Hoiuruumide funktsionaalne alls\u00fcsteem'), all use case ovals are associated with actors. 'Tuvasta kasutaja' has \u00abinclude\u00bb relationships from other use cases that are associated with actors (Hoiuruumide haldur, Juhataja, Uudistaja, Klient, Hoiuruumide hooldaja), providing indirect actor association through the include mechanism."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate use cases with same/similar activity names associated with the same actor were found. All use cases have distinct names: Aktiveeri hoiuruum, L\u00f5peta hoiuruum, Muuda hoiuruumi, Muuda hoiuruum mitteaktiivseks, Registreeri hoiuruum, Unusta hoiuruum, Vaata aktiivseid hoiuruume, Vaata hoiuruumi koondaruannet, Vaata k\u00f5iki hoiuruume, Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid hoiuruume, Tuvasta kasutaja."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On the package diagram (page 1), all model elements within each package have unique names. No duplicate element names were found within the same package (Hoiuruumide register, Klassifikaatorite register, Isikute register, T\u00f6\u00f6tajate register, Klientide register, Broneeringute register)."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Examining the database diagrams (pages 13-18), columns like 'nimetus', 'on_aktiivne' appear in multiple classifier tables, but these represent different contextual data (different classifiers), not redundant copies of the same data. All relationships between tables that share data are properly connected via Foreign Key relationships."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases on page 2 follow a consistent verb-first naming pattern: Tuvasta (Verify), Vaata (View), L\u00f5peta (End), Registreeri (Register), Muuda (Modify), Aktiveeri (Activate), Unusta (Forget). All 11 use cases start with an active verb in Estonian."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "On the state diagram (page 10 'Hoiuruumi seisundidiagramm'), all states are reachable. Initial state 'Alg' transitions to 'Ootel'. From 'Ootel': transitions to 'Aktiivne' and 'Unustatud'. From 'Aktiivne': transitions to 'Mitteaktiivne' and 'L\u00f5petatud'. From 'Mitteaktiivne': transitions to 'Aktiivne' and 'L\u00f5petatud'. All 5 states (Ootel, Aktiivne, Mitteaktiivne, L\u00f5petatud, Unustatud) have at least one incoming transition."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On activity diagrams (pages 3-4), all actions are reachable from the start node. Page 3: Algus \u2192 'Vaata k\u00f5iki hoiuruume' \u2192 decision \u2192 'Otsi hoiuruum'/'Vali hoiuruum' \u2192 'L\u00f5peta valitud hoiuruumid'. Page 4: Algus \u2192 'Kasutusjuht vaatab...' \u2192 decisions \u2192 'Hoiuruumide haldur valib...' \u2192 'Hoiuruumide haldur aktiveerib...' \u2192 L\u00f5pp. All actions have incoming flows."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All relationships in class and database diagrams have multiplicity indicators on both ends. Examples: Page 6 (Isikute register): '0..* 1', '1 0..1'. Page 9 (Hoiuruumide register): '0..* 1', '1 0..*'. Pages 13-18 (transformed): all FK relationships show '0..*' and '1' multiplicities. Inheritance relationships (page 7) don't require multiplicity indicators."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Smell detected on 3 diagrams: (1) Page 2 'Hoiuruumide funktsionaalne alls\u00fcsteem': 11 use cases (Tuvasta kasutaja, Vaata hoiuruumi koondaruannet, L\u00f5peta hoiuruum, Registreeri hoiuruum, Muuda hoiuruumi, Aktiveeri hoiuruum, Muuda hoiuruum mitteaktiivseks, Vaata aktiivseid hoiuruume, Vaata k\u00f5iki hoiuruume, Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid hoiuruume, Unusta hoiuruum). 11 \u2265 10, smell IS present. (2) Page 7 'Klassifikaatorite register': 11 classes (klassifikaator, riik, hoiuruumi_seisundi_liik, t\u00f6\u00f6taja_seisundi_liik, isiku_seisundi_liik, t\u00f6\u00f6taja_roll, hoiuruumi_kategooria, hoiuruumi_kategooria_t\u00fc\u00fcp, hoiuruumi_suuruse_liik, kliendi_seisundi_liik, broneeringu_seisundi_liik). 11 \u2265 10, smell IS present. (3) Page 14 'Klassifikaatorite register (transformed)': 10 tables (hoiuruumi_kategooria, hoiuruumi_kategooria_tyyp, hoiuruumi_seisundi_liik, hoiuruumi_suuruse_liik, isiku_seisundi_liik, kliendi_seisundi_liik, riik, tootaja_roll, tootaja_seisundi_liik, rentimise_seisundi_liik). 10 \u2265 10, smell IS present."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": true,
+      "detected": true,
+      "justification": "Smell detected on 2 diagrams: (1) Page 7 'Klassifikaatorite register': 'klassifikaator' class has 10 visual inheritance lines to its subclasses (riik, hoiuruumi_seisundi_liik, t\u00f6\u00f6taja_seisundi_liik, isiku_seisundi_liik, t\u00f6\u00f6taja_roll, hoiuruumi_kategooria, hoiuruumi_kategooria_t\u00fc\u00fcp, hoiuruumi_suuruse_liik, kliendi_seisundi_liik, broneeringu_seisundi_liik). 10 \u2265 6, smell IS present. (2) Page 9 'Hoiuruumide register': 'hoiuruum' class has 6 visual connection lines (to hoiuruumi_kategooria_omamine, hoiuruumi_suuruse_liik, hoiuruumi_seisundi_liik, t\u00f6\u00f6taja via +registreerija, t\u00f6\u00f6taja via +viimane muutja, broneering). 6 \u2265 6, smell IS present."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Visual inspection of all diagrams shows related elements are positioned within reasonable distances. No relationship pairs appear to have distances exceeding twice the average distance between elements on their respective diagrams. The layout appears well-organized across all 18 diagram pages."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "On activity diagram page 4 'Hoiuruumi aktiveerimise tegevusdiagramm', actions start with nouns (actor names) instead of active verbs: 'Kasutusjuht vaatab k\u00f5iki ootel olevad ja mitteaktiivsed hoiuruume' starts with 'Kasutusjuht' (noun - Use case). 'Hoiuruumide haldur valib nimekirjast ruumi' starts with 'Hoiuruumide haldur' (noun - Storage room manager). 'Hoiuruumide haldur aktiveerib valitud ruumi' starts with 'Hoiuruumide haldur' (noun). These actions should start with verbs like 'Vaata', 'Vali', 'Aktiveeri'."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All class names, table names, attribute names, and use case names have 4 or more characters. Shortest names found: 'isik' (4 chars), 'riik' (4 chars), 'kood' (4 chars). Threshold is \u22643 characters. Since minimum length found is 4, and 4 > 3, smell is NOT present."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Multiple class names in conceptual and logical class diagrams start with lowercase letters. Examples from pages 5-12: 'isik', 't\u00f6\u00f6taja', 'hoiuruum', 'kasutajakonto', 'klient', 'klassifikaator', 'riik', 'broneering'. According to convention, class names should start with uppercase (e.g., 'Isik', 'T\u00f6\u00f6taja', 'Hoiuruum'). Smell IS present."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All attribute/column names start with lowercase letters. Examples: 'e_meil', 'eesnimi', 'elukoht', 'isikukood', 'perenimi', 'reg_aeg', 'synni_kp', 'viimase_muutm_aeg', 'kirjeldus', 'rendihind', 'nimetus', 'on_aktiivne'. PK_/FK_ prefixes are allowed and ignored per the rules."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All database table names in transformed diagrams (pages 13-18) are singular: 'hoiuruum', 'hoiuruumi_kategooria_omamine', 'tootaja', 'isik', 'kasutajakonto', 'klient', 'tootaja_rolli_omamine', 'broneering', and all classifier tables (hoiuruumi_kategooria, riik, etc.). No plural table names found."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No type prefixes or abbreviations like 'tbl_', 'uc_', 'str', 'int' were found in class, table, or attribute names. The PK_, FK_, pfK, and IXFK_ prefixes found are explicitly allowed by the rule for indicating primary keys, foreign keys, partial foreign keys, and indexes."
+    }
+  ]
+}

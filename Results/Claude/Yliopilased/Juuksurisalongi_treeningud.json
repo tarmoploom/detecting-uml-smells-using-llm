@@ -1,0 +1,115 @@
+{
+  "file_name": "Juuksurisalongi_treeningud",
+  "timestamp": "2025-12-30T12:05:29Z",
+  "llm_model": "Claude Opus 4.5",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No empty diagrams were found. All 18 diagrams contain at least one element. Pages include package diagrams, use case diagrams, activity diagrams, class diagrams, state diagrams, and database diagrams."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": true,
+      "justification": "On page 2 (Teenuste funktsionaalne alls\u00fcsteem), the use case 'Tuvasta kasutaja' (from L\u00e4bivad huvid) is a visual oval element that has ZERO direct actor associations. It is only connected to other use cases via \u00abinclude\u00bb relationships from 'Vaata teenuste koondaruannet' and 'L\u00f5peta teenus', but has no direct line to any actor (Teenuste haldur, Juhataja, Uudistaja, Klient, Juuksurisalongi administraator, Koristaja)."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate use cases describing the same activity for the same actor were found. While there are multiple 'Vaata' (View) use cases on page 2, they describe different objects: 'Vaata teenuste koondaruannet' (view summary report), 'Vaata aktiivseid teenuseid' (view active services), 'Vaata k\u00f5iki teenuseid' (view all services), 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid teenuseid' (view pending/inactive services) - these are distinct activities."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No multiple model elements with the same name were found within the same package. Each package (Isikute register, Klassifikaatorite register, T\u00f6\u00f6tajate register, Teenuste register, Klientide register) contains uniquely named elements."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No redundant data columns storing the same values without FK relationships were found. While columns like 'nimetus' and 'on_aktiivne' appear in multiple tables (pages 14-15), they represent different contextual data (e.g., 'nimetus' in Riik means country name, in Tootaja_roll means role name). All data relationships are connected via proper FK relationships."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases on page 2 follow a consistent verb-first naming pattern: Tuvasta (Identify), Vaata (View), L\u00f5peta (Terminate), Registreeri (Register), Muuda (Modify), Aktiveeri (Activate), Unusta (Forget). All 11 use cases start with imperative verbs in Estonian."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "On page 11 (Teenuse seisundidiagramm), all 6 states are reachable: 'Alg' is the initial state; 'Ootel' is reached from Alg via registration; 'Aktiivne' is reached from Ootel or Mitteaktiivne; 'Mitteaktiivne' is reached from Aktiivne; 'L\u00f5petatud' is reached from Aktiivne or Mitteaktiivne; 'Unustatud' is reached from Ootel. Every state has at least one incoming transition."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On pages 3-4 (activity diagrams), all actions are reachable from the start node 'Algus'. Page 3: 'Vaata k\u00f5iki teenuseid...', 'Otsi teenust', 'Vali teenus', 'L\u00f5peta valitud teenus' all have incoming flows. Page 4: 'Vaata k\u00f5iki teenuseid...', 'Otsi teenust', 'Vali teenus', 'Aktiveeri valitud teenus' all have incoming flows from decision nodes connected to start."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All relationships in class and database diagrams have multiplicity indicators on both ends. Examples: Page 6 shows '1' and '0..*' on Isik-Riik relationship; Page 13 shows '0..1' and '1' on FK relationships; Pages 17-18 show complete multiplicity notation like '0..*' and '1' on all FK relationships. Generalization relationships (pages 7-8) appropriately don't require multiplicity."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Page 2 (Teenuste funktsionaalne alls\u00fcsteem) contains 11 use cases (central elements). Counted: 1) Tuvasta kasutaja, 2) Vaata teenuste koondaruannet, 3) L\u00f5peta teenus, 4) Registreeri teenus, 5) Muuda teenust, 6) Aktiveeri teenus, 7) Muuda teenus mittaktiivseks, 8) Vaata aktiivseid teenuseid, 9) Vaata k\u00f5iki teenuseid, 10) Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid teenuseid, 11) Unusta teenus = 11 total. Threshold is \u226510. Since 11 \u2265 10, smell IS present. Note: Actors are NOT counted as central elements per the rule."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Maximum visual connection count per element: Page 13: Isik has 5 connections (to Isiku_seisundi_liik, Riik, Kasutajakonto, Tootaja, Klient). Page 17: Teenus has 5 connections (registreerija FK, viimane_muutja FK, Juuste_pikkuse_tyyp FK, Teenuse_seisundi_liik FK, Teenuse_kategooria_omamine). Page 18: Tootaja has 4 connections. Maximum across all diagrams is 5. Threshold is \u22656. Since 5 < 6, smell is NOT present."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Cannot accurately assess from text/image representation. Visual inspection of diagrams shows related elements appear to be positioned reasonably close together without obvious outliers. No definitive violation observable."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases (page 2) and activity actions (pages 3-4) start with active verbs. Use cases: Tuvasta, Vaata, L\u00f5peta, Registreeri, Muuda, Aktiveeri, Unusta - all imperative verbs. Activity actions: Otsi, Vaata, Vali, L\u00f5peta, Aktiveeri - all imperative verbs. No noun-first or passive form names found."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No names with \u22643 characters found. Shortest class/table names: 'Isik' (4 chars), 'Riik' (4 chars). Shortest attribute names: 'meil' (4 chars). All use case names are longer than 3 characters. Threshold is \u22643. All names have \u22654 characters, smell is NOT present."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class names start with uppercase and are singular. Verified: Isik (uppercase, singular), T\u00f6\u00f6taja, Teenus, Kasutajakonto, Riik, Klassifikaator, Klient, Teenuse_kategooria, Teenuse_kategooria_t\u00fc\u00fcp, Teenuse_seisundi_liik, etc. No lowercase-starting or plural class names found."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All attribute and column names start with lowercase. Verified from pages 6, 13-18: eesnimi, elukoht, isikukood, meil, perenimi, reg_aeg, s\u00fcnni_kp, viimase_muutm_aeg, nimetus, on_aktiivne, isik_id, riik_kood, parool, kestvus, hinnavahemiku_algus, etc. No uppercase-starting attributes found."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All database table names are singular. Verified from pages 13-18: Isik, Kasutajakonto, Riik, Tootaja, Klient, Teenus, Isiku_seisundi_liik, Kliendi_seisundi_liik, Tootaja_seisundi_liik, Teenuse_seisundi_liik, Juuste_pikkuse_tyyp, Teenuse_kategooria, Teenuse_kategooria_tyyp, Tootaja_roll, Teenuse_kategooria_omamine, Tootaja_rolli_omamine. All singular forms."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No prohibited type prefixes found in class, table, or attribute names. The prefixes PK_, FK_, pfK, and IXFK_ are used (e.g., PK_Isik, FK_Isik_Riik, IXFK_Isik_Riik) but these are explicitly ALLOWED per the rule for indicating primary keys, foreign keys, and indexes. No tbl_, uc_, str, int, or similar type prefixes found."
+    }
+  ]
+}

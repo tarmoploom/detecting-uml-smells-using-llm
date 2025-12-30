@@ -1,0 +1,115 @@
+{
+  "file_name": "Spordiklubi_saalid",
+  "timestamp": "2025-12-30T19:45:27Z",
+  "llm_model": "Claude Opus 4.5",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Page 18 'Saali eluts\u00fcklid (transformed)' contains ZERO elements - only the diagram title/frame is present with no classes, tables, or other elements inside. This is an empty diagram."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": true,
+      "justification": "On page 2 'Saalide funktsionaalne alls\u00fcsteem', the use case 'Tuvasta kasutaja' (from L\u00e4bivad huvid) has ZERO direct actor associations. It only has \u00abinclude\u00bb relationships to/from other use cases (Vaata saalide koondaruannet, L\u00f5peta saal include it), but no actor line connects directly to this use case oval."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "On page 2, all 11 use cases have unique names describing different activities: Tuvasta kasutaja, Vaata saalide koondaruannet, L\u00f5peta saal, Registreeri saal, Muuda saal, Aktiveeri saal, Muuda saal mittaktiivseks, Vaata aktiivseid saale, Vaata k\u00f5iki saale, Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid saale, Unusta saal. No duplicates found."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In package diagrams (pages 1, 7, 8, 14, 15), all elements within each package have unique names. For example, in 'Klassifikaatorite register' the elements (Klassifikaator, Riik, T\u00f6\u00f6taja_roll, Saali_kategooria, Saali_t\u00fc\u00fcp) are all uniquely named."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "While columns like 'nimetus' and 'on_aktiivne' appear in multiple tables (Isiku_seisundi_liik, Kliendi_seisundi_liik, Saali_seisundi_liik, Tootaja_seisundi_liik), these represent different contexts for different classifiers, not redundant copies of the same data. Each stores independent classification data for different entity types."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases on page 2 follow consistent verb-first naming: Tuvasta (Identify), Vaata (View), L\u00f5peta (End), Registreeri (Register), Muuda (Modify), Aktiveeri (Activate), Unusta (Forget). All 11 use cases start with active verbs in Estonian."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "On page 11 'Saali seisundidiagramm', all 5 states (Aktiivne, Mitteaktiivne, L\u00f5petatud, Ootel, Unustatud) plus initial state (Alg) are reachable. From Alg\u2192Ootel; from Ootel\u2192Aktiivne, Unustatud, L\u00f5petatud; from Aktiivne\u2192Mitteaktiivne, L\u00f5petatud; from Mitteaktiivne\u2192Aktiivne. Every state has at least one incoming transition."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On pages 3-4 activity diagrams, all actions are reachable from 'Algus' (Start). Page 3: Algus\u2192Vaata k\u00f5iki saale\u2192decision nodes\u2192Otsi saali/Vali saal\u2192L\u00f5peta valitud saal\u2192L\u00f5pp. Page 4 follows similar connected flow. No orphaned actions exist."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All relationships in class and database diagrams have multiplicity indicators on both ends. Examples: Page 10 shows '1' and '0..*' on relationships; Page 13 shows '1' and '0..*', '0..1' on all FK relationships; Page 17 shows multiplicities like '0..*' and '1' on all connections."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Page 2 'Saalide funktsionaalne alls\u00fcsteem' contains 11 use cases (counted: 1-Tuvasta kasutaja, 2-Vaata saalide koondaruannet, 3-L\u00f5peta saal, 4-Registreeri saal, 5-Muuda saal, 6-Aktiveeri saal, 7-Muuda saal mittaktiivseks, 8-Vaata aktiivseid saale, 9-Vaata k\u00f5iki saale, 10-Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid saale, 11-Unusta saal). Threshold is \u226510. 11 \u2265 10, therefore smell IS present."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On page 13 'Isikute register (transformed)', counted visual connections for Isik table: 1-to Kasutajakonto, 2-to Isiku_seisundi_liik, 3-to Riik, 4-to Tootaja, 5-to Klient = 5 lines total. This is the maximum on any diagram. Threshold is \u22656. Since 5 < 6, smell is NOT present."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Visual inspection of diagrams shows elements are reasonably distributed. No obvious case where relationship distance exceeds twice the average distance between elements. Without precise pixel measurements, no violation can be confirmed."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases on page 2 start with active verbs: Tuvasta (Identify), Vaata (View/Look), L\u00f5peta (End/Finish), Registreeri (Register), Muuda (Modify/Change), Aktiveeri (Activate), Unusta (Forget). Activity diagram actions also use verbs: Otsi, Vali, L\u00f5peta, Aktiveeri."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All class, table, attribute, and use case names have 4+ characters. Shortest names found: Isik (4 chars), Saal (4 chars), Riik (4 chars). All exceed threshold of \u22643 characters. No names with 3 or fewer characters found."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class names start with uppercase and are singular: Isik, Kasutajakonto, T\u00f6\u00f6taja, Klient, Saal, Klassifikaator, Riik, etc. No lowercase-starting or plural class names found."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": true,
+      "detected": true,
+      "justification": "On page 17 'Saalide register (transformed)', the Saal table contains columns starting with uppercase: 'Kommentaar: Memo', 'Pikkus: Integer', 'Laius: Integer', 'Tunni_hind: Currency', 'Saali_kood: Integer'. These should start with lowercase per convention."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All database table names are singular: Isik, Kasutajakonto, Klient, Tootaja, Saal, Saali_kategooria_omamine, Tootaja_rolli_omamine, Riik, etc. No plural table names found."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No type prefixes like tbl_, uc_, str, int found in class, table, or attribute names. The prefixes PK_, FK_, pfK, and IXFK_ are present but these are explicitly allowed for primary keys, foreign keys, partial foreign keys, and indexes per the rule definition."
+    }
+  ]
+}

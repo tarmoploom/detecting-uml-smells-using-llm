@@ -1,0 +1,115 @@
+{
+  "file_name": "Pakiautomaadid2",
+  "timestamp": "2025-12-30T14:10:02Z",
+  "llm_model": "Claude Opus 4.5",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No empty diagrams were found. All 30 diagram pages contain at least one element. Even the smallest diagrams (e.g., page 7 'Actors' with User actor, page 25 'Klientide register' with 3 elements) have content."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": true,
+      "justification": "On page 8 'Primary Use Cases', Use Case2 (visual oval element) has ZERO actor associations. While Use Case1 is connected to the User actor, Use Case2 is shown without any connection to an actor. This violates the rule that every use case oval must have at least 1 actor association."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate use cases with same/similar activity names associated with the same actor were found. On page 2, all 11 use cases have distinct names describing different activities (Tuvasta kasutaja, Vaata pakiautomaatide koondaruannet, L\u00f5peta pakiautomaat, Registreeri pakiautomaat, Muuda pakiautomaati, Aktiveeri pakiautomaat, Muuda pakiautomaat mitteaktiivseks, Vaata aktiivseid pakiautomaate, Vaata k\u00f5iki pakiautomaate, Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid pakiautomaate, Unusta pakiautomaat)."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No package diagram contains multiple model elements with the same name in the same package. On page 1, each register (Isikute register, Klassifikaatorite register, T\u00f6\u00f6tajate register, Pakiautomaatide register, Klientide register) contains uniquely named elements."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No redundant data columns were found that store the same data value without FK relationships. Columns with similar names like 'on_aktiivne', 'nimetus', 'reg_aeg', 'viimase_muutm_aeg' appear in multiple tables but represent different data contexts for each entity (e.g., reg_aeg for Isik vs reg_aeg for Pakiautomaat are separate registration timestamps). These are not redundant copies of the same data."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": true,
+      "detected": false,
+      "justification": "All use cases on page 2 follow consistent naming - all start with active verbs in imperative form (Estonian): Tuvasta (Identify), Vaata (View), L\u00f5peta (End), Registreeri (Register), Muuda (Change), Aktiveeri (Activate), Unusta (Forget). No inconsistent naming patterns detected."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "On page 24 'Pakiautomaatide seisundidiagramm', all states can be reached: Alg (initial state), Ootel (from Alg via OP1/OP7/OP8), Aktiivne (from Ootel via OP3), Mitteaktiivne (from Aktiivne via OP4), L\u00f5petatud (from Aktiivne and Mitteaktiivne via OP5), Unustatud (from Ootel via OP2). Every non-initial state has at least one incoming transition."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All activity diagrams (pages 3-5, 10-17) show connected flows from the start node (Algus) to all actions. Each action is reachable through the decision flows and transitions. No orphaned or unreachable actions were found."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All relationships in class and database diagrams have multiplicity indicators on both ends. Examples: Page 18 shows '1 0..*', '0..* 1', '0..1 1' multiplicities; Page 20 shows '1 0..*' for Isik relationships; Pages 26-30 (transformed database diagrams) show explicit multiplicities like '0..1', '1', '0..*' on all FK relationships."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Multiple diagrams exceed the threshold of \u226510 central elements: (1) Page 2 'Pakiautomaatide funktsionaalne alls\u00fcsteem' contains 11 use cases: Tuvasta kasutaja, Vaata pakiautomaatide koondaruannet, L\u00f5peta pakiautomaat, Registreeri pakiautomaat, Muuda pakiautomaati, Aktiveeri pakiautomaat, Muuda pakiautomaat mitteaktiivseks, Vaata aktiivseid pakiautomaate, Vaata k\u00f5iki pakiautomaate, Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid pakiautomaate, Unusta pakiautomaat. Count = 11, threshold \u226510, 11 \u2265 10 = TRUE. (2) Page 18 'Kontseptuaalne eskiismudel' contains 13 classes: Klassifikaator, Isiku_seisundi_liik, T\u00f6\u00f6taja, T\u00f6\u00f6taja_roll, T\u00f6\u00f6taja_seisundi_liik, Pakiautomaat, Pakiautomaatide_seisundi_liik, Pakiautomaatide_kategooria, Pakiautomaatide_kategooria_omamine, Pakiautomaatide_kategooria_t\u00fc\u00fcp, Kasutajakonto, Isik, Pakiautomaadi_Tootja. Count = 13, threshold \u226510, 13 \u2265 10 = TRUE. (3) Page 21 'Klassifikaatorite register' contains 10 classes: Klassifikaator, Pakiautomaatide_seisundi_liik, T\u00f6\u00f6taja_seisundi_liik, Isiku_seisundi_liik, T\u00f6\u00f6taja_roll, Pakiautomaatide_kategooria, Pakiautomaatide_kategooria_t\u00fc\u00fcp, Kliendi_seisundi_liik, Pakiautomaadi_Tootja, Riik. Count = 10, threshold \u226510, 10 \u2265 10 = TRUE."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No single class or table has 6 or more visual connection lines on any diagram page. Maximum connections found: On page 27 'Isikute register (transformed)', Isik table has 5 visible lines (to Isiku_seisundi_liik, to Riik, from Klient, from Tootaja, from Kasutajakonto). On page 30 'Pakiautomaatide register (transformed)', Pakiautomaat has 5 visible lines (to Tootaja via registreerija, to Tootaja via viimase_muutja, to Pakiautomaatide_seisundi_liik, to Pakiautomaatide_tootja, to Pakiautomaatide_kategooria_omamine). Maximum = 5, threshold \u22656, 5 < 6 = FALSE, smell NOT present."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Based on visual inspection of diagram layouts as described in the PDF content, no relationships span distances more than twice the average distance between elements. Elements appear reasonably distributed on each diagram without excessive spacing between related elements."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "On page 8 'Primary Use Cases', the use cases 'Use Case1' and 'Use Case2' do not start with active verbs - they are template placeholder names starting with 'Use' (a noun in this context). An active verb would be something like 'Create', 'View', 'Process'. These names describe what the element IS rather than what action it performs."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": true,
+      "justification": "On page 24 'Pakiautomaatide seisundidiagramm', the initial state is named 'Alg' which has exactly 3 characters (A-l-g = 3). Threshold is \u22643 characters. Since 3 \u2264 3, the smell IS present. This is short for 'Algus' (Beginning/Start in Estonian)."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": true,
+      "detected": false,
+      "justification": "All class names start with uppercase letters and are singular. Checked classes: Isik (singular), Klient (singular), T\u00f6\u00f6taja (singular), Pakiautomaat (singular), Kasutajakonto (singular), Klassifikaator (singular), Riik (singular). Compound names like 'Pakiautomaatide_kategooria' use genitive case (possession) not plural form - the class represents a single category entity."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": true,
+      "detected": true,
+      "justification": "Multiple attribute/column names start with uppercase letters. On page 18 'Kontseptuaalne eskiismudel': T\u00f6\u00f6taja class has 'T\u00f6\u00f6_e_mail' (uppercase T), 'Kirjeldus' (uppercase K); Pakiautomaat class has 'Asukoht_Laiuskraad' (uppercase A), 'Asukoht_Pikkuskraad' (uppercase A), 'Kirjeldus' (uppercase K), 'Pakiautomaadi_kood' (uppercase P). On page 20: Isik class has 'E_mail' (uppercase E), 'Eesnimi' (uppercase E), 'Perenimi' (uppercase P). Convention requires attributes to start with lowercase."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All database table names are singular. On pages 26-30 (transformed diagrams): Tootaja (singular, not Tootajad), Isik (singular, not Isikud), Klient (singular, not Kliendid), Pakiautomaat (singular, not Pakiautomaadid), Kasutajakonto (singular), Riik (singular). Compound names like 'Isiku_seisundi_liik' use genitive case for grammatical connection, not plural form."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No disallowed type prefixes (tbl_, uc_, str, int, etc.) were found in class, table, or attribute names. The prefixes PK_, FK_, pfK, and IXFK_ that appear in the transformed database diagrams (pages 26-30) are explicitly allowed by the rule for indicating primary keys, foreign keys, and indexes. Examples of allowed usage: PK_Isik, FK_Tootaja_Isik, IXFK_Isik_Riik."
+    }
+  ]
+}

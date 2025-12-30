@@ -1,0 +1,115 @@
+{
+  "file_name": "Peoruumid",
+  "timestamp": "2025-12-30T15:37:36Z",
+  "llm_model": "Claude Opus 4.5",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No empty diagrams were found. All 17 diagrams in the PDF contain at least one element. Each page displays meaningful UML content including use cases, classes, tables, states, or activities."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": true,
+      "justification": "On page 2 (Use case diagram 'Peoruumide funktsionaalne allsusteem'), the use case 'Tuvasta kasutaja' (visual oval element) has ZERO direct actor associations. It is only connected via \u00abinclude\u00bb relationships from other use cases, but has no direct line to any actor. All other use cases on this diagram have direct actor associations."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate use case activities found. All use cases on page 2 describe distinct activities: Tuvasta kasutaja, Vaata peoruumide koondaruannet, Lopeta peoruum, Registreeri peoruum, Muuda peoruum, Aktiveeri peoruum, Muuda peoruum mittaktiivseks, Vaata aktiivseid peoruume, Vaata koiki peoruume, Vaata koiki ootel voi mitteaktiivseid peoruume, Unusta peoruum. None have the same/similar activity names with the same actor."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate element names found within the same package. Each package (Isikute register, Klassifikaatorite register, Tootajate register, Peoruumide register, Klientide register) contains uniquely named elements."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No redundant data columns without FK relationships detected. Common columns like 'nimetus' and 'on_aktiivne' appear in multiple tables but represent different data contexts (e.g., status type name vs category name). All shared data relationships are properly connected via Foreign Key constraints (e.g., isik_id references are connected by FK_Tootaja_Isik, FK_Klient_Isik, etc.)."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases follow consistent verb-first naming pattern (Estonian verbs): Tuvasta (Identify), Vaata (View), Lopeta (End), Registreeri (Register), Muuda (Modify), Aktiveeri (Activate), Unusta (Forget). No noun-first naming found."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "On page 10 (State diagram 'Peoruumi seisundidiagramm'), all states are reachable: Alg (initial state), Ootel (from Alg via registration), Aktiivne (from Ootel and Mitteaktiivne), Mitteaktiivne (from Aktiivne), Lopetatud (from Ootel, Aktiivne, Mitteaktiivne), Unustatud (from Ootel). Every non-initial state has at least one incoming transition."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All actions in activity diagrams are reachable. Page 3 (Peoruumi lopetamise tegevusdiagramm): All actions (Vaata koiki peoruume, Otsi peoruum, Vali peoruum, Lopeta valitud peoruum) have incoming flows from start or decision nodes. Page 4 (Peoruumi aktiveerimise tegevusdiagramm): All actions (Vaata koiki peoruume, Otsi peoruum, Vali peoruum, Aktiveeri peoruum, Vaata pohjust) have incoming flows."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All relationships in class diagrams (pages 5-11) have explicit multiplicity indicators at both ends (e.g., '0..*', '1', '0..1'). Database diagrams (pages 12-17) use FK constraint notation which implies cardinality through the standard relational model semantics."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Detected on two diagrams: (1) Page 2 'Peoruumide funktsionaalne allsusteem' contains 11 use cases (Tuvasta kasutaja, Vaata peoruumide koondaruannet, Lopeta peoruum, Registreeri peoruum, Muuda peoruum, Aktiveeri peoruum, Muuda peoruum mittaktiivseks, Vaata aktiivseid peoruume, Vaata koiki peoruume, Vaata koiki ootel voi mitteaktiivseid peoruume, Unusta peoruum = 11 total). Threshold is \u226510. 11 \u2265 10, therefore smell IS present. (2) Page 7 'Klassifikaatorite register' contains 10 classes (Klassifikaator, Riik, Peoruumi_seisundi_liik, Tootaja_seisundi_liik, Isiku_seisundi_liik, Peoruumi_kategooria_tuup, Tootaja_roll, Peoruumi_kategooria, Kliendi_seisundi_liik, Peoruumi_stiil = 10 total). Threshold is \u226510. 10 \u2265 10, therefore smell IS present."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": true,
+      "justification": "Detected on two diagrams: (1) Page 7 'Klassifikaatorite register': Klassifikaator has 9 visual inheritance lines to subtypes (Riik, Peoruumi_seisundi_liik, Tootaja_seisundi_liik, Isiku_seisundi_liik, Peoruumi_kategooria_tuup, Tootaja_roll, Peoruumi_kategooria, Kliendi_seisundi_liik, Peoruumi_stiil). Threshold is \u22656. 9 \u2265 6, therefore smell IS present. (2) Page 12 'Isikute register' (dm): Isik table has 6 visual FK connection lines (to Isiku_seisundi_liik, to Riik, from Kasutajakonto, from Tootaja via FK_Tootaja_Isik, from Tootaja via FK_Tootaja_mentor, from Klient). Threshold is \u22656. 6 \u2265 6, therefore smell IS present."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Visual inspection of all diagrams shows related elements are positioned reasonably close together. No relationship distance appears to exceed twice the average distance between elements on any diagram. Elements are generally well-organized within their respective diagram pages."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases and activity diagram actions start with active verbs. Use cases (page 2): Tuvasta (Identify), Vaata (View), Lopeta (End), Registreeri (Register), Muuda (Modify), Aktiveeri (Activate), Unusta (Forget). Activity actions (pages 3-4): Vaata (View), Otsi (Search), Vali (Select), Lopeta (End), Aktiveeri (Activate). All are imperative verb forms in Estonian."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All class, table, attribute, and use case names have 4 or more characters. Shortest names found: 'Isik' (4 chars), 'Riik' (4 chars), 'nimi' (4 chars), 'kood' (4 chars). Threshold is \u22643 characters. All names have \u22654 characters, therefore smell is NOT present."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class names start with uppercase letters and are singular. Examples: Isik, Kasutajakonto, Tootaja, Peoruum, Klient, Klassifikaator, Riik, Peoruumi_seisundi_liik, Tootaja_roll, Peoruumi_kategooria, Peoruumi_stiil. No lowercase-starting or plural class names found."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All attribute and column names start with lowercase letters. Examples from class diagrams: e_meil, eesnimi, elukoht, isikukood, perenimi, reg_aeg, on_aktiivne, parool, nimetus, mahutavus, nimi, tunnihind. Examples from database diagrams: isik_id, isikukood, riik_kood, synni_kp, alguse_aeg, lopu_aeg. No uppercase-starting attributes/columns found."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All database table names are singular. Tables found: Isik, Kasutajakonto, Riik, Isiku_seisundi_liik, Tootaja, Klient, Tootaja_seisundi_liik, Peoruumi_seisundi_liik, Kliendi_seisundi_liik, Peoruumi_kategooria_tuup, Tootaja_roll, Peoruumi_stiil, Peoruumi_kategooria, Tootaja_rolli_omamine, Peoruum, Peoruumi_kategooria_omamine. No plural table names found."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No type prefixes like tbl_, uc_, str, int found on class, table, or attribute names. The prefixes found (PK_, FK_, pfK, IXFK_, AK_, CK_, IDX_) are allowed database constraint/index identifiers as specified in the rule definition. All entity and attribute names follow clean naming without Hungarian notation or type prefixes."
+    }
+  ]
+}

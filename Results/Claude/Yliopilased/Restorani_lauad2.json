@@ -1,0 +1,115 @@
+{
+  "file_name": "Restorani_lauad2",
+  "timestamp": "2025-12-30T16:10:11Z",
+  "llm_model": "Claude Opus 4.5",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No empty diagrams were found. All 19 diagram pages contain at least one element. Page 1 contains packages and actors, Page 2 contains use cases and actors, Pages 3-4 contain activity diagram elements, Pages 5-13 contain class diagram elements, Page 12 contains state diagram elements, Pages 14-19 contain database table elements."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": true,
+      "justification": "On Page 2 'Laudade funktsionaalne alls\u00fcsteem' use case diagram, the use case 'Tuvasta kasutaja' (marked as 'from L\u00e4bivad huvid') is a visual oval element that has ZERO direct actor associations. It only has <<include>> relationships from other use cases but no direct line from any actor (Laudade haldur, Juhataja, Uudistaja, Klient, or Restorani administraator). This triggers the smell."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate use case names with the same actor were found. All use case names in the 'Laudade funktsionaalne alls\u00fcsteem' diagram (Page 2) are unique: Tuvasta kasutaja, Vaata laudade koondaruannet, L\u00f5peta laud, Registreeri laud, Muuda laud, Aktiveeri laud, Muuda laud mittaktiivseks, Vaata aktiivseid laudu, Vaata k\u00f5iki laudu, Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid laudu, Unusta laud."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate element names within the same package were found. On Page 1 (package diagram), each register package contains uniquely named elements. For example, 'Klassifikaatorite register' contains Klassifikaator, Kliendi_seisundi_liik, Laua_kategooria, etc. - all unique names."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No redundant data columns without FK relationships were found. Common columns like 'nimetus', 'on_aktiivne' appear in multiple classifier tables (Isiku_seisundi_liik, Kliendi_seisundi_liik, Laua_seisundi_liik, Tootaja_seisundi_liik) but these represent different classification contexts, not redundant copies of the same data values. Similar timestamp columns (reg_aeg, viimase_muutm_aeg) represent different registration events for different entities."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases on Page 2 follow consistent verb-first naming pattern in Estonian: Tuvasta (identify), Vaata (view), L\u00f5peta (end), Registreeri (register), Muuda (change), Aktiveeri (activate), Unusta (forget). All names start with imperative verb forms."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "On Page 12 'Toa seisundidiagramm' state diagram, all states are reachable: Alg (initial) \u2192 Ootel, Ootel \u2192 Aktiivne, Ootel \u2192 Unustatud, Aktiivne \u2192 Mitteaktiivne, Aktiivne \u2192 L\u00f5petatud, Mitteaktiivne \u2192 Aktiivne, Mitteaktiivne \u2192 L\u00f5petatud. Every state (Aktiivne, Mitteaktiivne, L\u00f5petatud, Ootel, Unustatud) has at least one incoming transition."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On Pages 3-4 (activity diagrams), all actions are reachable from the start node 'Algus'. Page 3 flow: Algus \u2192 Vaata k\u00f5iki laudu \u2192 decision nodes \u2192 Otsi laud/Vali laud \u2192 L\u00f5peta valitud laud \u2192 L\u00f5pp. Page 4 follows similar pattern with Aktiveeri valitud laud. All actions have incoming flows."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All relationships in class and database diagrams have multiplicity indicators on both ends. For example, on Page 5 'Kontseptuaalne eskiismudel': Isik-T\u00f6\u00f6taja shows '1' and '0..*', Isik-Laud (registreerija) shows '1' and '0..*'. On transformed diagrams (Pages 14-19), all FK relationships show multiplicity like '0..*' and '1', '0..1' and '1'."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Two diagrams exceed the threshold of \u226510 central elements: (1) Page 2 'Laudade funktsionaalne alls\u00fcsteem' contains 11 use cases: Tuvasta kasutaja, Vaata laudade koondaruannet, L\u00f5peta laud, Registreeri laud, Muuda laud, Aktiveeri laud, Muuda laud mittaktiivseks, Vaata aktiivseid laudu, Vaata k\u00f5iki laudu, Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid laudu, Unusta laud. 11 \u2265 10, smell IS present. (2) Page 10 'Kogu s\u00fcsteem' contains 15 classes: T\u00f6\u00f6taja, Laud, Laua_seisundi_liik, Laua_kategooria, Laua_kategooria_omamine, Laua_t\u00fc\u00fcp, Laua_kategooria_t\u00fc\u00fcp, Isik, Isiku_seisundi_liik, Riik, Kasutajakonto, T\u00f6\u00f6taja_rolli_omamine, T\u00f6\u00f6taja_roll, T\u00f6\u00f6taja_seisundi_liik, Klient. 15 \u2265 10, smell IS present."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On the most connected diagram (Page 19 'Laudade register (transformed)'), Laud table has 5 visual connection lines: (1) fk_laud_laua_seisundi_liik \u2192 Laua_seisundi_liik, (2) fk_laud_laua_tyyp \u2192 Laua_tyyp, (3) fk_laud_tootaja_viimane_muutja \u2192 Tootaja, (4) fk_laud_tootaja_registreerija \u2192 Tootaja, (5) fk_laua_kategooria_omamine_laud \u2190 Laua_kategooria_omamine. Maximum count is 5. Threshold is \u22656. Since 5 < 6, smell is NOT present."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Visual inspection of diagram layouts does not reveal any relationship distances that exceed twice the average distance between elements. Elements appear to be reasonably positioned relative to their connections across all diagrams."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": true,
+      "detected": false,
+      "justification": "All use cases on Page 2 start with active verbs in Estonian: Tuvasta, Vaata, L\u00f5peta, Registreeri, Muuda, Aktiveeri, Unusta. All activity diagram actions on Pages 3-4 also start with verbs: Vaata, Otsi, Vali, L\u00f5peta, Aktiveeri. No use case or action starts with a noun or passive form."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All names have more than 3 characters. Shortest class/table names found: 'Isik' (5 chars), 'Laud' (4 chars), 'Riik' (4 chars). Shortest attribute names: 'kood' (4 chars). All names have \u22654 characters, which exceeds the \u22643 character threshold."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class names start with uppercase and are singular. Examples: Isik (not isik, not Isikud), Kasutajakonto, Klassifikaator, T\u00f6\u00f6taja, Laud, Klient, Riik, T\u00f6\u00f6taja_rolli_omamine, Laua_kategooria_omamine. No lowercase-starting or plural class names found."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All attribute/column names start with lowercase. Examples from Page 6: e_meil, eesnimi, elukoht, isikukood, perenimi, reg_aeg, s\u00fcnni_kp, viimase_muutm_aeg. Examples from Page 14 (transformed): isik_id, isikukood, e_meil, synni_kp, riik_kood. No uppercase-starting attribute names found."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All database table names are singular. Examples from transformed diagrams: Isik, Kasutajakonto, Klient, Tootaja, Laud, Riik, Isiku_seisundi_liik, Kliendi_seisundi_liik, Laua_seisundi_liik, Tootaja_seisundi_liik, Laua_kategooria, Laua_tyyp, Laua_kategooria_omamine, Tootaja_rolli_omamine. No plural table names found."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No disallowed type prefixes found in class, table, or attribute names. The PK_, FK_, pfK, and IXFK_ prefixes found in transformed diagrams (e.g., 'PK isik_id', 'FK riik_kood', 'pfK isik_id', 'ixfk_isik_riik') are explicitly allowed per the rule definition. No tbl_, uc_, str, int, or other type prefixes were found."
+    }
+  ]
+}

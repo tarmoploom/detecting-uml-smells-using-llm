@@ -1,0 +1,115 @@
+{
+  "file_name": "Kasvuhooned",
+  "timestamp": "2025-12-30T12:23:05Z",
+  "llm_model": "Claude Opus 4.5",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No empty diagrams were found. All 18 diagrams contain at least one element. Each diagram has classes, use cases, activities, states, or tables as appropriate."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": true,
+      "justification": "On page 2 'Kasvuhoonete funktsionaalne alls\u00fcsteem' (Use Case diagram), the use case 'Tuvasta kasutaja' (marked as 'from L\u00e4bivad huvid') is only connected via <<include>> relationships from other use cases but has ZERO direct actor associations. All other use cases have direct actor connections (Kasvuhoonete haldur, Juhataja, Uudistaja, Klient)."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate use case names describing the same activity were found. All use cases on page 2 have distinct names: Tuvasta kasutaja, Vaata kasvuhoonete koondaruannet, L\u00f5peta kasvuhoone, Registreeri kasvuhoone, Muuda kasvuhoone, Aktiveeri kasvuhoone, Muuda kasvuhoone mittaktiivseks, Vaata aktiivseid kasvuhooneid, Vaata k\u00f5iki kasvuhooneid, Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid kasvuhooneid, Unusta kasvuhoone."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate element names were found within the same package. Each package on page 1 contains uniquely named elements. For example, in Klassifikaatorite register: Isiku_seisundi_liik, Kasvuhoone t\u00fc\u00fcp, Kasvuhoone_kategooria, Kasvuhoone_kategooria_t\u00fc\u00fcp, Kasvuhoone_seisundi_liik, Klassifikaator, Kliendi_seisundi_liik, Riik, T\u00f6\u00f6taja_roll, T\u00f6\u00f6taja_seisundi_liik - all unique names."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "The column 'nimetus' appears in multiple classifier tables (Isiku_seisundi_liik, Kliendi_seisundi_liik, Kasvuhoone_seisundi_liik, Tootaja_seisundi_liik, Riik, Tootaja_roll, etc.) on pages 14-15, but these represent different context-specific data (names for different classifier types), not redundant copies of the same data. Similarly, 'on_aktiivne' columns in each table represent independent active status flags for each entity type."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases on page 2 follow a consistent verb-first naming pattern (Estonian verbs): Tuvasta (Identify), Vaata (View), L\u00f5peta (End), Registreeri (Register), Muuda (Change), Aktiveeri (Activate), Unusta (Forget). No noun-first use cases were found."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "On page 11 'Kasvuhoone seisundidiagramm' (State diagram), all states can be reached: Alg is the initial state, Ootel is reached from Alg via registration, Aktiivne from Ootel via activation, Mitteaktiivne from Aktiivne, L\u00f5petatud from both Aktiivne and Mitteaktiivne, and Unustatud from Ootel. No unreachable states exist."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On pages 3-4 (Activity diagrams), all actions are reachable from their respective start nodes ('Algus'). Page 3: Algus \u2192 Vaata k\u00f5iki kasvuhooneid... \u2192 decision nodes \u2192 Otsi/Vali/L\u00f5peta actions \u2192 L\u00f5pp. Page 4: Similar flow with Aktiveeri actions. All paths connect from start to actions."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All relationships in class and database diagrams have multiplicity indicators. Examples: Page 5 shows '1' and '0..*' on the 'registreerib' relationship; Page 6 shows '0..1', '1', '0..*' multiplicities; Pages 13-18 (database diagrams) all show multiplicities like '0..*', '1', '0..1' on FK relationships (e.g., '+FK_Klient_Isik 0..1', '+PK_Isik 1')."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Page 2 'Kasvuhoonete funktsionaalne alls\u00fcsteem' (Use Case diagram) contains 11 use cases: 1)Tuvasta kasutaja, 2)Vaata kasvuhoonete koondaruannet, 3)L\u00f5peta kasvuhoone, 4)Registreeri kasvuhoone, 5)Muuda kasvuhoone, 6)Aktiveeri kasvuhoone, 7)Muuda kasvuhoone mittaktiivseks, 8)Vaata aktiivseid kasvuhooneid, 9)Vaata k\u00f5iki kasvuhooneid, 10)Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid kasvuhooneid, 11)Unusta kasvuhoone. Counted 11 central elements. Threshold is \u226510. Since 11 \u2265 10, smell IS present. Note: Actors are not counted as central elements per the rule."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": true,
+      "justification": "On page 13 'Isikute register' (database diagram), the 'Isik' table has 6 visual connection lines: 1)FK_Klient_Isik (to Klient), 2)FK_Isik_Isiku_seisundi_liik (to Isiku_seisundi_liik), 3)FK_Kasutajakonto_Isik (to Kasutajakonto), 4)FK_Tootaja_mentor (to Tootaja for mentor), 5)FK_Isik_Riik (to Riik), 6)FK_Tootaja_Isik (to Tootaja). Counted 6 visual connections. Threshold is \u22656. Since 6 \u2265 6, smell IS present."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Based on visual inspection of diagram layouts across all pages, elements within each diagram appear to be reasonably and uniformly distributed. No relationship distances appear to exceed twice the average distance between elements. All related elements are positioned within typical proximity for readability."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "On page 4 'Kasvuhoone aktiveerimise tegevusdiagramm' (Activity diagram), the action 'Kasutaja n\u00e4eb eba\u00f5nnestumist' (User sees failure) starts with 'Kasutaja' which is a noun (User/Client), not an active verb. This violates the rule that actions should start with active verbs. All other actions start with verbs (Vaata, Otsi, Vali, Aktiveeri)."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All names across all diagrams have 4 or more characters. Shortest names found: 'Isik' (4 chars), 'Riik' (4 chars), 'kood' (4 chars). Threshold is \u22643 characters. Since minimum is 4 > 3, smell is NOT present."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class names start with uppercase and are singular. Examples: Isik (not isik, not Isikud), T\u00f6\u00f6taja (not t\u00f6\u00f6taja, not T\u00f6\u00f6tajad), Kasvuhoone (not kasvuhoone, not Kasvuhooned), Klassifikaator, Riik, Kasutajakonto, Klient. No violations found."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All attribute/column names start with lowercase letters. Examples from pages 6 and 13: e_meil, eesnimi, elukoht, isikukood, perenimi, reg_aeg, synni_kp, viimase_muutm_aeg, isik_id, riik_kood, kh_seisund_kood, nimetus, on_aktiivne. No uppercase-starting attribute names found."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All database table names are singular. Examples from pages 13-18: Isik (not Isikud), Kasutajakonto, Klient (not Kliendid), Tootaja (not Tootajad), Kasvuhoone (not Kasvuhooned), Riik, Tootaja_roll, Isiku_seisundi_liik, Kasvuhoone_kategooria. No plural table names found."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No type prefixes like 'tbl_', 'uc_', 'str', 'int' were found on class, table, or attribute names. The prefixes 'PK_', 'FK_', 'pfK', and 'IXFK_' found on pages 13-18 are allowed per the rule as they indicate primary keys, foreign keys, partial foreign keys, and indexes respectively. Column names use descriptive naming like 'isik_id', 'riik_kood', 'kh_seisund_kood' without type prefixes."
+    }
+  ]
+}
