@@ -1,0 +1,115 @@
+{
+  "file_name": "Spordiklubi_saalid",
+  "timestamp": "2025-12-30T19:44:00Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The diagram 'Saali eluts\u00fcklid (transformed)' on page 18 is empty, containing no elements inside the package/diagram frame."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases in the diagram on page 2 are associated with actors or linked via include relationships."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate use case names describing the same activity were found associated with the same actor."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No multiple model elements with the same name were found within the same package."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No redundant data copies were found. While multiple classifier tables (e.g., Riik, Saali_t\u00fc\u00fcp) share column names like 'nimetus' and 'on_aktiivne', they store distinct domain data, not redundant copies of the same values."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use case naming is consistent; all use cases on page 2 start with a verb (e.g., 'Vaata', 'Tuvasta', 'L\u00f5peta', 'Registreeri')."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the state diagram on page 11, all states (Ootel, Aktiivne, etc.) appear reachable through the defined transitions from the 'Alg' state."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the activity diagrams on pages 3 and 4, all actions are reachable via the control flow."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Relationships in class and database diagrams (e.g., page 5, 6, 17) generally define multiplicities (e.g., 1, 0..*, 0..1) where applicable."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The use case diagram 'Saalide funktsionaalne alls\u00fcsteem' on page 2 contains 11 central use case elements (ovals), which exceeds the limit of fewer than 10."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No single class or table was found to have 6 or more visual connection lines on a single diagram page. The 'Saal' table on page 17 has 5 connections."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "The layout appears standard with no related elements placed excessively far apart compared to the average distance."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases and activity actions start with active verbs (e.g., 'Vaata', 'L\u00f5peta', 'Otsi')."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No central elements with names of 3 or fewer characters were found (shortest names like 'Isik' and 'Riik' are 4 characters)."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class names (e.g., Isik, Saal, T\u00f6\u00f6taja) start with capital letters and are singular."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": true,
+      "detected": true,
+      "justification": "In the 'Saalide register' diagram (page 10) and its transformed version (page 17), the 'Saal' element contains attributes/columns that start with an uppercase letter: 'Kommentaar', 'Laius', 'Pikkus', and 'Tunni_hind'."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database table names are singular (e.g., 'Klient', 'Saal', 'T\u00f6\u00f6taja')."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No attributes or classes were found using Hungarian notation or type prefixes (e.g., strName). Standard database prefixes like 'PK_', 'FK_' and 'AK_' (for keys/indices) are present but permitted or standard constraint naming."
+    }
+  ]
+}

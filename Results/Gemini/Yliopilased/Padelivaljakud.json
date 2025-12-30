@@ -1,0 +1,115 @@
+{
+  "file_name": "Padelivaljakud",
+  "timestamp": "2025-12-30T13:38:53Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All diagrams in the provided file contain elements; none are empty."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases in the 'Padeliv\u00e4ljakute funktsionaalne alls\u00fcsteem' diagram are associated with actors, either directly or via <<include>> relationships to use cases that are connected to actors."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No use cases with identical names associated with the same actor were found."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No distinct model elements with the same name were found within the same package."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No obvious data redundancy without foreign keys was detected in the database diagrams. Common columns like timestamps appear to track specific record lifecycle events per table, not shared data values."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use case naming is consistent, using the imperative verb-noun form (e.g., 'Tuvasta kasutaja', 'Registreeri padeliv\u00e4ljak')."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the state diagram 'Padeliv\u00e4ljakute seisundidiagramm', all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, L\u00f5petatud) are reachable from the initial state."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the activity diagrams ('padeliv\u00e4ljaku l\u00f5petamise tegevusdiagramm' and 'Padeliv\u00e4ljaku aktiveerimise tegevusdiagram'), all actions are connected and reachable from the start node."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All relevant associations in the class and database diagrams exhibit multiplicity indicators (e.g., 1, 0..*) or are inheritance relationships where multiplicity is not applicable."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The use case diagram 'Padeliv\u00e4ljakute funktsionaalne alls\u00fcsteem' (Page 2) contains 11 use cases, exceeding the limit of 10. The class diagram 'Klassifikaatorite register' (Page 7) contains 10 classes, meeting the limit of 10 or more."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": true,
+      "justification": "In the class diagram 'Klassifikaatorite register' (Page 7), the class 'Klassifikaator' has 9 visual generalization connections to subclasses (Riik, Isiku_seisundi_liik, etc.), exceeding the limit of 6 connections."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "The layout of the diagrams appears balanced, with no related elements placed excessively far apart compared to the average distance."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases and activity actions start with active verbs (e.g., 'Vaata', 'Otsi', 'Vali', 'L\u00f5peta')."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute, or use case names were found to be 3 characters or less (excluding valid abbreviations like 'id' within constraints or state names which are not covered by the rule)."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class names start with an uppercase letter and are singular (e.g., 'Isik', 'Riik')."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All attribute and column names start with a lowercase letter (e.g., 'eesnimi', 'reg_aeg')."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All table names are singular (e.g., 'Isik', 'Tootaja')."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No Hungarian notation or type prefixes (e.g., tbl_, str) were found in class, table, or attribute names."
+    }
+  ]
+}

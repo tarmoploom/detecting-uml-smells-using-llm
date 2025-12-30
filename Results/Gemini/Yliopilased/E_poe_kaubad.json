@@ -1,0 +1,115 @@
+{
+  "file_name": "E_poe_kaubad",
+  "timestamp": "2025-12-30T11:51:50Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The model contains pages that appear to be empty diagrams: Page 14 'Klassifikaatorite register (transformed)' and Page 16 'Kaupade register (transformed)' contain titles but no visual model elements."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases in the 'Kaupade funktsionaalne alls\u00fcsteem' diagram are associated with actors either directly or via inclusion/extension relationships."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No cases were found where two use cases associated with the same actor describe the same activity using synonymous names."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate element names were found within the same package scope."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "The database schema appears normalized; for example, 'Isik' links to 'Riik' via 'riik_kood' rather than duplicating the country name. Common column names like 'nimetus' across different tables represent distinct data, not redundancy."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases follow a consistent naming convention starting with a verb (e.g., 'Vaata', 'L\u00f5peta', 'Registreeri')."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the state diagram 'Kauba seisundidiagramm', all states (Ootel, Aktiivne, etc.) are reachable from the start state."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the activity diagrams (e.g., 'Kauba l\u00f5petamise tegevusdiagramm'), all actions are reachable through the decision flows."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Relationships in the class diagrams include multiplicity indicators (e.g., 1, 0..*) at both ends."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The 'Kaupade register_suur' diagram (Page 2) contains 17 classes, and the 'Kaupade funktsionaalne alls\u00fcsteem' diagram (Page 3) contains 11 use cases. Both exceed the threshold of 10 central elements."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": true,
+      "detected": true,
+      "justification": "In the diagram 'Kaupade register_suur' (Page 2), the class 'Kaup' has 6 visual connection lines to other classes (Kauba_variant, Kauba_kategooria_omamine, Kauba_seisundi_liik, Kauba_tootja, and two associations to T\u00f6\u00f6taja)."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "The visual layout of the diagrams is balanced, with no related elements placed excessively far apart relative to the average distance."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases and activity actions begin with active verbs (e.g., 'Vaata', 'Otsi', 'Aktiveeri')."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, or attribute names were found to be 3 characters or less. Shortest names like 'Riik', 'Isik', 'Kaup', and 'V\u00e4rv' are 4 characters long."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class names consistently start with uppercase letters and use singular nouns (e.g., 'Isik', 'Kaup', 'T\u00f6\u00f6taja')."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute and column names start with lowercase letters (e.g., 'eesnimi', 'kauba_kood')."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database table names in the transformed diagrams are singular (e.g., 'Isik', 'Klient', 'Kaup')."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No Hungarian notation or type prefixes (like 'tbl_', 'str_') were found in element names. Standard key prefixes 'PK_' and 'FK_' are allowed."
+    }
+  ]
+}

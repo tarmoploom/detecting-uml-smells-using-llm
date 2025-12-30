@@ -1,93 +1,113 @@
 {
   "file_name": "Tenniseklubi_valjakud",
+  "timestamp": "2025-12-30T20:21:33Z",
+  "llm_model": "Gemini 3 Pro",
   "smell_analysis": [
     {
       "rule_id": "G5.1",
+      "actual": false,
       "detected": false,
       "justification": "All diagrams in the provided PDF contain elements; no empty diagrams were found."
     },
     {
       "rule_id": "G5.2",
+      "actual": false,
       "detected": false,
-      "justification": "All use cases in the 'Väljakute funktsionaalne allsüsteem' diagram are associated with an actor, either directly or via an «include» relationship to a use case that is associated with an actor."
+      "justification": "All use cases in the 'V\u00e4ljakute funktsionaalne alls\u00fcsteem' diagram are associated with an actor, either directly or via an \u00abinclude\u00bb relationship to a use case that is associated with an actor."
     },
     {
       "rule_id": "G6.1",
+      "actual": false,
       "detected": false,
       "justification": "No use cases with identical names were found associated with the same actor."
     },
     {
       "rule_id": "G6.2",
+      "actual": false,
       "detected": false,
       "justification": "No packages were found containing multiple model elements with the same name."
     },
     {
       "rule_id": "G6.3",
+      "actual": false,
       "detected": false,
       "justification": "No redundant data storage (denormalization) without foreign keys was detected in the database schema diagrams."
     },
     {
       "rule_id": "G8.1",
+      "actual": false,
       "detected": false,
-      "justification": "All use cases follow a consistent naming convention, starting with a verb (e.g., 'Tuvasta', 'Vaata', 'Lõpeta', 'Registreeri')."
+      "justification": "All use cases follow a consistent naming convention, starting with a verb (e.g., 'Tuvasta', 'Vaata', 'L\u00f5peta', 'Registreeri')."
     },
     {
       "rule_id": "G15.1",
+      "actual": false,
       "detected": false,
-      "justification": "In the state diagram (Väljaku seisundidiagramm), all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, Lõpetatud) are reachable via transitions."
+      "justification": "In the state diagram (V\u00e4ljaku seisundidiagramm), all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, L\u00f5petatud) are reachable via transitions."
     },
     {
       "rule_id": "G15.2",
+      "actual": false,
       "detected": false,
-      "justification": "In the activity diagrams (Väljaku lõpetamise/aktiveerimise tegevusdiagramm), all actions are reachable from the start node."
+      "justification": "In the activity diagrams (V\u00e4ljaku l\u00f5petamise/aktiveerimise tegevusdiagramm), all actions are reachable from the start node."
     },
     {
       "rule_id": "G15.3",
+      "actual": false,
       "detected": false,
       "justification": "All class and database associations display multiplicity indicators (e.g., 1, 0..*, 0..1) at both ends where relationships are visually represented."
     },
     {
       "rule_id": "S1.1",
+      "actual": true,
       "detected": true,
-      "justification": "The use case diagram 'Väljakute funktsionaalne allsüsteem' (Page 2) contains 11 use cases (central elements), which exceeds the threshold of 10."
+      "justification": "The use case diagram 'V\u00e4ljakute funktsionaalne alls\u00fcsteem' (Page 2) contains 11 use cases (central elements), which exceeds the threshold of 10."
     },
     {
       "rule_id": "S1.2",
+      "actual": false,
       "detected": false,
-      "justification": "No single class or table was found with 6 or more visual connection lines on a single diagram page. The maximum observed was 5 (e.g., on the 'Väljak' table in the transformed register diagram)."
+      "justification": "No single class or table was found with 6 or more visual connection lines on a single diagram page. The maximum observed was 5 (e.g., on the 'V\u00e4ljak' table in the transformed register diagram)."
     },
     {
       "rule_id": "S2.1",
+      "actual": true,
       "detected": false,
       "justification": "The layout of the diagrams is balanced, and no related elements are placed at excessive distances compared to the average."
     },
     {
       "rule_id": "N1.1",
+      "actual": false,
       "detected": false,
       "justification": "All use cases and activity actions start with an active verb (e.g., 'Vaata', 'Otsi', 'Vali', 'Aktiveeri')."
     },
     {
       "rule_id": "N1.2",
+      "actual": false,
       "detected": false,
       "justification": "No classes, tables, attributes, or use cases were found with names of 3 characters or less. (Shortest found were 4 characters, e.g., 'Isik', 'Riik', 'kood')."
     },
     {
       "rule_id": "N3.1",
+      "actual": false,
       "detected": false,
-      "justification": "All class names start with an uppercase letter and are singular (e.g., 'Isik', 'Klient', 'Väljak')."
+      "justification": "All class names start with an uppercase letter and are singular (e.g., 'Isik', 'Klient', 'V\u00e4ljak')."
     },
     {
       "rule_id": "N3.2",
+      "actual": false,
       "detected": false,
       "justification": "All attributes and column names start with a lowercase letter (e.g., 'eesnimi', 'nimetus', 'on_aktiivne')."
     },
     {
       "rule_id": "N3.3",
+      "actual": false,
       "detected": false,
-      "justification": "All table names in the transformed diagrams are singular (e.g., 'Isik', 'Klient', 'Väljak')."
+      "justification": "All table names in the transformed diagrams are singular (e.g., 'Isik', 'Klient', 'V\u00e4ljak')."
     },
     {
       "rule_id": "N4.1",
+      "actual": false,
       "detected": false,
       "justification": "No Hungarian notation or type prefixes (like 'tbl_', 'str') were found in element names."
     }

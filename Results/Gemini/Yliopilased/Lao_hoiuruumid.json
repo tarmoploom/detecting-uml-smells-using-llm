@@ -1,0 +1,115 @@
+{
+  "file_name": "Lao_hoiuruumid",
+  "timestamp": "2025-12-30T13:16:43Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No empty diagrams were found in the provided file."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases in the Use Case Diagram (Page 2) are associated with at least one actor (e.g., 'Tuvasta kasutaja' is connected to multiple actors including 'Klient' and 'Hoiuruumide haldur')."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No use cases with identical names associated with the same actor were found."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No packages were found containing multiple model elements with the same name."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Columns like 'reg_aeg' or 'viimase_muutm_aeg' appear in multiple tables, but they represent entity-specific timestamps, not redundant copies of the same shared data value requiring denormalization."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use case naming is consistent; all use cases on Page 2 start with a verb (e.g., 'Tuvasta', 'Vaata', 'Registreeri')."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the State Diagram (Page 10), all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, L\u00f5petatud) are reachable via defined transitions."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the Activity Diagrams (Page 3 and 4), all actions are part of the flow connected to the Start node."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Relationships in class and database diagrams (e.g., Page 6, Page 13) generally include multiplicity indicators (1, 0..*, etc.) at both ends."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The Use Case Diagram (Page 2) contains 11 use cases (central elements), exceeding the limit of 10. Additionally, the 'Klassifikaatorite register' database diagram (Page 14) contains 10 tables, meeting the threshold for this smell."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": true,
+      "detected": false,
+      "justification": "No single class or table was found with 6 or more visual connection lines on a single page. The table 'hoiuruum' on Page 13 has 5 connections."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "The layout of the diagrams is generally balanced without excessive distances between related elements."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "In the Activity Diagram on Page 4, actions are named as full sentences starting with nouns (actors) instead of active verbs. Examples include: 'Kasutusjuht vaatab k\u00f5iki ootel olevaid...', 'Hoiuruumide haldur valib nimekirjast ruumi', and 'Hoiuruumide haldur aktiveerib valitud ruumi'."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Class and table names are generally descriptive and longer than 3 characters (e.g., 'riik' is 4 characters)."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Multiple classes across the diagrams start with a lowercase letter, which violates the convention. Examples include 'isik' (Page 6), 't\u00f6\u00f6taja' (Page 8), 'hoiuruum' (Page 9), 'klient' (Page 11), and 'broneering' (Page 12)."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute names consistently start with lowercase letters (e.g., 'e_meil', 'eesnimi')."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database table names are singular (e.g., 'hoiuruum', 't\u00f6\u00f6taja', 'isik'), complying with the rule."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No Hungarian notation or type prefixes (like 'tbl_', 'cls_') were found in element names."
+    }
+  ]
+}

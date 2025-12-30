@@ -1,0 +1,115 @@
+{
+  "file_name": "Kliiniku_treeningud",
+  "timestamp": "2025-12-30T12:42:58Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All provided diagram pages contain visible elements and are not empty."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases (visual ovals) in the 'Treeningute funktsionaalne allsusteem' diagram are connected to at least one actor."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No distinct use cases with synonymous names associated with the same actor were found in the use case diagram."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No packages were found containing multiple model elements with the same name."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No obvious data redundancy (denormalization) without foreign keys was detected in the class or database diagrams."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use case naming appears consistent, generally following the 'Verb + Noun' pattern (e.g., 'Vaata aktiivseid treeninguid', 'Tuvasta kasutaja')."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All states in the 'Treeningute seisundidiagramm' (e.g., Ootel, Unustatud, Aktiivne) appear to be reachable via transitions from the initial state."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All actions in the provided activity diagrams appear to be reachable through the defined decision flows."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Relationships in the class and conceptual diagrams generally include multiplicity indicators (e.g., 1, 0..*, 0..1) at the relevant ends."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The Use Case diagram 'Treeningute funktsionaalne allsusteem' (Page 2) contains 11 central elements (use cases), which exceeds the limit of fewer than 10."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No single class or table was found to have 6 or more visual connection lines on a single specific diagram page (The max observed was 5 connections for 'Isik' on Page 6 and 15)."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Visual inspection suggests that the distances between related elements are generally within a reasonable range and do not violate the 'twice the average' rule."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "In the activity diagram 'Treeningu aktiveerimise tegevusdiagramm' (Page 4), the actions 'Andmed salvestatakse ning treening muudetakse aktiivseks' (Passive voice/Noun start) and 'Aktiveerimine ebaonnestub' (Noun start) do not start with an active verb."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute, or use case names were found to be 3 characters or less (Note: 'Alg' is a state/node name, and 'Riik'/'Isik' are 4 characters)."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class names (e.g., Isik, Treening, Tootaja) are capitalized and singular."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute and column names (e.g., e_meil, reg_aeg) start with lowercase letters."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database table names (e.g., Treening, Isik, Riik) are singular."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No Hungarian notation or type prefixes (like tbl_, str_) were found. Abbreviations like 'kp' in 's\u00fcnni_kp' are considered part of the business term (kuup\u00e4ev) rather than a type prefix."
+    }
+  ]
+}

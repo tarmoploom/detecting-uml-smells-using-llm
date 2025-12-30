@@ -1,0 +1,115 @@
+{
+  "file_name": "Ronimisseinad",
+  "timestamp": "2025-12-30T19:33:48Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All diagrams in the provided PDF contain visible elements and content."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases in the 'Ronimisseinte funktsionaalne alls\u00fcsteem' diagram (Page 2) are connected to at least one actor (e.g., 'Tuvasta kasutaja' is connected to multiple actors including 'Ronimisseinte haldur' and 'Klient')."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate use case names describing the same activity for the same actor were found. Use cases like 'Muuda ronimisseina' and 'Muuda ronimissein mitteaktiivseks' describe distinct activities."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No multiple model elements with the same name were found within the same package. Similar names like 'Ronimisseina_kategooria' and 'Ronimisseina_kategooria_t\u00fc\u00fcp' are distinct."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No redundant data storage (denormalization) was identified. Common columns like 'reg_aeg' and 'viimase_muutm_aeg' in tables 'Isik' and 'Ronimissein' are entity-specific audit fields, not redundant copies of the same data."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases follow a consistent naming convention, starting with a verb in the imperative mood (e.g., 'Vaata', 'L\u00f5peta', 'Registreeri', 'Tuvasta')."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All states in the 'Ronimisseinte seisundidiagramm' (Page 11) are reachable via transitions from the initial state ('Alg') or other states."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All actions in the activity diagrams (Pages 3 and 4) are reachable through the defined control flows and decision nodes."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All relationships in the class diagrams (e.g., Pages 5, 6, 9, 10, 12) have appropriate multiplicity indicators (e.g., '1', '0..*', '0..1') at both ends where applicable."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The Use Case diagram 'Ronimisseinte funktsionaalne alls\u00fcsteem' (Page 2) contains 11 central elements (use cases), which exceeds the limit of fewer than 10."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class or table has 6 or more visual connection lines on a single diagram. The class 'Ronimissein' (Page 10) and table 'Ronimissein' (Page 17) have 5 connections, which is within the allowed limit."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "The distance between related elements in the diagrams is reasonably uniform, with no instances of related elements being placed excessively far apart compared to the average."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "In the Activity Diagram 'Ronimisseina aktiveerimise tegevusdiagramm' (Page 4), the actions 'Andmed salvestatakse ning ronimissein muudetakse aktiivseks' and 'Aktiveerimine eba\u00f5nnestub' start with nouns ('Andmed', 'Aktiveerimine') instead of active verbs."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute, or use case names were found to be 3 characters or less. The shortest names observed were 4 characters (e.g., 'Isik', 'Riik')."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class names (e.g., 'Isik', 'T\u00f6\u00f6taja', 'Klient') start with an uppercase letter and use the singular form."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All attribute and column names (e.g., 'e_meil', 'reg_aeg', 'kommentaar') start with a lowercase letter."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All database table names in the transformed diagrams (e.g., 'Isik', 'Ronimissein', 'Klient') are in the singular form."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No type prefixes (Hungarian notation) were found in class, table, or attribute names. Technical prefixes like 'PK_', 'FK_', 'pfK' found in the database diagrams are explicitly allowed by the rule."
+    }
+  ]
+}

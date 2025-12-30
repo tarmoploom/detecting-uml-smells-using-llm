@@ -1,0 +1,115 @@
+{
+  "file_name": "Restorani_lauad",
+  "timestamp": "2025-12-30T15:46:49Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No empty diagrams were found in the provided file."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases in the diagram on page 2 are associated with at least one actor, either directly or through generalization/include relationships."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No use cases with synonymous names associated with the same actor were found."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": true,
+      "detected": true,
+      "justification": "On page 14, in the 'Laudade register (transformed)' diagram, the table 'laud' lists the column 'FK ruumi_kood' twice."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No redundant data copies without foreign keys were identified. Common columns like 'reg_aeg' are standard audit fields, not denormalized data."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use case naming is consistent; all use cases on page 2 start with an imperative verb (e.g., 'Vaata', 'Tuvasta', 'Registreeri')."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All states in the state diagram on page 11 are reachable from the start node."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All actions in the activity diagrams on pages 3 and 4 are reachable."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": true,
+      "justification": "On page 10, the association between the class 'Laud' and the class 'laua_kategooria_omamine' lacks multiplicity indicators (e.g., 1, 0..*) at both ends."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The use case diagram on page 2 contains 11 central elements (use cases), which exceeds the threshold of fewer than 10."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No single class or table was found to have 6 or more visual connection lines on a single diagram page."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "The layout of the diagrams is relatively compact, and no related elements were found with excessive distance between them."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases and activity actions appear to start with an active verb."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute, or use case names were found to be 3 characters or less (e.g., 'Riik', 'Isik', 'Laud' are 4 characters)."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": true,
+      "detected": true,
+      "justification": "On page 10, the class named 'laua_kategooria_omamine' starts with a lowercase letter, violating the naming convention."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All inspected attribute and column names start with a lowercase letter."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All table names appear to be singular (e.g., 'laud', 'Isik', 'Tootaja')."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": true,
+      "detected": false,
+      "justification": "No prohibited prefixes (Hungarian notation) were found. Prefixes like 'FK_', 'PK_', and 'pfK' found in the transformed diagrams are explicitly allowed."
+    }
+  ]
+}

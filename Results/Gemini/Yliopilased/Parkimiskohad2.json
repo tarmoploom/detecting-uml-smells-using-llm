@@ -1,0 +1,115 @@
+{
+  "file_name": "Parkimiskohad2",
+  "timestamp": "2025-12-30T14:24:59Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All provided pages contain visible diagram elements; no empty diagrams were found."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": true,
+      "justification": "In the Use Case diagram (Page 2), the use case 'Tuvasta kasutaja' (Identify user) is not directly associated with any actor (it is only connected via inclusion relationships to other use cases). Similarly, 'Aktiveeri parklakoht' and 'Muuda parklakoht mitteaktiivseks' are not directly connected to actors."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No use cases with synonymous names associated with the same actor were found. 'Vaata aktiivseid parklakohti' and 'Vaata k\u00f5iki parklakohti' represent distinct scopes of functionality."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No distinct model elements with the same name were found within the same package."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Common columns found (e.g., 'reg_aeg', 'viimase_muutm_aeg') represent standard audit fields or keys allowed by the rule exclusion, rather than redundant business data denormalization."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases consistently follow the 'Verb + Noun' (or 'Verb + Noun + Adjective') naming convention (e.g., 'Tuvasta kasutaja', 'Registreeri parklakoht', 'Vaata aktiivseid parklakohti')."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the State Diagram (Page 11), all states ('Ootel', 'Aktiivne', 'Mitteaktiivne', 'L\u00f5petatud', 'Unustatud') are reachable from the Start state via the defined transitions."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the Activity Diagrams (Pages 3 and 4), all actions are part of the flow connected to the Start node."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All class and database relationships in the diagrams (e.g., Page 5, Page 10) have multiplicity indicators explicitly defined on both ends (e.g., '1' and '0..*')."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The Use Case diagram (Page 2) contains 11 use cases, exceeding the limit of 10. The Conceptual Data Model (Page 5) also contains more than 10 classes."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": true,
+      "justification": "In the Conceptual Data Model (Page 5), the class 'T\u00f6\u00f6taja' has 6 visual connection lines to other elements on the same diagram: inheritance to 'Isik', association to 'T\u00f6\u00f6taja_seisundi_liik', association to 'T\u00f6\u00f6taja_rolli_omamine', a self-referencing association ('mentor'), and two separate associations to 'Parklakoht' ('registreerija' and 'viimane muutja')."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": true,
+      "justification": "In the Conceptual Data Model (Page 5), the distance between the related classes 'T\u00f6\u00f6taja' (left side) and 'Parklakoht' (right side) spans almost the entire width of the diagram, which is more than twice the average distance between other related elements (e.g., 'Isik' to 'Kasutajakonto' or 'Parklakoht' to 'Parklakoha_kategooria_omamine')."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases and activity actions start with active verbs (e.g., 'Vaata', 'Tuvasta', 'Registreeri', 'Otsi', 'Vali', 'Salvesta')."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No classes, tables, attributes, or use cases were found with names of 3 characters or less (excluding allowed standard technical abbreviations like 'id' tags or state names which are not covered by this rule)."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class names start with an uppercase letter and are singular (e.g., 'Isik', 'T\u00f6\u00f6taja', 'Parklakoht')."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All attribute/column names start with a lowercase letter (e.g., 'eesnimi', 'reg_aeg', 'nimetus')."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database table names are singular (e.g., 'Isik', 'Klient', 'Parklakoht', 'Tootaja_roll')."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No Hungarian notation or type prefixes (e.g., 'tbl_', 'str') were found in class, table, or attribute names. Standard constraint prefixes (PK, FK) are allowed."
+    }
+  ]
+}

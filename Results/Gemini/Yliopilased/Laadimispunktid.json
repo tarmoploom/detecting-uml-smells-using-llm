@@ -1,0 +1,115 @@
+{
+  "file_name": "Laadimispunktid",
+  "timestamp": "2025-12-30T13:02:19Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All diagrams in the provided model contain elements and content; no empty diagrams were found."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases in the 'Laadimispunktide funktsionaalne alls\u00fcsteem' diagram are associated with actors either directly or through inclusion relationships."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate use case names associated with the same actor were found."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No distinct model elements with the same name were found within the same package. Visual repetitions (like 'Klassifikaator') refer to the same parent class."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "The database schema appears normalized (3NF). No obvious denormalized data (redundant values without foreign keys) was detected across tables."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use case naming is consistent, using the 'Verb + Noun' pattern (e.g., 'Tuvasta kasutaja', 'L\u00f5peta laadimispunkt')."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All states in the 'Laadimispunkti seisundidiagramm' are reachable from the Start state and can transition to subsequent states or final states."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the activity diagrams (Pages 3 and 4), all actions and decisions are reachable via the control flow."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All associations in the class and transformed diagrams include multiplicity indicators at both ends (e.g., 1, 0..*)."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The Use Case diagram 'Laadimispunktide funktsionaalne alls\u00fcsteem' (Page 2) contains 11 central use case elements (ovals), which exceeds the threshold of 10."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": true,
+      "detected": true,
+      "justification": "On the 'T\u00f6\u00f6tajate register' diagram (Page 9), the class 'T\u00f6\u00f6taja' has 6 visual connection lines (to Isik, T\u00f6\u00f6taja_roll, T\u00f6\u00f6taja_seisundi_liik, Laadimispunkt (x2), and itself). Similarly, on Page 10, 'Laadimispunkt' has 6 connections."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": true,
+      "justification": "On the 'Laadimispunktide register (transformed)' diagram (Page 17), the distance between the table 'Laadimispunkti_pakett' and the related table 'Pakettide register::Pakett' (located at the far bottom right) is significantly more than twice the average distance between other related elements on the page."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases and activity actions start with active verbs (e.g., 'Tuvasta', 'Vaata', 'Otsi', 'Vali')."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute, or use case names were found with 3 or fewer characters. Shortest names like 'Isik' or 'Riik' have 4 characters."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class names start with an uppercase letter and are singular (e.g., 'Laadimispunkt', 'T\u00f6\u00f6taja')."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All attribute and column names start with a lowercase letter (e.g., 'nimetus', 'kood', 'reg_aeg')."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Table names in the transformed diagrams are singular (e.g., 'Isik', 'Laadimispunkt'), matching the class names."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No Hungarian notation or type prefixes (e.g., tbl_, str_) were found in element names."
+    }
+  ]
+}

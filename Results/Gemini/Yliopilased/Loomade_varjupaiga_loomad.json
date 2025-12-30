@@ -1,0 +1,115 @@
+{
+  "file_name": "Loomade_varjupaiga_loomad",
+  "timestamp": "2025-12-30T13:22:34Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All diagrams in the provided PDF contain elements; no empty diagrams were found."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases in the 'Loomade funktsionaalne alls\u00fcsteem' diagram (Page 2) are associated with actors (Klient, Loomade haldur, Juhataja, Uudistaja) or connected via inclusion."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No distinct use cases with synonymous names (like 'Add' vs 'Register' for the same entity) were found. 'Registreeri loom' is unique. 'Vaata aktiivseid loomi' and 'Vaata k\u00f5iki loomi' represent different filtering scopes, not identical synonyms."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No packages were found containing multiple model elements with the exact same name."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No obvious redundant data replication without foreign keys was detected. Common column names like 'nimetus' or 'kuupaev' appear in unrelated contexts or with appropriate relationships."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases (Page 2) follow a consistent 'Verb + Noun' naming convention (e.g., 'Registreeri loom', 'M\u00e4rgi loom surnuks', 'Vaata k\u00f5iki loomi')."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the state diagram (Page 10), all states (Aktiivne, Mitteaktiivne, Surnud) are reachable from the Start node."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the activity diagrams (Pages 3 and 4), all actions are reachable from the start node following the decision flows."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Relationships in class and database diagrams generally display multiplicity indicators (e.g., 0..*, 1) or are defined by foreign keys in the transformed diagrams."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The 'Klassifikaatorite register' diagram on Page 7 contains 14 class elements (Klassifikaator and 13 subclasses). The transformed version on Page 15 also contains 14 table elements. This exceeds the threshold of 10."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": true,
+      "detected": true,
+      "justification": "On Page 7, the class 'Klassifikaator' has 13 connections (inheritance). On Page 18, the table 'Loom' has 6 visual connection lines (to Loom_asukoht, Loom_seisundi_liik, Loom_toug, Loom_Looma_kategooria, and two distinct lines to Tootaja). On Page 19, the table 'Protseduur' also has 6 visual connection lines."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "The layout of the diagrams appears reasonable with no related elements placed excessively far apart compared to the average distance."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases and activity diagram actions start with active verbs (e.g., 'Vaata', 'Otsi', 'Registreeri', 'L\u00f5peta')."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No classes, tables, attributes, or use cases with names of 3 characters or less were found (excluding system constraints like 'PK' or 'id' parts of larger names). The shortest class names found were 'Isik', 'Riik', and 'Loom' (4 characters)."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class names (e.g., 'Isik', 'T\u00f6\u00f6taja', 'Loom') are capitalized and singular."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": true,
+      "detected": false,
+      "justification": "Attribute/column names (e.g., 'eesnimi', 'reg_aeg', 'lisamise_aeg') start with lowercase letters."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database table names (e.g., 'Adopteerimine', 'Loom', 'Riik') are singular."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No Hungarian notation or type prefixes (like tbl_, str_) were found in element names. Technical prefixes like PK_ and FK_ are allowed."
+    }
+  ]
+}

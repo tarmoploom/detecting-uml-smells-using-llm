@@ -1,0 +1,115 @@
+{
+  "file_name": "Parkimiskohad",
+  "timestamp": "2025-12-30T14:17:11Z",
+  "llm_model": "Gemini 3 Pro",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All diagrams in the file contain visible elements."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the Use Case diagram (Page 2), all use cases (ovals) are associated with at least one actor (lines connect them either directly or via the 'Tuvasta kasutaja' use case)."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No duplicate use case names describing the same activity were found."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No distinct model elements with the same name were found within the same package."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "No obvious redundant data columns without Foreign Key connections were found in the database diagrams."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases on Page 2 start with a verb (e.g., 'Vaata', 'Tuvasta', 'L\u00f5peta', 'Registreeri')."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the state diagram (Page 11), all states (Ootel, Aktiivne, etc.) are reachable from the initial state 'Alg'."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All actions in the activity diagrams (Pages 3 and 4) appear to be reachable via the decision flows."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Relationships in class and database diagrams generally have multiplicity indicators (e.g., '1', '0..*'). Relationships lacking them are generalizations or dependencies where strict multiplicity is not required."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The Use Case diagram on Page 2 contains 11 use cases (visual oval elements), which exceeds the threshold of 10."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": true,
+      "detected": true,
+      "justification": "On Page 10 (Parkimiskoha register), the class 'Parkimiskoht' has 6 visual connection lines to other classes (Parkimiskoha_kategooria_omamine, Parkimiskoha_suurus, Parkimiskoha_aadress, Parkimiskoha_seisundi_liik, and two connections to T\u00f6\u00f6taja/Isik)."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "The layout of the diagrams is relatively compact and no related elements were found to be excessively distant."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "On Page 4, the activity diagram action 'Parkimiskoha haldur valib parkimiskoha' starts with a noun ('Parkimiskoha') instead of an active verb (e.g., 'Vali parkimiskoht'). Similarly, 'Parkimiskoha aktiveerimine \u00f5nnestub' starts with a noun."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute, or use case names were found with 3 or fewer characters (excluding accepted abbreviations or stereotypes)."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class names consistently start with uppercase letters and are singular."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute names consistently start with lowercase letters."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Table names in the database diagrams are singular (e.g., 'Isik', 'Tootaja')."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No inappropriate Hungarian notation prefixes (like tbl_, str_) were found on element names."
+    }
+  ]
+}
