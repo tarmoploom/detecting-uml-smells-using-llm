@@ -1,0 +1,115 @@
+{
+  "file_name": "Peoruumid",
+  "timestamp": "2025-12-30T15:41:24Z",
+  "llm_model": "GPT-5.1",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Every diagram page in the file (pages 1-17) contains visible modeled elements such as actors, use cases, classes, tables, activities, or states; no page shows an empty diagram frame. "
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "The only clear use-case diagram, 'Peoruumide funktsionaalne allsusteem' on page 2, shows each use case inside the system boundary connected by at least one association line to one or more actors; no use-case oval appears isolated without an actor association. "
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "On the use-case diagram on page 2, all use cases have distinct meanings (for example, viewing all rooms, viewing only active rooms, activating a room, ending a room, forgetting a room); there are no pairs of use cases whose names describe the same activity while sharing the same actor. "
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "The package/context diagram on page 1 and the bdd/package view on page 6 do not show multiple separate model elements with exactly the same primary name inside a single package; each listed element name within a package (such as Isik, Kasutajakonto, Peoruum) appears only once per package. "
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Across the database diagrams (pages 12-17), identically named columns such as common keys or status codes are always linked via explicit foreign key connectors (for example, isik_id between Isik and related tables, various **kood columns between classifier tables and referencing tables); there is no clear case where the same business data value is stored in multiple tables without an FK relationship. "
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the use-case diagram on page 2, all use-case names consistently begin with an active verb phrase (for example, 'Vaata ...', 'Registreeri ...', 'Lopeta ...', 'Aktiveeri ...', 'Unusta ...'); there is no mix of verb-based and purely noun-based use-case names. "
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The state machine 'Peoruumi seisundidiagramm' on page 10 shows transitions from the initial pseudostate to one of the states and transitions among the states Ootel, Aktiivne, Mitteaktiivne, Lopetatud, and Unustatud; no state is visibly isolated without any incoming path from the initial node. "
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In both activity diagrams (pages 3 and 4), all action nodes such as 'Vaata koiki peoruume, mida saab lopetada', 'Otsi peoruum', 'Vali peoruum', 'Lopeta valitud peoruum', and 'Vaata pohjust miks aktiveerimine ebaonnestus' are connected into the main control flow between the initial and final nodes; there are no standalone actions without an incoming path. "
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Class diagrams (pages 5-9, 11) show UML associations with explicit multiplicities at one or both ends, and the database diagrams (pages 12-17) use standard crow's-foot or FK connectors between tables, which are exempt per the interpretation rules; there is no clearly drawn UML-style relationship line that entirely lacks multiplicity or crow's-foot semantics at both ends. "
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The use-case diagram 'Peoruumide funktsionaalne allsusteem' on page 2 contains more than 10 central elements: there are at least 11 distinct use cases inside the system boundary (for example, Tuvasta kasutaja, Registreeri peoruum, Lopeta peoruum, Aktiveeri peoruum, multiple 'Vaata ...' cases, Unusta peoruum), exceeding the threshold of 10 central elements on a single diagram. The class diagram 'Klassifikaatorite register' on page 7 also shows over 10 classifier classes around Klassifikaator. "
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": true,
+      "justification": "On the class diagram 'Klassifikaatorite register' (page 7), the central class 'Klassifikaator' has separate generalization or association lines to many surrounding classifier classes (Riik, Peoruumi_seisundi_liik, Tootaja_seisundi_liik, Isiku_seisundi_liik, Peoruumi_kategooria_tuup, Tootaja_roll, Peoruumi_kategooria, Kliendi_seisundi_liik, Peoruumi_stiil), giving it at least nine distinct relationship lines to other classes on that diagram, which is more than the S1.2 limit of five. "
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Across the diagrams, related elements (such as a central table and its referenced tables, or a state and its successor state) are generally placed at comparable distances; while some connectors are longer than others, there is no clearly extreme case where a pair of related elements is spaced at more than twice the typical distance between related elements on the same diagram. "
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use-case names on page 2 and all action names on the activity diagrams (pages 3-4) begin with clear active verbs (such as 'Vaata', 'Otsi', 'Vali', 'Lopeta', 'Aktiveeri', 'Unusta', 'Tuvasta'), so there is no use case or activity action whose name fails to start with an active verb. "
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Names of classes, tables, attributes, and use cases are all longer than three characters (for example, Isik, Peoruum, Tootaja, peoruumi_kood, reg_aeg, synni_kp); very short names like 'id' appear only as parts of longer identifiers (such as isik_id) and not as standalone element names. "
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class names (Isik, Peoruum, Tootaja, Kasutajakonto, Klient, various **seisundi_liik and **kategooria types) start with uppercase letters and appear to denote singular concepts rather than plural classes; plural-sounding phrases like 'Isikute register' occur only as package or register names rather than as class names. "
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute and column names throughout the class and database diagrams (for example, isikukood, e_meil, reg_aeg, on_aktiivne, peoruumi_kood, mahutavus, tunnihind) consistently begin with lowercase letters; no attribute or column name visibly starts with an uppercase letter. "
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database table names (Isik, Kasutajakonto, Klient, Tootaja, Tootaja_rolli_omamine, Peoruum, various **seisundi_liik, **kategooria, Riik) denote singular entities; broader plural phrases such as 'Isikute register' or 'Peoruumide register' refer to registers or packages rather than table names and are explicitly exempt by the interpretation rules. "
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class, table, and attribute names do not include type-indicating prefixes such as 'tbl*', 'uc*', or 'strName'; prefixes like PK*, FK*, pfK*, IXFK_ appear only in the names of keys and constraints, which are allowed and are not class, table, or attribute names under this rule. "
+    }
+  ]
+}

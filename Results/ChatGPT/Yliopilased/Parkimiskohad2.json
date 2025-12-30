@@ -1,0 +1,115 @@
+{
+  "file_name": "Parkimiskohad2",
+  "timestamp": "2025-12-30T14:31:35Z",
+  "llm_model": "GPT-5.1",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Every diagram page in the PDF that shows a use-case, activity, class or database view, package, or state diagram contains at least one central element such as a use case, class or table, or state; no page shows an explicitly empty diagram frame."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On the use-case diagram Parklakoha funktsionaalne alls\u00fcsteem the use cases are shown inside a system boundary with surrounding actors, and there is no clearly visible use case that is completely unassociated with all actors, so no explicit violation can be confirmed."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use-case names such as Registreeri parklakoht, Aktiveeri parklakoht, L\u00f5peta parklakoht, Muuda parklakoht, and the various Vaata use cases describe distinct activities and are not clearly duplicate descriptions of the same activity associated with the same actor."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the package diagram Parklakohtade FASiga seotud p\u00e4devusalad ja registrid each register or subsystem inside the package, such as Isikute register, T\u00f6\u00f6tajate register, Parklakohtade register, and Klassifikaatorite register, has a unique primary name; there are no repeated model element names within the same package."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Where the same business data values appear across tables, such as identifiers like isik_id or parklakoha_kood, they are connected via primary or foreign key relationships in the database diagrams; no clear case is visible where the same business value is stored in multiple tables without a foreign key linking them."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use-case names consistently use a verb-first form, for example Tuvasta kasutaja, Registreeri parklakoht, Aktiveeri parklakoht, Muuda parklakoht mitteaktiivseks, Vaata aktiivseid parklakohti, and Unusta parklakoht; there are no obvious use-case names that are simple nouns or that break this style."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the state diagram Parklakoha seisundidiagramm all states, including Ootel, Aktiivne, Mitteaktiivne, L\u00f5petatud, and Unustatud, have arrows or transition descriptions connecting them either from another state or from the initial or final node; no state is isolated without an incoming transition."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the activity diagrams for parklakoha l\u00f5petamine and parklakoha aktiveerimine every action, such as Vaata k\u00f5iki parklakohti, mida saab l\u00f5petada, Otsi parklakoht, Vali parklakoht, L\u00f5peta valitud parklakoht, Aktiveeri valitud parklakoht, and Salvesta andmed, appears on a control-flow path between the initial and final nodes; there are no actions that lack incoming control flows."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Class and database diagrams either show explicit multiplicities around associations in conceptual or register diagrams, or they use standard database foreign key or crow foot style connectors in logical and physical models, which imply multiplicities; no clearly drawn UML style association line is visible that completely lacks multiplicity information at both ends."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Some diagrams contain ten or more central elements. For example, the conceptual class or data model diagram Kontseptuaalne andmemudel includes well over ten distinct classes or tables such as Isik, Klient, Parklakoht, several different seisundi_liik and kategooria entities, and multiple roll related entities. The use-case diagram Parklakoha funktsionaalne alls\u00fcsteem also shows more than ten separate use cases inside the system boundary. Each of these diagrams exceeds the threshold of ten central elements."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Although entities such as Isik and Parklakoht participate in multiple relationships, the diagrams do not clearly show any single class or table with six or more distinct, separately drawn relationship lines on one diagram; the number of visible connectors per element appears to stay below this threshold or is too ambiguous to confirm a violation."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "There is no clear visual evidence of any related pair of elements being placed at a distance more than twice the average spacing of other elements on the same diagram; the layouts appear relatively even, so this spacing based smell cannot be confirmed."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use-case and activity diagram action names start with active verbs, including Tuvasta, Registreeri, Aktiveeri, Muuda, Vaata, Otsi, Vali, L\u00f5peta, and Salvesta; none of the use cases or actions are named starting with a noun or non verbal form."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Names of classes, tables, attributes or columns, and use cases are all longer than three characters, such as Isik, Klient, Parklakoht, nimetus, parklakoha_kood, on_aktiivne, and parool. Very short labels appear only on pseudostates or similar notations that are not covered by this rule."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class and table names such as Isik, Parklakoht, Klient, Kasutajakonto, Parklakoha_kat, Parklakoha_tsoon, and Tootaja all start with uppercase letters and describe singular domain concepts. Pluralised register names such as Isikute register and Klassifikaatorite register refer to registers and, according to the interpretation rules, are not considered violations for this smell."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute and column names consistently start with lowercase letters, for example e_meil, reg_aeg, viimase_muutm_aeg, parklakoha_kood, nimetus, on_aktiivne, korgus, and laius. Uppercase prefixes such as PK_, FK_, IXFK_, pfK_, and CHK_ appear only in key, index, or constraint names, which are not treated as attributes or columns for this rule."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Tables that represent domain entities use singular names such as Isik, Klient, Parklakoht, Parklakoha_kat, Parklakoha_kat_omamine, Tootaja, and Tootaja_rolli_omamine. Plural forms are used only in register or package titles rather than in the actual table names, so this smell does not occur."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class, table, and attribute or column names do not use type encoding prefixes or abbreviations such as tbl_, uc_, or strName. The only prefixes in the diagrams are PK_, FK_, IXFK_, pfK_, and CHK_ on keys and constraints, which are explicitly allowed and do not violate this rule."
+    }
+  ]
+}

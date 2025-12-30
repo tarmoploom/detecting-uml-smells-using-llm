@@ -1,0 +1,115 @@
+{
+  "file_name": "Juuksurisalongi_treeningud",
+  "timestamp": "2025-12-30T12:04:20Z",
+  "llm_model": "GPT-5.1",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No empty diagrams were found; each diagram page shows multiple modeled elements (actors, use cases, classes, tables, or states). "
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the use case diagram 'Teenuste funktsionaalne alls\u00fcsteem' all visible use cases are connected via associations or include relationships within the system boundary, and no use case oval is clearly left without any link to an actor. "
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The use cases in the use case diagram have distinct meanings (e.g., 'Registreeri teenus', 'Aktiveeri teenus', 'L\u00f5peta teenus', 'Unusta teenus') and there are no two or more use cases whose names clearly describe the same activity for the same actor. "
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Within each package (e.g., 'Isikute register', 'Klassifikaatorite register', 'Teenuste register') there is only one model element with each primary name; names like 'Klassifikaator' appear in multiple packages/diagrams but not duplicated within a single package. "
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "In the transformed database diagrams, repeated domain data values (such as service state codes, customer state codes, country codes) are normalized into separate tables and referenced via foreign keys; there are no clear cases where the same business value is stored redundantly in multiple tables without an FK relationship. "
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use case names are written in a consistent verbal form starting with an imperative verb, such as 'Registreeri teenus', 'Aktiveeri teenus', 'L\u00f5peta teenus', 'Vaata teenuste koondaruannet', and 'Unusta teenus'. "
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the state diagram 'Teenuse seisundidiagramm', every state (Ootel, Aktiivne, Mitteaktiivne, L\u00f5petatud, Unustatud) has at least one incoming transition from the initial state or another state, so no state is clearly unreachable. "
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In both activity diagrams ('Teenuse l\u00f5petamise tegevusdiagramm' and 'Teenuse aktiveerimise tegevusdiagramm') each action node such as 'Otsi teenust', 'Vaata k\u00f5iki teenuseid, mida saab l\u00f5petada', 'Vaata k\u00f5iki teenuseid, mida saab aktiveerida', 'Vali teenus', and the corresponding 'L\u00f5peta'/'Aktiveeri' actions has at least one incoming control flow, so no action is unreachable. "
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All associations in the UML class diagrams show multiplicities like '1' and '0..*' at both ends (for example between 'Isik' and 'Kasutajakonto', or 'Teenus' and classification types), and database diagrams use standard FK/crow's-foot connectors which are exempt, so no relationship visibly lacks multiplicity information at both ends. "
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The use case diagram 'Teenuste funktsionaalne alls\u00fcsteem' contains at least 11 central elements (use cases such as 'Tuvasta kasutaja', 'Registreeri teenus', 'Aktiveeri teenus', 'L\u00f5peta teenus', 'Unusta teenus', and multiple 'Vaata ... teenuseid' use cases), exceeding the threshold of 10 central elements on a single diagram. "
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In each class and database diagram, no single class or table has six or more distinct relationship lines; for example 'Teenus', 'Isik', and 'Tootaja' have several connections but at most about four to five visible connectors on any one diagram. "
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Across all diagrams, related elements (e.g., classes-to-classes, tables-to-tables, actors-to-use-cases) are positioned at broadly similar distances, and no relationship line is clearly more than twice the average distance between elements on the same diagram. "
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use case names and activity actions start with active verbs, such as 'Registreeri teenus', 'Aktiveeri teenus', 'L\u00f5peta teenus', 'Vaata k\u00f5iki teenuseid, mida saab l\u00f5petada', and 'Otsi teenust'; decision nodes that start with 'Kas ...?' are not actions but decision diamonds. "
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute, or use case has a name of three or fewer characters; even shorter tokens like 'OP1' appear only as part of transition labels, invariants, or notes, not as element names. "
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class names begin with an uppercase letter and are singular domain terms such as 'Isik', 'T\u00f6\u00f6taja', 'Teenus', 'Klient', and 'Klassifikaator'; plural wordings like 'Teenuste register' are used only for register/package names, not for individual entity classes. "
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute and column names consistently start with lowercase letters (e.g., 'eesnimi', 's\u00fcnni_kp', 'meil', 'on_aktiivne', 'hinnavahemiku_algus'); uppercase prefixes such as 'PK', 'FK', 'pfK', and 'IXFK' appear only as constraint or index labels, not as actual attribute names. "
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database table names for entities are singular, such as 'Isik', 'Kasutajakonto', 'Teenus', 'Klient', 'Tootaja', and various '**seisundi_liik' tables; plural-sounding names occur only in register or diagram titles which are excluded by the interpretation rules. "
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, or attribute uses a type-indicating prefix like 'tbl*', 'uc_', or 'strName'; the only prefixes present are 'PK_', 'FK_', 'pfK_', and 'IXFK_' on keys and indexes, which are explicitly permitted and refer to constraints rather than element names. "
+    }
+  ]
+}

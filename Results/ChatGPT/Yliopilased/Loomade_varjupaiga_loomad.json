@@ -1,0 +1,115 @@
+{
+  "file_name": "Loomade_varjupaiga_loomad",
+  "timestamp": "2025-12-30T13:25:45Z",
+  "llm_model": "GPT-5.1",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Every page that declares a diagram (package, use-case, activity, state, class, or database diagram) contains visible elements such as classes/tables, use cases, or states; no page shows an empty diagram frame without elements. "
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "The only explicit use-case diagram ('Loomade funktsionaalne alls\u00fcsteem' on page 2) shows multiple actors and multiple use cases, but the parsed PDF text does not clearly indicate any use-case oval that is drawn without at least one association to an actor, and no such unconnected use case is visibly identifiable from the available content; therefore no violation can be asserted. "
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "On the use-case diagram, all use-case names are distinct activities such as 'Tuvasta kasutaja', 'Vaata loomade koondaruannet', 'M\u00e4rgi loom surnuks', 'Registreeri loom', 'Muuda looma infot', 'Aktiveeri loom', 'Muuda loom mittaktiivseks', 'Vaata aktiivseid loomi', 'Vaata k\u00f5iki loomi', 'Vaata k\u00f5iki mitteaktiivseid loomi', and 'Otsi looma kiibi j\u00e4rgi'. None are duplicate descriptions of the same activity associated with the same actor. "
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "The only package diagram ('Loomade FASiga seotud p\u00e4devusalad ja registrid' on page 1) contains named elements such as 'Loomade funktsionaalne alls\u00fcsteem', 'Isikute register', 'Klassifikaatorite register', 'T\u00f6\u00f6tajate register', and 'Loomade register', but none share the same primary element name within the same package. Repeated classifier-type labels are treated as metadata per the interpretation rules. "
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Across the database and class diagrams, repeated business keys such as various '*_id' or '**kood' columns are consistently linked via explicit foreign-key style connectors (e.g., between 'Loom', 'Adopteerimine', 'Kommentaar', 'Protseduur', and classification tables), and no case is visible where the same data value is stored redundantly across tables without an FK relationship. Identically named generic fields like ids or dates in different contexts do not count as redundancy under the given rule. "
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use-case names on the use-case diagram are expressed in a consistent verb-phrase form (e.g., 'Tuvasta kasutaja', 'Vaata ...', 'M\u00e4rgi ...', 'Registreeri loom', 'Muuda looma infot', 'Aktiveeri loom', 'Otsi looma kiibi j\u00e4rgi'); there is no mixture of verb-less noun titles versus verb-based titles within that diagram. "
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The state-machine diagrams ('Registreeri_loom' and 'Looma seisundidiagramm') each show an initial state (e.g., 'Alg' or 'Algus') and a small set of named states such as 'Aktiivne', 'Mitteaktiivne', 'Surnud', along with textual transition descriptions connecting them (e.g., events describing arrival at the shelter, leaving the shelter, or death). No state appears only as an isolated label without any incoming path from other states or from the initial state, so an unreachable state is not clearly present. "
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "The activity diagram 'Looma sissekande l\u00f5petamise tegevusdiagramm' on page 3 shows a start node, a sequence of actions (such as 'Vaata k\u00f5iki loomi, keda saab surnuks m\u00e4\u00e4rata', 'Otsi loom', 'Vali loom', 'L\u00f5peta valitud looma sissekanne') and decision nodes with guards. All actions appear in the main flow between the initial and final nodes; none are visually detached or appear without incoming control flow, so no unreachable action can be clearly identified. "
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "In the class and database diagrams, associations and FK-like connectors include multiplicity indicators such as '0..*' and '1', or are standard FK connectors in the transformed database diagrams (e.g., between 'Isik' and 'Isiku_seisundi_liik', 'Loom' and its classification tables, and between 'Tootaja' and related tables). There is no clearly visible UML-style relationship line that entirely lacks multiplicity information at both ends under the interpretation rules. "
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "At least one diagram has 10 or more central elements. The use-case diagram 'Loomade funktsionaalne alls\u00fcsteem' contains 11 distinct use-case ovals (e.g., 'Tuvasta kasutaja', 'Vaata loomade koondaruannet', ..., 'Otsi looma kiibi j\u00e4rgi') which are counted as central elements. Additionally, the 'Klassifikaatorite register' class diagram includes more than 10 classes/tables (various '**seisundi_liik', '**t\u00fc\u00fcp', and other classifier entities). Therefore the size smell S1.1 is present. "
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": true,
+      "detected": false,
+      "justification": "Some classes/tables such as 'Loom' and 'Tootaja' participate in multiple relationships on their respective diagrams (for example, 'Loom' links to several classification tables and 'Tootaja', and 'Tootaja' links to 'Isik', 'Tootaja_seisundi_liik', 'Loom', 'Adopteerimine', and 'Tootaja_rolli_omamine'), but from the parsed text and available visual hints it is not unambiguously clear that any single class/table has 6 or more distinct, separately drawn relationship lines on one diagram (bundled FK connectors may share a single line). Under the 'when in doubt' rule, S1.2 is not marked as detected. "
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "The textual extraction of the PDF does not provide reliable spatial coordinates or distances between elements, and the available images do not clearly demonstrate any pair of related elements separated by more than twice the average inter-element distance on a diagram. Without precise layout information, no explicit spacing outlier can be confidently identified. "
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use-case names and activity actions begin with active verbs or verb phrases. Examples include 'Tuvasta kasutaja', 'Vaata loomade koondaruannet', 'M\u00e4rgi loom surnuks', 'Registreeri loom', 'Muuda looma infot', 'Aktiveeri loom', 'Muuda loom mittaktiivseks', 'Vaata k\u00f5iki loomi', 'Vaata k\u00f5iki mitteaktiivseid loomi', 'Otsi loom', 'Vali loom', and 'L\u00f5peta valitud looma sissekanne'. No use case or activity action is named purely as a noun phrase or otherwise lacks an initial verb. "
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Across the diagrams, names of classes/tables (e.g., 'Isik', 'Loom', 'Protseduur', 'Kommentaar', 'Adopteerimine'), attributes/columns (such as 'tootaja_id', 'loom_id', 'isikukood', 'nimetus'), and use cases are all longer than three characters. There are no standalone class, table, attribute, or use-case names of length three or less (short substrings like 'id' only appear as parts of longer names like 'loom_id'). "
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class and table names in the diagrams (for example, 'Isik', 'T\u00f6\u00f6taja', 'Loom', 'Kommentaar', 'Protseduur', 'Adopteerimine', 'Loom_Looma_kategooria') all begin with uppercase letters and are singular concepts in the modeling context. Names that are grammatically plural are used only in register titles like 'Isikute register' or 'Adopteerimiste register', which are considered register containers and are exempt per the interpretation rules. "
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": true,
+      "detected": true,
+      "justification": "Several database tables use column names that begin with uppercase letters. For instance, in 'Klassifikaatorite register (transformed)' the primary key columns 'Adopt_stat_kood', 'Isiku_seisundi_liik_kood', 'Kommentaar_tyyp_kood', 'Riik_kood', and similar keys for 'Loom_toug', 'Tootaja_roll', 'Vaktsiin_tyyp', etc., all start with an uppercase letter. These are attribute/column names (not merely metadata) beginning with uppercase, so N3.2 is violated. "
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Individual entity tables such as 'Isik', 'Loom', 'Kommentaar', 'Protseduur', 'Adopteerimine', and the various classification tables use singular-style names. Plural wording appears only in higher-level register titles like 'Isikute register' and 'Adopteerimiste register', which are explicitly registers and thus excluded from this rule. No entity table itself is clearly plural. "
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, or attribute name uses a type-indicating prefix or abbreviation such as 'tbl*', 'uc*', or 'strName'. Prefixes like 'PK*', 'FK_', 'IXFK_', and 'AK_' appear only in constraint or index names (e.g., 'PK_Loom', 'FK_Loom_Loom_toug'), which are not class/table/attribute names and are also allowed exceptions for PK/FK prefices under the interpretation rules. Therefore N4.1 is not triggered. "
+    }
+  ]
+}

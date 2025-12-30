@@ -1,0 +1,115 @@
+{
+  "file_name": "Restorani_lauad",
+  "timestamp": "2025-12-30T15:54:07Z",
+  "llm_model": "GPT-5.1",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The PDF contains numerous non-empty diagrams: a package or overview diagram on page 1, a use-case diagram on page 2, two activity diagrams on pages 3 and 4, several class or conceptual diagrams on pages 5 to 10 and 12 to 13, a state diagram on page 11, and transformed database diagrams on pages 14 to 20. Each of these diagrams shows at least one central element such as a class, table, use case, or state, so there is no empty diagram."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "There is a single use-case diagram on page 2 titled Laudade funktsionaalne allsusteem, which shows multiple actors such as Laudade haldur, Juhataja, Uudistaja, Klient, and Raamatupidaja around the system. All use cases are drawn within that system boundary, and there is no unambiguous evidence of any use-case oval that is completely unassociated with every actor, so this smell is not detected."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "On the use-case diagram on page 2, each use case name describes a distinct activity, for example Registreeri laud, Aktiveeri laud, Muuda laud, Muuda lauda mitteaktiivseks, Unusta laud, and several Vaata based queries. There is no pair of use cases that clearly describe the same activity while being associated with the same actor, so G6.1 does not apply."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": true,
+      "detected": false,
+      "justification": "In the package or overview diagram on page 1, each package such as Laudade funktsionaalne allsusteem, Isikute register, Klassifikaatorite register, and Laudade register lists its internal elements. Within any single package, each primary element name appears only once. Names that look similar across different packages or appear as classifier-type metadata are not repeated distinct elements within the same package, so no violation of G6.2 is visible."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "In the transformed database diagrams on pages 14 to 20, repeated business identifiers such as isik_id, laua_kood, laua_kategooria_kood, ruumityyp_kood, and similar values are consistently connected between tables via explicit foreign-key relationships, which are annotated with FK connectors and constraint names. There is no clear case where the same business data value is stored redundantly in multiple tables without a foreign-key connection, so denormalization per G6.3 is not observed."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use-case names on the diagram Laudade funktsionaalne allsusteem on page 2 follow a consistent verb-first form in Estonian, including Tuvasta kasutaja, Vaata laudade koondaruannet, Lopeta laud, Registreeri laud, Muuda laud, Aktiveeri laud, Muuda lauda mitteaktiivseks, Vaata aktiivseid laudu, Vaata koiki laudu, Vaata koiki ootel voi mitteaktiivseid laudu, and Unusta laud. There are no noun-only or otherwise differently formed use-case names, so naming is consistent."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The state diagram laua seisundidiagramm on page 11 shows an initial node leading into the state Ootel and transitions among the states Ootel, Aktiivne, Mitteaktiivne, Unustatud, and Lopetatud. Each named state has at least one incoming transition from the initial state or another state, so no state is unreachable."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Both activity diagrams, laua lopetamise tegevusdiagramm on page 3 and laua aktiveerimise tegevusdiagramm on page 4, depict continuous control flows from the initial node through actions such as Vaata koiki laudu, mida saab lopetada, Otsi lauda, Vali laud, Lopeta valitud lauda, Soovib vaadata ootel v\u00f5i mitteaktiivseid laudu, Kuvab ootel v\u00f5i mitteaktiivsed lauad, Valib laua nimekirjast, Annab korralduse lauda aktiveerida, and Aktiveerib laua ja salvestab andmed, ending at final nodes. All action nodes are connected into these flows and no action appears isolated without an incoming path from the start."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "In the class and database diagrams on pages 5 to 10 and 12 to 20, relationships between elements either show explicit multiplicities such as 1 or 0..* around associations in conceptual and register diagrams or are standard database foreign-key or crow-foot connectors in the transformed diagrams. According to the interpretation rules, these connectors imply multiplicity, and there is no clear instance of a UML-style association line between two elements that completely lacks multiplicity indicators or implied notation at both ends. Therefore, G15.3 is not triggered."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The use-case diagram Laudade funktsionaalne allsusteem on page 2 shows 11 distinct use cases: Tuvasta kasutaja, Vaata laudade koondaruannet, Lopeta laud, Registreeri laud, Muuda laud, Aktiveeri laud, Muuda lauda mitteaktiivseks, Vaata aktiivseid laudu, Vaata koiki laudu, Vaata koiki ootel voi mitteaktiivseid laudu, and Unusta laud. Use cases are central elements under this rule, and having 11 of them on a single diagram exceeds the threshold of 10, so S1.1 is detected for that diagram."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Across the class and database diagrams, key entities such as Laud, Isik, and Tootaja participate in several relationships, but counting distinct visible connector lines on any single diagram never reaches six. For example, in the diagram Laudade register transformed on page 14, the table laud connects to laua_kategooria_omamine, Laua_seisundi_liik, Ruum, and Tootaja but has fewer than six separate relationship lines. Therefore, S1.2 is not triggered."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "In the diagrams where relationships are drawn, including use-case, class, database, and state diagrams, related elements are placed in reasonably close proximity and connecting lines are of similar length. There is no clearly extreme case where a relationship line spans more than twice the typical distance between elements on that diagram, so S2.1 is not detected."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Every use case name on the use-case diagram on page 2 starts with an active verb in Estonian, including Tuvasta, Vaata, Lopeta, Registreeri, Muuda, Aktiveeri, and Unusta. In the activity diagrams on pages 3 and 4, the action names similarly begin with verbs such as Vaata, Otsi, Vali, Lopeta, Soovib vaadata, Kuvab, Annab korralduse, Teatab, and Aktiveerib. Thus all use cases and activity actions comply with the verb-first naming requirement."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Reviewing names of classes, tables, attributes or columns, and use cases across all diagrams shows that they are longer than three characters. Examples include Isik, Laud, Ruum, Klient, Tootaja, attributes like e_meil, isikukood, kohtade_arv, nimetus, and use cases such as Lopeta laud and Registreeri laud. No element has a name of length three or fewer characters, so N1.2 is not violated."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Some entity tables or classes that represent singular domain concepts have names starting with a lowercase letter. On the class diagram Laudade register on page 10 and the transformed diagram Laudade register transformed on page 14, there is a class or table laua_kategooria_omamine and in the transformed diagram a table laud; both names begin with the lowercase letter l. These represent individual ownership records and individual tables rather than register collections, so this violates the convention that class or table names should start with an uppercase letter."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute and column names throughout the diagrams are written in lowercase or lowercase with underscores, such as e_meil, isikukood, kohtade_arv, ruumityyp_kood, and laua_kood. Where PK, FK, or index markers appear, for example PK laua_kood and FK ruumityyp_kood, the uppercase PK and FK prefixes are diagram annotations rather than part of the actual column name. There are no attribute or column names whose actual name starts with an uppercase letter, so N3.2 is not triggered."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database table names in the transformed diagrams on pages 14 to 20 are singular domain entities such as laud, laua_kategooria_omamine, Isik, Kasutajakonto, Klient, Tootaja, Ruum, Ruumi_tyyp, Laua_kategooria, and various *seisundi_liik tables. None of these are plural forms like Lauad or Isikud, and register names are used only as diagram or package titles rather than table names. Therefore, no violation of N3.3 is observed."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Names of classes, tables, and attributes do not include type-indicating prefixes or abbreviations such as tbl_, uc_, or strName. The only common prefixes are PK_, FK_, pfK_, and IXFK_ in key and index names, which are explicitly allowed by the rule. As a result, there is no occurrence of type-encoded naming that would trigger N4.1."
+    }
+  ]
+}

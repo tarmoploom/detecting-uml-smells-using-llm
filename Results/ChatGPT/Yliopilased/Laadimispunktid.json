@@ -1,0 +1,115 @@
+{
+  "file_name": "Laadimispunktid",
+  "timestamp": "2025-12-30T12:51:33Z",
+  "llm_model": "GPT-5.1",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Every page labeled as a diagram contains visible central elements (classes/tables in register diagrams, use cases in the functional subsystem diagram, actions in activity diagrams, and states in the state diagram); no diagram frame appears empty. "
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "The only use case diagram, 'Laadimispunktide funktsionaalne alls\u00fcsteem', shows multiple actors around the system and no use case oval is explicitly shown as completely isolated; there is no clear evidence of a use case without any association to an actor. Lists of functions inside packages on the overview/context diagram are treated as textual contents, not as use case ovals, so they are excluded from this rule. "
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the use case diagram the use cases have distinct meanings (e.g., 'Registreeri laadimispunkt', 'Aktiveeri laadimispunkt', 'L\u00f5peta laadimispunkt', 'Unusta laadimispunkt', different 'Vaata ...' variants). None are obvious synonyms describing the same activity for the same actor as required by this rule. "
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the package/overview diagram the elements inside a given package have unique primary names (e.g., within 'Klassifikaatorite register' the items 'Isiku_seisundi_liik', 'Klassifikaator', 'Laadimispunkti_kategooria', etc. are all different). In the class/package diagrams there is at most one model element with a given name per package; repeated labels such as 'Klassifikaatori t\u00fc\u00fcp' are classifier-type metadata, not separate elements, per the interpretation rules. "
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Across the database diagrams, repeated column names correspond either to generic system fields (e.g., 'nimetus', 'kood', 'on_aktiivne') or to foreign keys that are explicitly connected by FK relationships (e.g., 'laadimispunkti_kood' in link tables, 'isik_id' in several tables). There is no clear case where the same data value is stored redundantly in multiple tables without an FK connection between them. "
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use case names in the 'Laadimispunktide funktsionaalne alls\u00fcsteem' diagram use a consistent imperative-verb form such as 'Tuvasta kasutaja', 'Registreeri laadimispunkt', 'Vaata laadimispunktide koondaruannet', 'Unusta laadimispunkt'; there is no mixture of verb-style and noun-only use case names. "
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the 'Laadimispunkti seisundidiagramm' state diagram all named states (Ootel, Aktiivne, Mitteaktiivne, L\u00f5petatud, Unustatud) are connected by transitions and appear on paths starting from the initial node; no state is clearly isolated or without an incoming transition. "
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Both activity diagrams titled 'Laadimispunkti l\u00f5petamise tegevusdiagramm' show each action (e.g., 'Vaata k\u00f5iki laadimispunkte, mida saab l\u00f5petada', 'Otsi laadimispunkti', 'Vali laadimispunkt', 'L\u00f5peta valitud laadimispunkt', 'Salvesta andmed') on a flow from the initial node to the final node, with incoming edges from decisions or previous actions; there are no explicit action nodes shown without any incoming control flow. "
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "In the conceptual class diagrams, visible association lines between classes/tables carry multiplicity indicators such as '1', '0..1', or '0..*' (e.g., between 'Isik' and 'Riik', or 'T\u00f6\u00f6taja' and 'T\u00f6\u00f6taja_rolli_omamine'). In the transformed database diagrams, relationships are drawn as standard crow's-foot / FK connectors, which are exempt from this rule. No UML-style association line is clearly shown without multiplicities on both ends. "
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Several diagrams contain 10 or more central elements (classes/tables/use cases). For example, the 'Laadimispunktide funktsionaalne alls\u00fcsteem' use case diagram shows 11 distinct use cases, and the 'Laadimispunktide register' and 'Klassifikaatorite register (transformed)' class/database diagrams each show about 10 different tables/classes. Context/overview elements on the first package diagram were not counted, per the interpretation rules. "
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": true,
+      "detected": false,
+      "justification": "Although some elements such as 'Isik' and 'Laadimispunkt' are relatively central in their diagrams, they appear to have at most five distinct relationship lines each. The diagrams do not clearly show any single class or table with six or more separate drawn relationship lines to other elements on the same diagram. "
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Across the diagrams, related elements (e.g., tables linked by FK relationships, classes linked in conceptual models, states and actions) are placed at generally comparable distances, with connectors of similar lengths; there is no clear instance where one related pair is spaced more than twice as far apart as the average spacing of other related elements on the same diagram. "
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All visible use case names start with an active verb (e.g., 'Tuvasta', 'Registreeri', 'Aktiveeri', 'Muuda', 'Vaata', 'Unusta'), and the activity diagram actions likewise start with verbs (e.g., 'Vaata ...', 'Otsi ...', 'Vali ...', 'L\u00f5peta ...', 'Salvesta andmed'). Question nodes like 'Kas soovib otsida?' and initial/final nodes ('Algus', 'L\u00f5pp') are decisions or control nodes, not actions, so they are outside the scope of this rule. "
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Class, table, attribute, and use case names in the diagrams are all longer than three characters (e.g., 'Isik', 'Kasutajakonto', 'Laadimispunkt', 'Pakett', 'reg_aeg'); short tokens like 'id' only appear inside type/constraint annotations such as '{id}' or as parts of longer names like 'isik_id', and are not used as standalone names. "
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Entity class and table names start with uppercase letters and are singular (e.g., 'Isik', 'Klient', 'Pakett', 'Laadimispunkt', 'T\u00f6\u00f6taja'). Plural or lowercase names are used only in register/package titles such as 'Isikute register' or 'Pakettide register', which are explicitly excluded from this rule. "
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute and column names are written in lowercase or lowercase_with_underscores (e.g., 'e_meil', 'reg_aeg', 'laadimispunkti_kood', 'on_n\u00f5us_t\u00fclitamisega'). Names that begin with uppercase letters such as 'PK_Isik' or 'AK_Isik_isikukood_riik_kood' are index or key identifiers under \u00abPK\u00bb/\u00abunique\u00bb stereotypes, not attribute/column names, so they are outside the rule's scope. "
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database table names that represent entities are singular (e.g., 'Isik', 'Klient', 'Pakett', 'Laadimispunkt', 'Tootaja', 'Laadimispunkti_kategooria'), and plural wording only appears in the names of register containers like 'Pakettide register (transformed)', which are excluded by the interpretation rule. "
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class and table names do not include technical type prefixes such as 'tbl_', 'uc_', or 'strName'. Prefixes appear only in constraint or index identifiers like 'PK_Isik', 'FK_Laadimispunkt_Laadimispunkti_seisundi_liik', 'pfK isik_id', and 'IXFK_Laadimispunkt_Tootaja', all of which are explicitly allowed (PK_, FK_, pfK_, IXFK_) or apply to constraints rather than to class/table/attribute names. "
+    }
+  ]
+}

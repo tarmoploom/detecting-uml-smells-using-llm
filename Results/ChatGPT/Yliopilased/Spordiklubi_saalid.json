@@ -1,0 +1,115 @@
+{
+  "file_name": "Spordiklubi_saalid",
+  "timestamp": "2025-12-30T19:44:47Z",
+  "llm_model": "GPT-5.1",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": true,
+      "detected": true,
+      "justification": "On page 18 (diagram 'Saali eluts\u00fcklid (transformed)'), only the diagram heading is shown and no classes, tables, states, or relationships are visible, so this is an empty diagram. "
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "The only use case diagram ('Saalide funktsionaalne alls\u00fcsteem' on page 2) shows all use case ovals inside the system boundary with connections to actors or include relationships; there is no clearly isolated use case with no association to any actor."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the use case diagram on page 2, each use case name describes a distinct activity (e.g., 'Aktiveeri saal', 'L\u00f5peta saal', 'Registreeri saal', 'Unusta saal'); there are no two use cases that clearly describe the same activity while being associated with the same actor."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No package diagram shows multiple different model elements with the same primary name inside the same package. Repeated labels such as 'Klassifikaatori t\u00fc\u00fcp' on the classifier diagrams (pages 7\u20138) are classifier-type annotations, which the rules specify must be treated as metadata rather than separate elements. "
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Where the same logical data (such as person identifiers or status codes) appears in several tables on the transformed database diagrams (pages 13\u201317, 19), the tables are connected by explicit foreign-key connectors, so there is no unconnected denormalized duplicate column storing redundant copies of the same value."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use case names in the 'Saalide funktsionaalne alls\u00fcsteem' diagram (e.g., 'Tuvasta kasutaja', 'Vaata saalide koondaruannet', 'Registreeri saal', 'Muuda saal mittaktiivseks') consistently use a verb\u2013object form; there is no mix of verb-based and purely noun-based naming styles."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the state diagram 'Saali seisundidiagramm' on page 11, each state (Ootel, Aktiivne, Mitteaktiivne, L\u00f5petatud, Unustatud) has at least one incoming path from the initial pseudostate or from another state, so no state is unreachable. "
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the activity diagrams on pages 3 and 4, every action node (e.g., 'Vaata k\u00f5iki saale, mida saab l\u00f5petada', 'Otsi saali', 'Vali saal', 'Aktiveeri valitud saal') is connected by control flows starting from the initial node, so no action is structurally unreachable."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All class diagrams either show multiplicity labels (like '1', '0..*') at both ends of UML associations (e.g., in 'Isikute register', 'Saalide register') or use database-style foreign-key connectors and crow's-foot notation in the transformed diagrams, which are explicitly exempt. No UML-style association line is shown without any multiplicity indication at both ends."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The use case diagram 'Saalide funktsionaalne alls\u00fcsteem' (page 2) contains 11 distinct use case ovals inside the system boundary ('Tuvasta kasutaja', 'Vaata saalide koondaruannet', 'L\u00f5peta saal', 'Registreeri saal', 'Muuda saal', 'Aktiveeri saal', 'Muuda saal mittaktiivseks', 'Vaata aktiivseid saale', 'Vaata k\u00f5iki saale', 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid saale', 'Unusta saal'), exceeding the threshold of 10 central elements on a single diagram. "
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Across all class and database diagrams, no single class or table is clearly shown with six or more distinct relationship lines to other elements on the same diagram; the most connected elements (such as 'Isik' or 'Saal') appear to have fewer than six visible connectors."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "In the diagrams, related elements are laid out at roughly similar distances; there is no clearly visible case where a related pair of elements is placed at a distance more than twice the average spacing between elements on that diagram."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use case names and activity actions begin with active verbs (e.g., 'Tuvasta', 'Vaata', 'Registreeri', 'Muuda', 'Aktiveeri', 'Otsi', 'Vali', 'L\u00f5peta'), so there are no use cases or actions whose names fail to start with an active verb."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute/column, or use case name consists of 3 or fewer characters; even short-looking names like 'Riik', 'Saal' or status-operation codes 'OP1' are either at least 4 characters long or not used as class/table/attribute/use-case names."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class and table names such as 'Isik', 'Saal', 'Klient', 'Tootaja', 'Saali_kategooria', 'Saali_seisundi_liik' all start with uppercase letters, and plural forms are only used for register or collection concepts (e.g., 'Isikute register', 'Klientide register'), which the interpretation rules exclude from this smell."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": true,
+      "detected": true,
+      "justification": "Several attributes/columns begin with uppercase letters, for example in 'Saalide register' the class 'Saal' has attributes 'Kommentaar', 'Laius', 'Pikkus', 'Tunni_hind', 'Saali_kood', and in the transformed table these appear as 'Kommentaar', 'Pikkus', 'Laius', 'Tunni_hind', etc., all starting with uppercase characters. "
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database table names in the transformed diagrams (e.g., 'Isik', 'Kasutajakonto', 'Klient', 'Saal', 'Saali_kategooria_omamine', 'Tootaja', 'Tootaja_rolli_omamine') are singular or compound nouns, not simple plurals; plural wording appears only in register or collection names, which are excluded by the interpretation rules."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class, table, and attribute names do not use type-indicating prefixes such as 'tbl_', 'uc_', or 'strName'. The only prefixes present are database-key annotations like 'PK_', 'FK_', 'pfK_', and 'IXFK_', which the rules allow as exceptions."
+    }
+  ]
+}

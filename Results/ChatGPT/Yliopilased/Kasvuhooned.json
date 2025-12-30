@@ -1,0 +1,115 @@
+{
+  "file_name": "Kasvuhooned",
+  "timestamp": "2025-12-30T12:17:12Z",
+  "llm_model": "GPT-5.1",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Every page labeled as a diagram (pages 1\u201318) contains visible elements such as packages, use cases, actions, classes, tables, or states; there are no empty diagrams. "
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "There is one clear use case diagram, 'Kasvuhoonete funktsionaalne alls\u00fcsteem' (page 2), but in the available content no use case is explicitly shown as unconnected to all actors; there is no unambiguous evidence of a use case without any actor association, so this smell cannot be confirmed. "
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "On the use case diagram (page 2), all use case names are distinct (e.g., 'Registreeri kasvuhoone', 'Aktiveeri kasvuhoone', 'Unusta kasvuhoone') and none obviously describe the same activity for the same actor, so no duplicate-meaning use cases are visible. "
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No package diagram shows multiple separate model elements with exactly the same primary name within the same package; repeated names appear only as classifier metadata or qualified names (such as 'Klassifikaatorite register::Riik') rather than distinct duplicated elements. "
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "In the database diagrams (pages 13\u201318), repeated column names like 'nimetus', 'on_aktiivne' or IDs appear in different classification tables but correspond to different code domains and are connected through explicit foreign keys; no clear case of the same data value stored redundantly in multiple tables without a foreign key is visible. "
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use case names on the use case diagram (page 2) follow a consistent verb-first form such as 'Tuvasta kasutaja', 'Registreeri kasvuhoone', 'Vaata k\u00f5iki kasvuhooneid', so there is no inconsistency of using verb vs noun forms in use case naming. "
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the state diagram 'Kasvuhoone seisundidiagramm' (page 11), each state (Ootel, Aktiivne, Mitteaktiivne, L\u00f5petatud, Unustatud) has incoming transitions from the initial state or from another reachable state; no state appears isolated or unreachable from the initial pseudostate. "
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Both activity diagrams ('Kasvuhoone l\u00f5petamise tegevusdiagramm' on page 3 and 'Kasvuhoone aktiveerimise tegevusdiagramm' on page 4) show actions embedded in the main flow or in clearly labeled branches (e.g., 'Vaata k\u00f5iki kasvuhooneid, mida saab l\u00f5petada', 'Otsi kasvuhoone', 'Vali kasvuhoone'); no action is presented as a disconnected or standalone node, so no unreachable action can be confirmed. "
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All associations in the conceptual class diagrams (pages 5\u201312) either show explicit multiplicity labels (such as '1', '0..*') near the association name or are generalization/classifier-type links; database diagrams (pages 13\u201318) use foreign key connectors, which are exempt. There is no clear UML-style association between two elements that completely lacks multiplicities at both ends. "
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The use case diagram 'Kasvuhoonete funktsionaalne alls\u00fcsteem' (page 2) contains at least 11 distinct use cases (e.g., 'Tuvasta kasutaja', 'Registreeri kasvuhoone', 'Unusta kasvuhoone', multiple 'Vaata ...' variants), exceeding the threshold of 10 central elements in a single diagram. "
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": true,
+      "justification": "In the database diagram 'Isikute register (transformed)' (page 13), the table 'Isik' participates in multiple distinct foreign key relationships: to 'Isiku_seisundi_liik' (FK_Isik_Isiku_seisundi_liik), to 'Riik' (FK_Isik_Riik), from 'Kasutajakonto' (FK_Kasutajakonto_Isik), from 'Klient' (FK_Klient_Isik), and from 'Tootaja' via two separate foreign keys (FK_Tootaja_Isik and FK_Tootaja_mentor). These correspond to at least six distinct relationship lines touching 'Isik' on this diagram, triggering the rule. "
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": false,
+      "detected": false,
+      "justification": "From the available renderings, related elements in each diagram appear to be laid out in typical proximity, and there is no explicit evidence that any related pair is placed at more than twice the average inter-element distance; with no clear extreme spacing, this smell cannot be established. "
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Most activity actions and all use cases start with an active verb (e.g., 'Vaata ...', 'Otsi ...', 'L\u00f5peta ...'), but in the activation activity diagram (page 4) there is an action labeled 'Kasutaja n\u00e4eb eba\u00f5nnestumist', which begins with the noun 'Kasutaja' rather than a verb, violating the verb-first naming rule for actions. "
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Across all diagrams, names of classes, tables, attributes, and use cases are longer than three characters (e.g., 'Isik', 'Kasv uhoone', 'reg_aeg'); no element with a name of length three or less is clearly used as a class, table, attribute, or use case name. "
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Entity class and table names for domain objects (e.g., 'Isik', 'T\u00f6\u00f6taja', 'Kasv uhoone', 'Klient') all start with an uppercase letter and are singular; plural forms like 'Isikute register' and 'Klassifikaatorite register' denote register/collection structures and are excluded by the interpretation rules. "
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute and column names in both conceptual and transformed diagrams (e.g., 'e_meil', 'reg_aeg', 'kh_seisund_kood', 'tootaja_seisundi_kood') consistently start with lowercase letters; uppercase prefixes like 'PK_' or 'FK_' are used only in constraint/index names, not in attribute/column names themselves. "
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database tables representing domain entities use singular names such as 'Isik', 'Kasutajakonto', 'Kasvuhoone', 'Klient', 'Tootaja'; pluralized names occur only in register/context labels (e.g., 'Isikute register'), which are explicitly excluded from this rule. "
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, or attribute name uses a type-indicating prefix or abbreviation such as 'tbl_', 'uc_', or 'strName'; the only prefixes of this form are 'PK_', 'FK_', 'pfK_', or index names, which are allowed exceptions and not element names. "
+    }
+  ]
+}

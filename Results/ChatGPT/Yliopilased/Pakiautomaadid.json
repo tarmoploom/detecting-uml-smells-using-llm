@@ -1,0 +1,115 @@
+{
+  "file_name": "Pakiautomaadid",
+  "timestamp": "2025-12-30T13:52:07Z",
+  "llm_model": "GPT-5.1",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No empty diagrams were found; every page labeled as a diagram (package, use-case, activity, class/database, or state) contains at least one central element such as a class, table, use case, state, or action. "
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": true,
+      "justification": "On the use-case diagram 'Pakiautomaatide funktsionaalne alls\u00fcsteem' (page 2), the use case 'Tuvasta kasutaja' appears as an oval connected only via \u00abinclude\u00bb relationships from other use cases and has no visible association line to any actor, so there is at least one use case not associated with any actor. "
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the use-case diagram, all use cases have distinct meanings (e.g., registering, activating, deactivating, forgetting, or viewing reports or lists of pakiautomats) and none are duplicate descriptions of the same activity for the same actor; for instance, 'Registreeri pakiautomaat', 'Aktiveeri pakiautomaat', and 'Muuda pakiautomaat mittaktiivseks' describe different life-cycle steps. "
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the package diagram on page 1, each package (such as 'Isikute register', 'Klassifikaatorite register', 'Pakiautomaatide register') lists uniquely named model elements within it, and there are no repeated primary element names inside the same package; repeated words like 'Klassifikaator' are classifier-type metadata, not separate elements. "
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Across the database/class diagrams (both conceptual and transformed), columns that obviously represent the same domain value are connected via foreign key relationships (e.g., various **id and *_kood columns); generic attribute names like 'nimetus' or 'kood' appear in multiple tables but refer to different classifier domains and are not clearly redundant copies of the same data stored without a foreign key. "
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use-case names in the use-case diagram start with an imperative or active verb phrase such as 'Vaata', 'L\u00f5peta', 'Registreeri', 'Muuda', 'Aktiveeri', 'Unusta', and 'Tuvasta', so the naming form is consistent and there is no mix of verb-based and noun-based formulations. "
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the state diagram 'Pakiautomaatide seisundidiagramm' (page 11), each state (Ootel, Aktiivne, Mitteaktiivne, L\u00f5petatud, Unustatud) has at least one incoming transition that can be reached from the initial pseudostate via some sequence of transitions (e.g., initial -> Ootel -> Aktiivne -> Mitteaktiivne, or Ootel -> Unustatud, or Aktiivne -> L\u00f5petatud), so no state is unreachable. "
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In both activity diagrams (pages 3 and 4), every action node (such as 'Vaata k\u00f5iki pakiautomaate, mida saab l\u00f5petada', 'Otsi pakiautomaati', 'Vali pakiautomaat', 'L\u00f5peta valitud pakiautomaat', 'Aktiveeri valitud pakiautomaat', 'N\u00e4eb eba\u00f5nnestumist', 'N\u00e4eb \u00f5nnestumist') participates in flows that connect from the initial node to the final node; there are no isolated actions without a path from the start. "
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All relationships between classes/tables in the class and database diagrams either show explicit multiplicities at their ends (e.g., '0..*', '1') or are drawn as standard database foreign-key/crow's-foot connectors in the transformed diagrams; there are no UML-style association lines that clearly lack multiplicity indicators at both ends. "
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The use-case diagram 'Pakiautomaatide funktsionaalne alls\u00fcsteem' (page 2) displays at least 11 distinct use cases (various 'Vaata ...', 'Registreeri pakiautomaat', 'Aktiveeri pakiautomaat', 'Muuda ...', 'Unusta pakiautomaat', 'Tuvasta kasutaja'), exceeding the threshold of 10 central elements in a single diagram; other diagrams have fewer than 10 central elements. "
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the class and database diagrams, no single class or table has 6 or more distinct relationship lines; for example, central entities like 'Isik' and 'Pakiautomaat' have at most about 4\u20135 visible connectors to other classes/tables in any single diagram, staying below the threshold. "
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Element placement in the diagrams is relatively compact and symmetrical; relationship lines connect elements over broadly similar distances, and there are no cases where a related pair is placed at a distance clearly more than twice the average distance between elements on the same diagram. "
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use-case names and activity actions begin with an active verb (e.g., 'Vaata', 'Otsi', 'Vali', 'L\u00f5peta', 'Aktiveeri', 'Unusta', 'Tuvasta', 'N\u00e4eb'), so there are no use cases or actions whose names fail to start with an active verb. "
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute, or use-case name is 3 or fewer characters long; short labels like 'Alg' appear only as names on initial pseudo-states, which are not classes, tables, attributes, or use cases per the rule. "
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Several class/table names start with a lowercase letter rather than an uppercase letter, for example 'pakiautomaadi_kategooria_omamine' in the Pakiautomaatide register diagrams and 'pakiautomaadi_seisundi_liik' in the transformed classifier diagrams; these represent specific entity tables, not register names, so they violate the rule that class names should not start with lowercase letters. "
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute and column names throughout the class and database diagrams consistently start with lowercase letters (e.g., 'e_meil', 'isikukood', 'reg_aeg', 'on_aktiivne', 'pakiautomaadi_kood'); names that start with uppercase letters belong to keys or index identifiers like 'PK_Isik' or 'FK_Isik_Riik', which are constraint names rather than attribute/column names. "
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database tables and classes that represent entity data (e.g., 'Isik', 'Klient', 'Pakiautomaat', 'Tootaja', 'Kasutajakonto', 'Isiku_seisundi_liik') are all named in singular form; plural-sounding names such as 'Isikute register' describe register packages rather than individual entity tables and are excluded by the interpretation rules. "
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class, table, and attribute names do not use type-encoding prefixes like 'tbl*', 'uc_', or 'strName'; while some column and constraint names include prefixes such as 'PK_', 'FK_', or 'pfK', these are explicitly allowed exceptions and apply to key/constraint identifiers, not to the logical class or table names themselves. "
+    }
+  ]
+}

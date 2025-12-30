@@ -1,0 +1,115 @@
+{
+  "file_name": "Parkimiskohad",
+  "timestamp": "2025-12-30T14:18:16Z",
+  "llm_model": "GPT-5.1",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Every page labeled as a diagram (overview of registers and roles, one use-case diagram, two activity diagrams, multiple class/database diagrams, and one state diagram) contains visible modeled elements; there is no page that shows only a title with no elements. "
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the use-case diagram for the functional subsystem, all named use cases appear within the system boundary in the vicinity of actors; there is no explicitly visible use case oval that is clearly isolated from all actors. Connector details are not fully represented in the parsed text, so no unambiguous violation can be identified. "
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The use cases on the functional subsystem diagram have distinct meanings (e.g., 'Registreeri Parkimiskoht', 'Aktiveeri Parkimiskoht', 'L\u00f5peta Parkimiskoht', 'Unusta Parkimiskoht', various 'Vaata ...' queries) and there is no pair whose names clearly describe the same activity for the same actor."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Within each package or register diagram, no two separate model elements share the same primary name. Repeated labels such as 'Klassifikaator' or classifier-qualified names like 'Klassifikaatorite register::Riik' appear as references or metadata rather than distinct duplicated elements inside the same package. "
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "In the database-style 'transformed' diagrams, columns that repeat business identifiers across tables (such as various **kood or *_id columns) are consistently linked via explicit foreign keys; no case was found where the same business data value is stored in multiple tables without an FK relationship."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use-case names in the functional subsystem diagram consistently start with verbs and follow a similar 'verb + object' style (e.g., 'Tuvasta kasutaja', 'Registreeri Parkimiskoht', 'L\u00f5peta Parkimiskoht', 'Vaata aktiivseid Parkimiskohti', 'Unusta Parkimiskoht'); there is no visible inconsistency of form among these use-case names. "
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the state diagram for 'Parkimiskoha seisundidiagramm', each named state (Ootel, Aktiivne, Mitteaktiivne, L\u00f5petatud, Unustatud) appears in the midst of described transitions, with text around them indicating causes for moving into or out of the state; none appears as an isolated state with no path from the initial node."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In both activity diagrams (for ending a parking place and for the 'Aktiveeri Parkimiskoht' scenario), all listed actions participate in flows connected to the initial and/or final nodes (e.g., 'Vaata k\u00f5iki Parkimiskohti, mida saab l\u00f5petada', 'Otsi Parkimiskoht', 'Vali Parkimiskoht', 'L\u00f5peta valitud Parkimiskoha', 'Aktiveeri valitud Parkimiskoht'); there is no action that is only mentioned once with no apparent incoming or outgoing transition."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "For class and database diagrams, association-like lines that are textually annotated show multiplicities such as '1', '0..*', or '0..1' (for example between Isik and related elements, or Parkimiskoht and its related classifier tables), while database relationships use standard FK connectors; there is no clearly visible UML-style association line that lacks multiplicity indicators at both ends. "
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The use-case diagram 'Parkimiskohtade funktsionaalne alls\u00fcsteem' contains 11 distinct use cases (Tuvasta kasutaja, Registreeri Parkimiskoht, Aktiveeri Parkimiskoht, Muuda Parkimiskoht, Muuda Parkimiskoht mittaktiivseks, L\u00f5peta Parkimiskoht, Unusta Parkimiskoht, Vaata aktiivseid Parkimiskohti, Vaata k\u00f5iki Parkimiskohti, Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid Parkimiskohti, Vaata Parkimiskohtade koondaruannet), which exceeds the threshold of 10 central elements on a single diagram. "
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": true,
+      "detected": false,
+      "justification": "Across all class and database diagrams, no single class or table clearly has six or more distinct relationship lines in any one diagram. The most connected elements, such as Isik or Parkimiskoht in the transformed register diagrams, appear to have at most about five distinct connectors on their respective diagrams."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Based on the available diagram layouts, related elements (e.g., a table and its foreign-key target) appear placed in reasonably close proximity, and there is no explicit indication of a pair of related elements being positioned at more than twice the average inter-element distance. Any such extreme spacing is not clearly visible from the provided representation."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "In the activity diagram for the 'Aktiveeri Parkimiskoht' scenario, at least two actions are labeled 'Parkimiskoha aktiveerimine \u00f5nnestub' and 'Parkimiskoha aktiveerimine eba\u00f5nnestub'; both names begin with the noun 'Parkimiskoha' rather than an active verb, so they violate the requirement that activity actions start with an active verb. "
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute, or use-case name consisting of three or fewer characters (such as 'id' or 'car') was found; all modeled names are longer identifiers like 'Isik', 'Klient', 'reg_aeg', or 'Aktiveeri Parkimiskoht'."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class names such as 'Isik', 'T\u00f6\u00f6taja', 'Parkimiskoht', 'Kasutajakonto', and 'Isiku_seisundi_liik' all start with uppercase letters and use singular forms. Plural names like 'Isikute register' or 'Klientide register' denote register packages and are exempt by the interpretation rules."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute and column names consistently start with lowercase letters (e.g., 'isikukood', 'e_meil', 'on_aktiivne', 'parkimiskoht_kood', 'reg_aeg'). Uppercase prefixes such as 'PK*', 'FK_', 'IXFK_' appear only on key and index names, which are not attributes themselves."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database table names in the transformed diagrams (for example, 'Isik', 'Klient', 'Tootaja', 'Parkimiskoht', 'Parkimiskoha_kategooria_omamine') are all singular; pluralized register names are used only for packages and are excluded by the interpretation rules."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Names of classes, tables, and attributes do not use type-encoding prefixes such as 'tbl_', 'uc_', or 'strName'. The only prefixes present are PK_, FK_, pfK_, and IXFK_ on key and index definitions, which are explicitly allowed."
+    }
+  ]
+}

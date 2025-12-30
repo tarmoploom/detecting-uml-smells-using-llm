@@ -1,0 +1,115 @@
+{
+  "file_name": "Restorani_lauad2",
+  "timestamp": "2025-12-30T16:05:24Z",
+  "llm_model": "GPT-5.1",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Every page labeled as a diagram (use case, class/database, activity, state, or package) contains visible elements such as use cases, classes/tables, actions, or states; there is no page that shows an empty diagram frame. "
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the use case diagram 'Laudade funktsionaalne alls\u00fcsteem', all named use cases appear within a populated diagram with several actors around the system boundary, but the PDF text does not explicitly show which ovals are or are not connected to actors; since no unambiguously unassociated use case is visible, this smell cannot be confirmed. "
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The use case diagram lists distinct use case names such as 'Aktiveeri laud', 'Registreeri laud', 'L\u00f5peta laud', 'Unusta laud', and several 'Vaata ...' variants; none clearly describe the same activity with different wording, and without explicit connector information the model does not show two synonymous use cases tied to the same actor. "
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On the package diagram 'Laudade FASiga seotud p\u00e4devusalad ja registrid', each package (for example 'Isikute register', 'T\u00f6\u00f6tajate register', 'Laudade register', 'Klassifikaatorite register') lists unique element names inside it; there is no package that contains two different model elements sharing the same primary name. Textual repetitions of labels like 'Isiku roll' across different diagrams or packages do not occur as duplicate elements within a single package. "
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "In the transformed database diagrams, columns that hold the same kind of value (such as 'isik_id' or various '*_kood' code fields) are always linked via explicit foreign key annotations and connectors between tables; there is no clear case where the same data value is stored redundantly in multiple tables without an FK connection. Generic names like 'nimetus' or 'kirjeldus' appear in multiple tables but represent non-identifying attributes and are excluded by the rule. "
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All visible use case names in the use case diagram share a consistent verb-object style such as 'Registreeri laud', 'Aktiveeri laud', 'Muuda laud', 'Vaata aktiivseid laudu', 'Vaata laudade koondaruannet', and 'Unusta laud'; there is no mixture of verb-based and purely noun-based use case names. "
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The state diagram 'Toa seisundidiagramm' shows an initial node, several states (such as 'Ootel', 'Aktiivne', 'Mitteaktiivne', 'Unustatud', 'L\u00f5petatud'), and multiple transition descriptions between them; the text does not reveal any state with no incoming path from the initial state, and without explicit missing links no unreachable state can be identified. "
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Both activity diagrams ('Laua l\u00f5petamise tegevusdiagramm' and 'Laua aktiveerimise tegevusdiagramm') contain a clear flow from an initial node through actions such as 'Vaata k\u00f5iki laudu, mida saab l\u00f5petada', 'Otsi laud', 'Vali laud', 'L\u00f5peta valitud laud' or 'Aktiveeri valitud laud' to an end node; all named actions appear along some path in the flow, and none is obviously isolated or unreachable. "
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "In the conceptual class diagrams, associations are annotated with multiplicities like '1' and '0..*' at both ends; in the transformed database diagrams, relationships are shown as foreign key connectors (with FK annotations and implied crow's-foot semantics) between tables such as 'Isik', 'Klient', 'Tootaja', 'Laud', and various classifier tables. No UML-style association line is visible that completely lacks multiplicity or implied cardinality at both ends. "
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The use case diagram 'Laudade funktsionaalne alls\u00fcsteem' contains at least 11 distinct use cases (including 'Tuvasta kasutaja', 'Registreeri laud', 'Aktiveeri laud', 'L\u00f5peta laud', 'Muuda laud', 'Muuda laud mittaktiivseks', three different 'Vaata ... laudu' variants, 'Vaata laudade koondaruannet', and 'Unusta laud'), exceeding the threshold of 10 central elements. Additionally, the class diagram 'Kogu s\u00fcsteem' shows more than 10 classes/tables such as 'Laud', 'Isik', 'Klient', 'T\u00f6\u00f6taja', several classifier tables, and association classes on a single diagram. "
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Although some diagrams have central classes or tables like 'Isik' or 'Laud' that participate in several relationships, the PDF text does not clearly show any single class/table with six or more distinct visible relationship lines on one diagram; the number of different partner elements per central class appears to stay below six, and multiple foreign keys between the same pair of tables may share a single connector. Without explicit evidence of six or more separate lines, this smell cannot be confirmed. "
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "The analysis is based on textual extraction and small embedded previews; the exact spatial distances between elements on each diagram are not measurable from the PDF text, and no extreme separation of related elements is explicitly described, so no case of a relationship distance exceeding twice the average can be reliably identified."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": true,
+      "detected": false,
+      "justification": "All named use cases and the clearly identifiable actions in activity diagrams start with active verbs in Estonian (for example 'Registreeri laud', 'Aktiveeri laud', 'Muuda laud', 'Vaata k\u00f5iki laudu', 'Otsi laud', 'Vali laud', 'L\u00f5peta valitud laud'); labels that are questions or outcome descriptions appear on decision or final nodes rather than on action nodes, so they are outside the scope of this rule. "
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Across all diagrams there is no class, table, attribute/column, or use case whose name is three characters or fewer; even short labels like 'Alg' in the state diagram refer to an initial pseudostate and not to a class, table, attribute, or use case covered by this rule. "
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Entity class and table names like 'Isik', 'Klient', 'Tootaja', 'Laud', 'Kasutajakonto', 'Laua_kategooria', 'Laua_tyyp', and 'Laua_kategooria_omamine' all start with uppercase letters and are singular in form; plural names appear only in register packages such as 'Isikute register' or 'T\u00f6\u00f6tajate register', which are domain registers explicitly exempt from this rule. "
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute and column names such as 'e_meil', 'eesnimi', 'isikukood', 'on_aktiivne', 'parool', 'reg_aeg', 'viimase_muutm_aeg', and various '**kood' fields all begin with lowercase letters; uppercase prefixes like 'PK' or 'FK' only appear in constraint or key labels, not as the first character of attribute/column names in the sense of this rule. "
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database tables representing domain entities are named in singular, for example 'Isik', 'Klient', 'Tootaja', 'Laud', 'Isiku_seisundi_liik', 'Laua_seisundi_liik'; plural wording appears only in register-style names like 'Klassifikaatorite register' or 'Laudade register', which are explicitly excluded as domain registers. "
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class, table, and attribute names do not use type-indicating prefixes like 'tbl*', 'uc_', or 'strName'; the only systematic prefixes are key and constraint markers such as 'pk_', 'fk_', 'pfK', 'ixfk_', and 'chk_', which fall under the allowed PK/FK-related prefixes and apply to constraints rather than to primary semantic element names. "
+    }
+  ]
+}

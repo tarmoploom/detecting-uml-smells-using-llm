@@ -1,0 +1,115 @@
+{
+  "file_name": "Tenniseklubi_valjakud",
+  "timestamp": "2025-12-30T20:19:12Z",
+  "llm_model": "GPT-5.1",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All diagrams in the Tenniseklubi_valjakud PDF show visible modeled elements such as actors, use cases, classes, tables, states, or actions; no page contains an empty diagram or a diagram frame without contents ."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "On the use case diagram V\u00e4ljakute funktsionaalne alls\u00fcsteem (page 2), every use case oval inside the system boundary has at least one association line to one or more actors; no isolated use case without any actor association is visible."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The single use case diagram contains distinct use case names such as Tuvasta kasutaja, Registreeri v\u00e4ljak, Aktiveeri v\u00e4ljak, Muuda v\u00e4ljak mittaktiivseks, Vaata aktiivseid v\u00e4ljakuid, and Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid v\u00e4ljakuid; none describe the same activity with different wording for the same actor."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the package diagram V\u00e4ljakute FASiga seotud p\u00e4devusalad ja registrid (page 1), each package lists uniquely named contents; no package contains two separate model elements with the same primary name within the same package box."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Across the transformed database diagrams (pages 13-18), repeated values such as classification names are modeled via separate lookup tables (for example Riik, V\u00e4ljaku_seisundi_liik, Kliendi_seisundi_liik) and referenced with foreign keys; there is no clear case where the same logical data value is stored redundantly in two tables without a foreign key relation."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases on the V\u00e4ljakute funktsionaalne alls\u00fcsteem diagram are named in a consistent verb-first form (for example Tuvasta kasutaja, Registreeri v\u00e4ljak, Aktiveeri v\u00e4ljak, Unusta v\u00e4ljak, Vaata v\u00e4ljakute koondaruannet); no noun-only or object-first use case names appear."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the state diagram V\u00e4ljaku seisundidiagramm (page 11), each non-initial state (Ootel, Aktiivne, Mitteaktiivne, Unustatud, L\u00f5petatud) has at least one incoming transition from either the initial state or another state, so there is no clearly unreachable state."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In both activity diagrams (V\u00e4ljaku l\u00f5petamise tegevusdiagramm and V\u00e4ljaku aktiveerimise tegevusdiagramm, pages 3 and 4), all action nodes such as Vaata k\u00f5iki v\u00e4ljakuid, mida saab l\u00f5petada, Otsi v\u00e4ljak, Vali v\u00e4ljak, L\u00f5peta valitud v\u00e4ljak, Vaata k\u00f5iki v\u00e4ljakuid, mida saab aktiveerida, and Aktiveeri valitud v\u00e4ljak are connected by control flows starting from the initial node; there are no isolated actions without any incoming path."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "In the class diagrams (pages 5-12), every visible association or composition line between classes shows explicit multiplicities such as 1, 0..1, or 0..* at the ends, and all transformed database diagrams use standard foreign key or crow s foot style connections; no relationship line is drawn without any multiplicity information at both ends."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The use case diagram V\u00e4ljakute funktsionaalne alls\u00fcsteem (page 2) displays more than ten central elements: at least eleven distinct use case ovals (including Tuvasta kasutaja, Registreeri v\u00e4ljak, Aktiveeri v\u00e4ljak, Muuda v\u00e4ljak mittaktiivseks, Vaata aktiivseid v\u00e4ljakuid, Vaata k\u00f5iki v\u00e4ljakuid, Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid v\u00e4ljakuid, Unusta v\u00e4ljak, L\u00f5peta v\u00e4ljak, Vaata v\u00e4ljakute koondaruannet, and Vaata k\u00f5iki v\u00e4ljakuid, mida saab aktiveerida), exceeding the threshold of ten central elements on a single diagram."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the various class and database diagrams, the most connected elements such as Isik (person) and V\u00e4ljak (court) have visible relationship lines to roughly four or five other elements each (for example to Kasutajakonto, Klient, T\u00f6\u00f6taja, Riik, and Isiku_seisundi_liik or to T\u00f6\u00f6taja, V\u00e4ljaku_seisundi_liik, V\u00e4ljaku_tyyp, and V\u00e4ljaku_kategooria_omamine); no single class or table shows six or more distinct relationship lines on the same diagram."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Across the diagrams, related elements (for example actors and their use cases, or tables and their foreign key targets) are laid out at fairly similar distances, with connectors of comparable length; there is no clearly extreme case where two related elements are placed at a distance more than twice the average spacing between elements on that diagram."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use cases and activity actions are named using active verb phrases, such as Tuvasta kasutaja, Registreeri v\u00e4ljak, Aktiveeri v\u00e4ljak, Vaata k\u00f5iki v\u00e4ljakuid, mida saab l\u00f5petada, and L\u00f5peta valitud v\u00e4ljak; no use case or action name starts with a non-verb word or a purely nominal phrase."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "All class, table, attribute, and use case names consist of more than three characters; examples include Isik, V\u00e4ljak, V\u00e4ljaku_kategooria_tyyp, hinnavahemiku_algus, kliendi_seisundi_liik_kood, and Vaata aktiivseid v\u00e4ljakuid; no element is named with a very short identifier like id or ab."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Every class representing a domain entity uses an initial uppercase letter and a singular form (for example Isik, T\u00f6\u00f6taja, Klient, V\u00e4ljak, Riik, V\u00e4ljaku_t\u00fc\u00fcp); plural or lowercase class names appear only in register or catalog titles such as Isikute register, which are exempt by the interpretation rules."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute and column names consistently start with lowercase letters, such as e_meil, isikukood, reg_aeg, viimase_muutm_aeg, hinnavahemiku_algus, on_nous_tylitamisega, and mentor; uppercase initials appear only in type names or constraint labels, not in attribute or column identifiers."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database table names correspond to singular entities like Isik, Kasutajakonto, Klient, Tootaja, V\u00e4ljaku_kategooria, V\u00e4ljaku_tyyp, and V\u00e4ljaku_kategooria_omamine; plural forms are used only in register or diagram titles (for example Klassifikaatorite register), which are excluded from this rule."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class, table, and attribute names do not use type-indicating prefixes such as tbl_, uc_, or strName; the only prefixes present are database-key related ones like PK_, FK_, pfK_, and IXFK_ in constraint or index names, which are explicitly allowed."
+    }
+  ]
+}

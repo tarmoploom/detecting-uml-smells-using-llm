@@ -1,0 +1,115 @@
+{
+  "file_name": "Lao_hoiuruumid",
+  "timestamp": "2025-12-30T13:14:40Z",
+  "llm_model": "GPT-5.1",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Every page labeled as a diagram (use-case, activity, class/database, state, or package) contains visible central elements such as use cases, classes/tables, actions, or states; none of the 18 diagrams is empty. "
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the use-case diagram for 'Hoiuruumide funktsionaalne alls\u00fcsteem', all use cases are shown inside the system boundary with nearby actors; there is no use case that is clearly isolated from all actors, and the diagram text does not explicitly show any use case without an actor association, so no unambiguous violation can be established. "
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The use cases have distinct names and meanings (e.g., 'Registreeri hoiuruum', 'Aktiveeri hoiuruum', 'L\u00f5peta hoiuruum', 'Unusta hoiuruum') and there are no two use cases that describe the same activity for the same actor such as 'Add Car' vs 'Register Car'. "
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Within each package in the package/context diagram (e.g., 'Hoiuruumide register', 'Klassifikaatorite register'), the primary element names are unique; repeated phrases like 'Klassifikaatori t\u00fc\u00fcp' are classifier-type metadata rather than separate model elements, as indicated by the interpretation rules. "
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Where the same business value appears in multiple tables (for example, 'hoiuruum_kood' in the transformed 'Hoiuruumide register' and 'Broneeringute register'), the diagrams explicitly show foreign-key relationships between the tables; there is no clear case where the same data value is copied into different tables without an FK connector. "
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Use-case names in the use-case diagram are consistently expressed in an imperative verb form in Estonian (e.g., 'Registreeri hoiuruum', 'L\u00f5peta hoiuruum', 'Aktiveeri hoiuruum', 'Muuda hoiuruum mitteaktiivseks', 'Vaata k\u00f5iki hoiuruume'), so there is no inconsistency of form such as mixing noun-based names with verb-based names. "
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the 'Hoiuruumi seisundidiagramm' state diagram, each state (Ootel, Aktiivne, Mitteaktiivne, L\u00f5petatud, Unustatud) has at least one incoming transition from either the initial state or another state, so there is no state that is clearly unreachable. "
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the activity diagrams for 'Hoiuruumi l\u00f5petamise tegevusdiagramm' and 'Hoiuruumi aktiveerimise tegevusdiagramm', all action nodes (such as 'Vaata k\u00f5iki hoiuruume, mida saab l\u00f5petada', 'Otsi hoiuruum', 'Vali hoiuruum', 'L\u00f5peta valitud hoiuruumid', 'Hoiuruumide haldur valib nimekirjast ruumi', 'Hoiuruumide haldur aktiveerib valitud ruumi') are part of paths that start from the initial node, so no action is obviously unreachable. "
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Across the class and database diagrams, association lines between elements show explicit multiplicities such as '0..*' and '1' (e.g., 'Isiku roll 0..* 1', '0..* 1' links in 'Hoiuruumide register'), and database relationships are drawn as standard FK connectors in the transformed diagrams; there is no relationship line that unambiguously lacks multiplicity indicators at both ends outside of these FK notations. "
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "At least two diagrams exceed the threshold of 10 central elements: the use-case diagram 'Hoiuruumide funktsionaalne alls\u00fcsteem' contains 11 distinct use cases (e.g., 'Tuvasta kasutaja', 'Registreeri hoiuruum', 'Unusta hoiuruum'), and the 'Klassifikaatorite register (transformed)' database diagram shows 10 separate tables such as 'hoiuruumi_kategooria', 'hoiuruumi_kategooria_tyyp', 'hoiuruumi_seisundi_liik', 'riik', and 'rentimise_seisundi_liik'. "
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": true,
+      "detected": true,
+      "justification": "In the 'Klassifikaatorite register' class diagram, the central class 'klassifikaator' is connected via separate generalization relationship lines to many subtype classes (including 'riik', 'hoiuruumi_seisundi_liik', 't\u00f6\u00f6taja_seisundi_liik', 'isiku_seisundi_liik', 't\u00f6\u00f6taja_roll', 'hoiuruumi_kategooria', 'hoiuruumi_kategooria_t\u00fc\u00fcp', 'hoiuruumi_suuruse_liik', 'kliendi_seisundi_liik', and 'broneeringu_seisundi_liik'), giving this class 6 or more distinct visible connections on that diagram. "
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "The spacing of elements in the diagrams appears relatively uniform, with related elements (such as tables connected by FK lines or use cases connected to actors) placed in the same general area of each diagram; there is no pair of related elements that is clearly more than twice the average distance compared to other related pairs. "
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Several activity actions are named with leading actor nouns rather than starting with an active verb, for example 'Kasutusjuht vaatab k\u00f5iki ootel olevad ja mitteaktiivsed hoiuruume', 'Hoiuruumide haldur valib nimekirjast ruumi.', and 'Hoiuruumide haldur aktiveerib valitud ruumi.', so their names do not begin with an active verb as required. "
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute/column, or use-case name in the diagrams is 3 characters or fewer; even the shortest business names such as 'riik' and technical suffixes like 'kood' are at least four characters long, and attributes such as 'id' do not appear as standalone primary names. "
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Several entity classes are named with a leading lowercase letter, such as 'klassifikaator', 'isik', 'hoiuruum', 'klient', and 'broneering' in the various register diagrams, which violates the rule that class names should not start with a lowercase letter or be plural. "
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute and column names are consistently written in lowercase (often with underscores), for example 'e_meil', 'reg_aeg', 'hoiuruum_kood', 'kliendi_seisundi_liik_kood', and 'tootaja_rolli_omamine_id'; there are no attributes whose names start with an uppercase letter. "
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database table names representing singular domain entities are singular (e.g., 'hoiuruum', 'broneering', 'klient', 'isik'); plural names appear only in the titles of register containers such as 'Isikute register' or 'Klientide register', which are domain register tables and are excluded from this rule by the interpretation guidelines. "
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class, table, and attribute names do not use type-indicating prefixes such as 'tbl_', 'uc_', or 'strName'; the only prefixes observed are database-constraint prefixes like 'PK_', 'FK_', 'pfK_', 'IXFK_', 'chk_', and 'idx_', and PK_/FK/pfK_/IXFK_ are explicitly allowed while constraint/index names are not class, table, or attribute names. "
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "file_name": "Ronimisseinad",
+  "timestamp": "2025-12-30T19:37:06Z",
+  "llm_model": "GPT-5.1",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The PDF shows content on every diagram page (use case, activity, state, class, and database diagrams); none of the diagrams consist only of an empty frame without elements, so there is no empty diagram. "
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the use case diagram 'Ronimisseinte funktsionaalne alls\u00fcsteem', all named use cases (such as 'Aktiveeri ronimissein', 'L\u00f5peta ronimissein', 'Vaata k\u00f5iki ronimisseinu') appear within the system context with surrounding actors; the PDF text does not show any use case that is explicitly drawn without any association to an actor, so no clear violation can be confirmed. "
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The use case names describe distinct activities even when they share a leading verb; for example, 'Vaata aktiivseid ronimisseinu', 'Vaata k\u00f5iki ronimisseinu', and 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid ronimisseinu' clearly refer to different result sets, and there are no pairs like 'Add Car'/'Register Car' that obviously describe the same activity for the same actor. "
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Within each class or package diagram (for example 'Isikute register', 'Klassifikaatorite register', 'Ronimisseinte register'), each visible class or table has a unique primary name; repeated words such as 'Klassifikaator' around imported elements are consistent with classifier-type metadata rather than multiple separate model elements with the same name in the same package. "
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Where the same business attribute appears in multiple tables (for example 'isik_id', 'ronimisseina_liik_kood', or various *_seisundi_liik_kood columns in the transformed database diagrams), the diagrams explicitly show foreign key relationships linking those tables; there is no clear case where redundant copies of the same data are stored in different tables without a foreign key connection. "
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The use case names in 'Ronimisseinte funktsionaalne alls\u00fcsteem' consistently use an imperative or active-verb style in Estonian (for example 'Registreeri ronimissein', 'Aktiveeri ronimissein', 'Muuda ronimisseina', 'Unusta ronimissein'); there is no mixed pattern where some use cases are named purely as nouns and others as verbs. "
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the state diagram 'Ronimisseinte seisundidiagramm', all named states (Ootel, Aktiivne, Mitteaktiivne, L\u00f5petatud, Unustatud) are connected by transitions to the initial node 'Alg' or to other states; none is visibly isolated without any incoming path, so no unreachable state is evident. "
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "The activity diagrams for finishing and activating a climbing wall show action nodes such as 'Vaata k\u00f5iki ronimisseinu, mida saab l\u00f5petada', 'Otsi ronimisseina', 'Vali ronimissein', 'L\u00f5peta valitud ronimissein', and actions in the activation flow all connected via control flows; there is no action node that is clearly disconnected from both incoming and outgoing flows. "
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "In conceptual and logical class diagrams, relationships between elements include multiplicity indicators like '1' and '0..*' at their ends (for example around 'Isik', 'T\u00f6\u00f6taja', 'Ronimissein', and 'Isiku roll'), and the transformed database diagrams use foreign key style connectors that are exempt per the interpretation rules; no UML-style relationship line is shown entirely without multiplicity information at both ends. "
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The use case diagram 'Ronimisseinte funktsionaalne alls\u00fcsteem' contains at least eleven distinct use cases ('Tuvasta kasutaja', 'Vaata ronimisseinte koondaruannet', 'L\u00f5peta ronimissein', 'Registreeri ronimissein', 'Muuda ronimisseina', 'Aktiveeri ronimissein', 'Muuda ronimissein mittaktiivseks', 'Vaata aktiivseid ronimisseinu', 'Vaata k\u00f5iki ronimisseinu', 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid ronimisseinu', 'Unusta ronimissein'), exceeding the threshold of ten central elements in a single diagram. "
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Across the class and database diagrams, no single class or table is shown with six or more distinct relationship lines; for example, 'Isik' and 'Ronimissein' participate in several associations or foreign keys, but only about four to five clear connectors are visible to other elements in their respective diagrams, which is below the rule threshold. "
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "From the available PDF rendering, related elements (such as tables linked by foreign keys or classes connected by associations) are placed in reasonably similar proximities; there is no explicit instance where a related pair is clearly separated by more than twice the average distance between elements on the same diagram. "
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": true,
+      "detected": false,
+      "justification": "All clearly action-like names for use cases and activity actions begin with active verb forms (for example 'Vaata k\u00f5iki ronimisseinu, mida saab l\u00f5petada', 'Otsi ronimisseina', 'Vali ronimissein', 'L\u00f5peta valitud ronimissein', 'Vaatab k\u00f5iki ootel v\u00f5i mitteaktiivsete ronimisseinte nimekirja'); question texts like 'Kas soovib otsida?' appear as decision labels rather than action nodes, so there is no confirmed action whose name does not start with an active verb. "
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Scanning the names of use cases, classes, tables, and attributes (for example 'Isik', 'Kasutajakonto', 'Ronimissein', 'isikukood', 'ronimisseina_kood'), none consist of names of length three characters or fewer; short tokens like 'Alg', 'PK', 'FK', or 'AK' are either diagram keywords, state initials, or constraint prefixes rather than class, table, attribute, or use case names. "
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Entity class and table names for domain concepts (such as 'Isik', 'T\u00f6\u00f6taja', 'Klient', 'Ronimissein', 'Ronimisseina_kategooria', 'Tootaja_rolli_omamine') all start with uppercase letters and are singular; plural forms like 'Isikute register' are registers and thus excluded by the interpretation rules. "
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute and column names in the class and database diagrams (such as 'isikukood', 'e_meil', 'raskusaste', 'reg_aeg', 'ronimisseina_kood') consistently start with lowercase letters; uppercase prefixes like 'PK_', 'FK_', 'IXFK_' and 'AK_' only appear on constraint or index names, which are not attributes for this rule. "
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database tables that represent domain entities are named in singular form (for example 'Isik', 'Kasutajakonto', 'Klient', 'Ronimissein', 'Tootaja', 'Ronimisseina_kategooria'), and plural-like names are used only for register containers such as 'Klassifikaatorite register' or 'Ronimisseinte register', which are explicitly exempt. "
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The model does not use type-indicating prefixes like 'tbl_', 'uc_', or 'str' on class, table, or attribute names; the only systematic prefixes are 'PK_', 'FK_', 'pfK_', 'IXFK_', 'AK_', and 'chk_', which denote keys, indexes, or checks rather than the types of classes, tables, or attributes and are therefore outside the scope of this smell. "
+    }
+  ]
+}

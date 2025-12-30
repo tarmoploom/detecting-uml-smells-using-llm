@@ -1,0 +1,115 @@
+{
+  "file_name": "Kliiniku_treeningud",
+  "timestamp": "2025-12-30T12:36:19Z",
+  "llm_model": "GPT-5.1",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Every diagram page in the PDF contains at least one modeling element (actors, packages, use cases, classes, states, or database tables); no page is completely empty, as can be seen for example in the overview diagram on page 1 and the use case diagram on page 2. "
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "The only explicit use case diagram (Treeningute funktsionaalne allsusteem on page 2) shows use cases inside the system boundary together with surrounding actors; the PDF text does not provide evidence that any use case oval lacks all actor associations, and connector information is not textually exposed, so no unambiguous violation can be identified. "
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Across the use case diagram, all 11 named use cases describe distinct activities (identify user, register training, end training, view different training lists, modify training, activate training, view reports, etc.); there are no two use cases with effectively the same action name associated with the same actor that can be seen from the PDF. "
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the package and overview diagrams, each primary element name within a given package is unique; for example, in Klassifikaatorite register the classes are Klassifikaator, Riik, Tootaja_roll, Treeningu_kategooria, Treeningu_kategooria_tuup, and Treeningu_liik, and repeated captions like Klassifikaatori tuup appear as classifier-type metadata rather than separate model elements, so no package contains multiple model elements with the same primary name. "
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "In the transformed database diagrams, repeated business codes (for example isiku_seisundi_liik_kood appearing as a foreign key in table Isik and as the primary key of table Isiku_seisundi_liik) are always linked via explicit foreign-key connectors, while generic attribute names such as nimetus or on_aktiivne occur independently in many tables; there is no clear case of the same data value being stored redundantly in two tables without a foreign key between them. "
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use case names in the use case diagram (for example Tuvasta kasutaja, Registreeri treening, Lopeta treening, Vaata koiki treeninguid, Muuda treeningut, Aktiveeri treening) start with imperative or active-form verbs, so their naming form is consistent. "
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The state diagram Treeningute seisundidiagramm includes an initial state leading into operational states such as Ootel, from which transitions are described to Aktiivne, Mitteaktiivne, Unustatud, and ultimately to Lopetatud; every named state has at least one incoming transition textually described, so no state is clearly unreachable. "
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "The activity diagram Treeningu lopetamise tegevusdiagramm describes a flow starting at Algus through actions like Vaata koiki treeninguid, mida saab lopetada, Otsi treeningut, Vali treening, and Lopeta valitud treening to Lopp with decisions in between; similarly, Treeningu aktiveerimise tegevusdiagramm connects its actions from start to end without isolated nodes, so no activity action appears unreachable. "
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All visible relationships in the class and database diagrams either show explicit multiplicities (for example 1 and 0..* near Isiku roll and related associations) or are database-style foreign-key or crow's-foot connectors in the transformed register diagrams; there is no clearly drawn UML association that lacks multiplicity indicators at both ends and is not a standard database FK connector. "
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The use case diagram Treeningute funktsionaalne allsusteem contains 11 distinct use cases inside the system (Tuvasta kasutaja, Unusta treening, Registreeri treening, Lopeta treening, Vaata koiki ootel voi mitteaktiivseid treeninguid, Vaata aktiivseid treeninguid, Vaata koiki treeninguid, Muuda treeningut, Aktiveeri treening, Muuda treening mitteaktiivseks, and Vaata treeningute koondaruannet), which exceeds the threshold of 10 central elements on a single diagram. "
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the class and database diagrams, no single class or table is clearly connected by 6 or more distinct relationship lines on the same page; even heavily referenced entities such as Isik and Treening are linked to at most about five other elements per diagram, as indicated by foreign-key labels like FK_Isik_Isiku_seisundi_liik, FK_isikukoodi_riik, FK_Klient_Isik, FK_Treening_Treeningu_liik, and FK_Treening_Treeningu_seisundi_liik. "
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Based on the available PDF representation, related elements (classes, tables, states, and use cases) appear to be laid out at roughly comparable distances on each diagram; there is no explicit case where a related pair is shown at a distance more than twice the typical spacing between other related elements, and precise geometric distances are not specified in the text. "
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "Most use cases and activity actions start with active verbs (for example Vaata koiki treeninguid and Vali treening), but in the Treeningu aktiveerimise tegevusdiagramm there are actions labeled Andmed salvestatakse ning treening muudetakse aktiivseks and Aktiveerimine ebaonnestub, which begin with the noun-like words Andmed and Aktiveerimine rather than an explicit verb form, so they violate the rule that use case or activity action names must start with an active verb. "
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Across all diagrams, the names of classes, tables, attributes, and use cases are composed of words such as Isik, Treeningu_kategooria, on_aktiivne, and treeningu_kood; none of these element names are 3 characters or fewer in length. "
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Class and table names such as Isik, Treening, Kasutajakonto, Treeningu_seisundi_liik, Treeningu_kategooria_omamine, and Tootaja_rolli_omamine all begin with uppercase letters and are generally singular; plural forms are confined to register or catalog names like Isikute register and Treeningute register, which are register-style containers explicitly excluded from this rule. "
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute and column names in both the conceptual and transformed diagrams (for example e_meil, reg_aeg, broneeringu_hind, nimetus, on_aktiivne, isik_id, treeningu_kood) consistently start with lowercase letters; uppercase prefixes such as PK_Isik or AK_Treeningu_liik_nimetus appear only in names of keys, indexes, or constraints rather than in attribute or column identifiers. "
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database table names such as Isik, Kasutajakonto, Klient, Treening, Treeningu_seisundi_liik, Treeningu_kategooria, and Tootaja_rolli_omamine are grammatically singular or describe a single relationship or role; pluralised labels primarily occur in register names (for example Isikute register, Treeningute register), which are domain registers that the interpretation rules exclude from this check. "
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, or attribute names use technical type prefixes like tbl_, uc_, or str; instead, prefixes such as PK_, FK_, pfK_, IXFK_, and chk_ appear only in the names of primary keys, foreign keys, indexes, or check constraints in the transformed diagrams, and these are explicitly allowed or outside the scope of this rule. "
+    }
+  ]
+}

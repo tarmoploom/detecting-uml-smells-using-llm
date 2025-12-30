@@ -1,0 +1,115 @@
+{
+  "file_name": "Padelivaljakud",
+  "timestamp": "2025-12-30T13:36:17Z",
+  "llm_model": "GPT-5.1",
+  "smell_analysis": [
+    {
+      "rule_id": "G5.1",
+      "actual": false,
+      "detected": false,
+      "justification": "Every diagram page in the file (overview, use-case, activity, state, class, and database diagrams) contains at least one central element such as a class, table, use case, or state; there are no pages that show only a title or an otherwise empty frame."
+    },
+    {
+      "rule_id": "G5.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the use-case diagram 'Padeliv\u00e4ljakute funktsionaalne alls\u00fcsteem' on page 2, each use case oval inside the system boundary is connected by at least one association line to an actor such as 'Padeliv\u00e4ljakute haldur', 'Juhataja', 'Klient', 'Hooldustehnik', 'Klienditeenindaja', 'Koristust\u00f6\u00f6taja' or 'Uudistaja'; no use case appears visually isolated with no actor association."
+    },
+    {
+      "rule_id": "G6.1",
+      "actual": false,
+      "detected": false,
+      "justification": "The use-case names on the main use-case diagram are all distinct in meaning; for example, 'Registreeri padeliv\u00e4ljak', 'Muuda padeliv\u00e4ljak', 'Muuda padeliv\u00e4ljak mittaktiivseks', 'L\u00f5peta padeliv\u00e4ljak', 'Unusta padeliv\u00e4ljak', and the various 'Vaata ...' cases describe different operations and scopes for the same domain object, so there are no two use cases that clearly describe the same activity for the same actor."
+    },
+    {
+      "rule_id": "G6.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No package or class diagram shows two distinct model elements with exactly the same primary name inside the same package; repeated labels such as 'Klassifikaator' and 'Klassifikaatori t\u00fc\u00fcp' near several boxes in the register diagrams act as classifier-type metadata for different elements (for example, 'Riik', 'Isiku_seisundi_liik', 'Padeliv\u00e4ljaku_seisundi_liik') rather than representing duplicate elements, which is allowed by the interpretation rules."
+    },
+    {
+      "rule_id": "G6.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Across the conceptual and transformed database diagrams, columns that share similar names (such as foreign-key ids and standard code or description fields) are always connected by explicit foreign-key relationships, and there is no evidence of the same data value being redundantly stored in multiple tables without a foreign-key connector; identically named system columns like keys and codes appear in appropriately related tables."
+    },
+    {
+      "rule_id": "G8.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All use-case names on the main use-case diagram follow a consistent verb-led form, for example 'Tuvasta kasutaja', 'Registreeri padeliv\u00e4ljak', 'Muuda padeliv\u00e4ljak', 'Aktiveeri padeliv\u00e4ljak', 'L\u00f5peta padeliv\u00e4ljak', 'Unusta padeliv\u00e4ljak', and several 'Vaata ...' variants; there are no noun-only or differently structured use-case names, so the naming form is consistent."
+    },
+    {
+      "rule_id": "G15.1",
+      "actual": false,
+      "detected": false,
+      "justification": "In the state diagram 'Padeliv\u00e4ljakute seisundidiagramm' on page 10, the initial state (Alg) has an outgoing transition into the lifecycle, and each state (Ootel, Aktiivne, Mitteaktiivne, L\u00f5petatud, Unustatud) shows at least one incoming transition: for example, Ootel is reached from the registration trigger, Unustatud from Ootel, Aktiivne and Mitteaktiivne from Ootel or each other, and L\u00f5petatud from operational states. No state is shown without an incoming transition, so there are no unreachable states."
+    },
+    {
+      "rule_id": "G15.2",
+      "actual": false,
+      "detected": false,
+      "justification": "In the two activity diagrams (padel court termination on page 3 and activation on page 4), every action node such as 'Vaata k\u00f5iki padeliv\u00e4ljakuid, mida saab l\u00f5petada', 'Otsi padeliv\u00e4ljakuid', 'Vali padeliv\u00e4ljak', 'L\u00f5peta valitud padeliv\u00e4ljak', 'Vaata k\u00f5iki padeliv\u00e4ljakuid, mis on seisundis Ootel v\u00f5i Mitteaktiivne', 'Aktiveeri valitud padeliv\u00e4ljak' and 'Teavita eba\u00f5nnestumisest' is connected by control-flow edges from either the initial node or a preceding decision node; there are no action nodes that lack incoming flows."
+    },
+    {
+      "rule_id": "G15.3",
+      "actual": false,
+      "detected": false,
+      "justification": "All relationships between classes or tables in the conceptual class diagrams and the transformed database diagrams display multiplicity information at both ends, typically using values like '1', '0..*', or '0..1' near each class end (for example between 'Isik' and 'Kasutajakonto', or between 'Padelivaljak' and the various classifier tables), or are standard database foreign-key connectors; there are no association lines that lack multiplicities at both ends."
+    },
+    {
+      "rule_id": "S1.1",
+      "actual": true,
+      "detected": true,
+      "justification": "The use-case diagram 'Padeliv\u00e4ljakute funktsionaalne alls\u00fcsteem' on page 2 contains 11 distinct use cases inside the system boundary (Tuvasta kasutaja, Vaata padeliv\u00e4ljakute koondaruannet, Registreeri padeliv\u00e4ljak, Muuda padeliv\u00e4ljak, Muuda padeliv\u00e4ljak mittaktiivseks, Aktiveeri padeliv\u00e4ljak, L\u00f5peta padeliv\u00e4ljak, Unusta padeliv\u00e4ljak, Vaata aktiivseid padeliv\u00e4ljakuid, Vaata k\u00f5iki padeliv\u00e4ljakuid, Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid padeliv\u00e4ljakuid), exceeding the threshold of 10 central elements; additionally, the 'Klassifikaatorite register' class diagram on page 7 shows at least 11 classifier-related classes on one diagram, further confirming this complexity smell."
+    },
+    {
+      "rule_id": "S1.2",
+      "actual": false,
+      "detected": true,
+      "justification": "In the 'Klassifikaatorite register' class diagram on page 7, the class representing 'Klassifikaatori t\u00fc\u00fcp' is connected by separate association lines to multiple classifier tables including 'Riik', 'Padeliv\u00e4ljaku_seisundi_liik', 'Isiku_seisundi_liik', 'T\u00f6\u00f6taja_seisundi_liik', 'Kliendi_seisundi_liik', 'Padeliv\u00e4ljaku_kategooria', and 'Padeliv\u00e4ljaku_p\u00f5randakatte_materjal', giving it more than six distinct relationships on that single diagram and triggering the high-connection smell."
+    },
+    {
+      "rule_id": "S2.1",
+      "actual": true,
+      "detected": false,
+      "justification": "Across the diagrams, related elements (for example, classes linked by associations, tables linked by foreign keys, or states linked by transitions) are arranged relatively close together with connectors of comparable length; no relationship line visually spans a distance that is clearly more than twice the average spacing between other related elements on the same diagram, so no extreme-distance layout issues are evident."
+    },
+    {
+      "rule_id": "N1.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All names of use cases and all activity actions begin with an active verb form: examples include 'Tuvasta kasutaja', 'Registreeri padeliv\u00e4ljak', 'Muuda padeliv\u00e4ljak', 'Aktiveeri padeliv\u00e4ljak', 'Unusta padeliv\u00e4ljak', 'Vaata k\u00f5iki padeliv\u00e4ljakuid', 'Otsi padeliv\u00e4ljakuid', 'Vali padeliv\u00e4ljak', 'L\u00f5peta valitud padeliv\u00e4ljak' and 'Teavita eba\u00f5nnestumisest'; there are no use cases or actions whose names do not start with a verb."
+    },
+    {
+      "rule_id": "N1.2",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, attribute, or use-case name in the diagrams is three characters or fewer; even the shortest domain names such as 'Isik', 'Riik', 'Algus', and 'L\u00f5pp', and column names like 'kood' are longer than three characters, while shorter tokens such as 'PK' and 'FK' appear only as stereotypes or constraint prefixes, not as the primary names of model elements."
+    },
+    {
+      "rule_id": "N3.1",
+      "actual": false,
+      "detected": false,
+      "justification": "All class and entity names start with an uppercase letter and are singular, for example 'Isik', 'Padeliv\u00e4ljak', 'Kasutajakonto', 'Klient', 'Tootaja', 'Padeliv\u00e4ljaku_kategooria', and 'Padeliv\u00e4ljaku_seisundi_liik'; plural forms like 'Isikute register' or 'Padeliv\u00e4ljakute register' refer to register names rather than individual entity classes or tables and are excluded by the interpretation rules."
+    },
+    {
+      "rule_id": "N3.2",
+      "actual": false,
+      "detected": false,
+      "justification": "Attribute and column names throughout the class and transformed database diagrams use lowercase words with underscores, such as 'isikukood', 'padelivaljaku_kood', 'on_nous_tylitamisega', 'maksimaalne_kasutajate_arv', 'tootaja_seisundi_liik_kood' and similar; there are no attributes or columns whose names begin with an uppercase letter."
+    },
+    {
+      "rule_id": "N3.3",
+      "actual": false,
+      "detected": false,
+      "justification": "Database tables that model entities, such as 'Isik', 'Klient', 'Padelivaljak', 'Padelivaljaku_kategooria_omamine', 'Tootaja', and the various classifier tables, all use singular names; plural phrases like 'Isikute register (transformed)' describe the diagram or register context rather than individual table names, and the interpretation rules specify that such register names should not be treated as violations."
+    },
+    {
+      "rule_id": "N4.1",
+      "actual": false,
+      "detected": false,
+      "justification": "No class, table, or attribute name in the model is prefixed with a type-indicating abbreviation such as 'tbl_', 'uc_', or 'strName'; prefixes like 'PK_', 'FK_', 'pfK_' and 'IXFK_' occur only on key, foreign-key, and index names or constraint identifiers (for example, 'PK_Isik', 'FK_Isik_Isiku_seisundi_liik'), which are explicitly allowed by the rule and do not rename the underlying tables or attributes themselves."
+    }
+  ]
+}
