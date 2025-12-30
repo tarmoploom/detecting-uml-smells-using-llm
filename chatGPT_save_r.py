@@ -4,7 +4,7 @@ import json
 from datetime import datetime, timezone
 
 # ==========================================
-# INPUT VARIABLES
+# INPUT VARIABLES      SAVES ONLY IF CHATGPT
 # ==========================================
 
 # The smell list to check against

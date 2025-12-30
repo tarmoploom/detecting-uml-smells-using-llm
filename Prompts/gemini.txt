@@ -52,7 +52,7 @@ json example below:
 
 ```json
 {
-  "file_name": "short name for the result",
+  "file_name": "file_name_here",
   "smell_analysis": [
     {
       "rule_id": "G5.1",
