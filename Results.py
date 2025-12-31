@@ -274,7 +274,7 @@ def plot_hallucinations(df):
     for container in ax.containers:
         ax.bar_label(container)
 
-    # --- THE MISSING RIGHT SIDE PANEL (LEGEND) ---
+    # --- RIGHT SIDE PANEL (LEGEND) ---
     plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left', title='LLM Model')
     # ---------------------------------------------
 
@@ -376,7 +376,7 @@ def plot_strategy_map(df, custom_aggregates):
                 horizontalalignment='left', color='red', alpha=0.5, weight='bold')
 
         plt.text(0.95, 0.95, "THE IDEAL ZONE\n(Perfect)", 
-                horizontalalignment='right', color='gold', alpha=0.8, weight='bold')
+                horizontalalignment='right', color='orange', alpha=0.8, weight='bold')
 
         # Style
         plt.title('LLM Strategy Map: Who is playing how?', fontsize=16)
@@ -387,4 +387,3 @@ def plot_strategy_map(df, custom_aggregates):
         plt.axhline(0.5, color='gray', linestyle=':', alpha=0.5)
 
         plt.show()
-
