@@ -49,7 +49,7 @@
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "In the activity diagrams 'Aluste tellimuse komplekteerimist', 'Koosta tellimus', and 'Registreeri klient' (pages 12–14), each action label appears within the main flow from the initial node to the final node, and no action box is visibly isolated without a path from the start; decision questions (e.g., 'Kas klient soovib otsida?') appear as branching points rather than unreachable actions. "
+      "justification": "In the activity diagrams 'Aluste tellimuse komplekteerimist', 'Koosta tellimus', and 'Registreeri klient' (pages 12-14), each action label appears within the main flow from the initial node to the final node, and no action box is visibly isolated without a path from the start; decision questions (e.g., 'Kas klient soovib otsida?') appear as branching points rather than unreachable actions. "
     },
     {
       "rule_id": "G15.3",

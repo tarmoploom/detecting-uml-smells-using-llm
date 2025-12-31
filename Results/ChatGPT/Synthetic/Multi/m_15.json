@@ -7,13 +7,13 @@
       "rule_id": "G5.1",
       "actual": false,
       "detected": false,
-      "justification": "All pages that are marked as diagrams (use case, activity, state, class, and database diagrams on pages 2–19) contain at least one central model element such as a use case, class/table, or state; none of them are empty. "
+      "justification": "All pages that are marked as diagrams (use case, activity, state, class, and database diagrams on pages 2-19) contain at least one central model element such as a use case, class/table, or state; none of them are empty. "
     },
     {
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "The two use case diagrams ('Autode funktsionaalne allsüsteem (Vaata & Tuvasta)' and 'Autode halduse funktsionaalne allsüsteem (Muuda)' on pages 2–3) each show use cases together with multiple actors around the system boundary; there is no explicit indication of a use case oval that is not associated with at least one actor. Based on the visible content, no unassociated use case can be identified. "
+      "justification": "The two use case diagrams ('Autode funktsionaalne allsüsteem (Vaata & Tuvasta)' and 'Autode halduse funktsionaalne allsüsteem (Muuda)' on pages 2-3) each show use cases together with multiple actors around the system boundary; there is no explicit indication of a use case oval that is not associated with at least one actor. Based on the visible content, no unassociated use case can be identified. "
     },
     {
       "rule_id": "G6.1",
@@ -31,7 +31,7 @@
       "rule_id": "G6.3",
       "actual": false,
       "detected": false,
-      "justification": "In the database-oriented diagrams (pages 14–19), columns that share names across tables (for example 'auto_kategooria_kood', 'isik_id', 'riik_kood') are consistently linked by foreign-key connectors, and system fields like 'id' or 'nimetus' are normal. No pair of tables clearly stores the same data value in two columns without an FK relationship, so no explicit denormalized redundancy can be identified. "
+      "justification": "In the database-oriented diagrams (pages 14-19), columns that share names across tables (for example 'auto_kategooria_kood', 'isik_id', 'riik_kood') are consistently linked by foreign-key connectors, and system fields like 'id' or 'nimetus' are normal. No pair of tables clearly stores the same data value in two columns without an FK relationship, so no explicit denormalized redundancy can be identified. "
     },
     {
       "rule_id": "G8.1",
@@ -61,7 +61,7 @@
       "rule_id": "S1.1",
       "actual": false,
       "detected": false,
-      "justification": "No single diagram contains 10 or more central elements (classes, tables, use cases, or states). The largest class/database diagrams, such as 'Klassifikaatorite register' (pages 7, 8, 15) and 'Isikute register' (pages 6, 14), show at most about 8–9 classes/tables, while use case diagrams on pages 2–3 and the state diagram on page 9 have fewer elements than this threshold. "
+      "justification": "No single diagram contains 10 or more central elements (classes, tables, use cases, or states). The largest class/database diagrams, such as 'Klassifikaatorite register' (pages 7, 8, 15) and 'Isikute register' (pages 6, 14), show at most about 8-9 classes/tables, while use case diagrams on pages 2-3 and the state diagram on page 9 have fewer elements than this threshold. "
     },
     {
       "rule_id": "S1.2",

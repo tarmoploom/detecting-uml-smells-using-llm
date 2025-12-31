@@ -67,7 +67,7 @@
       "rule_id": "S1.2",
       "actual": false,
       "detected": false,
-      "justification": "In the class and database diagrams, no single class or table has 6 or more distinct relationship lines; for example, central entities like 'Isik' and 'Pakiautomaat' have at most about 4–5 visible connectors to other classes/tables in any single diagram, staying below the threshold. "
+      "justification": "In the class and database diagrams, no single class or table has 6 or more distinct relationship lines; for example, central entities like 'Isik' and 'Pakiautomaat' have at most about 4-5 visible connectors to other classes/tables in any single diagram, staying below the threshold. "
     },
     {
       "rule_id": "S2.1",

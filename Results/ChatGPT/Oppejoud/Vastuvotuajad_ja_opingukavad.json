@@ -37,7 +37,7 @@
       "rule_id": "G8.1",
       "actual": true,
       "detected": true,
-      "justification": "Use case naming is inconsistent: some use cases start with an imperative verb, such as 'Tuvasta kasutaja', 'Registreeri vastuvõtule tulek', 'Tühista vastuvõtule tulek', 'Lisa vastuvõtuaeg', while others are noun or noun-phrase forms like 'Õpingukava koostamine', 'Õpingukava esitamine', 'Semestrite haldamine', 'Õpingukavade kinnitamine', and 'Kuulajaskonna vaatamine' on pages 17–18."
+      "justification": "Use case naming is inconsistent: some use cases start with an imperative verb, such as 'Tuvasta kasutaja', 'Registreeri vastuvõtule tulek', 'Tühista vastuvõtule tulek', 'Lisa vastuvõtuaeg', while others are noun or noun-phrase forms like 'Õpingukava koostamine', 'Õpingukava esitamine', 'Semestrite haldamine', 'Õpingukavade kinnitamine', and 'Kuulajaskonna vaatamine' on pages 17-18."
     },
     {
       "rule_id": "G15.1",
@@ -61,7 +61,7 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "Several class/database diagrams display ten or more central elements. For example, the conceptual diagram 'Õpingukavade_registri_kontseptuaalne_diagramm_1' on page 6 contains at least 17 entities (Isik, Amet, Aine_õpingukavas, Õppekava, Õpingukava, Üliõpilane, Piirang, etc.), and the database design diagrams for Õpingukava and Õppekava on pages 30–31 each include more than ten tables."
+      "justification": "Several class/database diagrams display ten or more central elements. For example, the conceptual diagram 'Õpingukavade_registri_kontseptuaalne_diagramm_1' on page 6 contains at least 17 entities (Isik, Amet, Aine_õpingukavas, Õppekava, Õpingukava, Üliõpilane, Piirang, etc.), and the database design diagrams for Õpingukava and Õppekava on pages 30-31 each include more than ten tables."
     },
     {
       "rule_id": "S1.2",

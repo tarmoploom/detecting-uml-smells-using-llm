@@ -31,7 +31,7 @@
       "rule_id": "G6.3",
       "actual": false,
       "detected": false,
-      "justification": "The database-style diagrams on pages 15–20 show standard PK/FK structures and do not explicitly show two or more tables storing redundant copies of the same data value without a foreign key. Identically named common columns (for example, 'nimetus') are not treated as redundancy."
+      "justification": "The database-style diagrams on pages 15-20 show standard PK/FK structures and do not explicitly show two or more tables storing redundant copies of the same data value without a foreign key. Identically named common columns (for example, 'nimetus') are not treated as redundancy."
     },
     {
       "rule_id": "G8.1",
@@ -55,7 +55,7 @@
       "rule_id": "G15.3",
       "actual": false,
       "detected": false,
-      "justification": "Class diagrams on pages 5–8, 10–12, and 14 show multiplicity indicators where visible (for example, '1', '0..*', '0..1'). The database diagrams on pages 15–20 use FK-style notation that is exempt under the interpretation rules, so no clear UML-style relationship lacking multiplicities at both ends is explicitly shown."
+      "justification": "Class diagrams on pages 5-8, 10-12, and 14 show multiplicity indicators where visible (for example, '1', '0..*', '0..1'). The database diagrams on pages 15-20 use FK-style notation that is exempt under the interpretation rules, so no clear UML-style relationship lacking multiplicities at both ends is explicitly shown."
     },
     {
       "rule_id": "S1.1",
@@ -103,7 +103,7 @@
       "rule_id": "N3.3",
       "actual": false,
       "detected": false,
-      "justification": "Database table names visible on pages 15–20 (for example, 'Auto', 'Klient', 'Riik', 'Auto_mark', 'Auto_kategooria') are not clearly plural. Any plural-sounding register labels appear to be diagram or register context rather than individual entity table names."
+      "justification": "Database table names visible on pages 15-20 (for example, 'Auto', 'Klient', 'Riik', 'Auto_mark', 'Auto_kategooria') are not clearly plural. Any plural-sounding register labels appear to be diagram or register context rather than individual entity table names."
     },
     {
       "rule_id": "N4.1",

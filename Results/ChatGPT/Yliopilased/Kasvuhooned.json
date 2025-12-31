@@ -7,7 +7,7 @@
       "rule_id": "G5.1",
       "actual": false,
       "detected": false,
-      "justification": "Every page labeled as a diagram (pages 1–18) contains visible elements such as packages, use cases, actions, classes, tables, or states; there are no empty diagrams. "
+      "justification": "Every page labeled as a diagram (pages 1-18) contains visible elements such as packages, use cases, actions, classes, tables, or states; there are no empty diagrams. "
     },
     {
       "rule_id": "G5.2",
@@ -31,7 +31,7 @@
       "rule_id": "G6.3",
       "actual": false,
       "detected": false,
-      "justification": "In the database diagrams (pages 13–18), repeated column names like 'nimetus', 'on_aktiivne' or IDs appear in different classification tables but correspond to different code domains and are connected through explicit foreign keys; no clear case of the same data value stored redundantly in multiple tables without a foreign key is visible. "
+      "justification": "In the database diagrams (pages 13-18), repeated column names like 'nimetus', 'on_aktiivne' or IDs appear in different classification tables but correspond to different code domains and are connected through explicit foreign keys; no clear case of the same data value stored redundantly in multiple tables without a foreign key is visible. "
     },
     {
       "rule_id": "G8.1",
@@ -55,7 +55,7 @@
       "rule_id": "G15.3",
       "actual": false,
       "detected": false,
-      "justification": "All associations in the conceptual class diagrams (pages 5–12) either show explicit multiplicity labels (such as '1', '0..*') near the association name or are generalization/classifier-type links; database diagrams (pages 13–18) use foreign key connectors, which are exempt. There is no clear UML-style association between two elements that completely lacks multiplicities at both ends. "
+      "justification": "All associations in the conceptual class diagrams (pages 5-12) either show explicit multiplicity labels (such as '1', '0..*') near the association name or are generalization/classifier-type links; database diagrams (pages 13-18) use foreign key connectors, which are exempt. There is no clear UML-style association between two elements that completely lacks multiplicities at both ends. "
     },
     {
       "rule_id": "S1.1",

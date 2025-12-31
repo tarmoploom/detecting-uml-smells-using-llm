@@ -31,7 +31,7 @@
       "rule_id": "G6.3",
       "actual": false,
       "detected": false,
-      "justification": "In the database-style diagrams (pages 13–18), columns with the same business meaning in different tables (for example riik_kood, isiku_seisundi_liik_kood, auto_kategooria_kood, auto_mark_kood, isik_id) are connected by explicit foreign-key relationships, shown either with 0..*/1 multiplicities or with FK connector annotations; there is no clear case where the same data value is stored redundantly in two tables without an FK between them, and generic system columns like ids are allowed."
+      "justification": "In the database-style diagrams (pages 13-18), columns with the same business meaning in different tables (for example riik_kood, isiku_seisundi_liik_kood, auto_kategooria_kood, auto_mark_kood, isik_id) are connected by explicit foreign-key relationships, shown either with 0..*/1 multiplicities or with FK connector annotations; there is no clear case where the same data value is stored redundantly in two tables without an FK between them, and generic system columns like ids are allowed."
     },
     {
       "rule_id": "G8.1",
@@ -55,7 +55,7 @@
       "rule_id": "G15.3",
       "actual": true,
       "detected": false,
-      "justification": "Across the conceptual class diagrams (pages 5–8, 10–12) every visible UML-style association is annotated with multiplicities like '1', '0..1', or '0..*' on both ends (for example between 'Isik' and 'Kasutajakonto', or 'Auto' and 'Auto_kategooria_omamine'), and in the database diagrams (pages 13–18) all relationships are expressed as standard FK-style connectors or crow's-foot-like links, which are exempt; there is no clear relationship line that entirely lacks multiplicity information at both ends."
+      "justification": "Across the conceptual class diagrams (pages 5-8, 10-12) every visible UML-style association is annotated with multiplicities like '1', '0..1', or '0..*' on both ends (for example between 'Isik' and 'Kasutajakonto', or 'Auto' and 'Auto_kategooria_omamine'), and in the database diagrams (pages 13-18) all relationships are expressed as standard FK-style connectors or crow's-foot-like links, which are exempt; there is no clear relationship line that entirely lacks multiplicity information at both ends."
     },
     {
       "rule_id": "S1.1",

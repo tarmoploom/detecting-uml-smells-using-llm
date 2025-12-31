@@ -25,19 +25,19 @@
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "No package diagram shows multiple different model elements with the same primary name inside the same package. Repeated labels such as 'Klassifikaatori tüüp' on the classifier diagrams (pages 7–8) are classifier-type annotations, which the rules specify must be treated as metadata rather than separate elements. "
+      "justification": "No package diagram shows multiple different model elements with the same primary name inside the same package. Repeated labels such as 'Klassifikaatori tüüp' on the classifier diagrams (pages 7-8) are classifier-type annotations, which the rules specify must be treated as metadata rather than separate elements. "
     },
     {
       "rule_id": "G6.3",
       "actual": false,
       "detected": false,
-      "justification": "Where the same logical data (such as person identifiers or status codes) appears in several tables on the transformed database diagrams (pages 13–17, 19), the tables are connected by explicit foreign-key connectors, so there is no unconnected denormalized duplicate column storing redundant copies of the same value."
+      "justification": "Where the same logical data (such as person identifiers or status codes) appears in several tables on the transformed database diagrams (pages 13-17, 19), the tables are connected by explicit foreign-key connectors, so there is no unconnected denormalized duplicate column storing redundant copies of the same value."
     },
     {
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names in the 'Saalide funktsionaalne allsüsteem' diagram (e.g., 'Tuvasta kasutaja', 'Vaata saalide koondaruannet', 'Registreeri saal', 'Muuda saal mittaktiivseks') consistently use a verb–object form; there is no mix of verb-based and purely noun-based naming styles."
+      "justification": "Use case names in the 'Saalide funktsionaalne allsüsteem' diagram (e.g., 'Tuvasta kasutaja', 'Vaata saalide koondaruannet', 'Registreeri saal', 'Muuda saal mittaktiivseks') consistently use a verb-object form; there is no mix of verb-based and purely noun-based naming styles."
     },
     {
       "rule_id": "G15.1",

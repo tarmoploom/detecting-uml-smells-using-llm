@@ -61,7 +61,7 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": false,
-      "justification": "No single diagram contains 10 or more central elements (classes, tables, use cases, or states). For example: 'Filmide register' shows only a handful of elements such as 'Film', associated classifier instances and 'Kinoseanss'; 'Saalide register' shows 'Saal', 'Kinoseanss' and 'Koht'; 'Kinoseansside register' shows 'Kinoseanss', 'Saal', 'Film', 'Pilet', 'Seanss_olek'; the use case diagram has roughly 9 use cases; the state/status diagram has about 5 states; and each database diagram (Film, Saal_koht, Klassifikaatorid, Kinoseanss, Pilet) contains at most 4–5 tables. Therefore, no diagram reaches the threshold of 10 central elements."
+      "justification": "No single diagram contains 10 or more central elements (classes, tables, use cases, or states). For example: 'Filmide register' shows only a handful of elements such as 'Film', associated classifier instances and 'Kinoseanss'; 'Saalide register' shows 'Saal', 'Kinoseanss' and 'Koht'; 'Kinoseansside register' shows 'Kinoseanss', 'Saal', 'Film', 'Pilet', 'Seanss_olek'; the use case diagram has roughly 9 use cases; the state/status diagram has about 5 states; and each database diagram (Film, Saal_koht, Klassifikaatorid, Kinoseanss, Pilet) contains at most 4-5 tables. Therefore, no diagram reaches the threshold of 10 central elements."
     },
     {
       "rule_id": "S1.2",
