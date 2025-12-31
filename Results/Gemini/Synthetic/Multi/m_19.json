@@ -19,7 +19,7 @@
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "No use cases with synonymous names for the same actor were found. 'Vaata autode koondaruannet' and 'Vaata k\u00f5iki autosid' describe different activities (summary vs list)."
+      "justification": "No use cases with synonymous names for the same actor were found. 'Vaata autode koondaruannet' and 'Vaata kõiki autosid' describe different activities (summary vs list)."
     },
     {
       "rule_id": "G6.2",
@@ -37,13 +37,13 @@
       "rule_id": "G8.1",
       "actual": true,
       "detected": true,
-      "justification": "Inconsistent naming form found on Page 2: The use case 'Aktiivsed autod' starts with a noun (Noun Phrase), while others like 'Tuvasta kasutaja' and 'Vaata k\u00f5iki autosid' start with a verb (Verb Phrase)."
+      "justification": "Inconsistent naming form found on Page 2: The use case 'Aktiivsed autod' starts with a noun (Noun Phrase), while others like 'Tuvasta kasutaja' and 'Vaata kõiki autosid' start with a verb (Verb Phrase)."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the state diagram (Page 9), all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, L\u00f5petatud) are reachable via transitions from the start node."
+      "justification": "In the state diagram (Page 9), all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, Lõpetatud) are reachable via transitions from the start node."
     },
     {
       "rule_id": "G15.2",
@@ -67,7 +67,7 @@
       "rule_id": "S1.2",
       "actual": false,
       "detected": false,
-      "justification": "No single class or table has 6 or more visual connections on a single page. The Class 'Isik' on Page 6 has 5 connections (Kasutajakonto, Riik, Isiku_seisundi_liik, T\u00f6\u00f6taja, Klient)."
+      "justification": "No single class or table has 6 or more visual connections on a single page. The Class 'Isik' on Page 6 has 5 connections (Kasutajakonto, Riik, Isiku_seisundi_liik, Töötaja, Klient)."
     },
     {
       "rule_id": "S2.1",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All class names (e.g., Isik, Auto, T\u00f6\u00f6taja) start with an uppercase letter and are singular."
+      "justification": "All class names (e.g., Isik, Auto, Töötaja) start with an uppercase letter and are singular."
     },
     {
       "rule_id": "N3.2",

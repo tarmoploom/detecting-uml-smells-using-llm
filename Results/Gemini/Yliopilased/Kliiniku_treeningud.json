@@ -109,7 +109,7 @@
       "rule_id": "N4.1",
       "actual": false,
       "detected": false,
-      "justification": "No Hungarian notation or type prefixes (like tbl_, str_) were found. Abbreviations like 'kp' in 's\u00fcnni_kp' are considered part of the business term (kuup\u00e4ev) rather than a type prefix."
+      "justification": "No Hungarian notation or type prefixes (like tbl_, str_) were found. Abbreviations like 'kp' in 'sünni_kp' are considered part of the business term (kuupäev) rather than a type prefix."
     }
   ]
 }

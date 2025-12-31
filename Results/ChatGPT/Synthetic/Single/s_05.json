@@ -25,7 +25,7 @@
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "In the package-style diagram on page 1, no two model elements with exactly the same primary name were clearly listed within the same package. Repeated labels like 'Klassifikaatori t\u00fc\u00fcp' in classifier-related class diagrams (pages 7-8) appear to be tool-generated classifier-type metadata and are excluded by the rule clarification. No violation was found."
+      "justification": "In the package-style diagram on page 1, no two model elements with exactly the same primary name were clearly listed within the same package. Repeated labels like 'Klassifikaatori tüüp' in classifier-related class diagrams (pages 7-8) appear to be tool-generated classifier-type metadata and are excluded by the rule clarification. No violation was found."
     },
     {
       "rule_id": "G6.3",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names on pages 2 and 3 consistently appear to start with action verbs in the same form (e.g., 'Tuvasta', 'Vaata', 'Registreeri', 'L\u00f5peta', 'Muuda', 'Aktiveeri', 'Unusta'). No inconsistent form was explicitly visible."
+      "justification": "Use case names on pages 2 and 3 consistently appear to start with action verbs in the same form (e.g., 'Tuvasta', 'Vaata', 'Registreeri', 'Lõpeta', 'Muuda', 'Aktiveeri', 'Unusta'). No inconsistent form was explicitly visible."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "The state diagram on page 9 shows an initial state ('Algus') and named states such as 'Ootel', 'Aktiivne', 'Mitteaktiivne', 'L\u00f5petatud', and 'Unustatud'. No state was explicitly shown as isolated with no incoming path from the initial state, so an unreachable state was not clearly visible."
+      "justification": "The state diagram on page 9 shows an initial state ('Algus') and named states such as 'Ootel', 'Aktiivne', 'Mitteaktiivne', 'Lõpetatud', and 'Unustatud'. No state was explicitly shown as isolated with no incoming path from the initial state, so an unreachable state was not clearly visible."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "In the activity diagram on page 4 ('Auto l\u00f5petamise tegevusdiagramm'), actions like 'Vaata k\u00f5iki autosid', 'Otsi autot', 'Vali auto', and 'L\u00f5peta valitud auto' appear within a connected flow from the start node. No action was explicitly shown as disconnected or unreachable."
+      "justification": "In the activity diagram on page 4 ('Auto lõpetamise tegevusdiagramm'), actions like 'Vaata kõiki autosid', 'Otsi autot', 'Vali auto', and 'Lõpeta valitud auto' appear within a connected flow from the start node. No action was explicitly shown as disconnected or unreachable."
     },
     {
       "rule_id": "G15.3",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All visible use case names on pages 2 and 3 and the action labels in the activity diagram on page 4 appear to start with active verbs (e.g., 'Tuvasta kasutaja', 'Vaata ...', 'Registreeri auto', 'Vali auto', 'L\u00f5peta valitud auto'). No use case or action name was explicitly visible that does not start with an active verb."
+      "justification": "All visible use case names on pages 2 and 3 and the action labels in the activity diagram on page 4 appear to start with active verbs (e.g., 'Tuvasta kasutaja', 'Vaata ...', 'Registreeri auto', 'Vali auto', 'Lõpeta valitud auto'). No use case or action name was explicitly visible that does not start with an active verb."
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Entity class names visible in the class diagrams (e.g., 'Isik', 'T\u00f6\u00f6taja', 'Auto', 'Klient', 'Klassifikaator') start with uppercase letters and are not plural. Titles like 'Isikute register' appear to function as register/package contexts and are not treated as individual entity class names per the interpretation rules. No violation was found."
+      "justification": "Entity class names visible in the class diagrams (e.g., 'Isik', 'Töötaja', 'Auto', 'Klient', 'Klassifikaator') start with uppercase letters and are not plural. Titles like 'Isikute register' appear to function as register/package contexts and are not treated as individual entity class names per the interpretation rules. No violation was found."
     },
     {
       "rule_id": "N3.2",

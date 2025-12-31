@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "All use cases in the 'Laadimispunktide funktsionaalne alls\u00fcsteem' diagram are associated with actors either directly or through inclusion relationships."
+      "justification": "All use cases in the 'Laadimispunktide funktsionaalne allsüsteem' diagram are associated with actors either directly or through inclusion relationships."
     },
     {
       "rule_id": "G6.1",
@@ -37,7 +37,7 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case naming is consistent, using the 'Verb + Noun' pattern (e.g., 'Tuvasta kasutaja', 'L\u00f5peta laadimispunkt')."
+      "justification": "Use case naming is consistent, using the 'Verb + Noun' pattern (e.g., 'Tuvasta kasutaja', 'Lõpeta laadimispunkt')."
     },
     {
       "rule_id": "G15.1",
@@ -61,13 +61,13 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The Use Case diagram 'Laadimispunktide funktsionaalne alls\u00fcsteem' (Page 2) contains 11 central use case elements (ovals), which exceeds the threshold of 10."
+      "justification": "The Use Case diagram 'Laadimispunktide funktsionaalne allsüsteem' (Page 2) contains 11 central use case elements (ovals), which exceeds the threshold of 10."
     },
     {
       "rule_id": "S1.2",
       "actual": true,
       "detected": true,
-      "justification": "On the 'T\u00f6\u00f6tajate register' diagram (Page 9), the class 'T\u00f6\u00f6taja' has 6 visual connection lines (to Isik, T\u00f6\u00f6taja_roll, T\u00f6\u00f6taja_seisundi_liik, Laadimispunkt (x2), and itself). Similarly, on Page 10, 'Laadimispunkt' has 6 connections."
+      "justification": "On the 'Töötajate register' diagram (Page 9), the class 'Töötaja' has 6 visual connection lines (to Isik, Töötaja_roll, Töötaja_seisundi_liik, Laadimispunkt (x2), and itself). Similarly, on Page 10, 'Laadimispunkt' has 6 connections."
     },
     {
       "rule_id": "S2.1",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All class names start with an uppercase letter and are singular (e.g., 'Laadimispunkt', 'T\u00f6\u00f6taja')."
+      "justification": "All class names start with an uppercase letter and are singular (e.g., 'Laadimispunkt', 'Töötaja')."
     },
     {
       "rule_id": "N3.2",

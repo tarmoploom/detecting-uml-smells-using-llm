@@ -19,13 +19,13 @@
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "Within each use case diagram, there is no clear pair of use cases that unambiguously describe the same activity with the same actor (page 2 shows distinct 'Tuvasta kasutaja' and various 'Vaata ...' cases; page 3 shows distinct change/management actions such as 'Registreeri auto', 'L\u00f5peta auto', 'Muuda autot', 'Aktiveeri auto', 'Unusta auto')."
+      "justification": "Within each use case diagram, there is no clear pair of use cases that unambiguously describe the same activity with the same actor (page 2 shows distinct 'Tuvasta kasutaja' and various 'Vaata ...' cases; page 3 shows distinct change/management actions such as 'Registreeri auto', 'Lõpeta auto', 'Muuda autot', 'Aktiveeri auto', 'Unusta auto')."
     },
     {
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "The package diagram/overview on page 1 lists elements under registers and subsystems without any clearly duplicated primary element names inside the same package. Repeated classifier-type metadata text such as 'Klassifikaatori t\u00fc\u00fcp' (seen in classifier diagrams) is treated as display metadata and does not indicate duplicate model elements."
+      "justification": "The package diagram/overview on page 1 lists elements under registers and subsystems without any clearly duplicated primary element names inside the same package. Repeated classifier-type metadata text such as 'Klassifikaatori tüüp' (seen in classifier diagrams) is treated as display metadata and does not indicate duplicate model elements."
     },
     {
       "rule_id": "G6.3",
@@ -37,13 +37,13 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names appear to follow a consistent verb-led form across pages 2 and 3 (e.g., 'Tuvasta', 'Vaata', 'Registreeri', 'L\u00f5peta', 'Muuda', 'Aktiveeri', 'Unusta'), with no clear mixed noun/verb naming pattern."
+      "justification": "Use case names appear to follow a consistent verb-led form across pages 2 and 3 (e.g., 'Tuvasta', 'Vaata', 'Registreeri', 'Lõpeta', 'Muuda', 'Aktiveeri', 'Unusta'), with no clear mixed noun/verb naming pattern."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "The state diagram on page 9 shows an initial state ('Algus') and multiple states ('Ootel', 'Aktiivne', 'Mitteaktiivne', 'L\u00f5petatud', 'Unustatud'). The provided content does not explicitly show any state as unreachable with enough certainty to trigger this rule."
+      "justification": "The state diagram on page 9 shows an initial state ('Algus') and multiple states ('Ootel', 'Aktiivne', 'Mitteaktiivne', 'Lõpetatud', 'Unustatud'). The provided content does not explicitly show any state as unreachable with enough certainty to trigger this rule."
     },
     {
       "rule_id": "G15.2",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names on pages 2-3 start with active verbs (e.g., 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Registreeri auto', 'L\u00f5peta auto'). Activity actions on page 4 also appear verb-led (e.g., 'Vaata', 'Otsi', 'Vali', 'L\u00f5peta')."
+      "justification": "Use case names on pages 2-3 start with active verbs (e.g., 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Registreeri auto', 'Lõpeta auto'). Activity actions on page 4 also appear verb-led (e.g., 'Vaata', 'Otsi', 'Vali', 'Lõpeta')."
     },
     {
       "rule_id": "N1.2",
@@ -91,13 +91,13 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Visible class names such as 'Isik', 'T\u00f6\u00f6taja', 'Auto', 'Klient', 'Kasutajakonto', and 'Klassifikaator' start with uppercase letters and do not clearly appear as pluralized entity class names within the diagrams."
+      "justification": "Visible class names such as 'Isik', 'Töötaja', 'Auto', 'Klient', 'Kasutajakonto', and 'Klassifikaator' start with uppercase letters and do not clearly appear as pluralized entity class names within the diagrams."
     },
     {
       "rule_id": "N3.2",
       "actual": true,
       "detected": true,
-      "justification": "Attributes/columns starting with an uppercase letter are visible, such as 'Vin_kood' in the 'Auto' class/table on pages 11, 12, 17, and 18, and 'Alguse_aeg' and 'L\u00f5pu_aeg' in 'T\u00f6\u00f6taja_rolli_omamine' on page 10. These names begin with uppercase letters, violating the rule."
+      "justification": "Attributes/columns starting with an uppercase letter are visible, such as 'Vin_kood' in the 'Auto' class/table on pages 11, 12, 17, and 18, and 'Alguse_aeg' and 'Lõpu_aeg' in 'Töötaja_rolli_omamine' on page 10. These names begin with uppercase letters, violating the rule."
     },
     {
       "rule_id": "N3.3",

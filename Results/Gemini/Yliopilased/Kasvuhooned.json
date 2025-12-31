@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "All use cases in the 'Kasvuhoonete funktsionaalne alls\u00fcsteem' diagram (Page 2) are connected to at least one actor (Klient, Juhataja, Kasvuhoonete haldur, or Uudistaja)."
+      "justification": "All use cases in the 'Kasvuhoonete funktsionaalne allsüsteem' diagram (Page 2) are connected to at least one actor (Klient, Juhataja, Kasvuhoonete haldur, or Uudistaja)."
     },
     {
       "rule_id": "G6.1",
@@ -61,7 +61,7 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The use case diagram 'Kasvuhoonete funktsionaalne alls\u00fcsteem' on Page 2 contains 11 central elements (use cases), which exceeds the limit of fewer than 10."
+      "justification": "The use case diagram 'Kasvuhoonete funktsionaalne allsüsteem' on Page 2 contains 11 central elements (use cases), which exceeds the limit of fewer than 10."
     },
     {
       "rule_id": "S1.2",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": true,
       "detected": true,
-      "justification": "On the activity diagram 'Kasvuhoone aktiveerimise tegevusdiagramm' (Page 4), the action 'Kasutaja n\u00e4eb eba\u00f5nnestumist' starts with 'Kasutaja' (User), which is a noun, not an active verb."
+      "justification": "On the activity diagram 'Kasvuhoone aktiveerimise tegevusdiagramm' (Page 4), the action 'Kasutaja näeb ebaõnnestumist' starts with 'Kasutaja' (User), which is a noun, not an active verb."
     },
     {
       "rule_id": "N1.2",

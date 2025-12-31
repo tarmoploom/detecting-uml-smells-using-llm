@@ -13,13 +13,13 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "On page 2 (Kultuurireiside funktsionaalne alls\u00fcsteem use case diagram), all use case ovals are associated with actors. Use cases like 'Lisa uus kultuurireis', 'Kinnita kultuurireis', etc. connect to actors (Reisikonsultant, Reisikorraldusjuht, Klient, Aeg, Giid, Isik). Sub-use cases are connected via \u00abinclude\u00bb relationships to main use cases which have actor associations."
+      "justification": "On page 2 (Kultuurireiside funktsionaalne allsüsteem use case diagram), all use case ovals are associated with actors. Use cases like 'Lisa uus kultuurireis', 'Kinnita kultuurireis', etc. connect to actors (Reisikonsultant, Reisikorraldusjuht, Klient, Aeg, Giid, Isik). Sub-use cases are connected via «include» relationships to main use cases which have actor associations."
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "No duplicate use cases with same activity found. While multiple use cases use the verb 'Lisa' (Add), they add different entities: 'Lisa uus kultuurireis' (add trip), 'Lisa uus reisip\u00e4ev' (add travel day), 'Lisa teenuse pakkumine' (add service offering). Similarly, 'Muuda' (Modify) use cases modify different entities. These represent distinct activities, not duplicates."
+      "justification": "No duplicate use cases with same activity found. While multiple use cases use the verb 'Lisa' (Add), they add different entities: 'Lisa uus kultuurireis' (add trip), 'Lisa uus reisipäev' (add travel day), 'Lisa teenuse pakkumine' (add service offering). Similarly, 'Muuda' (Modify) use cases modify different entities. These represent distinct activities, not duplicates."
     },
     {
       "rule_id": "G6.2",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases on page 2 follow consistent verb-first naming pattern in Estonian: Lisa (Add), Kinnita (Confirm), Vaata (View), T\u00fchista (Cancel), Muuda (Modify), Otsi (Search), Tuvasta (Identify), Arhiveeri (Archive). All 13 use case names start with active verbs."
+      "justification": "All use cases on page 2 follow consistent verb-first naming pattern in Estonian: Lisa (Add), Kinnita (Confirm), Vaata (View), Tühista (Cancel), Muuda (Modify), Otsi (Search), Tuvasta (Identify), Arhiveeri (Archive). All 13 use case names start with active verbs."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "On page 6 (Kultuurireisi eluts\u00fcklid state diagram), all 5 states are reachable: 'Kavandamisel' from initial state via 'Lisa uus kultuurireis', 'Kinnitatud' from Kavandamisel, 'Toimunud' from Kinnitatud, 'T\u00fchistatud' from Kavandamisel or Kinnitatud, 'Arhiveeritud' from Kavandamisel, Toimunud, or T\u00fchistatud. Every state has at least one incoming transition."
+      "justification": "On page 6 (Kultuurireisi elutsüklid state diagram), all 5 states are reachable: 'Kavandamisel' from initial state via 'Lisa uus kultuurireis', 'Kinnitatud' from Kavandamisel, 'Toimunud' from Kinnitatud, 'Tühistatud' from Kavandamisel or Kinnitatud, 'Arhiveeritud' from Kavandamisel, Toimunud, or Tühistatud. Every state has at least one incoming transition."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "On pages 3-4 (Joonis3, Joonis4 activity diagrams), all actions are reachable from start nodes. Page 3: Ava s\u00fcsteem \u2192 Vali kultuurireis \u2192 decision branches lead to all subsequent actions. Page 4: Ava s\u00fcsteem \u2192 Vali funktsioon \u2192 Sisesta reisi detailid \u2192 all paths are connected from start."
+      "justification": "On pages 3-4 (Joonis3, Joonis4 activity diagrams), all actions are reachable from start nodes. Page 3: Ava süsteem → Vali kultuurireis → decision branches lead to all subsequent actions. Page 4: Ava süsteem → Vali funktsioon → Sisesta reisi detailid → all paths are connected from start."
     },
     {
       "rule_id": "G15.3",
@@ -61,13 +61,13 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "DETECTED on page 2: 'Kultuurireiside funktsionaalne alls\u00fcsteem' use case diagram contains 13 use case ovals (Lisa uus kultuurireis, Kinnita kultuurireis, Vaata kultuurireiside koondaruannet, T\u00fchista kultuurireis, Muuda kultuurireisi andmeid, Otsi kultuurireisi, Tuvasta kasutaja roll, Arhiveeri kultuurireis, Lisa uus reisip\u00e4ev, Muuda reisip\u00e4eva andmeid, Lisa teenuse pakkumine, Muuda teenuse pakkumise andmeid, Vaata kultuurireise). Threshold is \u226510. 13 \u2265 10, therefore smell IS present. ALSO DETECTED on page 14: DDL diagram contains 14 tables (Amet, Kliendi_seisundi_liik, Klienditellimuse_seisundi_liik, Kultuurireisi_seisundi_liik, Tootaja_seisundi_liik, Isik, Klienditellimus, Reisija, Klient, Koostoopartner, Kultuurireis, Reisipaev, Teenuse_pakkumine, Tootaja). 14 \u2265 10, therefore smell IS present."
+      "justification": "DETECTED on page 2: 'Kultuurireiside funktsionaalne allsüsteem' use case diagram contains 13 use case ovals (Lisa uus kultuurireis, Kinnita kultuurireis, Vaata kultuurireiside koondaruannet, Tühista kultuurireis, Muuda kultuurireisi andmeid, Otsi kultuurireisi, Tuvasta kasutaja roll, Arhiveeri kultuurireis, Lisa uus reisipäev, Muuda reisipäeva andmeid, Lisa teenuse pakkumine, Muuda teenuse pakkumise andmeid, Vaata kultuurireise). Threshold is ≥10. 13 ≥ 10, therefore smell IS present. ALSO DETECTED on page 14: DDL diagram contains 14 tables (Amet, Kliendi_seisundi_liik, Klienditellimuse_seisundi_liik, Kultuurireisi_seisundi_liik, Tootaja_seisundi_liik, Isik, Klienditellimus, Reisija, Klient, Koostoopartner, Kultuurireis, Reisipaev, Teenuse_pakkumine, Tootaja). 14 ≥ 10, therefore smell IS present."
     },
     {
       "rule_id": "S1.2",
       "actual": false,
       "detected": false,
-      "justification": "On page 14 (DDL), counted visual connections for each table: Kultuurireis has 5 lines (to Kultuurireisi_seisundi_liik, to Tootaja, from Klienditellimus, from Reisipaev, from Teenuse_pakkumine). Klienditellimus has 4 lines. Tootaja has 4 lines. Isik has 2 lines. Maximum is 5. Threshold is \u22656. Since 5 < 6, smell is NOT present. Other diagram pages (15-21) have fewer tables and connections."
+      "justification": "On page 14 (DDL), counted visual connections for each table: Kultuurireis has 5 lines (to Kultuurireisi_seisundi_liik, to Tootaja, from Klienditellimus, from Reisipaev, from Teenuse_pakkumine). Klienditellimus has 4 lines. Tootaja has 4 lines. Isik has 2 lines. Maximum is 5. Threshold is ≥6. Since 5 < 6, smell is NOT present. Other diagram pages (15-21) have fewer tables and connections."
     },
     {
       "rule_id": "S2.1",
@@ -79,13 +79,13 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases on page 2 start with active verbs in Estonian: Lisa (Add), Kinnita (Confirm), Vaata (View), T\u00fchista (Cancel), Muuda (Modify), Otsi (Search), Tuvasta (Identify), Arhiveeri (Archive). All activity diagram actions on pages 3-4 also start with active verbs: Ava (Open), Vali (Select), Sisesta (Enter), Salvesta (Save), Paranda (Fix), Katkesta (Cancel)."
+      "justification": "All use cases on page 2 start with active verbs in Estonian: Lisa (Add), Kinnita (Confirm), Vaata (View), Tühista (Cancel), Muuda (Modify), Otsi (Search), Tuvasta (Identify), Arhiveeri (Archive). All activity diagram actions on pages 3-4 also start with active verbs: Ava (Open), Vali (Select), Sisesta (Enter), Salvesta (Save), Paranda (Fix), Katkesta (Cancel)."
     },
     {
       "rule_id": "N1.2",
       "actual": false,
       "detected": false,
-      "justification": "All names have 4 or more characters. Class/table names: Amet (4), Isik (4), Klient (6), Reisija (7), etc. Attribute/column names: nimi (4), hind (4), kood (4), aadress (7), etc. Threshold is \u22643 characters. All names have \u22654 characters, therefore smell is NOT present."
+      "justification": "All names have 4 or more characters. Class/table names: Amet (4), Isik (4), Klient (6), Reisija (7), etc. Attribute/column names: nimi (4), hind (4), kood (4), aadress (7), etc. Threshold is ≤3 characters. All names have ≥4 characters, therefore smell is NOT present."
     },
     {
       "rule_id": "N3.1",

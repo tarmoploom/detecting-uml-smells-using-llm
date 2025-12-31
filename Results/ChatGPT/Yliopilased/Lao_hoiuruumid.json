@@ -13,19 +13,19 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "In the use-case diagram for 'Hoiuruumide funktsionaalne alls\u00fcsteem', all use cases are shown inside the system boundary with nearby actors; there is no use case that is clearly isolated from all actors, and the diagram text does not explicitly show any use case without an actor association, so no unambiguous violation can be established. "
+      "justification": "In the use-case diagram for 'Hoiuruumide funktsionaalne allsüsteem', all use cases are shown inside the system boundary with nearby actors; there is no use case that is clearly isolated from all actors, and the diagram text does not explicitly show any use case without an actor association, so no unambiguous violation can be established. "
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "The use cases have distinct names and meanings (e.g., 'Registreeri hoiuruum', 'Aktiveeri hoiuruum', 'L\u00f5peta hoiuruum', 'Unusta hoiuruum') and there are no two use cases that describe the same activity for the same actor such as 'Add Car' vs 'Register Car'. "
+      "justification": "The use cases have distinct names and meanings (e.g., 'Registreeri hoiuruum', 'Aktiveeri hoiuruum', 'Lõpeta hoiuruum', 'Unusta hoiuruum') and there are no two use cases that describe the same activity for the same actor such as 'Add Car' vs 'Register Car'. "
     },
     {
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "Within each package in the package/context diagram (e.g., 'Hoiuruumide register', 'Klassifikaatorite register'), the primary element names are unique; repeated phrases like 'Klassifikaatori t\u00fc\u00fcp' are classifier-type metadata rather than separate model elements, as indicated by the interpretation rules. "
+      "justification": "Within each package in the package/context diagram (e.g., 'Hoiuruumide register', 'Klassifikaatorite register'), the primary element names are unique; repeated phrases like 'Klassifikaatori tüüp' are classifier-type metadata rather than separate model elements, as indicated by the interpretation rules. "
     },
     {
       "rule_id": "G6.3",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use-case names in the use-case diagram are consistently expressed in an imperative verb form in Estonian (e.g., 'Registreeri hoiuruum', 'L\u00f5peta hoiuruum', 'Aktiveeri hoiuruum', 'Muuda hoiuruum mitteaktiivseks', 'Vaata k\u00f5iki hoiuruume'), so there is no inconsistency of form such as mixing noun-based names with verb-based names. "
+      "justification": "Use-case names in the use-case diagram are consistently expressed in an imperative verb form in Estonian (e.g., 'Registreeri hoiuruum', 'Lõpeta hoiuruum', 'Aktiveeri hoiuruum', 'Muuda hoiuruum mitteaktiivseks', 'Vaata kõiki hoiuruume'), so there is no inconsistency of form such as mixing noun-based names with verb-based names. "
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the 'Hoiuruumi seisundidiagramm' state diagram, each state (Ootel, Aktiivne, Mitteaktiivne, L\u00f5petatud, Unustatud) has at least one incoming transition from either the initial state or another state, so there is no state that is clearly unreachable. "
+      "justification": "In the 'Hoiuruumi seisundidiagramm' state diagram, each state (Ootel, Aktiivne, Mitteaktiivne, Lõpetatud, Unustatud) has at least one incoming transition from either the initial state or another state, so there is no state that is clearly unreachable. "
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "In the activity diagrams for 'Hoiuruumi l\u00f5petamise tegevusdiagramm' and 'Hoiuruumi aktiveerimise tegevusdiagramm', all action nodes (such as 'Vaata k\u00f5iki hoiuruume, mida saab l\u00f5petada', 'Otsi hoiuruum', 'Vali hoiuruum', 'L\u00f5peta valitud hoiuruumid', 'Hoiuruumide haldur valib nimekirjast ruumi', 'Hoiuruumide haldur aktiveerib valitud ruumi') are part of paths that start from the initial node, so no action is obviously unreachable. "
+      "justification": "In the activity diagrams for 'Hoiuruumi lõpetamise tegevusdiagramm' and 'Hoiuruumi aktiveerimise tegevusdiagramm', all action nodes (such as 'Vaata kõiki hoiuruume, mida saab lõpetada', 'Otsi hoiuruum', 'Vali hoiuruum', 'Lõpeta valitud hoiuruumid', 'Hoiuruumide haldur valib nimekirjast ruumi', 'Hoiuruumide haldur aktiveerib valitud ruumi') are part of paths that start from the initial node, so no action is obviously unreachable. "
     },
     {
       "rule_id": "G15.3",
@@ -61,13 +61,13 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "At least two diagrams exceed the threshold of 10 central elements: the use-case diagram 'Hoiuruumide funktsionaalne alls\u00fcsteem' contains 11 distinct use cases (e.g., 'Tuvasta kasutaja', 'Registreeri hoiuruum', 'Unusta hoiuruum'), and the 'Klassifikaatorite register (transformed)' database diagram shows 10 separate tables such as 'hoiuruumi_kategooria', 'hoiuruumi_kategooria_tyyp', 'hoiuruumi_seisundi_liik', 'riik', and 'rentimise_seisundi_liik'. "
+      "justification": "At least two diagrams exceed the threshold of 10 central elements: the use-case diagram 'Hoiuruumide funktsionaalne allsüsteem' contains 11 distinct use cases (e.g., 'Tuvasta kasutaja', 'Registreeri hoiuruum', 'Unusta hoiuruum'), and the 'Klassifikaatorite register (transformed)' database diagram shows 10 separate tables such as 'hoiuruumi_kategooria', 'hoiuruumi_kategooria_tyyp', 'hoiuruumi_seisundi_liik', 'riik', and 'rentimise_seisundi_liik'. "
     },
     {
       "rule_id": "S1.2",
       "actual": true,
       "detected": true,
-      "justification": "In the 'Klassifikaatorite register' class diagram, the central class 'klassifikaator' is connected via separate generalization relationship lines to many subtype classes (including 'riik', 'hoiuruumi_seisundi_liik', 't\u00f6\u00f6taja_seisundi_liik', 'isiku_seisundi_liik', 't\u00f6\u00f6taja_roll', 'hoiuruumi_kategooria', 'hoiuruumi_kategooria_t\u00fc\u00fcp', 'hoiuruumi_suuruse_liik', 'kliendi_seisundi_liik', and 'broneeringu_seisundi_liik'), giving this class 6 or more distinct visible connections on that diagram. "
+      "justification": "In the 'Klassifikaatorite register' class diagram, the central class 'klassifikaator' is connected via separate generalization relationship lines to many subtype classes (including 'riik', 'hoiuruumi_seisundi_liik', 'töötaja_seisundi_liik', 'isiku_seisundi_liik', 'töötaja_roll', 'hoiuruumi_kategooria', 'hoiuruumi_kategooria_tüüp', 'hoiuruumi_suuruse_liik', 'kliendi_seisundi_liik', and 'broneeringu_seisundi_liik'), giving this class 6 or more distinct visible connections on that diagram. "
     },
     {
       "rule_id": "S2.1",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": true,
       "detected": true,
-      "justification": "Several activity actions are named with leading actor nouns rather than starting with an active verb, for example 'Kasutusjuht vaatab k\u00f5iki ootel olevad ja mitteaktiivsed hoiuruume', 'Hoiuruumide haldur valib nimekirjast ruumi.', and 'Hoiuruumide haldur aktiveerib valitud ruumi.', so their names do not begin with an active verb as required. "
+      "justification": "Several activity actions are named with leading actor nouns rather than starting with an active verb, for example 'Kasutusjuht vaatab kõiki ootel olevad ja mitteaktiivsed hoiuruume', 'Hoiuruumide haldur valib nimekirjast ruumi.', and 'Hoiuruumide haldur aktiveerib valitud ruumi.', so their names do not begin with an active verb as required. "
     },
     {
       "rule_id": "N1.2",

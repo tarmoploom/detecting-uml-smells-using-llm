@@ -7,25 +7,25 @@
       "rule_id": "G5.1",
       "actual": true,
       "detected": true,
-      "justification": "Page 9 '\u00dclesannete registri eskiismudel' is an empty diagram. The diagram contains only the title 'class \u00dclesannete registri eskiismudel' with ZERO elements inside. Threshold: 0 elements = smell present."
+      "justification": "Page 9 'Ülesannete registri eskiismudel' is an empty diagram. The diagram contains only the title 'class Ülesannete registri eskiismudel' with ZERO elements inside. Threshold: 0 elements = smell present."
     },
     {
       "rule_id": "G5.2",
       "actual": false,
       "detected": true,
-      "justification": "On page 2 '\u00dclesannete funktsionaalne alls\u00fcsteem', the use case 'Tuvasta kasutaja' (from L\u00e4bivad huvid) has ZERO direct actor associations. It is only connected via \u00abinclude\u00bb relationships from other use cases (which are use-case-to-use-case relationships, not actor associations). The rule requires actor associations, not indirect connections via include. Smell IS present."
+      "justification": "On page 2 'Ülesannete funktsionaalne allsüsteem', the use case 'Tuvasta kasutaja' (from Läbivad huvid) has ZERO direct actor associations. It is only connected via «include» relationships from other use cases (which are use-case-to-use-case relationships, not actor associations). The rule requires actor associations, not indirect connections via include. Smell IS present."
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "No duplicate use cases with same/similar activity names associated with the same actor were found. While there are related use cases like 'M\u00e4\u00e4ra \u00fclesande vastutaja', 'Eemalda \u00fclesande vastutaja', 'Vaheta \u00fclesande vastutaja' (all with Projektijuht), these describe different activities (Assign, Remove, Change) - not the same activity. Smell is NOT present."
+      "justification": "No duplicate use cases with same/similar activity names associated with the same actor were found. While there are related use cases like 'Määra ülesande vastutaja', 'Eemalda ülesande vastutaja', 'Vaheta ülesande vastutaja' (all with Projektijuht), these describe different activities (Assign, Remove, Change) - not the same activity. Smell is NOT present."
     },
     {
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "No duplicate element names within the same package were found across all diagrams. Each package contains uniquely named elements. For example, 'Klassifikaatorite register' contains Klassifikaator, \u00dclesande_staatuse_liik, T\u00f6\u00f6taja_projekti_rolli_liik - all unique names. Smell is NOT present."
+      "justification": "No duplicate element names within the same package were found across all diagrams. Each package contains uniquely named elements. For example, 'Klassifikaatorite register' contains Klassifikaator, Ülesande_staatuse_liik, Töötaja_projekti_rolli_liik - all unique names. Smell is NOT present."
     },
     {
       "rule_id": "G6.3",
@@ -37,37 +37,37 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases on page 2 follow a consistent naming pattern starting with active verbs in Estonian: Lisa (Add), Muuda (Change), Vaata (View), Tuvasta (Identify), Kinnita (Confirm), Alusta (Start), J\u00e4tka (Continue), M\u00e4rgi (Mark), L\u00fckka (Push/Reject), T\u00fchista (Cancel), Pane (Put), M\u00e4\u00e4ra (Assign), Eemalda (Remove), Vaheta (Change). All 16 use cases start with verbs. Smell is NOT present."
+      "justification": "All use cases on page 2 follow a consistent naming pattern starting with active verbs in Estonian: Lisa (Add), Muuda (Change), Vaata (View), Tuvasta (Identify), Kinnita (Confirm), Alusta (Start), Jätka (Continue), Märgi (Mark), Lükka (Push/Reject), Tühista (Cancel), Pane (Put), Määra (Assign), Eemalda (Remove), Vaheta (Change). All 16 use cases start with verbs. Smell is NOT present."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "On page 7 '\u00dclesande seisundidiagramm', all states have incoming transitions: Avatud\u2190Algus (via 'Lisa \u00fclesanne'), Pooleli\u2190Avatud/Ootel, Ootel\u2190Avatud/Pooleli, T\u00fchistatud\u2190multiple states, L\u00f5petatud\u2190Pooleli, \u00dclevatusel\u2190L\u00f5petatud, Kinnitatud\u2190\u00dclevatusel. Every state can be reached via at least one transition path. Smell is NOT present."
+      "justification": "On page 7 'Ülesande seisundidiagramm', all states have incoming transitions: Avatud←Algus (via 'Lisa ülesanne'), Pooleli←Avatud/Ootel, Ootel←Avatud/Pooleli, Tühistatud←multiple states, Lõpetatud←Pooleli, Ülevatusel←Lõpetatud, Kinnitatud←Ülevatusel. Every state can be reached via at least one transition path. Smell is NOT present."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "Activity diagrams on pages 3-4 have all actions reachable from start. Page 3: Start\u2192'Vaata l\u00f5petatud \u00fclesannete nimekirja'\u2192decision\u2192all subsequent actions connected via control flow. Page 4: Start\u2192'Vaata projekti \u00fclesannete nimekirja'\u2192all actions connected. No unreachable actions. Smell is NOT present."
+      "justification": "Activity diagrams on pages 3-4 have all actions reachable from start. Page 3: Start→'Vaata lõpetatud ülesannete nimekirja'→decision→all subsequent actions connected via control flow. Page 4: Start→'Vaata projekti ülesannete nimekirja'→all actions connected. No unreachable actions. Smell is NOT present."
     },
     {
       "rule_id": "G15.3",
       "actual": false,
       "detected": false,
-      "justification": "All relationships in class and database diagrams have multiplicity indicators on both ends. For example, on page 8 '\u00dclesannete register': \u00dclesanne-Projekt (0..*-1), \u00dclesanne-T\u00f6\u00f6taja (0..*-1), \u00dclesanne-Vastutaja_\u00fclesandes (1-0..*), etc. On page 10: Projekt-T\u00f6\u00f6taja_projektis (1-0..*). Transformed database diagrams (pages 12-15) show FK relationships with multiplicities (0..*-1). Smell is NOT present."
+      "justification": "All relationships in class and database diagrams have multiplicity indicators on both ends. For example, on page 8 'Ülesannete register': Ülesanne-Projekt (0..*-1), Ülesanne-Töötaja (0..*-1), Ülesanne-Vastutaja_ülesandes (1-0..*), etc. On page 10: Projekt-Töötaja_projektis (1-0..*). Transformed database diagrams (pages 12-15) show FK relationships with multiplicities (0..*-1). Smell is NOT present."
     },
     {
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "Page 2 '\u00dclesannete funktsionaalne alls\u00fcsteem' contains 16 use cases (central elements). Counted: 1.Lisa \u00fclesanne, 2.Muuda \u00fclesande andmeid, 3.Vaata \u00fclesande detaile, 4.Tuvasta kasutaja, 5.Kinnita l\u00f5petatud \u00fclesanne, 6.Alusta \u00fclesande t\u00e4itmist, 7.J\u00e4tka \u00fclesande t\u00e4itmist, 8.M\u00e4rgi \u00fclesanne l\u00f5petatuks, 9.Alusta \u00fclesande \u00fclevaatust, 10.L\u00fckka \u00fclesanne tagasi, 11.T\u00fchista \u00fclesanne, 12.Pane \u00fclesanne ootele, 13.Vaata k\u00f5iki \u00fclesandeid, 14.M\u00e4\u00e4ra \u00fclesande vastutaja, 15.Eemalda \u00fclesande vastutaja, 16.Vaheta \u00fclesande vastutaja = 16 total. Threshold is \u226510. 16 \u2265 10, smell IS present. Note: Actors (3) and the System boundary are NOT counted as central elements per the rule."
+      "justification": "Page 2 'Ülesannete funktsionaalne allsüsteem' contains 16 use cases (central elements). Counted: 1.Lisa ülesanne, 2.Muuda ülesande andmeid, 3.Vaata ülesande detaile, 4.Tuvasta kasutaja, 5.Kinnita lõpetatud ülesanne, 6.Alusta ülesande täitmist, 7.Jätka ülesande täitmist, 8.Märgi ülesanne lõpetatuks, 9.Alusta ülesande ülevaatust, 10.Lükka ülesanne tagasi, 11.Tühista ülesanne, 12.Pane ülesanne ootele, 13.Vaata kõiki ülesandeid, 14.Määra ülesande vastutaja, 15.Eemalda ülesande vastutaja, 16.Vaheta ülesande vastutaja = 16 total. Threshold is ≥10. 16 ≥ 10, smell IS present. Note: Actors (3) and the System boundary are NOT counted as central elements per the rule."
     },
     {
       "rule_id": "S1.2",
       "actual": true,
       "detected": true,
-      "justification": "On page 8 '\u00dclesannete register', the class '\u00dclesanne' has 7 visual connection lines to other classes. Counted connections from \u00dclesanne: 1.to Projekt, 2.to T\u00f6\u00f6taja (loob), 3.to \u00dclesande_staatuse_liik, 4.to Vastutaja_\u00fclesandes, 5.to Tagasil\u00fckkamise_p\u00f5hjendus, 6.to T\u00fchistamise_p\u00f5hjendus, 7.to Ootele_panemise_p\u00f5hjendus = 7 total visible lines. Threshold is \u22656. 7 \u2265 6, smell IS present."
+      "justification": "On page 8 'Ülesannete register', the class 'Ülesanne' has 7 visual connection lines to other classes. Counted connections from Ülesanne: 1.to Projekt, 2.to Töötaja (loob), 3.to Ülesande_staatuse_liik, 4.to Vastutaja_ülesandes, 5.to Tagasilükkamise_põhjendus, 6.to Tühistamise_põhjendus, 7.to Ootele_panemise_põhjendus = 7 total visible lines. Threshold is ≥6. 7 ≥ 6, smell IS present."
     },
     {
       "rule_id": "S2.1",
@@ -79,19 +79,19 @@
       "rule_id": "N1.1",
       "actual": true,
       "detected": true,
-      "justification": "On page 3 '\u00dclesande kinnitamise tegevusdiagramm', the action '\u00dclesande kinnitamise otsustamine' (Task confirmation decision) starts with '\u00dclesande' which is a noun (genitive form of '\u00dclesanne'/Task), not an active verb. The name describes a decision/noun rather than starting with an action verb like 'Otsusta' (Decide). All other actions on pages 3-4 start with verbs: Vaata, Vali, Kinnita, Saada, J\u00e4tka, M\u00e4rgi, T\u00fchista, T\u00e4ida. Smell IS present."
+      "justification": "On page 3 'Ülesande kinnitamise tegevusdiagramm', the action 'Ülesande kinnitamise otsustamine' (Task confirmation decision) starts with 'Ülesande' which is a noun (genitive form of 'Ülesanne'/Task), not an active verb. The name describes a decision/noun rather than starting with an action verb like 'Otsusta' (Decide). All other actions on pages 3-4 start with verbs: Vaata, Vali, Kinnita, Saada, Jätka, Märgi, Tühista, Täida. Smell IS present."
     },
     {
       "rule_id": "N1.2",
       "actual": false,
       "detected": false,
-      "justification": "All class, table, attribute, and use case names have more than 3 characters. Shortest names found: 'kood' (4 chars), 'email' (5 chars), 'Projekt' (7 chars). No names with \u22643 characters were found. Threshold is \u22643 characters. All names have \u22654 characters. Smell is NOT present."
+      "justification": "All class, table, attribute, and use case names have more than 3 characters. Shortest names found: 'kood' (4 chars), 'email' (5 chars), 'Projekt' (7 chars). No names with ≤3 characters were found. Threshold is ≤3 characters. All names have ≥4 characters. Smell is NOT present."
     },
     {
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All class names start with uppercase letters and are singular. Checked: \u00dclesanne (singular, uppercase), T\u00f6\u00f6taja (singular, uppercase), Projekt (singular, uppercase), Klassifikaator (singular, uppercase), Vastutaja_\u00fclesandes (singular, uppercase), Tagasil\u00fckkamise_p\u00f5hjendus (singular, uppercase), T\u00fchistamise_p\u00f5hjendus (singular, uppercase), Ootele_panemise_p\u00f5hjendus (singular, uppercase), T\u00f6\u00f6taja_projektis (singular, uppercase). Smell is NOT present."
+      "justification": "All class names start with uppercase letters and are singular. Checked: Ülesanne (singular, uppercase), Töötaja (singular, uppercase), Projekt (singular, uppercase), Klassifikaator (singular, uppercase), Vastutaja_ülesandes (singular, uppercase), Tagasilükkamise_põhjendus (singular, uppercase), Tühistamise_põhjendus (singular, uppercase), Ootele_panemise_põhjendus (singular, uppercase), Töötaja_projektis (singular, uppercase). Smell is NOT present."
     },
     {
       "rule_id": "N3.2",

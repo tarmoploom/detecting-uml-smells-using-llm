@@ -13,13 +13,13 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "In the use case diagram 'Teenuste funktsionaalne alls\u00fcsteem' all visible use cases are connected via associations or include relationships within the system boundary, and no use case oval is clearly left without any link to an actor. "
+      "justification": "In the use case diagram 'Teenuste funktsionaalne allsüsteem' all visible use cases are connected via associations or include relationships within the system boundary, and no use case oval is clearly left without any link to an actor. "
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "The use cases in the use case diagram have distinct meanings (e.g., 'Registreeri teenus', 'Aktiveeri teenus', 'L\u00f5peta teenus', 'Unusta teenus') and there are no two or more use cases whose names clearly describe the same activity for the same actor. "
+      "justification": "The use cases in the use case diagram have distinct meanings (e.g., 'Registreeri teenus', 'Aktiveeri teenus', 'Lõpeta teenus', 'Unusta teenus') and there are no two or more use cases whose names clearly describe the same activity for the same actor. "
     },
     {
       "rule_id": "G6.2",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use case names are written in a consistent verbal form starting with an imperative verb, such as 'Registreeri teenus', 'Aktiveeri teenus', 'L\u00f5peta teenus', 'Vaata teenuste koondaruannet', and 'Unusta teenus'. "
+      "justification": "All use case names are written in a consistent verbal form starting with an imperative verb, such as 'Registreeri teenus', 'Aktiveeri teenus', 'Lõpeta teenus', 'Vaata teenuste koondaruannet', and 'Unusta teenus'. "
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the state diagram 'Teenuse seisundidiagramm', every state (Ootel, Aktiivne, Mitteaktiivne, L\u00f5petatud, Unustatud) has at least one incoming transition from the initial state or another state, so no state is clearly unreachable. "
+      "justification": "In the state diagram 'Teenuse seisundidiagramm', every state (Ootel, Aktiivne, Mitteaktiivne, Lõpetatud, Unustatud) has at least one incoming transition from the initial state or another state, so no state is clearly unreachable. "
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "In both activity diagrams ('Teenuse l\u00f5petamise tegevusdiagramm' and 'Teenuse aktiveerimise tegevusdiagramm') each action node such as 'Otsi teenust', 'Vaata k\u00f5iki teenuseid, mida saab l\u00f5petada', 'Vaata k\u00f5iki teenuseid, mida saab aktiveerida', 'Vali teenus', and the corresponding 'L\u00f5peta'/'Aktiveeri' actions has at least one incoming control flow, so no action is unreachable. "
+      "justification": "In both activity diagrams ('Teenuse lõpetamise tegevusdiagramm' and 'Teenuse aktiveerimise tegevusdiagramm') each action node such as 'Otsi teenust', 'Vaata kõiki teenuseid, mida saab lõpetada', 'Vaata kõiki teenuseid, mida saab aktiveerida', 'Vali teenus', and the corresponding 'Lõpeta'/'Aktiveeri' actions has at least one incoming control flow, so no action is unreachable. "
     },
     {
       "rule_id": "G15.3",
@@ -61,7 +61,7 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The use case diagram 'Teenuste funktsionaalne alls\u00fcsteem' contains at least 11 central elements (use cases such as 'Tuvasta kasutaja', 'Registreeri teenus', 'Aktiveeri teenus', 'L\u00f5peta teenus', 'Unusta teenus', and multiple 'Vaata ... teenuseid' use cases), exceeding the threshold of 10 central elements on a single diagram. "
+      "justification": "The use case diagram 'Teenuste funktsionaalne allsüsteem' contains at least 11 central elements (use cases such as 'Tuvasta kasutaja', 'Registreeri teenus', 'Aktiveeri teenus', 'Lõpeta teenus', 'Unusta teenus', and multiple 'Vaata ... teenuseid' use cases), exceeding the threshold of 10 central elements on a single diagram. "
     },
     {
       "rule_id": "S1.2",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All use case names and activity actions start with active verbs, such as 'Registreeri teenus', 'Aktiveeri teenus', 'L\u00f5peta teenus', 'Vaata k\u00f5iki teenuseid, mida saab l\u00f5petada', and 'Otsi teenust'; decision nodes that start with 'Kas ...?' are not actions but decision diamonds. "
+      "justification": "All use case names and activity actions start with active verbs, such as 'Registreeri teenus', 'Aktiveeri teenus', 'Lõpeta teenus', 'Vaata kõiki teenuseid, mida saab lõpetada', and 'Otsi teenust'; decision nodes that start with 'Kas ...?' are not actions but decision diamonds. "
     },
     {
       "rule_id": "N1.2",
@@ -91,13 +91,13 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All class names begin with an uppercase letter and are singular domain terms such as 'Isik', 'T\u00f6\u00f6taja', 'Teenus', 'Klient', and 'Klassifikaator'; plural wordings like 'Teenuste register' are used only for register/package names, not for individual entity classes. "
+      "justification": "All class names begin with an uppercase letter and are singular domain terms such as 'Isik', 'Töötaja', 'Teenus', 'Klient', and 'Klassifikaator'; plural wordings like 'Teenuste register' are used only for register/package names, not for individual entity classes. "
     },
     {
       "rule_id": "N3.2",
       "actual": false,
       "detected": false,
-      "justification": "Attribute and column names consistently start with lowercase letters (e.g., 'eesnimi', 's\u00fcnni_kp', 'meil', 'on_aktiivne', 'hinnavahemiku_algus'); uppercase prefixes such as 'PK', 'FK', 'pfK', and 'IXFK' appear only as constraint or index labels, not as actual attribute names. "
+      "justification": "Attribute and column names consistently start with lowercase letters (e.g., 'eesnimi', 'sünni_kp', 'meil', 'on_aktiivne', 'hinnavahemiku_algus'); uppercase prefixes such as 'PK', 'FK', 'pfK', and 'IXFK' appear only as constraint or index labels, not as actual attribute names. "
     },
     {
       "rule_id": "N3.3",

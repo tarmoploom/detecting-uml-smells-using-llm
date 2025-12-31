@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "In the use case diagrams Pakiautomaatide funktsionaalne alls\u00fcsteem (page 2) and Primary Use Cases (page 8), every use case oval is connected by at least one association line to an actor, and other pages that list functions inside packages do not show visual ovals and are excluded from this rule."
+      "justification": "In the use case diagrams Pakiautomaatide funktsionaalne allsüsteem (page 2) and Primary Use Cases (page 8), every use case oval is connected by at least one association line to an actor, and other pages that list functions inside packages do not show visual ovals and are excluded from this rule."
     },
     {
       "rule_id": "G6.1",
@@ -37,13 +37,13 @@
       "rule_id": "G8.1",
       "actual": true,
       "detected": false,
-      "justification": "Within each use case diagram, the naming form is internally consistent: on page 2 all use cases begin with a verb in Estonian (for example Tuvasta kasutaja, Registreeri pakiautomaat, Vaata k\u00f5iki pakiautomaate), while on page 8 both use cases share the neutral template style Use Case1 and Use Case2, so no single diagram mixes verb-first and noun-first naming."
+      "justification": "Within each use case diagram, the naming form is internally consistent: on page 2 all use cases begin with a verb in Estonian (for example Tuvasta kasutaja, Registreeri pakiautomaat, Vaata kõiki pakiautomaate), while on page 8 both use cases share the neutral template style Use Case1 and Use Case2, so no single diagram mixes verb-first and noun-first naming."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "The state diagram Pakiautomaatide seisundidiagramm on page 24 shows all states (Ootel, Aktiivne, Mitteaktiivne, L\u00f5petatud, Unustatud) with at least one incoming transition from the initial state or from another state; there is no state drawn without any incoming arrow, so no unreachable state is evident."
+      "justification": "The state diagram Pakiautomaatide seisundidiagramm on page 24 shows all states (Ootel, Aktiivne, Mitteaktiivne, Lõpetatud, Unustatud) with at least one incoming transition from the initial state or from another state; there is no state drawn without any incoming arrow, so no unreachable state is evident."
     },
     {
       "rule_id": "G15.2",
@@ -61,13 +61,13 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "At least two diagrams exceed the threshold of 10 central elements: the use case diagram Pakiautomaatide funktsionaalne alls\u00fcsteem on page 2 contains 11 distinct use cases, and the conceptual class diagram Kontseptuaalne eskiismudel on page 18 contains more than 10 classes (including Isik, Kasutajakonto, T\u00f6\u00f6taja, Pakiautomaat and several classifier types)."
+      "justification": "At least two diagrams exceed the threshold of 10 central elements: the use case diagram Pakiautomaatide funktsionaalne allsüsteem on page 2 contains 11 distinct use cases, and the conceptual class diagram Kontseptuaalne eskiismudel on page 18 contains more than 10 classes (including Isik, Kasutajakonto, Töötaja, Pakiautomaat and several classifier types)."
     },
     {
       "rule_id": "S1.2",
       "actual": false,
       "detected": true,
-      "justification": "The class diagram Isikute register on page 20 shows the Isik class connected by separate relationship lines to at least six other elements (Isiku_seisundi_liik, Riik, Kasutajakonto, Klient, T\u00f6\u00f6taja and the self-relationship Isiku roll), and transformed diagrams such as Isikute register (transformed) on page 27 and Pakiautomaatide register (transformed) on page 30 similarly depict central tables with six or more distinct association or foreign-key lines, satisfying the 6+ relationship threshold for a single element in one diagram."
+      "justification": "The class diagram Isikute register on page 20 shows the Isik class connected by separate relationship lines to at least six other elements (Isiku_seisundi_liik, Riik, Kasutajakonto, Klient, Töötaja and the self-relationship Isiku roll), and transformed diagrams such as Isikute register (transformed) on page 27 and Pakiautomaatide register (transformed) on page 30 similarly depict central tables with six or more distinct association or foreign-key lines, satisfying the 6+ relationship threshold for a single element in one diagram."
     },
     {
       "rule_id": "S2.1",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": true,
       "detected": true,
-      "justification": "Several use case and activity names do not start with an active verb: in the Primary Use Cases diagram on page 8 the use case ovals are named Use Case1 and Use Case2 (starting with the noun 'Use'), and in activity diagrams there are actions such as 'Pakiautomaatide haldur avaldab soov uue pakiautomaadi registreerida' (page 5) and 'Subjekt logib sisse s\u00fcsteemi' (page 11) whose names begin with an actor noun instead of a verb."
+      "justification": "Several use case and activity names do not start with an active verb: in the Primary Use Cases diagram on page 8 the use case ovals are named Use Case1 and Use Case2 (starting with the noun 'Use'), and in activity diagrams there are actions such as 'Pakiautomaatide haldur avaldab soov uue pakiautomaadi registreerida' (page 5) and 'Subjekt logib sisse süsteemi' (page 11) whose names begin with an actor noun instead of a verb."
     },
     {
       "rule_id": "N1.2",
@@ -91,19 +91,19 @@
       "rule_id": "N3.1",
       "actual": true,
       "detected": false,
-      "justification": "All class names for domain objects in the class and database diagrams (such as Isik, T\u00f6\u00f6taja, Pakiautomaat, Kasutajakonto, Klient) start with an uppercase letter and are written in singular form; plural-like constructs occur only in register names like Isikute register or Pakiautomaatide register, which are explicitly excluded from this rule."
+      "justification": "All class names for domain objects in the class and database diagrams (such as Isik, Töötaja, Pakiautomaat, Kasutajakonto, Klient) start with an uppercase letter and are written in singular form; plural-like constructs occur only in register names like Isikute register or Pakiautomaatide register, which are explicitly excluded from this rule."
     },
     {
       "rule_id": "N3.2",
       "actual": true,
       "detected": true,
-      "justification": "Many attributes and columns begin with an uppercase letter, for example T\u00f6\u00f6_e_mail in T\u00f6\u00f6taja on page 18, E_mail, Eesnimi and Perenimi in Isik on page 20, and Seisundi_liigi_nimetus and On_Aktiivne in several transformed classifier tables on pages 27-28, so the requirement that attribute or column names start with a lowercase letter is violated. "
+      "justification": "Many attributes and columns begin with an uppercase letter, for example Töö_e_mail in Töötaja on page 18, E_mail, Eesnimi and Perenimi in Isik on page 20, and Seisundi_liigi_nimetus and On_Aktiivne in several transformed classifier tables on pages 27-28, so the requirement that attribute or column names start with a lowercase letter is violated. "
     },
     {
       "rule_id": "N3.3",
       "actual": false,
       "detected": false,
-      "justification": "Database tables that represent individual domain entities such as Isik, Klient, Pakiautomaat, T\u00f6\u00f6taja and Kasutajakonto are all named in singular form; plural-like genitive phrases appear only as parts of classifier or register names such as Pakiautomaatide_kategooria or Kliendi_seisundi_liik, which denote sets or classification types rather than singular entities."
+      "justification": "Database tables that represent individual domain entities such as Isik, Klient, Pakiautomaat, Töötaja and Kasutajakonto are all named in singular form; plural-like genitive phrases appear only as parts of classifier or register names such as Pakiautomaatide_kategooria or Kliendi_seisundi_liik, which denote sets or classification types rather than singular entities."
     },
     {
       "rule_id": "N4.1",

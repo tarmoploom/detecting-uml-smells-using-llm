@@ -19,7 +19,7 @@
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "In the use case diagram, use case names such as 'Loo kinoseanss', 'Muuda mitteaktiivse kinoseansi andmeid', 'Kustuta mitteaktiivse kinoseansi', 'Vaata l\u00f5ppenud kinoseansside statistikat', 'Vaata aktiivsete kinoseansside nimekirja', 'T\u00fchista aktiivse kinoseansi', 'Aktiveeri mitteaktiivse kinoseansi', 'Vaata mitteaktiivsete kinoseansside nimekirja' and 'Lopeta aktiivse ...' describe clearly different activities (creation, modification, deletion, viewing lists/statistics, cancelling, activating, ending). The definitions do not indicate any pair that obviously describes the same activity, and the text does not explicitly show that such potentially similar use cases are associated with the same actor, so no violation can be confirmed."
+      "justification": "In the use case diagram, use case names such as 'Loo kinoseanss', 'Muuda mitteaktiivse kinoseansi andmeid', 'Kustuta mitteaktiivse kinoseansi', 'Vaata lõppenud kinoseansside statistikat', 'Vaata aktiivsete kinoseansside nimekirja', 'Tühista aktiivse kinoseansi', 'Aktiveeri mitteaktiivse kinoseansi', 'Vaata mitteaktiivsete kinoseansside nimekirja' and 'Lopeta aktiivse ...' describe clearly different activities (creation, modification, deletion, viewing lists/statistics, cancelling, activating, ending). The definitions do not indicate any pair that obviously describes the same activity, and the text does not explicitly show that such potentially similar use cases are associated with the same actor, so no violation can be confirmed."
     },
     {
       "rule_id": "G6.2",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names in the 'Kinoseansside kasutusjuhtude diagramm' all follow a consistent verb-first form in Estonian (for example 'Loo kinoseanss', 'Muuda ...', 'Kustuta ...', 'Vaata ...', 'T\u00fchista ...', 'Aktiveeri ...', 'Lopeta ...'). None of the use case names is purely noun-based or in a distinctly different naming form, so there is no inconsistent use-case naming form according to this rule."
+      "justification": "Use case names in the 'Kinoseansside kasutusjuhtude diagramm' all follow a consistent verb-first form in Estonian (for example 'Loo kinoseanss', 'Muuda ...', 'Kustuta ...', 'Vaata ...', 'Tühista ...', 'Aktiveeri ...', 'Lopeta ...'). None of the use case names is purely noun-based or in a distinctly different naming form, so there is no inconsistent use-case naming form according to this rule."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "The 'Kinoseansside seisundi diagramm' shows several states such as 'Mitteaktiivne', 'Aktiivne', 'T\u00fchistatud', 'L\u00f5ppenud' and 'Kustutatud', along with transition descriptions like 'Kinoseansside haldur loob uue kinoseansi OP2.1', '... aktiveerib kinoseansi OP2.2', '... kustutab kinoseansi OP2.3', 'Kinoseanss on l\u00f5ppenud OP2.6', and '... t\u00fchistab kinoseansi OP2.4'. The extracted text does not show any state name that appears only once with no incoming or outgoing transition text, so there is no clearly unreachable state."
+      "justification": "The 'Kinoseansside seisundi diagramm' shows several states such as 'Mitteaktiivne', 'Aktiivne', 'Tühistatud', 'Lõppenud' and 'Kustutatud', along with transition descriptions like 'Kinoseansside haldur loob uue kinoseansi OP2.1', '... aktiveerib kinoseansi OP2.2', '... kustutab kinoseansi OP2.3', 'Kinoseanss on lõppenud OP2.6', and '... tühistab kinoseansi OP2.4'. The extracted text does not show any state name that appears only once with no incoming or outgoing transition text, so there is no clearly unreachable state."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "The two activity diagrams 'arimudel 1 (kinoseansi kustutamine)' and 'arimudel 2 (uue kinoseansi loomine)' each list a sequence of actions and decisions (for example 'Valib kinoseansi...', 'Vaatab ... nimekirja', 'Otsustab kas j\u00e4tkata', 'Kontrollib kas valitud saal on ...', 'Valib saali, kuup\u00e4eva ja kellaaja', plus decision questions like 'kas leidus?', 'kas on vaba?', 'kas on kindel?' and guards '[JAH]'/'[EI]'). No action appears as an isolated label with no surrounding decision or flow text, and given the lack of explicit disconnected elements, there is no action that can be clearly identified as unreachable."
+      "justification": "The two activity diagrams 'arimudel 1 (kinoseansi kustutamine)' and 'arimudel 2 (uue kinoseansi loomine)' each list a sequence of actions and decisions (for example 'Valib kinoseansi...', 'Vaatab ... nimekirja', 'Otsustab kas jätkata', 'Kontrollib kas valitud saal on ...', 'Valib saali, kuupäeva ja kellaaja', plus decision questions like 'kas leidus?', 'kas on vaba?', 'kas on kindel?' and guards '[JAH]'/'[EI]'). No action appears as an isolated label with no surrounding decision or flow text, and given the lack of explicit disconnected elements, there is no action that can be clearly identified as unreachable."
     },
     {
       "rule_id": "G15.3",
@@ -61,7 +61,7 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": false,
-      "justification": "No single diagram contains 10 or more central elements (classes, tables, use cases, or states). For example: 'Filmide register' shows only a handful of elements such as 'Film', associated classifier instances and 'Kinoseanss'; 'Saalide register' shows 'Saal', 'Kinoseanss' and 'Koht'; 'Kinoseansside register' shows 'Kinoseanss', 'Saal', 'Film', 'Pilet', 'Seanss_olek'; the use case diagram has roughly 9 use cases; the state/status diagram has about 5 states; and each database diagram (Film, Saal_koht, Klassifikaatorid, Kinoseanss, Pilet) contains at most 4\u20135 tables. Therefore, no diagram reaches the threshold of 10 central elements."
+      "justification": "No single diagram contains 10 or more central elements (classes, tables, use cases, or states). For example: 'Filmide register' shows only a handful of elements such as 'Film', associated classifier instances and 'Kinoseanss'; 'Saalide register' shows 'Saal', 'Kinoseanss' and 'Koht'; 'Kinoseansside register' shows 'Kinoseanss', 'Saal', 'Film', 'Pilet', 'Seanss_olek'; the use case diagram has roughly 9 use cases; the state/status diagram has about 5 states; and each database diagram (Film, Saal_koht, Klassifikaatorid, Kinoseanss, Pilet) contains at most 4–5 tables. Therefore, no diagram reaches the threshold of 10 central elements."
     },
     {
       "rule_id": "S1.2",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names in the use case diagram all start with active verbs in Estonian (for example 'Loo', 'Muuda', 'Kustuta', 'Vaata', 'T\u00fchista', 'Aktiveeri', 'Lopeta'). In the activity diagrams, the action labels that are clearly action-like likewise begin with verbs such as 'Valib ...', 'Vaatab ...', 'Otsustab ...', 'Kontrollib ...'. Question-style texts like 'kas leidus?' and 'kas on kindel?' are most plausibly guard/decision labels rather than action nodes, and thus are not treated as actions under this rule. Therefore, there is no use case or confirmed action whose name fails to start with an active verb."
+      "justification": "Use case names in the use case diagram all start with active verbs in Estonian (for example 'Loo', 'Muuda', 'Kustuta', 'Vaata', 'Tühista', 'Aktiveeri', 'Lopeta'). In the activity diagrams, the action labels that are clearly action-like likewise begin with verbs such as 'Valib ...', 'Vaatab ...', 'Otsustab ...', 'Kontrollib ...'. Question-style texts like 'kas leidus?' and 'kas on kindel?' are most plausibly guard/decision labels rather than action nodes, and thus are not treated as actions under this rule. Therefore, there is no use case or confirmed action whose name fails to start with an active verb."
     },
     {
       "rule_id": "N1.2",

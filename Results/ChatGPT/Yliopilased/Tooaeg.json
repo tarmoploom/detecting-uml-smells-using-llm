@@ -13,61 +13,61 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "The only explicit use case diagram ('T\u00f6\u00f6graafiku funktsionaalne alls\u00fcsteem') lists multiple use case names, but the text extraction does not clearly show which ovals are connected or disconnected from actors; no use case is explicitly indicated as unconnected, so per the 'when in doubt' rule, no violation is recorded."
+      "justification": "The only explicit use case diagram ('Töögraafiku funktsionaalne allsüsteem') lists multiple use case names, but the text extraction does not clearly show which ovals are connected or disconnected from actors; no use case is explicitly indicated as unconnected, so per the 'when in doubt' rule, no violation is recorded."
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "On the use case diagram 'T\u00f6\u00f6graafiku funktsionaalne alls\u00fcsteem', all named use cases (e.g., 'Vaata enda t\u00f6\u00f6graafikut', 'Vaata t\u00f6\u00f6graafikuid', 'Koosta t\u00f6\u00f6graafik', 'Kinnita t\u00f6\u00f6graafik', 'Kustuta t\u00f6\u00f6graafik', 'Kustuta mitteaktiivne t\u00f6\u00f6graafik') describe distinguishable activities. There are no clearly duplicated activities with different names that can be confirmed as associated to the same actor from the text alone."
+      "justification": "On the use case diagram 'Töögraafiku funktsionaalne allsüsteem', all named use cases (e.g., 'Vaata enda töögraafikut', 'Vaata töögraafikuid', 'Koosta töögraafik', 'Kinnita töögraafik', 'Kustuta töögraafik', 'Kustuta mitteaktiivne töögraafik') describe distinguishable activities. There are no clearly duplicated activities with different names that can be confirmed as associated to the same actor from the text alone."
     },
     {
       "rule_id": "G6.2",
       "actual": true,
       "detected": false,
-      "justification": "In the package/overview diagram 'T\u00f6\u00f6graafiku FASiga seotud p\u00e4devusalad ja registrid', each listed model element name inside a package is unique at the primary element level (e.g., 'Amet', 'Klassifikaator', 'T\u00f6\u00f6graafiku seisund', 'T\u00f6\u00f6v\u00e4listuse t\u00fc\u00fcp'). Repeated phrases such as 'Klassifikaatori t\u00fc\u00fcp' are classifier-type metadata and are explicitly excluded from this rule."
+      "justification": "In the package/overview diagram 'Töögraafiku FASiga seotud pädevusalad ja registrid', each listed model element name inside a package is unique at the primary element level (e.g., 'Amet', 'Klassifikaator', 'Töögraafiku seisund', 'Töövälistuse tüüp'). Repeated phrases such as 'Klassifikaatori tüüp' are classifier-type metadata and are explicitly excluded from this rule."
     },
     {
       "rule_id": "G6.3",
       "actual": false,
       "detected": false,
-      "justification": "Several tables share column names such as 'alguse_aeg' and 'lopp_aeg' across different entities (e.g., 'T\u00f6\u00f6graafik', 'Vahetus', 'T\u00f6\u00f6v\u00e4listus', 'Toovalistus'), but these represent different time intervals for different domain objects rather than explicit redundant copies of the same data value. Moreover, the conceptual and transformed database diagrams show foreign key relationships between related tables, so there is no clear case where the same real-world value is duplicated across tables without an FK link."
+      "justification": "Several tables share column names such as 'alguse_aeg' and 'lopp_aeg' across different entities (e.g., 'Töögraafik', 'Vahetus', 'Töövälistus', 'Toovalistus'), but these represent different time intervals for different domain objects rather than explicit redundant copies of the same data value. Moreover, the conceptual and transformed database diagrams show foreign key relationships between related tables, so there is no clear case where the same real-world value is duplicated across tables without an FK link."
     },
     {
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All clearly identified use case names in the use case diagram (e.g., 'Vaata enda t\u00f6\u00f6graafikut', 'Koosta t\u00f6\u00f6graafik', 'Kinnita t\u00f6\u00f6graafik', 'M\u00e4\u00e4ra t\u00f6\u00f6graafik mitteaktiivseks', 'Kustuta t\u00f6\u00f6graafik', 'Muuda t\u00f6\u00f6graafikut', 'Vaata t\u00f6\u00f6graafikuid', 'Tuvasta kasutaja', 'Kustuta mitteaktiivne t\u00f6\u00f6graafik', 'Lisa vahetus', 'Lisa t\u00f6\u00f6v\u00e4listus', 'Kustuta t\u00f6\u00f6v\u00e4listus', 'Kustuta vahetus', 'Vaata t\u00f6\u00f6tajaid') follow a consistent verb-first naming form; no mixture of fundamentally different naming styles is evident."
+      "justification": "All clearly identified use case names in the use case diagram (e.g., 'Vaata enda töögraafikut', 'Koosta töögraafik', 'Kinnita töögraafik', 'Määra töögraafik mitteaktiivseks', 'Kustuta töögraafik', 'Muuda töögraafikut', 'Vaata töögraafikuid', 'Tuvasta kasutaja', 'Kustuta mitteaktiivne töögraafik', 'Lisa vahetus', 'Lisa töövälistus', 'Kustuta töövälistus', 'Kustuta vahetus', 'Vaata töötajaid') follow a consistent verb-first naming form; no mixture of fundamentally different naming styles is evident."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "The state diagram 'T\u00f6\u00f6graafiku seisundidiagramm' shows the states 'Ootel', 'Aktiivne', and 'Mitteaktiivne' plus an initial node 'Algus' with multiple labeled transitions (e.g., 'Loo uus graafik /OP1, OP5', 'graafik kinnitatakse...', 'kehtiv periood saab l\u00e4bi...', 'Seadusest tulenev t\u00f6\u00f6graafiku s\u00e4ilitamise vajadus aegub /OP4'). From the textual extraction all named states appear in transition labels, and no state is explicitly isolated or unreachable. There is no unambiguous evidence that any state cannot be reached."
+      "justification": "The state diagram 'Töögraafiku seisundidiagramm' shows the states 'Ootel', 'Aktiivne', and 'Mitteaktiivne' plus an initial node 'Algus' with multiple labeled transitions (e.g., 'Loo uus graafik /OP1, OP5', 'graafik kinnitatakse...', 'kehtiv periood saab läbi...', 'Seadusest tulenev töögraafiku säilitamise vajadus aegub /OP4'). From the textual extraction all named states appear in transition labels, and no state is explicitly isolated or unreachable. There is no unambiguous evidence that any state cannot be reached."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "In both activity diagrams ('Vaata enda graafikut tegevusdiagramm' and 'Kasutusjuhu 'Kustuta t\u00f6\u00f6graafik' stsenaariumid'), the actions that are clearly identified as such (e.g., 'Vaata t\u00f6\u00f6graafikut', 'Vaata 'ootel' seisundis t\u00f6\u00f6graafikute nimekirja', 'Vali t\u00f6\u00f6graafik', 'Kustuta t\u00f6\u00f6graafik') appear in flows starting from 'Algus' and leading toward 'T\u00f6\u00f6 l\u00f5pp'. The remaining labeled nodes are decision questions or start/end markers. No action is explicitly disconnected from the flow, so there is no demonstrably unreachable action."
+      "justification": "In both activity diagrams ('Vaata enda graafikut tegevusdiagramm' and 'Kasutusjuhu 'Kustuta töögraafik' stsenaariumid'), the actions that are clearly identified as such (e.g., 'Vaata töögraafikut', 'Vaata 'ootel' seisundis töögraafikute nimekirja', 'Vali töögraafik', 'Kustuta töögraafik') appear in flows starting from 'Algus' and leading toward 'Töö lõpp'. The remaining labeled nodes are decision questions or start/end markers. No action is explicitly disconnected from the flow, so there is no demonstrably unreachable action."
     },
     {
       "rule_id": "G15.3",
       "actual": false,
       "detected": false,
-      "justification": "In the conceptual class diagram and all detailed class/database diagrams, associations either show explicit multiplicities like '0..*' and '1' near each end (e.g., between 'Isik' and 'T\u00f6\u00f6taja', 'T\u00f6\u00f6taja' and 'Vahetus', 'T\u00f6\u00f6graafik' and 'Kauplus') or are drawn as standard database foreign key connectors (e.g., in the transformed register diagrams with '\u00abFK\u00bb' labels). According to the interpretation rules, such FK or crow's-foot style connectors are exempt, and no UML-style association is visible that completely lacks multiplicity indication at both ends."
+      "justification": "In the conceptual class diagram and all detailed class/database diagrams, associations either show explicit multiplicities like '0..*' and '1' near each end (e.g., between 'Isik' and 'Töötaja', 'Töötaja' and 'Vahetus', 'Töögraafik' and 'Kauplus') or are drawn as standard database foreign key connectors (e.g., in the transformed register diagrams with '«FK»' labels). According to the interpretation rules, such FK or crow's-foot style connectors are exempt, and no UML-style association is visible that completely lacks multiplicity indication at both ends."
     },
     {
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The use case diagram 'T\u00f6\u00f6graafiku funktsionaalne alls\u00fcsteem' contains at least 14-15 use cases ('Vaata enda t\u00f6\u00f6graafikut', 'Koosta t\u00f6\u00f6graafik', 'Kinnita t\u00f6\u00f6graafik', 'M\u00e4\u00e4ra t\u00f6\u00f6graafik mitteaktiivseks', 'Kustuta t\u00f6\u00f6graafik', 'Muuda t\u00f6\u00f6graafikut', 'Vaata t\u00f6\u00f6graafikuid', 'Tuvasta kasutaja', 'Kustuta mitteaktiivne t\u00f6\u00f6graafik', 'Lisa vahetus', 'Lisa t\u00f6\u00f6v\u00e4listus', 'Kustuta t\u00f6\u00f6v\u00e4listus', 'Kustuta vahetus', 'Vaata t\u00f6\u00f6tajaid', and possibly 'Aeg'), exceeding the threshold of 10 central elements. In addition, the conceptual class diagram 'Kontseptuaalne eskiismudel' shows exactly 10 central elements (T\u00f6\u00f6graafik, Vahetus, Klassifikaator, T\u00f6\u00f6graafiku seisund, Isik, Kauplus, T\u00f6\u00f6taja, Amet, T\u00f6\u00f6v\u00e4listus, T\u00f6\u00f6v\u00e4listuse t\u00fc\u00fcp), also meeting the S1.1 criterion."
+      "justification": "The use case diagram 'Töögraafiku funktsionaalne allsüsteem' contains at least 14-15 use cases ('Vaata enda töögraafikut', 'Koosta töögraafik', 'Kinnita töögraafik', 'Määra töögraafik mitteaktiivseks', 'Kustuta töögraafik', 'Muuda töögraafikut', 'Vaata töögraafikuid', 'Tuvasta kasutaja', 'Kustuta mitteaktiivne töögraafik', 'Lisa vahetus', 'Lisa töövälistus', 'Kustuta töövälistus', 'Kustuta vahetus', 'Vaata töötajaid', and possibly 'Aeg'), exceeding the threshold of 10 central elements. In addition, the conceptual class diagram 'Kontseptuaalne eskiismudel' shows exactly 10 central elements (Töögraafik, Vahetus, Klassifikaator, Töögraafiku seisund, Isik, Kauplus, Töötaja, Amet, Töövälistus, Töövälistuse tüüp), also meeting the S1.1 criterion."
     },
     {
       "rule_id": "S1.2",
       "actual": false,
       "detected": false,
-      "justification": "The most highly connected classes/tables (e.g., 'T\u00f6\u00f6taja' in 'T\u00f6\u00f6tajate register' and 'T\u00f6\u00f6tajate register (transformed)', and 'T\u00f6\u00f6graafik' in 'T\u00f6\u00f6graafikute register' diagrams) appear, from the text, to have relationships to at most about five other elements (such as 'Isik', 'Amet', 'Vahetus', 'Kauplus', 'T\u00f6\u00f6v\u00e4listus' or 'Toovalistus'). There is no diagram where a single class or table is clearly shown with six or more distinct visible relationship lines."
+      "justification": "The most highly connected classes/tables (e.g., 'Töötaja' in 'Töötajate register' and 'Töötajate register (transformed)', and 'Töögraafik' in 'Töögraafikute register' diagrams) appear, from the text, to have relationships to at most about five other elements (such as 'Isik', 'Amet', 'Vahetus', 'Kauplus', 'Töövälistus' or 'Toovalistus'). There is no diagram where a single class or table is clearly shown with six or more distinct visible relationship lines."
     },
     {
       "rule_id": "S2.1",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All clearly identified use cases on the use case diagram and all clearly identified activity actions in the activity diagrams begin with active verbs (e.g., 'Vaata enda t\u00f6\u00f6graafikut', 'Koosta t\u00f6\u00f6graafik', 'Kinnita t\u00f6\u00f6graafik', 'Vali t\u00f6\u00f6graafik', 'Kustuta t\u00f6\u00f6graafik', 'Vaata t\u00f6\u00f6graafikut'). Labels such as 'Algus', 'T\u00f6\u00f6 l\u00f5pp', 'Kas on t\u00f6\u00f6graafikuid?' and 'Kas soovid j\u00e4tkata?' appear to denote initial/final or decision nodes rather than actions, and the diagrams do not explicitly mark them as actions. Therefore, no use case or confirmed action name is seen that fails the verb-first requirement."
+      "justification": "All clearly identified use cases on the use case diagram and all clearly identified activity actions in the activity diagrams begin with active verbs (e.g., 'Vaata enda töögraafikut', 'Koosta töögraafik', 'Kinnita töögraafik', 'Vali töögraafik', 'Kustuta töögraafik', 'Vaata töögraafikut'). Labels such as 'Algus', 'Töö lõpp', 'Kas on töögraafikuid?' and 'Kas soovid jätkata?' appear to denote initial/final or decision nodes rather than actions, and the diagrams do not explicitly mark them as actions. Therefore, no use case or confirmed action name is seen that fails the verb-first requirement."
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All entity class and table names begin with uppercase letters and are singular (e.g., 'T\u00f6\u00f6graafik', 'Vahetus', 'Isik', 'Kauplus', 'T\u00f6\u00f6taja', 'Amet', 'T\u00f6\u00f6v\u00e4listus', 'Toograafik', 'Toovalistus'). Names that are plural, such as 'Isikute register', 'Kaupluste register' and other 'register' names, are explicitly domain register tables and are excluded from N3.1 by the interpretation rules."
+      "justification": "All entity class and table names begin with uppercase letters and are singular (e.g., 'Töögraafik', 'Vahetus', 'Isik', 'Kauplus', 'Töötaja', 'Amet', 'Töövälistus', 'Toograafik', 'Toovalistus'). Names that are plural, such as 'Isikute register', 'Kaupluste register' and other 'register' names, are explicitly domain register tables and are excluded from N3.1 by the interpretation rules."
     },
     {
       "rule_id": "N3.2",

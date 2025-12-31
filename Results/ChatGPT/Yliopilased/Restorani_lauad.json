@@ -49,7 +49,7 @@
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "Both activity diagrams, laua lopetamise tegevusdiagramm on page 3 and laua aktiveerimise tegevusdiagramm on page 4, depict continuous control flows from the initial node through actions such as Vaata koiki laudu, mida saab lopetada, Otsi lauda, Vali laud, Lopeta valitud lauda, Soovib vaadata ootel v\u00f5i mitteaktiivseid laudu, Kuvab ootel v\u00f5i mitteaktiivsed lauad, Valib laua nimekirjast, Annab korralduse lauda aktiveerida, and Aktiveerib laua ja salvestab andmed, ending at final nodes. All action nodes are connected into these flows and no action appears isolated without an incoming path from the start."
+      "justification": "Both activity diagrams, laua lopetamise tegevusdiagramm on page 3 and laua aktiveerimise tegevusdiagramm on page 4, depict continuous control flows from the initial node through actions such as Vaata koiki laudu, mida saab lopetada, Otsi lauda, Vali laud, Lopeta valitud lauda, Soovib vaadata ootel või mitteaktiivseid laudu, Kuvab ootel või mitteaktiivsed lauad, Valib laua nimekirjast, Annab korralduse lauda aktiveerida, and Aktiveerib laua ja salvestab andmed, ending at final nodes. All action nodes are connected into these flows and no action appears isolated without an incoming path from the start."
     },
     {
       "rule_id": "G15.3",

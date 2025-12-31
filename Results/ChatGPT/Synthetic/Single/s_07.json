@@ -19,7 +19,7 @@
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "Across the use case diagrams (pages 2 and 3), the listed use case names appear distinct in described activity (e.g., 'Registreeri auto', 'L\u00f5peta auto', 'Muuda autot', 'Aktiveeri auto', 'Unusta auto'). No pairs clearly describing the same activity with the same actor are explicitly visible."
+      "justification": "Across the use case diagrams (pages 2 and 3), the listed use case names appear distinct in described activity (e.g., 'Registreeri auto', 'Lõpeta auto', 'Muuda autot', 'Aktiveeri auto', 'Unusta auto'). No pairs clearly describing the same activity with the same actor are explicitly visible."
     },
     {
       "rule_id": "G6.2",
@@ -37,13 +37,13 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names on pages 2 and 3 consistently appear to start with verbs in the same form (e.g., 'Tuvasta', 'Vaata', 'Registreeri', 'L\u00f5peta', 'Muuda', 'Aktiveeri', 'Unusta'), so no inconsistent naming form is explicitly shown."
+      "justification": "Use case names on pages 2 and 3 consistently appear to start with verbs in the same form (e.g., 'Tuvasta', 'Vaata', 'Registreeri', 'Lõpeta', 'Muuda', 'Aktiveeri', 'Unusta'), so no inconsistent naming form is explicitly shown."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "The state diagram on page 9 lists states such as 'Ootel', 'Aktiivne', 'Mitteaktiivne', 'L\u00f5petatud', and 'Unustatud'. The parsed content does not make any state explicitly unreachable, so the rule is not triggered."
+      "justification": "The state diagram on page 9 lists states such as 'Ootel', 'Aktiivne', 'Mitteaktiivne', 'Lõpetatud', and 'Unustatud'. The parsed content does not make any state explicitly unreachable, so the rule is not triggered."
     },
     {
       "rule_id": "G15.2",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names on pages 2 and 3 begin with active verbs, and the activity actions on page 4 also appear verb-led (e.g., 'Vaata...', 'Otsi autot', 'Vali auto', 'L\u00f5peta valitud auto'). No non-verb-starting use case or action name is explicitly visible."
+      "justification": "Use case names on pages 2 and 3 begin with active verbs, and the activity actions on page 4 also appear verb-led (e.g., 'Vaata...', 'Otsi autot', 'Vali auto', 'Lõpeta valitud auto'). No non-verb-starting use case or action name is explicitly visible."
     },
     {
       "rule_id": "N1.2",

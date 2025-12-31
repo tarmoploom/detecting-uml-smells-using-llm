@@ -19,7 +19,7 @@
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "No use cases with synonymous names associated with the same actor were found. 'Vaata aktiivseid parklakohti' and 'Vaata k\u00f5iki parklakohti' represent distinct scopes of functionality."
+      "justification": "No use cases with synonymous names associated with the same actor were found. 'Vaata aktiivseid parklakohti' and 'Vaata kõiki parklakohti' represent distinct scopes of functionality."
     },
     {
       "rule_id": "G6.2",
@@ -43,7 +43,7 @@
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the State Diagram (Page 11), all states ('Ootel', 'Aktiivne', 'Mitteaktiivne', 'L\u00f5petatud', 'Unustatud') are reachable from the Start state via the defined transitions."
+      "justification": "In the State Diagram (Page 11), all states ('Ootel', 'Aktiivne', 'Mitteaktiivne', 'Lõpetatud', 'Unustatud') are reachable from the Start state via the defined transitions."
     },
     {
       "rule_id": "G15.2",
@@ -67,13 +67,13 @@
       "rule_id": "S1.2",
       "actual": false,
       "detected": true,
-      "justification": "In the Conceptual Data Model (Page 5), the class 'T\u00f6\u00f6taja' has 6 visual connection lines to other elements on the same diagram: inheritance to 'Isik', association to 'T\u00f6\u00f6taja_seisundi_liik', association to 'T\u00f6\u00f6taja_rolli_omamine', a self-referencing association ('mentor'), and two separate associations to 'Parklakoht' ('registreerija' and 'viimane muutja')."
+      "justification": "In the Conceptual Data Model (Page 5), the class 'Töötaja' has 6 visual connection lines to other elements on the same diagram: inheritance to 'Isik', association to 'Töötaja_seisundi_liik', association to 'Töötaja_rolli_omamine', a self-referencing association ('mentor'), and two separate associations to 'Parklakoht' ('registreerija' and 'viimane muutja')."
     },
     {
       "rule_id": "S2.1",
       "actual": true,
       "detected": true,
-      "justification": "In the Conceptual Data Model (Page 5), the distance between the related classes 'T\u00f6\u00f6taja' (left side) and 'Parklakoht' (right side) spans almost the entire width of the diagram, which is more than twice the average distance between other related elements (e.g., 'Isik' to 'Kasutajakonto' or 'Parklakoht' to 'Parklakoha_kategooria_omamine')."
+      "justification": "In the Conceptual Data Model (Page 5), the distance between the related classes 'Töötaja' (left side) and 'Parklakoht' (right side) spans almost the entire width of the diagram, which is more than twice the average distance between other related elements (e.g., 'Isik' to 'Kasutajakonto' or 'Parklakoht' to 'Parklakoha_kategooria_omamine')."
     },
     {
       "rule_id": "N1.1",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All class names start with an uppercase letter and are singular (e.g., 'Isik', 'T\u00f6\u00f6taja', 'Parklakoht')."
+      "justification": "All class names start with an uppercase letter and are singular (e.g., 'Isik', 'Töötaja', 'Parklakoht')."
     },
     {
       "rule_id": "N3.2",

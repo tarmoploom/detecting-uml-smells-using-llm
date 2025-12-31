@@ -13,19 +13,19 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "On page 2 (Use case diagram 'Ronimisseinte funktsionaalne alls\u00fcsteem'), all use case ovals are associated with at least one actor. The use case 'Tuvasta kasutaja' is connected via \u00abinclude\u00bb relationships to use cases that have direct actor associations. Page 1 contains text lists inside Package symbols which are explicitly excluded from this rule."
+      "justification": "On page 2 (Use case diagram 'Ronimisseinte funktsionaalne allsüsteem'), all use case ovals are associated with at least one actor. The use case 'Tuvasta kasutaja' is connected via «include» relationships to use cases that have direct actor associations. Page 1 contains text lists inside Package symbols which are explicitly excluded from this rule."
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "No duplicate use cases with same/similar activity names associated with the same actor were found. All 11 use cases on page 2 describe distinct activities: Tuvasta kasutaja, Vaata ronimisseinte koondaruannet, L\u00f5peta ronimissein, Registreeri ronimissein, Muuda ronimisseina, Aktiveeri ronimissein, Muuda ronimissein mittaktiivseks, Vaata aktiivseid ronimisseinu, Vaata k\u00f5iki ronimisseinu, Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid ronimisseinu, Unusta ronimissein."
+      "justification": "No duplicate use cases with same/similar activity names associated with the same actor were found. All 11 use cases on page 2 describe distinct activities: Tuvasta kasutaja, Vaata ronimisseinte koondaruannet, Lõpeta ronimissein, Registreeri ronimissein, Muuda ronimisseina, Aktiveeri ronimissein, Muuda ronimissein mittaktiivseks, Vaata aktiivseid ronimisseinu, Vaata kõiki ronimisseinu, Vaata kõiki ootel või mitteaktiivseid ronimisseinu, Unusta ronimissein."
     },
     {
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "No package contains multiple model elements with the same name. Each element name is unique within its respective package (Isikute register, T\u00f6\u00f6tajate register, Klassifikaatorite register, Ronimisseinte register, Klientide register)."
+      "justification": "No package contains multiple model elements with the same name. Each element name is unique within its respective package (Isikute register, Töötajate register, Klassifikaatorite register, Ronimisseinte register, Klientide register)."
     },
     {
       "rule_id": "G6.3",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases on page 2 follow consistent verb-first naming: Tuvasta (Identify), Vaata (View), L\u00f5peta (End), Registreeri (Register), Muuda (Change), Aktiveeri (Activate), Unusta (Forget). All names begin with Estonian imperative verbs."
+      "justification": "All use cases on page 2 follow consistent verb-first naming: Tuvasta (Identify), Vaata (View), Lõpeta (End), Registreeri (Register), Muuda (Change), Aktiveeri (Activate), Unusta (Forget). All names begin with Estonian imperative verbs."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "On page 11 (Ronimisseinte seisundidiagramm), all 6 states are reachable: Alg\u2192Ootel (initial registration), Ootel\u2192Aktiivne/Unustatud, Aktiivne\u2192Mitteaktiivne/L\u00f5petatud, Mitteaktiivne\u2192Aktiivne/L\u00f5petatud. Every state has at least one incoming transition path from the initial state."
+      "justification": "On page 11 (Ronimisseinte seisundidiagramm), all 6 states are reachable: Alg→Ootel (initial registration), Ootel→Aktiivne/Unustatud, Aktiivne→Mitteaktiivne/Lõpetatud, Mitteaktiivne→Aktiivne/Lõpetatud. Every state has at least one incoming transition path from the initial state."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "On page 3 (Activity diagram), all actions are reachable from Algus via the flow: Algus\u2192Vaata k\u00f5iki ronimisseinu\u2192decisions\u2192Otsi/Vali/L\u00f5peta\u2192L\u00f5pp. On page 4, all actions are reachable from Algus via: Algus\u2192Vaatab k\u00f5iki ootel\u2192decisions\u2192Valib/Aktiveerimine/Andmed\u2192L\u00f5pp."
+      "justification": "On page 3 (Activity diagram), all actions are reachable from Algus via the flow: Algus→Vaata kõiki ronimisseinu→decisions→Otsi/Vali/Lõpeta→Lõpp. On page 4, all actions are reachable from Algus via: Algus→Vaatab kõiki ootel→decisions→Valib/Aktiveerimine/Andmed→Lõpp."
     },
     {
       "rule_id": "G15.3",
@@ -61,13 +61,13 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "Diagram 'Ronimisseinte funktsionaalne alls\u00fcsteem' on page 2 contains 11 use cases. Counted: (1) Tuvasta kasutaja, (2) Vaata ronimisseinte koondaruannet, (3) L\u00f5peta ronimissein, (4) Registreeri ronimissein, (5) Muuda ronimisseina, (6) Aktiveeri ronimissein, (7) Muuda ronimissein mittaktiivseks, (8) Vaata aktiivseid ronimisseinu, (9) Vaata k\u00f5iki ronimisseinu, (10) Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid ronimisseinu, (11) Unusta ronimissein = 11 total. Threshold is \u226510. 11 \u2265 10, therefore smell IS present."
+      "justification": "Diagram 'Ronimisseinte funktsionaalne allsüsteem' on page 2 contains 11 use cases. Counted: (1) Tuvasta kasutaja, (2) Vaata ronimisseinte koondaruannet, (3) Lõpeta ronimissein, (4) Registreeri ronimissein, (5) Muuda ronimisseina, (6) Aktiveeri ronimissein, (7) Muuda ronimissein mittaktiivseks, (8) Vaata aktiivseid ronimisseinu, (9) Vaata kõiki ronimisseinu, (10) Vaata kõiki ootel või mitteaktiivseid ronimisseinu, (11) Unusta ronimissein = 11 total. Threshold is ≥10. 11 ≥ 10, therefore smell IS present."
     },
     {
       "rule_id": "S1.2",
       "actual": false,
       "detected": false,
-      "justification": "Analyzed all class/database diagrams for visual connection lines. Maximum connections found: Page 6 (Isik): 5 lines (to Kasutajakonto, T\u00f6\u00f6taja, Klient, Riik, Isiku_seisundi_liik). Page 10 (Ronimissein): 5 lines (to T\u00f6\u00f6taja\u00d72, Ronimisseina_seisundi_liik, Ronimisseina_kategooria_omamine, Ronimisseina_liik). Page 17 (Ronimissein): 5 lines. Maximum is 5. Threshold is \u22656. Since 5 < 6, smell is NOT present."
+      "justification": "Analyzed all class/database diagrams for visual connection lines. Maximum connections found: Page 6 (Isik): 5 lines (to Kasutajakonto, Töötaja, Klient, Riik, Isiku_seisundi_liik). Page 10 (Ronimissein): 5 lines (to Töötaja×2, Ronimisseina_seisundi_liik, Ronimisseina_kategooria_omamine, Ronimisseina_liik). Page 17 (Ronimissein): 5 lines. Maximum is 5. Threshold is ≥6. Since 5 < 6, smell is NOT present."
     },
     {
       "rule_id": "S2.1",
@@ -79,19 +79,19 @@
       "rule_id": "N1.1",
       "actual": true,
       "detected": true,
-      "justification": "Activity diagram on page 4 contains actions that do not start with active verbs: (1) 'Aktiveerimine eba\u00f5nnestub' starts with noun 'Aktiveerimine' (Activation), (2) 'Andmed salvestatakse ning ronimissein muudetakse aktiivseks' starts with noun 'Andmed' (Data). These should start with verbs like 'Eba\u00f5nnestu aktiveerimine' or 'Salvesta andmed'."
+      "justification": "Activity diagram on page 4 contains actions that do not start with active verbs: (1) 'Aktiveerimine ebaõnnestub' starts with noun 'Aktiveerimine' (Activation), (2) 'Andmed salvestatakse ning ronimissein muudetakse aktiivseks' starts with noun 'Andmed' (Data). These should start with verbs like 'Ebaõnnestu aktiveerimine' or 'Salvesta andmed'."
     },
     {
       "rule_id": "N1.2",
       "actual": false,
       "detected": false,
-      "justification": "All names in the model have 4 or more characters. Shortest names found include: Classes (Isik=4, Riik=4, Klient=6), Attributes (parool=6, eesnimi=7, elukoht=7), Use cases (all >10 chars). Threshold is \u22643. All names have \u22654 characters, therefore smell is NOT present."
+      "justification": "All names in the model have 4 or more characters. Shortest names found include: Classes (Isik=4, Riik=4, Klient=6), Attributes (parool=6, eesnimi=7, elukoht=7), Use cases (all >10 chars). Threshold is ≤3. All names have ≥4 characters, therefore smell is NOT present."
     },
     {
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All class names start with uppercase letters and are singular: Isik, Kasutajakonto, T\u00f6\u00f6taja, Klient, Klassifikaator, Riik, Ronimissein, Ronimisseina_kategooria, etc."
+      "justification": "All class names start with uppercase letters and are singular: Isik, Kasutajakonto, Töötaja, Klient, Klassifikaator, Riik, Ronimissein, Ronimisseina_kategooria, etc."
     },
     {
       "rule_id": "N3.2",

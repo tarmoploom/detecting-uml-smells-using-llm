@@ -13,13 +13,13 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "In the use case diagram 'Ronimisseinte funktsionaalne alls\u00fcsteem', all named use cases (such as 'Aktiveeri ronimissein', 'L\u00f5peta ronimissein', 'Vaata k\u00f5iki ronimisseinu') appear within the system context with surrounding actors; the PDF text does not show any use case that is explicitly drawn without any association to an actor, so no clear violation can be confirmed. "
+      "justification": "In the use case diagram 'Ronimisseinte funktsionaalne allsüsteem', all named use cases (such as 'Aktiveeri ronimissein', 'Lõpeta ronimissein', 'Vaata kõiki ronimisseinu') appear within the system context with surrounding actors; the PDF text does not show any use case that is explicitly drawn without any association to an actor, so no clear violation can be confirmed. "
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "The use case names describe distinct activities even when they share a leading verb; for example, 'Vaata aktiivseid ronimisseinu', 'Vaata k\u00f5iki ronimisseinu', and 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid ronimisseinu' clearly refer to different result sets, and there are no pairs like 'Add Car'/'Register Car' that obviously describe the same activity for the same actor. "
+      "justification": "The use case names describe distinct activities even when they share a leading verb; for example, 'Vaata aktiivseid ronimisseinu', 'Vaata kõiki ronimisseinu', and 'Vaata kõiki ootel või mitteaktiivseid ronimisseinu' clearly refer to different result sets, and there are no pairs like 'Add Car'/'Register Car' that obviously describe the same activity for the same actor. "
     },
     {
       "rule_id": "G6.2",
@@ -37,31 +37,31 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "The use case names in 'Ronimisseinte funktsionaalne alls\u00fcsteem' consistently use an imperative or active-verb style in Estonian (for example 'Registreeri ronimissein', 'Aktiveeri ronimissein', 'Muuda ronimisseina', 'Unusta ronimissein'); there is no mixed pattern where some use cases are named purely as nouns and others as verbs. "
+      "justification": "The use case names in 'Ronimisseinte funktsionaalne allsüsteem' consistently use an imperative or active-verb style in Estonian (for example 'Registreeri ronimissein', 'Aktiveeri ronimissein', 'Muuda ronimisseina', 'Unusta ronimissein'); there is no mixed pattern where some use cases are named purely as nouns and others as verbs. "
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the state diagram 'Ronimisseinte seisundidiagramm', all named states (Ootel, Aktiivne, Mitteaktiivne, L\u00f5petatud, Unustatud) are connected by transitions to the initial node 'Alg' or to other states; none is visibly isolated without any incoming path, so no unreachable state is evident. "
+      "justification": "In the state diagram 'Ronimisseinte seisundidiagramm', all named states (Ootel, Aktiivne, Mitteaktiivne, Lõpetatud, Unustatud) are connected by transitions to the initial node 'Alg' or to other states; none is visibly isolated without any incoming path, so no unreachable state is evident. "
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "The activity diagrams for finishing and activating a climbing wall show action nodes such as 'Vaata k\u00f5iki ronimisseinu, mida saab l\u00f5petada', 'Otsi ronimisseina', 'Vali ronimissein', 'L\u00f5peta valitud ronimissein', and actions in the activation flow all connected via control flows; there is no action node that is clearly disconnected from both incoming and outgoing flows. "
+      "justification": "The activity diagrams for finishing and activating a climbing wall show action nodes such as 'Vaata kõiki ronimisseinu, mida saab lõpetada', 'Otsi ronimisseina', 'Vali ronimissein', 'Lõpeta valitud ronimissein', and actions in the activation flow all connected via control flows; there is no action node that is clearly disconnected from both incoming and outgoing flows. "
     },
     {
       "rule_id": "G15.3",
       "actual": false,
       "detected": false,
-      "justification": "In conceptual and logical class diagrams, relationships between elements include multiplicity indicators like '1' and '0..*' at their ends (for example around 'Isik', 'T\u00f6\u00f6taja', 'Ronimissein', and 'Isiku roll'), and the transformed database diagrams use foreign key style connectors that are exempt per the interpretation rules; no UML-style relationship line is shown entirely without multiplicity information at both ends. "
+      "justification": "In conceptual and logical class diagrams, relationships between elements include multiplicity indicators like '1' and '0..*' at their ends (for example around 'Isik', 'Töötaja', 'Ronimissein', and 'Isiku roll'), and the transformed database diagrams use foreign key style connectors that are exempt per the interpretation rules; no UML-style relationship line is shown entirely without multiplicity information at both ends. "
     },
     {
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The use case diagram 'Ronimisseinte funktsionaalne alls\u00fcsteem' contains at least eleven distinct use cases ('Tuvasta kasutaja', 'Vaata ronimisseinte koondaruannet', 'L\u00f5peta ronimissein', 'Registreeri ronimissein', 'Muuda ronimisseina', 'Aktiveeri ronimissein', 'Muuda ronimissein mittaktiivseks', 'Vaata aktiivseid ronimisseinu', 'Vaata k\u00f5iki ronimisseinu', 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid ronimisseinu', 'Unusta ronimissein'), exceeding the threshold of ten central elements in a single diagram. "
+      "justification": "The use case diagram 'Ronimisseinte funktsionaalne allsüsteem' contains at least eleven distinct use cases ('Tuvasta kasutaja', 'Vaata ronimisseinte koondaruannet', 'Lõpeta ronimissein', 'Registreeri ronimissein', 'Muuda ronimisseina', 'Aktiveeri ronimissein', 'Muuda ronimissein mittaktiivseks', 'Vaata aktiivseid ronimisseinu', 'Vaata kõiki ronimisseinu', 'Vaata kõiki ootel või mitteaktiivseid ronimisseinu', 'Unusta ronimissein'), exceeding the threshold of ten central elements in a single diagram. "
     },
     {
       "rule_id": "S1.2",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": true,
       "detected": false,
-      "justification": "All clearly action-like names for use cases and activity actions begin with active verb forms (for example 'Vaata k\u00f5iki ronimisseinu, mida saab l\u00f5petada', 'Otsi ronimisseina', 'Vali ronimissein', 'L\u00f5peta valitud ronimissein', 'Vaatab k\u00f5iki ootel v\u00f5i mitteaktiivsete ronimisseinte nimekirja'); question texts like 'Kas soovib otsida?' appear as decision labels rather than action nodes, so there is no confirmed action whose name does not start with an active verb. "
+      "justification": "All clearly action-like names for use cases and activity actions begin with active verb forms (for example 'Vaata kõiki ronimisseinu, mida saab lõpetada', 'Otsi ronimisseina', 'Vali ronimissein', 'Lõpeta valitud ronimissein', 'Vaatab kõiki ootel või mitteaktiivsete ronimisseinte nimekirja'); question texts like 'Kas soovib otsida?' appear as decision labels rather than action nodes, so there is no confirmed action whose name does not start with an active verb. "
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Entity class and table names for domain concepts (such as 'Isik', 'T\u00f6\u00f6taja', 'Klient', 'Ronimissein', 'Ronimisseina_kategooria', 'Tootaja_rolli_omamine') all start with uppercase letters and are singular; plural forms like 'Isikute register' are registers and thus excluded by the interpretation rules. "
+      "justification": "Entity class and table names for domain concepts (such as 'Isik', 'Töötaja', 'Klient', 'Ronimissein', 'Ronimisseina_kategooria', 'Tootaja_rolli_omamine') all start with uppercase letters and are singular; plural forms like 'Isikute register' are registers and thus excluded by the interpretation rules. "
     },
     {
       "rule_id": "N3.2",

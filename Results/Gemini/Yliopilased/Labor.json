@@ -7,13 +7,13 @@
       "rule_id": "G5.1",
       "actual": true,
       "detected": true,
-      "justification": "Page 18 ('Diagram: Klassifikaatorite register (transformed)') is completely empty. Page 1 ('Diagram: Anal\u00fc\u00fcs') contains a container 'class Anal\u00fc\u00fcs' but no internal modeling elements."
+      "justification": "Page 18 ('Diagram: Klassifikaatorite register (transformed)') is completely empty. Page 1 ('Diagram: Analüüs') contains a container 'class Analüüs' but no internal modeling elements."
     },
     {
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "All use cases in the 'CNV-de funktsionaalse alls\u00fcsteemi kasutusjuhtude diagramm' (Page 3) are associated with actors either directly or through <<include>> relationships to use cases that are connected to actors."
+      "justification": "All use cases in the 'CNV-de funktsionaalse allsüsteemi kasutusjuhtude diagramm' (Page 3) are associated with actors either directly or through <<include>> relationships to use cases that are connected to actors."
     },
     {
       "rule_id": "G6.1",
@@ -55,13 +55,13 @@
       "rule_id": "G15.3",
       "actual": true,
       "detected": true,
-      "justification": "On Page 7 and Page 16, the relationship between 'Proband' and 'Anal\u00fc\u00fcs' ('+Peres esimesena...') has a multiplicity indicator ('0..1') on the Anal\u00fc\u00fcs end but lacks a multiplicity indicator on the Proband end."
+      "justification": "On Page 7 and Page 16, the relationship between 'Proband' and 'Analüüs' ('+Peres esimesena...') has a multiplicity indicator ('0..1') on the Analüüs end but lacks a multiplicity indicator on the Proband end."
     },
     {
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The 'Klassifikaatorite register' diagram (Page 8) contains 16 central class elements (e.g., Klassifikaator, Positsioon plaadil, T\u00e4hendus, etc.), exceeding the limit of 10."
+      "justification": "The 'Klassifikaatorite register' diagram (Page 8) contains 16 central class elements (e.g., Klassifikaator, Positsioon plaadil, Tähendus, etc.), exceeding the limit of 10."
     },
     {
       "rule_id": "S1.2",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": true,
       "detected": true,
-      "justification": "On Page 5, the action 'T\u00f6\u00f6 l\u00f5pp' (Work end) is a noun phrase, not starting with an active verb. On Page 4, the actions 'L\u00f5ppenud CNV lisamisega' use a past participle rather than an imperative verb."
+      "justification": "On Page 5, the action 'Töö lõpp' (Work end) is a noun phrase, not starting with an active verb. On Page 4, the actions 'Lõppenud CNV lisamisega' use a past participle rather than an imperative verb."
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All class names begin with uppercase letters and appear to be singular (e.g., 'Anal\u00fc\u00fcs', 'Patsient')."
+      "justification": "All class names begin with uppercase letters and appear to be singular (e.g., 'Analüüs', 'Patsient')."
     },
     {
       "rule_id": "N3.2",

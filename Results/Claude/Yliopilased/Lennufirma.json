@@ -13,19 +13,19 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": true,
-      "justification": "On page 2 'Lendude funktsionaalne alls\u00fcsteem' use case diagram, the use case 'Tuvasta kasutaja' (from L\u00e4bivad huvid) has ZERO direct actor associations. It is only connected via \u00abinclude\u00bb relationships to other use cases, but has no direct line to any actor."
+      "justification": "On page 2 'Lendude funktsionaalne allsüsteem' use case diagram, the use case 'Tuvasta kasutaja' (from Läbivad huvid) has ZERO direct actor associations. It is only connected via «include» relationships to other use cases, but has no direct line to any actor."
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "No duplicate use case names describing the same activity with the same actor were found. All 20 use cases on page 2 have distinct names: Registreeri lend, Kinnita lend, Muuda lendu, T\u00fchista lend, Kustuta lend, etc. - each describes a different action."
+      "justification": "No duplicate use case names describing the same activity with the same actor were found. All 20 use cases on page 2 have distinct names: Registreeri lend, Kinnita lend, Muuda lendu, Tühista lend, Kustuta lend, etc. - each describes a different action."
     },
     {
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "No duplicate element names within the same package were found. Each package/register contains uniquely named elements. For example, Klassifikaatorite register contains distinct classifiers (Lennu_seisundi_liik, T\u00f6\u00f6taja_seisundi_liik, etc.)."
+      "justification": "No duplicate element names within the same package were found. Each package/register contains uniquely named elements. For example, Klassifikaatorite register contains distinct classifiers (Lennu_seisundi_liik, Töötaja_seisundi_liik, etc.)."
     },
     {
       "rule_id": "G6.3",
@@ -37,37 +37,37 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases follow a consistent verb-first naming pattern (Estonian verbs): Tuvasta, M\u00e4\u00e4ra, Alusta, T\u00fchista, Muuda, Kinnita, Vaata, Registreeri, Kustuta, L\u00f5peta, Lisa, Eemalda. All 20 use cases on page 2 start with active verbs."
+      "justification": "All use cases follow a consistent verb-first naming pattern (Estonian verbs): Tuvasta, Määra, Alusta, Tühista, Muuda, Kinnita, Vaata, Registreeri, Kustuta, Lõpeta, Lisa, Eemalda. All 20 use cases on page 2 start with active verbs."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "On page 12 'Lennu seisundidiagramm', all 14 states are reachable. The initial state 'Alg' transitions to 'Planeeritud', which can reach 'Kinnitatud', 'Kustutatud', or 'T\u00fchistatud'. From 'Kinnitatud', the flow continues through 'Pardaleminek', 'V\u00e4ravast lahkunud', '\u00d5hku t\u00f5usnud', eventually reaching 'L\u00f5petatud'. States like 'Hilineb', '\u00dcmber suunatud', and 'Alla kukkunud' are all reachable via documented transitions."
+      "justification": "On page 12 'Lennu seisundidiagramm', all 14 states are reachable. The initial state 'Alg' transitions to 'Planeeritud', which can reach 'Kinnitatud', 'Kustutatud', or 'Tühistatud'. From 'Kinnitatud', the flow continues through 'Pardaleminek', 'Väravast lahkunud', 'Õhku tõusnud', eventually reaching 'Lõpetatud'. States like 'Hilineb', 'Ümber suunatud', and 'Alla kukkunud' are all reachable via documented transitions."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "On page 3 'Lennu registreerimise tegevusdiagramm' and page 4 'Lennu t\u00fchistamise tegevusdiagramm', all actions are reachable from the start node 'Algus'. Each action has incoming flows from either the start node or previous actions/decision points."
+      "justification": "On page 3 'Lennu registreerimise tegevusdiagramm' and page 4 'Lennu tühistamise tegevusdiagramm', all actions are reachable from the start node 'Algus'. Each action has incoming flows from either the start node or previous actions/decision points."
     },
     {
       "rule_id": "G15.3",
       "actual": false,
       "detected": false,
-      "justification": "All relationships in class and database diagrams have multiplicity indicators on both ends. For example, on page 5 'Kontseptuaalne eskiismudel': Lend-Lennuk (0..*-0..1), Lend-Lennukit\u00fc\u00fcp (0..*-1), Lend-Lennujaam (0..*-1). Pages 11, 14, 19-28 all show multiplicities like 0..*, 1, 0..1 on relationship ends."
+      "justification": "All relationships in class and database diagrams have multiplicity indicators on both ends. For example, on page 5 'Kontseptuaalne eskiismudel': Lend-Lennuk (0..*-0..1), Lend-Lennukitüüp (0..*-1), Lend-Lennujaam (0..*-1). Pages 11, 14, 19-28 all show multiplicities like 0..*, 1, 0..1 on relationship ends."
     },
     {
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "Multiple diagrams exceed the threshold of \u226510 central elements: (1) Page 2 'Lendude funktsionaalne alls\u00fcsteem' contains 20 use cases (Tuvasta kasutaja, M\u00e4\u00e4ra lend v\u00e4ravast lahkunuks, Alusta lennu pardaleminekut, T\u00fchista lend, Muuda lendu, Kinnita lend, Vaata m\u00fc\u00fcgis olevaid lende, Registreeri lend, Kustuta lend, Alusta lennu pardaltlahkumist, Vaata endale m\u00e4\u00e4ratud lende, L\u00f5peta lend, M\u00e4\u00e4ra lend hilinenuks, M\u00e4\u00e4ra lend maandunuks, M\u00e4\u00e4ra lend \u00f5hkut\u00f5usnuks, M\u00e4\u00e4ra lend \u00fcmbersuunatuks, Lisa t\u00f6\u00f6taja lennule, Eemalda t\u00f6\u00f6taja lennult, M\u00e4\u00e4ra lennule lennuk, M\u00e4\u00e4ra lend allakukkunuks = 20). 20 \u2265 10. (2) Page 7 'Klassifikaatorite register' contains 11 classes. 11 \u2265 10. (3) Page 12 'Lennu seisundidiagramm' contains 14 states. 14 \u2265 10. (4) Page 22 'Klassifikaatorite register' database diagram contains 10 tables. 10 \u2265 10."
+      "justification": "Multiple diagrams exceed the threshold of ≥10 central elements: (1) Page 2 'Lendude funktsionaalne allsüsteem' contains 20 use cases (Tuvasta kasutaja, Määra lend väravast lahkunuks, Alusta lennu pardaleminekut, Tühista lend, Muuda lendu, Kinnita lend, Vaata müügis olevaid lende, Registreeri lend, Kustuta lend, Alusta lennu pardaltlahkumist, Vaata endale määratud lende, Lõpeta lend, Määra lend hilinenuks, Määra lend maandunuks, Määra lend õhkutõusnuks, Määra lend ümbersuunatuks, Lisa töötaja lennule, Eemalda töötaja lennult, Määra lennule lennuk, Määra lend allakukkunuks = 20). 20 ≥ 10. (2) Page 7 'Klassifikaatorite register' contains 11 classes. 11 ≥ 10. (3) Page 12 'Lennu seisundidiagramm' contains 14 states. 14 ≥ 10. (4) Page 22 'Klassifikaatorite register' database diagram contains 10 tables. 10 ≥ 10."
     },
     {
       "rule_id": "S1.2",
       "actual": true,
       "detected": true,
-      "justification": "Multiple diagrams have elements with \u22656 visual connection lines: (1) Page 7 'Klassifikaatorite register': Klassifikaator has 10 inheritance lines to subtypes (Lennu_seisundi_liik, T\u00f6\u00f6taja_seisundi_liik, T\u00f6\u00f6taja_roll, Kliendi_seisundi_liik, Lennukit\u00fc\u00fcp, Lennuki_seisundi_liik, Lennujaama_seisundi_liik, Hoolduse_seisundi_liik, Litsentsi_seisundi_liik, Broneeringu_seisundi_liik). 10 \u2265 6. (2) Page 8 'Klassifikaatorite register 3': Klassifikaator has 6 inheritance lines. 6 \u2265 6. (3) Page 11 'Lendude register': Lend has 7 connection lines (to Lennu_seisundi_liik, Lennuk, Lennujaam\u00d72, Lennukit\u00fc\u00fcp, Broneering, T\u00f6\u00f6taja_lennus). 7 \u2265 6. (4) Page 19 'Lendude register' database: Lend has 7 FK relationship lines. 7 \u2265 6."
+      "justification": "Multiple diagrams have elements with ≥6 visual connection lines: (1) Page 7 'Klassifikaatorite register': Klassifikaator has 10 inheritance lines to subtypes (Lennu_seisundi_liik, Töötaja_seisundi_liik, Töötaja_roll, Kliendi_seisundi_liik, Lennukitüüp, Lennuki_seisundi_liik, Lennujaama_seisundi_liik, Hoolduse_seisundi_liik, Litsentsi_seisundi_liik, Broneeringu_seisundi_liik). 10 ≥ 6. (2) Page 8 'Klassifikaatorite register 3': Klassifikaator has 6 inheritance lines. 6 ≥ 6. (3) Page 11 'Lendude register': Lend has 7 connection lines (to Lennu_seisundi_liik, Lennuk, Lennujaam×2, Lennukitüüp, Broneering, Töötaja_lennus). 7 ≥ 6. (4) Page 19 'Lendude register' database: Lend has 7 FK relationship lines. 7 ≥ 6."
     },
     {
       "rule_id": "S2.1",
@@ -79,31 +79,31 @@
       "rule_id": "N1.1",
       "actual": true,
       "detected": false,
-      "justification": "All use cases on page 2 start with active verbs (Estonian): Tuvasta (Identify), M\u00e4\u00e4ra (Set), Alusta (Start), T\u00fchista (Cancel), Muuda (Change), Kinnita (Confirm), Vaata (View), Registreeri (Register), Kustuta (Delete), L\u00f5peta (End), Lisa (Add), Eemalda (Remove). Activity diagram actions on pages 3-4 also start with verbs: Algatab, M\u00e4\u00e4rab, Vaatab, Otsustab, Registreerib, Avab, Valib."
+      "justification": "All use cases on page 2 start with active verbs (Estonian): Tuvasta (Identify), Määra (Set), Alusta (Start), Tühista (Cancel), Muuda (Change), Kinnita (Confirm), Vaata (View), Registreeri (Register), Kustuta (Delete), Lõpeta (End), Lisa (Add), Eemalda (Remove). Activity diagram actions on pages 3-4 also start with verbs: Algatab, Määrab, Vaatab, Otsustab, Registreerib, Avab, Valib."
     },
     {
       "rule_id": "N1.2",
       "actual": false,
       "detected": false,
-      "justification": "All class, table, attribute, and use case names have \u22654 characters. Shortest names found: 'Isik' (4 chars), 'Lend' (4 chars), 'kood' (4 chars), 'nimi' (4 chars). All exceed the \u22643 character threshold. Note: 'Alg' (3 chars) is a state name, not covered by this rule which specifies class, table, attribute, or use case."
+      "justification": "All class, table, attribute, and use case names have ≥4 characters. Shortest names found: 'Isik' (4 chars), 'Lend' (4 chars), 'kood' (4 chars), 'nimi' (4 chars). All exceed the ≤3 character threshold. Note: 'Alg' (3 chars) is a state name, not covered by this rule which specifies class, table, attribute, or use case."
     },
     {
       "rule_id": "N3.1",
       "actual": true,
       "detected": false,
-      "justification": "All class names start with uppercase letters and are singular. Examples: Isik (Person), Lend (Flight), T\u00f6\u00f6taja (Worker), Klient (Client), Lennuk (Aircraft), Lennujaam (Airport), Hooldus (Maintenance), Litsents (License), Broneering (Booking), Kasutajakonto (User Account). None are plural or lowercase."
+      "justification": "All class names start with uppercase letters and are singular. Examples: Isik (Person), Lend (Flight), Töötaja (Worker), Klient (Client), Lennuk (Aircraft), Lennujaam (Airport), Hooldus (Maintenance), Litsents (License), Broneering (Booking), Kasutajakonto (User Account). None are plural or lowercase."
     },
     {
       "rule_id": "N3.2",
       "actual": true,
       "detected": true,
-      "justification": "On page 14 'Lennujaamade register' class diagram, the Lennujaam class has an attribute 'Kood: string' marked with \u00abid\u00bb that starts with uppercase 'K'. This violates the rule that attribute/column names should start with lowercase letters."
+      "justification": "On page 14 'Lennujaamade register' class diagram, the Lennujaam class has an attribute 'Kood: string' marked with «id» that starts with uppercase 'K'. This violates the rule that attribute/column names should start with lowercase letters."
     },
     {
       "rule_id": "N3.3",
       "actual": true,
       "detected": true,
-      "justification": "On page 23 'Lennujaamade register' database diagram, the table 'Lennujaama_vastuvoetavad_lennukituubid' contains the plural form 'lennukituubid' (airplane types - plural of 'lennukit\u00fc\u00fcp'). The rule states table names should be singular."
+      "justification": "On page 23 'Lennujaamade register' database diagram, the table 'Lennujaama_vastuvoetavad_lennukituubid' contains the plural form 'lennukituubid' (airplane types - plural of 'lennukitüüp'). The rule states table names should be singular."
     },
     {
       "rule_id": "N4.1",

@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "All use cases are associated with actors either directly (e.g., 'Registreeri auto' to 'Autode haldur') or via include relationships initiated by actors (e.g., 'Vaata k\u00f5iki ootel...' is included by 'Aktiveeri auto', which is connected to 'Autode haldur')."
+      "justification": "All use cases are associated with actors either directly (e.g., 'Registreeri auto' to 'Autode haldur') or via include relationships initiated by actors (e.g., 'Vaata kõiki ootel...' is included by 'Aktiveeri auto', which is connected to 'Autode haldur')."
     },
     {
       "rule_id": "G6.1",

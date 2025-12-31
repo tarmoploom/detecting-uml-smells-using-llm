@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "All use cases are associated with an actor, either directly (e.g., 'Koosta arhet\u00fc\u00fcp' to 'Tehnik') or indirectly via <<include>> relationships from use cases that are connected to actors (e.g., 'Vaata kinnitamata arhet\u00fc\u00fcpe' is included by 'Koosta arhet\u00fc\u00fcp')."
+      "justification": "All use cases are associated with an actor, either directly (e.g., 'Koosta arhetüüp' to 'Tehnik') or indirectly via <<include>> relationships from use cases that are connected to actors (e.g., 'Vaata kinnitamata arhetüüpe' is included by 'Koosta arhetüüp')."
     },
     {
       "rule_id": "G6.1",
@@ -37,7 +37,7 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case naming is consistent, using the 'Verb + Noun' format (e.g., 'Koosta arhet\u00fc\u00fcp', 'Tuvasta kasutaja')."
+      "justification": "Use case naming is consistent, using the 'Verb + Noun' format (e.g., 'Koosta arhetüüp', 'Tuvasta kasutaja')."
     },
     {
       "rule_id": "G15.1",
@@ -61,13 +61,13 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The Use Case diagram 'Arhet\u00fc\u00fcpide funktsionaalne alls\u00fcsteem' on Page 2 contains exactly 10 central elements (use cases), which meets the threshold of 10 or more central elements."
+      "justification": "The Use Case diagram 'Arhetüüpide funktsionaalne allsüsteem' on Page 2 contains exactly 10 central elements (use cases), which meets the threshold of 10 or more central elements."
     },
     {
       "rule_id": "S1.2",
       "actual": false,
       "detected": false,
-      "justification": "No single class or table has 6 or more visual connection lines. The maximum found is 5 (for the 'Arhet\u00fc\u00fcp' class/table)."
+      "justification": "No single class or table has 6 or more visual connection lines. The maximum found is 5 (for the 'Arhetüüp' class/table)."
     },
     {
       "rule_id": "S2.1",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All class names start with an uppercase letter and are singular (e.g., 'Arhet\u00fc\u00fcp', 'Hoone')."
+      "justification": "All class names start with an uppercase letter and are singular (e.g., 'Arhetüüp', 'Hoone')."
     },
     {
       "rule_id": "N3.2",

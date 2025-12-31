@@ -13,19 +13,19 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "All use cases in the diagrams (Pages 2 and 3) are associated with at least one actor (e.g., 'Registreeri auto' is connected to 'Autode haldur', 'Vaata k\u00f5iki autosid' is connected to 'Juhataja'). Included use cases are connected indirectly via the base use case."
+      "justification": "All use cases in the diagrams (Pages 2 and 3) are associated with at least one actor (e.g., 'Registreeri auto' is connected to 'Autode haldur', 'Vaata kõiki autosid' is connected to 'Juhataja'). Included use cases are connected indirectly via the base use case."
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "No redundant use case names associated with the same actor were found. Use cases have distinct names describing different activities (e.g., 'Vaata aktiivseid autosid' vs 'Vaata k\u00f5iki autosid')."
+      "justification": "No redundant use case names associated with the same actor were found. Use cases have distinct names describing different activities (e.g., 'Vaata aktiivseid autosid' vs 'Vaata kõiki autosid')."
     },
     {
       "rule_id": "G6.2",
       "actual": true,
       "detected": false,
-      "justification": "No duplicate model element names were found within the same package. The packages (Registrid, P\u00e4devusalad) contain distinct elements."
+      "justification": "No duplicate model element names were found within the same package. The packages (Registrid, Pädevusalad) contain distinct elements."
     },
     {
       "rule_id": "G6.3",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All Use Cases and Activity Actions start with active verbs (e.g., 'Vaata', 'Otsi', 'Vali', 'L\u00f5peta')."
+      "justification": "All Use Cases and Activity Actions start with active verbs (e.g., 'Vaata', 'Otsi', 'Vali', 'Lõpeta')."
     },
     {
       "rule_id": "N1.2",

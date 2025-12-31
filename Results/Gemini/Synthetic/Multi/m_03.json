@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "All use cases in the diagrams (Pages 2 and 3) are associated with an actor, either directly or indirectly via \u00abinclude\u00bb relationships (e.g., 'Lisa auto' is included by 'Registreeri auto', which connects to 'Autode haldur')."
+      "justification": "All use cases in the diagrams (Pages 2 and 3) are associated with an actor, either directly or indirectly via «include» relationships (e.g., 'Lisa auto' is included by 'Registreeri auto', which connects to 'Autode haldur')."
     },
     {
       "rule_id": "G6.1",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases and activity actions start with an active verb (e.g., 'Vaata', 'Otsi', 'Vali', 'L\u00f5peta')."
+      "justification": "All use cases and activity actions start with an active verb (e.g., 'Vaata', 'Otsi', 'Vali', 'Lõpeta')."
     },
     {
       "rule_id": "N1.2",

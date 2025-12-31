@@ -7,7 +7,7 @@
       "rule_id": "G5.1",
       "actual": true,
       "detected": true,
-      "justification": "Page 2 ('Diagram: Autode funktsionaalne alls\u00fcsteem (Kustuta)') contains a package frame but no internal content or other elements, and the title '(Kustuta)' (Delete) indicates it is an empty or abandoned artifact."
+      "justification": "Page 2 ('Diagram: Autode funktsionaalne allsüsteem (Kustuta)') contains a package frame but no internal content or other elements, and the title '(Kustuta)' (Delete) indicates it is an empty or abandoned artifact."
     },
     {
       "rule_id": "G5.2",

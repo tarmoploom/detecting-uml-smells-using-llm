@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "The use case diagram 'Treeningute funktsionaalne alls\u00fcsteem' shows all identified use cases connected via associations and/or include relations so that none appear as a standalone oval without any actor connection."
+      "justification": "The use case diagram 'Treeningute funktsionaalne allsüsteem' shows all identified use cases connected via associations and/or include relations so that none appear as a standalone oval without any actor connection."
     },
     {
       "rule_id": "G6.1",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use case names follow a consistent 'verb + object' imperative style, such as 'Registreeri treening', 'Vaata k\u00f5iki treeninguid', 'L\u00f5peta treening', and 'Unusta treening'; there is no mix of noun-only and verb-led naming."
+      "justification": "All use case names follow a consistent 'verb + object' imperative style, such as 'Registreeri treening', 'Vaata kõiki treeninguid', 'Lõpeta treening', and 'Unusta treening'; there is no mix of noun-only and verb-led naming."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the 'Treeningu seisundidiagramm' state diagram, each state (Aktiivne, Mitteaktiivne, Ootel, L\u00f5petatud, Unustatud) has at least one incoming transition from another state or the initial node; no state appears isolated or without a path from the initial state."
+      "justification": "In the 'Treeningu seisundidiagramm' state diagram, each state (Aktiivne, Mitteaktiivne, Ootel, Lõpetatud, Unustatud) has at least one incoming transition from another state or the initial node; no state appears isolated or without a path from the initial state."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "In the activity diagram 'Treeningu l\u00f5petamise tegevusdiagramm', all actions (e.g., 'Vaata k\u00f5iki treeninguid, mida saab l\u00f5petada', 'Otsi treeningut', 'Vali treening', 'L\u00f5peta valitud treeningud') lie on paths starting from the initial node and leading toward the final node; there are no unreachable action nodes."
+      "justification": "In the activity diagram 'Treeningu lõpetamise tegevusdiagramm', all actions (e.g., 'Vaata kõiki treeninguid, mida saab lõpetada', 'Otsi treeningut', 'Vali treening', 'Lõpeta valitud treeningud') lie on paths starting from the initial node and leading toward the final node; there are no unreachable action nodes."
     },
     {
       "rule_id": "G15.3",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All use case and activity action names start with an active verb (e.g., 'Vaata', 'L\u00f5peta', 'Registreeri', 'Otsi', 'Vali', 'Unusta'), so there is no use case or action whose name fails to begin with an active verb."
+      "justification": "All use case and activity action names start with an active verb (e.g., 'Vaata', 'Lõpeta', 'Registreeri', 'Otsi', 'Vali', 'Unusta'), so there is no use case or action whose name fails to begin with an active verb."
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Every class name (e.g., 'Isik', 'Treening', 'Klassifikaator', 'Treeningu_kategooria_t\u00fc\u00fcp', 'T\u00f6\u00f6taja_rolli_omamine') starts with an uppercase letter and represents a singular entity; there are no lowercase-starting or pluralized class names, and register titles are treated as packages/diagrams rather than entity classes."
+      "justification": "Every class name (e.g., 'Isik', 'Treening', 'Klassifikaator', 'Treeningu_kategooria_tüüp', 'Töötaja_rolli_omamine') starts with an uppercase letter and represents a singular entity; there are no lowercase-starting or pluralized class names, and register titles are treated as packages/diagrams rather than entity classes."
     },
     {
       "rule_id": "N3.2",

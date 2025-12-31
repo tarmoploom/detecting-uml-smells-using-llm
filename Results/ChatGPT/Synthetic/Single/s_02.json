@@ -7,7 +7,7 @@
       "rule_id": "G5.1",
       "actual": true,
       "detected": true,
-      "justification": "The diagram titled 'Autode register (T\u00f6\u00f6taja)' on page 13 appears to contain only the diagram title with no visible classes/tables or other elements, indicating an empty diagram. "
+      "justification": "The diagram titled 'Autode register (Töötaja)' on page 13 appears to contain only the diagram title with no visible classes/tables or other elements, indicating an empty diagram. "
     },
     {
       "rule_id": "G5.2",
@@ -31,13 +31,13 @@
       "rule_id": "G6.3",
       "actual": false,
       "detected": false,
-      "justification": "The database-style diagrams on pages 15\u201320 show standard PK/FK structures and do not explicitly show two or more tables storing redundant copies of the same data value without a foreign key. Identically named common columns (for example, 'nimetus') are not treated as redundancy."
+      "justification": "The database-style diagrams on pages 15–20 show standard PK/FK structures and do not explicitly show two or more tables storing redundant copies of the same data value without a foreign key. Identically named common columns (for example, 'nimetus') are not treated as redundancy."
     },
     {
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names on pages 2 and 3 appear consistent in form, starting with verbs such as 'Tuvasta', 'Vaata', 'Registreeri', 'L\u00f5peta', 'Muuda', 'Aktiveeri', and 'Unusta'."
+      "justification": "Use case names on pages 2 and 3 appear consistent in form, starting with verbs such as 'Tuvasta', 'Vaata', 'Registreeri', 'Lõpeta', 'Muuda', 'Aktiveeri', and 'Unusta'."
     },
     {
       "rule_id": "G15.1",
@@ -49,13 +49,13 @@
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "In the activity diagram 'Auto l\u00f5petamise tegevusdiagramm' on page 4, no action is explicitly shown as unreachable; the flow appears to connect actions and decision points without a clear isolated action."
+      "justification": "In the activity diagram 'Auto lõpetamise tegevusdiagramm' on page 4, no action is explicitly shown as unreachable; the flow appears to connect actions and decision points without a clear isolated action."
     },
     {
       "rule_id": "G15.3",
       "actual": false,
       "detected": false,
-      "justification": "Class diagrams on pages 5\u20138, 10\u201312, and 14 show multiplicity indicators where visible (for example, '1', '0..*', '0..1'). The database diagrams on pages 15\u201320 use FK-style notation that is exempt under the interpretation rules, so no clear UML-style relationship lacking multiplicities at both ends is explicitly shown."
+      "justification": "Class diagrams on pages 5–8, 10–12, and 14 show multiplicity indicators where visible (for example, '1', '0..*', '0..1'). The database diagrams on pages 15–20 use FK-style notation that is exempt under the interpretation rules, so no clear UML-style relationship lacking multiplicities at both ends is explicitly shown."
     },
     {
       "rule_id": "S1.1",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names on pages 2 and 3 start with active verbs (for example, 'Vaata', 'Tuvasta', 'Registreeri', 'Muuda', 'Aktiveeri'). Activity actions visible on page 4 also appear verb-initial (for example, 'Vaata', 'Otsi', 'Vali', 'L\u00f5peta')."
+      "justification": "Use case names on pages 2 and 3 start with active verbs (for example, 'Vaata', 'Tuvasta', 'Registreeri', 'Muuda', 'Aktiveeri'). Activity actions visible on page 4 also appear verb-initial (for example, 'Vaata', 'Otsi', 'Vali', 'Lõpeta')."
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Class names visible in the conceptual class diagrams (for example, 'Isik', 'T\u00f6\u00f6taja', 'Auto', 'Kasutajakonto', 'Klassifikaator') start with uppercase letters and are not clearly plural."
+      "justification": "Class names visible in the conceptual class diagrams (for example, 'Isik', 'Töötaja', 'Auto', 'Kasutajakonto', 'Klassifikaator') start with uppercase letters and are not clearly plural."
     },
     {
       "rule_id": "N3.2",
@@ -103,7 +103,7 @@
       "rule_id": "N3.3",
       "actual": false,
       "detected": false,
-      "justification": "Database table names visible on pages 15\u201320 (for example, 'Auto', 'Klient', 'Riik', 'Auto_mark', 'Auto_kategooria') are not clearly plural. Any plural-sounding register labels appear to be diagram or register context rather than individual entity table names."
+      "justification": "Database table names visible on pages 15–20 (for example, 'Auto', 'Klient', 'Riik', 'Auto_mark', 'Auto_kategooria') are not clearly plural. Any plural-sounding register labels appear to be diagram or register context rather than individual entity table names."
     },
     {
       "rule_id": "N4.1",

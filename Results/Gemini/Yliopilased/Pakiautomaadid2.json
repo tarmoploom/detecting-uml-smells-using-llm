@@ -67,7 +67,7 @@
       "rule_id": "S1.2",
       "actual": false,
       "detected": true,
-      "justification": "On Page 18 (Kontseptuaalne eskiismudel), the class 'T\u00f6\u00f6taja' has 6 visual connection lines to other elements (Isik, T\u00f6\u00f6taja (mentor), T\u00f6\u00f6taja_rolli_omamine, T\u00f6\u00f6taja_seisundi_liik, and two connections to Pakiautomaat)."
+      "justification": "On Page 18 (Kontseptuaalne eskiismudel), the class 'Töötaja' has 6 visual connection lines to other elements (Isik, Töötaja (mentor), Töötaja_rolli_omamine, Töötaja_seisundi_liik, and two connections to Pakiautomaat)."
     },
     {
       "rule_id": "S2.1",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": true,
       "detected": false,
-      "justification": "All class and table names start with an uppercase letter and are singular (e.g., 'Isik', 'T\u00f6\u00f6taja')."
+      "justification": "All class and table names start with an uppercase letter and are singular (e.g., 'Isik', 'Töötaja')."
     },
     {
       "rule_id": "N3.2",

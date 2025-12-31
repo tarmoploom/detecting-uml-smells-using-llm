@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case naming is consistent, using the 'Verb Noun' format (e.g., 'Registreeri auto', 'L\u00f5peta auto')."
+      "justification": "Use case naming is consistent, using the 'Verb Noun' format (e.g., 'Registreeri auto', 'Lõpeta auto')."
     },
     {
       "rule_id": "G15.1",
       "actual": true,
       "detected": true,
-      "justification": "In the 'Auto seisundidiagramm' (Page 9), the state 'Mitteaktiiv ne' (Inactive) appears unreachable. There are transitions originating from it (to 'Aktiiv ne' and 'L\u00f5petatud'), but there is no visible transition arrow pointing INTO it from 'Ootel', 'Aktiiv ne', or the Start node."
+      "justification": "In the 'Auto seisundidiagramm' (Page 9), the state 'Mitteaktiiv ne' (Inactive) appears unreachable. There are transitions originating from it (to 'Aktiiv ne' and 'Lõpetatud'), but there is no visible transition arrow pointing INTO it from 'Ootel', 'Aktiiv ne', or the Start node."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "All actions in the activity diagram 'Auto l\u00f5petamise tegevusdiagramm' (Page 4) are reachable via the decision branches."
+      "justification": "All actions in the activity diagram 'Auto lõpetamise tegevusdiagramm' (Page 4) are reachable via the decision branches."
     },
     {
       "rule_id": "G15.3",

@@ -13,19 +13,19 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "On page 2 (Use case diagram 'Padeliv\u00e4ljakute funktsionaalne alls\u00fcsteem'), all use case ovals are associated with actors. The 'Tuvasta kasutaja' use case is connected via \u00abinclude\u00bb relationships to other use cases, which is standard UML practice for cross-cutting concerns. All main use cases (Aktiveeri padeliv\u00e4ljak, L\u00f5peta padeliv\u00e4ljak, Muuda padeliv\u00e4ljak, etc.) have direct actor associations."
+      "justification": "On page 2 (Use case diagram 'Padeliväljakute funktsionaalne allsüsteem'), all use case ovals are associated with actors. The 'Tuvasta kasutaja' use case is connected via «include» relationships to other use cases, which is standard UML practice for cross-cutting concerns. All main use cases (Aktiveeri padeliväljak, Lõpeta padeliväljak, Muuda padeliväljak, etc.) have direct actor associations."
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "No duplicate use case names describing the same activity with the same actor were found. The use cases all describe distinct activities: Aktiveeri (Activate), L\u00f5peta (Terminate), Muuda (Modify), Registreeri (Register), Unusta (Forget), Vaata (View). While 'Muuda padeliv\u00e4ljak' and 'Muuda padeliv\u00e4ljak mittaktiivseks' are related, they describe different activities (general modification vs. making inactive specifically)."
+      "justification": "No duplicate use case names describing the same activity with the same actor were found. The use cases all describe distinct activities: Aktiveeri (Activate), Lõpeta (Terminate), Muuda (Modify), Registreeri (Register), Unusta (Forget), Vaata (View). While 'Muuda padeliväljak' and 'Muuda padeliväljak mittaktiivseks' are related, they describe different activities (general modification vs. making inactive specifically)."
     },
     {
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "No duplicate element names within the same package were found. Each package (Isikute register, Klassifikaatorite register, T\u00f6\u00f6tajate register, Padeliv\u00e4ljakute register, Klientide register) contains uniquely named elements."
+      "justification": "No duplicate element names within the same package were found. Each package (Isikute register, Klassifikaatorite register, Töötajate register, Padeliväljakute register, Klientide register) contains uniquely named elements."
     },
     {
       "rule_id": "G6.3",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases follow consistent naming convention - they all start with verbs in Estonian imperative form: Aktiveeri (Activate), L\u00f5peta (Terminate), Muuda (Modify), Registreeri (Register), Unusta (Forget), Vaata (View), Tuvasta (Identify). No mixed naming patterns detected."
+      "justification": "All use cases follow consistent naming convention - they all start with verbs in Estonian imperative form: Aktiveeri (Activate), Lõpeta (Terminate), Muuda (Modify), Registreeri (Register), Unusta (Forget), Vaata (View), Tuvasta (Identify). No mixed naming patterns detected."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "On page 10 (State diagram 'Padeliv\u00e4ljakute seisundidiagramm'), all states are reachable: Ootel is reachable from initial state (Alg), Aktiivne is reachable from Ootel and Mitteaktiivne, Mitteaktiivne is reachable from Aktiivne, L\u00f5petatud is reachable from Aktiivne and Mitteaktiivne, Unustatud is reachable from Ootel. Every state has at least one incoming transition."
+      "justification": "On page 10 (State diagram 'Padeliväljakute seisundidiagramm'), all states are reachable: Ootel is reachable from initial state (Alg), Aktiivne is reachable from Ootel and Mitteaktiivne, Mitteaktiivne is reachable from Aktiivne, Lõpetatud is reachable from Aktiivne and Mitteaktiivne, Unustatud is reachable from Ootel. Every state has at least one incoming transition."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "On pages 3 and 4 (Activity diagrams), all actions are reachable from the start node (Algus). The flow paths connect through decision nodes allowing all actions to be executed: Vaata k\u00f5iki padeliv\u00e4ljakuid \u2192 Otsi padeliv\u00e4ljakuid \u2192 Vali padeliv\u00e4ljak \u2192 L\u00f5peta/Aktiveeri valitud padeliv\u00e4ljak \u2192 Teavita eba\u00f5nnestumisest \u2192 L\u00f5pp. No unreachable actions found."
+      "justification": "On pages 3 and 4 (Activity diagrams), all actions are reachable from the start node (Algus). The flow paths connect through decision nodes allowing all actions to be executed: Vaata kõiki padeliväljakuid → Otsi padeliväljakuid → Vali padeliväljak → Lõpeta/Aktiveeri valitud padeliväljak → Teavita ebaõnnestumisest → Lõpp. No unreachable actions found."
     },
     {
       "rule_id": "G15.3",
@@ -61,13 +61,13 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "DETECTED on two diagrams: (1) Page 2 (Use case diagram 'Padeliv\u00e4ljakute funktsionaalne alls\u00fcsteem'): Counted 11 use cases: Tuvasta kasutaja, Vaata padeliv\u00e4ljakute koondaruannet, L\u00f5peta padeliv\u00e4ljak, Registreeri padeliv\u00e4ljak, Muuda padeliv\u00e4ljak, Aktiveeri padeliv\u00e4ljak, Muuda padeliv\u00e4ljak mittaktiivseks, Vaata aktiivseid padeliv\u00e4ljakuid, Vaata k\u00f5iki padeliv\u00e4ljakuid, Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid padeliv\u00e4ljakuid, Unusta padeliv\u00e4ljak = 11 total. Threshold is \u226510. 11 \u2265 10, therefore smell IS present. (2) Page 7 (Class diagram 'Klassifikaatorite register'): Counted 10 classes: Klassifikaator, Riik, Padeliv\u00e4ljaku_seisundi_liik, T\u00f6\u00f6taja_seisundi_liik, Isiku_seisundi_liik, T\u00f6\u00f6taja_roll, Padeliv\u00e4ljaku_kategooria, Padeliv\u00e4ljaku_kategooria_t\u00fc\u00fcp, Kliendi_seisundi_liik, Padeliv\u00e4ljaku_p\u00f5randakatte_materjal = 10 total. Threshold is \u226510. 10 \u2265 10, therefore smell IS present."
+      "justification": "DETECTED on two diagrams: (1) Page 2 (Use case diagram 'Padeliväljakute funktsionaalne allsüsteem'): Counted 11 use cases: Tuvasta kasutaja, Vaata padeliväljakute koondaruannet, Lõpeta padeliväljak, Registreeri padeliväljak, Muuda padeliväljak, Aktiveeri padeliväljak, Muuda padeliväljak mittaktiivseks, Vaata aktiivseid padeliväljakuid, Vaata kõiki padeliväljakuid, Vaata kõiki ootel või mitteaktiivseid padeliväljakuid, Unusta padeliväljak = 11 total. Threshold is ≥10. 11 ≥ 10, therefore smell IS present. (2) Page 7 (Class diagram 'Klassifikaatorite register'): Counted 10 classes: Klassifikaator, Riik, Padeliväljaku_seisundi_liik, Töötaja_seisundi_liik, Isiku_seisundi_liik, Töötaja_roll, Padeliväljaku_kategooria, Padeliväljaku_kategooria_tüüp, Kliendi_seisundi_liik, Padeliväljaku_põrandakatte_materjal = 10 total. Threshold is ≥10. 10 ≥ 10, therefore smell IS present."
     },
     {
       "rule_id": "S1.2",
       "actual": false,
       "detected": true,
-      "justification": "DETECTED on page 7 (Class diagram 'Klassifikaatorite register'): The 'Klassifikaator' class has 9 visual connection lines (inheritance/generalization relationships labeled 'Klassifikaatori t\u00fc\u00fcp') to: Riik, Padeliv\u00e4ljaku_seisundi_liik, T\u00f6\u00f6taja_seisundi_liik, Isiku_seisundi_liik, T\u00f6\u00f6taja_roll, Padeliv\u00e4ljaku_kategooria, Padeliv\u00e4ljaku_kategooria_t\u00fc\u00fcp, Kliendi_seisundi_liik, Padeliv\u00e4ljaku_p\u00f5randakatte_materjal = 9 connections. Threshold is \u22656. 9 \u2265 6, therefore smell IS present. Other diagrams checked: Page 9 'Padeliv\u00e4ljakute register' - Padeliv\u00e4ljak has 5 connections (< 6). Page 15 'Padeliv\u00e4ljakute register (transformed)' - Padelivaljak has 5 connections (< 6)."
+      "justification": "DETECTED on page 7 (Class diagram 'Klassifikaatorite register'): The 'Klassifikaator' class has 9 visual connection lines (inheritance/generalization relationships labeled 'Klassifikaatori tüüp') to: Riik, Padeliväljaku_seisundi_liik, Töötaja_seisundi_liik, Isiku_seisundi_liik, Töötaja_roll, Padeliväljaku_kategooria, Padeliväljaku_kategooria_tüüp, Kliendi_seisundi_liik, Padeliväljaku_põrandakatte_materjal = 9 connections. Threshold is ≥6. 9 ≥ 6, therefore smell IS present. Other diagrams checked: Page 9 'Padeliväljakute register' - Padeliväljak has 5 connections (< 6). Page 15 'Padeliväljakute register (transformed)' - Padelivaljak has 5 connections (< 6)."
     },
     {
       "rule_id": "S2.1",
@@ -79,25 +79,25 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases on page 2 start with active verbs in Estonian imperative form: Aktiveeri (Activate), L\u00f5peta (End), Muuda (Modify), Registreeri (Register), Unusta (Forget), Vaata (View), Tuvasta (Identify). Activity diagram actions on pages 3-4 also start with verbs: Vaata, Otsi (Search), Vali (Select), L\u00f5peta, Teavita (Notify), Aktiveeri. No noun-first or passive forms detected."
+      "justification": "All use cases on page 2 start with active verbs in Estonian imperative form: Aktiveeri (Activate), Lõpeta (End), Muuda (Modify), Registreeri (Register), Unusta (Forget), Vaata (View), Tuvasta (Identify). Activity diagram actions on pages 3-4 also start with verbs: Vaata, Otsi (Search), Vali (Select), Lõpeta, Teavita (Notify), Aktiveeri. No noun-first or passive forms detected."
     },
     {
       "rule_id": "N1.2",
       "actual": false,
       "detected": false,
-      "justification": "All names checked have \u22654 characters. Examples: 'Isik' (4 chars), 'Riik' (4 chars), 'Klient' (6 chars), 'T\u00f6\u00f6taja' (7 chars), 'parool' (6 chars), 'kood' (4 chars), 'nimetus' (7 chars). Threshold is \u22643 characters. No names with 3 or fewer characters found."
+      "justification": "All names checked have ≥4 characters. Examples: 'Isik' (4 chars), 'Riik' (4 chars), 'Klient' (6 chars), 'Töötaja' (7 chars), 'parool' (6 chars), 'kood' (4 chars), 'nimetus' (7 chars). Threshold is ≤3 characters. No names with 3 or fewer characters found."
     },
     {
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All class names start with uppercase and are singular: Isik, Kasutajakonto, Riik, Klassifikaator, T\u00f6\u00f6taja, Klient, Padeliv\u00e4ljak, Padeliv\u00e4ljaku_kategooria, T\u00f6\u00f6taja_roll, etc. No lowercase-starting or plural class names detected."
+      "justification": "All class names start with uppercase and are singular: Isik, Kasutajakonto, Riik, Klassifikaator, Töötaja, Klient, Padeliväljak, Padeliväljaku_kategooria, Töötaja_roll, etc. No lowercase-starting or plural class names detected."
     },
     {
       "rule_id": "N3.2",
       "actual": false,
       "detected": false,
-      "justification": "All attribute/column names start with lowercase: e_meil, eesnimi, elukoht, isikukood, perenimi, reg_aeg, s\u00fcnni_kp, viimase_muutm_aeg, on_aktiivne, parool, nimetus, kood, kirjeldus, maksimaalne_kasutajate_arv, etc. No uppercase-starting attribute names found."
+      "justification": "All attribute/column names start with lowercase: e_meil, eesnimi, elukoht, isikukood, perenimi, reg_aeg, sünni_kp, viimase_muutm_aeg, on_aktiivne, parool, nimetus, kood, kirjeldus, maksimaalne_kasutajate_arv, etc. No uppercase-starting attribute names found."
     },
     {
       "rule_id": "N3.3",

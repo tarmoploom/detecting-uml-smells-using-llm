@@ -19,7 +19,7 @@
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "No two or more use cases with names clearly describing the same activity and associated with the same actor were explicitly visible. The use case names on pages 2-3 (e.g., 'Registreeri auto', 'Aktiveeri auto', 'L\u00f5peta auto', 'Unusta auto', various 'Vaata ...' cases) appear distinct by wording. "
+      "justification": "No two or more use cases with names clearly describing the same activity and associated with the same actor were explicitly visible. The use case names on pages 2-3 (e.g., 'Registreeri auto', 'Aktiveeri auto', 'Lõpeta auto', 'Unusta auto', various 'Vaata ...' cases) appear distinct by wording. "
     },
     {
       "rule_id": "G6.2",
@@ -37,13 +37,13 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case naming form appears consistent on pages 2-3: the listed use cases start with active verbs in the same language and style (e.g., 'Tuvasta', 'Vaata', 'Registreeri', 'L\u00f5peta', 'Muuda', 'Aktiveeri', 'Unusta'). No mixed verb/noun style was clearly visible. "
+      "justification": "Use case naming form appears consistent on pages 2-3: the listed use cases start with active verbs in the same language and style (e.g., 'Tuvasta', 'Vaata', 'Registreeri', 'Lõpeta', 'Muuda', 'Aktiveeri', 'Unusta'). No mixed verb/noun style was clearly visible. "
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "The state diagram on page 9 lists states such as 'Aktiivne', 'Mitteaktiivne', 'L\u00f5petatud', 'Ootel', and 'Unustatud', but the reachability of each state cannot be confirmed as violated based solely on the visible textual extraction. No explicit unreachable state is unambiguously indicated. "
+      "justification": "The state diagram on page 9 lists states such as 'Aktiivne', 'Mitteaktiivne', 'Lõpetatud', 'Ootel', and 'Unustatud', but the reachability of each state cannot be confirmed as violated based solely on the visible textual extraction. No explicit unreachable state is unambiguously indicated. "
     },
     {
       "rule_id": "G15.2",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "No use case or activity action name is clearly visible as not starting with an active verb. Use case names on pages 2-3 and action phrases on page 4 appear to begin with verbs such as 'Vaata', 'Otsi', 'Vali', and 'L\u00f5peta'. "
+      "justification": "No use case or activity action name is clearly visible as not starting with an active verb. Use case names on pages 2-3 and action phrases on page 4 appear to begin with verbs such as 'Vaata', 'Otsi', 'Vali', and 'Lõpeta'. "
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "No class name is clearly shown as starting with a lowercase letter or being plural where this rule applies. Visible class names such as 'Isik', 'T\u00f6\u00f6taja', 'Auto', 'Klient', 'Kasutajakonto', and 'Klassifikaator' appear singular and capitalized. "
+      "justification": "No class name is clearly shown as starting with a lowercase letter or being plural where this rule applies. Visible class names such as 'Isik', 'Töötaja', 'Auto', 'Klient', 'Kasutajakonto', and 'Klassifikaator' appear singular and capitalized. "
     },
     {
       "rule_id": "N3.2",

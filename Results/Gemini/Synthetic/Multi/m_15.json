@@ -37,13 +37,13 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case naming is consistent, using the verb-noun form (e.g., 'Registreeri auto', 'Vaata k\u00f5iki autosid')."
+      "justification": "Use case naming is consistent, using the verb-noun form (e.g., 'Registreeri auto', 'Vaata kõiki autosid')."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the state diagram (Page 9), all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, L\u00f5petatud) are reachable via transitions."
+      "justification": "In the state diagram (Page 9), all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, Lõpetatud) are reachable via transitions."
     },
     {
       "rule_id": "G15.2",
@@ -91,13 +91,13 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All class names are capitalized and singular (e.g., 'Isik', 'Auto', 'T\u00f6\u00f6taja')."
+      "justification": "All class names are capitalized and singular (e.g., 'Isik', 'Auto', 'Töötaja')."
     },
     {
       "rule_id": "N3.2",
       "actual": true,
       "detected": true,
-      "justification": "On the 'Isikute register' class diagram (Page 6), the class 'Isik' contains several attributes starting with an uppercase letter: 'E_meil', 'Eesnimi', 'Elukoht', 'Isikukood', 'Perenimi', and 'S\u00fcnni_kp'."
+      "justification": "On the 'Isikute register' class diagram (Page 6), the class 'Isik' contains several attributes starting with an uppercase letter: 'E_meil', 'Eesnimi', 'Elukoht', 'Isikukood', 'Perenimi', and 'Sünni_kp'."
     },
     {
       "rule_id": "N3.3",

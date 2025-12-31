@@ -19,7 +19,7 @@
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "The use case names on page 2 (e.g., 'Tuvasta kasutaja', 'Aktiivsed autod', 'K\u00f5ik autod', 'Autode koondaruanne') and page 3 (e.g., 'Registreeri auto', 'L\u00f5peta auto', 'Muuda autot', 'Aktiveeri auto', 'Unusta auto') do not clearly show two or more use cases describing the same activity associated with the same actor."
+      "justification": "The use case names on page 2 (e.g., 'Tuvasta kasutaja', 'Aktiivsed autod', 'Kõik autod', 'Autode koondaruanne') and page 3 (e.g., 'Registreeri auto', 'Lõpeta auto', 'Muuda autot', 'Aktiveeri auto', 'Unusta auto') do not clearly show two or more use cases describing the same activity associated with the same actor."
     },
     {
       "rule_id": "G6.2",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": true,
       "detected": true,
-      "justification": "The use case diagram on page 2 mixes naming forms: 'Tuvasta kasutaja' starts with an active verb, while 'Aktiivsed autod', 'K\u00f5ik autod', and 'Autode koondaruanne' are noun phrases. This visible mix indicates inconsistent form within that diagram."
+      "justification": "The use case diagram on page 2 mixes naming forms: 'Tuvasta kasutaja' starts with an active verb, while 'Aktiivsed autod', 'Kõik autod', and 'Autode koondaruanne' are noun phrases. This visible mix indicates inconsistent form within that diagram."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "The state diagram on page 9 lists states such as 'Aktiivne', 'Mitteaktiivne', 'L\u00f5petatud', 'Ootel', and 'Unustatud' with narrative transition text. No specific state is explicitly shown as unreachable; thus no unambiguous violation is visible."
+      "justification": "The state diagram on page 9 lists states such as 'Aktiivne', 'Mitteaktiivne', 'Lõpetatud', 'Ootel', and 'Unustatud' with narrative transition text. No specific state is explicitly shown as unreachable; thus no unambiguous violation is visible."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "The activity diagram on page 4 shows a flow with actions like 'Vaata k\u00f5iki autosid...', 'Otsi autot...', 'Vali auto', and 'L\u00f5peta valitud auto'. There is no explicit indication of an action that cannot be reached."
+      "justification": "The activity diagram on page 4 shows a flow with actions like 'Vaata kõiki autosid...', 'Otsi autot...', 'Vali auto', and 'Lõpeta valitud auto'. There is no explicit indication of an action that cannot be reached."
     },
     {
       "rule_id": "G15.3",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": true,
       "detected": true,
-      "justification": "On the use case diagram on page 2, several use case names appear not to start with an active verb: 'Aktiivsed autod', 'K\u00f5ik autod', and 'Autode koondaruanne'. This explicitly matches the rule for use case ovals."
+      "justification": "On the use case diagram on page 2, several use case names appear not to start with an active verb: 'Aktiivsed autod', 'Kõik autod', and 'Autode koondaruanne'. This explicitly matches the rule for use case ovals."
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Visible class names such as 'Isik', 'T\u00f6\u00f6taja', 'Auto', 'Klient', 'Kasutajakonto', and 'Klassifikaator' start with uppercase letters and are not clearly plural. Diagram titles like 'Isikute register' are not treated as class names."
+      "justification": "Visible class names such as 'Isik', 'Töötaja', 'Auto', 'Klient', 'Kasutajakonto', and 'Klassifikaator' start with uppercase letters and are not clearly plural. Diagram titles like 'Isikute register' are not treated as class names."
     },
     {
       "rule_id": "N3.2",

@@ -13,19 +13,19 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": true,
-      "justification": "On page 2 ('Treeningu funktsionaalne alls\u00fcsteem' use case diagram), the use case 'Tuvasta kasutaja' (Identify user) marked as '(from L\u00e4bivad huvid)' is not directly associated with any actor. It only has \u00abinclude\u00bb relationships to other use cases but no direct actor connection line."
+      "justification": "On page 2 ('Treeningu funktsionaalne allsüsteem' use case diagram), the use case 'Tuvasta kasutaja' (Identify user) marked as '(from Läbivad huvid)' is not directly associated with any actor. It only has «include» relationships to other use cases but no direct actor connection line."
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "No duplicate use cases describing the same activity with the same actor found. While there are multiple 'Vaata' (View) and 'Muuda' (Modify) use cases, they each describe distinct activities (e.g., 'Vaata aktiivseid treeninguid', 'Vaata k\u00f5iki treeninguid', 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid treeninguid' are all different viewing operations)."
+      "justification": "No duplicate use cases describing the same activity with the same actor found. While there are multiple 'Vaata' (View) and 'Muuda' (Modify) use cases, they each describe distinct activities (e.g., 'Vaata aktiivseid treeninguid', 'Vaata kõiki treeninguid', 'Vaata kõiki ootel või mitteaktiivseid treeninguid' are all different viewing operations)."
     },
     {
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "No duplicate element names within the same package were found. All registers (Isikute register, Klassifikaatorite register, T\u00f6\u00f6tajate register, etc.) contain uniquely named elements."
+      "justification": "No duplicate element names within the same package were found. All registers (Isikute register, Klassifikaatorite register, Töötajate register, etc.) contain uniquely named elements."
     },
     {
       "rule_id": "G6.3",
@@ -37,13 +37,13 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases follow a consistent naming pattern starting with active verbs (Estonian imperative form): Vaata (View), L\u00f5peta (End), Registreeri (Register), Muuda (Modify), Aktiveeri (Activate), Unusta (Forget), Tuvasta (Identify)."
+      "justification": "All use cases follow a consistent naming pattern starting with active verbs (Estonian imperative form): Vaata (View), Lõpeta (End), Registreeri (Register), Muuda (Modify), Aktiveeri (Activate), Unusta (Forget), Tuvasta (Identify)."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "On page 11 ('Treeningu seisundidiagramm'), all states can be reached: Alg (initial) starts the diagram, Ootel is reached from Alg via registration, Aktiivne is reached from Ootel and Mitteaktiivne, Mitteaktiivne is reached from Aktiivne, L\u00f5petatud is reached from Aktiivne and Mitteaktiivne, Unustatud is reached from Ootel."
+      "justification": "On page 11 ('Treeningu seisundidiagramm'), all states can be reached: Alg (initial) starts the diagram, Ootel is reached from Alg via registration, Aktiivne is reached from Ootel and Mitteaktiivne, Mitteaktiivne is reached from Aktiivne, Lõpetatud is reached from Aktiivne and Mitteaktiivne, Unustatud is reached from Ootel."
     },
     {
       "rule_id": "G15.2",
@@ -61,13 +61,13 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "On page 2 ('Treeningu funktsionaalne alls\u00fcsteem'), counted 11 use cases (visual oval elements): (1) Tuvasta kasutaja, (2) Vaata treeningute koondaruannet, (3) L\u00f5peta treening, (4) Registreeri treening, (5) Muuda treening, (6) Aktiveeri treening, (7) Muuda treening mittaktiivseks, (8) Vaata aktiivseid treeninguid, (9) Vaata k\u00f5iki treeninguid, (10) Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid treeninguid, (11) Unusta treening. Threshold is \u226510. Since 11 \u2265 10, smell IS present. Note: Actors (Juhataja, treeningute haldur, Uudistaja, Klient, Koristaja, Treener) are NOT counted per the rule."
+      "justification": "On page 2 ('Treeningu funktsionaalne allsüsteem'), counted 11 use cases (visual oval elements): (1) Tuvasta kasutaja, (2) Vaata treeningute koondaruannet, (3) Lõpeta treening, (4) Registreeri treening, (5) Muuda treening, (6) Aktiveeri treening, (7) Muuda treening mittaktiivseks, (8) Vaata aktiivseid treeninguid, (9) Vaata kõiki treeninguid, (10) Vaata kõiki ootel või mitteaktiivseid treeninguid, (11) Unusta treening. Threshold is ≥10. Since 11 ≥ 10, smell IS present. Note: Actors (Juhataja, treeningute haldur, Uudistaja, Klient, Koristaja, Treener) are NOT counted per the rule."
     },
     {
       "rule_id": "S1.2",
       "actual": true,
       "detected": true,
-      "justification": "On page 18 ('Treeningute register (transformed)'), the 'Treening' table has 6 visual connection lines: (1) FK_Treening_Tootaja_registreerija \u2192 Tootaja, (2) FK_Treening_Tootaja_treener \u2192 Tootaja, (3) FK_Treening_Tootaja_viimane_muutja_id \u2192 Tootaja, (4) FK_Treening_Treeningu_seisundi_liik \u2192 Treeningu_seisundi_liik, (5) FK_Treening_Treeningu_asukoht \u2192 Treeningu_asukoht, (6) FK_Treening_kategooria_omamine_Treening_02 \u2192 Treening_kategooria_omamine. Counted 6 visual lines from Treening. Threshold is \u22656. Since 6 \u2265 6, smell IS present."
+      "justification": "On page 18 ('Treeningute register (transformed)'), the 'Treening' table has 6 visual connection lines: (1) FK_Treening_Tootaja_registreerija → Tootaja, (2) FK_Treening_Tootaja_treener → Tootaja, (3) FK_Treening_Tootaja_viimane_muutja_id → Tootaja, (4) FK_Treening_Treeningu_seisundi_liik → Treeningu_seisundi_liik, (5) FK_Treening_Treeningu_asukoht → Treeningu_asukoht, (6) FK_Treening_kategooria_omamine_Treening_02 → Treening_kategooria_omamine. Counted 6 visual lines from Treening. Threshold is ≥6. Since 6 ≥ 6, smell IS present."
     },
     {
       "rule_id": "S2.1",
@@ -79,25 +79,25 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases start with active verbs: Vaata (View), L\u00f5peta (End), Registreeri (Register), Muuda (Modify), Aktiveeri (Activate), Unusta (Forget), Tuvasta (Identify). Activity diagram actions on pages 3-4 also start with verbs: Vaata, Otsi, Vali, L\u00f5peta, Aktiveeri, Kuva."
+      "justification": "All use cases start with active verbs: Vaata (View), Lõpeta (End), Registreeri (Register), Muuda (Modify), Aktiveeri (Activate), Unusta (Forget), Tuvasta (Identify). Activity diagram actions on pages 3-4 also start with verbs: Vaata, Otsi, Vali, Lõpeta, Aktiveeri, Kuva."
     },
     {
       "rule_id": "N1.2",
       "actual": false,
       "detected": false,
-      "justification": "Checked all class, table, attribute, and use case names. Shortest names found: 'Isik' (4 chars), 'Riik' (4 chars), 'kood' (4 chars). All names have \u22654 characters. Note: 'Alg' (3 chars) is a state name, not a class/table/attribute/use case, so it does not trigger this rule. Threshold is \u22643 characters."
+      "justification": "Checked all class, table, attribute, and use case names. Shortest names found: 'Isik' (4 chars), 'Riik' (4 chars), 'kood' (4 chars). All names have ≥4 characters. Note: 'Alg' (3 chars) is a state name, not a class/table/attribute/use case, so it does not trigger this rule. Threshold is ≤3 characters."
     },
     {
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All class names start with uppercase letters and are singular: Isik, Kasutajakonto, T\u00f6\u00f6taja/Tootaja, Treening, Klient, Klassifikaator, Riik, etc."
+      "justification": "All class names start with uppercase letters and are singular: Isik, Kasutajakonto, Töötaja/Tootaja, Treening, Klient, Klassifikaator, Riik, etc."
     },
     {
       "rule_id": "N3.2",
       "actual": true,
       "detected": true,
-      "justification": "Multiple attribute/column names start with uppercase letters. On page 7 (Klassifikaatorite register): 'Kirjeldus' in T\u00f6\u00f6taja_roll starts with uppercase 'K'. On page 18 (Treeningute register transformed): 'Maksumus', 'Treeningu_id', 'Treeneri_kood', 'Treeningu_asukoha_kood', 'Treeningu_seisundi_liik_kood' all start with uppercase letters."
+      "justification": "Multiple attribute/column names start with uppercase letters. On page 7 (Klassifikaatorite register): 'Kirjeldus' in Töötaja_roll starts with uppercase 'K'. On page 18 (Treeningute register transformed): 'Maksumus', 'Treeningu_id', 'Treeneri_kood', 'Treeningu_asukoha_kood', 'Treeningu_seisundi_liik_kood' all start with uppercase letters."
     },
     {
       "rule_id": "N3.3",

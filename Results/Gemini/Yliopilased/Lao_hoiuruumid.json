@@ -43,7 +43,7 @@
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the State Diagram (Page 10), all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, L\u00f5petatud) are reachable via defined transitions."
+      "justification": "In the State Diagram (Page 10), all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, Lõpetatud) are reachable via defined transitions."
     },
     {
       "rule_id": "G15.2",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": true,
       "detected": true,
-      "justification": "In the Activity Diagram on Page 4, actions are named as full sentences starting with nouns (actors) instead of active verbs. Examples include: 'Kasutusjuht vaatab k\u00f5iki ootel olevaid...', 'Hoiuruumide haldur valib nimekirjast ruumi', and 'Hoiuruumide haldur aktiveerib valitud ruumi'."
+      "justification": "In the Activity Diagram on Page 4, actions are named as full sentences starting with nouns (actors) instead of active verbs. Examples include: 'Kasutusjuht vaatab kõiki ootel olevaid...', 'Hoiuruumide haldur valib nimekirjast ruumi', and 'Hoiuruumide haldur aktiveerib valitud ruumi'."
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": true,
       "detected": true,
-      "justification": "Multiple classes across the diagrams start with a lowercase letter, which violates the convention. Examples include 'isik' (Page 6), 't\u00f6\u00f6taja' (Page 8), 'hoiuruum' (Page 9), 'klient' (Page 11), and 'broneering' (Page 12)."
+      "justification": "Multiple classes across the diagrams start with a lowercase letter, which violates the convention. Examples include 'isik' (Page 6), 'töötaja' (Page 8), 'hoiuruum' (Page 9), 'klient' (Page 11), and 'broneering' (Page 12)."
     },
     {
       "rule_id": "N3.2",
@@ -103,7 +103,7 @@
       "rule_id": "N3.3",
       "actual": false,
       "detected": false,
-      "justification": "Database table names are singular (e.g., 'hoiuruum', 't\u00f6\u00f6taja', 'isik'), complying with the rule."
+      "justification": "Database table names are singular (e.g., 'hoiuruum', 'töötaja', 'isik'), complying with the rule."
     },
     {
       "rule_id": "N4.1",

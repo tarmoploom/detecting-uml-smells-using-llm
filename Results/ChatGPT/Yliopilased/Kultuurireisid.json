@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "The main use case diagram 'Kultuurireiside funktsionaalne alls\u00fcsteem' shows each use case (for example 'Lisa uus kultuurireis', 'T\u00fchista kultuurireis', 'Otsi kultuurireisi') connected to at least one actor such as Giid, Reisikonsultant or Klient; the function list inside the package on the overview diagram is treated as text only per the rule note, not as use case ovals. "
+      "justification": "The main use case diagram 'Kultuurireiside funktsionaalne allsüsteem' shows each use case (for example 'Lisa uus kultuurireis', 'Tühista kultuurireis', 'Otsi kultuurireisi') connected to at least one actor such as Giid, Reisikonsultant or Klient; the function list inside the package on the overview diagram is treated as text only per the rule note, not as use case ovals. "
     },
     {
       "rule_id": "G6.1",
@@ -43,13 +43,13 @@
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the state machine 'Kultuurireisi eluts\u00fcklid', each state such as 'Kavandamisel', 'Kinnitatud', 'Toimunud', 'T\u00fchistatud' and 'Arhiveeritud' has at least one incoming transition from the initial creation ('Lisa uus kultuurireis') or from another state, so no state is clearly unreachable. "
+      "justification": "In the state machine 'Kultuurireisi elutsüklid', each state such as 'Kavandamisel', 'Kinnitatud', 'Toimunud', 'Tühistatud' and 'Arhiveeritud' has at least one incoming transition from the initial creation ('Lisa uus kultuurireis') or from another state, so no state is clearly unreachable. "
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "In both activity diagrams 'Joonis3' and 'Joonis4', all actions and decisions (for example 'Ava s\u00fcsteem', 'Vali funktsioon Lisa uus kultuurireis', 'Paranda reisi detaile', 'T\u00fchista kultuurireis') appear along continuous control-flow paths starting from the initial node; there are no isolated actions without incoming control flows. "
+      "justification": "In both activity diagrams 'Joonis3' and 'Joonis4', all actions and decisions (for example 'Ava süsteem', 'Vali funktsioon Lisa uus kultuurireis', 'Paranda reisi detaile', 'Tühista kultuurireis') appear along continuous control-flow paths starting from the initial node; there are no isolated actions without incoming control flows. "
     },
     {
       "rule_id": "G15.3",
@@ -61,7 +61,7 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "Several diagrams contain 10 or more central elements: for example, the use case diagram 'Kultuurireiside funktsionaalne alls\u00fcsteem' shows well over ten use cases within the system boundary, and the large DDL diagram includes more than ten tables such as Amet, Klienditellimus, Reisija, Klient, Koostoopartner, Kultuurireis, Reisipaev and Teenuse_pakkumine on a single diagram. "
+      "justification": "Several diagrams contain 10 or more central elements: for example, the use case diagram 'Kultuurireiside funktsionaalne allsüsteem' shows well over ten use cases within the system boundary, and the large DDL diagram includes more than ten tables such as Amet, Klienditellimus, Reisija, Klient, Koostoopartner, Kultuurireis, Reisipaev and Teenuse_pakkumine on a single diagram. "
     },
     {
       "rule_id": "S1.2",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": true,
-      "justification": "Most use case names and many activity actions start with active verbs, but several activity nodes use result-style or noun-leading phrases instead, such as 'Uus kultuurireis lisatud' in activity diagram 'Joonis3' and 'Kultuurireis t\u00fchistatud' or 'Kultuurireisi ei t\u00fchistatud' in 'Joonis4', which begin with adjectives or nouns rather than active verbs. "
+      "justification": "Most use case names and many activity actions start with active verbs, but several activity nodes use result-style or noun-leading phrases instead, such as 'Uus kultuurireis lisatud' in activity diagram 'Joonis3' and 'Kultuurireis tühistatud' or 'Kultuurireisi ei tühistatud' in 'Joonis4', which begin with adjectives or nouns rather than active verbs. "
     },
     {
       "rule_id": "N1.2",

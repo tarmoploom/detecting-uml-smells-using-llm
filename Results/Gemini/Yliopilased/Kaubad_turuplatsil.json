@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "All use cases in the 'Use Case model' diagram are associated with an actor, either directly or via \u00abinclude\u00bb relationships to other use cases connected to actors."
+      "justification": "All use cases in the 'Use Case model' diagram are associated with an actor, either directly or via «include» relationships to other use cases connected to actors."
     },
     {
       "rule_id": "G6.1",

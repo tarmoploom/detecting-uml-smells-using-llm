@@ -37,13 +37,13 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case naming on pages 2 and 3 appears consistent in form. The visible use case names start with active verbs such as 'Tuvasta', 'Vaata', 'Registreeri', 'L\u00f5peta', 'Muuda', 'Aktiveeri', and 'Unusta'."
+      "justification": "Use case naming on pages 2 and 3 appears consistent in form. The visible use case names start with active verbs such as 'Tuvasta', 'Vaata', 'Registreeri', 'Lõpeta', 'Muuda', 'Aktiveeri', and 'Unusta'."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "The state diagram on page 9 lists states such as 'Ootel', 'Aktiivne', 'Mitteaktiivne', 'L\u00f5petatud', and 'Unustatud'. The PDF does not make any unreachable state explicitly obvious; thus no clear violation is visible."
+      "justification": "The state diagram on page 9 lists states such as 'Ootel', 'Aktiivne', 'Mitteaktiivne', 'Lõpetatud', and 'Unustatud'. The PDF does not make any unreachable state explicitly obvious; thus no clear violation is visible."
     },
     {
       "rule_id": "G15.2",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All visible use case names on pages 2-3 appear to start with active verbs (e.g., 'Vaata', 'Tuvasta', 'Registreeri', 'Muuda', 'Aktiveeri', 'Unusta'). The activity actions on page 4 also appear verb-led (e.g., 'Vaata', 'Otsi', 'Vali', 'L\u00f5peta'). No violation was found."
+      "justification": "All visible use case names on pages 2-3 appear to start with active verbs (e.g., 'Vaata', 'Tuvasta', 'Registreeri', 'Muuda', 'Aktiveeri', 'Unusta'). The activity actions on page 4 also appear verb-led (e.g., 'Vaata', 'Otsi', 'Vali', 'Lõpeta'). No violation was found."
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Visible class names such as 'Isik', 'T\u00f6\u00f6taja', 'Auto', 'Klassifikaator', and 'Klient' start with uppercase letters and are not clearly plural in a way that violates the rule."
+      "justification": "Visible class names such as 'Isik', 'Töötaja', 'Auto', 'Klassifikaator', and 'Klient' start with uppercase letters and are not clearly plural in a way that violates the rule."
     },
     {
       "rule_id": "N3.2",

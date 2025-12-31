@@ -13,19 +13,19 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "In the use case diagram 'Laudade funktsionaalne alls\u00fcsteem', all named use cases appear within a populated diagram with several actors around the system boundary, but the PDF text does not explicitly show which ovals are or are not connected to actors; since no unambiguously unassociated use case is visible, this smell cannot be confirmed. "
+      "justification": "In the use case diagram 'Laudade funktsionaalne allsüsteem', all named use cases appear within a populated diagram with several actors around the system boundary, but the PDF text does not explicitly show which ovals are or are not connected to actors; since no unambiguously unassociated use case is visible, this smell cannot be confirmed. "
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "The use case diagram lists distinct use case names such as 'Aktiveeri laud', 'Registreeri laud', 'L\u00f5peta laud', 'Unusta laud', and several 'Vaata ...' variants; none clearly describe the same activity with different wording, and without explicit connector information the model does not show two synonymous use cases tied to the same actor. "
+      "justification": "The use case diagram lists distinct use case names such as 'Aktiveeri laud', 'Registreeri laud', 'Lõpeta laud', 'Unusta laud', and several 'Vaata ...' variants; none clearly describe the same activity with different wording, and without explicit connector information the model does not show two synonymous use cases tied to the same actor. "
     },
     {
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "On the package diagram 'Laudade FASiga seotud p\u00e4devusalad ja registrid', each package (for example 'Isikute register', 'T\u00f6\u00f6tajate register', 'Laudade register', 'Klassifikaatorite register') lists unique element names inside it; there is no package that contains two different model elements sharing the same primary name. Textual repetitions of labels like 'Isiku roll' across different diagrams or packages do not occur as duplicate elements within a single package. "
+      "justification": "On the package diagram 'Laudade FASiga seotud pädevusalad ja registrid', each package (for example 'Isikute register', 'Töötajate register', 'Laudade register', 'Klassifikaatorite register') lists unique element names inside it; there is no package that contains two different model elements sharing the same primary name. Textual repetitions of labels like 'Isiku roll' across different diagrams or packages do not occur as duplicate elements within a single package. "
     },
     {
       "rule_id": "G6.3",
@@ -43,13 +43,13 @@
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "The state diagram 'Toa seisundidiagramm' shows an initial node, several states (such as 'Ootel', 'Aktiivne', 'Mitteaktiivne', 'Unustatud', 'L\u00f5petatud'), and multiple transition descriptions between them; the text does not reveal any state with no incoming path from the initial state, and without explicit missing links no unreachable state can be identified. "
+      "justification": "The state diagram 'Toa seisundidiagramm' shows an initial node, several states (such as 'Ootel', 'Aktiivne', 'Mitteaktiivne', 'Unustatud', 'Lõpetatud'), and multiple transition descriptions between them; the text does not reveal any state with no incoming path from the initial state, and without explicit missing links no unreachable state can be identified. "
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "Both activity diagrams ('Laua l\u00f5petamise tegevusdiagramm' and 'Laua aktiveerimise tegevusdiagramm') contain a clear flow from an initial node through actions such as 'Vaata k\u00f5iki laudu, mida saab l\u00f5petada', 'Otsi laud', 'Vali laud', 'L\u00f5peta valitud laud' or 'Aktiveeri valitud laud' to an end node; all named actions appear along some path in the flow, and none is obviously isolated or unreachable. "
+      "justification": "Both activity diagrams ('Laua lõpetamise tegevusdiagramm' and 'Laua aktiveerimise tegevusdiagramm') contain a clear flow from an initial node through actions such as 'Vaata kõiki laudu, mida saab lõpetada', 'Otsi laud', 'Vali laud', 'Lõpeta valitud laud' or 'Aktiveeri valitud laud' to an end node; all named actions appear along some path in the flow, and none is obviously isolated or unreachable. "
     },
     {
       "rule_id": "G15.3",
@@ -61,7 +61,7 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The use case diagram 'Laudade funktsionaalne alls\u00fcsteem' contains at least 11 distinct use cases (including 'Tuvasta kasutaja', 'Registreeri laud', 'Aktiveeri laud', 'L\u00f5peta laud', 'Muuda laud', 'Muuda laud mittaktiivseks', three different 'Vaata ... laudu' variants, 'Vaata laudade koondaruannet', and 'Unusta laud'), exceeding the threshold of 10 central elements. Additionally, the class diagram 'Kogu s\u00fcsteem' shows more than 10 classes/tables such as 'Laud', 'Isik', 'Klient', 'T\u00f6\u00f6taja', several classifier tables, and association classes on a single diagram. "
+      "justification": "The use case diagram 'Laudade funktsionaalne allsüsteem' contains at least 11 distinct use cases (including 'Tuvasta kasutaja', 'Registreeri laud', 'Aktiveeri laud', 'Lõpeta laud', 'Muuda laud', 'Muuda laud mittaktiivseks', three different 'Vaata ... laudu' variants, 'Vaata laudade koondaruannet', and 'Unusta laud'), exceeding the threshold of 10 central elements. Additionally, the class diagram 'Kogu süsteem' shows more than 10 classes/tables such as 'Laud', 'Isik', 'Klient', 'Töötaja', several classifier tables, and association classes on a single diagram. "
     },
     {
       "rule_id": "S1.2",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": true,
       "detected": false,
-      "justification": "All named use cases and the clearly identifiable actions in activity diagrams start with active verbs in Estonian (for example 'Registreeri laud', 'Aktiveeri laud', 'Muuda laud', 'Vaata k\u00f5iki laudu', 'Otsi laud', 'Vali laud', 'L\u00f5peta valitud laud'); labels that are questions or outcome descriptions appear on decision or final nodes rather than on action nodes, so they are outside the scope of this rule. "
+      "justification": "All named use cases and the clearly identifiable actions in activity diagrams start with active verbs in Estonian (for example 'Registreeri laud', 'Aktiveeri laud', 'Muuda laud', 'Vaata kõiki laudu', 'Otsi laud', 'Vali laud', 'Lõpeta valitud laud'); labels that are questions or outcome descriptions appear on decision or final nodes rather than on action nodes, so they are outside the scope of this rule. "
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Entity class and table names like 'Isik', 'Klient', 'Tootaja', 'Laud', 'Kasutajakonto', 'Laua_kategooria', 'Laua_tyyp', and 'Laua_kategooria_omamine' all start with uppercase letters and are singular in form; plural names appear only in register packages such as 'Isikute register' or 'T\u00f6\u00f6tajate register', which are domain registers explicitly exempt from this rule. "
+      "justification": "Entity class and table names like 'Isik', 'Klient', 'Tootaja', 'Laud', 'Kasutajakonto', 'Laua_kategooria', 'Laua_tyyp', and 'Laua_kategooria_omamine' all start with uppercase letters and are singular in form; plural names appear only in register packages such as 'Isikute register' or 'Töötajate register', which are domain registers explicitly exempt from this rule. "
     },
     {
       "rule_id": "N3.2",

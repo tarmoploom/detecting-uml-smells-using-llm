@@ -19,7 +19,7 @@
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "Across the two use case diagrams (pages 2 and 3), the use case names appear distinct in described activity, for example 'Vaata aktiivseid autosid' versus 'Vaata k\u00f5iki autosid' and 'Aktiveeri auto' versus 'Muuda auto mittaktiivseks'. No two or more use cases with names describing the same activity and associated with the same actor are explicitly visible."
+      "justification": "Across the two use case diagrams (pages 2 and 3), the use case names appear distinct in described activity, for example 'Vaata aktiivseid autosid' versus 'Vaata kõiki autosid' and 'Aktiveeri auto' versus 'Muuda auto mittaktiivseks'. No two or more use cases with names describing the same activity and associated with the same actor are explicitly visible."
     },
     {
       "rule_id": "G6.2",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names on pages 2 and 3 consistently appear to start with active verbs in the same form and language, such as 'Tuvasta', 'Vaata', 'Registreeri', 'L\u00f5peta', 'Muuda', 'Aktiveeri' and 'Unusta'. No inconsistent naming form is clearly visible."
+      "justification": "Use case names on pages 2 and 3 consistently appear to start with active verbs in the same form and language, such as 'Tuvasta', 'Vaata', 'Registreeri', 'Lõpeta', 'Muuda', 'Aktiveeri' and 'Unusta'. No inconsistent naming form is clearly visible."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "The state diagram on page 9 lists states including 'Ootel', 'Aktiivne', 'Mitteaktiivne', 'L\u00f5petatud' and 'Unustatud' with an 'Algus' start, but the parsed content does not explicitly show a state that is clearly unreachable. Therefore no unambiguous unreachable state violation is visible."
+      "justification": "The state diagram on page 9 lists states including 'Ootel', 'Aktiivne', 'Mitteaktiivne', 'Lõpetatud' and 'Unustatud' with an 'Algus' start, but the parsed content does not explicitly show a state that is clearly unreachable. Therefore no unambiguous unreachable state violation is visible."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "The activity diagram on page 4 shows a sequence of actions such as 'Vaata k\u00f5iki autosid', 'Otsi autot', 'Vali auto' and 'L\u00f5peta valitud auto' with decision points. The parsed content does not explicitly indicate any action that cannot be reached, so no clear violation is visible."
+      "justification": "The activity diagram on page 4 shows a sequence of actions such as 'Vaata kõiki autosid', 'Otsi autot', 'Vali auto' and 'Lõpeta valitud auto' with decision points. The parsed content does not explicitly indicate any action that cannot be reached, so no clear violation is visible."
     },
     {
       "rule_id": "G15.3",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names on pages 2 and 3 start with active verbs (for example 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Registreeri auto'). Activity actions on page 4 also appear verb-initial (for example 'Otsi autot', 'Vali auto', 'L\u00f5peta valitud auto'). No explicitly non-verb-starting use case or action name is visible."
+      "justification": "Use case names on pages 2 and 3 start with active verbs (for example 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Registreeri auto'). Activity actions on page 4 also appear verb-initial (for example 'Otsi autot', 'Vali auto', 'Lõpeta valitud auto'). No explicitly non-verb-starting use case or action name is visible."
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Visible class names such as 'Isik', 'T\u00f6\u00f6taja', 'Auto', 'Klient' and 'Klassifikaator' appear to start with uppercase letters and are not clearly plural in form. No explicit class name violating this rule is visible."
+      "justification": "Visible class names such as 'Isik', 'Töötaja', 'Auto', 'Klient' and 'Klassifikaator' appear to start with uppercase letters and are not clearly plural in form. No explicit class name violating this rule is visible."
     },
     {
       "rule_id": "N3.2",

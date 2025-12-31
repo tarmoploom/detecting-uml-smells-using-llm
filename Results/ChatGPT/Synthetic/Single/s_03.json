@@ -13,13 +13,13 @@
       "rule_id": "G5.2",
       "actual": true,
       "detected": false,
-      "justification": "On the use case diagrams titled 'Autode funktsionaalne alls\u00fcsteem (Vaata & Tuvasta)' (page 2) and 'Autode halduse funktsionaalne alls\u00fcsteem (Muuda)' (page 3), there is no explicit, unambiguous visual evidence in the provided content that any use case oval lacks association with all actors. The text lists of functions on the package/overview page (page 1) are not assessed for this rule."
+      "justification": "On the use case diagrams titled 'Autode funktsionaalne allsüsteem (Vaata & Tuvasta)' (page 2) and 'Autode halduse funktsionaalne allsüsteem (Muuda)' (page 3), there is no explicit, unambiguous visual evidence in the provided content that any use case oval lacks association with all actors. The text lists of functions on the package/overview page (page 1) are not assessed for this rule."
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "Within each use case diagram (pages 2 and 3), the listed use case names appear distinct (e.g., 'Vaata aktiivseid autosid', 'Vaata k\u00f5iki autosid', 'Registreeri auto', 'L\u00f5peta auto', 'Muuda autot') and no clear pair of use cases describing the same activity with the same actor association is explicitly visible."
+      "justification": "Within each use case diagram (pages 2 and 3), the listed use case names appear distinct (e.g., 'Vaata aktiivseid autosid', 'Vaata kõiki autosid', 'Registreeri auto', 'Lõpeta auto', 'Muuda autot') and no clear pair of use cases describing the same activity with the same actor association is explicitly visible."
     },
     {
       "rule_id": "G6.2",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names on pages 2 and 3 consistently appear to start with action verbs such as 'Vaata', 'Tuvasta', 'Registreeri', 'L\u00f5peta', 'Muuda', 'Aktiveeri', and 'Unusta', indicating no inconsistent naming form is clearly visible."
+      "justification": "Use case names on pages 2 and 3 consistently appear to start with action verbs such as 'Vaata', 'Tuvasta', 'Registreeri', 'Lõpeta', 'Muuda', 'Aktiveeri', and 'Unusta', indicating no inconsistent naming form is clearly visible."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "The state diagram 'Auto seisundidiagramm' (page 9) shows states such as 'Ootel', 'Aktiivne', 'Mitteaktiivne', 'L\u00f5petatud', and 'Unustatud' with transitions depicted, and no state is explicitly shown as unreachable in an unambiguous way."
+      "justification": "The state diagram 'Auto seisundidiagramm' (page 9) shows states such as 'Ootel', 'Aktiivne', 'Mitteaktiivne', 'Lõpetatud', and 'Unustatud' with transitions depicted, and no state is explicitly shown as unreachable in an unambiguous way."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "The activity diagram 'Auto l\u00f5petamise tegevusdiagramm' (page 4) presents a sequence of actions and decisions; no action is explicitly indicated as unreachable based on the visible content."
+      "justification": "The activity diagram 'Auto lõpetamise tegevusdiagramm' (page 4) presents a sequence of actions and decisions; no action is explicitly indicated as unreachable based on the visible content."
     },
     {
       "rule_id": "G15.3",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names on pages 2-3 start with active verbs (e.g., 'Vaata', 'Tuvasta', 'Registreeri', 'L\u00f5peta', 'Muuda', 'Aktiveeri', 'Unusta'). Activity actions on page 4 also appear to start with verbs (e.g., 'Vaata', 'Otsi', 'Vali', 'L\u00f5peta'). No violation is clearly visible."
+      "justification": "Use case names on pages 2-3 start with active verbs (e.g., 'Vaata', 'Tuvasta', 'Registreeri', 'Lõpeta', 'Muuda', 'Aktiveeri', 'Unusta'). Activity actions on page 4 also appear to start with verbs (e.g., 'Vaata', 'Otsi', 'Vali', 'Lõpeta'). No violation is clearly visible."
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Visible class names for singular domain entities (e.g., 'Auto', 'Isik', 'T\u00f6\u00f6taja', 'Klient', 'Riik', 'Kasutajakonto') start with uppercase letters and do not appear plural in the class diagrams (pages 5-13)."
+      "justification": "Visible class names for singular domain entities (e.g., 'Auto', 'Isik', 'Töötaja', 'Klient', 'Riik', 'Kasutajakonto') start with uppercase letters and do not appear plural in the class diagrams (pages 5-13)."
     },
     {
       "rule_id": "N3.2",

@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "All use cases in the 'Kaupade funktsionaalne alls\u00fcsteem' diagram are associated with actors either directly or via inclusion/extension relationships."
+      "justification": "All use cases in the 'Kaupade funktsionaalne allsüsteem' diagram are associated with actors either directly or via inclusion/extension relationships."
     },
     {
       "rule_id": "G6.1",
@@ -37,7 +37,7 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases follow a consistent naming convention starting with a verb (e.g., 'Vaata', 'L\u00f5peta', 'Registreeri')."
+      "justification": "All use cases follow a consistent naming convention starting with a verb (e.g., 'Vaata', 'Lõpeta', 'Registreeri')."
     },
     {
       "rule_id": "G15.1",
@@ -49,7 +49,7 @@
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "In the activity diagrams (e.g., 'Kauba l\u00f5petamise tegevusdiagramm'), all actions are reachable through the decision flows."
+      "justification": "In the activity diagrams (e.g., 'Kauba lõpetamise tegevusdiagramm'), all actions are reachable through the decision flows."
     },
     {
       "rule_id": "G15.3",
@@ -61,13 +61,13 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The 'Kaupade register_suur' diagram (Page 2) contains 17 classes, and the 'Kaupade funktsionaalne alls\u00fcsteem' diagram (Page 3) contains 11 use cases. Both exceed the threshold of 10 central elements."
+      "justification": "The 'Kaupade register_suur' diagram (Page 2) contains 17 classes, and the 'Kaupade funktsionaalne allsüsteem' diagram (Page 3) contains 11 use cases. Both exceed the threshold of 10 central elements."
     },
     {
       "rule_id": "S1.2",
       "actual": true,
       "detected": true,
-      "justification": "In the diagram 'Kaupade register_suur' (Page 2), the class 'Kaup' has 6 visual connection lines to other classes (Kauba_variant, Kauba_kategooria_omamine, Kauba_seisundi_liik, Kauba_tootja, and two associations to T\u00f6\u00f6taja)."
+      "justification": "In the diagram 'Kaupade register_suur' (Page 2), the class 'Kaup' has 6 visual connection lines to other classes (Kauba_variant, Kauba_kategooria_omamine, Kauba_seisundi_liik, Kauba_tootja, and two associations to Töötaja)."
     },
     {
       "rule_id": "S2.1",
@@ -85,13 +85,13 @@
       "rule_id": "N1.2",
       "actual": false,
       "detected": false,
-      "justification": "No class, table, or attribute names were found to be 3 characters or less. Shortest names like 'Riik', 'Isik', 'Kaup', and 'V\u00e4rv' are 4 characters long."
+      "justification": "No class, table, or attribute names were found to be 3 characters or less. Shortest names like 'Riik', 'Isik', 'Kaup', and 'Värv' are 4 characters long."
     },
     {
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Class names consistently start with uppercase letters and use singular nouns (e.g., 'Isik', 'Kaup', 'T\u00f6\u00f6taja')."
+      "justification": "Class names consistently start with uppercase letters and use singular nouns (e.g., 'Isik', 'Kaup', 'Töötaja')."
     },
     {
       "rule_id": "N3.2",

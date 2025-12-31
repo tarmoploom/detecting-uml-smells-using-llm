@@ -19,13 +19,13 @@
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "No duplicate use cases with same/similar activity names associated with the same actor were found. On page 2, all 11 use cases have distinct names describing different activities (Tuvasta kasutaja, Vaata pakiautomaatide koondaruannet, L\u00f5peta pakiautomaat, Registreeri pakiautomaat, Muuda pakiautomaati, Aktiveeri pakiautomaat, Muuda pakiautomaat mitteaktiivseks, Vaata aktiivseid pakiautomaate, Vaata k\u00f5iki pakiautomaate, Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid pakiautomaate, Unusta pakiautomaat)."
+      "justification": "No duplicate use cases with same/similar activity names associated with the same actor were found. On page 2, all 11 use cases have distinct names describing different activities (Tuvasta kasutaja, Vaata pakiautomaatide koondaruannet, Lõpeta pakiautomaat, Registreeri pakiautomaat, Muuda pakiautomaati, Aktiveeri pakiautomaat, Muuda pakiautomaat mitteaktiivseks, Vaata aktiivseid pakiautomaate, Vaata kõiki pakiautomaate, Vaata kõiki ootel või mitteaktiivseid pakiautomaate, Unusta pakiautomaat)."
     },
     {
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "No package diagram contains multiple model elements with the same name in the same package. On page 1, each register (Isikute register, Klassifikaatorite register, T\u00f6\u00f6tajate register, Pakiautomaatide register, Klientide register) contains uniquely named elements."
+      "justification": "No package diagram contains multiple model elements with the same name in the same package. On page 1, each register (Isikute register, Klassifikaatorite register, Töötajate register, Pakiautomaatide register, Klientide register) contains uniquely named elements."
     },
     {
       "rule_id": "G6.3",
@@ -37,13 +37,13 @@
       "rule_id": "G8.1",
       "actual": true,
       "detected": false,
-      "justification": "All use cases on page 2 follow consistent naming - all start with active verbs in imperative form (Estonian): Tuvasta (Identify), Vaata (View), L\u00f5peta (End), Registreeri (Register), Muuda (Change), Aktiveeri (Activate), Unusta (Forget). No inconsistent naming patterns detected."
+      "justification": "All use cases on page 2 follow consistent naming - all start with active verbs in imperative form (Estonian): Tuvasta (Identify), Vaata (View), Lõpeta (End), Registreeri (Register), Muuda (Change), Aktiveeri (Activate), Unusta (Forget). No inconsistent naming patterns detected."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "On page 24 'Pakiautomaatide seisundidiagramm', all states can be reached: Alg (initial state), Ootel (from Alg via OP1/OP7/OP8), Aktiivne (from Ootel via OP3), Mitteaktiivne (from Aktiivne via OP4), L\u00f5petatud (from Aktiivne and Mitteaktiivne via OP5), Unustatud (from Ootel via OP2). Every non-initial state has at least one incoming transition."
+      "justification": "On page 24 'Pakiautomaatide seisundidiagramm', all states can be reached: Alg (initial state), Ootel (from Alg via OP1/OP7/OP8), Aktiivne (from Ootel via OP3), Mitteaktiivne (from Aktiivne via OP4), Lõpetatud (from Aktiivne and Mitteaktiivne via OP5), Unustatud (from Ootel via OP2). Every non-initial state has at least one incoming transition."
     },
     {
       "rule_id": "G15.2",
@@ -61,13 +61,13 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "Multiple diagrams exceed the threshold of \u226510 central elements: (1) Page 2 'Pakiautomaatide funktsionaalne alls\u00fcsteem' contains 11 use cases: Tuvasta kasutaja, Vaata pakiautomaatide koondaruannet, L\u00f5peta pakiautomaat, Registreeri pakiautomaat, Muuda pakiautomaati, Aktiveeri pakiautomaat, Muuda pakiautomaat mitteaktiivseks, Vaata aktiivseid pakiautomaate, Vaata k\u00f5iki pakiautomaate, Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid pakiautomaate, Unusta pakiautomaat. Count = 11, threshold \u226510, 11 \u2265 10 = TRUE. (2) Page 18 'Kontseptuaalne eskiismudel' contains 13 classes: Klassifikaator, Isiku_seisundi_liik, T\u00f6\u00f6taja, T\u00f6\u00f6taja_roll, T\u00f6\u00f6taja_seisundi_liik, Pakiautomaat, Pakiautomaatide_seisundi_liik, Pakiautomaatide_kategooria, Pakiautomaatide_kategooria_omamine, Pakiautomaatide_kategooria_t\u00fc\u00fcp, Kasutajakonto, Isik, Pakiautomaadi_Tootja. Count = 13, threshold \u226510, 13 \u2265 10 = TRUE. (3) Page 21 'Klassifikaatorite register' contains 10 classes: Klassifikaator, Pakiautomaatide_seisundi_liik, T\u00f6\u00f6taja_seisundi_liik, Isiku_seisundi_liik, T\u00f6\u00f6taja_roll, Pakiautomaatide_kategooria, Pakiautomaatide_kategooria_t\u00fc\u00fcp, Kliendi_seisundi_liik, Pakiautomaadi_Tootja, Riik. Count = 10, threshold \u226510, 10 \u2265 10 = TRUE."
+      "justification": "Multiple diagrams exceed the threshold of ≥10 central elements: (1) Page 2 'Pakiautomaatide funktsionaalne allsüsteem' contains 11 use cases: Tuvasta kasutaja, Vaata pakiautomaatide koondaruannet, Lõpeta pakiautomaat, Registreeri pakiautomaat, Muuda pakiautomaati, Aktiveeri pakiautomaat, Muuda pakiautomaat mitteaktiivseks, Vaata aktiivseid pakiautomaate, Vaata kõiki pakiautomaate, Vaata kõiki ootel või mitteaktiivseid pakiautomaate, Unusta pakiautomaat. Count = 11, threshold ≥10, 11 ≥ 10 = TRUE. (2) Page 18 'Kontseptuaalne eskiismudel' contains 13 classes: Klassifikaator, Isiku_seisundi_liik, Töötaja, Töötaja_roll, Töötaja_seisundi_liik, Pakiautomaat, Pakiautomaatide_seisundi_liik, Pakiautomaatide_kategooria, Pakiautomaatide_kategooria_omamine, Pakiautomaatide_kategooria_tüüp, Kasutajakonto, Isik, Pakiautomaadi_Tootja. Count = 13, threshold ≥10, 13 ≥ 10 = TRUE. (3) Page 21 'Klassifikaatorite register' contains 10 classes: Klassifikaator, Pakiautomaatide_seisundi_liik, Töötaja_seisundi_liik, Isiku_seisundi_liik, Töötaja_roll, Pakiautomaatide_kategooria, Pakiautomaatide_kategooria_tüüp, Kliendi_seisundi_liik, Pakiautomaadi_Tootja, Riik. Count = 10, threshold ≥10, 10 ≥ 10 = TRUE."
     },
     {
       "rule_id": "S1.2",
       "actual": false,
       "detected": false,
-      "justification": "No single class or table has 6 or more visual connection lines on any diagram page. Maximum connections found: On page 27 'Isikute register (transformed)', Isik table has 5 visible lines (to Isiku_seisundi_liik, to Riik, from Klient, from Tootaja, from Kasutajakonto). On page 30 'Pakiautomaatide register (transformed)', Pakiautomaat has 5 visible lines (to Tootaja via registreerija, to Tootaja via viimase_muutja, to Pakiautomaatide_seisundi_liik, to Pakiautomaatide_tootja, to Pakiautomaatide_kategooria_omamine). Maximum = 5, threshold \u22656, 5 < 6 = FALSE, smell NOT present."
+      "justification": "No single class or table has 6 or more visual connection lines on any diagram page. Maximum connections found: On page 27 'Isikute register (transformed)', Isik table has 5 visible lines (to Isiku_seisundi_liik, to Riik, from Klient, from Tootaja, from Kasutajakonto). On page 30 'Pakiautomaatide register (transformed)', Pakiautomaat has 5 visible lines (to Tootaja via registreerija, to Tootaja via viimase_muutja, to Pakiautomaatide_seisundi_liik, to Pakiautomaatide_tootja, to Pakiautomaatide_kategooria_omamine). Maximum = 5, threshold ≥6, 5 < 6 = FALSE, smell NOT present."
     },
     {
       "rule_id": "S2.1",
@@ -85,19 +85,19 @@
       "rule_id": "N1.2",
       "actual": false,
       "detected": true,
-      "justification": "On page 24 'Pakiautomaatide seisundidiagramm', the initial state is named 'Alg' which has exactly 3 characters (A-l-g = 3). Threshold is \u22643 characters. Since 3 \u2264 3, the smell IS present. This is short for 'Algus' (Beginning/Start in Estonian)."
+      "justification": "On page 24 'Pakiautomaatide seisundidiagramm', the initial state is named 'Alg' which has exactly 3 characters (A-l-g = 3). Threshold is ≤3 characters. Since 3 ≤ 3, the smell IS present. This is short for 'Algus' (Beginning/Start in Estonian)."
     },
     {
       "rule_id": "N3.1",
       "actual": true,
       "detected": false,
-      "justification": "All class names start with uppercase letters and are singular. Checked classes: Isik (singular), Klient (singular), T\u00f6\u00f6taja (singular), Pakiautomaat (singular), Kasutajakonto (singular), Klassifikaator (singular), Riik (singular). Compound names like 'Pakiautomaatide_kategooria' use genitive case (possession) not plural form - the class represents a single category entity."
+      "justification": "All class names start with uppercase letters and are singular. Checked classes: Isik (singular), Klient (singular), Töötaja (singular), Pakiautomaat (singular), Kasutajakonto (singular), Klassifikaator (singular), Riik (singular). Compound names like 'Pakiautomaatide_kategooria' use genitive case (possession) not plural form - the class represents a single category entity."
     },
     {
       "rule_id": "N3.2",
       "actual": true,
       "detected": true,
-      "justification": "Multiple attribute/column names start with uppercase letters. On page 18 'Kontseptuaalne eskiismudel': T\u00f6\u00f6taja class has 'T\u00f6\u00f6_e_mail' (uppercase T), 'Kirjeldus' (uppercase K); Pakiautomaat class has 'Asukoht_Laiuskraad' (uppercase A), 'Asukoht_Pikkuskraad' (uppercase A), 'Kirjeldus' (uppercase K), 'Pakiautomaadi_kood' (uppercase P). On page 20: Isik class has 'E_mail' (uppercase E), 'Eesnimi' (uppercase E), 'Perenimi' (uppercase P). Convention requires attributes to start with lowercase."
+      "justification": "Multiple attribute/column names start with uppercase letters. On page 18 'Kontseptuaalne eskiismudel': Töötaja class has 'Töö_e_mail' (uppercase T), 'Kirjeldus' (uppercase K); Pakiautomaat class has 'Asukoht_Laiuskraad' (uppercase A), 'Asukoht_Pikkuskraad' (uppercase A), 'Kirjeldus' (uppercase K), 'Pakiautomaadi_kood' (uppercase P). On page 20: Isik class has 'E_mail' (uppercase E), 'Eesnimi' (uppercase E), 'Perenimi' (uppercase P). Convention requires attributes to start with lowercase."
     },
     {
       "rule_id": "N3.3",

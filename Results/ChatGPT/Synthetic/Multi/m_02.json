@@ -19,13 +19,13 @@
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "The use case names on page 2 appear distinct (e.g., 'Registreeri auto', 'Aktiveeri auto', 'L\u00f5peta auto', 'Unusta auto', multiple 'Vaata' variants) and there is no explicit pair of two or more use cases that clearly describe the same activity associated with the same actor. "
+      "justification": "The use case names on page 2 appear distinct (e.g., 'Registreeri auto', 'Aktiveeri auto', 'Lõpeta auto', 'Unusta auto', multiple 'Vaata' variants) and there is no explicit pair of two or more use cases that clearly describe the same activity associated with the same actor. "
     },
     {
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "On the package-style overview on page 1 and the class/register diagrams, there is no clear evidence of multiple model elements with the exact same primary element name within the same package. Repeated classifier-type metadata text (e.g., 'Klassifikaatori t\u00fc\u00fcp' on pages 6-7) appears to be display metadata and is not counted as separate elements. "
+      "justification": "On the package-style overview on page 1 and the class/register diagrams, there is no clear evidence of multiple model elements with the exact same primary element name within the same package. Repeated classifier-type metadata text (e.g., 'Klassifikaatori tüüp' on pages 6-7) appears to be display metadata and is not counted as separate elements. "
     },
     {
       "rule_id": "G6.3",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case naming on page 2 appears consistent in form, with names starting with active verb phrases in Estonian such as 'Tuvasta', 'Vaata', 'Registreeri', 'Aktiveeri', 'Muuda', 'L\u00f5peta', and 'Unusta'. No inconsistent form is clearly visible. "
+      "justification": "Use case naming on page 2 appears consistent in form, with names starting with active verb phrases in Estonian such as 'Tuvasta', 'Vaata', 'Registreeri', 'Aktiveeri', 'Muuda', 'Lõpeta', and 'Unusta'. No inconsistent form is clearly visible. "
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "The state diagram on page 8 lists states such as 'Ootel', 'Aktiivne', 'Mitteaktiivne', 'L\u00f5petatud', and 'Unustatud' with an initial node 'Algus', but the parsed content does not unambiguously show any state as unreachable. Therefore no explicit violation is visible. "
+      "justification": "The state diagram on page 8 lists states such as 'Ootel', 'Aktiivne', 'Mitteaktiivne', 'Lõpetatud', and 'Unustatud' with an initial node 'Algus', but the parsed content does not unambiguously show any state as unreachable. Therefore no explicit violation is visible. "
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "The activity diagram on page 3 shows a flow including actions like 'Vaata k\u00f5iki autosid, mida saab l\u00f5petada', 'Otsi autot', 'Vali auto', and 'L\u00f5peta valitud auto'. The text does not clearly indicate any action that cannot be reached, so no explicit violation is visible. "
+      "justification": "The activity diagram on page 3 shows a flow including actions like 'Vaata kõiki autosid, mida saab lõpetada', 'Otsi autot', 'Vali auto', and 'Lõpeta valitud auto'. The text does not clearly indicate any action that cannot be reached, so no explicit violation is visible. "
     },
     {
       "rule_id": "G15.3",
@@ -61,7 +61,7 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The use case diagram on page 2 appears to show 11 use cases: 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Vaata k\u00f5iki autosid', 'Vaata autode koondaruannet', 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid autosid', 'Registreeri auto', 'Aktiveeri auto', 'Muuda auto mittaktiivseks', 'Muuda autot', 'L\u00f5peta auto', and 'Unusta auto'. This meets the threshold of 10 or more central elements. "
+      "justification": "The use case diagram on page 2 appears to show 11 use cases: 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Vaata kõiki autosid', 'Vaata autode koondaruannet', 'Vaata kõiki ootel või mitteaktiivseid autosid', 'Registreeri auto', 'Aktiveeri auto', 'Muuda auto mittaktiivseks', 'Muuda autot', 'Lõpeta auto', and 'Unusta auto'. This meets the threshold of 10 or more central elements. "
     },
     {
       "rule_id": "S1.2",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names on page 2 start with active verbs (e.g., 'Vaata', 'Tuvasta', 'Registreeri', 'Aktiveeri', 'Muuda', 'L\u00f5peta', 'Unusta'). Activity diagram actions on page 3 also appear to start with verb phrases. No explicit non-verb-starting use case or action is visible. "
+      "justification": "Use case names on page 2 start with active verbs (e.g., 'Vaata', 'Tuvasta', 'Registreeri', 'Aktiveeri', 'Muuda', 'Lõpeta', 'Unusta'). Activity diagram actions on page 3 also appear to start with verb phrases. No explicit non-verb-starting use case or action is visible. "
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Visible class names such as 'Isik', 'T\u00f6\u00f6taja', 'Auto', 'Klient', and 'Klassifikaator' appear capitalized and singular. Diagram titles or register contexts like 'Isikute register' are not treated as individual entity class names for this rule. No explicit violation is visible. "
+      "justification": "Visible class names such as 'Isik', 'Töötaja', 'Auto', 'Klient', and 'Klassifikaator' appear capitalized and singular. Diagram titles or register contexts like 'Isikute register' are not treated as individual entity class names for this rule. No explicit violation is visible. "
     },
     {
       "rule_id": "N3.2",

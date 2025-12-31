@@ -19,13 +19,13 @@
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "No two or more use cases with names describing the same activity and associated with the same actor are clearly visible. The use case names on pages 2-3 appear distinct (e.g., 'Vaata aktiivseid autosid' vs 'Vaata k\u00f5iki autosid', 'Registreeri auto', 'L\u00f5peta auto', 'Unusta auto')."
+      "justification": "No two or more use cases with names describing the same activity and associated with the same actor are clearly visible. The use case names on pages 2-3 appear distinct (e.g., 'Vaata aktiivseid autosid' vs 'Vaata kõiki autosid', 'Registreeri auto', 'Lõpeta auto', 'Unusta auto')."
     },
     {
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "The only clear package/overview-like page is page 1. There is no explicit, unambiguous evidence of multiple separate model elements with the same primary name within the same package. Repeated classifier-type labels such as 'Klassifikaatori t\u00fc\u00fcp' on pages 7-8 appear to be tool metadata and are excluded by the rule clarification."
+      "justification": "The only clear package/overview-like page is page 1. There is no explicit, unambiguous evidence of multiple separate model elements with the same primary name within the same package. Repeated classifier-type labels such as 'Klassifikaatori tüüp' on pages 7-8 appear to be tool metadata and are excluded by the rule clarification."
     },
     {
       "rule_id": "G6.3",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case naming form appears consistent on pages 2-3, with names starting as active verb phrases such as 'Tuvasta', 'Vaata', 'Registreeri', 'L\u00f5peta', 'Muuda', 'Aktiveeri', and 'Unusta'. No mixed noun-only versus verb-starting pattern is clearly shown."
+      "justification": "Use case naming form appears consistent on pages 2-3, with names starting as active verb phrases such as 'Tuvasta', 'Vaata', 'Registreeri', 'Lõpeta', 'Muuda', 'Aktiveeri', and 'Unusta'. No mixed noun-only versus verb-starting pattern is clearly shown."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the state diagram on page 9, states such as 'Ootel', 'Aktiivne', 'Mitteaktiivne', 'L\u00f5petatud', and 'Unustatud' are shown with visible transitions in the diagram image. No state is clearly isolated or explicitly unreachable from the initial state."
+      "justification": "In the state diagram on page 9, states such as 'Ootel', 'Aktiivne', 'Mitteaktiivne', 'Lõpetatud', and 'Unustatud' are shown with visible transitions in the diagram image. No state is clearly isolated or explicitly unreachable from the initial state."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "The activity diagram on page 4 shows a connected flow from start to end through actions like 'Otsi autot', 'Vali auto', and 'L\u00f5peta valitud auto'. No action is clearly depicted as unreachable."
+      "justification": "The activity diagram on page 4 shows a connected flow from start to end through actions like 'Otsi autot', 'Vali auto', and 'Lõpeta valitud auto'. No action is clearly depicted as unreachable."
     },
     {
       "rule_id": "G15.3",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names on pages 2-3 and activity actions on page 4 appear to start with active verbs (e.g., 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Registreeri auto', 'Otsi autot', 'Vali auto', 'L\u00f5peta valitud auto'). No clear non-verb-starting use case or action name is visible."
+      "justification": "Use case names on pages 2-3 and activity actions on page 4 appear to start with active verbs (e.g., 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Registreeri auto', 'Otsi autot', 'Vali auto', 'Lõpeta valitud auto'). No clear non-verb-starting use case or action name is visible."
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Class names visible on class diagrams (pages 5-8 and 10-13) appear to start with uppercase letters and are not clearly plural for singular domain entities (e.g., 'Isik', 'T\u00f6\u00f6taja', 'Auto', 'Klient', 'Kasutajakonto', 'Klassifikaator')."
+      "justification": "Class names visible on class diagrams (pages 5-8 and 10-13) appear to start with uppercase letters and are not clearly plural for singular domain entities (e.g., 'Isik', 'Töötaja', 'Auto', 'Klient', 'Kasutajakonto', 'Klassifikaator')."
     },
     {
       "rule_id": "N3.2",

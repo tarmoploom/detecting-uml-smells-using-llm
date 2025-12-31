@@ -25,7 +25,7 @@
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "On the package-style overview diagram (p1), there is no clear evidence of multiple model elements with the same primary element name within the same package. Repeated classifier-type text such as 'Klassifikaatori t\u00fc\u00fcp' (seen on p8-p9) appears to be display metadata and is not treated as separate model elements."
+      "justification": "On the package-style overview diagram (p1), there is no clear evidence of multiple model elements with the same primary element name within the same package. Repeated classifier-type text such as 'Klassifikaatori tüüp' (seen on p8-p9) appears to be display metadata and is not treated as separate model elements."
     },
     {
       "rule_id": "G6.3",
@@ -43,13 +43,13 @@
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "The state diagram on p10 lists states (Aktiivne, Mitteaktiivne, L\u00f5petatud, Ootel, Unustatud) with a clear start node ('Algus'). The parsed content does not unambiguously show any state that cannot be reached, so no violation is explicitly visible."
+      "justification": "The state diagram on p10 lists states (Aktiivne, Mitteaktiivne, Lõpetatud, Ootel, Unustatud) with a clear start node ('Algus'). The parsed content does not unambiguously show any state that cannot be reached, so no violation is explicitly visible."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "The activity diagram on p5 shows a coherent-looking flow of steps and decisions (e.g., 'Vaata ...', 'Otsi autot', 'Vali auto', 'L\u00f5peta valitud auto'). No action is explicitly shown as unreachable in the visible content."
+      "justification": "The activity diagram on p5 shows a coherent-looking flow of steps and decisions (e.g., 'Vaata ...', 'Otsi autot', 'Vali auto', 'Lõpeta valitud auto'). No action is explicitly shown as unreachable in the visible content."
     },
     {
       "rule_id": "G15.3",
@@ -79,19 +79,19 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "Visible use case names on p3-p4 begin with active verbs (e.g., 'Tuvasta', 'Vaata', 'Registreeri', 'L\u00f5peta', 'Muuda', 'Aktiveeri', 'Unusta'). The clearly action-like labels in the activity diagram on p5 also begin with verbs (e.g., 'Vaata', 'Otsi', 'Vali', 'L\u00f5peta'). No non-verb-starting use case/action name is explicitly shown."
+      "justification": "Visible use case names on p3-p4 begin with active verbs (e.g., 'Tuvasta', 'Vaata', 'Registreeri', 'Lõpeta', 'Muuda', 'Aktiveeri', 'Unusta'). The clearly action-like labels in the activity diagram on p5 also begin with verbs (e.g., 'Vaata', 'Otsi', 'Vali', 'Lõpeta'). No non-verb-starting use case/action name is explicitly shown."
     },
     {
       "rule_id": "N1.2",
       "actual": false,
       "detected": false,
-      "justification": "No class, table, attribute/column, or use case name of 3 or fewer characters is clearly visible. Apparent tags or annotations (e.g., stereotypes like \u00abid\u00bb, or OP references in text on p10) are not treated as element names."
+      "justification": "No class, table, attribute/column, or use case name of 3 or fewer characters is clearly visible. Apparent tags or annotations (e.g., stereotypes like «id», or OP references in text on p10) are not treated as element names."
     },
     {
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Entity class names visible in conceptual class diagrams (e.g., 'Isik', 'T\u00f6\u00f6taja', 'Auto', 'Klient', 'Kasutajakonto') start with uppercase letters and appear singular. No explicit lowercase-starting or plural entity class name is visible."
+      "justification": "Entity class names visible in conceptual class diagrams (e.g., 'Isik', 'Töötaja', 'Auto', 'Klient', 'Kasutajakonto') start with uppercase letters and appear singular. No explicit lowercase-starting or plural entity class name is visible."
     },
     {
       "rule_id": "N3.2",
@@ -103,7 +103,7 @@
       "rule_id": "N3.3",
       "actual": false,
       "detected": false,
-      "justification": "No plural database table name representing a singular domain object is explicitly visible. Plural 'register' style names (e.g., 'Isikute register', 'Autode register', 'Klientide register', 'T\u00f6\u00f6tajate register') are treated as domain register tables and are exempt per the interpretation rules."
+      "justification": "No plural database table name representing a singular domain object is explicitly visible. Plural 'register' style names (e.g., 'Isikute register', 'Autode register', 'Klientide register', 'Töötajate register') are treated as domain register tables and are exempt per the interpretation rules."
     },
     {
       "rule_id": "N4.1",

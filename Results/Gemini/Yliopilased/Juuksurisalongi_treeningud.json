@@ -37,7 +37,7 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases follow a consistent naming convention, starting with a verb (e.g., 'Vaata', 'Tuvasta', 'L\u00f5peta', 'Registreeri')."
+      "justification": "All use cases follow a consistent naming convention, starting with a verb (e.g., 'Vaata', 'Tuvasta', 'Lõpeta', 'Registreeri')."
     },
     {
       "rule_id": "G15.1",
@@ -61,7 +61,7 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The Use Case diagram 'Teenuste funktsionaalne alls\u00fcsteem' (Page 2) contains 11 use cases (central elements), which exceeds the threshold of 10."
+      "justification": "The Use Case diagram 'Teenuste funktsionaalne allsüsteem' (Page 2) contains 11 use cases (central elements), which exceeds the threshold of 10."
     },
     {
       "rule_id": "S1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All class names start with an uppercase letter and are singular (e.g., 'Isik', 'Teenus', 'T\u00f6\u00f6taja')."
+      "justification": "All class names start with an uppercase letter and are singular (e.g., 'Isik', 'Teenus', 'Töötaja')."
     },
     {
       "rule_id": "N3.2",

@@ -13,13 +13,13 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "No unambiguous use case oval without an associated actor is explicitly visible in the parsed content of the use-case diagrams on pages labeled 'uc Autode funktsionaalne alls\u00fcsteem (Vaata & Tuvasta)' and 'uc Autode halduse funktsionaalne alls\u00fcsteem (Muuda)'. Since associations are not explicitly shown in the text, and the rule requires clear visibility, no violation is confirmed. "
+      "justification": "No unambiguous use case oval without an associated actor is explicitly visible in the parsed content of the use-case diagrams on pages labeled 'uc Autode funktsionaalne allsüsteem (Vaata & Tuvasta)' and 'uc Autode halduse funktsionaalne allsüsteem (Muuda)'. Since associations are not explicitly shown in the text, and the rule requires clear visibility, no violation is confirmed. "
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "The use-case names visible appear to describe distinct activities (e.g., 'Registreeri auto', 'Aktiveeri auto', 'L\u00f5peta auto', 'Unusta auto', 'Vaata aktiivseid autosid'). There is no explicit pair of differently named use cases describing the same activity with the same actor. "
+      "justification": "The use-case names visible appear to describe distinct activities (e.g., 'Registreeri auto', 'Aktiveeri auto', 'Lõpeta auto', 'Unusta auto', 'Vaata aktiivseid autosid'). There is no explicit pair of differently named use cases describing the same activity with the same actor. "
     },
     {
       "rule_id": "G6.2",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Within each visible use-case diagram, the use cases consistently appear to start with action verbs in Estonian, such as 'Tuvasta', 'Vaata', 'Registreeri', 'Muuda', 'Aktiveeri', 'Unusta', 'L\u00f5peta'. No inconsistent form within a single use-case diagram is explicitly shown. "
+      "justification": "Within each visible use-case diagram, the use cases consistently appear to start with action verbs in Estonian, such as 'Tuvasta', 'Vaata', 'Registreeri', 'Muuda', 'Aktiveeri', 'Unusta', 'Lõpeta'. No inconsistent form within a single use-case diagram is explicitly shown. "
     },
     {
       "rule_id": "G15.1",
       "actual": true,
       "detected": false,
-      "justification": "The state diagram 'Auto seisundidiagramm' shows multiple states (e.g., 'Ootel', 'Aktiivne', 'Mitteaktiivne', 'L\u00f5petatud', 'Unustatud') and transitions in the visual content, but the parsed text does not provide explicit evidence of an unreachable state. With no unambiguous unreachable state visible, no violation is confirmed. "
+      "justification": "The state diagram 'Auto seisundidiagramm' shows multiple states (e.g., 'Ootel', 'Aktiivne', 'Mitteaktiivne', 'Lõpetatud', 'Unustatud') and transitions in the visual content, but the parsed text does not provide explicit evidence of an unreachable state. With no unambiguous unreachable state visible, no violation is confirmed. "
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "The activity diagram 'Auto l\u00f5petamise tegevusdiagramm' includes actions such as 'Vaata k\u00f5iki autosid...', 'Otsi autot', 'Vali auto', 'L\u00f5peta valitud auto'. The text does not explicitly show any action that is unreachable. Therefore, no violation is confirmed. "
+      "justification": "The activity diagram 'Auto lõpetamise tegevusdiagramm' includes actions such as 'Vaata kõiki autosid...', 'Otsi autot', 'Vali auto', 'Lõpeta valitud auto'. The text does not explicitly show any action that is unreachable. Therefore, no violation is confirmed. "
     },
     {
       "rule_id": "G15.3",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Visible class names such as 'Isik', 'T\u00f6\u00f6taja', 'Auto', 'Klient', 'Kasutajakonto', and classifier-related classes appear to start with uppercase letters and are not clearly pluralized singular-domain classes. No explicit violation is visible. "
+      "justification": "Visible class names such as 'Isik', 'Töötaja', 'Auto', 'Klient', 'Kasutajakonto', and classifier-related classes appear to start with uppercase letters and are not clearly pluralized singular-domain classes. No explicit violation is visible. "
     },
     {
       "rule_id": "N3.2",

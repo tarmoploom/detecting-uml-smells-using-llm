@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": true,
-      "justification": "On the use case diagram Autode halduse funktsionaalne alls\u00fcsteem (Muuda) (page 3), the use case oval 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid autosid' appears to have only 'include' relationships and no visible association line to any actor, while other use cases on the same diagram do have actor links. This matches the rule definition for a use case not associated with any actor."
+      "justification": "On the use case diagram Autode halduse funktsionaalne allsüsteem (Muuda) (page 3), the use case oval 'Vaata kõiki ootel või mitteaktiivseid autosid' appears to have only 'include' relationships and no visible association line to any actor, while other use cases on the same diagram do have actor links. This matches the rule definition for a use case not associated with any actor."
     },
     {
       "rule_id": "G6.1",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case naming form appears consistent within each use case diagram. On page 2, use cases begin with verbs such as 'Tuvasta' and 'Vaata'. On page 3, use cases begin with verbs such as 'Registreeri', 'L\u00f5peta', 'Muuda', 'Aktiveeri', 'Unusta', and 'Vaata'."
+      "justification": "Use case naming form appears consistent within each use case diagram. On page 2, use cases begin with verbs such as 'Tuvasta' and 'Vaata'. On page 3, use cases begin with verbs such as 'Registreeri', 'Lõpeta', 'Muuda', 'Aktiveeri', 'Unusta', and 'Vaata'."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the state diagram 'Auto seisundidiagramm' (page 9), the states Ootel, Aktiivne, Mitteaktiivne, L\u00f5petatud, and Unustatud appear connected by transitions from the initial node and among each other such that no state is explicitly shown as unreachable."
+      "justification": "In the state diagram 'Auto seisundidiagramm' (page 9), the states Ootel, Aktiivne, Mitteaktiivne, Lõpetatud, and Unustatud appear connected by transitions from the initial node and among each other such that no state is explicitly shown as unreachable."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "In the activity diagram 'Auto l\u00f5petamise tegevusdiagramm' (page 4), all visible actions such as viewing cars, searching, selecting, and ending a selected car appear connected from the start node through decision flows, with no action explicitly isolated or unreachable."
+      "justification": "In the activity diagram 'Auto lõpetamise tegevusdiagramm' (page 4), all visible actions such as viewing cars, searching, selecting, and ending a selected car appear connected from the start node through decision flows, with no action explicitly isolated or unreachable."
     },
     {
       "rule_id": "G15.3",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All visible use case names on pages 2-3 and action names on the activity diagram page 4 appear to start with active verbs (e.g., 'Tuvasta', 'Vaata', 'Registreeri', 'L\u00f5peta', 'Muuda', 'Aktiveeri', 'Unusta', 'Otsi', 'Vali'). No clear violation was found."
+      "justification": "All visible use case names on pages 2-3 and action names on the activity diagram page 4 appear to start with active verbs (e.g., 'Tuvasta', 'Vaata', 'Registreeri', 'Lõpeta', 'Muuda', 'Aktiveeri', 'Unusta', 'Otsi', 'Vali'). No clear violation was found."
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Visible class names such as Isik, T\u00f6\u00f6taja, Auto, Klient, and Klassifikaator start with uppercase letters and do not appear plural. No clear lowercase-starting or plural class name was found."
+      "justification": "Visible class names such as Isik, Töötaja, Auto, Klient, and Klassifikaator start with uppercase letters and do not appear plural. No clear lowercase-starting or plural class name was found."
     },
     {
       "rule_id": "N3.2",

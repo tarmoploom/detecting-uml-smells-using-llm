@@ -19,7 +19,7 @@
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "Use cases associated with the same actor describe distinct activities (e.g., 'Vaata aktiivseid autosid' vs 'Vaata k\u00f5iki autosid'). No redundant names found."
+      "justification": "Use cases associated with the same actor describe distinct activities (e.g., 'Vaata aktiivseid autosid' vs 'Vaata kõiki autosid'). No redundant names found."
     },
     {
       "rule_id": "G6.2",
@@ -37,7 +37,7 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case naming is consistent, using the 'Verb + Noun' form in Estonian (e.g., 'Registreeri auto', 'Vaata k\u00f5iki autosid')."
+      "justification": "Use case naming is consistent, using the 'Verb + Noun' form in Estonian (e.g., 'Registreeri auto', 'Vaata kõiki autosid')."
     },
     {
       "rule_id": "G15.1",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All Use Cases and Activity Actions start with active verbs (e.g., 'Vaata' (View), 'Otsi' (Search), 'L\u00f5peta' (Finish))."
+      "justification": "All Use Cases and Activity Actions start with active verbs (e.g., 'Vaata' (View), 'Otsi' (Search), 'Lõpeta' (Finish))."
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Class names start with uppercase letters and are singular (e.g., 'Auto', 'Isik', 'T\u00f6\u00f6taja')."
+      "justification": "Class names start with uppercase letters and are singular (e.g., 'Auto', 'Isik', 'Töötaja')."
     },
     {
       "rule_id": "N3.2",

@@ -43,7 +43,7 @@
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the State Diagram (Page 8), all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, L\u00f5petatud) are reachable via transitions."
+      "justification": "In the State Diagram (Page 8), all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, Lõpetatud) are reachable via transitions."
     },
     {
       "rule_id": "G15.2",
@@ -55,7 +55,7 @@
       "rule_id": "G15.3",
       "actual": false,
       "detected": true,
-      "justification": "On the 'Autode register (Klassifikaator)' diagram (Page 11), the association between the 'Auto' class and the 'Auto_k\u00fctuse_liik' class lacks a multiplicity indicator on the 'Auto' end of the relationship line."
+      "justification": "On the 'Autode register (Klassifikaator)' diagram (Page 11), the association between the 'Auto' class and the 'Auto_kütuse_liik' class lacks a multiplicity indicator on the 'Auto' end of the relationship line."
     },
     {
       "rule_id": "S1.1",

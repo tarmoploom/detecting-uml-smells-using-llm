@@ -13,19 +13,19 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "In the main use case diagram 'Kaupade funktsionaalne alls\u00fcsteem' on page 3 every visual use case oval is connected by at least one association line to one or more actors (Kaupade haldur, Klient, Juhataja, Kaupade vaataja, Uudistaja, or S\u00fcsteem), so there is no use case without an actor. "
+      "justification": "In the main use case diagram 'Kaupade funktsionaalne allsüsteem' on page 3 every visual use case oval is connected by at least one association line to one or more actors (Kaupade haldur, Klient, Juhataja, Kaupade vaataja, Uudistaja, or Süsteem), so there is no use case without an actor. "
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "The use cases on the diagram 'Kaupade funktsionaalne alls\u00fcsteem' all describe distinct activities (for example 'Aktiveeri kaup', 'L\u00f5peta kaup', 'Registreeri kaup', 'Muuda kaup mittaktiivseks'), and no pair of use cases clearly describes the same activity while being associated with the same actor set. "
+      "justification": "The use cases on the diagram 'Kaupade funktsionaalne allsüsteem' all describe distinct activities (for example 'Aktiveeri kaup', 'Lõpeta kaup', 'Registreeri kaup', 'Muuda kaup mittaktiivseks'), and no pair of use cases clearly describes the same activity while being associated with the same actor set. "
     },
     {
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "The package diagram 'Kauba FASiga seotud p\u00e4devusalad ja registrid' shows packages such as 'Kaupade register', 'Isikute register', and 'Kaupade funktsionaalne alls\u00fcsteem', and within each package the listed model elements have unique primary names (for example within 'Kaupade register': Kauba_kategooria_omamine, Kauba_variant, Kaup, Kauba eluts\u00fcklid), so no package contains multiple elements with the same primary name. "
+      "justification": "The package diagram 'Kauba FASiga seotud pädevusalad ja registrid' shows packages such as 'Kaupade register', 'Isikute register', and 'Kaupade funktsionaalne allsüsteem', and within each package the listed model elements have unique primary names (for example within 'Kaupade register': Kauba_kategooria_omamine, Kauba_variant, Kaup, Kauba elutsüklid), so no package contains multiple elements with the same primary name. "
     },
     {
       "rule_id": "G6.3",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use case names and the related function list in 'Kaupade funktsionaalne alls\u00fcsteem' consistently start with an active verb in Estonian, such as 'Aktiveeri kaup', 'L\u00f5peta kaup', 'Vaata k\u00f5iki kaupasid', 'Registreeri h\u00e4vinud kaup' and 'Unusta kaup', so there is no inconsistent naming form among use cases. "
+      "justification": "All use case names and the related function list in 'Kaupade funktsionaalne allsüsteem' consistently start with an active verb in Estonian, such as 'Aktiveeri kaup', 'Lõpeta kaup', 'Vaata kõiki kaupasid', 'Registreeri hävinud kaup' and 'Unusta kaup', so there is no inconsistent naming form among use cases. "
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the state diagram 'Kauba seisundidiagramm' the states Ootel, Aktiivne, Mitteaktiivne, L\u00f5petatud and Unustatud all have at least one incoming transition from either the initial state or another state (for example transitions from Ootel and Aktiivne to L\u00f5petatud and Unustatud), so every state is reachable. "
+      "justification": "In the state diagram 'Kauba seisundidiagramm' the states Ootel, Aktiivne, Mitteaktiivne, Lõpetatud and Unustatud all have at least one incoming transition from either the initial state or another state (for example transitions from Ootel and Aktiivne to Lõpetatud and Unustatud), so every state is reachable. "
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "In both activity diagrams ('Kauba l\u00f5petamise tegevusdiagramm' and 'Kauba aktiveerimise tegevusdiagramm') every action node such as 'Vaata k\u00f5iki kaupasid, mida saab l\u00f5petada', 'Otsi kaupa', 'Vali kaup', 'L\u00f5peta valitud kaup' and 'Aktiveeri valitud kaup' is connected into the control flow from the initial node and eventually leads toward a final node, with no isolated or unreachable actions. "
+      "justification": "In both activity diagrams ('Kauba lõpetamise tegevusdiagramm' and 'Kauba aktiveerimise tegevusdiagramm') every action node such as 'Vaata kõiki kaupasid, mida saab lõpetada', 'Otsi kaupa', 'Vali kaup', 'Lõpeta valitud kaup' and 'Aktiveeri valitud kaup' is connected into the control flow from the initial node and eventually leads toward a final node, with no isolated or unreachable actions. "
     },
     {
       "rule_id": "G15.3",
@@ -61,13 +61,13 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The class diagram 'Kaupade register_suur' on page 2 contains well over ten central elements, including at least Kaup, Kauba_kategooria_omamine, Kauba_variant, Kauba_tootja, Kauba_seisundi_liik, Kauba_kategooria, Kauba_kategooria_t\u00fc\u00fcp, T\u00f6\u00f6taja, T\u00f6\u00f6taja_roll, T\u00f6\u00f6taja_seisundi_liik, Isik, Kasutajakonto, Klient and several classifier types, so the total number of classes/tables clearly exceeds the threshold of ten. "
+      "justification": "The class diagram 'Kaupade register_suur' on page 2 contains well over ten central elements, including at least Kaup, Kauba_kategooria_omamine, Kauba_variant, Kauba_tootja, Kauba_seisundi_liik, Kauba_kategooria, Kauba_kategooria_tüüp, Töötaja, Töötaja_roll, Töötaja_seisundi_liik, Isik, Kasutajakonto, Klient and several classifier types, so the total number of classes/tables clearly exceeds the threshold of ten. "
     },
     {
       "rule_id": "S1.2",
       "actual": true,
       "detected": true,
-      "justification": "In diagrams such as 'Kaupade register_suur' and the more compact 'Kaupade register', the central class Kaup has relationship lines to multiple surrounding classes including Kauba_kategooria_omamine, Kauba_seisundi_liik, Kauba_tootja, Kauba_variant and at least two separate associations to T\u00f6\u00f6taja (for the roles 'registreerija' and 'viimane muutja'), giving six or more distinct visible connectors touching this single class within one diagram. "
+      "justification": "In diagrams such as 'Kaupade register_suur' and the more compact 'Kaupade register', the central class Kaup has relationship lines to multiple surrounding classes including Kauba_kategooria_omamine, Kauba_seisundi_liik, Kauba_tootja, Kauba_variant and at least two separate associations to Töötaja (for the roles 'registreerija' and 'viimane muutja'), giving six or more distinct visible connectors touching this single class within one diagram. "
     },
     {
       "rule_id": "S2.1",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "Every use case name (such as 'Aktiveeri kaup', 'Unusta kaup', 'Vaata aktiivseid kaupasid') and each activity action label (for example 'Vaata k\u00f5iki kaupasid, mida saab l\u00f5petada', 'Otsi kaupa', 'Vali kaup', 'Aktiveeri valitud kaup') begins with an imperative verb in Estonian, while non-verb phrases starting with 'Kas' are used on decision nodes rather than on action nodes, so no use case or activity action name violates this rule. "
+      "justification": "Every use case name (such as 'Aktiveeri kaup', 'Unusta kaup', 'Vaata aktiivseid kaupasid') and each activity action label (for example 'Vaata kõiki kaupasid, mida saab lõpetada', 'Otsi kaupa', 'Vali kaup', 'Aktiveeri valitud kaup') begins with an imperative verb in Estonian, while non-verb phrases starting with 'Kas' are used on decision nodes rather than on action nodes, so no use case or activity action name violates this rule. "
     },
     {
       "rule_id": "N1.2",

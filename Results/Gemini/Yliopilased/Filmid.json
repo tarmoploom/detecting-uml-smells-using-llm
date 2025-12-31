@@ -37,7 +37,7 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All Use Cases on Page 2 start with a verb (e.g., 'Vaata', 'Tuvasta', 'L\u00f5peta'), maintaining a consistent naming form."
+      "justification": "All Use Cases on Page 2 start with a verb (e.g., 'Vaata', 'Tuvasta', 'Lõpeta'), maintaining a consistent naming form."
     },
     {
       "rule_id": "G15.1",
@@ -61,7 +61,7 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The Use Case diagram 'Filmide funktsionaalne alls\u00fcsteem' (Page 2) contains 11 central elements (Use Cases), which exceeds the threshold of 10."
+      "justification": "The Use Case diagram 'Filmide funktsionaalne allsüsteem' (Page 2) contains 11 central elements (Use Cases), which exceeds the threshold of 10."
     },
     {
       "rule_id": "S1.2",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": true,
       "detected": true,
-      "justification": "On the Activity Diagram (Page 4), the actions 'Filmi aktiveerimine edukas' and 'Filmi aktiveerimine eba\u00f5nnestub' start with a Noun ('Filmi') instead of an active verb."
+      "justification": "On the Activity Diagram (Page 4), the actions 'Filmi aktiveerimine edukas' and 'Filmi aktiveerimine ebaõnnestub' start with a Noun ('Filmi') instead of an active verb."
     },
     {
       "rule_id": "N1.2",

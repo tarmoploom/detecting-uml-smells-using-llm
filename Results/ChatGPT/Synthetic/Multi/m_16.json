@@ -13,19 +13,19 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "The two use case diagrams (pages labeled 'Autode funktsionaalne alls\u00fcsteem (Vaata & Tuvasta)' and 'Autode halduse funktsionaalne alls\u00fcsteem (Muuda)') each show several use cases together with multiple actors around the system boundary, and the PDF does not explicitly show any use case oval that is clearly isolated from all actors; because associations are not textually listed, no unassociated use case can be identified with certainty. "
+      "justification": "The two use case diagrams (pages labeled 'Autode funktsionaalne allsüsteem (Vaata & Tuvasta)' and 'Autode halduse funktsionaalne allsüsteem (Muuda)') each show several use cases together with multiple actors around the system boundary, and the PDF does not explicitly show any use case oval that is clearly isolated from all actors; because associations are not textually listed, no unassociated use case can be identified with certainty. "
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "Within each individual use case diagram, all use case names are distinct (for example 'Registreeri auto', 'L\u00f5peta auto', 'Muuda autot', 'Vaata aktiivseid autosid', 'Vaata k\u00f5iki autosid', 'Vaata autode koondaruannet'), and there are no pairs of different but synonymous names for the same activity associated to the same actor visible in a single diagram. "
+      "justification": "Within each individual use case diagram, all use case names are distinct (for example 'Registreeri auto', 'Lõpeta auto', 'Muuda autot', 'Vaata aktiivseid autosid', 'Vaata kõiki autosid', 'Vaata autode koondaruannet'), and there are no pairs of different but synonymous names for the same activity associated to the same actor visible in a single diagram. "
     },
     {
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "The only package diagram ('Autode FASiga seotud p\u00e4devusalad ja registrid') lists distinct element names under each package such as 'Auto l\u00f5petamise tegevusdiagramm', 'Registreeri auto', 'Isik', 'Kasutajakonto', 'Auto', 'klient', etc., and there is no evidence within that single package diagram of two separate model elements sharing the same primary name in the same package; repeated labels like 'Klassifikaatori t\u00fc\u00fcp' elsewhere are treated as metadata per the interpretation rules. "
+      "justification": "The only package diagram ('Autode FASiga seotud pädevusalad ja registrid') lists distinct element names under each package such as 'Auto lõpetamise tegevusdiagramm', 'Registreeri auto', 'Isik', 'Kasutajakonto', 'Auto', 'klient', etc., and there is no evidence within that single package diagram of two separate model elements sharing the same primary name in the same package; repeated labels like 'Klassifikaatori tüüp' elsewhere are treated as metadata per the interpretation rules. "
     },
     {
       "rule_id": "G6.3",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names across both use case diagrams consistently use a verb-first form in Estonian, for example 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Vaata k\u00f5iki autosid', 'Vaata autode koondaruannet', 'Registreeri auto', 'L\u00f5peta auto', 'Muuda autot', 'Aktiveeri auto', 'Unusta auto'; there are no noun-only or otherwise differently formed use case names mixed into these diagrams. "
+      "justification": "Use case names across both use case diagrams consistently use a verb-first form in Estonian, for example 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Vaata kõiki autosid', 'Vaata autode koondaruannet', 'Registreeri auto', 'Lõpeta auto', 'Muuda autot', 'Aktiveeri auto', 'Unusta auto'; there are no noun-only or otherwise differently formed use case names mixed into these diagrams. "
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "The state diagram 'Auto seisundidiagramm' shows an initial state 'Algus' and several named states ('Ootel', 'Aktiivne', 'Mitteaktiivne', 'L\u00f5petatud', 'Unustatud') with transition arrows and event texts drawn between them; every named state has at least one incoming transition visible from another state or the initial node, so no state is clearly unreachable. "
+      "justification": "The state diagram 'Auto seisundidiagramm' shows an initial state 'Algus' and several named states ('Ootel', 'Aktiivne', 'Mitteaktiivne', 'Lõpetatud', 'Unustatud') with transition arrows and event texts drawn between them; every named state has at least one incoming transition visible from another state or the initial node, so no state is clearly unreachable. "
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "In the activity diagram 'Auto l\u00f5petamise tegevusdiagramm', all actions such as 'Vaata k\u00f5iki autosid, mida saab l\u00f5petada', 'Otsi autot', 'Vali auto' and 'L\u00f5peta valitud auto' appear in the main control flow starting from the initial node and leading to the final node, with no isolated action boxes shown without incoming paths; therefore no action is demonstrably unreachable. "
+      "justification": "In the activity diagram 'Auto lõpetamise tegevusdiagramm', all actions such as 'Vaata kõiki autosid, mida saab lõpetada', 'Otsi autot', 'Vali auto' and 'Lõpeta valitud auto' appear in the main control flow starting from the initial node and leading to the final node, with no isolated action boxes shown without incoming paths; therefore no action is demonstrably unreachable. "
     },
     {
       "rule_id": "G15.3",
@@ -61,7 +61,7 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The conceptual class diagram 'Klassifikaatorite register' contains at least eleven central classes or entities (including 'Klassifikaator', 'Riik', 'Isiku_seisundi_liik', 'T\u00f6\u00f6taja_seisundi_liik', 'T\u00f6\u00f6taja_roll', 'Kliendi_seisundi_liik', 'Auto_mark', 'Auto_seisundi_liik', 'Auto_k\u00fctuse_liik', 'Auto_kategooria', 'Auto_kategooria_t\u00fc\u00fcp'), which exceeds the threshold of 10 central elements on a single diagram, while other diagrams remain below this limit. "
+      "justification": "The conceptual class diagram 'Klassifikaatorite register' contains at least eleven central classes or entities (including 'Klassifikaator', 'Riik', 'Isiku_seisundi_liik', 'Töötaja_seisundi_liik', 'Töötaja_roll', 'Kliendi_seisundi_liik', 'Auto_mark', 'Auto_seisundi_liik', 'Auto_kütuse_liik', 'Auto_kategooria', 'Auto_kategooria_tüüp'), which exceeds the threshold of 10 central elements on a single diagram, while other diagrams remain below this limit. "
     },
     {
       "rule_id": "S1.2",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All named use cases and activity actions begin with active verbs in Estonian: examples include 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Registreeri auto', 'Muuda autot', 'Unusta auto', and actions like 'Vaata k\u00f5iki autosid, mida saab l\u00f5petada', 'Otsi autot', 'Vali auto', 'L\u00f5peta valitud auto'; question texts such as 'Kas soovib otsida?' appear as decision labels rather than action names. "
+      "justification": "All named use cases and activity actions begin with active verbs in Estonian: examples include 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Registreeri auto', 'Muuda autot', 'Unusta auto', and actions like 'Vaata kõiki autosid, mida saab lõpetada', 'Otsi autot', 'Vali auto', 'Lõpeta valitud auto'; question texts such as 'Kas soovib otsida?' appear as decision labels rather than action names. "
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": true,
       "detected": true,
-      "justification": "Several class names in the conceptual class diagrams start with a lowercase letter, for example 't\u00f6\u00f6taja' in 'Kontseptuaalne eskiismudel' and 'T\u00f6\u00f6tajate register', 'klient' in the conceptual 'Klientide register', and 't\u00f6\u00f6taja_rolli_omamine' in the conceptual 'T\u00f6\u00f6tajate register'; these are not register-table names themselves and therefore violate the rule that class names should not begin with a lowercase letter. "
+      "justification": "Several class names in the conceptual class diagrams start with a lowercase letter, for example 'töötaja' in 'Kontseptuaalne eskiismudel' and 'Töötajate register', 'klient' in the conceptual 'Klientide register', and 'töötaja_rolli_omamine' in the conceptual 'Töötajate register'; these are not register-table names themselves and therefore violate the rule that class names should not begin with a lowercase letter. "
     },
     {
       "rule_id": "N3.2",

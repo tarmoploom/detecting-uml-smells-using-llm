@@ -7,19 +7,19 @@
       "rule_id": "G5.1",
       "actual": true,
       "detected": false,
-      "justification": "No empty diagrams were found. All 26 diagrams contain at least one element. Even the minimal 'Anal\u00fc\u00fcs' diagram on page 1 contains the class 'Anal\u00fc\u00fcs'."
+      "justification": "No empty diagrams were found. All 26 diagrams contain at least one element. Even the minimal 'Analüüs' diagram on page 1 contains the class 'Analüüs'."
     },
     {
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "On the use case diagram 'CNV-de funktsionaalse alls\u00fcsteemi kasutusjuhtude diagramm' (page 3), all use case ovals are associated with at least one actor. The use cases are connected to actors Administraator, Laborispetsialist, and Juhataja. The 'Tuvasta kasutaja' use case is included via \u00abinclude\u00bb relationships from other use cases that have actor associations, which is a valid pattern."
+      "justification": "On the use case diagram 'CNV-de funktsionaalse allsüsteemi kasutusjuhtude diagramm' (page 3), all use case ovals are associated with at least one actor. The use cases are connected to actors Administraator, Laborispetsialist, and Juhataja. The 'Tuvasta kasutaja' use case is included via «include» relationships from other use cases that have actor associations, which is a valid pattern."
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "No duplicate use case names describing the same activity with the same actor were found. All use cases have unique names: 'Lisa CNV registrisse', 'Muuda CNVd', 'M\u00e4rgi CNV artefaktiks', 'Vaata k\u00f5iki anal\u00fc\u00fcsi CNVsid', 'Ekspordi aktiivsed CNVd tekstifaili', 'M\u00e4rgi CNV aktiivseks', 'Tuvasta kasutaja', 'Vaata k\u00f5iki aktiivseid CNVsid'."
+      "justification": "No duplicate use case names describing the same activity with the same actor were found. All use cases have unique names: 'Lisa CNV registrisse', 'Muuda CNVd', 'Märgi CNV artefaktiks', 'Vaata kõiki analüüsi CNVsid', 'Ekspordi aktiivsed CNVd tekstifaili', 'Märgi CNV aktiivseks', 'Tuvasta kasutaja', 'Vaata kõiki aktiivseid CNVsid'."
     },
     {
       "rule_id": "G6.2",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases follow a consistent verb-first naming pattern in Estonian: 'Lisa' (Add), 'Muuda' (Modify), 'M\u00e4rgi' (Mark), 'Vaata' (View), 'Ekspordi' (Export), 'Tuvasta' (Identify). No inconsistency in naming form."
+      "justification": "All use cases follow a consistent verb-first naming pattern in Estonian: 'Lisa' (Add), 'Muuda' (Modify), 'Märgi' (Mark), 'Vaata' (View), 'Ekspordi' (Export), 'Tuvasta' (Identify). No inconsistency in naming form."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "On the state diagram 'CNV seisundidiagramm' (page 6), all states are reachable. 'Toorandmed anal\u00fcsaatorist' is the initial state, 'Aktiivne' is reached from initial state and from Artefakt/Muutmine, 'Artefakt' is reached from Aktiivne, 'Kustutatud' is reached from Aktiivne and Artefakt, 'Muutmine' is reached from Aktiivne."
+      "justification": "On the state diagram 'CNV seisundidiagramm' (page 6), all states are reachable. 'Toorandmed analüsaatorist' is the initial state, 'Aktiivne' is reached from initial state and from Artefakt/Muutmine, 'Artefakt' is reached from Aktiivne, 'Kustutatud' is reached from Aktiivne and Artefakt, 'Muutmine' is reached from Aktiivne."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "On activity diagrams (pages 4-5), all actions are reachable from the start node. Page 4: 'Vaata anal\u00fc\u00fcside nimekirja' \u2192 'Lisa CNV registrisse' flow is complete. Page 5: 'Otsi anal\u00fc\u00fcse' \u2192 'Vali konkreetne anal\u00fc\u00fcs' \u2192 'Vali konkreetne CNV' \u2192 'M\u00e4rgi CNV artefaktiks' flow is complete."
+      "justification": "On activity diagrams (pages 4-5), all actions are reachable from the start node. Page 4: 'Vaata analüüside nimekirja' → 'Lisa CNV registrisse' flow is complete. Page 5: 'Otsi analüüse' → 'Vali konkreetne analüüs' → 'Vali konkreetne CNV' → 'Märgi CNV artefaktiks' flow is complete."
     },
     {
       "rule_id": "G15.3",
@@ -61,13 +61,13 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "Diagram 'Klassifikaatorite register' (page 8) contains 17 classes: Kromosoom, Server, Kasutaja roll, Anal\u00fc\u00fcsi t\u00fc\u00fcp, T\u00e4hendus, P\u00e4ritolu, Koopiaarv, Positsioon plaadil, CNV seisund, Annotatsiooni t\u00fc\u00fcp, Anal\u00fc\u00fcsi seisund, Partii_seisund, Plaadi_seisund, Annotatsiooni_seisund, Kasutaja_seisund, Klassifikaator, Klassifikaatori t\u00fc\u00fcp. Threshold is \u226510. Since 17 \u2265 10, smell IS present. Additionally, diagram 'Klassifikaatorite register (transformed)' (pages 18-19) contains 19 tables. 19 \u2265 10, smell IS present."
+      "justification": "Diagram 'Klassifikaatorite register' (page 8) contains 17 classes: Kromosoom, Server, Kasutaja roll, Analüüsi tüüp, Tähendus, Päritolu, Koopiaarv, Positsioon plaadil, CNV seisund, Annotatsiooni tüüp, Analüüsi seisund, Partii_seisund, Plaadi_seisund, Annotatsiooni_seisund, Kasutaja_seisund, Klassifikaator, Klassifikaatori tüüp. Threshold is ≥10. Since 17 ≥ 10, smell IS present. Additionally, diagram 'Klassifikaatorite register (transformed)' (pages 18-19) contains 19 tables. 19 ≥ 10, smell IS present."
     },
     {
       "rule_id": "S1.2",
       "actual": true,
       "detected": true,
-      "justification": "On diagram 'Anal\u00fc\u00fcside register' (page 16), the Anal\u00fc\u00fcs class has 8 visual connection lines to: Anal\u00fc\u00fcsi seisund, Anal\u00fc\u00fcsi t\u00fc\u00fcp, Positsioon plaadil, DNA, Genoomi versioon, Plaat, Kasutaja, and Proband (self-reference). Threshold is \u22656. Since 8 \u2265 6, smell IS present. Similarly, on 'CNVde register' (page 9), CNV class has 7 connections (Kromosoom, Koopiaarv, T\u00e4hendus, P\u00e4ritolu, CNV seisund, CNV annotatsioon, Anal\u00fc\u00fcs). 7 \u2265 6, smell IS present."
+      "justification": "On diagram 'Analüüside register' (page 16), the Analüüs class has 8 visual connection lines to: Analüüsi seisund, Analüüsi tüüp, Positsioon plaadil, DNA, Genoomi versioon, Plaat, Kasutaja, and Proband (self-reference). Threshold is ≥6. Since 8 ≥ 6, smell IS present. Similarly, on 'CNVde register' (page 9), CNV class has 7 connections (Kromosoom, Koopiaarv, Tähendus, Päritolu, CNV seisund, CNV annotatsioon, Analüüs). 7 ≥ 6, smell IS present."
     },
     {
       "rule_id": "S2.1",
@@ -79,19 +79,19 @@
       "rule_id": "N1.1",
       "actual": true,
       "detected": false,
-      "justification": "All use cases and activity diagram actions start with active verbs in Estonian: 'Lisa' (Add), 'Muuda' (Modify), 'M\u00e4rgi' (Mark), 'Vaata' (View), 'Ekspordi' (Export), 'Tuvasta' (Identify), 'Otsi' (Search), 'Vali' (Select). No noun-first or passive forms found."
+      "justification": "All use cases and activity diagram actions start with active verbs in Estonian: 'Lisa' (Add), 'Muuda' (Modify), 'Märgi' (Mark), 'Vaata' (View), 'Ekspordi' (Export), 'Tuvasta' (Identify), 'Otsi' (Search), 'Vali' (Select). No noun-first or passive forms found."
     },
     {
       "rule_id": "N1.2",
       "actual": true,
       "detected": true,
-      "justification": "Class names 'CNV' (3 characters) and 'DNA' (3 characters) are exactly 3 characters long. Threshold is \u22643 characters. Since 3 \u2264 3, smell IS present for both CNV and DNA class/table names appearing throughout the document."
+      "justification": "Class names 'CNV' (3 characters) and 'DNA' (3 characters) are exactly 3 characters long. Threshold is ≤3 characters. Since 3 ≤ 3, smell IS present for both CNV and DNA class/table names appearing throughout the document."
     },
     {
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All class names start with uppercase letters and are singular: CNV, DNA, Kasutaja, Patsient, Anal\u00fc\u00fcs, Partii, Plaat, Annotatsioon, Klassifikaator, etc. No lowercase-starting or plural class names found."
+      "justification": "All class names start with uppercase letters and are singular: CNV, DNA, Kasutaja, Patsient, Analüüs, Partii, Plaat, Annotatsioon, Klassifikaator, etc. No lowercase-starting or plural class names found."
     },
     {
       "rule_id": "N3.2",

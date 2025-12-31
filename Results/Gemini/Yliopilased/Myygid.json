@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": true,
-      "justification": "In the Use Case diagram 'Tellimuste funktsionaalne alls\u00fcsteem' (Page 11), the use case 'Tuvasta kasutaja' is visually isolated and not associated with any actor."
+      "justification": "In the Use Case diagram 'Tellimuste funktsionaalne allsüsteem' (Page 11), the use case 'Tuvasta kasutaja' is visually isolated and not associated with any actor."
     },
     {
       "rule_id": "G6.1",
@@ -37,7 +37,7 @@
       "rule_id": "G8.1",
       "actual": true,
       "detected": true,
-      "justification": "In the Use Case diagram (Page 11), there is an inconsistent naming convention. Most use cases start with a verb (e.g., 'Koosta tellimus', 'T\u00fchista esitatud tellimus'), but 'Klient kustutab poolelioleva tellimuse' and 'Aeg kustutab poolelioleva tellimuse' start with a noun (Subject)."
+      "justification": "In the Use Case diagram (Page 11), there is an inconsistent naming convention. Most use cases start with a verb (e.g., 'Koosta tellimus', 'Tühista esitatud tellimus'), but 'Klient kustutab poolelioleva tellimuse' and 'Aeg kustutab poolelioleva tellimuse' start with a noun (Subject)."
     },
     {
       "rule_id": "G15.1",
@@ -61,13 +61,13 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The Use Case diagram 'Tellimuste funktsionaalne alls\u00fcsteem' (Page 11) contains 13 central elements (use cases), which exceeds the threshold of 10."
+      "justification": "The Use Case diagram 'Tellimuste funktsionaalne allsüsteem' (Page 11) contains 13 central elements (use cases), which exceeds the threshold of 10."
     },
     {
       "rule_id": "S1.2",
       "actual": true,
       "detected": true,
-      "justification": "In the Class diagram 'Tellimuste register' (Page 2), the class 'Tellimus' has 6 visual connection lines to other classes (Tellimuse rida, Klient, T\u00f6\u00f6taja, Pank, Pakiautomaat, Tellimuse_seisundi_liik), meeting the threshold of 6."
+      "justification": "In the Class diagram 'Tellimuste register' (Page 2), the class 'Tellimus' has 6 visual connection lines to other classes (Tellimuse rida, Klient, Töötaja, Pank, Pakiautomaat, Tellimuse_seisundi_liik), meeting the threshold of 6."
     },
     {
       "rule_id": "S2.1",

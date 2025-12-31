@@ -43,7 +43,7 @@
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the state diagram (Page 9), all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, L\u00f5petatud) are reachable from the Start node."
+      "justification": "In the state diagram (Page 9), all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, Lõpetatud) are reachable from the Start node."
     },
     {
       "rule_id": "G15.2",

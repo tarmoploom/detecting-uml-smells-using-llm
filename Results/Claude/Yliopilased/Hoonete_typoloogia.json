@@ -13,19 +13,19 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "On Page 2 (use case diagram), all use case ovals are associated with actors. Use cases like 'Koosta arhet\u00fc\u00fcp', 'Muuda kinnitamata arhet\u00fc\u00fcpi', 'Kustuta arhet\u00fc\u00fcp', 'Esita arhet\u00fc\u00fcp' are connected to Tehnik. Use cases like 'Kinnita arhet\u00fc\u00fcp', 'Muuda kinnitatud arhet\u00fc\u00fcpi', 'L\u00fckka tagasi arhet\u00fc\u00fcp' are connected to Muutja. 'Tuvasta kasutaja' and 'Vaata kinnitatud arhet\u00fc\u00fcpe' marked as '(from L\u00e4bivad huvid)' are included by other use cases that have actor associations. Page 1 shows package contents as text lists, not use case ovals, so the rule does not apply there."
+      "justification": "On Page 2 (use case diagram), all use case ovals are associated with actors. Use cases like 'Koosta arhetüüp', 'Muuda kinnitamata arhetüüpi', 'Kustuta arhetüüp', 'Esita arhetüüp' are connected to Tehnik. Use cases like 'Kinnita arhetüüp', 'Muuda kinnitatud arhetüüpi', 'Lükka tagasi arhetüüp' are connected to Muutja. 'Tuvasta kasutaja' and 'Vaata kinnitatud arhetüüpe' marked as '(from Läbivad huvid)' are included by other use cases that have actor associations. Page 1 shows package contents as text lists, not use case ovals, so the rule does not apply there."
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "On Page 2, all use case names are unique and describe different activities: Tuvasta kasutaja, Koosta arhet\u00fc\u00fcp, Muuda kinnitamata arhet\u00fc\u00fcpi, Kustuta arhet\u00fc\u00fcp, L\u00fckka tagasi arhet\u00fc\u00fcp, Muuda kinnitatud arhet\u00fc\u00fcpi, Vaata kinnitatud arhet\u00fc\u00fcpe, Vaata kinnitamata arhet\u00fc\u00fcpe, Esita arhet\u00fc\u00fcp, Kinnita arhet\u00fc\u00fcp. No duplicate activities with same actor found."
+      "justification": "On Page 2, all use case names are unique and describe different activities: Tuvasta kasutaja, Koosta arhetüüp, Muuda kinnitamata arhetüüpi, Kustuta arhetüüp, Lükka tagasi arhetüüp, Muuda kinnitatud arhetüüpi, Vaata kinnitatud arhetüüpe, Vaata kinnitamata arhetüüpe, Esita arhetüüp, Kinnita arhetüüp. No duplicate activities with same actor found."
     },
     {
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "Examining all package diagrams: In 'Klassifikaatorite register' (Pages 6 and 11), elements have unique names: Klassifikaator, Kasutaja_liik, Kasutusotstarve, Arhet\u00fc\u00fcbi_alamt\u00fc\u00fcp, Arhet\u00fc\u00fcbi_seisundi_liik. In 'Arhet\u00fc\u00fcpide register' (Pages 8 and 14), element names are unique: Arhet\u00fc\u00fcp plus referenced external elements. No duplicate element names found within any single package."
+      "justification": "Examining all package diagrams: In 'Klassifikaatorite register' (Pages 6 and 11), elements have unique names: Klassifikaator, Kasutaja_liik, Kasutusotstarve, Arhetüübi_alamtüüp, Arhetüübi_seisundi_liik. In 'Arhetüüpide register' (Pages 8 and 14), element names are unique: Arhetüüp plus referenced external elements. No duplicate element names found within any single package."
     },
     {
       "rule_id": "G6.3",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "On Page 2 (use case diagram), all use case names follow a consistent verb-first naming pattern: Tuvasta (Identify), Koosta (Compose), Muuda (Modify), Kustuta (Delete), L\u00fckka tagasi (Reject), Vaata (View), Esita (Submit), Kinnita (Confirm). All names start with active verbs in Estonian."
+      "justification": "On Page 2 (use case diagram), all use case names follow a consistent verb-first naming pattern: Tuvasta (Identify), Koosta (Compose), Muuda (Modify), Kustuta (Delete), Lükka tagasi (Reject), Vaata (View), Esita (Submit), Kinnita (Confirm). All names start with active verbs in Estonian."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "On Page 7 (state diagram), all states can be reached: 'Koostamisel' is reached from initial state. 'Esitatud' is reached from 'Koostamisel' and 'Tagasi l\u00fckatud'. 'Kinnitatud' is reached from 'Esitatud'. 'Tagasi l\u00fckatud' is reached from 'Esitatud'. 'Kustutatud' is reached from 'Koostamisel', 'Esitatud', 'Kinnitatud', and 'Tagasi l\u00fckatud'. All 5 states have at least one incoming transition path."
+      "justification": "On Page 7 (state diagram), all states can be reached: 'Koostamisel' is reached from initial state. 'Esitatud' is reached from 'Koostamisel' and 'Tagasi lükatud'. 'Kinnitatud' is reached from 'Esitatud'. 'Tagasi lükatud' is reached from 'Esitatud'. 'Kustutatud' is reached from 'Koostamisel', 'Esitatud', 'Kinnitatud', and 'Tagasi lükatud'. All 5 states have at least one incoming transition path."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "On Page 3 (activity diagram): All actions are reachable from start - 'Vaatab k\u00f5ikide arhet\u00fc\u00fcpide nimekirja' \u2192 'Otsib kinnitamiseks arhet\u00fc\u00fcpi' \u2192 decision nodes \u2192 'Vaatab esitatud arhet\u00fc\u00fcbi detaile' \u2192 'Kinnitab arhet\u00fc\u00fcbi' or 'L\u00fckkab tagasi arhet\u00fc\u00fcbi'. On Page 4 (activity diagram): All actions are reachable - 'Vaatab kinnitatud arhet\u00fc\u00fcpide nimekirja' \u2192 decisions \u2192 'Valib potentsiaalselt ebat\u00e4psete andmetega kinnitatud arhet\u00fc\u00fcbi' \u2192 'Vaatab arhet\u00fc\u00fcbi detaile' \u2192 'Teeb muudatusi arhet\u00fc\u00fcbi andmetes'. No unreachable actions found."
+      "justification": "On Page 3 (activity diagram): All actions are reachable from start - 'Vaatab kõikide arhetüüpide nimekirja' → 'Otsib kinnitamiseks arhetüüpi' → decision nodes → 'Vaatab esitatud arhetüübi detaile' → 'Kinnitab arhetüübi' or 'Lükkab tagasi arhetüübi'. On Page 4 (activity diagram): All actions are reachable - 'Vaatab kinnitatud arhetüüpide nimekirja' → decisions → 'Valib potentsiaalselt ebatäpsete andmetega kinnitatud arhetüübi' → 'Vaatab arhetüübi detaile' → 'Teeb muudatusi arhetüübi andmetes'. No unreachable actions found."
     },
     {
       "rule_id": "G15.3",
@@ -61,13 +61,13 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "On Page 2 (use case diagram 'Arhet\u00fc\u00fcpide funktsionaalne alls\u00fcsteem'), counted 10 use cases (central elements): 1. Tuvasta kasutaja, 2. Koosta arhet\u00fc\u00fcp, 3. Muuda kinnitamata arhet\u00fc\u00fcpi, 4. Kustuta arhet\u00fc\u00fcp, 5. L\u00fckka tagasi arhet\u00fc\u00fcp, 6. Muuda kinnitatud arhet\u00fc\u00fcpi, 7. Vaata kinnitatud arhet\u00fc\u00fcpe, 8. Vaata kinnitamata arhet\u00fc\u00fcpe, 9. Esita arhet\u00fc\u00fcp, 10. Kinnita arhet\u00fc\u00fcp = 10 total. Actors (Subjekt, Tehnik, Muutja) are NOT counted per the rule. Threshold is \u226510. 10 \u2265 10, therefore smell IS present."
+      "justification": "On Page 2 (use case diagram 'Arhetüüpide funktsionaalne allsüsteem'), counted 10 use cases (central elements): 1. Tuvasta kasutaja, 2. Koosta arhetüüp, 3. Muuda kinnitamata arhetüüpi, 4. Kustuta arhetüüp, 5. Lükka tagasi arhetüüp, 6. Muuda kinnitatud arhetüüpi, 7. Vaata kinnitatud arhetüüpe, 8. Vaata kinnitamata arhetüüpe, 9. Esita arhetüüp, 10. Kinnita arhetüüp = 10 total. Actors (Subjekt, Tehnik, Muutja) are NOT counted per the rule. Threshold is ≥10. 10 ≥ 10, therefore smell IS present."
     },
     {
       "rule_id": "S1.2",
       "actual": false,
       "detected": false,
-      "justification": "Analyzing visible connection lines on each diagram page: Page 5 - Arhet\u00fc\u00fcp has 3 connections (to Hoone, to Isik as Koostaja, to Isik as Kinnitaja). Page 8 - Arhet\u00fc\u00fcp has 5 connections (to Hoone, to Isik x2, to Arhet\u00fc\u00fcbi_alamt\u00fc\u00fcp, to Arhet\u00fc\u00fcbi_seisundi_liik). Page 9 - Isik has 1 connection. Page 10 - Hoone has 1 connection. Pages 11-14 - maximum connections from any table is 5 (Arhetuup on Page 14 connects to Isik x2, Hoone, Arhetuubi_alamtuup, Arhetuubi_seisundi_liik = 5 lines). Maximum is 5. Threshold is \u22656. Since 5 < 6, smell is NOT present."
+      "justification": "Analyzing visible connection lines on each diagram page: Page 5 - Arhetüüp has 3 connections (to Hoone, to Isik as Koostaja, to Isik as Kinnitaja). Page 8 - Arhetüüp has 5 connections (to Hoone, to Isik x2, to Arhetüübi_alamtüüp, to Arhetüübi_seisundi_liik). Page 9 - Isik has 1 connection. Page 10 - Hoone has 1 connection. Pages 11-14 - maximum connections from any table is 5 (Arhetuup on Page 14 connects to Isik x2, Hoone, Arhetuubi_alamtuup, Arhetuubi_seisundi_liik = 5 lines). Maximum is 5. Threshold is ≥6. Since 5 < 6, smell is NOT present."
     },
     {
       "rule_id": "S2.1",
@@ -79,25 +79,25 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases on Page 2 start with active verbs: Tuvasta, Koosta, Muuda, Kustuta, L\u00fckka, Vaata, Esita, Kinnita. All activity diagram actions on Pages 3-4 start with active verbs: Vaatab, Otsib, Otsustab, Kinnitab, L\u00fckkab, Valib, Teeb. No use case or action starts with a noun or passive form."
+      "justification": "All use cases on Page 2 start with active verbs: Tuvasta, Koosta, Muuda, Kustuta, Lükka, Vaata, Esita, Kinnita. All activity diagram actions on Pages 3-4 start with active verbs: Vaatab, Otsib, Otsustab, Kinnitab, Lükkab, Valib, Teeb. No use case or action starts with a noun or passive form."
     },
     {
       "rule_id": "N1.2",
       "actual": false,
       "detected": false,
-      "justification": "Checking all element names for \u22643 characters: Class/Table names - Isik (4 chars), Hoone (5 chars), Arhet\u00fc\u00fcp (8 chars), Klassifikaator (13 chars). Attribute names - nimetus (7 chars), kood (4 chars), email (5 chars), parool (6 chars), eesnimi (7 chars), perenimi (8 chars). Use case names - all multi-word. No names found with \u22643 characters. Threshold is \u22643 chars. All names have \u22654 chars, therefore smell is NOT present."
+      "justification": "Checking all element names for ≤3 characters: Class/Table names - Isik (4 chars), Hoone (5 chars), Arhetüüp (8 chars), Klassifikaator (13 chars). Attribute names - nimetus (7 chars), kood (4 chars), email (5 chars), parool (6 chars), eesnimi (7 chars), perenimi (8 chars). Use case names - all multi-word. No names found with ≤3 characters. Threshold is ≤3 chars. All names have ≥4 chars, therefore smell is NOT present."
     },
     {
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Examining all class names: Arhet\u00fc\u00fcp (uppercase A, singular), Hoone (uppercase H, singular), Isik (uppercase I, singular), Klassifikaator (uppercase K, singular), Kasutaja_liik (uppercase K, singular), Kasutusotstarve (uppercase K, singular), Arhet\u00fc\u00fcbi_alamt\u00fc\u00fcp (uppercase A, singular), Arhet\u00fc\u00fcbi_seisundi_liik (uppercase A, singular). All class names start with uppercase letters and are in singular form."
+      "justification": "Examining all class names: Arhetüüp (uppercase A, singular), Hoone (uppercase H, singular), Isik (uppercase I, singular), Klassifikaator (uppercase K, singular), Kasutaja_liik (uppercase K, singular), Kasutusotstarve (uppercase K, singular), Arhetüübi_alamtüüp (uppercase A, singular), Arhetüübi_seisundi_liik (uppercase A, singular). All class names start with uppercase letters and are in singular form."
     },
     {
       "rule_id": "N3.2",
       "actual": false,
       "detected": false,
-      "justification": "Examining all attribute/column names across diagrams: Page 8 shows lowercase attributes - kasutuselev\u00f5tu_aasta_alumine_piir, kommentaar, korruste_arvu_alumine_piir, nimetus, viimase_muudatuse_kuup\u00e4ev. Page 9 shows - eesnimi, email, kasutajanimi, on_aktiivne, parool, perenimi. Page 10 shows - ehitusalune_pindala, k\u00f6etav_pindala, korterite_arv, l\u00fchikirjeldus, on_lodzad. Database columns on Pages 11-14 - nimetus, kood, isik_id, hoone_id, arhetuup_id all start lowercase. All attributes/columns start with lowercase letters."
+      "justification": "Examining all attribute/column names across diagrams: Page 8 shows lowercase attributes - kasutuselevõtu_aasta_alumine_piir, kommentaar, korruste_arvu_alumine_piir, nimetus, viimase_muudatuse_kuupäev. Page 9 shows - eesnimi, email, kasutajanimi, on_aktiivne, parool, perenimi. Page 10 shows - ehitusalune_pindala, köetav_pindala, korterite_arv, lühikirjeldus, on_lodzad. Database columns on Pages 11-14 - nimetus, kood, isik_id, hoone_id, arhetuup_id all start lowercase. All attributes/columns start with lowercase letters."
     },
     {
       "rule_id": "N3.3",

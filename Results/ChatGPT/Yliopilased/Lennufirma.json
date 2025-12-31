@@ -13,55 +13,55 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "In the use-case diagram 'Lendude funktsionaalne alls\u00fcsteem', all use case ovals (e.g., 'Registreeri lend', 'T\u00fchista lend', 'M\u00e4\u00e4ra lend hilinenuks') have at least one association line to one or more actors (such as 'Lendude haldur', 'Lennujaama v\u00e4ravapersonal', 'Kapten', etc.); there are no orphan use cases without an actor connection."
+      "justification": "In the use-case diagram 'Lendude funktsionaalne allsüsteem', all use case ovals (e.g., 'Registreeri lend', 'Tühista lend', 'Määra lend hilinenuks') have at least one association line to one or more actors (such as 'Lendude haldur', 'Lennujaama väravapersonal', 'Kapten', etc.); there are no orphan use cases without an actor connection."
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "Although there are several similarly structured use cases (for example many starting with 'M\u00e4\u00e4ra lend ...' or 'Alusta ...'), none of them clearly describe the same activity with the same actor (e.g., 'Alusta lennu pardaleminekut' vs. 'Alusta lennu pardaltlahkumist' are distinct operations), so no pair of synonymous use cases for a single actor is evident."
+      "justification": "Although there are several similarly structured use cases (for example many starting with 'Määra lend ...' or 'Alusta ...'), none of them clearly describe the same activity with the same actor (e.g., 'Alusta lennu pardaleminekut' vs. 'Alusta lennu pardaltlahkumist' are distinct operations), so no pair of synonymous use cases for a single actor is evident."
     },
     {
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "Within each package/class diagram (such as 'Klassifikaatorite register', 'Lennujaamade register', 'Isikute register'), each class or table name appears only once in that diagram; repeated labels like 'Klassifikaatori t\u00fc\u00fcp' are classifier-type metadata rather than separate model elements and therefore do not constitute duplicate primary element names in the same package."
+      "justification": "Within each package/class diagram (such as 'Klassifikaatorite register', 'Lennujaamade register', 'Isikute register'), each class or table name appears only once in that diagram; repeated labels like 'Klassifikaatori tüüp' are classifier-type metadata rather than separate model elements and therefore do not constitute duplicate primary element names in the same package."
     },
     {
       "rule_id": "G6.3",
       "actual": false,
       "detected": false,
-      "justification": "Where the same business identifiers appear across tables (for example flight code in Lend.lend_kood and T\u00f6\u00f6taja_lennus.lend_kood, or references like klient_isik_id and isik_id), they are consistently connected by foreign key relationships in the database diagrams; there is no clear case of the same data value being stored redundantly in multiple tables without a foreign key link."
+      "justification": "Where the same business identifiers appear across tables (for example flight code in Lend.lend_kood and Töötaja_lennus.lend_kood, or references like klient_isik_id and isik_id), they are consistently connected by foreign key relationships in the database diagrams; there is no clear case of the same data value being stored redundantly in multiple tables without a foreign key link."
     },
     {
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use case names in the 'Lendude funktsionaalne alls\u00fcsteem' diagram follow a consistent imperative-verb form (e.g., 'Registreeri lend', 'T\u00fchista lend', 'M\u00e4\u00e4ra lend maandunuks', 'Vaata m\u00fc\u00fcgis olevaid lende'), and there are no noun-only or otherwise differently formed use case names mixed in."
+      "justification": "All use case names in the 'Lendude funktsionaalne allsüsteem' diagram follow a consistent imperative-verb form (e.g., 'Registreeri lend', 'Tühista lend', 'Määra lend maandunuks', 'Vaata müügis olevaid lende'), and there are no noun-only or otherwise differently formed use case names mixed in."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the state diagram 'Lennu seisundidiagramm', each state (Planeeritud, Kinnitatud, Hilineb, Pardaleminek, V\u00e4ravast lahkunud, \u00d5hku t\u00f5usnud, Maandunud, \u00dcmber suunatud, Pardalt lahkumine, Alla kukkunud, T\u00fchistatud, Kustutatud, L\u00f5petatud) has at least one incoming transition either from the initial state or another state; no state is shown without any way to reach it."
+      "justification": "In the state diagram 'Lennu seisundidiagramm', each state (Planeeritud, Kinnitatud, Hilineb, Pardaleminek, Väravast lahkunud, Õhku tõusnud, Maandunud, Ümber suunatud, Pardalt lahkumine, Alla kukkunud, Tühistatud, Kustutatud, Lõpetatud) has at least one incoming transition either from the initial state or another state; no state is shown without any way to reach it."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "In both activity diagrams ('Lennu registreerimise tegevusdiagramm' and 'Lennu t\u00fchistamise tegevusdiagramm'), every action node (such as 'Algatab uue lennu registreerimise', 'Vaatab registreerimiseks v\u00f5imalikke l\u00e4hte- ja sihtlennujaamasid', 'M\u00e4\u00e4rab t\u00fchistamise p\u00f5hjuse') is connected by control flows from the initial node or from upstream decisions/actions; there are no isolated action nodes without incoming flows."
+      "justification": "In both activity diagrams ('Lennu registreerimise tegevusdiagramm' and 'Lennu tühistamise tegevusdiagramm'), every action node (such as 'Algatab uue lennu registreerimise', 'Vaatab registreerimiseks võimalikke lähte- ja sihtlennujaamasid', 'Määrab tühistamise põhjuse') is connected by control flows from the initial node or from upstream decisions/actions; there are no isolated action nodes without incoming flows."
     },
     {
       "rule_id": "G15.3",
       "actual": false,
       "detected": false,
-      "justification": "All class and database diagrams show relationships with explicit multiplicity indicators (e.g., '0..*', '1', '0..1') next to the association or foreign key lines\u2014for example between 'Lend' and 'Lennujaam', 'Lend' and 'Lennuk', 'Isik' and 'Kasutajakonto', and 'Hooldus' and 'Lennuk'; there is no relationship line in these diagrams that completely lacks multiplicity or implied crow's-foot/foreign-key notation at both ends."
+      "justification": "All class and database diagrams show relationships with explicit multiplicity indicators (e.g., '0..*', '1', '0..1') next to the association or foreign key lines—for example between 'Lend' and 'Lennujaam', 'Lend' and 'Lennuk', 'Isik' and 'Kasutajakonto', and 'Hooldus' and 'Lennuk'; there is no relationship line in these diagrams that completely lacks multiplicity or implied crow's-foot/foreign-key notation at both ends."
     },
     {
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The use-case diagram 'Lendude funktsionaalne alls\u00fcsteem' contains around 20 distinct use case ovals (such as 'Registreeri lend', 'Kinnita lend', 'T\u00fchista lend', multiple 'M\u00e4\u00e4ra lend ...' variants, 'Lisa t\u00f6\u00f6taja lennule', 'Eemalda t\u00f6\u00f6taja lennult', etc.), which exceeds the threshold of 10 central elements on a single diagram."
+      "justification": "The use-case diagram 'Lendude funktsionaalne allsüsteem' contains around 20 distinct use case ovals (such as 'Registreeri lend', 'Kinnita lend', 'Tühista lend', multiple 'Määra lend ...' variants, 'Lisa töötaja lennule', 'Eemalda töötaja lennult', etc.), which exceeds the threshold of 10 central elements on a single diagram."
     },
     {
       "rule_id": "S1.2",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": true,
       "detected": false,
-      "justification": "All use case names and activity actions begin with an active verb form: examples include 'Registreeri lend', 'T\u00fchista lend', 'M\u00e4\u00e4ra lend hilinenuks', 'Algatab uue lennu registreerimise', 'Vaatab registreerimiseks v\u00f5imalikke l\u00e4hte- ja sihtlennujaamasid', and 'Avab lendude loendi'; none of the visible use case or action labels start with a noun or non-verb phrase."
+      "justification": "All use case names and activity actions begin with an active verb form: examples include 'Registreeri lend', 'Tühista lend', 'Määra lend hilinenuks', 'Algatab uue lennu registreerimise', 'Vaatab registreerimiseks võimalikke lähte- ja sihtlennujaamasid', and 'Avab lendude loendi'; none of the visible use case or action labels start with a noun or non-verb phrase."
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": true,
       "detected": true,
-      "justification": "The class/entity 'kuup\u00e4evade_vahemiku_maandumiskeeld' in the 'Lennujaamade register' diagrams is a singular domain concept but its name begins with a lowercase letter ('k'), whereas other entity classes like 'Lennujaam', 'Lend', 'Isik', and 'Hooldus' start with an uppercase letter; this violates the requirement that class names not start with lowercase."
+      "justification": "The class/entity 'kuupäevade_vahemiku_maandumiskeeld' in the 'Lennujaamade register' diagrams is a singular domain concept but its name begins with a lowercase letter ('k'), whereas other entity classes like 'Lennujaam', 'Lend', 'Isik', and 'Hooldus' start with an uppercase letter; this violates the requirement that class names not start with lowercase."
     },
     {
       "rule_id": "N3.2",

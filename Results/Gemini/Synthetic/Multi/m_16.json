@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "All use cases are associated with actors. The use case 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid autosid' (Page 3) is connected via '<<include>>' relationships to 'Aktiveeri auto' and 'Muuda autot', which are directly connected to actors, thus establishing a valid association."
+      "justification": "All use cases are associated with actors. The use case 'Vaata kõiki ootel või mitteaktiivseid autosid' (Page 3) is connected via '<<include>>' relationships to 'Aktiveeri auto' and 'Muuda autot', which are directly connected to actors, thus establishing a valid association."
     },
     {
       "rule_id": "G6.1",
@@ -43,13 +43,13 @@
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the state diagram (Page 8), all states (Ootel, Aktiivne, Mitteaktiivne, L\u00f5petatud, Unustatud) are reachable from the Start node via defined transitions."
+      "justification": "In the state diagram (Page 8), all states (Ootel, Aktiivne, Mitteaktiivne, Lõpetatud, Unustatud) are reachable from the Start node via defined transitions."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "In the activity diagram (Page 4), all actions (e.g., 'Vali auto', 'L\u00f5peta valitud auto') are reachable through the decision flows."
+      "justification": "In the activity diagram (Page 4), all actions (e.g., 'Vali auto', 'Lõpeta valitud auto') are reachable through the decision flows."
     },
     {
       "rule_id": "G15.3",
@@ -61,7 +61,7 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The 'Klassifikaatorite register' diagram (Page 7) contains 11 central class elements (Klassifikaator, Riik, Isiku_seisundi_liik, T\u00f6\u00f6taja_seisundi_liik, Kliendi_seisundi_liik, T\u00f6\u00f6taja_roll, Auto_mark, Auto_seisundi_liik, Auto_k\u00fctuse_liik, Auto_kategooria, Auto_kategooria_t\u00fc\u00fcp), exceeding the limit of 10."
+      "justification": "The 'Klassifikaatorite register' diagram (Page 7) contains 11 central class elements (Klassifikaator, Riik, Isiku_seisundi_liik, Töötaja_seisundi_liik, Kliendi_seisundi_liik, Töötaja_roll, Auto_mark, Auto_seisundi_liik, Auto_kütuse_liik, Auto_kategooria, Auto_kategooria_tüüp), exceeding the limit of 10."
     },
     {
       "rule_id": "S1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": true,
       "detected": true,
-      "justification": "The class 't\u00f6\u00f6taja' (appearing on pages 5, 9, 10) and the class 'klient' (appearing on pages 6, 12, 15) start with a lowercase letter, which violates the naming convention."
+      "justification": "The class 'töötaja' (appearing on pages 5, 9, 10) and the class 'klient' (appearing on pages 6, 12, 15) start with a lowercase letter, which violates the naming convention."
     },
     {
       "rule_id": "N3.2",

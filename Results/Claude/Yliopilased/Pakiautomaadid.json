@@ -13,19 +13,19 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": true,
-      "justification": "On Page 2 (Use case diagram 'Pakiautomaatide funktsionaalne alls\u00fcsteem'), the use case 'Tuvasta kasutaja' (marked as 'from L\u00e4bivad huvid') is a visual oval element that has NO direct actor associations. It only has \u00abinclude\u00bb relationships from other use cases but no actor is directly connected to it."
+      "justification": "On Page 2 (Use case diagram 'Pakiautomaatide funktsionaalne allsüsteem'), the use case 'Tuvasta kasutaja' (marked as 'from Läbivad huvid') is a visual oval element that has NO direct actor associations. It only has «include» relationships from other use cases but no actor is directly connected to it."
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "No duplicate use case activities with the same actor were found. While multiple use cases start with 'Vaata' (View), they describe different activities: 'Vaata pakiautomaatide koondaruannet', 'Vaata aktiivseid pakiautomaate', 'Vaata k\u00f5iki pakiautomaate', 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid pakiautomaate'. These are distinct viewing operations, not duplicates."
+      "justification": "No duplicate use case activities with the same actor were found. While multiple use cases start with 'Vaata' (View), they describe different activities: 'Vaata pakiautomaatide koondaruannet', 'Vaata aktiivseid pakiautomaate', 'Vaata kõiki pakiautomaate', 'Vaata kõiki ootel või mitteaktiivseid pakiautomaate'. These are distinct viewing operations, not duplicates."
     },
     {
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "No duplicate element names within the same package were found. Each package (Isikute register, Klassifikaatorite register, T\u00f6\u00f6tajate register, Pakiautomaatide register, Klientide register) contains uniquely named elements."
+      "justification": "No duplicate element names within the same package were found. Each package (Isikute register, Klassifikaatorite register, Töötajate register, Pakiautomaatide register, Klientide register) contains uniquely named elements."
     },
     {
       "rule_id": "G6.3",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases follow consistent verb-first naming pattern. Verified on Page 2: 'Tuvasta kasutaja', 'Vaata pakiautomaatide koondaruannet', 'L\u00f5peta pakiautomaat', 'Registreeri pakiautomaat', 'Muuda pakiautomaati', 'Aktiveeri pakiautomaat', 'Muuda pakiautomaat mittaktiivseks', 'Vaata aktiivseid pakiautomaate', 'Vaata k\u00f5iki pakiautomaate', 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid pakiautomaate', 'Unusta pakiautomaat'. All start with Estonian verbs (Tuvasta=Identify, Vaata=View, L\u00f5peta=End, Registreeri=Register, Muuda=Change, Aktiveeri=Activate, Unusta=Forget)."
+      "justification": "All use cases follow consistent verb-first naming pattern. Verified on Page 2: 'Tuvasta kasutaja', 'Vaata pakiautomaatide koondaruannet', 'Lõpeta pakiautomaat', 'Registreeri pakiautomaat', 'Muuda pakiautomaati', 'Aktiveeri pakiautomaat', 'Muuda pakiautomaat mittaktiivseks', 'Vaata aktiivseid pakiautomaate', 'Vaata kõiki pakiautomaate', 'Vaata kõiki ootel või mitteaktiivseid pakiautomaate', 'Unusta pakiautomaat'. All start with Estonian verbs (Tuvasta=Identify, Vaata=View, Lõpeta=End, Registreeri=Register, Muuda=Change, Aktiveeri=Activate, Unusta=Forget)."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "On Page 11 (State diagram 'Pakiautomaadi seisundidiagramm'), all states are reachable: 'Ootel' is reached from initial state 'Alg'; 'Aktiivne' is reached from 'Ootel' and 'Mitteaktiivne'; 'Mitteaktiivne' is reached from 'Aktiivne'; 'L\u00f5petatud' is reached from 'Ootel', 'Aktiivne', and 'Mitteaktiivne'; 'Unustatud' is reached from 'Ootel'. No unreachable states exist."
+      "justification": "On Page 11 (State diagram 'Pakiautomaadi seisundidiagramm'), all states are reachable: 'Ootel' is reached from initial state 'Alg'; 'Aktiivne' is reached from 'Ootel' and 'Mitteaktiivne'; 'Mitteaktiivne' is reached from 'Aktiivne'; 'Lõpetatud' is reached from 'Ootel', 'Aktiivne', and 'Mitteaktiivne'; 'Unustatud' is reached from 'Ootel'. No unreachable states exist."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "On Pages 3-4 (Activity diagrams), all actions are reachable from the start node 'Algus'. Page 3: Algus \u2192 Vaata k\u00f5iki pakiautomaate \u2192 decision branches \u2192 Otsi/Vali/L\u00f5peta actions \u2192 L\u00f5pp. Page 4: Algus \u2192 Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid pakiautomaate \u2192 decision branches \u2192 Otsi/Vali/Aktiveeri/N\u00e4eb actions \u2192 L\u00f5pp. All actions have incoming flows."
+      "justification": "On Pages 3-4 (Activity diagrams), all actions are reachable from the start node 'Algus'. Page 3: Algus → Vaata kõiki pakiautomaate → decision branches → Otsi/Vali/Lõpeta actions → Lõpp. Page 4: Algus → Vaata kõiki ootel või mitteaktiivseid pakiautomaate → decision branches → Otsi/Vali/Aktiveeri/Näeb actions → Lõpp. All actions have incoming flows."
     },
     {
       "rule_id": "G15.3",
@@ -61,13 +61,13 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "On Page 2 (Use case diagram 'Pakiautomaatide funktsionaalne alls\u00fcsteem'), counted 11 use cases (visual oval elements): 1. Tuvasta kasutaja, 2. Vaata pakiautomaatide koondaruannet, 3. L\u00f5peta pakiautomaat, 4. Registreeri pakiautomaat, 5. Muuda pakiautomaati, 6. Aktiveeri pakiautomaat, 7. Muuda pakiautomaat mittaktiivseks, 8. Vaata aktiivseid pakiautomaate, 9. Vaata k\u00f5iki pakiautomaate, 10. Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid pakiautomaate, 11. Unusta pakiautomaat. Threshold is \u226510. Since 11 \u2265 10, smell IS present."
+      "justification": "On Page 2 (Use case diagram 'Pakiautomaatide funktsionaalne allsüsteem'), counted 11 use cases (visual oval elements): 1. Tuvasta kasutaja, 2. Vaata pakiautomaatide koondaruannet, 3. Lõpeta pakiautomaat, 4. Registreeri pakiautomaat, 5. Muuda pakiautomaati, 6. Aktiveeri pakiautomaat, 7. Muuda pakiautomaat mittaktiivseks, 8. Vaata aktiivseid pakiautomaate, 9. Vaata kõiki pakiautomaate, 10. Vaata kõiki ootel või mitteaktiivseid pakiautomaate, 11. Unusta pakiautomaat. Threshold is ≥10. Since 11 ≥ 10, smell IS present."
     },
     {
       "rule_id": "S1.2",
       "actual": false,
       "detected": true,
-      "justification": "On Page 9 (Class diagram 'T\u00f6\u00f6tajate register'), the class 'T\u00f6\u00f6taja' has 6 visual connection lines: 1. To Isik (Isiku roll inheritance), 2. Self-loop (mentor/juhendatav relationship), 3. To T\u00f6\u00f6taja_rolli_omamine, 4. To T\u00f6\u00f6taja_seisundi_liik, 5. To Pakiautomaat (+registreerija), 6. To Pakiautomaat (+viimane muutja). Threshold is \u22656. Since 6 \u2265 6, smell IS present."
+      "justification": "On Page 9 (Class diagram 'Töötajate register'), the class 'Töötaja' has 6 visual connection lines: 1. To Isik (Isiku roll inheritance), 2. Self-loop (mentor/juhendatav relationship), 3. To Töötaja_rolli_omamine, 4. To Töötaja_seisundi_liik, 5. To Pakiautomaat (+registreerija), 6. To Pakiautomaat (+viimane muutja). Threshold is ≥6. Since 6 ≥ 6, smell IS present."
     },
     {
       "rule_id": "S2.1",
@@ -79,13 +79,13 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All use case and activity action names start with active verbs. Use cases (Page 2): Tuvasta (Identify), Vaata (View), L\u00f5peta (End), Registreeri (Register), Muuda (Change), Aktiveeri (Activate), Unusta (Forget). Activity actions (Pages 3-4): Vaata (View), Otsi (Search), Vali (Select), L\u00f5peta (End), Aktiveeri (Activate), N\u00e4eb (Sees). All are active verb forms in Estonian."
+      "justification": "All use case and activity action names start with active verbs. Use cases (Page 2): Tuvasta (Identify), Vaata (View), Lõpeta (End), Registreeri (Register), Muuda (Change), Aktiveeri (Activate), Unusta (Forget). Activity actions (Pages 3-4): Vaata (View), Otsi (Search), Vali (Select), Lõpeta (End), Aktiveeri (Activate), Näeb (Sees). All are active verb forms in Estonian."
     },
     {
       "rule_id": "N1.2",
       "actual": false,
       "detected": false,
-      "justification": "All class, table, attribute, and use case names have 4 or more characters. Verified shortest names: 'Isik' (4 chars), 'Riik' (4 chars), 'L\u00f5pp' (4 chars), 'kood' (4 chars). Threshold is \u22643 characters. Since all names have \u22654 characters, smell is NOT present."
+      "justification": "All class, table, attribute, and use case names have 4 or more characters. Verified shortest names: 'Isik' (4 chars), 'Riik' (4 chars), 'Lõpp' (4 chars), 'kood' (4 chars). Threshold is ≤3 characters. Since all names have ≥4 characters, smell is NOT present."
     },
     {
       "rule_id": "N3.1",

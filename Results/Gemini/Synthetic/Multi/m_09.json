@@ -49,13 +49,13 @@
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "All actions in the 'Auto l\u00f5petamise tegevusdiagramm' (Page 4) are reachable through the decision flows."
+      "justification": "All actions in the 'Auto lõpetamise tegevusdiagramm' (Page 4) are reachable through the decision flows."
     },
     {
       "rule_id": "G15.3",
       "actual": false,
       "detected": true,
-      "justification": "On the 'Autode register (Klassifikaator)' class diagram (Page 12), the association line between the class 'Auto' and the class 'Auto_k\u00fctuse_liik' has a multiplicity indicator '1' at the classifier end, but is missing a visible multiplicity indicator (e.g., '0..*') at the 'Auto' end."
+      "justification": "On the 'Autode register (Klassifikaator)' class diagram (Page 12), the association line between the class 'Auto' and the class 'Auto_kütuse_liik' has a multiplicity indicator '1' at the classifier end, but is missing a visible multiplicity indicator (e.g., '0..*') at the 'Auto' end."
     },
     {
       "rule_id": "S1.1",
@@ -97,7 +97,7 @@
       "rule_id": "N3.2",
       "actual": true,
       "detected": true,
-      "justification": "On the 'T\u00f6\u00f6tajate register' class diagram (Page 10), the class 'T\u00f6\u00f6taja_rolli_omamine' contains attributes 'Alguse_aeg' and 'L\u00f5pu_aeg' which incorrectly start with an uppercase letter."
+      "justification": "On the 'Töötajate register' class diagram (Page 10), the class 'Töötaja_rolli_omamine' contains attributes 'Alguse_aeg' and 'Lõpu_aeg' which incorrectly start with an uppercase letter."
     },
     {
       "rule_id": "N3.3",

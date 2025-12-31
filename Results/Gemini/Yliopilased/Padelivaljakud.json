@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "All use cases in the 'Padeliv\u00e4ljakute funktsionaalne alls\u00fcsteem' diagram are associated with actors, either directly or via <<include>> relationships to use cases that are connected to actors."
+      "justification": "All use cases in the 'Padeliväljakute funktsionaalne allsüsteem' diagram are associated with actors, either directly or via <<include>> relationships to use cases that are connected to actors."
     },
     {
       "rule_id": "G6.1",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case naming is consistent, using the imperative verb-noun form (e.g., 'Tuvasta kasutaja', 'Registreeri padeliv\u00e4ljak')."
+      "justification": "Use case naming is consistent, using the imperative verb-noun form (e.g., 'Tuvasta kasutaja', 'Registreeri padeliväljak')."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the state diagram 'Padeliv\u00e4ljakute seisundidiagramm', all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, L\u00f5petatud) are reachable from the initial state."
+      "justification": "In the state diagram 'Padeliväljakute seisundidiagramm', all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, Lõpetatud) are reachable from the initial state."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "In the activity diagrams ('padeliv\u00e4ljaku l\u00f5petamise tegevusdiagramm' and 'Padeliv\u00e4ljaku aktiveerimise tegevusdiagram'), all actions are connected and reachable from the start node."
+      "justification": "In the activity diagrams ('padeliväljaku lõpetamise tegevusdiagramm' and 'Padeliväljaku aktiveerimise tegevusdiagram'), all actions are connected and reachable from the start node."
     },
     {
       "rule_id": "G15.3",
@@ -61,7 +61,7 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The use case diagram 'Padeliv\u00e4ljakute funktsionaalne alls\u00fcsteem' (Page 2) contains 11 use cases, exceeding the limit of 10. The class diagram 'Klassifikaatorite register' (Page 7) contains 10 classes, meeting the limit of 10 or more."
+      "justification": "The use case diagram 'Padeliväljakute funktsionaalne allsüsteem' (Page 2) contains 11 use cases, exceeding the limit of 10. The class diagram 'Klassifikaatorite register' (Page 7) contains 10 classes, meeting the limit of 10 or more."
     },
     {
       "rule_id": "S1.2",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases and activity actions start with active verbs (e.g., 'Vaata', 'Otsi', 'Vali', 'L\u00f5peta')."
+      "justification": "All use cases and activity actions start with active verbs (e.g., 'Vaata', 'Otsi', 'Vali', 'Lõpeta')."
     },
     {
       "rule_id": "N1.2",

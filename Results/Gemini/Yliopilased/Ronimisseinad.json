@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "All use cases in the 'Ronimisseinte funktsionaalne alls\u00fcsteem' diagram (Page 2) are connected to at least one actor (e.g., 'Tuvasta kasutaja' is connected to multiple actors including 'Ronimisseinte haldur' and 'Klient')."
+      "justification": "All use cases in the 'Ronimisseinte funktsionaalne allsüsteem' diagram (Page 2) are connected to at least one actor (e.g., 'Tuvasta kasutaja' is connected to multiple actors including 'Ronimisseinte haldur' and 'Klient')."
     },
     {
       "rule_id": "G6.1",
@@ -25,7 +25,7 @@
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "No multiple model elements with the same name were found within the same package. Similar names like 'Ronimisseina_kategooria' and 'Ronimisseina_kategooria_t\u00fc\u00fcp' are distinct."
+      "justification": "No multiple model elements with the same name were found within the same package. Similar names like 'Ronimisseina_kategooria' and 'Ronimisseina_kategooria_tüüp' are distinct."
     },
     {
       "rule_id": "G6.3",
@@ -37,7 +37,7 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases follow a consistent naming convention, starting with a verb in the imperative mood (e.g., 'Vaata', 'L\u00f5peta', 'Registreeri', 'Tuvasta')."
+      "justification": "All use cases follow a consistent naming convention, starting with a verb in the imperative mood (e.g., 'Vaata', 'Lõpeta', 'Registreeri', 'Tuvasta')."
     },
     {
       "rule_id": "G15.1",
@@ -61,7 +61,7 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The Use Case diagram 'Ronimisseinte funktsionaalne alls\u00fcsteem' (Page 2) contains 11 central elements (use cases), which exceeds the limit of fewer than 10."
+      "justification": "The Use Case diagram 'Ronimisseinte funktsionaalne allsüsteem' (Page 2) contains 11 central elements (use cases), which exceeds the limit of fewer than 10."
     },
     {
       "rule_id": "S1.2",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": true,
       "detected": true,
-      "justification": "In the Activity Diagram 'Ronimisseina aktiveerimise tegevusdiagramm' (Page 4), the actions 'Andmed salvestatakse ning ronimissein muudetakse aktiivseks' and 'Aktiveerimine eba\u00f5nnestub' start with nouns ('Andmed', 'Aktiveerimine') instead of active verbs."
+      "justification": "In the Activity Diagram 'Ronimisseina aktiveerimise tegevusdiagramm' (Page 4), the actions 'Andmed salvestatakse ning ronimissein muudetakse aktiivseks' and 'Aktiveerimine ebaõnnestub' start with nouns ('Andmed', 'Aktiveerimine') instead of active verbs."
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All class names (e.g., 'Isik', 'T\u00f6\u00f6taja', 'Klient') start with an uppercase letter and use the singular form."
+      "justification": "All class names (e.g., 'Isik', 'Töötaja', 'Klient') start with an uppercase letter and use the singular form."
     },
     {
       "rule_id": "N3.2",

@@ -13,13 +13,13 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": true,
-      "justification": "On page 2 (Tubade funktsionaalne alls\u00fcsteem), the use case 'Tuvasta kasutaja' (marked as 'from L\u00e4bivad huvid') is a visual oval element that has no direct association line to any actor. It only has \u00abinclude\u00bb relationships from other use cases (L\u00f5peta tuba and others include it), but no direct actor association."
+      "justification": "On page 2 (Tubade funktsionaalne allsüsteem), the use case 'Tuvasta kasutaja' (marked as 'from Läbivad huvid') is a visual oval element that has no direct association line to any actor. It only has «include» relationships from other use cases (Lõpeta tuba and others include it), but no direct actor association."
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "No duplicate use case activities with the same actor were found. All use cases have distinct activities: Aktiveeri tuba, L\u00f5peta tuba, Muuda tuba, Registreeri tuba, Unusta tuba, and various 'Vaata' use cases all describe different activities."
+      "justification": "No duplicate use case activities with the same actor were found. All use cases have distinct activities: Aktiveeri tuba, Lõpeta tuba, Muuda tuba, Registreeri tuba, Unusta tuba, and various 'Vaata' use cases all describe different activities."
     },
     {
       "rule_id": "G6.2",
@@ -37,37 +37,37 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases on page 2 follow a consistent verb-first naming pattern: Aktiveeri (Activate), L\u00f5peta (End), Muuda (Change), Registreeri (Register), Unusta (Forget), Vaata (View), Tuvasta (Identify) - all start with imperative verb forms in Estonian."
+      "justification": "All use cases on page 2 follow a consistent verb-first naming pattern: Aktiveeri (Activate), Lõpeta (End), Muuda (Change), Registreeri (Register), Unusta (Forget), Vaata (View), Tuvasta (Identify) - all start with imperative verb forms in Estonian."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "On page 10 (Toa seisundidiagramm), all states are reachable: Ootel receives from initial state (Alg); Aktiivne receives from Ootel and Mitteaktiivne; Mitteaktiivne receives from Aktiivne; L\u00f5petatud receives from Aktiivne and Ootel; Unustatud receives from Ootel. All states have at least one incoming transition."
+      "justification": "On page 10 (Toa seisundidiagramm), all states are reachable: Ootel receives from initial state (Alg); Aktiivne receives from Ootel and Mitteaktiivne; Mitteaktiivne receives from Aktiivne; Lõpetatud receives from Aktiivne and Ootel; Unustatud receives from Ootel. All states have at least one incoming transition."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "On page 3 (Toa l\u00f5petamise tegevusdiagramm), all actions are reachable from Algus (start): 'Vaata k\u00f5iki tube' connects from start, 'Otsi tuba' from decision, 'Vali tuba' from decision, 'L\u00f5peta valitud tuba' from Vali tuba. All actions have incoming flows."
+      "justification": "On page 3 (Toa lõpetamise tegevusdiagramm), all actions are reachable from Algus (start): 'Vaata kõiki tube' connects from start, 'Otsi tuba' from decision, 'Vali tuba' from decision, 'Lõpeta valitud tuba' from Vali tuba. All actions have incoming flows."
     },
     {
       "rule_id": "G15.3",
       "actual": false,
       "detected": false,
-      "justification": "All relationships across class diagrams (pages 4-11) and database diagrams (pages 12-17) have multiplicity indicators on both ends. Examples include: 0..1, 1, 0..*, shown on all relationship lines such as Isik to Kasutajakonto (1 to 0..1), T\u00f6\u00f6taja mentor relationship (0..* to 0..1), and all FK relationships in transformed diagrams."
+      "justification": "All relationships across class diagrams (pages 4-11) and database diagrams (pages 12-17) have multiplicity indicators on both ends. Examples include: 0..1, 1, 0..*, shown on all relationship lines such as Isik to Kasutajakonto (1 to 0..1), Töötaja mentor relationship (0..* to 0..1), and all FK relationships in transformed diagrams."
     },
     {
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "Page 2 (Tubade funktsionaalne alls\u00fcsteem) contains 11 use cases. Counted: 1) Tuvasta kasutaja, 2) Vaata tubade koondaruannet, 3) L\u00f5peta tuba, 4) Registreeri tuba, 5) Muuda tuba, 6) Aktiveeri tuba, 7) Muuda tuba mittaktiivseks, 8) Vaata aktiivseid tube, 9) Vaata k\u00f5iki tube, 10) Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid tube, 11) Unusta tuba. Threshold is \u226510. Since 11 \u2265 10, smell IS present."
+      "justification": "Page 2 (Tubade funktsionaalne allsüsteem) contains 11 use cases. Counted: 1) Tuvasta kasutaja, 2) Vaata tubade koondaruannet, 3) Lõpeta tuba, 4) Registreeri tuba, 5) Muuda tuba, 6) Aktiveeri tuba, 7) Muuda tuba mittaktiivseks, 8) Vaata aktiivseid tube, 9) Vaata kõiki tube, 10) Vaata kõiki ootel või mitteaktiivseid tube, 11) Unusta tuba. Threshold is ≥10. Since 11 ≥ 10, smell IS present."
     },
     {
       "rule_id": "S1.2",
       "actual": true,
       "detected": true,
-      "justification": "Two diagrams exceed the threshold: 1) Page 6 (Klassifikaatorite register): Klassifikaator has 7 visual connection lines to subtypes (Riik, T\u00f6\u00f6taja_roll, Toa_kategooria, Toa_kategooria_t\u00fc\u00fcp, Hoone, Voodi_t\u00fc\u00fcp, Toa_t\u00fc\u00fcp). 7 \u2265 6, smell IS present. 2) Page 17 (Tubade register transformed): Tuba has 6 FK connection lines (FK_Tuba_Hoone, FK_Tuba_Toa_seisundi_liik, FK_Tuba_Toa_tyyp, FK_Tuba_Tootaja_viimane_muutja, FK_Tuba_Voodi_tyyp, FK_Tuba_Tootaja_registreerija). 6 \u2265 6, smell IS present."
+      "justification": "Two diagrams exceed the threshold: 1) Page 6 (Klassifikaatorite register): Klassifikaator has 7 visual connection lines to subtypes (Riik, Töötaja_roll, Toa_kategooria, Toa_kategooria_tüüp, Hoone, Voodi_tüüp, Toa_tüüp). 7 ≥ 6, smell IS present. 2) Page 17 (Tubade register transformed): Tuba has 6 FK connection lines (FK_Tuba_Hoone, FK_Tuba_Toa_seisundi_liik, FK_Tuba_Toa_tyyp, FK_Tuba_Tootaja_viimane_muutja, FK_Tuba_Voodi_tyyp, FK_Tuba_Tootaja_registreerija). 6 ≥ 6, smell IS present."
     },
     {
       "rule_id": "S2.1",
@@ -79,25 +79,25 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases (page 2) start with active verbs: Aktiveeri, L\u00f5peta, Muuda, Registreeri, Unusta, Vaata, Tuvasta. All activity diagram actions (page 3) also start with verbs: Vaata, Otsi, Vali, L\u00f5peta. No noun-first or passive forms found."
+      "justification": "All use cases (page 2) start with active verbs: Aktiveeri, Lõpeta, Muuda, Registreeri, Unusta, Vaata, Tuvasta. All activity diagram actions (page 3) also start with verbs: Vaata, Otsi, Vali, Lõpeta. No noun-first or passive forms found."
     },
     {
       "rule_id": "N1.2",
       "actual": false,
       "detected": false,
-      "justification": "All names have \u22654 characters. Class names: Isik (4), Tuba (4), Riik (4), Hoone (5), Klient (6), etc. Attribute names: kood (4), nimetus (7), e_meil (6), eesnimi (7), etc. No names with \u22643 characters found. Threshold is \u22643. All names exceed this, so smell is NOT present."
+      "justification": "All names have ≥4 characters. Class names: Isik (4), Tuba (4), Riik (4), Hoone (5), Klient (6), etc. Attribute names: kood (4), nimetus (7), e_meil (6), eesnimi (7), etc. No names with ≤3 characters found. Threshold is ≤3. All names exceed this, so smell is NOT present."
     },
     {
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All class names start with uppercase letters: Isik, Kasutajakonto, Klassifikaator, Riik, T\u00f6\u00f6taja, Tuba, Klient, etc. All are singular forms (Estonian): Isik (person, singular), Tuba (room, singular), T\u00f6\u00f6taja (employee, singular). No lowercase or plural class names found."
+      "justification": "All class names start with uppercase letters: Isik, Kasutajakonto, Klassifikaator, Riik, Töötaja, Tuba, Klient, etc. All are singular forms (Estonian): Isik (person, singular), Tuba (room, singular), Töötaja (employee, singular). No lowercase or plural class names found."
     },
     {
       "rule_id": "N3.2",
       "actual": false,
       "detected": false,
-      "justification": "All attribute/column names start with lowercase letters: e_meil, eesnimi, elukoht, isikukood, perenimi, reg_aeg, nimetus, on_aktiivne, kood, kirjeldus, alguse_aeg, l\u00f5pu_aeg, etc. No uppercase-starting attributes found."
+      "justification": "All attribute/column names start with lowercase letters: e_meil, eesnimi, elukoht, isikukood, perenimi, reg_aeg, nimetus, on_aktiivne, kood, kirjeldus, alguse_aeg, lõpu_aeg, etc. No uppercase-starting attributes found."
     },
     {
       "rule_id": "N3.3",

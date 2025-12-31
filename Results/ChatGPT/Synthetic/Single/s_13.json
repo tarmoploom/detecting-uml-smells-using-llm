@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": true,
-      "justification": "On the use case diagram 'Autode halduse funktsionaalne alls\u00fcsteem (Muuda)' (page 3), the use case 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid autosid' appears without a direct association line to any actor and is only connected via 'include' relations, which does not count as actor association under this rule. "
+      "justification": "On the use case diagram 'Autode halduse funktsionaalne allsüsteem (Muuda)' (page 3), the use case 'Vaata kõiki ootel või mitteaktiivseid autosid' appears without a direct association line to any actor and is only connected via 'include' relations, which does not count as actor association under this rule. "
     },
     {
       "rule_id": "G6.1",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case naming form appears consistent within the use case diagrams: the visible ovals on pages 2 and 3 start with active verbs such as 'Tuvasta', 'Vaata', 'Registreeri', 'L\u00f5peta', 'Muuda', 'Aktiveeri', and 'Unusta'."
+      "justification": "Use case naming form appears consistent within the use case diagrams: the visible ovals on pages 2 and 3 start with active verbs such as 'Tuvasta', 'Vaata', 'Registreeri', 'Lõpeta', 'Muuda', 'Aktiveeri', and 'Unusta'."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the state diagram 'Auto seisundidiagramm' (page 9), all named states shown (e.g., Ootel, Aktiivne, Mitteaktiivne, Unustatud, L\u00f5petatud) have visible incoming paths from the initial state or other states; no unreachable state is clearly indicated."
+      "justification": "In the state diagram 'Auto seisundidiagramm' (page 9), all named states shown (e.g., Ootel, Aktiivne, Mitteaktiivne, Unustatud, Lõpetatud) have visible incoming paths from the initial state or other states; no unreachable state is clearly indicated."
     },
     {
       "rule_id": "G15.2",
       "actual": true,
       "detected": false,
-      "justification": "In the activity diagram 'Auto l\u00f5petamise tegevusdiagramm' (page 4), each visible action appears connected by control flow from 'Algus' through decisions to subsequent actions and/or 'L\u00f5pp'; no action is clearly unreachable."
+      "justification": "In the activity diagram 'Auto lõpetamise tegevusdiagramm' (page 4), each visible action appears connected by control flow from 'Algus' through decisions to subsequent actions and/or 'Lõpp'; no action is clearly unreachable."
     },
     {
       "rule_id": "G15.3",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All visible use case names (pages 2 and 3) and activity actions (page 4) appear to start with active verbs such as 'Tuvasta', 'Vaata', 'Registreeri', 'L\u00f5peta', 'Muuda', 'Aktiveeri', 'Unusta', 'Otsi', and 'Vali'."
+      "justification": "All visible use case names (pages 2 and 3) and activity actions (page 4) appear to start with active verbs such as 'Tuvasta', 'Vaata', 'Registreeri', 'Lõpeta', 'Muuda', 'Aktiveeri', 'Unusta', 'Otsi', and 'Vali'."
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Visible class names appear to start with uppercase letters and are not clearly plural (e.g., Isik, T\u00f6\u00f6taja, Klient, Auto, Klassifikaator). No explicit violation is visible."
+      "justification": "Visible class names appear to start with uppercase letters and are not clearly plural (e.g., Isik, Töötaja, Klient, Auto, Klassifikaator). No explicit violation is visible."
     },
     {
       "rule_id": "N3.2",

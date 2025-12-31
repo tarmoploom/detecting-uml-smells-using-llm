@@ -43,7 +43,7 @@
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "The state diagram on page 9 lists states such as Ootel, Aktiivne, Mitteaktiivne, L\u00f5petatud and Unustatud, but unreachable states are not explicitly and unambiguously indicated from the visible content."
+      "justification": "The state diagram on page 9 lists states such as Ootel, Aktiivne, Mitteaktiivne, Lõpetatud and Unustatud, but unreachable states are not explicitly and unambiguously indicated from the visible content."
     },
     {
       "rule_id": "G15.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Class names visible in conceptual and register class diagrams (e.g., Isik, T\u00f6\u00f6taja, Auto, Klient, Klassifikaator, Kasutajakonto) start with uppercase letters and do not clearly appear plural."
+      "justification": "Class names visible in conceptual and register class diagrams (e.g., Isik, Töötaja, Auto, Klient, Klassifikaator, Kasutajakonto) start with uppercase letters and do not clearly appear plural."
     },
     {
       "rule_id": "N3.2",

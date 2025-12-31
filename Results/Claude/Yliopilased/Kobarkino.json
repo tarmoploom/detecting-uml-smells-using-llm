@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "On page 10 'Kinoseansside kasutusjuhtude diagramm', all 9 use case ovals are associated with at least one actor: 'Loo kinoseanss' \u2192 Kinoseansside haldur; 'Muuda mitteaktiivse kinoseansi andmeid' \u2192 Kinoseansside haldur; 'Kustuta mitteaktiivse kinoseansi' \u2192 Kinoseansside haldur; 'Vaata loppenud kinoseansside statistikat' \u2192 Organisatsiooni juht; 'Vaata aktiivsete kinoseansside nimekirja' \u2192 Uudistaja; 'Tuhista aktiivse kinoseansi' \u2192 Kinoseansside haldur; 'Aktiveeri mitteaktiivse kinoseansi' \u2192 Kinoseansside haldur; 'Vaata mitteaktiivsete kinoseansside nimekirja' \u2192 Isik; 'Lopeta aktiivse kinoseansi' \u2192 Aeg. Every use case has at least 1 actor association."
+      "justification": "On page 10 'Kinoseansside kasutusjuhtude diagramm', all 9 use case ovals are associated with at least one actor: 'Loo kinoseanss' → Kinoseansside haldur; 'Muuda mitteaktiivse kinoseansi andmeid' → Kinoseansside haldur; 'Kustuta mitteaktiivse kinoseansi' → Kinoseansside haldur; 'Vaata loppenud kinoseansside statistikat' → Organisatsiooni juht; 'Vaata aktiivsete kinoseansside nimekirja' → Uudistaja; 'Tuhista aktiivse kinoseansi' → Kinoseansside haldur; 'Aktiveeri mitteaktiivse kinoseansi' → Kinoseansside haldur; 'Vaata mitteaktiivsete kinoseansside nimekirja' → Isik; 'Lopeta aktiivse kinoseansi' → Aeg. Every use case has at least 1 actor association."
     },
     {
       "rule_id": "G6.1",
@@ -43,7 +43,7 @@
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "On page 11 'Kinoseansside seisundi diagramm', all 5 states can be reached: 'Mitteaktiivne' \u2190 initial state (OP2.1); 'Aktiivne' \u2190 from Mitteaktiivne (OP2.2); 'Kustutatud' \u2190 from Mitteaktiivne (OP2.3); 'Loppenud' \u2190 from Aktiivne (OP2.6); 'Tuhistatud' \u2190 from Aktiivne (OP2.4). Every state has at least one incoming transition."
+      "justification": "On page 11 'Kinoseansside seisundi diagramm', all 5 states can be reached: 'Mitteaktiivne' ← initial state (OP2.1); 'Aktiivne' ← from Mitteaktiivne (OP2.2); 'Kustutatud' ← from Mitteaktiivne (OP2.3); 'Loppenud' ← from Aktiivne (OP2.6); 'Tuhistatud' ← from Aktiivne (OP2.4). Every state has at least one incoming transition."
     },
     {
       "rule_id": "G15.2",
@@ -61,13 +61,13 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": false,
-      "justification": "Counted central elements on each diagram: Page 1 'Filmide register': 4 classes (Film, Keel, Film_vanuse_pr, Kinoseanss); Page 2 'Saalide register': 3 classes; Page 3 'Kinoseansside register': 5 classes; Page 4 'Klassifikaatorite register': 4 classes; Page 5 'Kohtade register': 3 classes; Page 6 'Piletite register': 3 classes; Page 10 'Kinoseansside kasutusjuhtude diagramm': 9 use cases; Page 11 state diagram: 5 states; Pages 12-16 database diagrams: 1-4 tables each. Maximum count is 9 use cases. Threshold is \u226510. Since 9 < 10, smell is NOT present."
+      "justification": "Counted central elements on each diagram: Page 1 'Filmide register': 4 classes (Film, Keel, Film_vanuse_pr, Kinoseanss); Page 2 'Saalide register': 3 classes; Page 3 'Kinoseansside register': 5 classes; Page 4 'Klassifikaatorite register': 4 classes; Page 5 'Kohtade register': 3 classes; Page 6 'Piletite register': 3 classes; Page 10 'Kinoseansside kasutusjuhtude diagramm': 9 use cases; Page 11 state diagram: 5 states; Pages 12-16 database diagrams: 1-4 tables each. Maximum count is 9 use cases. Threshold is ≥10. Since 9 < 10, smell is NOT present."
     },
     {
       "rule_id": "S1.2",
       "actual": false,
       "detected": false,
-      "justification": "Counted visual connection lines per element on each diagram: Page 1 'Filmide register': Film has 3 lines (to Keel, Film_vanuse_pr, Kinoseanss); Page 3 'Kinoseansside register': Kinoseanss has 4 lines (to Saal, Film, Pilet, Seanss_olek); Page 15 'Kinoseanss': kinoseanss table has 4 lines (to pilet, seanss_olek, film, saal). Maximum connection count is 4. Threshold is \u22656. Since 4 < 6, smell is NOT present."
+      "justification": "Counted visual connection lines per element on each diagram: Page 1 'Filmide register': Film has 3 lines (to Keel, Film_vanuse_pr, Kinoseanss); Page 3 'Kinoseansside register': Kinoseanss has 4 lines (to Saal, Film, Pilet, Seanss_olek); Page 15 'Kinoseanss': kinoseanss table has 4 lines (to pilet, seanss_olek, film, saal). Maximum connection count is 4. Threshold is ≥6. Since 4 < 6, smell is NOT present."
     },
     {
       "rule_id": "S2.1",
@@ -85,7 +85,7 @@
       "rule_id": "N1.2",
       "actual": false,
       "detected": false,
-      "justification": "Checked all class, table, attribute, and use case names. Shortest names found: 'Film' (4 chars), 'Saal' (4 chars), 'Koht' (4 chars), 'Keel' (4 chars), 'kood' (4 chars), 'aasta' (5 chars). Threshold is \u22643 chars. All names have \u22654 characters. Note: 'Aeg' (3 chars) is an actor name, which is not covered by this rule. Smell is NOT present."
+      "justification": "Checked all class, table, attribute, and use case names. Shortest names found: 'Film' (4 chars), 'Saal' (4 chars), 'Koht' (4 chars), 'Keel' (4 chars), 'kood' (4 chars), 'aasta' (5 chars). Threshold is ≤3 chars. All names have ≥4 characters. Note: 'Aeg' (3 chars) is an actor name, which is not covered by this rule. Smell is NOT present."
     },
     {
       "rule_id": "N3.1",

@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases and activity actions start with active verbs (e.g., 'Vaata', 'Otsi', 'L\u00f5peta')."
+      "justification": "All use cases and activity actions start with active verbs (e.g., 'Vaata', 'Otsi', 'Lõpeta')."
     },
     {
       "rule_id": "N1.2",

@@ -25,7 +25,7 @@
       "rule_id": "G6.2",
       "actual": true,
       "detected": true,
-      "justification": "On page 1 (subsystems diagram), within the 'Classifier Register' package, 'Product Location' appears twice in the element list: '+ Product Location' and '+ Product Location'. This constitutes \u22652 elements with identical names in one package."
+      "justification": "On page 1 (subsystems diagram), within the 'Classifier Register' package, 'Product Location' appears twice in the element list: '+ Product Location' and '+ Product Location'. This constitutes ≥2 elements with identical names in one package."
     },
     {
       "rule_id": "G6.3",
@@ -61,13 +61,13 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "On page 7 (Use Case model), counted 13 use case ovals: 1) Add Product, 2) Change Own Product, 3) Set own product status to 'Pending Deletion', 4) View Own Products, 5) View All Products, 6) Hide Own Product, 7) Change Any Product, 8) Search for Product, 9) View Inactive Products, 10) Authorize User, 11) View Product Details, 12) Delete Product from Database, 13) Set Own Product Status to 'Active'. Total = 13 use cases. Threshold is \u226510. Since 13 \u2265 10, smell IS present. Note: Actors (Seller, Buyer, Product Maintainer, Unregistered User, Time) are NOT counted as central elements per the rule."
+      "justification": "On page 7 (Use Case model), counted 13 use case ovals: 1) Add Product, 2) Change Own Product, 3) Set own product status to 'Pending Deletion', 4) View Own Products, 5) View All Products, 6) Hide Own Product, 7) Change Any Product, 8) Search for Product, 9) View Inactive Products, 10) Authorize User, 11) View Product Details, 12) Delete Product from Database, 13) Set Own Product Status to 'Active'. Total = 13 use cases. Threshold is ≥10. Since 13 ≥ 10, smell IS present. Note: Actors (Seller, Buyer, Product Maintainer, Unregistered User, Time) are NOT counted as central elements per the rule."
     },
     {
       "rule_id": "S1.2",
       "actual": true,
       "detected": true,
-      "justification": "On page 6 (Classifier Register), the 'Classifier' class has 7 visual inheritance/generalization lines connecting it to subtypes: User Role, Product Location, Product category, Product Status, Country, Category Attribute, Category Attribute Unit. Counted 7 connection lines from Classifier. Threshold is \u22656. Since 7 \u2265 6, smell IS present."
+      "justification": "On page 6 (Classifier Register), the 'Classifier' class has 7 visual inheritance/generalization lines connecting it to subtypes: User Role, Product Location, Product category, Product Status, Country, Category Attribute, Category Attribute Unit. Counted 7 connection lines from Classifier. Threshold is ≥6. Since 7 ≥ 6, smell IS present."
     },
     {
       "rule_id": "S2.1",
@@ -85,7 +85,7 @@
       "rule_id": "N1.2",
       "actual": false,
       "detected": false,
-      "justification": "Examining all names in the diagrams: Classes/Tables have names \u22654 characters (User=4, Product=7, Country=7, etc.). Attributes examined: name=4 chars, email=5, price=5, id_code=7, creation_time=13, etc. Use case names are all multi-word phrases well exceeding 3 characters. No name with \u22643 characters was found. All names have \u22654 characters."
+      "justification": "Examining all names in the diagrams: Classes/Tables have names ≥4 characters (User=4, Product=7, Country=7, etc.). Attributes examined: name=4 chars, email=5, price=5, id_code=7, creation_time=13, etc. Use case names are all multi-word phrases well exceeding 3 characters. No name with ≤3 characters was found. All names have ≥4 characters."
     },
     {
       "rule_id": "N3.1",

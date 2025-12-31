@@ -43,7 +43,7 @@
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the state diagram (Page 9), all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, L\u00f5petatud) are reachable from the Start node."
+      "justification": "In the state diagram (Page 9), all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, Lõpetatud) are reachable from the Start node."
     },
     {
       "rule_id": "G15.2",
@@ -55,7 +55,7 @@
       "rule_id": "G15.3",
       "actual": false,
       "detected": true,
-      "justification": "On the class diagram 'Autode register (Klassifikaator)' (Page 12), the association between the class 'Auto' and the class 'Auto_k\u00fctuse_liik' is missing a multiplicity indicator at the 'Auto' end (expected '0..*' or similar, but no text is visible)."
+      "justification": "On the class diagram 'Autode register (Klassifikaator)' (Page 12), the association between the class 'Auto' and the class 'Auto_kütuse_liik' is missing a multiplicity indicator at the 'Auto' end (expected '0..*' or similar, but no text is visible)."
     },
     {
       "rule_id": "S1.1",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All class names start with an uppercase letter and are singular (e.g., 'Isik', 'Auto', 'T\u00f6\u00f6taja')."
+      "justification": "All class names start with an uppercase letter and are singular (e.g., 'Isik', 'Auto', 'Töötaja')."
     },
     {
       "rule_id": "N3.2",

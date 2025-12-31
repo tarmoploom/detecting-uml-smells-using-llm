@@ -19,13 +19,13 @@
       "rule_id": "G6.1",
       "actual": true,
       "detected": false,
-      "justification": "Although there are similarly named use cases such as 'Registreeri auto' and 'Lisa auto' in the Autode halduse funktsionaalne alls\u00fcsteem (Muuda) diagram (page 3), the PDF does not clearly show that these two are associated with exactly the same actor, so the rule\u2019s condition cannot be conclusively met. "
+      "justification": "Although there are similarly named use cases such as 'Registreeri auto' and 'Lisa auto' in the Autode halduse funktsionaalne allsüsteem (Muuda) diagram (page 3), the PDF does not clearly show that these two are associated with exactly the same actor, so the rule’s condition cannot be conclusively met. "
     },
     {
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "The package diagram on page 1 lists elements under several registers and subsystems, but within each package box (e.g., Isikute register, Autode register, Klassifikaatorite register) no two distinct model elements share the same primary name; repeated text such as 'Klassifikaatori t\u00fc\u00fcp' is classifier-type metadata and excluded by the interpretation rules. "
+      "justification": "The package diagram on page 1 lists elements under several registers and subsystems, but within each package box (e.g., Isikute register, Autode register, Klassifikaatorite register) no two distinct model elements share the same primary name; repeated text such as 'Klassifikaatori tüüp' is classifier-type metadata and excluded by the interpretation rules. "
     },
     {
       "rule_id": "G6.3",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use case names in the use case diagrams (e.g., 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Registreeri auto', 'L\u00f5peta auto', 'Unusta auto') follow a consistent imperative verb-first form, so no inconsistent naming form is observed. "
+      "justification": "All use case names in the use case diagrams (e.g., 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Registreeri auto', 'Lõpeta auto', 'Unusta auto') follow a consistent imperative verb-first form, so no inconsistent naming form is observed. "
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the Auto seisundidiagramm (page 9), each state (Ootel, Aktiivne, Mitteaktiivne, L\u00f5petatud, Unustatud) is connected by transitions and there is an initial node; no state appears visually isolated from all incoming paths, so no unreachable state can be confirmed. "
+      "justification": "In the Auto seisundidiagramm (page 9), each state (Ootel, Aktiivne, Mitteaktiivne, Lõpetatud, Unustatud) is connected by transitions and there is an initial node; no state appears visually isolated from all incoming paths, so no unreachable state can be confirmed. "
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "In the Auto l\u00f5petamise tegevusdiagramm (page 4), every action such as 'Vaata k\u00f5iki autosid, mida saab l\u00f5petada', 'Otsi autot', 'Vali auto', and 'L\u00f5peta valitud auto' lies on a path from the initial node, with decisions routing control between them; there is no clearly unreachable action node. "
+      "justification": "In the Auto lõpetamise tegevusdiagramm (page 4), every action such as 'Vaata kõiki autosid, mida saab lõpetada', 'Otsi autot', 'Vali auto', and 'Lõpeta valitud auto' lies on a path from the initial node, with decisions routing control between them; there is no clearly unreachable action node. "
     },
     {
       "rule_id": "G15.3",
@@ -61,7 +61,7 @@
       "rule_id": "S1.1",
       "actual": false,
       "detected": false,
-      "justification": "For each individual diagram, the count of central elements (classes/tables/use cases/states) stays below 10; for example, the largest classifier diagrams such as Klassifikaatorite register (Isik) and Klassifikaatorite register (database view) show at most around nine central tables/classes once metadata labels like 'Klassifikaatori t\u00fc\u00fcp' are excluded. "
+      "justification": "For each individual diagram, the count of central elements (classes/tables/use cases/states) stays below 10; for example, the largest classifier diagrams such as Klassifikaatorite register (Isik) and Klassifikaatorite register (database view) show at most around nine central tables/classes once metadata labels like 'Klassifikaatori tüüp' are excluded. "
     },
     {
       "rule_id": "S1.2",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All use case names and observable action labels begin with active verbs in Estonian (e.g., 'Vaata', 'Tuvasta', 'Registreeri', 'L\u00f5peta', 'Muuda', 'Unusta'); question-style labels such as 'Kas soovib otsida?' in the activity diagram appear on decision nodes rather than action nodes, so they do not violate the rule. "
+      "justification": "All use case names and observable action labels begin with active verbs in Estonian (e.g., 'Vaata', 'Tuvasta', 'Registreeri', 'Lõpeta', 'Muuda', 'Unusta'); question-style labels such as 'Kas soovib otsida?' in the activity diagram appear on decision nodes rather than action nodes, so they do not violate the rule. "
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Class and table names start with uppercase letters and are generally singular domain entities (e.g., Auto, Isik, Klient, T\u00f6\u00f6taja); plural names like 'Isikute register' or 'Autode register' are register tables explicitly excluded by the interpretation rules, so no violation of lowercase or improper pluralization for entity classes is found. "
+      "justification": "Class and table names start with uppercase letters and are generally singular domain entities (e.g., Auto, Isik, Klient, Töötaja); plural names like 'Isikute register' or 'Autode register' are register tables explicitly excluded by the interpretation rules, so no violation of lowercase or improper pluralization for entity classes is found. "
     },
     {
       "rule_id": "N3.2",
@@ -103,7 +103,7 @@
       "rule_id": "N3.3",
       "actual": false,
       "detected": false,
-      "justification": "Entity tables such as Auto, Isik, Klient, T\u00f6\u00f6taja, Auto_mark are singular; plural-like labels (e.g., 'Klassifikaatorite register', 'Klientide register') denote register tables and are explicitly exempt from this rule, so no plural table name smell is detected. "
+      "justification": "Entity tables such as Auto, Isik, Klient, Töötaja, Auto_mark are singular; plural-like labels (e.g., 'Klassifikaatorite register', 'Klientide register') denote register tables and are explicitly exempt from this rule, so no plural table name smell is detected. "
     },
     {
       "rule_id": "N4.1",

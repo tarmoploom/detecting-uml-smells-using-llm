@@ -19,7 +19,7 @@
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "On page 2 the use cases 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Vaata k\u00f5iki autosid', and 'Vaata autode koondaruannet' do not appear to be duplicate descriptions of the same activity. On page 3 the listed use cases ('Registreeri auto', 'L\u00f5peta auto', 'Muuda autot', 'Aktiveeri auto', 'Muuda auto mittaktiivseks', 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid autosid', 'Unusta auto') also do not clearly duplicate the same activity for the same actor."
+      "justification": "On page 2 the use cases 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Vaata kõiki autosid', and 'Vaata autode koondaruannet' do not appear to be duplicate descriptions of the same activity. On page 3 the listed use cases ('Registreeri auto', 'Lõpeta auto', 'Muuda autot', 'Aktiveeri auto', 'Muuda auto mittaktiivseks', 'Vaata kõiki ootel või mitteaktiivseid autosid', 'Unusta auto') also do not clearly duplicate the same activity for the same actor."
     },
     {
       "rule_id": "G6.2",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names on pages 2 and 3 appear consistently verb-based in Estonian (e.g., 'Tuvasta', 'Vaata', 'Registreeri', 'L\u00f5peta', 'Muuda', 'Aktiveeri', 'Unusta'). No inconsistent naming form is clearly visible."
+      "justification": "Use case names on pages 2 and 3 appear consistently verb-based in Estonian (e.g., 'Tuvasta', 'Vaata', 'Registreeri', 'Lõpeta', 'Muuda', 'Aktiveeri', 'Unusta'). No inconsistent naming form is clearly visible."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "The state diagram on page 9 shows states such as 'Aktiivne', 'Mitteaktiivne', 'L\u00f5petatud', 'Ootel', and 'Unustatud'. The PDF text does not explicitly indicate any state as unreachable, so no clear violation is confirmed."
+      "justification": "The state diagram on page 9 shows states such as 'Aktiivne', 'Mitteaktiivne', 'Lõpetatud', 'Ootel', and 'Unustatud'. The PDF text does not explicitly indicate any state as unreachable, so no clear violation is confirmed."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "The activity diagram on page 4 lists actions such as 'Vaata k\u00f5iki autosid...', 'Otsi autot', 'Vali auto', and 'L\u00f5peta valitud auto'. No action is explicitly shown as unreachable in the visible content."
+      "justification": "The activity diagram on page 4 lists actions such as 'Vaata kõiki autosid...', 'Otsi autot', 'Vali auto', and 'Lõpeta valitud auto'. No action is explicitly shown as unreachable in the visible content."
     },
     {
       "rule_id": "G15.3",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names on pages 2 and 3 appear to start with active verbs. The activity diagram actions on page 4 also appear to begin with verbs (e.g., 'Vaata', 'Otsi', 'Vali', 'L\u00f5peta'). No clear non-verb-starting use case or action name is visible."
+      "justification": "Use case names on pages 2 and 3 appear to start with active verbs. The activity diagram actions on page 4 also appear to begin with verbs (e.g., 'Vaata', 'Otsi', 'Vali', 'Lõpeta'). No clear non-verb-starting use case or action name is visible."
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": true,
       "detected": true,
-      "justification": "Several class names in the conceptual class diagrams appear to start with lowercase letters, such as 'isik' and 'kasutajakonto' on page 6, 'klassifikaator' and related types on pages 7-8, 't\u00f6\u00f6taja' on page 10, 'auto' on pages 11-12, and 'klient' on page 13. These are individual entity classes and the lowercase start is explicitly visible."
+      "justification": "Several class names in the conceptual class diagrams appear to start with lowercase letters, such as 'isik' and 'kasutajakonto' on page 6, 'klassifikaator' and related types on pages 7-8, 'töötaja' on page 10, 'auto' on pages 11-12, and 'klient' on page 13. These are individual entity classes and the lowercase start is explicitly visible."
     },
     {
       "rule_id": "N3.2",

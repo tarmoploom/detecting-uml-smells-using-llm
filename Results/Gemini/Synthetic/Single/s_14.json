@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "All use cases in the diagrams (Pages 2, 3) are either directly connected to actors (e.g., 'Vaata aktiivseid autosid' to 'Klient') or included by use cases that are connected to actors (e.g., 'Vaata k\u00f5iki ootel...' included by 'Aktiveeri auto')."
+      "justification": "All use cases in the diagrams (Pages 2, 3) are either directly connected to actors (e.g., 'Vaata aktiivseid autosid' to 'Klient') or included by use cases that are connected to actors (e.g., 'Vaata kõiki ootel...' included by 'Aktiveeri auto')."
     },
     {
       "rule_id": "G6.1",
@@ -49,7 +49,7 @@
       "rule_id": "G15.2",
       "actual": true,
       "detected": false,
-      "justification": "In the activity diagram (Page 4), all actions ('Vaata k\u00f5iki...', 'Otsi autot', etc.) are reachable from the Start node."
+      "justification": "In the activity diagram (Page 4), all actions ('Vaata kõiki...', 'Otsi autot', etc.) are reachable from the Start node."
     },
     {
       "rule_id": "G15.3",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases and activity diagram actions start with active verbs (e.g., 'Vaata', 'Otsi', 'Vali'). 'Algus' and 'L\u00f5pp' are nodes, not actions."
+      "justification": "All use cases and activity diagram actions start with active verbs (e.g., 'Vaata', 'Otsi', 'Vali'). 'Algus' and 'Lõpp' are nodes, not actions."
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Class names are capitalized and singular (e.g., 'Isik', 'Auto', 'T\u00f6\u00f6taja')."
+      "justification": "Class names are capitalized and singular (e.g., 'Isik', 'Auto', 'Töötaja')."
     },
     {
       "rule_id": "N3.2",

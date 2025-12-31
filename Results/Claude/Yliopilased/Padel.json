@@ -49,7 +49,7 @@
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "On Page 3 (Register player for tournament activity diagram), all actions are reachable from Start: Navigate to tournament list \u2192 Select desired tournament \u2192 Start registration \u2192 Identify teammate \u2192 Submit registration \u2192 (system receives) \u2192 decision \u2192 Display registration. On Page 4 (Create tournament activity diagram), all actions reachable: Start tournament creation \u2192 Enter details \u2192 Assign referee \u2192 Assign courts \u2192 Submit \u2192 Validate \u2192 (decision) \u2192 Save/Set status/Assign code \u2192 Display. No unreachable actions found."
+      "justification": "On Page 3 (Register player for tournament activity diagram), all actions are reachable from Start: Navigate to tournament list → Select desired tournament → Start registration → Identify teammate → Submit registration → (system receives) → decision → Display registration. On Page 4 (Create tournament activity diagram), all actions reachable: Start tournament creation → Enter details → Assign referee → Assign courts → Submit → Validate → (decision) → Save/Set status/Assign code → Display. No unreachable actions found."
     },
     {
       "rule_id": "G15.3",
@@ -61,13 +61,13 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "Detected on two diagrams. (1) Page 2 'Tournaments functional subsystem' contains 12 use cases: Authenticate user, Complete tournament, Register tournament pair, Activate tournament, Register tournament, Delete tournament, Modify tournament, View registered pairs, Cancel tournament, Delete tournament pair, Register tournament court, Delete tournament court. Count = 12, threshold is \u226510, 12 \u2265 10, smell IS present. (2) Page 5 'Preliminary conceptual model' contains 11 classes: Tournament, TournamentPair, Player, Person, TournamentCategory, TournamentStatus, Court, PersonRole, Account, PlayerTournamentPoints, Gender. Count = 11, threshold is \u226510, 11 \u2265 10, smell IS present."
+      "justification": "Detected on two diagrams. (1) Page 2 'Tournaments functional subsystem' contains 12 use cases: Authenticate user, Complete tournament, Register tournament pair, Activate tournament, Register tournament, Delete tournament, Modify tournament, View registered pairs, Cancel tournament, Delete tournament pair, Register tournament court, Delete tournament court. Count = 12, threshold is ≥10, 12 ≥ 10, smell IS present. (2) Page 5 'Preliminary conceptual model' contains 11 classes: Tournament, TournamentPair, Player, Person, TournamentCategory, TournamentStatus, Court, PersonRole, Account, PlayerTournamentPoints, Gender. Count = 11, threshold is ≥10, 11 ≥ 10, smell IS present."
     },
     {
       "rule_id": "S1.2",
       "actual": true,
       "detected": true,
-      "justification": "Detected on Page 12 'Tournaments register (transformed)'. The 'tournament' table has 7 visual connection lines: (1) to tournament_status, (2) to tournament_category, (3) to person (organizer_person_id), (4) to person (referee_person_id), (5) from tournament_pair, (6) from tournament_court_link, (7) from player_tournament_points. Count = 7, threshold is \u22656, 7 \u2265 6, smell IS present. Other diagrams: Page 5 Tournament has 5 visible connections (5 < 6), Page 9 Tournament has approximately 5-6 connections, being conservative count is 5."
+      "justification": "Detected on Page 12 'Tournaments register (transformed)'. The 'tournament' table has 7 visual connection lines: (1) to tournament_status, (2) to tournament_category, (3) to person (organizer_person_id), (4) to person (referee_person_id), (5) from tournament_pair, (6) from tournament_court_link, (7) from player_tournament_points. Count = 7, threshold is ≥6, 7 ≥ 6, smell IS present. Other diagrams: Page 5 Tournament has 5 visible connections (5 < 6), Page 9 Tournament has approximately 5-6 connections, being conservative count is 5."
     },
     {
       "rule_id": "S2.1",
@@ -85,7 +85,7 @@
       "rule_id": "N1.2",
       "actual": false,
       "detected": false,
-      "justification": "All names have 4 or more characters. Shortest class/table names: Court (5), Player (6), Person (6), Gender (6). Shortest attribute names: name (4), code (4), email (5). All column names in transformed diagrams are \u22654 characters. Threshold is \u22643 characters. No names found with 3 or fewer characters."
+      "justification": "All names have 4 or more characters. Shortest class/table names: Court (5), Player (6), Person (6), Gender (6). Shortest attribute names: name (4), code (4), email (5). All column names in transformed diagrams are ≥4 characters. Threshold is ≤3 characters. No names found with 3 or fewer characters."
     },
     {
       "rule_id": "N3.1",

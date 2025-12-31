@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": true,
       "detected": false,
-      "justification": "All use cases are associated with an actor. While 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid autosid' (Page 3) is connected via \u00abinclude\u00bb relationships, this is valid as it is initiated by the actors of the including use cases."
+      "justification": "All use cases are associated with an actor. While 'Vaata kõiki ootel või mitteaktiivseid autosid' (Page 3) is connected via «include» relationships, this is valid as it is initiated by the actors of the including use cases."
     },
     {
       "rule_id": "G6.1",
@@ -55,7 +55,7 @@
       "rule_id": "G15.3",
       "actual": false,
       "detected": true,
-      "justification": "On the Class Diagram 'Autode register (Klassifikaator)' (Page 12), the association between the class 'Auto' and 'Auto_k\u00fctuse_liik' is missing a multiplicity indicator at the 'Auto' end (it shows '1' at the classifier end but no '0..*' or '1' at the Auto end)."
+      "justification": "On the Class Diagram 'Autode register (Klassifikaator)' (Page 12), the association between the class 'Auto' and 'Auto_kütuse_liik' is missing a multiplicity indicator at the 'Auto' end (it shows '1' at the classifier end but no '0..*' or '1' at the Auto end)."
     },
     {
       "rule_id": "S1.1",

@@ -172,7 +172,7 @@ def main():
     try:
         # 'x' mode ensures we don't overwrite, though we check os.path.exists above too.
         with open(full_output_path, 'x', encoding='utf-8') as f:
-            json.dump(final_output, f, indent=2)
+            json.dump(final_output, f, ensure_ascii=False, indent=2) # added ensure_ascii..to be utf-8 from cecko
             print(f"Success: File saved as '{full_output_path}'")
             
     except FileExistsError:

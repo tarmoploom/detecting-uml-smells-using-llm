@@ -19,7 +19,7 @@
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "Across the use case diagrams (pages 2 and 3), the use case names appear to describe distinct activities (e.g., 'Vaata aktiivseid autosid' vs 'Vaata k\u00f5iki autosid'; 'Aktiveeri auto' vs 'Muuda auto mittaktiivseks'), and actor associations are not explicitly shown as identical for any near-duplicate pair. No clear same-activity duplicates with the same actor are visible. "
+      "justification": "Across the use case diagrams (pages 2 and 3), the use case names appear to describe distinct activities (e.g., 'Vaata aktiivseid autosid' vs 'Vaata kõiki autosid'; 'Aktiveeri auto' vs 'Muuda auto mittaktiivseks'), and actor associations are not explicitly shown as identical for any near-duplicate pair. No clear same-activity duplicates with the same actor are visible. "
     },
     {
       "rule_id": "G6.2",
@@ -37,13 +37,13 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names on pages 2 and 3 appear consistently verb-led in form (e.g., 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Registreeri auto', 'Muuda autot', 'L\u00f5peta auto', 'Unusta auto'). No inconsistent naming form is clearly visible. "
+      "justification": "Use case names on pages 2 and 3 appear consistently verb-led in form (e.g., 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Registreeri auto', 'Muuda autot', 'Lõpeta auto', 'Unusta auto'). No inconsistent naming form is clearly visible. "
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "The state diagram on page 9 lists several states (Aktiivne, Mitteaktiivne, L\u00f5petatud, Ootel, Unustatud) with a start node, but the content provided does not explicitly show any state that is clearly unreachable. Therefore no unambiguous violation is visible. "
+      "justification": "The state diagram on page 9 lists several states (Aktiivne, Mitteaktiivne, Lõpetatud, Ootel, Unustatud) with a start node, but the content provided does not explicitly show any state that is clearly unreachable. Therefore no unambiguous violation is visible. "
     },
     {
       "rule_id": "G15.2",
@@ -79,13 +79,13 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names on pages 2-3 and visible action names on the activity diagram page 4 appear to start with active verbs (e.g., 'Tuvasta', 'Vaata', 'Registreeri', 'Muuda', 'L\u00f5peta', 'Otsi', 'Vali'). No clearly non-verb-starting use case/action name is visible. "
+      "justification": "Use case names on pages 2-3 and visible action names on the activity diagram page 4 appear to start with active verbs (e.g., 'Tuvasta', 'Vaata', 'Registreeri', 'Muuda', 'Lõpeta', 'Otsi', 'Vali'). No clearly non-verb-starting use case/action name is visible. "
     },
     {
       "rule_id": "N1.2",
       "actual": false,
       "detected": false,
-      "justification": "No class, table, attribute/column, or use case name with 3 or fewer characters is clearly visible. Examples like 'Isik', 'auto', 'Riik', 'Klient', 'T\u00f6\u00f6taja', 'parool', 'nimetus' exceed this threshold. "
+      "justification": "No class, table, attribute/column, or use case name with 3 or fewer characters is clearly visible. Examples like 'Isik', 'auto', 'Riik', 'Klient', 'Töötaja', 'parool', 'nimetus' exceed this threshold. "
     },
     {
       "rule_id": "N3.1",

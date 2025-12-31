@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "All use cases in the diagrams are either directly connected to an actor or connected via 'include' relationships to use cases that are connected to actors (e.g., 'Tuvasta kasutaja' and 'Vaata k\u00f5iki ootel...' are reachable)."
+      "justification": "All use cases in the diagrams are either directly connected to an actor or connected via 'include' relationships to use cases that are connected to actors (e.g., 'Tuvasta kasutaja' and 'Vaata kõiki ootel...' are reachable)."
     },
     {
       "rule_id": "G6.1",
@@ -37,7 +37,7 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case naming is consistent, using the 'Verb Noun' pattern (e.g., 'Registreeri auto', 'Vaata k\u00f5iki autosid', 'Tuvasta kasutaja')."
+      "justification": "Use case naming is consistent, using the 'Verb Noun' pattern (e.g., 'Registreeri auto', 'Vaata kõiki autosid', 'Tuvasta kasutaja')."
     },
     {
       "rule_id": "G15.1",
@@ -49,7 +49,7 @@
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "All actions in the 'Auto l\u00f5petamise tegevusdiagramm' (Page 4) are reachable via the control flow."
+      "justification": "All actions in the 'Auto lõpetamise tegevusdiagramm' (Page 4) are reachable via the control flow."
     },
     {
       "rule_id": "G15.3",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases and activity actions start with active verbs (e.g., 'Vaata', 'Otsi', 'Vali', 'L\u00f5peta')."
+      "justification": "All use cases and activity actions start with active verbs (e.g., 'Vaata', 'Otsi', 'Vali', 'Lõpeta')."
     },
     {
       "rule_id": "N1.2",

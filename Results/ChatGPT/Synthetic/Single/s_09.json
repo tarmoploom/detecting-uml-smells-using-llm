@@ -25,7 +25,7 @@
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "In the package-style overview on page 1, no repeated primary element names within the same package are explicitly visible. Repeated classifier-type text such as 'Klassifikaatori t\u00fc\u00fcp' on pages 7-8 appears to be tool metadata and is excluded by the clarification. "
+      "justification": "In the package-style overview on page 1, no repeated primary element names within the same package are explicitly visible. Repeated classifier-type text such as 'Klassifikaatori tüüp' on pages 7-8 appears to be tool metadata and is excluded by the clarification. "
     },
     {
       "rule_id": "G6.3",
@@ -37,7 +37,7 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names on page 2 ('Tuvasta kasutaja', 'Vaata ...') and page 3 ('Registreeri auto', 'L\u00f5peta auto', 'Muuda ...', 'Aktiveeri auto', 'Unusta auto') consistently start with verbs, so no inconsistent form is clearly visible. "
+      "justification": "Use case names on page 2 ('Tuvasta kasutaja', 'Vaata ...') and page 3 ('Registreeri auto', 'Lõpeta auto', 'Muuda ...', 'Aktiveeri auto', 'Unusta auto') consistently start with verbs, so no inconsistent form is clearly visible. "
     },
     {
       "rule_id": "G15.1",
@@ -49,7 +49,7 @@
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "On the activity diagram 'Auto l\u00f5petamise tegevusdiagramm' (page 4), no action is explicitly shown as unreachable. The flow appears to include decisions and repeated paths, with no clear isolated action. "
+      "justification": "On the activity diagram 'Auto lõpetamise tegevusdiagramm' (page 4), no action is explicitly shown as unreachable. The flow appears to include decisions and repeated paths, with no clear isolated action. "
     },
     {
       "rule_id": "G15.3",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names on pages 2-3 appear to start with active verbs. Activity diagram labels on page 4 include actions like 'Vaata', 'Otsi', 'Vali', 'L\u00f5peta', which also begin with verbs. No explicit non-verb-starting action or use case is clearly visible. "
+      "justification": "Use case names on pages 2-3 appear to start with active verbs. Activity diagram labels on page 4 include actions like 'Vaata', 'Otsi', 'Vali', 'Lõpeta', which also begin with verbs. No explicit non-verb-starting action or use case is clearly visible. "
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Entity class names visible across class diagrams (pages 5-13) such as 'Isik', 'T\u00f6\u00f6taja', 'Klient', 'Kasutajakonto', and 'Auto' start with uppercase letters and appear singular. No explicit lowercase-starting or plural entity class name is shown. "
+      "justification": "Entity class names visible across class diagrams (pages 5-13) such as 'Isik', 'Töötaja', 'Klient', 'Kasutajakonto', and 'Auto' start with uppercase letters and appear singular. No explicit lowercase-starting or plural entity class name is shown. "
     },
     {
       "rule_id": "N3.2",

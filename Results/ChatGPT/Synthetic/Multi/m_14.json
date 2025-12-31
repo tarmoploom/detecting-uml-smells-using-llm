@@ -13,19 +13,19 @@
       "rule_id": "G5.2",
       "actual": true,
       "detected": false,
-      "justification": "The two use case diagrams (pages titled 'Autode funktsionaalne alls\u00fcsteem (Vaata & Tuvasta)' and 'Autode halduse funktsionaalne alls\u00fcsteem (Muuda)') each show use cases in the same context as one or more actors (e.g., Uudistaja, Klient, Autode haldur, Juhataja, Klienditeenindaja, S\u00fcsteem), and there is no unambiguous evidence of a use case oval drawn without any actor association. "
+      "justification": "The two use case diagrams (pages titled 'Autode funktsionaalne allsüsteem (Vaata & Tuvasta)' and 'Autode halduse funktsionaalne allsüsteem (Muuda)') each show use cases in the same context as one or more actors (e.g., Uudistaja, Klient, Autode haldur, Juhataja, Klienditeenindaja, Süsteem), and there is no unambiguous evidence of a use case oval drawn without any actor association. "
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "Across the use case diagrams, all use case names are distinct and do not clearly describe the same activity for the same actor (for example, 'Registreeri auto', 'L\u00f5peta auto', 'Muuda autot', 'Vaata aktiivseid autosid', 'Vaata k\u00f5iki autosid', 'Vaata autode koondaruannet', 'Unusta auto'); no pair corresponds to obvious synonyms like 'Add Car' versus 'Register Car'. "
+      "justification": "Across the use case diagrams, all use case names are distinct and do not clearly describe the same activity for the same actor (for example, 'Registreeri auto', 'Lõpeta auto', 'Muuda autot', 'Vaata aktiivseid autosid', 'Vaata kõiki autosid', 'Vaata autode koondaruannet', 'Unusta auto'); no pair corresponds to obvious synonyms like 'Add Car' versus 'Register Car'. "
     },
     {
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "In the overview/package-style diagram 'Autode FASiga seotud p\u00e4devusalad ja registrid' and other package contexts, each package (e.g., Isikute register, Autode register, Klassifikaatorite register) contains uniquely named elements; there are no multiple model elements with the same primary name inside the same package. "
+      "justification": "In the overview/package-style diagram 'Autode FASiga seotud pädevusalad ja registrid' and other package contexts, each package (e.g., Isikute register, Autode register, Klassifikaatorite register) contains uniquely named elements; there are no multiple model elements with the same primary name inside the same package. "
     },
     {
       "rule_id": "G6.3",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names consistently follow an imperative verb-phrase form (e.g., 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Vaata k\u00f5iki autosid', 'Vaata autode koondaruannet', 'Registreeri auto', 'L\u00f5peta auto', 'Muuda autot', 'Aktiveeri auto', 'Muuda auto mittaktiivseks', 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid autosid', 'Unusta auto'); there is no mixture of noun-only and verb-starting names. "
+      "justification": "Use case names consistently follow an imperative verb-phrase form (e.g., 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Vaata kõiki autosid', 'Vaata autode koondaruannet', 'Registreeri auto', 'Lõpeta auto', 'Muuda autot', 'Aktiveeri auto', 'Muuda auto mittaktiivseks', 'Vaata kõiki ootel või mitteaktiivseid autosid', 'Unusta auto'); there is no mixture of noun-only and verb-starting names. "
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "The state diagram 'Auto seisundidiagramm' shows states such as 'Ootel', 'Aktiivne', 'Mitteaktiivne', 'L\u00f5petatud' and 'Unustatud' connected by described transitions (e.g., events for activating, deactivating, finishing, forgetting a car) originating from an initial node; no state is clearly isolated without an incoming path. "
+      "justification": "The state diagram 'Auto seisundidiagramm' shows states such as 'Ootel', 'Aktiivne', 'Mitteaktiivne', 'Lõpetatud' and 'Unustatud' connected by described transitions (e.g., events for activating, deactivating, finishing, forgetting a car) originating from an initial node; no state is clearly isolated without an incoming path. "
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "In the activity diagram 'Auto l\u00f5petamise tegevusdiagramm', all actions and decision nodes (e.g., 'Vaata k\u00f5iki autosid, mida saab l\u00f5petada', 'Otsi autot', 'Vali auto', 'L\u00f5peta valitud auto', and the question nodes beginning with 'Kas ...') appear along the main control flow between the initial node 'Algus' and final node 'L\u00f5pp'; there is no explicit action that is disconnected from the flow. "
+      "justification": "In the activity diagram 'Auto lõpetamise tegevusdiagramm', all actions and decision nodes (e.g., 'Vaata kõiki autosid, mida saab lõpetada', 'Otsi autot', 'Vali auto', 'Lõpeta valitud auto', and the question nodes beginning with 'Kas ...') appear along the main control flow between the initial node 'Algus' and final node 'Lõpp'; there is no explicit action that is disconnected from the flow. "
     },
     {
       "rule_id": "G15.3",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All visible use case names begin with active verbs (e.g., 'Tuvasta', 'Vaata', 'Registreeri', 'L\u00f5peta', 'Muuda', 'Aktiveeri', 'Unusta') and the actions in the Auto termination activity diagram predominantly start with verbs or verb phrases (e.g., 'Vaata', 'Otsi', 'Vali', 'L\u00f5peta'); there is no clearly modeled action or use case whose name starts with a noun or non-verb token in violation of this rule. "
+      "justification": "All visible use case names begin with active verbs (e.g., 'Tuvasta', 'Vaata', 'Registreeri', 'Lõpeta', 'Muuda', 'Aktiveeri', 'Unusta') and the actions in the Auto termination activity diagram predominantly start with verbs or verb phrases (e.g., 'Vaata', 'Otsi', 'Vali', 'Lõpeta'); there is no clearly modeled action or use case whose name starts with a noun or non-verb token in violation of this rule. "
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Class names start with uppercase letters and are singular domain entities (e.g., 'Isik', 'T\u00f6\u00f6taja', 'Auto', 'Klient', 'Kasutajakonto', 'Klassifikaator'); names that are plural and denote registers such as 'Isikute register' and 'Autode register' refer to register constructs and are excluded by the rule. "
+      "justification": "Class names start with uppercase letters and are singular domain entities (e.g., 'Isik', 'Töötaja', 'Auto', 'Klient', 'Kasutajakonto', 'Klassifikaator'); names that are plural and denote registers such as 'Isikute register' and 'Autode register' refer to register constructs and are excluded by the rule. "
     },
     {
       "rule_id": "N3.2",

@@ -19,7 +19,7 @@
       "rule_id": "G6.1",
       "actual": true,
       "detected": false,
-      "justification": "Across the use case diagrams, no two or more use case names are clearly shown to describe the same activity while being associated with the same actor. The listed use cases such as 'Lisa auto', 'Registreeri auto', 'Muuda autot', and 'L\u00f5peta auto' are distinct by name on page 3."
+      "justification": "Across the use case diagrams, no two or more use case names are clearly shown to describe the same activity while being associated with the same actor. The listed use cases such as 'Lisa auto', 'Registreeri auto', 'Muuda autot', and 'Lõpeta auto' are distinct by name on page 3."
     },
     {
       "rule_id": "G6.2",
@@ -43,13 +43,13 @@
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the state diagram on page 9, states such as 'Aktiivne', 'Mitteaktiivne', 'L\u00f5petatud', 'Ootel', and 'Unustatud' are shown with an initial node 'Alg', but the PDF content does not make any state explicitly and unambiguously unreachable."
+      "justification": "In the state diagram on page 9, states such as 'Aktiivne', 'Mitteaktiivne', 'Lõpetatud', 'Ootel', and 'Unustatud' are shown with an initial node 'Alg', but the PDF content does not make any state explicitly and unambiguously unreachable."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "In the activity diagram on page 4, actions like 'Vaata k\u00f5iki autosid, mida Alg saab l\u00f5petada', 'Otsi autot', 'Vali auto', and 'L\u00f5peta valitud auto' are shown in a flow with decision points. The diagram does not explicitly show any action that is unreachable."
+      "justification": "In the activity diagram on page 4, actions like 'Vaata kõiki autosid, mida Alg saab lõpetada', 'Otsi autot', 'Vali auto', and 'Lõpeta valitud auto' are shown in a flow with decision points. The diagram does not explicitly show any action that is unreachable."
     },
     {
       "rule_id": "G15.3",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names on pages 2-3 and activity actions on page 4 appear to start with active verbs in Estonian (e.g., 'Tuvasta', 'Vaata', 'Lisa', 'Muuda', 'Registreeri', 'Unusta', 'Otsi', 'Vali', 'L\u00f5peta'), so no clear violation is visible."
+      "justification": "Use case names on pages 2-3 and activity actions on page 4 appear to start with active verbs in Estonian (e.g., 'Tuvasta', 'Vaata', 'Lisa', 'Muuda', 'Registreeri', 'Unusta', 'Otsi', 'Vali', 'Lõpeta'), so no clear violation is visible."
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Class names visible in the class diagrams (e.g., 'Isik', 'T\u00f6\u00f6taja', 'Klient', 'Auto', 'Kasutajakonto', 'Klassifikaator') start with uppercase letters and are not clearly plural."
+      "justification": "Class names visible in the class diagrams (e.g., 'Isik', 'Töötaja', 'Klient', 'Auto', 'Kasutajakonto', 'Klassifikaator') start with uppercase letters and are not clearly plural."
     },
     {
       "rule_id": "N3.2",

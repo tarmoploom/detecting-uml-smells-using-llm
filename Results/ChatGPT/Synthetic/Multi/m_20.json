@@ -13,19 +13,19 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "The two use case diagrams list use cases like 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Vaata k\u00f5iki autosid', 'Vaata autode koondaruannet', 'Auto registreerimine', 'L\u00f5peta auto', etc., alongside actors such as Uudistaja, Klient, Autode haldur, Juhataja and Klienditeenindaja, and there is no explicit evidence of any use case oval being shown without an associated actor; therefore no violation can be asserted."
+      "justification": "The two use case diagrams list use cases like 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Vaata kõiki autosid', 'Vaata autode koondaruannet', 'Auto registreerimine', 'Lõpeta auto', etc., alongside actors such as Uudistaja, Klient, Autode haldur, Juhataja and Klienditeenindaja, and there is no explicit evidence of any use case oval being shown without an associated actor; therefore no violation can be asserted."
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "Within each individual use case diagram, all use case names are distinct and there is no pair of use cases that clearly describe the same activity for the same actor (for example the sets 'Vaata aktiivseid autosid', 'Vaata k\u00f5iki autosid', 'Vaata autode koondaruannet' on one diagram and 'Auto registreerimine', 'L\u00f5peta auto', 'Muuda autot', 'Aktiveeri auto', 'Muuda auto mittaktiivseks', 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid autosid', 'Unusta auto' on the other)."
+      "justification": "Within each individual use case diagram, all use case names are distinct and there is no pair of use cases that clearly describe the same activity for the same actor (for example the sets 'Vaata aktiivseid autosid', 'Vaata kõiki autosid', 'Vaata autode koondaruannet' on one diagram and 'Auto registreerimine', 'Lõpeta auto', 'Muuda autot', 'Aktiveeri auto', 'Muuda auto mittaktiivseks', 'Vaata kõiki ootel või mitteaktiivseid autosid', 'Unusta auto' on the other)."
     },
     {
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "In the package-style overview 'Autode FASiga seotud p\u00e4devusalad ja registrid', each package lists unique element names (e.g., Isik and Kasutajakonto in 'Isikute register'; Auto and Auto_kategooria_omamine in 'Autode register'; various distinct classifier types in 'Klassifikaatorite register'), and no package shows multiple model elements with the same primary name."
+      "justification": "In the package-style overview 'Autode FASiga seotud pädevusalad ja registrid', each package lists unique element names (e.g., Isik and Kasutajakonto in 'Isikute register'; Auto and Auto_kategooria_omamine in 'Autode register'; various distinct classifier types in 'Klassifikaatorite register'), and no package shows multiple model elements with the same primary name."
     },
     {
       "rule_id": "G6.3",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": true,
       "detected": true,
-      "justification": "Use case naming form is inconsistent: most use cases begin with an active verb, such as 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Vaata k\u00f5iki autosid', 'Vaata autode koondaruannet', 'L\u00f5peta auto', 'Muuda autot', 'Aktiveeri auto', 'Muuda auto mittaktiivseks', 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid autosid' and 'Unusta auto', whereas 'Auto registreerimine' starts with a noun followed by a verbal noun, breaking the otherwise verb-first pattern."
+      "justification": "Use case naming form is inconsistent: most use cases begin with an active verb, such as 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Vaata kõiki autosid', 'Vaata autode koondaruannet', 'Lõpeta auto', 'Muuda autot', 'Aktiveeri auto', 'Muuda auto mittaktiivseks', 'Vaata kõiki ootel või mitteaktiivseid autosid' and 'Unusta auto', whereas 'Auto registreerimine' starts with a noun followed by a verbal noun, breaking the otherwise verb-first pattern."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the Auto state diagram ('Auto seisundidiagramm'), each state (Ootel, Aktiivne, Mitteaktiivne, L\u00f5petatud, Unustatud) is accompanied by transition descriptions (trigger texts with '/OP1', '/OP2', etc.), and the layout shows no isolated state without incoming or outgoing transitions; thus no unreachable state is evident."
+      "justification": "In the Auto state diagram ('Auto seisundidiagramm'), each state (Ootel, Aktiivne, Mitteaktiivne, Lõpetatud, Unustatud) is accompanied by transition descriptions (trigger texts with '/OP1', '/OP2', etc.), and the layout shows no isolated state without incoming or outgoing transitions; thus no unreachable state is evident."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "In the activity diagram 'Auto l\u00f5petamise tegevusdiagramm', actions such as 'Vaata k\u00f5iki autosid, mida saab l\u00f5petada', 'Otsi autot (koodi, nime, seisundi p\u00f5hjal)', 'Vali auto' and 'L\u00f5peta valitud auto' are all connected in a single control flow between the initial and final nodes via decision points like 'Kas soovib otsida?', so no action appears unreachable."
+      "justification": "In the activity diagram 'Auto lõpetamise tegevusdiagramm', actions such as 'Vaata kõiki autosid, mida saab lõpetada', 'Otsi autot (koodi, nime, seisundi põhjal)', 'Vali auto' and 'Lõpeta valitud auto' are all connected in a single control flow between the initial and final nodes via decision points like 'Kas soovib otsida?', so no action appears unreachable."
     },
     {
       "rule_id": "G15.3",
@@ -67,7 +67,7 @@
       "rule_id": "S1.2",
       "actual": false,
       "detected": false,
-      "justification": "No single class or table on any one diagram shows six or more distinct relationship lines: central entities like Isik, Auto, Klient, and T\u00f6\u00f6taja typically participate in at most about four or five connectors on their respective diagrams (e.g., Auto to several classifier tables and Auto_kategooria_omamine, Isik to Kasutajakonto and classifier tables), which is below the specified threshold."
+      "justification": "No single class or table on any one diagram shows six or more distinct relationship lines: central entities like Isik, Auto, Klient, and Töötaja typically participate in at most about four or five connectors on their respective diagrams (e.g., Auto to several classifier tables and Auto_kategooria_omamine, Isik to Kasutajakonto and classifier tables), which is below the specified threshold."
     },
     {
       "rule_id": "S2.1",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": true,
       "detected": true,
-      "justification": "Most use case names and activity actions start with active verbs (e.g., 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Vaata k\u00f5iki autosid', 'Vaata autode koondaruannet', 'L\u00f5peta auto', 'Muuda autot', 'Aktiveeri auto', 'Muuda auto mittaktiivseks', 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid autosid', 'Unusta auto', and activity actions like 'Vaata k\u00f5iki autosid, mida saab l\u00f5petada', 'Otsi autot', 'Vali auto', 'L\u00f5peta valitud auto'), but the use case 'Auto registreerimine' starts with the noun 'Auto' rather than a verb, so it violates the verb-first requirement."
+      "justification": "Most use case names and activity actions start with active verbs (e.g., 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Vaata kõiki autosid', 'Vaata autode koondaruannet', 'Lõpeta auto', 'Muuda autot', 'Aktiveeri auto', 'Muuda auto mittaktiivseks', 'Vaata kõiki ootel või mitteaktiivseid autosid', 'Unusta auto', and activity actions like 'Vaata kõiki autosid, mida saab lõpetada', 'Otsi autot', 'Vali auto', 'Lõpeta valitud auto'), but the use case 'Auto registreerimine' starts with the noun 'Auto' rather than a verb, so it violates the verb-first requirement."
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All class and table names for domain entities start with uppercase letters and are singular (e.g., Isik, Auto, Klient, Kasutajakonto, T\u00f6\u00f6taja, Auto_kategooria, Auto_mark, Kliendi_seisundi_liik), while plural or register-scope names like 'Isikute register' refer to registers rather than individual entity classes, which are excluded by the rule."
+      "justification": "All class and table names for domain entities start with uppercase letters and are singular (e.g., Isik, Auto, Klient, Kasutajakonto, Töötaja, Auto_kategooria, Auto_mark, Kliendi_seisundi_liik), while plural or register-scope names like 'Isikute register' refer to registers rather than individual entity classes, which are excluded by the rule."
     },
     {
       "rule_id": "N3.2",
@@ -103,7 +103,7 @@
       "rule_id": "N3.3",
       "actual": false,
       "detected": false,
-      "justification": "Entity table names in the database diagrams are singular (Isik, Auto, Klient, T\u00f6\u00f6taja, Kasutajakonto, Auto_kategooria, Auto_mark, Riik, etc.), and plural-style labels such as 'Isikute register', 'Klassifikaatorite register', 'Klientide register', and 'Tootajate register' denote register groupings rather than individual tables, which are excluded per the interpretation rules."
+      "justification": "Entity table names in the database diagrams are singular (Isik, Auto, Klient, Töötaja, Kasutajakonto, Auto_kategooria, Auto_mark, Riik, etc.), and plural-style labels such as 'Isikute register', 'Klassifikaatorite register', 'Klientide register', and 'Tootajate register' denote register groupings rather than individual tables, which are excluded per the interpretation rules."
     },
     {
       "rule_id": "N4.1",

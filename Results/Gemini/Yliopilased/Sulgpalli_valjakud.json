@@ -37,7 +37,7 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases in the diagram (Page 2) consistently start with a verb in the imperative form (e.g., 'Vaata', 'Registreeri', 'L\u00f5peta')."
+      "justification": "All use cases in the diagram (Page 2) consistently start with a verb in the imperative form (e.g., 'Vaata', 'Registreeri', 'Lõpeta')."
     },
     {
       "rule_id": "G15.1",
@@ -61,13 +61,13 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The Use Case diagram 'V\u00e4ljakute funktsionaalne alls\u00fcsteem' (Page 2) contains 11 central use case elements (ovals), which exceeds the limit of fewer than 10."
+      "justification": "The Use Case diagram 'Väljakute funktsionaalne allsüsteem' (Page 2) contains 11 central use case elements (ovals), which exceeds the limit of fewer than 10."
     },
     {
       "rule_id": "S1.2",
       "actual": false,
       "detected": false,
-      "justification": "No single element has 6 or more visual connections on a single diagram. The maximum observed was 5 (e.g., 'Isik' on Pages 6/13 and 'V\u00e4ljak' on Page 10)."
+      "justification": "No single element has 6 or more visual connections on a single diagram. The maximum observed was 5 (e.g., 'Isik' on Pages 6/13 and 'Väljak' on Page 10)."
     },
     {
       "rule_id": "S2.1",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All class names start with an uppercase letter and are singular (e.g., 'Isik', 'V\u00e4ljak', 'Klient')."
+      "justification": "All class names start with an uppercase letter and are singular (e.g., 'Isik', 'Väljak', 'Klient')."
     },
     {
       "rule_id": "N3.2",
@@ -103,7 +103,7 @@
       "rule_id": "N3.3",
       "actual": false,
       "detected": false,
-      "justification": "All database table names are singular (e.g., 'Isik', 'Riik', 'V\u00e4ljak')."
+      "justification": "All database table names are singular (e.g., 'Isik', 'Riik', 'Väljak')."
     },
     {
       "rule_id": "N4.1",

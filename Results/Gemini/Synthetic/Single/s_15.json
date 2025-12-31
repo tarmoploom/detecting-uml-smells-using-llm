@@ -13,13 +13,13 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "All use cases are associated with actors. The use case 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid autosid' (Page 3) is connected via <<include>> relationships to use cases that are directly connected to the 'Autode haldur' actor, establishing a valid association."
+      "justification": "All use cases are associated with actors. The use case 'Vaata kõiki ootel või mitteaktiivseid autosid' (Page 3) is connected via <<include>> relationships to use cases that are directly connected to the 'Autode haldur' actor, establishing a valid association."
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "No use cases with synonymous names associated with the same actor were found. Use case names are distinct and specific (e.g., 'Vaata k\u00f5iki autosid' vs 'Vaata k\u00f5iki ootel...')."
+      "justification": "No use cases with synonymous names associated with the same actor were found. Use case names are distinct and specific (e.g., 'Vaata kõiki autosid' vs 'Vaata kõiki ootel...')."
     },
     {
       "rule_id": "G6.2",
@@ -37,13 +37,13 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases consistently start with a verb in the imperative form (e.g., 'Vaata', 'Tuvasta', 'Registreeri', 'Muuda', 'L\u00f5peta')."
+      "justification": "All use cases consistently start with a verb in the imperative form (e.g., 'Vaata', 'Tuvasta', 'Registreeri', 'Muuda', 'Lõpeta')."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the State Diagram (Page 9), all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, L\u00f5petatud) are reachable from the 'Algus' state via valid transitions."
+      "justification": "In the State Diagram (Page 9), all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, Lõpetatud) are reachable from the 'Algus' state via valid transitions."
     },
     {
       "rule_id": "G15.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All class names are capitalized and singular (e.g., 'Isik', 'Auto', 'T\u00f6\u00f6taja')."
+      "justification": "All class names are capitalized and singular (e.g., 'Isik', 'Auto', 'Töötaja')."
     },
     {
       "rule_id": "N3.2",

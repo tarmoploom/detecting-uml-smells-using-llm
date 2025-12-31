@@ -13,19 +13,19 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": true,
-      "justification": "On diagram 'Loomade funktsionaalne alls\u00fcsteem' (page 2), the use case 'Tuvasta kasutaja' (marked as 'from L\u00e4bivad huvid') is a visual oval element that has ZERO direct actor associations. It only has \u00abinclude\u00bb relationships pointing to it from other use cases, but no actor line connects to it directly. This violates the rule requiring every use case oval to have at least 1 actor association."
+      "justification": "On diagram 'Loomade funktsionaalne allsüsteem' (page 2), the use case 'Tuvasta kasutaja' (marked as 'from Läbivad huvid') is a visual oval element that has ZERO direct actor associations. It only has «include» relationships pointing to it from other use cases, but no actor line connects to it directly. This violates the rule requiring every use case oval to have at least 1 actor association."
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "On diagram 'Loomade funktsionaalne alls\u00fcsteem' (page 2), all 11 use cases describe distinct activities: Tuvasta kasutaja, Vaata loomade koondaruannet, M\u00e4rgi loom surnuks, Registreeri loom, Muuda looma infot, Aktiveeri loom, Muuda loom mittaktiivseks, Vaata aktiivseid loomi, Vaata k\u00f5iki loomi, Vaata k\u00f5iki mitteaktiivseid loomi, Otsi looma kiibi j\u00e4rgi. No two use cases describe the same activity with the same actor."
+      "justification": "On diagram 'Loomade funktsionaalne allsüsteem' (page 2), all 11 use cases describe distinct activities: Tuvasta kasutaja, Vaata loomade koondaruannet, Märgi loom surnuks, Registreeri loom, Muuda looma infot, Aktiveeri loom, Muuda loom mittaktiivseks, Vaata aktiivseid loomi, Vaata kõiki loomi, Vaata kõiki mitteaktiivseid loomi, Otsi looma kiibi järgi. No two use cases describe the same activity with the same actor."
     },
     {
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "Examined all package diagrams including 'Loomade FASiga seotud p\u00e4devusalad ja registrid' (page 1). Each package contains uniquely named elements: Isikute register (Isik, Kasutajakonto), Klassifikaatorite register (14 unique classifiers), T\u00f6\u00f6tajate register (T\u00f6\u00f6taja, T\u00f6\u00f6taja_rolli_omamine), Loomade register (Loom, Loom_Looma_kategooria, Looma eluts\u00fcklid). No duplicate element names within any single package."
+      "justification": "Examined all package diagrams including 'Loomade FASiga seotud pädevusalad ja registrid' (page 1). Each package contains uniquely named elements: Isikute register (Isik, Kasutajakonto), Klassifikaatorite register (14 unique classifiers), Töötajate register (Töötaja, Töötaja_rolli_omamine), Loomade register (Loom, Loom_Looma_kategooria, Looma elutsüklid). No duplicate element names within any single package."
     },
     {
       "rule_id": "G6.3",
@@ -37,7 +37,7 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "On diagram 'Loomade funktsionaalne alls\u00fcsteem' (page 2), all use cases follow a consistent verb-first naming pattern in Estonian: Tuvasta (Identify), Vaata (View), M\u00e4rgi (Mark), Registreeri (Register), Muuda (Change), Aktiveeri (Activate), Otsi (Search). All names begin with imperative verbs."
+      "justification": "On diagram 'Loomade funktsionaalne allsüsteem' (page 2), all use cases follow a consistent verb-first naming pattern in Estonian: Tuvasta (Identify), Vaata (View), Märgi (Mark), Registreeri (Register), Muuda (Change), Aktiveeri (Activate), Otsi (Search). All names begin with imperative verbs."
     },
     {
       "rule_id": "G15.1",
@@ -49,25 +49,25 @@
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "On activity diagram 'Looma sissekande l\u00f5petamise tegevusdiagramm' (page 3), all actions are reachable from Algus: 'Vaata k\u00f5iki loomi, keda saab surnuks m\u00e4\u00e4rata' directly from start, then 'Otsi loom', 'Vali loom', 'L\u00f5peta valitud looma sissekanne' via decision flows. Similarly on page 4 'Registreeri_loom', all actions connect via flow from Algus through decision nodes to L\u00f5pp."
+      "justification": "On activity diagram 'Looma sissekande lõpetamise tegevusdiagramm' (page 3), all actions are reachable from Algus: 'Vaata kõiki loomi, keda saab surnuks määrata' directly from start, then 'Otsi loom', 'Vali loom', 'Lõpeta valitud looma sissekanne' via decision flows. Similarly on page 4 'Registreeri_loom', all actions connect via flow from Algus through decision nodes to Lõpp."
     },
     {
       "rule_id": "G15.3",
       "actual": false,
       "detected": false,
-      "justification": "Examined all class and database diagrams. All relationships have multiplicity indicators on both ends. Examples: Page 5 shows '0..*' and '1' on T\u00f6\u00f6taja-Loom relationship, Page 9 shows '0..*', '1', '0..1' multiplicities on all Loom relationships, transformed diagrams (pages 14-20) show multiplicities like '0..*' and '1' or '0..1' on all FK relationships."
+      "justification": "Examined all class and database diagrams. All relationships have multiplicity indicators on both ends. Examples: Page 5 shows '0..*' and '1' on Töötaja-Loom relationship, Page 9 shows '0..*', '1', '0..1' multiplicities on all Loom relationships, transformed diagrams (pages 14-20) show multiplicities like '0..*' and '1' or '0..1' on all FK relationships."
     },
     {
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "Multiple diagrams exceed the threshold of \u226510 central elements: (1) Page 2 'Loomade funktsionaalne alls\u00fcsteem' contains 11 use cases (Tuvasta kasutaja, Vaata loomade koondaruannet, M\u00e4rgi loom surnuks, Registreeri loom, Muuda looma infot, Aktiveeri loom, Muuda loom mittaktiivseks, Vaata aktiivseid loomi, Vaata k\u00f5iki loomi, Vaata k\u00f5iki mitteaktiivseid loomi, Otsi looma kiibi j\u00e4rgi). 11 \u2265 10. (2) Page 7 'Klassifikaatorite register' contains 15 classes (Klassifikaator, Riik, Loom_seisundi_liik, T\u00f6\u00f6taja_seisundi_liik, Isiku_seisundi_liik, T\u00f6\u00f6taja_roll, Loom_kategooria, Loom_kategooria_t\u00fc\u00fcp, Loom_t\u00f5ug, Loom_asukoht, Kommentaar_t\u00fc\u00fcp, Adopteerimine_staatus, Vaktsiin_t\u00fc\u00fcp, Protseduur_t\u00fc\u00fcp, Terviseseisund_t\u00fc\u00fcp). 15 \u2265 10. (3) Page 15 'Klassifikaatorite register (transformed)' contains 14 tables (Adopteerimine_staatus, Isiku_seisundi_liik, Kommentaar_tyyp, Loom_asukoht, Loom_kategooria_tyyp, Loom_seisundi_liik, Loom_toug, Protseduur_tyyp, Riik, Terviseseisund_tyyp, Tootaja_roll, Tootaja_seisundi_liik, Vaktsiin_tyyp, Loom_kategooria). 14 \u2265 10."
+      "justification": "Multiple diagrams exceed the threshold of ≥10 central elements: (1) Page 2 'Loomade funktsionaalne allsüsteem' contains 11 use cases (Tuvasta kasutaja, Vaata loomade koondaruannet, Märgi loom surnuks, Registreeri loom, Muuda looma infot, Aktiveeri loom, Muuda loom mittaktiivseks, Vaata aktiivseid loomi, Vaata kõiki loomi, Vaata kõiki mitteaktiivseid loomi, Otsi looma kiibi järgi). 11 ≥ 10. (2) Page 7 'Klassifikaatorite register' contains 15 classes (Klassifikaator, Riik, Loom_seisundi_liik, Töötaja_seisundi_liik, Isiku_seisundi_liik, Töötaja_roll, Loom_kategooria, Loom_kategooria_tüüp, Loom_tõug, Loom_asukoht, Kommentaar_tüüp, Adopteerimine_staatus, Vaktsiin_tüüp, Protseduur_tüüp, Terviseseisund_tüüp). 15 ≥ 10. (3) Page 15 'Klassifikaatorite register (transformed)' contains 14 tables (Adopteerimine_staatus, Isiku_seisundi_liik, Kommentaar_tyyp, Loom_asukoht, Loom_kategooria_tyyp, Loom_seisundi_liik, Loom_toug, Protseduur_tyyp, Riik, Terviseseisund_tyyp, Tootaja_roll, Tootaja_seisundi_liik, Vaktsiin_tyyp, Loom_kategooria). 14 ≥ 10."
     },
     {
       "rule_id": "S1.2",
       "actual": true,
       "detected": true,
-      "justification": "Multiple diagrams have elements with \u22656 visual connection lines: (1) Page 5 'Kontseptuaalne eskiismudel': T\u00f6\u00f6taja has 6 connections (to Isik, Loom, Kommentaar, Protseduur, Adopteerimine, and mentor self-reference). 6 \u2265 6. (2) Page 7 'Klassifikaatorite register': Klassifikaator has 13 'Klassifikaatori t\u00fc\u00fcp' relationship lines connecting to all subtype classes. 13 \u2265 6. (3) Page 9 'Loomade register': Loom has 6 connections (to T\u00f6\u00f6taja/viimane muutja, Loom_seisundi_liik, Loom_kategooria, Loom_Looma_kategooria, Loom_t\u00f5ug, Loom_asukoht). 6 \u2265 6. (4) Page 18 'Loomade register (transformed)': Loom has 7 FK lines (to Loom_asukoht, Loom_seisundi_liik, Loom_toug, Tootaja via registreerija, Tootaja via viimane_muutja, Loom_Looma_kategooria, Loom_kategooria). 7 \u2265 6. (5) Page 20 'T\u00f6\u00f6tajate register (transformed)': Tootaja has 7 connections (FK_Tootaja_Isik, FK_Tootaja_Tootaja_seisundi_liik, FK_mentor, FK_Tootaja_rolli_omamine_Tootaja, FK_Loom_registreerija, FK_viimane_muutja, FK_Adopteerimine_Tootaja_02). 7 \u2265 6."
+      "justification": "Multiple diagrams have elements with ≥6 visual connection lines: (1) Page 5 'Kontseptuaalne eskiismudel': Töötaja has 6 connections (to Isik, Loom, Kommentaar, Protseduur, Adopteerimine, and mentor self-reference). 6 ≥ 6. (2) Page 7 'Klassifikaatorite register': Klassifikaator has 13 'Klassifikaatori tüüp' relationship lines connecting to all subtype classes. 13 ≥ 6. (3) Page 9 'Loomade register': Loom has 6 connections (to Töötaja/viimane muutja, Loom_seisundi_liik, Loom_kategooria, Loom_Looma_kategooria, Loom_tõug, Loom_asukoht). 6 ≥ 6. (4) Page 18 'Loomade register (transformed)': Loom has 7 FK lines (to Loom_asukoht, Loom_seisundi_liik, Loom_toug, Tootaja via registreerija, Tootaja via viimane_muutja, Loom_Looma_kategooria, Loom_kategooria). 7 ≥ 6. (5) Page 20 'Töötajate register (transformed)': Tootaja has 7 connections (FK_Tootaja_Isik, FK_Tootaja_Tootaja_seisundi_liik, FK_mentor, FK_Tootaja_rolli_omamine_Tootaja, FK_Loom_registreerija, FK_viimane_muutja, FK_Adopteerimine_Tootaja_02). 7 ≥ 6."
     },
     {
       "rule_id": "S2.1",
@@ -79,19 +79,19 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases on page 2 start with active imperative verbs in Estonian: Tuvasta (Identify), Vaata (View), M\u00e4rgi (Mark), Registreeri (Register), Muuda (Change), Aktiveeri (Activate), Otsi (Search). Activity diagram actions on pages 3-4 also start with verbs: Vaata, Otsi, Vali, L\u00f5peta, Lisa. No use case or action starts with a noun or passive form."
+      "justification": "All use cases on page 2 start with active imperative verbs in Estonian: Tuvasta (Identify), Vaata (View), Märgi (Mark), Registreeri (Register), Muuda (Change), Aktiveeri (Activate), Otsi (Search). Activity diagram actions on pages 3-4 also start with verbs: Vaata, Otsi, Vali, Lõpeta, Lisa. No use case or action starts with a noun or passive form."
     },
     {
       "rule_id": "N1.2",
       "actual": false,
       "detected": false,
-      "justification": "Examined all class, table, attribute, and use case names. Shortest names found are 4 characters: 'Isik' (4 chars), 'Loom' (4 chars), 'Riik' (4 chars), 'nimi' (4 chars), 'kood' (4 chars), 'Otsi' (4 chars). Threshold is \u22643 characters. Since all names have \u22654 characters, smell is NOT present."
+      "justification": "Examined all class, table, attribute, and use case names. Shortest names found are 4 characters: 'Isik' (4 chars), 'Loom' (4 chars), 'Riik' (4 chars), 'nimi' (4 chars), 'kood' (4 chars), 'Otsi' (4 chars). Threshold is ≤3 characters. Since all names have ≥4 characters, smell is NOT present."
     },
     {
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All class names start with uppercase letters: Isik, Kasutajakonto, Klassifikaator, T\u00f6\u00f6taja, Loom, Kommentaar, Protseduur, Adopteerimine, etc. All class names are singular in Estonian: Isik (Person), Loom (Animal), T\u00f6\u00f6taja (Worker), not plural forms. No violations found."
+      "justification": "All class names start with uppercase letters: Isik, Kasutajakonto, Klassifikaator, Töötaja, Loom, Kommentaar, Protseduur, Adopteerimine, etc. All class names are singular in Estonian: Isik (Person), Loom (Animal), Töötaja (Worker), not plural forms. No violations found."
     },
     {
       "rule_id": "N3.2",

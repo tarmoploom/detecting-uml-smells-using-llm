@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "All use cases in the 'Treeningute funktsionaalne alls\u00fcsteem' diagram (Page 2) are connected to at least one actor."
+      "justification": "All use cases in the 'Treeningute funktsionaalne allsüsteem' diagram (Page 2) are connected to at least one actor."
     },
     {
       "rule_id": "G6.1",
@@ -31,19 +31,19 @@
       "rule_id": "G6.3",
       "actual": false,
       "detected": false,
-      "justification": "No clear evidence of redundant data columns across unrelated tables without foreign keys. Attributes like 'on_nous_t\u00fclitamisega' appear in both Klient and K\u00fclastaja, but these represent attributes of distinct subclasses/roles rather than disconnected redundancy of the same data instance."
+      "justification": "No clear evidence of redundant data columns across unrelated tables without foreign keys. Attributes like 'on_nous_tülitamisega' appear in both Klient and Külastaja, but these represent attributes of distinct subclasses/roles rather than disconnected redundancy of the same data instance."
     },
     {
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases follow the 'Verb + Noun' naming convention (e.g., 'Registreeri treening', 'Vaata k\u00f5iki treeninguid')."
+      "justification": "All use cases follow the 'Verb + Noun' naming convention (e.g., 'Registreeri treening', 'Vaata kõiki treeninguid')."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the state diagram (Page 7), all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, L\u00f5petatud) are reachable from the start node via the defined transitions."
+      "justification": "In the state diagram (Page 7), all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, Lõpetatud) are reachable from the start node via the defined transitions."
     },
     {
       "rule_id": "G15.2",
@@ -61,7 +61,7 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The use case diagram 'Treeningute funktsionaalne alls\u00fcsteem' (Page 2) contains 12 use cases, exceeding the threshold of 9 central elements."
+      "justification": "The use case diagram 'Treeningute funktsionaalne allsüsteem' (Page 2) contains 12 use cases, exceeding the threshold of 9 central elements."
     },
     {
       "rule_id": "S1.2",

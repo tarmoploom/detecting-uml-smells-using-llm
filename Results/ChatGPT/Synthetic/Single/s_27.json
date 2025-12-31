@@ -19,7 +19,7 @@
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "The use case names on pages 2 and 3 appear distinct in activity intent (e.g., 'Registreeri auto', 'L\u00f5peta auto', 'Muuda autot', 'Aktiveeri auto', various 'Vaata ...' cases). There is no explicit pair of use cases that clearly describe the same activity and are shown as associated with the same actor."
+      "justification": "The use case names on pages 2 and 3 appear distinct in activity intent (e.g., 'Registreeri auto', 'Lõpeta auto', 'Muuda autot', 'Aktiveeri auto', various 'Vaata ...' cases). There is no explicit pair of use cases that clearly describe the same activity and are shown as associated with the same actor."
     },
     {
       "rule_id": "G6.2",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case naming on both use case diagrams is consistent in form: the visible use case names on pages 2 and 3 start with active verbs in Estonian such as 'Tuvasta', 'Vaata', 'Registreeri', 'L\u00f5peta', 'Muuda', 'Aktiveeri', 'Unusta'."
+      "justification": "Use case naming on both use case diagrams is consistent in form: the visible use case names on pages 2 and 3 start with active verbs in Estonian such as 'Tuvasta', 'Vaata', 'Registreeri', 'Lõpeta', 'Muuda', 'Aktiveeri', 'Unusta'."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "The state diagram on page 9 shows states 'Ootel', 'Aktiivne', 'Mitteaktiivne', 'L\u00f5petatud', and 'Unustatud' with visible transitions from the initial node and between states. No state is explicitly shown as unreachable."
+      "justification": "The state diagram on page 9 shows states 'Ootel', 'Aktiivne', 'Mitteaktiivne', 'Lõpetatud', and 'Unustatud' with visible transitions from the initial node and between states. No state is explicitly shown as unreachable."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "The activity diagram on page 4 shows a coherent flow from start to actions such as 'Vaata k\u00f5iki autosid, mida saab l\u00f5petada', optional 'Otsi autot', 'Vali auto', and 'L\u00f5peta valitud auto' with decision paths. No action is explicitly isolated or unreachable."
+      "justification": "The activity diagram on page 4 shows a coherent flow from start to actions such as 'Vaata kõiki autosid, mida saab lõpetada', optional 'Otsi autot', 'Vali auto', and 'Lõpeta valitud auto' with decision paths. No action is explicitly isolated or unreachable."
     },
     {
       "rule_id": "G15.3",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All visible use case names on pages 2 and 3, and the primary action labels on the activity diagram on page 4, start with active verbs (e.g., 'Vaata', 'Tuvasta', 'Registreeri', 'Muuda', 'Aktiveeri', 'Unusta', 'Vali', 'Otsi', 'L\u00f5peta')."
+      "justification": "All visible use case names on pages 2 and 3, and the primary action labels on the activity diagram on page 4, start with active verbs (e.g., 'Vaata', 'Tuvasta', 'Registreeri', 'Muuda', 'Aktiveeri', 'Unusta', 'Vali', 'Otsi', 'Lõpeta')."
     },
     {
       "rule_id": "N1.2",

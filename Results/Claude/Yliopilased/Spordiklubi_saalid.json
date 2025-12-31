@@ -7,25 +7,25 @@
       "rule_id": "G5.1",
       "actual": true,
       "detected": true,
-      "justification": "Page 18 'Saali eluts\u00fcklid (transformed)' contains ZERO elements - only the diagram title/frame is present with no classes, tables, or other elements inside. This is an empty diagram."
+      "justification": "Page 18 'Saali elutsüklid (transformed)' contains ZERO elements - only the diagram title/frame is present with no classes, tables, or other elements inside. This is an empty diagram."
     },
     {
       "rule_id": "G5.2",
       "actual": false,
       "detected": true,
-      "justification": "On page 2 'Saalide funktsionaalne alls\u00fcsteem', the use case 'Tuvasta kasutaja' (from L\u00e4bivad huvid) has ZERO direct actor associations. It only has \u00abinclude\u00bb relationships to/from other use cases (Vaata saalide koondaruannet, L\u00f5peta saal include it), but no actor line connects directly to this use case oval."
+      "justification": "On page 2 'Saalide funktsionaalne allsüsteem', the use case 'Tuvasta kasutaja' (from Läbivad huvid) has ZERO direct actor associations. It only has «include» relationships to/from other use cases (Vaata saalide koondaruannet, Lõpeta saal include it), but no actor line connects directly to this use case oval."
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "On page 2, all 11 use cases have unique names describing different activities: Tuvasta kasutaja, Vaata saalide koondaruannet, L\u00f5peta saal, Registreeri saal, Muuda saal, Aktiveeri saal, Muuda saal mittaktiivseks, Vaata aktiivseid saale, Vaata k\u00f5iki saale, Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid saale, Unusta saal. No duplicates found."
+      "justification": "On page 2, all 11 use cases have unique names describing different activities: Tuvasta kasutaja, Vaata saalide koondaruannet, Lõpeta saal, Registreeri saal, Muuda saal, Aktiveeri saal, Muuda saal mittaktiivseks, Vaata aktiivseid saale, Vaata kõiki saale, Vaata kõiki ootel või mitteaktiivseid saale, Unusta saal. No duplicates found."
     },
     {
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "In package diagrams (pages 1, 7, 8, 14, 15), all elements within each package have unique names. For example, in 'Klassifikaatorite register' the elements (Klassifikaator, Riik, T\u00f6\u00f6taja_roll, Saali_kategooria, Saali_t\u00fc\u00fcp) are all uniquely named."
+      "justification": "In package diagrams (pages 1, 7, 8, 14, 15), all elements within each package have unique names. For example, in 'Klassifikaatorite register' the elements (Klassifikaator, Riik, Töötaja_roll, Saali_kategooria, Saali_tüüp) are all uniquely named."
     },
     {
       "rule_id": "G6.3",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases on page 2 follow consistent verb-first naming: Tuvasta (Identify), Vaata (View), L\u00f5peta (End), Registreeri (Register), Muuda (Modify), Aktiveeri (Activate), Unusta (Forget). All 11 use cases start with active verbs in Estonian."
+      "justification": "All use cases on page 2 follow consistent verb-first naming: Tuvasta (Identify), Vaata (View), Lõpeta (End), Registreeri (Register), Muuda (Modify), Aktiveeri (Activate), Unusta (Forget). All 11 use cases start with active verbs in Estonian."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "On page 11 'Saali seisundidiagramm', all 5 states (Aktiivne, Mitteaktiivne, L\u00f5petatud, Ootel, Unustatud) plus initial state (Alg) are reachable. From Alg\u2192Ootel; from Ootel\u2192Aktiivne, Unustatud, L\u00f5petatud; from Aktiivne\u2192Mitteaktiivne, L\u00f5petatud; from Mitteaktiivne\u2192Aktiivne. Every state has at least one incoming transition."
+      "justification": "On page 11 'Saali seisundidiagramm', all 5 states (Aktiivne, Mitteaktiivne, Lõpetatud, Ootel, Unustatud) plus initial state (Alg) are reachable. From Alg→Ootel; from Ootel→Aktiivne, Unustatud, Lõpetatud; from Aktiivne→Mitteaktiivne, Lõpetatud; from Mitteaktiivne→Aktiivne. Every state has at least one incoming transition."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "On pages 3-4 activity diagrams, all actions are reachable from 'Algus' (Start). Page 3: Algus\u2192Vaata k\u00f5iki saale\u2192decision nodes\u2192Otsi saali/Vali saal\u2192L\u00f5peta valitud saal\u2192L\u00f5pp. Page 4 follows similar connected flow. No orphaned actions exist."
+      "justification": "On pages 3-4 activity diagrams, all actions are reachable from 'Algus' (Start). Page 3: Algus→Vaata kõiki saale→decision nodes→Otsi saali/Vali saal→Lõpeta valitud saal→Lõpp. Page 4 follows similar connected flow. No orphaned actions exist."
     },
     {
       "rule_id": "G15.3",
@@ -61,13 +61,13 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "Page 2 'Saalide funktsionaalne alls\u00fcsteem' contains 11 use cases (counted: 1-Tuvasta kasutaja, 2-Vaata saalide koondaruannet, 3-L\u00f5peta saal, 4-Registreeri saal, 5-Muuda saal, 6-Aktiveeri saal, 7-Muuda saal mittaktiivseks, 8-Vaata aktiivseid saale, 9-Vaata k\u00f5iki saale, 10-Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid saale, 11-Unusta saal). Threshold is \u226510. 11 \u2265 10, therefore smell IS present."
+      "justification": "Page 2 'Saalide funktsionaalne allsüsteem' contains 11 use cases (counted: 1-Tuvasta kasutaja, 2-Vaata saalide koondaruannet, 3-Lõpeta saal, 4-Registreeri saal, 5-Muuda saal, 6-Aktiveeri saal, 7-Muuda saal mittaktiivseks, 8-Vaata aktiivseid saale, 9-Vaata kõiki saale, 10-Vaata kõiki ootel või mitteaktiivseid saale, 11-Unusta saal). Threshold is ≥10. 11 ≥ 10, therefore smell IS present."
     },
     {
       "rule_id": "S1.2",
       "actual": false,
       "detected": false,
-      "justification": "On page 13 'Isikute register (transformed)', counted visual connections for Isik table: 1-to Kasutajakonto, 2-to Isiku_seisundi_liik, 3-to Riik, 4-to Tootaja, 5-to Klient = 5 lines total. This is the maximum on any diagram. Threshold is \u22656. Since 5 < 6, smell is NOT present."
+      "justification": "On page 13 'Isikute register (transformed)', counted visual connections for Isik table: 1-to Kasutajakonto, 2-to Isiku_seisundi_liik, 3-to Riik, 4-to Tootaja, 5-to Klient = 5 lines total. This is the maximum on any diagram. Threshold is ≥6. Since 5 < 6, smell is NOT present."
     },
     {
       "rule_id": "S2.1",
@@ -79,19 +79,19 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases on page 2 start with active verbs: Tuvasta (Identify), Vaata (View/Look), L\u00f5peta (End/Finish), Registreeri (Register), Muuda (Modify/Change), Aktiveeri (Activate), Unusta (Forget). Activity diagram actions also use verbs: Otsi, Vali, L\u00f5peta, Aktiveeri."
+      "justification": "All use cases on page 2 start with active verbs: Tuvasta (Identify), Vaata (View/Look), Lõpeta (End/Finish), Registreeri (Register), Muuda (Modify/Change), Aktiveeri (Activate), Unusta (Forget). Activity diagram actions also use verbs: Otsi, Vali, Lõpeta, Aktiveeri."
     },
     {
       "rule_id": "N1.2",
       "actual": false,
       "detected": false,
-      "justification": "All class, table, attribute, and use case names have 4+ characters. Shortest names found: Isik (4 chars), Saal (4 chars), Riik (4 chars). All exceed threshold of \u22643 characters. No names with 3 or fewer characters found."
+      "justification": "All class, table, attribute, and use case names have 4+ characters. Shortest names found: Isik (4 chars), Saal (4 chars), Riik (4 chars). All exceed threshold of ≤3 characters. No names with 3 or fewer characters found."
     },
     {
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All class names start with uppercase and are singular: Isik, Kasutajakonto, T\u00f6\u00f6taja, Klient, Saal, Klassifikaator, Riik, etc. No lowercase-starting or plural class names found."
+      "justification": "All class names start with uppercase and are singular: Isik, Kasutajakonto, Töötaja, Klient, Saal, Klassifikaator, Riik, etc. No lowercase-starting or plural class names found."
     },
     {
       "rule_id": "N3.2",

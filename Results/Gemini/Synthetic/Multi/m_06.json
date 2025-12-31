@@ -37,7 +37,7 @@
       "rule_id": "G8.1",
       "actual": true,
       "detected": true,
-      "justification": "Inconsistent naming is present in the Use Case diagram (Page 2). The use case 'Aktiivsed autod' (Active cars) uses a Noun phrase, while others like 'Tuvasta kasutaja' (Identify user) and 'Vaata k\u00f5iki autosid' (View all cars) use Verb phrases."
+      "justification": "Inconsistent naming is present in the Use Case diagram (Page 2). The use case 'Aktiivsed autod' (Active cars) uses a Noun phrase, while others like 'Tuvasta kasutaja' (Identify user) and 'Vaata kõiki autosid' (View all cars) use Verb phrases."
     },
     {
       "rule_id": "G15.1",
@@ -67,7 +67,7 @@
       "rule_id": "S1.2",
       "actual": false,
       "detected": false,
-      "justification": "No single class or table has 6 or more visual connections on a single diagram. The class 'Isik' on Page 6 has 5 connections (Kasutajakonto, Riik, Isiku_seisundi_liik, T\u00f6\u00f6taja, Klient), which is below the threshold."
+      "justification": "No single class or table has 6 or more visual connections on a single diagram. The class 'Isik' on Page 6 has 5 connections (Kasutajakonto, Riik, Isiku_seisundi_liik, Töötaja, Klient), which is below the threshold."
     },
     {
       "rule_id": "S2.1",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Class names obey the convention (Capitalized, Singular). Examples: 'Isik', 'Auto', 'T\u00f6\u00f6taja'."
+      "justification": "Class names obey the convention (Capitalized, Singular). Examples: 'Isik', 'Auto', 'Töötaja'."
     },
     {
       "rule_id": "N3.2",

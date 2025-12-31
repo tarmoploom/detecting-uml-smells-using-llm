@@ -13,19 +13,19 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "The only clear use case diagram, 'Kaupade halduse funktsionaalne alls\u00fcsteem', shows multiple actors around the system boundary and all listed use cases are placed inside the system with connector lines indicated in the diagram; the text extraction does not clearly reveal any use case oval that is completely unassociated with all actors, so no explicit violation can be confirmed. "
+      "justification": "The only clear use case diagram, 'Kaupade halduse funktsionaalne allsüsteem', shows multiple actors around the system boundary and all listed use cases are placed inside the system with connector lines indicated in the diagram; the text extraction does not clearly reveal any use case oval that is completely unassociated with all actors, so no explicit violation can be confirmed. "
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "In the use case diagram 'Kaupade halduse funktsionaalne alls\u00fcsteem', the use case names (e.g., 'Registreeri kaup', 'L\u00f5peta kaup', 'Unusta kaup', 'Vaata aktiivseid kaupu', 'Vaata k\u00f5iki kaupu') describe distinct system activities rather than duplicate descriptions of the same activity for the same actor, so no pair of synonymous use cases with the same actor can be clearly identified. "
+      "justification": "In the use case diagram 'Kaupade halduse funktsionaalne allsüsteem', the use case names (e.g., 'Registreeri kaup', 'Lõpeta kaup', 'Unusta kaup', 'Vaata aktiivseid kaupu', 'Vaata kõiki kaupu') describe distinct system activities rather than duplicate descriptions of the same activity for the same actor, so no pair of synonymous use cases with the same actor can be clearly identified. "
     },
     {
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "The package diagram 'Kaupade FASiga seotud p\u00e4devusalad ja registrid' shows packages such as 'Kaupade funktsionaalne alls\u00fcsteem', 'Isikute register', 'Kaupade register', 'Klassifikaatorite register', etc., all with unique primary names inside the package; no package contains multiple elements with the same primary element name. "
+      "justification": "The package diagram 'Kaupade FASiga seotud pädevusalad ja registrid' shows packages such as 'Kaupade funktsionaalne allsüsteem', 'Isikute register', 'Kaupade register', 'Klassifikaatorite register', etc., all with unique primary names inside the package; no package contains multiple elements with the same primary element name. "
     },
     {
       "rule_id": "G6.3",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use case names in the diagram 'Kaupade halduse funktsionaalne alls\u00fcsteem' follow the same imperative-verb form, such as 'Tuvasta kasutaja', 'Vaata kaupade koondaruannet', 'Registreeri kaup', 'L\u00f5peta kaup', 'Muuda kaupa', 'Aktiveeri kaup', 'Unusta kaup', so there is no inconsistency between verb-starting and noun-starting names. "
+      "justification": "All use case names in the diagram 'Kaupade halduse funktsionaalne allsüsteem' follow the same imperative-verb form, such as 'Tuvasta kasutaja', 'Vaata kaupade koondaruannet', 'Registreeri kaup', 'Lõpeta kaup', 'Muuda kaupa', 'Aktiveeri kaup', 'Unusta kaup', so there is no inconsistency between verb-starting and noun-starting names. "
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the state diagram 'Kauba seisundidiagramm', each named state such as 'Ootel', 'Aktiivne', 'Mitteaktiivne', 'L\u00f5petatud' and 'Unustatud' is connected by transitions, and there is a visible path from the initial node 'Alg' through intermediate states; the diagram does not show any state that is clearly isolated with no incoming path from the initial state. "
+      "justification": "In the state diagram 'Kauba seisundidiagramm', each named state such as 'Ootel', 'Aktiivne', 'Mitteaktiivne', 'Lõpetatud' and 'Unustatud' is connected by transitions, and there is a visible path from the initial node 'Alg' through intermediate states; the diagram does not show any state that is clearly isolated with no incoming path from the initial state. "
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "In the activity diagram 'Kauba l\u00f5petamise tegevusdiagramm', all actions such as 'Vaata k\u00f5iki kaupu, mida saab l\u00f5petada', 'Otsi kaupa (koodi, nime, seisundi p\u00f5hjal)', 'Vali kaup' and 'L\u00f5peta valitud kaubad' are connected in a flow originating from the initial node and leading towards the final node; there are no actions that are clearly unreachable. "
+      "justification": "In the activity diagram 'Kauba lõpetamise tegevusdiagramm', all actions such as 'Vaata kõiki kaupu, mida saab lõpetada', 'Otsi kaupa (koodi, nime, seisundi põhjal)', 'Vali kaup' and 'Lõpeta valitud kaubad' are connected in a flow originating from the initial node and leading towards the final node; there are no actions that are clearly unreachable. "
     },
     {
       "rule_id": "G15.3",
@@ -61,13 +61,13 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "Several diagrams display 10 or more central elements: for example, the class diagram 'Klassifikaatorite register' shows at least 12 classifier classes (Klassifikaator, Riik, T\u00f6\u00f6taja_roll, Kauba_kategooria, Kauba_kategooria_t\u00fc\u00fcp, Br\u00e4nd, Ekraani_resolutsioon, Diagonaal, Protsessor, Sisem\u00e4lu, V\u00e4rv, Kaamera); the class diagram 'Kaupade register' contains the main class Kaup plus Nutitelefon, Kauba_variant, Kauba_kategooria_omamine, multiple classifier classes and related elements exceeding 10; and the database diagram 'Klassifikaatorite register (transformed)' contains more than 10 tables such as Kauba_kategooria_tyyp, Tootaja_roll, Brand, Diagonaal, Ekraani_resolutsioon, Isiku_seisundi_liik, Kauba_kategooria, Kauba_seisundi_liik, Kliendi_seisundi_liik, Protsessor, Riik, Sisemalu, Kaamera, Tootaja_seisundi_liik and Varv. "
+      "justification": "Several diagrams display 10 or more central elements: for example, the class diagram 'Klassifikaatorite register' shows at least 12 classifier classes (Klassifikaator, Riik, Töötaja_roll, Kauba_kategooria, Kauba_kategooria_tüüp, Bränd, Ekraani_resolutsioon, Diagonaal, Protsessor, Sisemälu, Värv, Kaamera); the class diagram 'Kaupade register' contains the main class Kaup plus Nutitelefon, Kauba_variant, Kauba_kategooria_omamine, multiple classifier classes and related elements exceeding 10; and the database diagram 'Klassifikaatorite register (transformed)' contains more than 10 tables such as Kauba_kategooria_tyyp, Tootaja_roll, Brand, Diagonaal, Ekraani_resolutsioon, Isiku_seisundi_liik, Kauba_kategooria, Kauba_seisundi_liik, Kliendi_seisundi_liik, Protsessor, Riik, Sisemalu, Kaamera, Tootaja_seisundi_liik and Varv. "
     },
     {
       "rule_id": "S1.2",
       "actual": true,
       "detected": true,
-      "justification": "In the class diagram 'Kaupade register', the class 'Kaup' is centrally placed and has numerous distinct relationship lines to other classes, including at least Kauba_seisundi_liik, Kauba_kategooria_omamine, Kauba_variant, Nutitelefon, Br\u00e4nd, and several classifier classes (e.g., Ekraani_resolutsioon, Diagonaal, Protsessor, Sisem\u00e4lu, V\u00e4rv, Kaamera), resulting in more than six visible connectors from this single class on that diagram. "
+      "justification": "In the class diagram 'Kaupade register', the class 'Kaup' is centrally placed and has numerous distinct relationship lines to other classes, including at least Kauba_seisundi_liik, Kauba_kategooria_omamine, Kauba_variant, Nutitelefon, Bränd, and several classifier classes (e.g., Ekraani_resolutsioon, Diagonaal, Protsessor, Sisemälu, Värv, Kaamera), resulting in more than six visible connectors from this single class on that diagram. "
     },
     {
       "rule_id": "S2.1",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All use case names (e.g., 'Tuvasta kasutaja', 'Registreeri kaup', 'Muuda kaup mittaktiivseks', 'Unusta kaup') and activity actions (e.g., 'Vaata k\u00f5iki kaupu, mida saab l\u00f5petada', 'Otsi kaupa (koodi, nime, seisundi p\u00f5hjal)', 'Vali kaup', 'L\u00f5peta valitud kaubad') begin with active verbs, while decision node labels starting with 'Kas ...' are not actions, so there is no use case or action name that clearly fails to start with an active verb. "
+      "justification": "All use case names (e.g., 'Tuvasta kasutaja', 'Registreeri kaup', 'Muuda kaup mittaktiivseks', 'Unusta kaup') and activity actions (e.g., 'Vaata kõiki kaupu, mida saab lõpetada', 'Otsi kaupa (koodi, nime, seisundi põhjal)', 'Vali kaup', 'Lõpeta valitud kaubad') begin with active verbs, while decision node labels starting with 'Kas ...' are not actions, so there is no use case or action name that clearly fails to start with an active verb. "
     },
     {
       "rule_id": "N1.2",
@@ -97,7 +97,7 @@
       "rule_id": "N3.2",
       "actual": true,
       "detected": true,
-      "justification": "In the database diagram 'T\u00f6\u00f6tajate register (transformed)', the column '*FK Tootaja_seisundi_liik_kood: Integer = 1' in table 'Tootaja' has a name beginning with an uppercase letter 'T', which violates the rule that attribute or column names should not start with an uppercase letter; most other columns such as 'tootaja_seisundi_liik_kood' in the classifier table and 'isik_id' use lowercase, highlighting this inconsistency. "
+      "justification": "In the database diagram 'Töötajate register (transformed)', the column '*FK Tootaja_seisundi_liik_kood: Integer = 1' in table 'Tootaja' has a name beginning with an uppercase letter 'T', which violates the rule that attribute or column names should not start with an uppercase letter; most other columns such as 'tootaja_seisundi_liik_kood' in the classifier table and 'isik_id' use lowercase, highlighting this inconsistency. "
     },
     {
       "rule_id": "N3.3",

@@ -7,13 +7,13 @@
       "rule_id": "G5.1",
       "actual": false,
       "detected": false,
-      "justification": "Every page labeled as a diagram (pages 1\u201318) contains visible elements such as packages, use cases, actions, classes, tables, or states; there are no empty diagrams. "
+      "justification": "Every page labeled as a diagram (pages 1–18) contains visible elements such as packages, use cases, actions, classes, tables, or states; there are no empty diagrams. "
     },
     {
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "There is one clear use case diagram, 'Kasvuhoonete funktsionaalne alls\u00fcsteem' (page 2), but in the available content no use case is explicitly shown as unconnected to all actors; there is no unambiguous evidence of a use case without any actor association, so this smell cannot be confirmed. "
+      "justification": "There is one clear use case diagram, 'Kasvuhoonete funktsionaalne allsüsteem' (page 2), but in the available content no use case is explicitly shown as unconnected to all actors; there is no unambiguous evidence of a use case without any actor association, so this smell cannot be confirmed. "
     },
     {
       "rule_id": "G6.1",
@@ -31,37 +31,37 @@
       "rule_id": "G6.3",
       "actual": false,
       "detected": false,
-      "justification": "In the database diagrams (pages 13\u201318), repeated column names like 'nimetus', 'on_aktiivne' or IDs appear in different classification tables but correspond to different code domains and are connected through explicit foreign keys; no clear case of the same data value stored redundantly in multiple tables without a foreign key is visible. "
+      "justification": "In the database diagrams (pages 13–18), repeated column names like 'nimetus', 'on_aktiivne' or IDs appear in different classification tables but correspond to different code domains and are connected through explicit foreign keys; no clear case of the same data value stored redundantly in multiple tables without a foreign key is visible. "
     },
     {
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use case names on the use case diagram (page 2) follow a consistent verb-first form such as 'Tuvasta kasutaja', 'Registreeri kasvuhoone', 'Vaata k\u00f5iki kasvuhooneid', so there is no inconsistency of using verb vs noun forms in use case naming. "
+      "justification": "All use case names on the use case diagram (page 2) follow a consistent verb-first form such as 'Tuvasta kasutaja', 'Registreeri kasvuhoone', 'Vaata kõiki kasvuhooneid', so there is no inconsistency of using verb vs noun forms in use case naming. "
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the state diagram 'Kasvuhoone seisundidiagramm' (page 11), each state (Ootel, Aktiivne, Mitteaktiivne, L\u00f5petatud, Unustatud) has incoming transitions from the initial state or from another reachable state; no state appears isolated or unreachable from the initial pseudostate. "
+      "justification": "In the state diagram 'Kasvuhoone seisundidiagramm' (page 11), each state (Ootel, Aktiivne, Mitteaktiivne, Lõpetatud, Unustatud) has incoming transitions from the initial state or from another reachable state; no state appears isolated or unreachable from the initial pseudostate. "
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "Both activity diagrams ('Kasvuhoone l\u00f5petamise tegevusdiagramm' on page 3 and 'Kasvuhoone aktiveerimise tegevusdiagramm' on page 4) show actions embedded in the main flow or in clearly labeled branches (e.g., 'Vaata k\u00f5iki kasvuhooneid, mida saab l\u00f5petada', 'Otsi kasvuhoone', 'Vali kasvuhoone'); no action is presented as a disconnected or standalone node, so no unreachable action can be confirmed. "
+      "justification": "Both activity diagrams ('Kasvuhoone lõpetamise tegevusdiagramm' on page 3 and 'Kasvuhoone aktiveerimise tegevusdiagramm' on page 4) show actions embedded in the main flow or in clearly labeled branches (e.g., 'Vaata kõiki kasvuhooneid, mida saab lõpetada', 'Otsi kasvuhoone', 'Vali kasvuhoone'); no action is presented as a disconnected or standalone node, so no unreachable action can be confirmed. "
     },
     {
       "rule_id": "G15.3",
       "actual": false,
       "detected": false,
-      "justification": "All associations in the conceptual class diagrams (pages 5\u201312) either show explicit multiplicity labels (such as '1', '0..*') near the association name or are generalization/classifier-type links; database diagrams (pages 13\u201318) use foreign key connectors, which are exempt. There is no clear UML-style association between two elements that completely lacks multiplicities at both ends. "
+      "justification": "All associations in the conceptual class diagrams (pages 5–12) either show explicit multiplicity labels (such as '1', '0..*') near the association name or are generalization/classifier-type links; database diagrams (pages 13–18) use foreign key connectors, which are exempt. There is no clear UML-style association between two elements that completely lacks multiplicities at both ends. "
     },
     {
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The use case diagram 'Kasvuhoonete funktsionaalne alls\u00fcsteem' (page 2) contains at least 11 distinct use cases (e.g., 'Tuvasta kasutaja', 'Registreeri kasvuhoone', 'Unusta kasvuhoone', multiple 'Vaata ...' variants), exceeding the threshold of 10 central elements in a single diagram. "
+      "justification": "The use case diagram 'Kasvuhoonete funktsionaalne allsüsteem' (page 2) contains at least 11 distinct use cases (e.g., 'Tuvasta kasutaja', 'Registreeri kasvuhoone', 'Unusta kasvuhoone', multiple 'Vaata ...' variants), exceeding the threshold of 10 central elements in a single diagram. "
     },
     {
       "rule_id": "S1.2",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": true,
       "detected": true,
-      "justification": "Most activity actions and all use cases start with an active verb (e.g., 'Vaata ...', 'Otsi ...', 'L\u00f5peta ...'), but in the activation activity diagram (page 4) there is an action labeled 'Kasutaja n\u00e4eb eba\u00f5nnestumist', which begins with the noun 'Kasutaja' rather than a verb, violating the verb-first naming rule for actions. "
+      "justification": "Most activity actions and all use cases start with an active verb (e.g., 'Vaata ...', 'Otsi ...', 'Lõpeta ...'), but in the activation activity diagram (page 4) there is an action labeled 'Kasutaja näeb ebaõnnestumist', which begins with the noun 'Kasutaja' rather than a verb, violating the verb-first naming rule for actions. "
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Entity class and table names for domain objects (e.g., 'Isik', 'T\u00f6\u00f6taja', 'Kasv uhoone', 'Klient') all start with an uppercase letter and are singular; plural forms like 'Isikute register' and 'Klassifikaatorite register' denote register/collection structures and are excluded by the interpretation rules. "
+      "justification": "Entity class and table names for domain objects (e.g., 'Isik', 'Töötaja', 'Kasv uhoone', 'Klient') all start with an uppercase letter and are singular; plural forms like 'Isikute register' and 'Klassifikaatorite register' denote register/collection structures and are excluded by the interpretation rules. "
     },
     {
       "rule_id": "N3.2",

@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": true,
-      "justification": "On page 2 (Use case diagram 'Peoruumide funktsionaalne allsusteem'), the use case 'Tuvasta kasutaja' (visual oval element) has ZERO direct actor associations. It is only connected via \u00abinclude\u00bb relationships from other use cases, but has no direct line to any actor. All other use cases on this diagram have direct actor associations."
+      "justification": "On page 2 (Use case diagram 'Peoruumide funktsionaalne allsusteem'), the use case 'Tuvasta kasutaja' (visual oval element) has ZERO direct actor associations. It is only connected via «include» relationships from other use cases, but has no direct line to any actor. All other use cases on this diagram have direct actor associations."
     },
     {
       "rule_id": "G6.1",
@@ -61,13 +61,13 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "Detected on two diagrams: (1) Page 2 'Peoruumide funktsionaalne allsusteem' contains 11 use cases (Tuvasta kasutaja, Vaata peoruumide koondaruannet, Lopeta peoruum, Registreeri peoruum, Muuda peoruum, Aktiveeri peoruum, Muuda peoruum mittaktiivseks, Vaata aktiivseid peoruume, Vaata koiki peoruume, Vaata koiki ootel voi mitteaktiivseid peoruume, Unusta peoruum = 11 total). Threshold is \u226510. 11 \u2265 10, therefore smell IS present. (2) Page 7 'Klassifikaatorite register' contains 10 classes (Klassifikaator, Riik, Peoruumi_seisundi_liik, Tootaja_seisundi_liik, Isiku_seisundi_liik, Peoruumi_kategooria_tuup, Tootaja_roll, Peoruumi_kategooria, Kliendi_seisundi_liik, Peoruumi_stiil = 10 total). Threshold is \u226510. 10 \u2265 10, therefore smell IS present."
+      "justification": "Detected on two diagrams: (1) Page 2 'Peoruumide funktsionaalne allsusteem' contains 11 use cases (Tuvasta kasutaja, Vaata peoruumide koondaruannet, Lopeta peoruum, Registreeri peoruum, Muuda peoruum, Aktiveeri peoruum, Muuda peoruum mittaktiivseks, Vaata aktiivseid peoruume, Vaata koiki peoruume, Vaata koiki ootel voi mitteaktiivseid peoruume, Unusta peoruum = 11 total). Threshold is ≥10. 11 ≥ 10, therefore smell IS present. (2) Page 7 'Klassifikaatorite register' contains 10 classes (Klassifikaator, Riik, Peoruumi_seisundi_liik, Tootaja_seisundi_liik, Isiku_seisundi_liik, Peoruumi_kategooria_tuup, Tootaja_roll, Peoruumi_kategooria, Kliendi_seisundi_liik, Peoruumi_stiil = 10 total). Threshold is ≥10. 10 ≥ 10, therefore smell IS present."
     },
     {
       "rule_id": "S1.2",
       "actual": false,
       "detected": true,
-      "justification": "Detected on two diagrams: (1) Page 7 'Klassifikaatorite register': Klassifikaator has 9 visual inheritance lines to subtypes (Riik, Peoruumi_seisundi_liik, Tootaja_seisundi_liik, Isiku_seisundi_liik, Peoruumi_kategooria_tuup, Tootaja_roll, Peoruumi_kategooria, Kliendi_seisundi_liik, Peoruumi_stiil). Threshold is \u22656. 9 \u2265 6, therefore smell IS present. (2) Page 12 'Isikute register' (dm): Isik table has 6 visual FK connection lines (to Isiku_seisundi_liik, to Riik, from Kasutajakonto, from Tootaja via FK_Tootaja_Isik, from Tootaja via FK_Tootaja_mentor, from Klient). Threshold is \u22656. 6 \u2265 6, therefore smell IS present."
+      "justification": "Detected on two diagrams: (1) Page 7 'Klassifikaatorite register': Klassifikaator has 9 visual inheritance lines to subtypes (Riik, Peoruumi_seisundi_liik, Tootaja_seisundi_liik, Isiku_seisundi_liik, Peoruumi_kategooria_tuup, Tootaja_roll, Peoruumi_kategooria, Kliendi_seisundi_liik, Peoruumi_stiil). Threshold is ≥6. 9 ≥ 6, therefore smell IS present. (2) Page 12 'Isikute register' (dm): Isik table has 6 visual FK connection lines (to Isiku_seisundi_liik, to Riik, from Kasutajakonto, from Tootaja via FK_Tootaja_Isik, from Tootaja via FK_Tootaja_mentor, from Klient). Threshold is ≥6. 6 ≥ 6, therefore smell IS present."
     },
     {
       "rule_id": "S2.1",
@@ -85,7 +85,7 @@
       "rule_id": "N1.2",
       "actual": false,
       "detected": false,
-      "justification": "All class, table, attribute, and use case names have 4 or more characters. Shortest names found: 'Isik' (4 chars), 'Riik' (4 chars), 'nimi' (4 chars), 'kood' (4 chars). Threshold is \u22643 characters. All names have \u22654 characters, therefore smell is NOT present."
+      "justification": "All class, table, attribute, and use case names have 4 or more characters. Shortest names found: 'Isik' (4 chars), 'Riik' (4 chars), 'nimi' (4 chars), 'kood' (4 chars). Threshold is ≤3 characters. All names have ≥4 characters, therefore smell is NOT present."
     },
     {
       "rule_id": "N3.1",

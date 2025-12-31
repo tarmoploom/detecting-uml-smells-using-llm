@@ -25,7 +25,7 @@
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "No package diagram is shown with clearly duplicated primary element names in the same package. Repeated classifier-type text such as 'Klassifikaatori t\u00fc\u00fcp' on pages 8-9 appears to be tool-generated metadata and is not counted as separate model elements."
+      "justification": "No package diagram is shown with clearly duplicated primary element names in the same package. Repeated classifier-type text such as 'Klassifikaatori tüüp' on pages 8-9 appears to be tool-generated metadata and is not counted as separate model elements."
     },
     {
       "rule_id": "G6.3",
@@ -43,7 +43,7 @@
       "rule_id": "G15.1",
       "actual": true,
       "detected": false,
-      "justification": "The state diagram on page 10 shows multiple states (e.g., Aktiivne, Mitteaktiivne, L\u00f5petatud, Ootel, Unustatud), but the PDF text and small embedded image do not make any unreachable state explicitly obvious."
+      "justification": "The state diagram on page 10 shows multiple states (e.g., Aktiivne, Mitteaktiivne, Lõpetatud, Ootel, Unustatud), but the PDF text and small embedded image do not make any unreachable state explicitly obvious."
     },
     {
       "rule_id": "G15.2",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "Visible use case names on pages 3-4 start with active verbs. Visible activity actions on page 5 also appear to start with verbs (e.g., 'Vaata', 'Otsi', 'Vali', 'L\u00f5peta'), so no clear violation is shown."
+      "justification": "Visible use case names on pages 3-4 start with active verbs. Visible activity actions on page 5 also appear to start with verbs (e.g., 'Vaata', 'Otsi', 'Vali', 'Lõpeta'), so no clear violation is shown."
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "No individual entity class name is clearly shown starting with a lowercase letter or as an inappropriate plural. Plural register-style titles (e.g., Isikute register, T\u00f6\u00f6tajate register) are not treated as singular domain object class names under the interpretation rules."
+      "justification": "No individual entity class name is clearly shown starting with a lowercase letter or as an inappropriate plural. Plural register-style titles (e.g., Isikute register, Töötajate register) are not treated as singular domain object class names under the interpretation rules."
     },
     {
       "rule_id": "N3.2",

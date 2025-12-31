@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "All use cases in the 'Kaupade halduse funktsionaalne alls\u00fcsteem' diagram (Page 2) are connected to at least one actor (e.g., 'Tuvasta kasutaja' to 'Klient' and 'Uudistaja', 'L\u00f5peta kaup' to 'Juhataja', etc.)."
+      "justification": "All use cases in the 'Kaupade halduse funktsionaalne allsüsteem' diagram (Page 2) are connected to at least one actor (e.g., 'Tuvasta kasutaja' to 'Klient' and 'Uudistaja', 'Lõpeta kaup' to 'Juhataja', etc.)."
     },
     {
       "rule_id": "G6.1",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case naming is consistent. All use cases start with an imperative verb (e.g., 'Tuvasta', 'Vaata', 'L\u00f5peta', 'Registreeri', 'Muuda')."
+      "justification": "Use case naming is consistent. All use cases start with an imperative verb (e.g., 'Tuvasta', 'Vaata', 'Lõpeta', 'Registreeri', 'Muuda')."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the 'Kauba seisundidiagramm' (Page 8), all states ('Ootel', 'Aktiivne', 'Mitteaktiivne', 'Unustatud', 'L\u00f5petatud') are reachable via transitions starting from the initial state 'Alg'."
+      "justification": "In the 'Kauba seisundidiagramm' (Page 8), all states ('Ootel', 'Aktiivne', 'Mitteaktiivne', 'Unustatud', 'Lõpetatud') are reachable via transitions starting from the initial state 'Alg'."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "In the 'Kauba l\u00f5petamise tegevusdiagramm' (Page 3), all actions (e.g., 'Otsi kaupa', 'Vali kaup') are reachable through the defined decision flows."
+      "justification": "In the 'Kauba lõpetamise tegevusdiagramm' (Page 3), all actions (e.g., 'Otsi kaupa', 'Vali kaup') are reachable through the defined decision flows."
     },
     {
       "rule_id": "G15.3",
@@ -61,7 +61,7 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "Several diagrams exceed the limit of 10 central elements: \n1. 'Kaupade halduse funktsionaalne alls\u00fcsteem' (Page 2) contains 11 Use Cases.\n2. 'Klassifikaatorite register' (Page 6) contains 12 Classes.\n3. 'Kaupade register' (Page 10) contains 16 Classes.\n4. 'Klassifikaatorite register (transformed)' (Page 12) contains 15 Tables."
+      "justification": "Several diagrams exceed the limit of 10 central elements: \n1. 'Kaupade halduse funktsionaalne allsüsteem' (Page 2) contains 11 Use Cases.\n2. 'Klassifikaatorite register' (Page 6) contains 12 Classes.\n3. 'Kaupade register' (Page 10) contains 16 Classes.\n4. 'Klassifikaatorite register (transformed)' (Page 12) contains 15 Tables."
     },
     {
       "rule_id": "S1.2",

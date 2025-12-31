@@ -37,7 +37,7 @@
       "rule_id": "G8.1",
       "actual": true,
       "detected": true,
-      "justification": "Inconsistent naming forms are used for use cases. On the 'Autode funktsionaalne alls\u00fcsteem (Vaata & Tuvasta)' diagram (Page 2), use cases like 'Aktiivsed autod' and 'K\u00f5ik autod' use Noun phrases, while 'Tuvasta kasutaja' uses a Verb phrase. The 'Muuda' diagram (Page 3) uses Verb phrases ('Registreeri auto')."
+      "justification": "Inconsistent naming forms are used for use cases. On the 'Autode funktsionaalne allsüsteem (Vaata & Tuvasta)' diagram (Page 2), use cases like 'Aktiivsed autod' and 'Kõik autod' use Noun phrases, while 'Tuvasta kasutaja' uses a Verb phrase. The 'Muuda' diagram (Page 3) uses Verb phrases ('Registreeri auto')."
     },
     {
       "rule_id": "G15.1",
@@ -49,7 +49,7 @@
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "All actions in the 'Auto l\u00f5petamise tegevusdiagramm' (Page 4) are reachable through the decision paths defined."
+      "justification": "All actions in the 'Auto lõpetamise tegevusdiagramm' (Page 4) are reachable through the decision paths defined."
     },
     {
       "rule_id": "G15.3",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": true,
       "detected": true,
-      "justification": "On the 'Autode funktsionaalne alls\u00fcsteem (Vaata & Tuvasta)' diagram (Page 2), several use cases do not start with an active verb: 'Aktiivsed autod', 'K\u00f5ik autod', and 'Autode koondaruanne'."
+      "justification": "On the 'Autode funktsionaalne allsüsteem (Vaata & Tuvasta)' diagram (Page 2), several use cases do not start with an active verb: 'Aktiivsed autod', 'Kõik autod', and 'Autode koondaruanne'."
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Class names obey the convention (Singular and Capitalized, e.g., 'Isik', 'Auto', 'T\u00f6\u00f6taja')."
+      "justification": "Class names obey the convention (Singular and Capitalized, e.g., 'Isik', 'Auto', 'Töötaja')."
     },
     {
       "rule_id": "N3.2",
@@ -103,7 +103,7 @@
       "rule_id": "N3.3",
       "actual": true,
       "detected": true,
-      "justification": "On the 'Autode register (Klassifikaator)' database diagram (Page 17) and 'Autode register (T\u00f6\u00f6taja)' (Page 18), the table name 'Autod' is plural, whereas other tables are singular (e.g., 'Tootaja', 'Klient')."
+      "justification": "On the 'Autode register (Klassifikaator)' database diagram (Page 17) and 'Autode register (Töötaja)' (Page 18), the table name 'Autod' is plural, whereas other tables are singular (e.g., 'Tootaja', 'Klient')."
     },
     {
       "rule_id": "N4.1",

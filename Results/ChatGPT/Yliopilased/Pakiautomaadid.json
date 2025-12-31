@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": true,
-      "justification": "On the use-case diagram 'Pakiautomaatide funktsionaalne alls\u00fcsteem' (page 2), the use case 'Tuvasta kasutaja' appears as an oval connected only via \u00abinclude\u00bb relationships from other use cases and has no visible association line to any actor, so there is at least one use case not associated with any actor. "
+      "justification": "On the use-case diagram 'Pakiautomaatide funktsionaalne allsüsteem' (page 2), the use case 'Tuvasta kasutaja' appears as an oval connected only via «include» relationships from other use cases and has no visible association line to any actor, so there is at least one use case not associated with any actor. "
     },
     {
       "rule_id": "G6.1",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use-case names in the use-case diagram start with an imperative or active verb phrase such as 'Vaata', 'L\u00f5peta', 'Registreeri', 'Muuda', 'Aktiveeri', 'Unusta', and 'Tuvasta', so the naming form is consistent and there is no mix of verb-based and noun-based formulations. "
+      "justification": "All use-case names in the use-case diagram start with an imperative or active verb phrase such as 'Vaata', 'Lõpeta', 'Registreeri', 'Muuda', 'Aktiveeri', 'Unusta', and 'Tuvasta', so the naming form is consistent and there is no mix of verb-based and noun-based formulations. "
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the state diagram 'Pakiautomaatide seisundidiagramm' (page 11), each state (Ootel, Aktiivne, Mitteaktiivne, L\u00f5petatud, Unustatud) has at least one incoming transition that can be reached from the initial pseudostate via some sequence of transitions (e.g., initial -> Ootel -> Aktiivne -> Mitteaktiivne, or Ootel -> Unustatud, or Aktiivne -> L\u00f5petatud), so no state is unreachable. "
+      "justification": "In the state diagram 'Pakiautomaatide seisundidiagramm' (page 11), each state (Ootel, Aktiivne, Mitteaktiivne, Lõpetatud, Unustatud) has at least one incoming transition that can be reached from the initial pseudostate via some sequence of transitions (e.g., initial -> Ootel -> Aktiivne -> Mitteaktiivne, or Ootel -> Unustatud, or Aktiivne -> Lõpetatud), so no state is unreachable. "
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "In both activity diagrams (pages 3 and 4), every action node (such as 'Vaata k\u00f5iki pakiautomaate, mida saab l\u00f5petada', 'Otsi pakiautomaati', 'Vali pakiautomaat', 'L\u00f5peta valitud pakiautomaat', 'Aktiveeri valitud pakiautomaat', 'N\u00e4eb eba\u00f5nnestumist', 'N\u00e4eb \u00f5nnestumist') participates in flows that connect from the initial node to the final node; there are no isolated actions without a path from the start. "
+      "justification": "In both activity diagrams (pages 3 and 4), every action node (such as 'Vaata kõiki pakiautomaate, mida saab lõpetada', 'Otsi pakiautomaati', 'Vali pakiautomaat', 'Lõpeta valitud pakiautomaat', 'Aktiveeri valitud pakiautomaat', 'Näeb ebaõnnestumist', 'Näeb õnnestumist') participates in flows that connect from the initial node to the final node; there are no isolated actions without a path from the start. "
     },
     {
       "rule_id": "G15.3",
@@ -61,13 +61,13 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The use-case diagram 'Pakiautomaatide funktsionaalne alls\u00fcsteem' (page 2) displays at least 11 distinct use cases (various 'Vaata ...', 'Registreeri pakiautomaat', 'Aktiveeri pakiautomaat', 'Muuda ...', 'Unusta pakiautomaat', 'Tuvasta kasutaja'), exceeding the threshold of 10 central elements in a single diagram; other diagrams have fewer than 10 central elements. "
+      "justification": "The use-case diagram 'Pakiautomaatide funktsionaalne allsüsteem' (page 2) displays at least 11 distinct use cases (various 'Vaata ...', 'Registreeri pakiautomaat', 'Aktiveeri pakiautomaat', 'Muuda ...', 'Unusta pakiautomaat', 'Tuvasta kasutaja'), exceeding the threshold of 10 central elements in a single diagram; other diagrams have fewer than 10 central elements. "
     },
     {
       "rule_id": "S1.2",
       "actual": false,
       "detected": false,
-      "justification": "In the class and database diagrams, no single class or table has 6 or more distinct relationship lines; for example, central entities like 'Isik' and 'Pakiautomaat' have at most about 4\u20135 visible connectors to other classes/tables in any single diagram, staying below the threshold. "
+      "justification": "In the class and database diagrams, no single class or table has 6 or more distinct relationship lines; for example, central entities like 'Isik' and 'Pakiautomaat' have at most about 4–5 visible connectors to other classes/tables in any single diagram, staying below the threshold. "
     },
     {
       "rule_id": "S2.1",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All use-case names and activity actions begin with an active verb (e.g., 'Vaata', 'Otsi', 'Vali', 'L\u00f5peta', 'Aktiveeri', 'Unusta', 'Tuvasta', 'N\u00e4eb'), so there are no use cases or actions whose names fail to start with an active verb. "
+      "justification": "All use-case names and activity actions begin with an active verb (e.g., 'Vaata', 'Otsi', 'Vali', 'Lõpeta', 'Aktiveeri', 'Unusta', 'Tuvasta', 'Näeb'), so there are no use cases or actions whose names fail to start with an active verb. "
     },
     {
       "rule_id": "N1.2",

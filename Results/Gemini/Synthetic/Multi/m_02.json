@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": true,
       "detected": false,
-      "justification": "On the Use Case diagram (Page 2), the use case 'Tuvasta kasutaja' does not have a direct line to an actor, but it is connected via '\u00abinclude\u00bb' relationships to other use cases ('Vaata autode koondaruannet', etc.) that are associated with actors. Therefore, it is not considered isolated."
+      "justification": "On the Use Case diagram (Page 2), the use case 'Tuvasta kasutaja' does not have a direct line to an actor, but it is connected via '«include»' relationships to other use cases ('Vaata autode koondaruannet', etc.) that are associated with actors. Therefore, it is not considered isolated."
     },
     {
       "rule_id": "G6.1",
@@ -37,7 +37,7 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases on Page 2 follow a consistent Verb-Noun naming convention (e.g., 'Registreeri auto', 'Vaata k\u00f5iki autosid', 'L\u00f5peta auto')."
+      "justification": "All use cases on Page 2 follow a consistent Verb-Noun naming convention (e.g., 'Registreeri auto', 'Vaata kõiki autosid', 'Lõpeta auto')."
     },
     {
       "rule_id": "G15.1",
@@ -61,7 +61,7 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The Use Case diagram 'Autode funktsionaalne alls\u00fcsteem (Vaata & Tuvasta)' on Page 2 contains 11 central use case elements, exceeding the threshold of 10."
+      "justification": "The Use Case diagram 'Autode funktsionaalne allsüsteem (Vaata & Tuvasta)' on Page 2 contains 11 central use case elements, exceeding the threshold of 10."
     },
     {
       "rule_id": "S1.2",

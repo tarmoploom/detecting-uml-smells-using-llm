@@ -19,7 +19,7 @@
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "The use case names on pages 2-3 appear distinct (e.g., 'Vaata aktiivseid autosid', 'Vaata k\u00f5iki autosid', 'Registreeri auto', 'L\u00f5peta auto', 'Muuda autot', 'Aktiveeri auto', 'Unusta auto') with no explicit evidence that two or more describe the same activity for the same actor."
+      "justification": "The use case names on pages 2-3 appear distinct (e.g., 'Vaata aktiivseid autosid', 'Vaata kõiki autosid', 'Registreeri auto', 'Lõpeta auto', 'Muuda autot', 'Aktiveeri auto', 'Unusta auto') with no explicit evidence that two or more describe the same activity for the same actor."
     },
     {
       "rule_id": "G6.2",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names on pages 2-3 consistently appear to start with verbs in the same form (e.g., 'Tuvasta', 'Vaata', 'Registreeri', 'L\u00f5peta', 'Muuda', 'Aktiveeri', 'Unusta'), so inconsistent naming form is not explicitly visible."
+      "justification": "Use case names on pages 2-3 consistently appear to start with verbs in the same form (e.g., 'Tuvasta', 'Vaata', 'Registreeri', 'Lõpeta', 'Muuda', 'Aktiveeri', 'Unusta'), so inconsistent naming form is not explicitly visible."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "The state diagram on page 9 lists states such as 'Ootel', 'Aktiivne', 'Mitteaktiivne', 'L\u00f5petatud', and 'Unustatud' with an 'Algus' node. The extracted text does not unambiguously indicate any state that cannot be reached."
+      "justification": "The state diagram on page 9 lists states such as 'Ootel', 'Aktiivne', 'Mitteaktiivne', 'Lõpetatud', and 'Unustatud' with an 'Algus' node. The extracted text does not unambiguously indicate any state that cannot be reached."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "The activity diagram on page 4 includes actions and decisions (e.g., 'Otsi', 'Vali', 'L\u00f5peta'). The text does not clearly show control-flow structure sufficient to prove any action is unreachable."
+      "justification": "The activity diagram on page 4 includes actions and decisions (e.g., 'Otsi', 'Vali', 'Lõpeta'). The text does not clearly show control-flow structure sufficient to prove any action is unreachable."
     },
     {
       "rule_id": "G15.3",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": true,
       "detected": false,
-      "justification": "Use case names on pages 2-3 appear to start with active verbs. The activity diagram on page 4 includes verb-like action labels such as 'Otsi', 'Vali', and 'L\u00f5peta'. No clearly non-verb-starting use case or action is explicitly visible."
+      "justification": "Use case names on pages 2-3 appear to start with active verbs. The activity diagram on page 4 includes verb-like action labels such as 'Otsi', 'Vali', and 'Lõpeta'. No clearly non-verb-starting use case or action is explicitly visible."
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Entity class names visible in class diagrams (e.g., 'Isik', 'T\u00f6\u00f6taja', 'Auto', 'Klient', 'Kasutajakonto', 'Klassifikaator') start with uppercase letters and appear singular. Plural register titles are not treated as individual entity class naming violations."
+      "justification": "Entity class names visible in class diagrams (e.g., 'Isik', 'Töötaja', 'Auto', 'Klient', 'Kasutajakonto', 'Klassifikaator') start with uppercase letters and appear singular. Plural register titles are not treated as individual entity class naming violations."
     },
     {
       "rule_id": "N3.2",

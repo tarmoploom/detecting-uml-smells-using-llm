@@ -13,13 +13,13 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": true,
-      "justification": "On page 2 (Treeningute funktsionaalne alls\u00fcsteem), the use case 'Tuvasta kasutaja' (from L\u00e4bivad huvid) is a visual oval element with ZERO direct actor associations. It is only connected via \u00abinclude\u00bb relationships from other use cases, but has no direct association line to any actor."
+      "justification": "On page 2 (Treeningute funktsionaalne allsüsteem), the use case 'Tuvasta kasutaja' (from Läbivad huvid) is a visual oval element with ZERO direct actor associations. It is only connected via «include» relationships from other use cases, but has no direct association line to any actor."
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases on page 2 have unique names describing different activities: Vaata treeningute koondaruannet, L\u00f5peta treening, Registreeri treening, Muuda treeningut, Aktiveeri treening, Muuda treening mittaktiivseks, Vaata aktiivseid treeninguid, Vaata k\u00f5iki treeninguid, Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid treeninguid, Unusta treening, Vaata aktiivsete treeningute tutvustust, Tuvasta kasutaja. No duplicate activity names with same actor found."
+      "justification": "All use cases on page 2 have unique names describing different activities: Vaata treeningute koondaruannet, Lõpeta treening, Registreeri treening, Muuda treeningut, Aktiveeri treening, Muuda treening mittaktiivseks, Vaata aktiivseid treeninguid, Vaata kõiki treeninguid, Vaata kõiki ootel või mitteaktiivseid treeninguid, Unusta treening, Vaata aktiivsete treeningute tutvustust, Tuvasta kasutaja. No duplicate activity names with same actor found."
     },
     {
       "rule_id": "G6.2",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases on page 2 follow consistent verb-first naming pattern in Estonian: Vaata (View), L\u00f5peta (End), Registreeri (Register), Muuda (Modify), Aktiveeri (Activate), Unusta (Forget), Tuvasta (Identify). All names start with active verbs."
+      "justification": "All use cases on page 2 follow consistent verb-first naming pattern in Estonian: Vaata (View), Lõpeta (End), Registreeri (Register), Muuda (Modify), Aktiveeri (Activate), Unusta (Forget), Tuvasta (Identify). All names start with active verbs."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "On page 7 (Treeningu seisundidiagramm), all states are reachable: Ootel has incoming from initial state Alg, Aktiivne has incoming from Ootel and Mitteaktiivne, Mitteaktiivne has incoming from Aktiivne, L\u00f5petatud has incoming from Aktiivne and Mitteaktiivne, Unustatud has incoming from Ootel. Every state can be reached."
+      "justification": "On page 7 (Treeningu seisundidiagramm), all states are reachable: Ootel has incoming from initial state Alg, Aktiivne has incoming from Ootel and Mitteaktiivne, Mitteaktiivne has incoming from Aktiivne, Lõpetatud has incoming from Aktiivne and Mitteaktiivne, Unustatud has incoming from Ootel. Every state can be reached."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "On page 3 (activity diagram), all actions are reachable from the start node Algus: 'Vaata k\u00f5iki treeninguid' flows from Algus, 'Otsi treeningut' flows from decision, 'Vali treening' and 'L\u00f5peta valitud treeningud' are reachable through the flow. Every action has an incoming flow path from start."
+      "justification": "On page 3 (activity diagram), all actions are reachable from the start node Algus: 'Vaata kõiki treeninguid' flows from Algus, 'Otsi treeningut' flows from decision, 'Vali treening' and 'Lõpeta valitud treeningud' are reachable through the flow. Every action has an incoming flow path from start."
     },
     {
       "rule_id": "G15.3",
@@ -61,13 +61,13 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "Multiple diagrams exceed the threshold of \u226510 central elements: (1) Page 2 'Treeningute funktsionaalne alls\u00fcsteem' contains 12 use cases (Vaata treeningute koondaruannet, L\u00f5peta treening, Registreeri treening, Muuda treeningut, Aktiveeri treening, Muuda treening mittaktiivseks, Vaata aktiivseid treeninguid, Vaata k\u00f5iki treeninguid, Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid treeninguid, Unusta treening, Vaata aktiivsete treeningute tutvustust, Tuvasta kasutaja = 12). 12 \u2265 10. (2) Page 6 'Klassifikaatorite register' contains 12 classes (Klassifikaator, Riik, Treeningu_seisundi_liik, T\u00f6\u00f6taja_seisundi_liik, Isiku_seisundi_liik, T\u00f6\u00f6taja_roll, Treeningu_kategooria, Treeningu_kategooria_t\u00fc\u00fcp, K\u00fclastaja_seisundi_liik, Kliendi_seisundi_liik, Ruumi_seisundi_liik, Raskusaste = 12). 12 \u2265 10. (3) Page 9 'Treeningute register' contains 10 classes (Isik, T\u00f6\u00f6taja, Treening, Treeningu_seisundi_liik, Treeningu_kategooria, Treeningu_kategooria_omamine, Treeningu_kategooria_t\u00fc\u00fcp, Ruum, Treeningu p\u00f5him\u00f5ttelise toimumise asukoht, Raskusaste = 10). 10 \u2265 10. (4) Page 13 'Klassifikaatorite register (transformed)' contains 11 tables. 11 \u2265 10."
+      "justification": "Multiple diagrams exceed the threshold of ≥10 central elements: (1) Page 2 'Treeningute funktsionaalne allsüsteem' contains 12 use cases (Vaata treeningute koondaruannet, Lõpeta treening, Registreeri treening, Muuda treeningut, Aktiveeri treening, Muuda treening mittaktiivseks, Vaata aktiivseid treeninguid, Vaata kõiki treeninguid, Vaata kõiki ootel või mitteaktiivseid treeninguid, Unusta treening, Vaata aktiivsete treeningute tutvustust, Tuvasta kasutaja = 12). 12 ≥ 10. (2) Page 6 'Klassifikaatorite register' contains 12 classes (Klassifikaator, Riik, Treeningu_seisundi_liik, Töötaja_seisundi_liik, Isiku_seisundi_liik, Töötaja_roll, Treeningu_kategooria, Treeningu_kategooria_tüüp, Külastaja_seisundi_liik, Kliendi_seisundi_liik, Ruumi_seisundi_liik, Raskusaste = 12). 12 ≥ 10. (3) Page 9 'Treeningute register' contains 10 classes (Isik, Töötaja, Treening, Treeningu_seisundi_liik, Treeningu_kategooria, Treeningu_kategooria_omamine, Treeningu_kategooria_tüüp, Ruum, Treeningu põhimõttelise toimumise asukoht, Raskusaste = 10). 10 ≥ 10. (4) Page 13 'Klassifikaatorite register (transformed)' contains 11 tables. 11 ≥ 10."
     },
     {
       "rule_id": "S1.2",
       "actual": true,
       "detected": true,
-      "justification": "On page 17 'Treeningute register (transformed)', the Treening table has 6 visible connection lines: (1) FK_Treening_Treeningu_seisundi_liik to Treeningu_seisundi_liik, (2) FK_Treening_Raskusaste to Raskusaste, (3) FK_Treening_Tootaja to Tootaja (registreerija), (4) FK_Treening_Tootaja_viimane_muutja to Tootaja, (5) FK_Treeningu_kategooria_omamine_Treening from Treeningu_kategooria_omamine, (6) FK_Treeningu_pohimottelise_toimumise_asukoht_Treen from Treeningu_pohimottelise_toimumise_asukoht. Count = 6. Threshold is \u22656. 6 \u2265 6, therefore smell IS present."
+      "justification": "On page 17 'Treeningute register (transformed)', the Treening table has 6 visible connection lines: (1) FK_Treening_Treeningu_seisundi_liik to Treeningu_seisundi_liik, (2) FK_Treening_Raskusaste to Raskusaste, (3) FK_Treening_Tootaja to Tootaja (registreerija), (4) FK_Treening_Tootaja_viimane_muutja to Tootaja, (5) FK_Treeningu_kategooria_omamine_Treening from Treeningu_kategooria_omamine, (6) FK_Treeningu_pohimottelise_toimumise_asukoht_Treen from Treeningu_pohimottelise_toimumise_asukoht. Count = 6. Threshold is ≥6. 6 ≥ 6, therefore smell IS present."
     },
     {
       "rule_id": "S2.1",
@@ -79,19 +79,19 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases on page 2 start with active verbs in Estonian: Vaata (View), L\u00f5peta (End), Registreeri (Register), Muuda (Modify), Aktiveeri (Activate), Unusta (Forget), Tuvasta (Identify). All actions on page 3 also start with active verbs: Vaata, Otsi (Search), Vali (Select), L\u00f5peta."
+      "justification": "All use cases on page 2 start with active verbs in Estonian: Vaata (View), Lõpeta (End), Registreeri (Register), Muuda (Modify), Aktiveeri (Activate), Unusta (Forget), Tuvasta (Identify). All actions on page 3 also start with active verbs: Vaata, Otsi (Search), Vali (Select), Lõpeta."
     },
     {
       "rule_id": "N1.2",
       "actual": false,
       "detected": false,
-      "justification": "All class, table, attribute, and use case names have \u22654 characters. Shortest names found: 'Isik' (4 chars), 'Ruum' (4 chars), 'Riik' (4 chars). Threshold is \u22643 characters. 4 > 3, therefore smell is NOT present."
+      "justification": "All class, table, attribute, and use case names have ≥4 characters. Shortest names found: 'Isik' (4 chars), 'Ruum' (4 chars), 'Riik' (4 chars). Threshold is ≤3 characters. 4 > 3, therefore smell is NOT present."
     },
     {
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All class names start with uppercase letters and are singular: Isik, Ruum, Treening, Klassifikaator, T\u00f6\u00f6taja, Klient, K\u00fclastaja, etc. No lowercase-starting or plural class names found."
+      "justification": "All class names start with uppercase letters and are singular: Isik, Ruum, Treening, Klassifikaator, Töötaja, Klient, Külastaja, etc. No lowercase-starting or plural class names found."
     },
     {
       "rule_id": "N3.2",

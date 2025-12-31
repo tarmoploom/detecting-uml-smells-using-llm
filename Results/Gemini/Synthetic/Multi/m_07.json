@@ -67,7 +67,7 @@
       "rule_id": "S1.2",
       "actual": true,
       "detected": true,
-      "justification": "On the Class Diagram 'Autode register' (Page 11), the class 'Auto' has 6 visual connection lines to other elements: associations to 'Isik' (registreerija), 'T\u00f6\u00f6taja' (viimane muutja), 'Auto_mark', 'Auto_k\u00fctuse_liik', 'Auto_seisundi_liik', and 'Auto_kategooria' (via the association class 'Auto_kategooria_omamine')."
+      "justification": "On the Class Diagram 'Autode register' (Page 11), the class 'Auto' has 6 visual connection lines to other elements: associations to 'Isik' (registreerija), 'Töötaja' (viimane muutja), 'Auto_mark', 'Auto_kütuse_liik', 'Auto_seisundi_liik', and 'Auto_kategooria' (via the association class 'Auto_kategooria_omamine')."
     },
     {
       "rule_id": "S2.1",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All class names start with an uppercase letter and are singular (e.g., 'Isik', 'Auto', 'T\u00f6\u00f6taja')."
+      "justification": "All class names start with an uppercase letter and are singular (e.g., 'Isik', 'Auto', 'Töötaja')."
     },
     {
       "rule_id": "N3.2",

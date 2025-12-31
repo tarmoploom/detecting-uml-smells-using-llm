@@ -13,13 +13,13 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": true,
-      "justification": "On page 2 (Use Case Diagram 'Parkimiskohtade funktsionaalne alls\u00fcsteem'), the use case 'Tuvasta kasutaja' (from L\u00e4bivad huvid) is only connected via \u00abinclude\u00bb relationships to other use cases, but has ZERO direct actor associations. All other use cases have direct actor connections."
+      "justification": "On page 2 (Use Case Diagram 'Parkimiskohtade funktsionaalne allsüsteem'), the use case 'Tuvasta kasutaja' (from Läbivad huvid) is only connected via «include» relationships to other use cases, but has ZERO direct actor associations. All other use cases have direct actor connections."
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "All use case names in page 2 describe distinct activities: Registreeri, Muuda, Aktiveeri, L\u00f5peta, Vaata aktiivseid, Vaata k\u00f5iki, Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid, Unusta, Vaata koondaruannet, Tuvasta kasutaja. No two use cases have the same/similar activity name associated with the same actor."
+      "justification": "All use case names in page 2 describe distinct activities: Registreeri, Muuda, Aktiveeri, Lõpeta, Vaata aktiivseid, Vaata kõiki, Vaata kõiki ootel või mitteaktiivseid, Unusta, Vaata koondaruannet, Tuvasta kasutaja. No two use cases have the same/similar activity name associated with the same actor."
     },
     {
       "rule_id": "G6.2",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases on page 2 follow consistent verb-first naming pattern (Estonian verbs): Vaata, L\u00f5peta, Registreeri, Muuda, Aktiveeri, Unusta, Tuvasta. All start with active verbs."
+      "justification": "All use cases on page 2 follow consistent verb-first naming pattern (Estonian verbs): Vaata, Lõpeta, Registreeri, Muuda, Aktiveeri, Unusta, Tuvasta. All start with active verbs."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "Page 11 (State diagram 'Parkimiskoha seisundidiagramm') shows 6 states: Alg (initial), Ootel, Aktiivne, Mitteaktiivne, L\u00f5petatud, Unustatud. All states have incoming transitions: Alg is initial state with implicit entry; Ootel receives from Alg; Aktiivne receives from Ootel and Mitteaktiivne; Mitteaktiivne receives from Aktiivne; L\u00f5petatud receives from Aktiivne and Mitteaktiivne; Unustatud receives from Ootel. Every state can be reached."
+      "justification": "Page 11 (State diagram 'Parkimiskoha seisundidiagramm') shows 6 states: Alg (initial), Ootel, Aktiivne, Mitteaktiivne, Lõpetatud, Unustatud. All states have incoming transitions: Alg is initial state with implicit entry; Ootel receives from Alg; Aktiivne receives from Ootel and Mitteaktiivne; Mitteaktiivne receives from Aktiivne; Lõpetatud receives from Aktiivne and Mitteaktiivne; Unustatud receives from Ootel. Every state can be reached."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "Activity diagrams on pages 3-4 show all actions can be reached from the start node (Algus). Page 3: Vaata \u2192 decision \u2192 Otsi/Vali \u2192 L\u00f5peta all reachable. Page 4: similar structure with all actions reachable from Algus through decision paths."
+      "justification": "Activity diagrams on pages 3-4 show all actions can be reached from the start node (Algus). Page 3: Vaata → decision → Otsi/Vali → Lõpeta all reachable. Page 4: similar structure with all actions reachable from Algus through decision paths."
     },
     {
       "rule_id": "G15.3",
@@ -61,13 +61,13 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "Page 2 (Use Case Diagram 'Parkimiskohtade funktsionaalne alls\u00fcsteem') contains 11 use cases (central elements): 1-Tuvasta kasutaja, 2-Vaata Parkimiskohtade koondaruannet, 3-L\u00f5peta Parkimiskoht, 4-Registreeri Parkimiskoht, 5-Muuda Parkimiskoht, 6-Aktiveeri Parkimiskoht, 7-Muuda Parkimiskoht mittaktiivseks, 8-Vaata aktiivseid Parkimiskohti, 9-Vaata k\u00f5iki Parkimiskohti, 10-Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid Parkimiskohti, 11-Unusta Parkimiskoht. Threshold is \u226510. Since 11 \u2265 10, smell IS present. (Actors are NOT counted as central elements per the rules.)"
+      "justification": "Page 2 (Use Case Diagram 'Parkimiskohtade funktsionaalne allsüsteem') contains 11 use cases (central elements): 1-Tuvasta kasutaja, 2-Vaata Parkimiskohtade koondaruannet, 3-Lõpeta Parkimiskoht, 4-Registreeri Parkimiskoht, 5-Muuda Parkimiskoht, 6-Aktiveeri Parkimiskoht, 7-Muuda Parkimiskoht mittaktiivseks, 8-Vaata aktiivseid Parkimiskohti, 9-Vaata kõiki Parkimiskohti, 10-Vaata kõiki ootel või mitteaktiivseid Parkimiskohti, 11-Unusta Parkimiskoht. Threshold is ≥10. Since 11 ≥ 10, smell IS present. (Actors are NOT counted as central elements per the rules.)"
     },
     {
       "rule_id": "S1.2",
       "actual": true,
       "detected": true,
-      "justification": "Multiple diagrams have elements with \u22656 visual connection lines. Page 6 (Isikute register): Isik class has 6 visible connections: 1-to Riik, 2-to Isiku_seisundi_liik, 3-to Kasutajakonto, 4-to Klient, 5-to T\u00f6\u00f6taja, 6-self-relationship (mentor/juhendatav). Count=6, threshold \u22656, 6\u22656, smell IS present. Page 10 (Parkimiskoha register): Parkimiskoht has 7 visible connections: to Parkimiskoha_seisundi_liik, Parkimiskoha_kategooria_omamine, Parkimiskoha_aadress, Parkimiskoha_suurus, T\u00f6\u00f6taja (registreerija), T\u00f6\u00f6taja (viimane muutja), plus the self-relation to the juhendatav/mentor. Count=7, threshold \u22656, smell IS present."
+      "justification": "Multiple diagrams have elements with ≥6 visual connection lines. Page 6 (Isikute register): Isik class has 6 visible connections: 1-to Riik, 2-to Isiku_seisundi_liik, 3-to Kasutajakonto, 4-to Klient, 5-to Töötaja, 6-self-relationship (mentor/juhendatav). Count=6, threshold ≥6, 6≥6, smell IS present. Page 10 (Parkimiskoha register): Parkimiskoht has 7 visible connections: to Parkimiskoha_seisundi_liik, Parkimiskoha_kategooria_omamine, Parkimiskoha_aadress, Parkimiskoha_suurus, Töötaja (registreerija), Töötaja (viimane muutja), plus the self-relation to the juhendatav/mentor. Count=7, threshold ≥6, smell IS present."
     },
     {
       "rule_id": "S2.1",
@@ -79,19 +79,19 @@
       "rule_id": "N1.1",
       "actual": true,
       "detected": true,
-      "justification": "Page 4 (Activity diagram 'Kasutusjuhu Aktiveeri Parkimiskoht stsenaariumid') contains actions that do not start with active verbs: 'Parkimiskoha aktiveerimine \u00f5nnestub' (starts with noun 'Parkimiskoha') and 'Parkimiskoha aktiveerimine eba\u00f5nnestub' (starts with noun 'Parkimiskoha'). These are noun phrases describing results rather than verb-first action names."
+      "justification": "Page 4 (Activity diagram 'Kasutusjuhu Aktiveeri Parkimiskoht stsenaariumid') contains actions that do not start with active verbs: 'Parkimiskoha aktiveerimine õnnestub' (starts with noun 'Parkimiskoha') and 'Parkimiskoha aktiveerimine ebaõnnestub' (starts with noun 'Parkimiskoha'). These are noun phrases describing results rather than verb-first action names."
     },
     {
       "rule_id": "N1.2",
       "actual": false,
       "detected": false,
-      "justification": "All class names, table names, attribute names, and use case names have \u22654 characters. Shortest names found: 'Isik' (4 chars), 'Riik' (4 chars), 'kood' (4 chars). All are \u22654 characters. Threshold is \u22643 characters. Since minimum found is 4, 4 > 3, smell is NOT present."
+      "justification": "All class names, table names, attribute names, and use case names have ≥4 characters. Shortest names found: 'Isik' (4 chars), 'Riik' (4 chars), 'kood' (4 chars). All are ≥4 characters. Threshold is ≤3 characters. Since minimum found is 4, 4 > 3, smell is NOT present."
     },
     {
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All class names start with uppercase letters and are singular: Isik, Klient, T\u00f6\u00f6taja, Parkimiskoht, Klassifikaator, Kasutajakonto, etc. No lowercase starting letters or plural forms found."
+      "justification": "All class names start with uppercase letters and are singular: Isik, Klient, Töötaja, Parkimiskoht, Klassifikaator, Kasutajakonto, etc. No lowercase starting letters or plural forms found."
     },
     {
       "rule_id": "N3.2",

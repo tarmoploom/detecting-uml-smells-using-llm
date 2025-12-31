@@ -13,19 +13,19 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "On the use case diagrams 'Autode funktsionaalne alls\u00fcsteem (Vaata & Tuvasta)' and 'Autode halduse funktsionaalne alls\u00fcsteem (Muuda)', the text does not explicitly show any use case oval with no actor association. Since associations are not unambiguously visible in the provided text, no violation was found."
+      "justification": "On the use case diagrams 'Autode funktsionaalne allsüsteem (Vaata & Tuvasta)' and 'Autode halduse funktsionaalne allsüsteem (Muuda)', the text does not explicitly show any use case oval with no actor association. Since associations are not unambiguously visible in the provided text, no violation was found."
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "No pair of use cases with names that clearly describe the same activity and are associated with the same actor is explicitly visible. The listed use cases (e.g., 'Vaata aktiivseid autosid', 'Vaata k\u00f5iki autosid', 'Registreeri auto', 'Muuda autot') appear distinct by name, so no violation was found."
+      "justification": "No pair of use cases with names that clearly describe the same activity and are associated with the same actor is explicitly visible. The listed use cases (e.g., 'Vaata aktiivseid autosid', 'Vaata kõiki autosid', 'Registreeri auto', 'Muuda autot') appear distinct by name, so no violation was found."
     },
     {
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "In the package-style overview 'Autode FASiga seotud p\u00e4devusalad ja registrid', no multiple model elements with the same primary element name within the same package are explicitly shown. Repeated classifier-type or membership annotations are treated as metadata per the rules, so no violation was found."
+      "justification": "In the package-style overview 'Autode FASiga seotud pädevusalad ja registrid', no multiple model elements with the same primary element name within the same package are explicitly shown. Repeated classifier-type or membership annotations are treated as metadata per the rules, so no violation was found."
     },
     {
       "rule_id": "G6.3",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names on the visible use case diagrams appear to use a consistent verb-starting form in Estonian (e.g., 'Tuvasta', 'Vaata', 'Registreeri', 'L\u00f5peta', 'Muuda', 'Aktiveeri', 'Unusta'). No inconsistent form is explicitly visible."
+      "justification": "Use case names on the visible use case diagrams appear to use a consistent verb-starting form in Estonian (e.g., 'Tuvasta', 'Vaata', 'Registreeri', 'Lõpeta', 'Muuda', 'Aktiveeri', 'Unusta'). No inconsistent form is explicitly visible."
     },
     {
       "rule_id": "G15.1",
       "actual": true,
       "detected": false,
-      "justification": "In the state diagram 'Auto seisundidiagramm', the parsed content lists states (e.g., 'Aktiivne', 'Mitteaktiivne', 'L\u00f5petatud', 'Ootel', 'Unustatud') but does not unambiguously show transition structure sufficient to prove any state is unreachable. Therefore no violation was found."
+      "justification": "In the state diagram 'Auto seisundidiagramm', the parsed content lists states (e.g., 'Aktiivne', 'Mitteaktiivne', 'Lõpetatud', 'Ootel', 'Unustatud') but does not unambiguously show transition structure sufficient to prove any state is unreachable. Therefore no violation was found."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "In the activity diagram 'Auto l\u00f5petamise tegevusdiagramm', no action is explicitly shown as unreachable. The textual sequence includes an 'Algus' and plausible flow steps, and no unreachable action is unambiguously visible."
+      "justification": "In the activity diagram 'Auto lõpetamise tegevusdiagramm', no action is explicitly shown as unreachable. The textual sequence includes an 'Algus' and plausible flow steps, and no unreachable action is unambiguously visible."
     },
     {
       "rule_id": "G15.3",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Visible class names such as 'Isik', 'T\u00f6\u00f6taja', 'Auto', 'Klient', and 'Klassifikaator' start with uppercase letters and do not appear plural as individual entity classes. Domain register naming exclusions also apply where relevant. No violation was found."
+      "justification": "Visible class names such as 'Isik', 'Töötaja', 'Auto', 'Klient', and 'Klassifikaator' start with uppercase letters and do not appear plural as individual entity classes. Domain register naming exclusions also apply where relevant. No violation was found."
     },
     {
       "rule_id": "N3.2",

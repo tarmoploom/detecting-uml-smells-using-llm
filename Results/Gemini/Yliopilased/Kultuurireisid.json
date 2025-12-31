@@ -37,13 +37,13 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": true,
-      "justification": "The use case naming is inconsistent. Most use cases use the imperative form (e.g., 'Lisa uus kultuurireis', 'T\u00fchista kultuurireis'), but the use case 'Identifitseerib ennast' uses the indicative form."
+      "justification": "The use case naming is inconsistent. Most use cases use the imperative form (e.g., 'Lisa uus kultuurireis', 'Tühista kultuurireis'), but the use case 'Identifitseerib ennast' uses the indicative form."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "All states in the 'Kultuurireisi eluts\u00fcklid' state diagram are reachable via transitions from the initial state."
+      "justification": "All states in the 'Kultuurireisi elutsüklid' state diagram are reachable via transitions from the initial state."
     },
     {
       "rule_id": "G15.2",
@@ -61,7 +61,7 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The use case diagram 'Kultuurireiside funktsionaalne alls\u00fcsteem' contains 13 use cases, which exceeds the threshold of 10 central elements."
+      "justification": "The use case diagram 'Kultuurireiside funktsionaalne allsüsteem' contains 13 use cases, which exceeds the threshold of 10 central elements."
     },
     {
       "rule_id": "S1.2",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": true,
-      "justification": "On the activity diagram 'Joonis4', the action 'S\u00fcsteem kontrollib, kas kultuurireisil on aktiivseid broneeringuid' starts with the noun 'S\u00fcsteem' instead of an active verb."
+      "justification": "On the activity diagram 'Joonis4', the action 'Süsteem kontrollib, kas kultuurireisil on aktiivseid broneeringuid' starts with the noun 'Süsteem' instead of an active verb."
     },
     {
       "rule_id": "N1.2",

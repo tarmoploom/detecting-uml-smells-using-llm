@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": true,
-      "justification": "On the Use Case diagram (Page 2), the use case 'Kustuta t\u00f6\u00f6graafik' (located at the bottom right) is not visually associated with any actor, whereas the adjacent use case 'Kustuta mitteaktiivne t\u00f6\u00f6graafik' is connected to the actor 'Aeg'."
+      "justification": "On the Use Case diagram (Page 2), the use case 'Kustuta töögraafik' (located at the bottom right) is not visually associated with any actor, whereas the adjacent use case 'Kustuta mitteaktiivne töögraafik' is connected to the actor 'Aeg'."
     },
     {
       "rule_id": "G6.1",
@@ -25,7 +25,7 @@
       "rule_id": "G6.2",
       "actual": true,
       "detected": true,
-      "justification": "On Page 1, inside the package symbol 'T\u00f6\u00f6graafiku funktsionaalne alls\u00fcsteem', the function/element names '+ Kustuta t\u00f6\u00f6graafik' and '+ Lisa t\u00f6\u00f6v\u00e4listus' are listed twice, indicating duplicate named elements within the same package."
+      "justification": "On Page 1, inside the package symbol 'Töögraafiku funktsionaalne allsüsteem', the function/element names '+ Kustuta töögraafik' and '+ Lisa töövälistus' are listed twice, indicating duplicate named elements within the same package."
     },
     {
       "rule_id": "G6.3",
@@ -43,7 +43,7 @@
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "All states in the state diagram 'T\u00f6\u00f6graafiku seisundidiagramm' (Page 11) are reachable via transitions from the start node."
+      "justification": "All states in the state diagram 'Töögraafiku seisundidiagramm' (Page 11) are reachable via transitions from the start node."
     },
     {
       "rule_id": "G15.2",
@@ -61,7 +61,7 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The Use Case diagram 'T\u00f6\u00f6graafiku funktsionaalne alls\u00fcsteem' (Page 2) contains 14 use cases (central elements), which exceeds the threshold of 10."
+      "justification": "The Use Case diagram 'Töögraafiku funktsionaalne allsüsteem' (Page 2) contains 14 use cases (central elements), which exceeds the threshold of 10."
     },
     {
       "rule_id": "S1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All class names start with an uppercase letter and are singular (e.g., 'Isik', 'Kauplus', 'T\u00f6\u00f6taja')."
+      "justification": "All class names start with an uppercase letter and are singular (e.g., 'Isik', 'Kauplus', 'Töötaja')."
     },
     {
       "rule_id": "N3.2",

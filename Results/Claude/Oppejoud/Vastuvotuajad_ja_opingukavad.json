@@ -7,13 +7,13 @@
       "rule_id": "G5.1",
       "actual": true,
       "detected": true,
-      "justification": "Page 16 '\u00d5pingukavade alls\u00fcsteem' is a sequence diagram (sd) that contains ZERO visible elements - only the diagram header is present with no content. Threshold is 0 elements. Since diagram has 0 elements, smell IS present."
+      "justification": "Page 16 'Õpingukavade allsüsteem' is a sequence diagram (sd) that contains ZERO visible elements - only the diagram header is present with no content. Threshold is 0 elements. Since diagram has 0 elements, smell IS present."
     },
     {
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "Analyzed use case diagrams on pages 17 and 18. On page 17, all 14 use cases (Kuulajaskonna vaatamine, \u00dcli\u00f5pilase kuulajaskonnast v\u00e4ljaarjamine, Tuvasta kasutaja, \u00d5ppeaine otsimine, \u00d5pingukava koostamine, \u00d5pingukava vaatamine, Vastuste lugemine, \u00d5pingukava esitamine, \u00d5pingukavata \u00fcli\u00f5pilaste vaatamine, Teatele vastamine, \u00dcli\u00f5pilasele ajapikenduse andmine, Semestrite haldamine, \u00d5pingukavade muutmine mitteaktuaalseks, \u00d5pingukavade kinnitamine) are connected to actors (\u00d5ppej\u00f5ud, \u00dcli\u00f5pilane, Dekanaadi sekret\u00e4r, or Subjekt). On page 18, all 11 use cases are similarly connected to actors. Every use case oval has at least 1 actor association."
+      "justification": "Analyzed use case diagrams on pages 17 and 18. On page 17, all 14 use cases (Kuulajaskonna vaatamine, Üliõpilase kuulajaskonnast väljaarjamine, Tuvasta kasutaja, Õppeaine otsimine, Õpingukava koostamine, Õpingukava vaatamine, Vastuste lugemine, Õpingukava esitamine, Õpingukavata üliõpilaste vaatamine, Teatele vastamine, Üliõpilasele ajapikenduse andmine, Semestrite haldamine, Õpingukavade muutmine mitteaktuaalseks, Õpingukavade kinnitamine) are connected to actors (Õppejõud, Üliõpilane, Dekanaadi sekretär, or Subjekt). On page 18, all 11 use cases are similarly connected to actors. Every use case oval has at least 1 actor association."
     },
     {
       "rule_id": "G6.1",
@@ -25,7 +25,7 @@
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "Reviewed package diagrams. Elements within packages (e.g., Klassifikaatorite register containing Amet, Haridusaste, Moodul, \u00dcli\u00f5pilase_seisundi_liik, \u00d5pingukava_seisundi_liik, \u00d5pingukava_s\u00fcndmuse_liik, T\u00f6\u00f6taja_seisundi_liik) all have unique names within their respective packages. No duplicate element names found in any package."
+      "justification": "Reviewed package diagrams. Elements within packages (e.g., Klassifikaatorite register containing Amet, Haridusaste, Moodul, Üliõpilase_seisundi_liik, Õpingukava_seisundi_liik, Õpingukava_sündmuse_liik, Töötaja_seisundi_liik) all have unique names within their respective packages. No duplicate element names found in any package."
     },
     {
       "rule_id": "G6.3",
@@ -37,61 +37,61 @@
       "rule_id": "G8.1",
       "actual": true,
       "detected": true,
-      "justification": "Inconsistent naming forms found in use cases. Page 17 primarily uses gerund/noun forms: 'Kuulajaskonna vaatamine', '\u00d5pingukava koostamine', 'Vastuste lugemine', 'Semestrite haldamine' etc. However, 'Tuvasta kasutaja' uses imperative verb form. Page 18 uses imperative verbs consistently: 'Registreeri', 'T\u00fchista', 'Lisa', 'Paku', 'Paranda', 'Otsi'. This mixture of gerund forms and imperative verbs is inconsistent naming."
+      "justification": "Inconsistent naming forms found in use cases. Page 17 primarily uses gerund/noun forms: 'Kuulajaskonna vaatamine', 'Õpingukava koostamine', 'Vastuste lugemine', 'Semestrite haldamine' etc. However, 'Tuvasta kasutaja' uses imperative verb form. Page 18 uses imperative verbs consistently: 'Registreeri', 'Tühista', 'Lisa', 'Paku', 'Paranda', 'Otsi'. This mixture of gerund forms and imperative verbs is inconsistent naming."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "Analyzed state diagrams on pages 4, 9, 12, and 14. Page 9 (\u00d5pingukava seisundidiagramm): All 7 states (Koostamisel, Koostamine l\u00f5ppenud, Aktuaalne, Esitamata, T\u00e4iendamisel, Mitteaktuaalne, Kustutatud) can be reached from Algus (start) through defined transitions. Page 14 (Vastuv\u00f5tuaja seisundidiagramm): All 4 states (Vaba, H\u00f5ivatud, Aegunud, T\u00fchistatud) can be reached from Algus. Every state has at least one incoming transition path."
+      "justification": "Analyzed state diagrams on pages 4, 9, 12, and 14. Page 9 (Õpingukava seisundidiagramm): All 7 states (Koostamisel, Koostamine lõppenud, Aktuaalne, Esitamata, Täiendamisel, Mitteaktuaalne, Kustutatud) can be reached from Algus (start) through defined transitions. Page 14 (Vastuvõtuaja seisundidiagramm): All 4 states (Vaba, Hõivatud, Aegunud, Tühistatud) can be reached from Algus. Every state has at least one incoming transition path."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "Analyzed activity diagrams on pages 15, 19, and 20. Page 15: All actions (\u00d5pingukava koostamine, Esitamata j\u00e4tmise p\u00f5hjendamine, \u00d5pingukava t\u00e4iendamine, Eksmatrikuleerimine, \u00dcli\u00f5pilase teavitamine, \u00d5pingukava mittekinnitamine, \u00d5pingukava kinnitamine, Kuulajaskonna \u00fclevaatmine, Ajapikenduse otsustamine) are reachable from the start node 'Algas \u00f5pingukava koostamise periood'. Pages 19-20: All actions have incoming flows from their respective start nodes."
+      "justification": "Analyzed activity diagrams on pages 15, 19, and 20. Page 15: All actions (Õpingukava koostamine, Esitamata jätmise põhjendamine, Õpingukava täiendamine, Eksmatrikuleerimine, Üliõpilase teavitamine, Õpingukava mittekinnitamine, Õpingukava kinnitamine, Kuulajaskonna ülevaatmine, Ajapikenduse otsustamine) are reachable from the start node 'Algas õpingukava koostamise periood'. Pages 19-20: All actions have incoming flows from their respective start nodes."
     },
     {
       "rule_id": "G15.3",
       "actual": false,
       "detected": false,
-      "justification": "Examined relationships in class and database diagrams. Page 6: Relationships show multiplicity on both ends (e.g., '1 t\u00e4psustab 0..*', '1 alusel \u00f5pitakse 0..*', '1 omab 0..*'). Pages 21-32 (database diagrams): All FK relationships display multiplicity indicators (e.g., '0..*' and '1', '0..1' and '1'). Every examined relationship has multiplicity on BOTH ends."
+      "justification": "Examined relationships in class and database diagrams. Page 6: Relationships show multiplicity on both ends (e.g., '1 täpsustab 0..*', '1 alusel õpitakse 0..*', '1 omab 0..*'). Pages 21-32 (database diagrams): All FK relationships display multiplicity indicators (e.g., '0..*' and '1', '0..1' and '1'). Every examined relationship has multiplicity on BOTH ends."
     },
     {
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "Multiple diagrams exceed the threshold of \u226510 central elements: (1) Page 6 '\u00d5pingukavade_registri_kontseptuaalne_diagramm_1': 17 entities (Isik, Amet, Aine_t\u00fc\u00fcp\u00f5pingukavas, Aine_\u00f5pingukavas, T\u00f6\u00f6taja, \u00d5petamine, Haridusaste, \u00d5pingukava_seisundi_liik, T\u00fc\u00fcp\u00f5pingukava, Semester, \u00d5ppeaine, \u00d5ppekava, \u00dcli\u00f5pilase_seisundi_liik, \u00d5pingukava, \u00dcli\u00f5pilase_\u00f5ppekava, \u00dcli\u00f5pilane, Piirang). 17 \u2265 10, smell IS present. (2) Page 11: 11 entities. 11 \u2265 10. (3) Page 15: 10 actions. 10 \u2265 10. (4) Page 17: 14 use cases. 14 \u2265 10. (5) Page 18: 11 use cases. 11 \u2265 10. (6) Page 30: 13 tables. 13 \u2265 10."
+      "justification": "Multiple diagrams exceed the threshold of ≥10 central elements: (1) Page 6 'Õpingukavade_registri_kontseptuaalne_diagramm_1': 17 entities (Isik, Amet, Aine_tüüpõpingukavas, Aine_õpingukavas, Töötaja, Õpetamine, Haridusaste, Õpingukava_seisundi_liik, Tüüpõpingukava, Semester, Õppeaine, Õppekava, Üliõpilase_seisundi_liik, Õpingukava, Üliõpilase_õppekava, Üliõpilane, Piirang). 17 ≥ 10, smell IS present. (2) Page 11: 11 entities. 11 ≥ 10. (3) Page 15: 10 actions. 10 ≥ 10. (4) Page 17: 14 use cases. 14 ≥ 10. (5) Page 18: 11 use cases. 11 ≥ 10. (6) Page 30: 13 tables. 13 ≥ 10."
     },
     {
       "rule_id": "S1.2",
       "actual": true,
       "detected": false,
-      "justification": "Counted visual connection lines for elements on each diagram page. Page 30 (most connected diagram): 'aine' table has 4 visible connections (to aine_opingukavas, aine_tyypopingukavas, opetamine, piirang). 'opingukava' has 5 connections (to semester, tyypopingukava, opingukava_seisundi_liik_r, yliopilane, aine_opingukavas). Page 26: 'Vastuvott' has 4 connections. Maximum connection count found is 5. Threshold is \u22656. Since 5 < 6, smell is NOT present."
+      "justification": "Counted visual connection lines for elements on each diagram page. Page 30 (most connected diagram): 'aine' table has 4 visible connections (to aine_opingukavas, aine_tyypopingukavas, opetamine, piirang). 'opingukava' has 5 connections (to semester, tyypopingukava, opingukava_seisundi_liik_r, yliopilane, aine_opingukavas). Page 26: 'Vastuvott' has 4 connections. Maximum connection count found is 5. Threshold is ≥6. Since 5 < 6, smell is NOT present."
     },
     {
       "rule_id": "S2.1",
       "actual": true,
       "detected": false,
-      "justification": "Visual spatial analysis of element distances cannot be accurately performed from the text-based PDF extraction. Based on the diagram content structure showing logically grouped elements, no clear evidence of elements being positioned at distances exceeding 2\u00d7 the average distance was identified. Smell NOT detected due to insufficient visual positioning data."
+      "justification": "Visual spatial analysis of element distances cannot be accurately performed from the text-based PDF extraction. Based on the diagram content structure showing logically grouped elements, no clear evidence of elements being positioned at distances exceeding 2× the average distance was identified. Smell NOT detected due to insufficient visual positioning data."
     },
     {
       "rule_id": "N1.1",
       "actual": true,
       "detected": true,
-      "justification": "Page 17 use cases predominantly use gerund/noun forms instead of active verbs: 'Kuulajaskonna vaatamine' (Viewing of listener group - starts with noun), '\u00d5pingukava koostamine' (starts with noun), 'Vastuste lugemine' (starts with noun), 'Semestrite haldamine' (starts with noun), etc. These 13 use cases use the pattern 'Noun + gerund' rather than 'Verb + object'. Active verb form would be 'Vaata kuulajaskonda' not 'Kuulajaskonna vaatamine'. At least one use case/action starts with noun or passive form, smell IS present."
+      "justification": "Page 17 use cases predominantly use gerund/noun forms instead of active verbs: 'Kuulajaskonna vaatamine' (Viewing of listener group - starts with noun), 'Õpingukava koostamine' (starts with noun), 'Vastuste lugemine' (starts with noun), 'Semestrite haldamine' (starts with noun), etc. These 13 use cases use the pattern 'Noun + gerund' rather than 'Verb + object'. Active verb form would be 'Vaata kuulajaskonda' not 'Kuulajaskonna vaatamine'. At least one use case/action starts with noun or passive form, smell IS present."
     },
     {
       "rule_id": "N1.2",
       "actual": true,
       "detected": true,
-      "justification": "Page 29 '\u00d5pingukavade AB disaini diagramm (\u00f5ingukava s\u00fcndmus)': The table 'opingukava_syndmus' contains column 'aeg' (meaning 'time'). Character count: a-e-g = 3 characters. Threshold is \u22643 characters. Since 3 \u2264 3, smell IS present."
+      "justification": "Page 29 'Õpingukavade AB disaini diagramm (õingukava sündmus)': The table 'opingukava_syndmus' contains column 'aeg' (meaning 'time'). Character count: a-e-g = 3 characters. Threshold is ≤3 characters. Since 3 ≤ 3, smell IS present."
     },
     {
       "rule_id": "N3.1",
       "actual": true,
       "detected": false,
-      "justification": "Examined class names in conceptual class diagrams (pages 5-11). All entity/class names start with uppercase and are singular: Isik, Klassifikaator, Amet, T\u00f6\u00f6taja, \u00d5pingukava, Semester, \u00d5ppeaine, \u00dcli\u00f5pilane, Vastuv\u00f5tt, etc. No class name starts with lowercase letter and no class name is plural."
+      "justification": "Examined class names in conceptual class diagrams (pages 5-11). All entity/class names start with uppercase and are singular: Isik, Klassifikaator, Amet, Töötaja, Õpingukava, Semester, Õppeaine, Üliõpilane, Vastuvõtt, etc. No class name starts with lowercase letter and no class name is plural."
     },
     {
       "rule_id": "N3.2",

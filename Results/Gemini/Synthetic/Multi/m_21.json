@@ -37,7 +37,7 @@
       "rule_id": "G8.1",
       "actual": true,
       "detected": true,
-      "justification": "Inconsistent naming conventions are used in the Use Case diagrams (Pages 1 and 2). Some use cases use a 'Verb-Noun' structure (e.g., 'Tuvasta kasutaja', 'Registreeri auto'), while others use a 'Noun' phrase structure (e.g., 'Aktiivsed autod', 'Autode koondaruanne', 'K\u00f5ik autod')."
+      "justification": "Inconsistent naming conventions are used in the Use Case diagrams (Pages 1 and 2). Some use cases use a 'Verb-Noun' structure (e.g., 'Tuvasta kasutaja', 'Registreeri auto'), while others use a 'Noun' phrase structure (e.g., 'Aktiivsed autod', 'Autode koondaruanne', 'Kõik autod')."
     },
     {
       "rule_id": "G15.1",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": true,
       "detected": true,
-      "justification": "Several use cases on Page 2 and Page 1 do not start with an active verb. Examples include 'Aktiivsed autod' (Active cars), 'K\u00f5ik autod' (All cars), and 'Autode koondaruanne' (Cars summary report)."
+      "justification": "Several use cases on Page 2 and Page 1 do not start with an active verb. Examples include 'Aktiivsed autod' (Active cars), 'Kõik autod' (All cars), and 'Autode koondaruanne' (Cars summary report)."
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Class names start with Uppercase letters and are singular (e.g., 'Isik', 'Auto', 'T\u00f6\u00f6taja')."
+      "justification": "Class names start with Uppercase letters and are singular (e.g., 'Isik', 'Auto', 'Töötaja')."
     },
     {
       "rule_id": "N3.2",

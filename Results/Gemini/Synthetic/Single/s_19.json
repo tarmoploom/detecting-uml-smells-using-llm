@@ -13,13 +13,13 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "All use cases are associated with actors, either directly or via inclusion/extension from other use cases that are connected to actors (e.g., 'Vaata k\u00f5iki ootel...' is included by 'Aktiveeri auto', which connects to 'Autode haldur')."
+      "justification": "All use cases are associated with actors, either directly or via inclusion/extension from other use cases that are connected to actors (e.g., 'Vaata kõiki ootel...' is included by 'Aktiveeri auto', which connects to 'Autode haldur')."
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "No use cases with synonymous names describing the same activity were found for the same actor. Names like 'Vaata aktiivseid autosid' and 'Vaata k\u00f5iki autosid' denote distinct functionalities."
+      "justification": "No use cases with synonymous names describing the same activity were found for the same actor. Names like 'Vaata aktiivseid autosid' and 'Vaata kõiki autosid' denote distinct functionalities."
     },
     {
       "rule_id": "G6.2",
@@ -43,13 +43,13 @@
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the state diagram 'Auto seisundidiagramm' (Page 9), all states (including final states like 'Unustatud' and 'L\u00f5petatud') are reachable via transitions from the start node."
+      "justification": "In the state diagram 'Auto seisundidiagramm' (Page 9), all states (including final states like 'Unustatud' and 'Lõpetatud') are reachable via transitions from the start node."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "In the activity diagram 'Auto l\u00f5petamise tegevusdiagramm' (Page 4), all actions and decisions are reachable from the start node."
+      "justification": "In the activity diagram 'Auto lõpetamise tegevusdiagramm' (Page 4), all actions and decisions are reachable from the start node."
     },
     {
       "rule_id": "G15.3",
@@ -67,7 +67,7 @@
       "rule_id": "S1.2",
       "actual": true,
       "detected": true,
-      "justification": "On the class diagram 'Autode register' (Page 11), the class 'Auto' has 6 visual connection lines to other classes: 'Auto_mark', 'Auto_k\u00fctuse_liik', 'Auto_seisundi_liik', 'Auto_kategooria_omamine', and two separate associations to 'T\u00f6\u00f6taja' (for roles 'registreerija' and 'viimane muutja')."
+      "justification": "On the class diagram 'Autode register' (Page 11), the class 'Auto' has 6 visual connection lines to other classes: 'Auto_mark', 'Auto_kütuse_liik', 'Auto_seisundi_liik', 'Auto_kategooria_omamine', and two separate associations to 'Töötaja' (for roles 'registreerija' and 'viimane muutja')."
     },
     {
       "rule_id": "S2.1",

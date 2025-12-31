@@ -13,19 +13,19 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "In the use case diagram 'Treeningu funktsionaalne alls\u00fcsteem' on page 2, all use case ovals are drawn inside the system boundary and appear connected by association or include relationships; there is no clearly isolated use case without any connection to an actor, so no unambiguous violation can be identified. "
+      "justification": "In the use case diagram 'Treeningu funktsionaalne allsüsteem' on page 2, all use case ovals are drawn inside the system boundary and appear connected by association or include relationships; there is no clearly isolated use case without any connection to an actor, so no unambiguous violation can be identified. "
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "The use cases on page 2 all describe distinct activities (for example, 'Aktiveeri treening', 'L\u00f5peta treening', 'Unusta treening', 'Vaata k\u00f5iki treeninguid', 'Vaata treeningute koondaruannet') and no pair of use cases with the same actor clearly represents the same activity under different names. "
+      "justification": "The use cases on page 2 all describe distinct activities (for example, 'Aktiveeri treening', 'Lõpeta treening', 'Unusta treening', 'Vaata kõiki treeninguid', 'Vaata treeningute koondaruannet') and no pair of use cases with the same actor clearly represents the same activity under different names. "
     },
     {
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "In the package/overview diagram on page 1, each package lists its contained elements only once (for example, 'Treening', 'Treening_kategooria_omamine' and 'treeningute eluts\u00fcklid' under 'Treeningute register'); no package shows two separate model elements with the same primary name. "
+      "justification": "In the package/overview diagram on page 1, each package lists its contained elements only once (for example, 'Treening', 'Treening_kategooria_omamine' and 'treeningute elutsüklid' under 'Treeningute register'); no package shows two separate model elements with the same primary name. "
     },
     {
       "rule_id": "G6.3",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names in 'Treeningu funktsionaalne alls\u00fcsteem' (page 2) follow a consistent verb-led style in Estonian, such as 'Tuvasta kasutaja', 'Aktiveeri treening', 'Registreeri treening', 'Vaata aktiivseid treeninguid', and 'Unusta treening'; there is no mixture of noun-only and verb-led forms. "
+      "justification": "Use case names in 'Treeningu funktsionaalne allsüsteem' (page 2) follow a consistent verb-led style in Estonian, such as 'Tuvasta kasutaja', 'Aktiveeri treening', 'Registreeri treening', 'Vaata aktiivseid treeninguid', and 'Unusta treening'; there is no mixture of noun-only and verb-led forms. "
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the state diagram 'Treeningu seisundidiagramm' on page 11, each state (Ootel, Aktiivne, Mitteaktiivne, Unustatud, L\u00f5petatud) is linked by at least one transition from the initial node or another state; no state appears without an incoming transition, so no unreachable state is clearly present. "
+      "justification": "In the state diagram 'Treeningu seisundidiagramm' on page 11, each state (Ootel, Aktiivne, Mitteaktiivne, Unustatud, Lõpetatud) is linked by at least one transition from the initial node or another state; no state appears without an incoming transition, so no unreachable state is clearly present. "
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "In the activity diagrams for completing and activating a training (pages 3 and 4), all actions such as 'Vaata k\u00f5iki treeninguid, mida saab l\u00f5petada', 'Otsi treeningut', 'Vali treening', 'L\u00f5peta valitud treening', 'Aktiveeri valitud treening' and 'Kuva veateade Aktiviseerimiseks peab treeningul olema kategooria' lie on paths starting from 'Algus' and leading toward 'L\u00f5pp'; there are no actions drawn without incoming control flow, so no unreachable actions are evident. Question-style labels like 'Kas soovib otsida?' are attached to decision nodes rather than separate actions and are therefore out of scope. "
+      "justification": "In the activity diagrams for completing and activating a training (pages 3 and 4), all actions such as 'Vaata kõiki treeninguid, mida saab lõpetada', 'Otsi treeningut', 'Vali treening', 'Lõpeta valitud treening', 'Aktiveeri valitud treening' and 'Kuva veateade Aktiviseerimiseks peab treeningul olema kategooria' lie on paths starting from 'Algus' and leading toward 'Lõpp'; there are no actions drawn without incoming control flow, so no unreachable actions are evident. Question-style labels like 'Kas soovib otsida?' are attached to decision nodes rather than separate actions and are therefore out of scope. "
     },
     {
       "rule_id": "G15.3",
@@ -61,7 +61,7 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The use case diagram 'Treeningu funktsionaalne alls\u00fcsteem' on page 2 contains 11 distinct use cases ('Tuvasta kasutaja', 'Aktiveeri treening', 'L\u00f5peta treening', 'Registreeri treening', 'Muuda treening', 'Muuda treening mittaktiivseks', 'Vaata aktiivseid treeninguid', 'Vaata k\u00f5iki treeninguid', 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid treeninguid', 'Vaata treeningute koondaruannet', 'Unusta treening'), exceeding the threshold of 10 central elements (use cases) defined in this rule. Other diagrams contain fewer than 10 classes, tables, or states. "
+      "justification": "The use case diagram 'Treeningu funktsionaalne allsüsteem' on page 2 contains 11 distinct use cases ('Tuvasta kasutaja', 'Aktiveeri treening', 'Lõpeta treening', 'Registreeri treening', 'Muuda treening', 'Muuda treening mittaktiivseks', 'Vaata aktiivseid treeninguid', 'Vaata kõiki treeninguid', 'Vaata kõiki ootel või mitteaktiivseid treeninguid', 'Vaata treeningute koondaruannet', 'Unusta treening'), exceeding the threshold of 10 central elements (use cases) defined in this rule. Other diagrams contain fewer than 10 classes, tables, or states. "
     },
     {
       "rule_id": "S1.2",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All use case names and activity actions begin with an active verb in Estonian, for example 'Tuvasta kasutaja', 'Aktiveeri treening', 'Vaata k\u00f5iki treeninguid', 'Otsi treeningut', 'Vali treening', 'L\u00f5peta valitud treening' and 'Kuva veateade Aktiviseerimiseks peab treeningul olema kategooria'. Question-style texts like 'Kas soovib otsida?' label decision nodes rather than actions and are not considered use cases or actions under this rule. "
+      "justification": "All use case names and activity actions begin with an active verb in Estonian, for example 'Tuvasta kasutaja', 'Aktiveeri treening', 'Vaata kõiki treeninguid', 'Otsi treeningut', 'Vali treening', 'Lõpeta valitud treening' and 'Kuva veateade Aktiviseerimiseks peab treeningul olema kategooria'. Question-style texts like 'Kas soovib otsida?' label decision nodes rather than actions and are not considered use cases or actions under this rule. "
     },
     {
       "rule_id": "N1.2",
@@ -91,13 +91,13 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Entity class names such as 'Isik', 'Kasutajakonto', 'Treening', 'Klient' and 'T\u00f6\u00f6taja' all begin with uppercase letters and are singular. Plural register names like 'Isikute register' and 'Treeningute register' are domain register constructs, which the interpretation rules state should not be checked for pluralization under this rule. "
+      "justification": "Entity class names such as 'Isik', 'Kasutajakonto', 'Treening', 'Klient' and 'Töötaja' all begin with uppercase letters and are singular. Plural register names like 'Isikute register' and 'Treeningute register' are domain register constructs, which the interpretation rules state should not be checked for pluralization under this rule. "
     },
     {
       "rule_id": "N3.2",
       "actual": true,
       "detected": true,
-      "justification": "Several attributes/columns start with uppercase letters. For example, in the 'Treeningute register' class diagram on page 10, the attribute 'Maksumus' of 'Treening' begins with uppercase 'M'. In 'Klassifikaatorite register' on page 7, attribute 'Kirjeldus' in 'T\u00f6\u00f6taja_roll' starts with uppercase 'K'. In the transformed database diagrams, column names such as 'Treeningu_id' and 'Treeningu_asukoha_kood' in 'Treeningute register (transformed)' on page 18 also start with uppercase letters after the key markers, violating the rule that attribute and column names should not begin with an uppercase letter. "
+      "justification": "Several attributes/columns start with uppercase letters. For example, in the 'Treeningute register' class diagram on page 10, the attribute 'Maksumus' of 'Treening' begins with uppercase 'M'. In 'Klassifikaatorite register' on page 7, attribute 'Kirjeldus' in 'Töötaja_roll' starts with uppercase 'K'. In the transformed database diagrams, column names such as 'Treeningu_id' and 'Treeningu_asukoha_kood' in 'Treeningute register (transformed)' on page 18 also start with uppercase letters after the key markers, violating the rule that attribute and column names should not begin with an uppercase letter. "
     },
     {
       "rule_id": "N3.3",

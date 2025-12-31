@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "All use cases (visual oval elements) are either directly associated with an actor or connected via an 'include' relationship to a use case that is associated with an actor (e.g., 'Vaata k\u00f5iki ootel...' on Page 3)."
+      "justification": "All use cases (visual oval elements) are either directly associated with an actor or connected via an 'include' relationship to a use case that is associated with an actor (e.g., 'Vaata kõiki ootel...' on Page 3)."
     },
     {
       "rule_id": "G6.1",

@@ -13,19 +13,19 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": true,
-      "justification": "On page 2 'Kasvuhoonete funktsionaalne alls\u00fcsteem' (Use Case diagram), the use case 'Tuvasta kasutaja' (marked as 'from L\u00e4bivad huvid') is only connected via <<include>> relationships from other use cases but has ZERO direct actor associations. All other use cases have direct actor connections (Kasvuhoonete haldur, Juhataja, Uudistaja, Klient)."
+      "justification": "On page 2 'Kasvuhoonete funktsionaalne allsüsteem' (Use Case diagram), the use case 'Tuvasta kasutaja' (marked as 'from Läbivad huvid') is only connected via <<include>> relationships from other use cases but has ZERO direct actor associations. All other use cases have direct actor connections (Kasvuhoonete haldur, Juhataja, Uudistaja, Klient)."
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "No duplicate use case names describing the same activity were found. All use cases on page 2 have distinct names: Tuvasta kasutaja, Vaata kasvuhoonete koondaruannet, L\u00f5peta kasvuhoone, Registreeri kasvuhoone, Muuda kasvuhoone, Aktiveeri kasvuhoone, Muuda kasvuhoone mittaktiivseks, Vaata aktiivseid kasvuhooneid, Vaata k\u00f5iki kasvuhooneid, Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid kasvuhooneid, Unusta kasvuhoone."
+      "justification": "No duplicate use case names describing the same activity were found. All use cases on page 2 have distinct names: Tuvasta kasutaja, Vaata kasvuhoonete koondaruannet, Lõpeta kasvuhoone, Registreeri kasvuhoone, Muuda kasvuhoone, Aktiveeri kasvuhoone, Muuda kasvuhoone mittaktiivseks, Vaata aktiivseid kasvuhooneid, Vaata kõiki kasvuhooneid, Vaata kõiki ootel või mitteaktiivseid kasvuhooneid, Unusta kasvuhoone."
     },
     {
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "No duplicate element names were found within the same package. Each package on page 1 contains uniquely named elements. For example, in Klassifikaatorite register: Isiku_seisundi_liik, Kasvuhoone t\u00fc\u00fcp, Kasvuhoone_kategooria, Kasvuhoone_kategooria_t\u00fc\u00fcp, Kasvuhoone_seisundi_liik, Klassifikaator, Kliendi_seisundi_liik, Riik, T\u00f6\u00f6taja_roll, T\u00f6\u00f6taja_seisundi_liik - all unique names."
+      "justification": "No duplicate element names were found within the same package. Each package on page 1 contains uniquely named elements. For example, in Klassifikaatorite register: Isiku_seisundi_liik, Kasvuhoone tüüp, Kasvuhoone_kategooria, Kasvuhoone_kategooria_tüüp, Kasvuhoone_seisundi_liik, Klassifikaator, Kliendi_seisundi_liik, Riik, Töötaja_roll, Töötaja_seisundi_liik - all unique names."
     },
     {
       "rule_id": "G6.3",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases on page 2 follow a consistent verb-first naming pattern (Estonian verbs): Tuvasta (Identify), Vaata (View), L\u00f5peta (End), Registreeri (Register), Muuda (Change), Aktiveeri (Activate), Unusta (Forget). No noun-first use cases were found."
+      "justification": "All use cases on page 2 follow a consistent verb-first naming pattern (Estonian verbs): Tuvasta (Identify), Vaata (View), Lõpeta (End), Registreeri (Register), Muuda (Change), Aktiveeri (Activate), Unusta (Forget). No noun-first use cases were found."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "On page 11 'Kasvuhoone seisundidiagramm' (State diagram), all states can be reached: Alg is the initial state, Ootel is reached from Alg via registration, Aktiivne from Ootel via activation, Mitteaktiivne from Aktiivne, L\u00f5petatud from both Aktiivne and Mitteaktiivne, and Unustatud from Ootel. No unreachable states exist."
+      "justification": "On page 11 'Kasvuhoone seisundidiagramm' (State diagram), all states can be reached: Alg is the initial state, Ootel is reached from Alg via registration, Aktiivne from Ootel via activation, Mitteaktiivne from Aktiivne, Lõpetatud from both Aktiivne and Mitteaktiivne, and Unustatud from Ootel. No unreachable states exist."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "On pages 3-4 (Activity diagrams), all actions are reachable from their respective start nodes ('Algus'). Page 3: Algus \u2192 Vaata k\u00f5iki kasvuhooneid... \u2192 decision nodes \u2192 Otsi/Vali/L\u00f5peta actions \u2192 L\u00f5pp. Page 4: Similar flow with Aktiveeri actions. All paths connect from start to actions."
+      "justification": "On pages 3-4 (Activity diagrams), all actions are reachable from their respective start nodes ('Algus'). Page 3: Algus → Vaata kõiki kasvuhooneid... → decision nodes → Otsi/Vali/Lõpeta actions → Lõpp. Page 4: Similar flow with Aktiveeri actions. All paths connect from start to actions."
     },
     {
       "rule_id": "G15.3",
@@ -61,13 +61,13 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "Page 2 'Kasvuhoonete funktsionaalne alls\u00fcsteem' (Use Case diagram) contains 11 use cases: 1)Tuvasta kasutaja, 2)Vaata kasvuhoonete koondaruannet, 3)L\u00f5peta kasvuhoone, 4)Registreeri kasvuhoone, 5)Muuda kasvuhoone, 6)Aktiveeri kasvuhoone, 7)Muuda kasvuhoone mittaktiivseks, 8)Vaata aktiivseid kasvuhooneid, 9)Vaata k\u00f5iki kasvuhooneid, 10)Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid kasvuhooneid, 11)Unusta kasvuhoone. Counted 11 central elements. Threshold is \u226510. Since 11 \u2265 10, smell IS present. Note: Actors are not counted as central elements per the rule."
+      "justification": "Page 2 'Kasvuhoonete funktsionaalne allsüsteem' (Use Case diagram) contains 11 use cases: 1)Tuvasta kasutaja, 2)Vaata kasvuhoonete koondaruannet, 3)Lõpeta kasvuhoone, 4)Registreeri kasvuhoone, 5)Muuda kasvuhoone, 6)Aktiveeri kasvuhoone, 7)Muuda kasvuhoone mittaktiivseks, 8)Vaata aktiivseid kasvuhooneid, 9)Vaata kõiki kasvuhooneid, 10)Vaata kõiki ootel või mitteaktiivseid kasvuhooneid, 11)Unusta kasvuhoone. Counted 11 central elements. Threshold is ≥10. Since 11 ≥ 10, smell IS present. Note: Actors are not counted as central elements per the rule."
     },
     {
       "rule_id": "S1.2",
       "actual": false,
       "detected": true,
-      "justification": "On page 13 'Isikute register' (database diagram), the 'Isik' table has 6 visual connection lines: 1)FK_Klient_Isik (to Klient), 2)FK_Isik_Isiku_seisundi_liik (to Isiku_seisundi_liik), 3)FK_Kasutajakonto_Isik (to Kasutajakonto), 4)FK_Tootaja_mentor (to Tootaja for mentor), 5)FK_Isik_Riik (to Riik), 6)FK_Tootaja_Isik (to Tootaja). Counted 6 visual connections. Threshold is \u22656. Since 6 \u2265 6, smell IS present."
+      "justification": "On page 13 'Isikute register' (database diagram), the 'Isik' table has 6 visual connection lines: 1)FK_Klient_Isik (to Klient), 2)FK_Isik_Isiku_seisundi_liik (to Isiku_seisundi_liik), 3)FK_Kasutajakonto_Isik (to Kasutajakonto), 4)FK_Tootaja_mentor (to Tootaja for mentor), 5)FK_Isik_Riik (to Riik), 6)FK_Tootaja_Isik (to Tootaja). Counted 6 visual connections. Threshold is ≥6. Since 6 ≥ 6, smell IS present."
     },
     {
       "rule_id": "S2.1",
@@ -79,19 +79,19 @@
       "rule_id": "N1.1",
       "actual": true,
       "detected": true,
-      "justification": "On page 4 'Kasvuhoone aktiveerimise tegevusdiagramm' (Activity diagram), the action 'Kasutaja n\u00e4eb eba\u00f5nnestumist' (User sees failure) starts with 'Kasutaja' which is a noun (User/Client), not an active verb. This violates the rule that actions should start with active verbs. All other actions start with verbs (Vaata, Otsi, Vali, Aktiveeri)."
+      "justification": "On page 4 'Kasvuhoone aktiveerimise tegevusdiagramm' (Activity diagram), the action 'Kasutaja näeb ebaõnnestumist' (User sees failure) starts with 'Kasutaja' which is a noun (User/Client), not an active verb. This violates the rule that actions should start with active verbs. All other actions start with verbs (Vaata, Otsi, Vali, Aktiveeri)."
     },
     {
       "rule_id": "N1.2",
       "actual": false,
       "detected": false,
-      "justification": "All names across all diagrams have 4 or more characters. Shortest names found: 'Isik' (4 chars), 'Riik' (4 chars), 'kood' (4 chars). Threshold is \u22643 characters. Since minimum is 4 > 3, smell is NOT present."
+      "justification": "All names across all diagrams have 4 or more characters. Shortest names found: 'Isik' (4 chars), 'Riik' (4 chars), 'kood' (4 chars). Threshold is ≤3 characters. Since minimum is 4 > 3, smell is NOT present."
     },
     {
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All class names start with uppercase and are singular. Examples: Isik (not isik, not Isikud), T\u00f6\u00f6taja (not t\u00f6\u00f6taja, not T\u00f6\u00f6tajad), Kasvuhoone (not kasvuhoone, not Kasvuhooned), Klassifikaator, Riik, Kasutajakonto, Klient. No violations found."
+      "justification": "All class names start with uppercase and are singular. Examples: Isik (not isik, not Isikud), Töötaja (not töötaja, not Töötajad), Kasvuhoone (not kasvuhoone, not Kasvuhooned), Klassifikaator, Riik, Kasutajakonto, Klient. No violations found."
     },
     {
       "rule_id": "N3.2",

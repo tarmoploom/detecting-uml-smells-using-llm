@@ -13,19 +13,19 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "The only explicit use-case diagram ('Loomade funktsionaalne alls\u00fcsteem' on page 2) shows multiple actors and multiple use cases, but the parsed PDF text does not clearly indicate any use-case oval that is drawn without at least one association to an actor, and no such unconnected use case is visibly identifiable from the available content; therefore no violation can be asserted. "
+      "justification": "The only explicit use-case diagram ('Loomade funktsionaalne allsüsteem' on page 2) shows multiple actors and multiple use cases, but the parsed PDF text does not clearly indicate any use-case oval that is drawn without at least one association to an actor, and no such unconnected use case is visibly identifiable from the available content; therefore no violation can be asserted. "
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "On the use-case diagram, all use-case names are distinct activities such as 'Tuvasta kasutaja', 'Vaata loomade koondaruannet', 'M\u00e4rgi loom surnuks', 'Registreeri loom', 'Muuda looma infot', 'Aktiveeri loom', 'Muuda loom mittaktiivseks', 'Vaata aktiivseid loomi', 'Vaata k\u00f5iki loomi', 'Vaata k\u00f5iki mitteaktiivseid loomi', and 'Otsi looma kiibi j\u00e4rgi'. None are duplicate descriptions of the same activity associated with the same actor. "
+      "justification": "On the use-case diagram, all use-case names are distinct activities such as 'Tuvasta kasutaja', 'Vaata loomade koondaruannet', 'Märgi loom surnuks', 'Registreeri loom', 'Muuda looma infot', 'Aktiveeri loom', 'Muuda loom mittaktiivseks', 'Vaata aktiivseid loomi', 'Vaata kõiki loomi', 'Vaata kõiki mitteaktiivseid loomi', and 'Otsi looma kiibi järgi'. None are duplicate descriptions of the same activity associated with the same actor. "
     },
     {
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "The only package diagram ('Loomade FASiga seotud p\u00e4devusalad ja registrid' on page 1) contains named elements such as 'Loomade funktsionaalne alls\u00fcsteem', 'Isikute register', 'Klassifikaatorite register', 'T\u00f6\u00f6tajate register', and 'Loomade register', but none share the same primary element name within the same package. Repeated classifier-type labels are treated as metadata per the interpretation rules. "
+      "justification": "The only package diagram ('Loomade FASiga seotud pädevusalad ja registrid' on page 1) contains named elements such as 'Loomade funktsionaalne allsüsteem', 'Isikute register', 'Klassifikaatorite register', 'Töötajate register', and 'Loomade register', but none share the same primary element name within the same package. Repeated classifier-type labels are treated as metadata per the interpretation rules. "
     },
     {
       "rule_id": "G6.3",
@@ -37,7 +37,7 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use-case names on the use-case diagram are expressed in a consistent verb-phrase form (e.g., 'Tuvasta kasutaja', 'Vaata ...', 'M\u00e4rgi ...', 'Registreeri loom', 'Muuda looma infot', 'Aktiveeri loom', 'Otsi looma kiibi j\u00e4rgi'); there is no mixture of verb-less noun titles versus verb-based titles within that diagram. "
+      "justification": "All use-case names on the use-case diagram are expressed in a consistent verb-phrase form (e.g., 'Tuvasta kasutaja', 'Vaata ...', 'Märgi ...', 'Registreeri loom', 'Muuda looma infot', 'Aktiveeri loom', 'Otsi looma kiibi järgi'); there is no mixture of verb-less noun titles versus verb-based titles within that diagram. "
     },
     {
       "rule_id": "G15.1",
@@ -49,7 +49,7 @@
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "The activity diagram 'Looma sissekande l\u00f5petamise tegevusdiagramm' on page 3 shows a start node, a sequence of actions (such as 'Vaata k\u00f5iki loomi, keda saab surnuks m\u00e4\u00e4rata', 'Otsi loom', 'Vali loom', 'L\u00f5peta valitud looma sissekanne') and decision nodes with guards. All actions appear in the main flow between the initial and final nodes; none are visually detached or appear without incoming control flow, so no unreachable action can be clearly identified. "
+      "justification": "The activity diagram 'Looma sissekande lõpetamise tegevusdiagramm' on page 3 shows a start node, a sequence of actions (such as 'Vaata kõiki loomi, keda saab surnuks määrata', 'Otsi loom', 'Vali loom', 'Lõpeta valitud looma sissekanne') and decision nodes with guards. All actions appear in the main flow between the initial and final nodes; none are visually detached or appear without incoming control flow, so no unreachable action can be clearly identified. "
     },
     {
       "rule_id": "G15.3",
@@ -61,7 +61,7 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "At least one diagram has 10 or more central elements. The use-case diagram 'Loomade funktsionaalne alls\u00fcsteem' contains 11 distinct use-case ovals (e.g., 'Tuvasta kasutaja', 'Vaata loomade koondaruannet', ..., 'Otsi looma kiibi j\u00e4rgi') which are counted as central elements. Additionally, the 'Klassifikaatorite register' class diagram includes more than 10 classes/tables (various '**seisundi_liik', '**t\u00fc\u00fcp', and other classifier entities). Therefore the size smell S1.1 is present. "
+      "justification": "At least one diagram has 10 or more central elements. The use-case diagram 'Loomade funktsionaalne allsüsteem' contains 11 distinct use-case ovals (e.g., 'Tuvasta kasutaja', 'Vaata loomade koondaruannet', ..., 'Otsi looma kiibi järgi') which are counted as central elements. Additionally, the 'Klassifikaatorite register' class diagram includes more than 10 classes/tables (various '**seisundi_liik', '**tüüp', and other classifier entities). Therefore the size smell S1.1 is present. "
     },
     {
       "rule_id": "S1.2",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "Use-case names and activity actions begin with active verbs or verb phrases. Examples include 'Tuvasta kasutaja', 'Vaata loomade koondaruannet', 'M\u00e4rgi loom surnuks', 'Registreeri loom', 'Muuda looma infot', 'Aktiveeri loom', 'Muuda loom mittaktiivseks', 'Vaata k\u00f5iki loomi', 'Vaata k\u00f5iki mitteaktiivseid loomi', 'Otsi loom', 'Vali loom', and 'L\u00f5peta valitud looma sissekanne'. No use case or activity action is named purely as a noun phrase or otherwise lacks an initial verb. "
+      "justification": "Use-case names and activity actions begin with active verbs or verb phrases. Examples include 'Tuvasta kasutaja', 'Vaata loomade koondaruannet', 'Märgi loom surnuks', 'Registreeri loom', 'Muuda looma infot', 'Aktiveeri loom', 'Muuda loom mittaktiivseks', 'Vaata kõiki loomi', 'Vaata kõiki mitteaktiivseid loomi', 'Otsi loom', 'Vali loom', and 'Lõpeta valitud looma sissekanne'. No use case or activity action is named purely as a noun phrase or otherwise lacks an initial verb. "
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Class and table names in the diagrams (for example, 'Isik', 'T\u00f6\u00f6taja', 'Loom', 'Kommentaar', 'Protseduur', 'Adopteerimine', 'Loom_Looma_kategooria') all begin with uppercase letters and are singular concepts in the modeling context. Names that are grammatically plural are used only in register titles like 'Isikute register' or 'Adopteerimiste register', which are considered register containers and are exempt per the interpretation rules. "
+      "justification": "Class and table names in the diagrams (for example, 'Isik', 'Töötaja', 'Loom', 'Kommentaar', 'Protseduur', 'Adopteerimine', 'Loom_Looma_kategooria') all begin with uppercase letters and are singular concepts in the modeling context. Names that are grammatically plural are used only in register titles like 'Isikute register' or 'Adopteerimiste register', which are considered register containers and are exempt per the interpretation rules. "
     },
     {
       "rule_id": "N3.2",

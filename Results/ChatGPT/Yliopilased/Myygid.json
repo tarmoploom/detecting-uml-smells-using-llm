@@ -13,19 +13,19 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "In the use case diagram 'Tellimuste funktsionaalne alls\u00fcsteem' (page 11), all listed use cases appear inside the system boundary in the context of multiple actors; there is no explicit evidence of an unassociated (orphan) use case oval. "
+      "justification": "In the use case diagram 'Tellimuste funktsionaalne allsüsteem' (page 11), all listed use cases appear inside the system boundary in the context of multiple actors; there is no explicit evidence of an unassociated (orphan) use case oval. "
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "The use case names on the 'Tellimuste funktsionaalne alls\u00fcsteem' diagram are distinct (e.g., 'Koosta tellimus', 'Esita ja maksa tellimuse eest', 'T\u00fchista esitatud tellimus', 'Vaata tellimuste ja saadetiste infot'), and there is no clear pair of use cases that describe the same activity while being associated with the same actor. "
+      "justification": "The use case names on the 'Tellimuste funktsionaalne allsüsteem' diagram are distinct (e.g., 'Koosta tellimus', 'Esita ja maksa tellimuse eest', 'Tühista esitatud tellimus', 'Vaata tellimuste ja saadetiste infot'), and there is no clear pair of use cases that describe the same activity while being associated with the same actor. "
     },
     {
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "In the package diagram 'Tellimuste paketidiagramm' (page 1), each package or subsystem (e.g., 'Tellimuste funktsionaalne alls\u00fcsteem', 'Tellimuste register', 'Toodete register', 'Klientide register', 'Klassifikaatorite register', 'T\u00f6\u00f6tajate register') has a unique primary name within the package; no duplicate model element names appear in the same package. "
+      "justification": "In the package diagram 'Tellimuste paketidiagramm' (page 1), each package or subsystem (e.g., 'Tellimuste funktsionaalne allsüsteem', 'Tellimuste register', 'Toodete register', 'Klientide register', 'Klassifikaatorite register', 'Töötajate register') has a unique primary name within the package; no duplicate model element names appear in the same package. "
     },
     {
       "rule_id": "G6.3",
@@ -37,7 +37,7 @@
       "rule_id": "G8.1",
       "actual": true,
       "detected": true,
-      "justification": "Use case naming on 'Tellimuste funktsionaalne alls\u00fcsteem' is inconsistent: some use cases start with an active verb such as 'Koosta tellimus', 'Esita ja maksa tellimuse eest', 'Tuvasta kasutaja', while others begin with a noun phrase like 'Klient kustutab poolelioleva tellimuse' and 'Aeg kustutab poolelioleva tellimuse', which mix actor or time nouns with verbs. "
+      "justification": "Use case naming on 'Tellimuste funktsionaalne allsüsteem' is inconsistent: some use cases start with an active verb such as 'Koosta tellimus', 'Esita ja maksa tellimuse eest', 'Tuvasta kasutaja', while others begin with a noun phrase like 'Klient kustutab poolelioleva tellimuse' and 'Aeg kustutab poolelioleva tellimuse', which mix actor or time nouns with verbs. "
     },
     {
       "rule_id": "G15.1",
@@ -49,19 +49,19 @@
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "In the activity diagrams 'Aluste tellimuse komplekteerimist', 'Koosta tellimus', and 'Registreeri klient' (pages 12\u201314), each action label appears within the main flow from the initial node to the final node, and no action box is visibly isolated without a path from the start; decision questions (e.g., 'Kas klient soovib otsida?') appear as branching points rather than unreachable actions. "
+      "justification": "In the activity diagrams 'Aluste tellimuse komplekteerimist', 'Koosta tellimus', and 'Registreeri klient' (pages 12–14), each action label appears within the main flow from the initial node to the final node, and no action box is visibly isolated without a path from the start; decision questions (e.g., 'Kas klient soovib otsida?') appear as branching points rather than unreachable actions. "
     },
     {
       "rule_id": "G15.3",
       "actual": false,
       "detected": false,
-      "justification": "On the class and database diagrams (e.g., 'Tellimuste register', 'Toodete register', 'Isikute register', and the transformed database diagrams), association and FK lines either show explicit multiplicity indicators like '1' and '0..*' or are standard crow\u2019s-foot/FK connectors typical of database notation; there is no clearly drawn UML-style relationship line that entirely lacks multiplicity notation at both ends. "
+      "justification": "On the class and database diagrams (e.g., 'Tellimuste register', 'Toodete register', 'Isikute register', and the transformed database diagrams), association and FK lines either show explicit multiplicity indicators like '1' and '0..*' or are standard crow’s-foot/FK connectors typical of database notation; there is no clearly drawn UML-style relationship line that entirely lacks multiplicity notation at both ends. "
     },
     {
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "At least two diagrams exceed the threshold of 10 central elements: for example, the class diagram 'Tellimuste register' (page 2) includes around ten domain classes such as Tellimus, Tellimuse rida, Isik, Klient, Tellimuse_seisundi_liik, Pank, Pakiautomaat, Pakiautomaadi firma, Toode, and T\u00f6\u00f6taja; and the database diagram 'Klassifikaatorite register (transformed)' (page 16) contains eleven tables (Isiku_seisundi_liik, Kliendi_seisundi_liik, Pakiautomaadi_firma, Pakiautomaat, Pank, Riik, Tellimuse_seisundi_liik, Tootaja_roll, Tootaja_seisundi_liik, Toote_kategooria, Toote_seisundi_liik). "
+      "justification": "At least two diagrams exceed the threshold of 10 central elements: for example, the class diagram 'Tellimuste register' (page 2) includes around ten domain classes such as Tellimus, Tellimuse rida, Isik, Klient, Tellimuse_seisundi_liik, Pank, Pakiautomaat, Pakiautomaadi firma, Toode, and Töötaja; and the database diagram 'Klassifikaatorite register (transformed)' (page 16) contains eleven tables (Isiku_seisundi_liik, Kliendi_seisundi_liik, Pakiautomaadi_firma, Pakiautomaat, Pank, Riik, Tellimuse_seisundi_liik, Tootaja_roll, Tootaja_seisundi_liik, Toote_kategooria, Toote_seisundi_liik). "
     },
     {
       "rule_id": "S1.2",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": true,
       "detected": true,
-      "justification": "Some use case names on 'Tellimuste funktsionaalne alls\u00fcsteem' do not start with an active verb but with a noun phrase (e.g., 'Klient kustutab poolelioleva tellimuse', 'Aeg kustutab poolelioleva tellimuse'), while others follow the verb-first pattern (e.g., 'Koosta tellimus', 'Tuvasta kasutaja'); this violates the requirement that each use case or activity action name start with an active verb. "
+      "justification": "Some use case names on 'Tellimuste funktsionaalne allsüsteem' do not start with an active verb but with a noun phrase (e.g., 'Klient kustutab poolelioleva tellimuse', 'Aeg kustutab poolelioleva tellimuse'), while others follow the verb-first pattern (e.g., 'Koosta tellimus', 'Tuvasta kasutaja'); this violates the requirement that each use case or activity action name start with an active verb. "
     },
     {
       "rule_id": "N1.2",
@@ -97,7 +97,7 @@
       "rule_id": "N3.2",
       "actual": false,
       "detected": false,
-      "justification": "Attribute and column names across the diagrams consistently start with lowercase letters (e.g., 'j\u00e4lgimisnumber', 'kommentaar', 'summa', 'viimase_muutm_aeg', 'e_meil', 'isikukood', 'laos_toodete_arv'); the only uppercase words are data types or constraint labels (e.g., VarChar, Integer, PK, FK) rather than attribute names. "
+      "justification": "Attribute and column names across the diagrams consistently start with lowercase letters (e.g., 'jälgimisnumber', 'kommentaar', 'summa', 'viimase_muutm_aeg', 'e_meil', 'isikukood', 'laos_toodete_arv'); the only uppercase words are data types or constraint labels (e.g., VarChar, Integer, PK, FK) rather than attribute names. "
     },
     {
       "rule_id": "N3.3",

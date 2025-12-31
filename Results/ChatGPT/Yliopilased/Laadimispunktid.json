@@ -13,19 +13,19 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "The only use case diagram, 'Laadimispunktide funktsionaalne alls\u00fcsteem', shows multiple actors around the system and no use case oval is explicitly shown as completely isolated; there is no clear evidence of a use case without any association to an actor. Lists of functions inside packages on the overview/context diagram are treated as textual contents, not as use case ovals, so they are excluded from this rule. "
+      "justification": "The only use case diagram, 'Laadimispunktide funktsionaalne allsüsteem', shows multiple actors around the system and no use case oval is explicitly shown as completely isolated; there is no clear evidence of a use case without any association to an actor. Lists of functions inside packages on the overview/context diagram are treated as textual contents, not as use case ovals, so they are excluded from this rule. "
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "In the use case diagram the use cases have distinct meanings (e.g., 'Registreeri laadimispunkt', 'Aktiveeri laadimispunkt', 'L\u00f5peta laadimispunkt', 'Unusta laadimispunkt', different 'Vaata ...' variants). None are obvious synonyms describing the same activity for the same actor as required by this rule. "
+      "justification": "In the use case diagram the use cases have distinct meanings (e.g., 'Registreeri laadimispunkt', 'Aktiveeri laadimispunkt', 'Lõpeta laadimispunkt', 'Unusta laadimispunkt', different 'Vaata ...' variants). None are obvious synonyms describing the same activity for the same actor as required by this rule. "
     },
     {
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "In the package/overview diagram the elements inside a given package have unique primary names (e.g., within 'Klassifikaatorite register' the items 'Isiku_seisundi_liik', 'Klassifikaator', 'Laadimispunkti_kategooria', etc. are all different). In the class/package diagrams there is at most one model element with a given name per package; repeated labels such as 'Klassifikaatori t\u00fc\u00fcp' are classifier-type metadata, not separate elements, per the interpretation rules. "
+      "justification": "In the package/overview diagram the elements inside a given package have unique primary names (e.g., within 'Klassifikaatorite register' the items 'Isiku_seisundi_liik', 'Klassifikaator', 'Laadimispunkti_kategooria', etc. are all different). In the class/package diagrams there is at most one model element with a given name per package; repeated labels such as 'Klassifikaatori tüüp' are classifier-type metadata, not separate elements, per the interpretation rules. "
     },
     {
       "rule_id": "G6.3",
@@ -37,31 +37,31 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use case names in the 'Laadimispunktide funktsionaalne alls\u00fcsteem' diagram use a consistent imperative-verb form such as 'Tuvasta kasutaja', 'Registreeri laadimispunkt', 'Vaata laadimispunktide koondaruannet', 'Unusta laadimispunkt'; there is no mixture of verb-style and noun-only use case names. "
+      "justification": "All use case names in the 'Laadimispunktide funktsionaalne allsüsteem' diagram use a consistent imperative-verb form such as 'Tuvasta kasutaja', 'Registreeri laadimispunkt', 'Vaata laadimispunktide koondaruannet', 'Unusta laadimispunkt'; there is no mixture of verb-style and noun-only use case names. "
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the 'Laadimispunkti seisundidiagramm' state diagram all named states (Ootel, Aktiivne, Mitteaktiivne, L\u00f5petatud, Unustatud) are connected by transitions and appear on paths starting from the initial node; no state is clearly isolated or without an incoming transition. "
+      "justification": "In the 'Laadimispunkti seisundidiagramm' state diagram all named states (Ootel, Aktiivne, Mitteaktiivne, Lõpetatud, Unustatud) are connected by transitions and appear on paths starting from the initial node; no state is clearly isolated or without an incoming transition. "
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "Both activity diagrams titled 'Laadimispunkti l\u00f5petamise tegevusdiagramm' show each action (e.g., 'Vaata k\u00f5iki laadimispunkte, mida saab l\u00f5petada', 'Otsi laadimispunkti', 'Vali laadimispunkt', 'L\u00f5peta valitud laadimispunkt', 'Salvesta andmed') on a flow from the initial node to the final node, with incoming edges from decisions or previous actions; there are no explicit action nodes shown without any incoming control flow. "
+      "justification": "Both activity diagrams titled 'Laadimispunkti lõpetamise tegevusdiagramm' show each action (e.g., 'Vaata kõiki laadimispunkte, mida saab lõpetada', 'Otsi laadimispunkti', 'Vali laadimispunkt', 'Lõpeta valitud laadimispunkt', 'Salvesta andmed') on a flow from the initial node to the final node, with incoming edges from decisions or previous actions; there are no explicit action nodes shown without any incoming control flow. "
     },
     {
       "rule_id": "G15.3",
       "actual": false,
       "detected": false,
-      "justification": "In the conceptual class diagrams, visible association lines between classes/tables carry multiplicity indicators such as '1', '0..1', or '0..*' (e.g., between 'Isik' and 'Riik', or 'T\u00f6\u00f6taja' and 'T\u00f6\u00f6taja_rolli_omamine'). In the transformed database diagrams, relationships are drawn as standard crow's-foot / FK connectors, which are exempt from this rule. No UML-style association line is clearly shown without multiplicities on both ends. "
+      "justification": "In the conceptual class diagrams, visible association lines between classes/tables carry multiplicity indicators such as '1', '0..1', or '0..*' (e.g., between 'Isik' and 'Riik', or 'Töötaja' and 'Töötaja_rolli_omamine'). In the transformed database diagrams, relationships are drawn as standard crow's-foot / FK connectors, which are exempt from this rule. No UML-style association line is clearly shown without multiplicities on both ends. "
     },
     {
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "Several diagrams contain 10 or more central elements (classes/tables/use cases). For example, the 'Laadimispunktide funktsionaalne alls\u00fcsteem' use case diagram shows 11 distinct use cases, and the 'Laadimispunktide register' and 'Klassifikaatorite register (transformed)' class/database diagrams each show about 10 different tables/classes. Context/overview elements on the first package diagram were not counted, per the interpretation rules. "
+      "justification": "Several diagrams contain 10 or more central elements (classes/tables/use cases). For example, the 'Laadimispunktide funktsionaalne allsüsteem' use case diagram shows 11 distinct use cases, and the 'Laadimispunktide register' and 'Klassifikaatorite register (transformed)' class/database diagrams each show about 10 different tables/classes. Context/overview elements on the first package diagram were not counted, per the interpretation rules. "
     },
     {
       "rule_id": "S1.2",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All visible use case names start with an active verb (e.g., 'Tuvasta', 'Registreeri', 'Aktiveeri', 'Muuda', 'Vaata', 'Unusta'), and the activity diagram actions likewise start with verbs (e.g., 'Vaata ...', 'Otsi ...', 'Vali ...', 'L\u00f5peta ...', 'Salvesta andmed'). Question nodes like 'Kas soovib otsida?' and initial/final nodes ('Algus', 'L\u00f5pp') are decisions or control nodes, not actions, so they are outside the scope of this rule. "
+      "justification": "All visible use case names start with an active verb (e.g., 'Tuvasta', 'Registreeri', 'Aktiveeri', 'Muuda', 'Vaata', 'Unusta'), and the activity diagram actions likewise start with verbs (e.g., 'Vaata ...', 'Otsi ...', 'Vali ...', 'Lõpeta ...', 'Salvesta andmed'). Question nodes like 'Kas soovib otsida?' and initial/final nodes ('Algus', 'Lõpp') are decisions or control nodes, not actions, so they are outside the scope of this rule. "
     },
     {
       "rule_id": "N1.2",
@@ -91,13 +91,13 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Entity class and table names start with uppercase letters and are singular (e.g., 'Isik', 'Klient', 'Pakett', 'Laadimispunkt', 'T\u00f6\u00f6taja'). Plural or lowercase names are used only in register/package titles such as 'Isikute register' or 'Pakettide register', which are explicitly excluded from this rule. "
+      "justification": "Entity class and table names start with uppercase letters and are singular (e.g., 'Isik', 'Klient', 'Pakett', 'Laadimispunkt', 'Töötaja'). Plural or lowercase names are used only in register/package titles such as 'Isikute register' or 'Pakettide register', which are explicitly excluded from this rule. "
     },
     {
       "rule_id": "N3.2",
       "actual": false,
       "detected": false,
-      "justification": "Attribute and column names are written in lowercase or lowercase_with_underscores (e.g., 'e_meil', 'reg_aeg', 'laadimispunkti_kood', 'on_n\u00f5us_t\u00fclitamisega'). Names that begin with uppercase letters such as 'PK_Isik' or 'AK_Isik_isikukood_riik_kood' are index or key identifiers under \u00abPK\u00bb/\u00abunique\u00bb stereotypes, not attribute/column names, so they are outside the rule's scope. "
+      "justification": "Attribute and column names are written in lowercase or lowercase_with_underscores (e.g., 'e_meil', 'reg_aeg', 'laadimispunkti_kood', 'on_nõus_tülitamisega'). Names that begin with uppercase letters such as 'PK_Isik' or 'AK_Isik_isikukood_riik_kood' are index or key identifiers under «PK»/«unique» stereotypes, not attribute/column names, so they are outside the rule's scope. "
     },
     {
       "rule_id": "N3.3",

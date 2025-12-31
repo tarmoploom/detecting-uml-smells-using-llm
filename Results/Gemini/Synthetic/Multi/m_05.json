@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "All use cases are associated with actors either directly (visual association lines) or indirectly via \u00abinclude\u00bb relationships (e.g., 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid autosid' is included by use cases connected to the 'Autode haldur')."
+      "justification": "All use cases are associated with actors either directly (visual association lines) or indirectly via «include» relationships (e.g., 'Vaata kõiki ootel või mitteaktiivseid autosid' is included by use cases connected to the 'Autode haldur')."
     },
     {
       "rule_id": "G6.1",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use case names follow a consistent verb-noun structure in Estonian (e.g., 'Registreeri auto', 'Vaata k\u00f5iki autosid')."
+      "justification": "All use case names follow a consistent verb-noun structure in Estonian (e.g., 'Registreeri auto', 'Vaata kõiki autosid')."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the 'Auto seisundidiagramm' (Page 9), all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, L\u00f5petatud) are reachable from the Start node via defined transitions."
+      "justification": "In the 'Auto seisundidiagramm' (Page 9), all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, Lõpetatud) are reachable from the Start node via defined transitions."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "In the 'Auto l\u00f5petamise tegevusdiagramm' (Page 4), all actions are reachable through the decision flows."
+      "justification": "In the 'Auto lõpetamise tegevusdiagramm' (Page 4), all actions are reachable through the decision flows."
     },
     {
       "rule_id": "G15.3",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": true,
       "detected": true,
-      "justification": "Several class names start with a lowercase letter, violating standard naming conventions. Examples include 'isik', 'auto', 't\u00f6\u00f6taja', 'kasutajakonto', 'riik', 'klassifikaator', and 'klient' (seen on Pages 5, 6, 7, 10, 11, 12, 13)."
+      "justification": "Several class names start with a lowercase letter, violating standard naming conventions. Examples include 'isik', 'auto', 'töötaja', 'kasutajakonto', 'riik', 'klassifikaator', and 'klient' (seen on Pages 5, 6, 7, 10, 11, 12, 13)."
     },
     {
       "rule_id": "N3.2",

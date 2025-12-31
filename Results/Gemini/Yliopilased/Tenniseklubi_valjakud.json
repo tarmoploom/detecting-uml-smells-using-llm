@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "All use cases in the 'V\u00e4ljakute funktsionaalne alls\u00fcsteem' diagram are associated with an actor, either directly or via an \u00abinclude\u00bb relationship to a use case that is associated with an actor."
+      "justification": "All use cases in the 'Väljakute funktsionaalne allsüsteem' diagram are associated with an actor, either directly or via an «include» relationship to a use case that is associated with an actor."
     },
     {
       "rule_id": "G6.1",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases follow a consistent naming convention, starting with a verb (e.g., 'Tuvasta', 'Vaata', 'L\u00f5peta', 'Registreeri')."
+      "justification": "All use cases follow a consistent naming convention, starting with a verb (e.g., 'Tuvasta', 'Vaata', 'Lõpeta', 'Registreeri')."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the state diagram (V\u00e4ljaku seisundidiagramm), all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, L\u00f5petatud) are reachable via transitions."
+      "justification": "In the state diagram (Väljaku seisundidiagramm), all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, Lõpetatud) are reachable via transitions."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "In the activity diagrams (V\u00e4ljaku l\u00f5petamise/aktiveerimise tegevusdiagramm), all actions are reachable from the start node."
+      "justification": "In the activity diagrams (Väljaku lõpetamise/aktiveerimise tegevusdiagramm), all actions are reachable from the start node."
     },
     {
       "rule_id": "G15.3",
@@ -61,13 +61,13 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The use case diagram 'V\u00e4ljakute funktsionaalne alls\u00fcsteem' (Page 2) contains 11 use cases (central elements), which exceeds the threshold of 10."
+      "justification": "The use case diagram 'Väljakute funktsionaalne allsüsteem' (Page 2) contains 11 use cases (central elements), which exceeds the threshold of 10."
     },
     {
       "rule_id": "S1.2",
       "actual": false,
       "detected": false,
-      "justification": "No single class or table was found with 6 or more visual connection lines on a single diagram page. The maximum observed was 5 (e.g., on the 'V\u00e4ljak' table in the transformed register diagram)."
+      "justification": "No single class or table was found with 6 or more visual connection lines on a single diagram page. The maximum observed was 5 (e.g., on the 'Väljak' table in the transformed register diagram)."
     },
     {
       "rule_id": "S2.1",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All class names start with an uppercase letter and are singular (e.g., 'Isik', 'Klient', 'V\u00e4ljak')."
+      "justification": "All class names start with an uppercase letter and are singular (e.g., 'Isik', 'Klient', 'Väljak')."
     },
     {
       "rule_id": "N3.2",
@@ -103,7 +103,7 @@
       "rule_id": "N3.3",
       "actual": false,
       "detected": false,
-      "justification": "All table names in the transformed diagrams are singular (e.g., 'Isik', 'Klient', 'V\u00e4ljak')."
+      "justification": "All table names in the transformed diagrams are singular (e.g., 'Isik', 'Klient', 'Väljak')."
     },
     {
       "rule_id": "N4.1",

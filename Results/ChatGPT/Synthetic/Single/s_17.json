@@ -19,13 +19,13 @@
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "The use case names on page 2 appear distinct (e.g., 'Vaata aktiivseid autosid', 'Vaata k\u00f5iki autosid', 'Vaata autode koondaruannet') and there is no explicit, unambiguous pair of use cases describing the same activity with the same actor."
+      "justification": "The use case names on page 2 appear distinct (e.g., 'Vaata aktiivseid autosid', 'Vaata kõiki autosid', 'Vaata autode koondaruannet') and there is no explicit, unambiguous pair of use cases describing the same activity with the same actor."
     },
     {
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "On the package-style overview on page 1, the listed registries and subsystems do not clearly repeat the same primary element name within the same package. Repeated occurrences of tool-generated text such as 'Klassifikaatori t\u00fc\u00fcp' on pages 6-7 appear to be metadata-like labels rather than separate model elements per the clarification, so no duplicate-name violation is explicit."
+      "justification": "On the package-style overview on page 1, the listed registries and subsystems do not clearly repeat the same primary element name within the same package. Repeated occurrences of tool-generated text such as 'Klassifikaatori tüüp' on pages 6-7 appear to be metadata-like labels rather than separate model elements per the clarification, so no duplicate-name violation is explicit."
     },
     {
       "rule_id": "G6.3",
@@ -37,13 +37,13 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names visible on page 2 consistently appear to start with verbs in the same form (e.g., 'Tuvasta', 'Vaata', 'L\u00f5peta', 'Registreeri', 'Unusta', 'Muuda', 'Aktiveeri'), so no inconsistent naming form is explicitly shown."
+      "justification": "Use case names visible on page 2 consistently appear to start with verbs in the same form (e.g., 'Tuvasta', 'Vaata', 'Lõpeta', 'Registreeri', 'Unusta', 'Muuda', 'Aktiveeri'), so no inconsistent naming form is explicitly shown."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "The state diagram on page 8 lists states such as 'Aktiivne', 'Mitteaktiivne', 'L\u00f5petatud', 'Ootel', and 'Unustatud', but the parsed content does not unambiguously show any state that cannot be reached. Without a clear, directly visible unreachable state, this rule is not triggered."
+      "justification": "The state diagram on page 8 lists states such as 'Aktiivne', 'Mitteaktiivne', 'Lõpetatud', 'Ootel', and 'Unustatud', but the parsed content does not unambiguously show any state that cannot be reached. Without a clear, directly visible unreachable state, this rule is not triggered."
     },
     {
       "rule_id": "G15.2",
@@ -61,7 +61,7 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The use case diagram on page 2 contains at least 11 use cases ('Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Vaata k\u00f5iki autosid', 'Vaata autode koondaruannet', 'L\u00f5peta auto', 'Registreeri auto', 'Unusta auto', 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid autosid', 'Muuda autot', 'Aktiveeri auto', 'Muuda auto mittaktiivseks'), which meets the threshold of 10 or more central elements for a single diagram. Actors are not counted. "
+      "justification": "The use case diagram on page 2 contains at least 11 use cases ('Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Vaata kõiki autosid', 'Vaata autode koondaruannet', 'Lõpeta auto', 'Registreeri auto', 'Unusta auto', 'Vaata kõiki ootel või mitteaktiivseid autosid', 'Muuda autot', 'Aktiveeri auto', 'Muuda auto mittaktiivseks'), which meets the threshold of 10 or more central elements for a single diagram. Actors are not counted. "
     },
     {
       "rule_id": "S1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Visible class names in the conceptual/class diagrams (pages 4-12) appear to start with uppercase letters and are not clearly plural (e.g., 'Isik', 'T\u00f6\u00f6taja', 'Auto', 'Klient', 'Klassifikaator'). No explicit violation is shown."
+      "justification": "Visible class names in the conceptual/class diagrams (pages 4-12) appear to start with uppercase letters and are not clearly plural (e.g., 'Isik', 'Töötaja', 'Auto', 'Klient', 'Klassifikaator'). No explicit violation is shown."
     },
     {
       "rule_id": "N3.2",

@@ -37,7 +37,7 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases on Page 2 start with a verb (e.g., 'Vaata', 'Tuvasta', 'L\u00f5peta', 'Registreeri')."
+      "justification": "All use cases on Page 2 start with a verb (e.g., 'Vaata', 'Tuvasta', 'Lõpeta', 'Registreeri')."
     },
     {
       "rule_id": "G15.1",
@@ -67,7 +67,7 @@
       "rule_id": "S1.2",
       "actual": true,
       "detected": true,
-      "justification": "On Page 10 (Parkimiskoha register), the class 'Parkimiskoht' has 6 visual connection lines to other classes (Parkimiskoha_kategooria_omamine, Parkimiskoha_suurus, Parkimiskoha_aadress, Parkimiskoha_seisundi_liik, and two connections to T\u00f6\u00f6taja/Isik)."
+      "justification": "On Page 10 (Parkimiskoha register), the class 'Parkimiskoht' has 6 visual connection lines to other classes (Parkimiskoha_kategooria_omamine, Parkimiskoha_suurus, Parkimiskoha_aadress, Parkimiskoha_seisundi_liik, and two connections to Töötaja/Isik)."
     },
     {
       "rule_id": "S2.1",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": true,
       "detected": true,
-      "justification": "On Page 4, the activity diagram action 'Parkimiskoha haldur valib parkimiskoha' starts with a noun ('Parkimiskoha') instead of an active verb (e.g., 'Vali parkimiskoht'). Similarly, 'Parkimiskoha aktiveerimine \u00f5nnestub' starts with a noun."
+      "justification": "On Page 4, the activity diagram action 'Parkimiskoha haldur valib parkimiskoha' starts with a noun ('Parkimiskoha') instead of an active verb (e.g., 'Vali parkimiskoht'). Similarly, 'Parkimiskoha aktiveerimine õnnestub' starts with a noun."
     },
     {
       "rule_id": "N1.2",

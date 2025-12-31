@@ -13,13 +13,13 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "On page 2 (Autode funktsionaalne alls\u00fcsteem - Vaata & Tuvasta), all use case ovals (Tuvasta kasutaja, Vaata aktiivseid autosid, Vaata k\u00f5iki autosid, Vaata autode koondaruannet) are associated with actors (Uudistaja, Klienditeenindaja, Juhataja, Klient, Autode haldur, S\u00fcsteem). On page 3 (Autode halduse funktsionaalne alls\u00fcsteem - Muuda), all use cases are associated with Autode haldur and/or Juhataja actors. Every use case oval has at least 1 actor association."
+      "justification": "On page 2 (Autode funktsionaalne allsüsteem - Vaata & Tuvasta), all use case ovals (Tuvasta kasutaja, Vaata aktiivseid autosid, Vaata kõiki autosid, Vaata autode koondaruannet) are associated with actors (Uudistaja, Klienditeenindaja, Juhataja, Klient, Autode haldur, Süsteem). On page 3 (Autode halduse funktsionaalne allsüsteem - Muuda), all use cases are associated with Autode haldur and/or Juhataja actors. Every use case oval has at least 1 actor association."
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "All use case names describe distinct activities. On pages 2-3, use cases include: Tuvasta kasutaja, Vaata aktiivseid autosid, Vaata k\u00f5iki autosid, Vaata autode koondaruannet, Registreeri auto, L\u00f5peta auto, Muuda autot, Aktiveeri auto, Muuda auto mittaktiivseks, Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid autosid, Unusta auto. While multiple 'Vaata' use cases exist, they describe different views (active cars, all cars, summary report, pending cars) - no duplicates with same activity meaning and same actor."
+      "justification": "All use case names describe distinct activities. On pages 2-3, use cases include: Tuvasta kasutaja, Vaata aktiivseid autosid, Vaata kõiki autosid, Vaata autode koondaruannet, Registreeri auto, Lõpeta auto, Muuda autot, Aktiveeri auto, Muuda auto mittaktiivseks, Vaata kõiki ootel või mitteaktiivseid autosid, Unusta auto. While multiple 'Vaata' use cases exist, they describe different views (active cars, all cars, summary report, pending cars) - no duplicates with same activity meaning and same actor."
     },
     {
       "rule_id": "G6.2",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases follow consistent verb-first naming pattern in Estonian: Tuvasta (Identify), Vaata (View), Registreeri (Register), L\u00f5peta (End), Muuda (Modify), Aktiveeri (Activate), Unusta (Forget). All use cases start with imperative verbs - no noun-first names found."
+      "justification": "All use cases follow consistent verb-first naming pattern in Estonian: Tuvasta (Identify), Vaata (View), Registreeri (Register), Lõpeta (End), Muuda (Modify), Aktiveeri (Activate), Unusta (Forget). All use cases start with imperative verbs - no noun-first names found."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "On page 8 (Auto seisundidiagramm), all states have incoming transitions: Ootel receives from Algus (initial), Aktiivne receives from Ootel and Mitteaktiivne, Mitteaktiivne receives from Aktiivne, L\u00f5petatud receives from Aktiivne and Mitteaktiivne, Unustatud receives from Ootel. Every state can be reached via at least one transition path."
+      "justification": "On page 8 (Auto seisundidiagramm), all states have incoming transitions: Ootel receives from Algus (initial), Aktiivne receives from Ootel and Mitteaktiivne, Mitteaktiivne receives from Aktiivne, Lõpetatud receives from Aktiivne and Mitteaktiivne, Unustatud receives from Ootel. Every state can be reached via at least one transition path."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "On page 4 (Auto l\u00f5petamise tegevusdiagramm), all actions can be reached from the start node (Algus). Flow: Algus \u2192 Vaata k\u00f5iki autosid \u2192 decision nodes \u2192 Otsi autot / Vali auto \u2192 L\u00f5peta valitud auto \u2192 L\u00f5pp. All actions have incoming flows from the start node through the control flow."
+      "justification": "On page 4 (Auto lõpetamise tegevusdiagramm), all actions can be reached from the start node (Algus). Flow: Algus → Vaata kõiki autosid → decision nodes → Otsi autot / Vali auto → Lõpeta valitud auto → Lõpp. All actions have incoming flows from the start node through the control flow."
     },
     {
       "rule_id": "G15.3",
@@ -61,13 +61,13 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "Diagram 'Klassifikaatorite register' on page 7 contains 11 classes. Counted: Klassifikaator, Riik, Isiku_seisundi_liik, T\u00f6\u00f6taja_seisundi_liik, T\u00f6\u00f6taja_roll, Kliendi_seisundi_liik, Auto_mark, Auto_seisundi_liik, Auto_k\u00fctuse_liik, Auto_kategooria, Auto_kategooria_t\u00fc\u00fcp = 11 total. Threshold is \u226510. 11 \u2265 10, therefore smell IS present."
+      "justification": "Diagram 'Klassifikaatorite register' on page 7 contains 11 classes. Counted: Klassifikaator, Riik, Isiku_seisundi_liik, Töötaja_seisundi_liik, Töötaja_roll, Kliendi_seisundi_liik, Auto_mark, Auto_seisundi_liik, Auto_kütuse_liik, Auto_kategooria, Auto_kategooria_tüüp = 11 total. Threshold is ≥10. 11 ≥ 10, therefore smell IS present."
     },
     {
       "rule_id": "S1.2",
       "actual": false,
       "detected": true,
-      "justification": "On diagram 'Klassifikaatorite register' page 7, the class 'Klassifikaator' has 10 visual inheritance/generalization connection lines to subclasses: Riik, Isiku_seisundi_liik, T\u00f6\u00f6taja_seisundi_liik, T\u00f6\u00f6taja_roll, Kliendi_seisundi_liik, Auto_mark, Auto_seisundi_liik, Auto_k\u00fctuse_liik, Auto_kategooria, Auto_kategooria_t\u00fc\u00fcp. Maximum is 10. Threshold is \u22656. 10 \u2265 6, therefore smell IS present."
+      "justification": "On diagram 'Klassifikaatorite register' page 7, the class 'Klassifikaator' has 10 visual inheritance/generalization connection lines to subclasses: Riik, Isiku_seisundi_liik, Töötaja_seisundi_liik, Töötaja_roll, Kliendi_seisundi_liik, Auto_mark, Auto_seisundi_liik, Auto_kütuse_liik, Auto_kategooria, Auto_kategooria_tüüp. Maximum is 10. Threshold is ≥6. 10 ≥ 6, therefore smell IS present."
     },
     {
       "rule_id": "S2.1",
@@ -79,19 +79,19 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases start with active verbs (Estonian imperative forms): Tuvasta, Vaata, Registreeri, L\u00f5peta, Muuda, Aktiveeri, Unusta. All activity diagram actions on page 4 also start with verbs: Vaata, Otsi, Vali, L\u00f5peta. No noun-first or passive form names found."
+      "justification": "All use cases start with active verbs (Estonian imperative forms): Tuvasta, Vaata, Registreeri, Lõpeta, Muuda, Aktiveeri, Unusta. All activity diagram actions on page 4 also start with verbs: Vaata, Otsi, Vali, Lõpeta. No noun-first or passive form names found."
     },
     {
       "rule_id": "N1.2",
       "actual": false,
       "detected": false,
-      "justification": "All class, table, attribute, and use case names have \u22654 characters. Shortest names found: 'Isik' (4 chars), 'Auto' (4 chars), 'Riik' (4 chars). Threshold is \u22643 characters. Since minimum found is 4, 4 > 3, therefore smell is NOT present."
+      "justification": "All class, table, attribute, and use case names have ≥4 characters. Shortest names found: 'Isik' (4 chars), 'Auto' (4 chars), 'Riik' (4 chars). Threshold is ≤3 characters. Since minimum found is 4, 4 > 3, therefore smell is NOT present."
     },
     {
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All class names start with uppercase letters and are singular: Isik, T\u00f6\u00f6taja, Auto, Kasutajakonto, Klassifikaator, Riik, Klient, etc. No lowercase-starting or plural class names found."
+      "justification": "All class names start with uppercase letters and are singular: Isik, Töötaja, Auto, Kasutajakonto, Klassifikaator, Riik, Klient, etc. No lowercase-starting or plural class names found."
     },
     {
       "rule_id": "N3.2",

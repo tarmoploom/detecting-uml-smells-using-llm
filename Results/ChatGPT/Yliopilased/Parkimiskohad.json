@@ -19,7 +19,7 @@
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "The use cases on the functional subsystem diagram have distinct meanings (e.g., 'Registreeri Parkimiskoht', 'Aktiveeri Parkimiskoht', 'L\u00f5peta Parkimiskoht', 'Unusta Parkimiskoht', various 'Vaata ...' queries) and there is no pair whose names clearly describe the same activity for the same actor."
+      "justification": "The use cases on the functional subsystem diagram have distinct meanings (e.g., 'Registreeri Parkimiskoht', 'Aktiveeri Parkimiskoht', 'Lõpeta Parkimiskoht', 'Unusta Parkimiskoht', various 'Vaata ...' queries) and there is no pair whose names clearly describe the same activity for the same actor."
     },
     {
       "rule_id": "G6.2",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use-case names in the functional subsystem diagram consistently start with verbs and follow a similar 'verb + object' style (e.g., 'Tuvasta kasutaja', 'Registreeri Parkimiskoht', 'L\u00f5peta Parkimiskoht', 'Vaata aktiivseid Parkimiskohti', 'Unusta Parkimiskoht'); there is no visible inconsistency of form among these use-case names. "
+      "justification": "Use-case names in the functional subsystem diagram consistently start with verbs and follow a similar 'verb + object' style (e.g., 'Tuvasta kasutaja', 'Registreeri Parkimiskoht', 'Lõpeta Parkimiskoht', 'Vaata aktiivseid Parkimiskohti', 'Unusta Parkimiskoht'); there is no visible inconsistency of form among these use-case names. "
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the state diagram for 'Parkimiskoha seisundidiagramm', each named state (Ootel, Aktiivne, Mitteaktiivne, L\u00f5petatud, Unustatud) appears in the midst of described transitions, with text around them indicating causes for moving into or out of the state; none appears as an isolated state with no path from the initial node."
+      "justification": "In the state diagram for 'Parkimiskoha seisundidiagramm', each named state (Ootel, Aktiivne, Mitteaktiivne, Lõpetatud, Unustatud) appears in the midst of described transitions, with text around them indicating causes for moving into or out of the state; none appears as an isolated state with no path from the initial node."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "In both activity diagrams (for ending a parking place and for the 'Aktiveeri Parkimiskoht' scenario), all listed actions participate in flows connected to the initial and/or final nodes (e.g., 'Vaata k\u00f5iki Parkimiskohti, mida saab l\u00f5petada', 'Otsi Parkimiskoht', 'Vali Parkimiskoht', 'L\u00f5peta valitud Parkimiskoha', 'Aktiveeri valitud Parkimiskoht'); there is no action that is only mentioned once with no apparent incoming or outgoing transition."
+      "justification": "In both activity diagrams (for ending a parking place and for the 'Aktiveeri Parkimiskoht' scenario), all listed actions participate in flows connected to the initial and/or final nodes (e.g., 'Vaata kõiki Parkimiskohti, mida saab lõpetada', 'Otsi Parkimiskoht', 'Vali Parkimiskoht', 'Lõpeta valitud Parkimiskoha', 'Aktiveeri valitud Parkimiskoht'); there is no action that is only mentioned once with no apparent incoming or outgoing transition."
     },
     {
       "rule_id": "G15.3",
@@ -61,7 +61,7 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The use-case diagram 'Parkimiskohtade funktsionaalne alls\u00fcsteem' contains 11 distinct use cases (Tuvasta kasutaja, Registreeri Parkimiskoht, Aktiveeri Parkimiskoht, Muuda Parkimiskoht, Muuda Parkimiskoht mittaktiivseks, L\u00f5peta Parkimiskoht, Unusta Parkimiskoht, Vaata aktiivseid Parkimiskohti, Vaata k\u00f5iki Parkimiskohti, Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid Parkimiskohti, Vaata Parkimiskohtade koondaruannet), which exceeds the threshold of 10 central elements on a single diagram. "
+      "justification": "The use-case diagram 'Parkimiskohtade funktsionaalne allsüsteem' contains 11 distinct use cases (Tuvasta kasutaja, Registreeri Parkimiskoht, Aktiveeri Parkimiskoht, Muuda Parkimiskoht, Muuda Parkimiskoht mittaktiivseks, Lõpeta Parkimiskoht, Unusta Parkimiskoht, Vaata aktiivseid Parkimiskohti, Vaata kõiki Parkimiskohti, Vaata kõiki ootel või mitteaktiivseid Parkimiskohti, Vaata Parkimiskohtade koondaruannet), which exceeds the threshold of 10 central elements on a single diagram. "
     },
     {
       "rule_id": "S1.2",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": true,
       "detected": true,
-      "justification": "In the activity diagram for the 'Aktiveeri Parkimiskoht' scenario, at least two actions are labeled 'Parkimiskoha aktiveerimine \u00f5nnestub' and 'Parkimiskoha aktiveerimine eba\u00f5nnestub'; both names begin with the noun 'Parkimiskoha' rather than an active verb, so they violate the requirement that activity actions start with an active verb. "
+      "justification": "In the activity diagram for the 'Aktiveeri Parkimiskoht' scenario, at least two actions are labeled 'Parkimiskoha aktiveerimine õnnestub' and 'Parkimiskoha aktiveerimine ebaõnnestub'; both names begin with the noun 'Parkimiskoha' rather than an active verb, so they violate the requirement that activity actions start with an active verb. "
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Class names such as 'Isik', 'T\u00f6\u00f6taja', 'Parkimiskoht', 'Kasutajakonto', and 'Isiku_seisundi_liik' all start with uppercase letters and use singular forms. Plural names like 'Isikute register' or 'Klientide register' denote register packages and are exempt by the interpretation rules."
+      "justification": "Class names such as 'Isik', 'Töötaja', 'Parkimiskoht', 'Kasutajakonto', and 'Isiku_seisundi_liik' all start with uppercase letters and use singular forms. Plural names like 'Isikute register' or 'Klientide register' denote register packages and are exempt by the interpretation rules."
     },
     {
       "rule_id": "N3.2",

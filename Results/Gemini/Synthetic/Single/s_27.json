@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "All use cases are connected to actors either directly or indirectly via \u00abinclude\u00bb relationships (e.g., 'Tuvasta kasutaja' on Page 2 and 'Vaata k\u00f5iki ootel...' on Page 3 are included by actor-initiated use cases)."
+      "justification": "All use cases are connected to actors either directly or indirectly via «include» relationships (e.g., 'Tuvasta kasutaja' on Page 2 and 'Vaata kõiki ootel...' on Page 3 are included by actor-initiated use cases)."
     },
     {
       "rule_id": "G6.1",
@@ -37,7 +37,7 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case naming is consistent, using the 'Verb + Noun' pattern (e.g., 'Registreeri auto', 'Vaata k\u00f5iki autosid')."
+      "justification": "Use case naming is consistent, using the 'Verb + Noun' pattern (e.g., 'Registreeri auto', 'Vaata kõiki autosid')."
     },
     {
       "rule_id": "G15.1",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases and activity actions start with active verbs (e.g., 'Vaata', 'Otsi', 'L\u00f5peta')."
+      "justification": "All use cases and activity actions start with active verbs (e.g., 'Vaata', 'Otsi', 'Lõpeta')."
     },
     {
       "rule_id": "N1.2",

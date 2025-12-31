@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "All use cases in the diagrams are associated with actors, either directly or through \u00abinclude\u00bb relationships (e.g., 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid autosid' is included by 'Aktiveeri auto')."
+      "justification": "All use cases in the diagrams are associated with actors, either directly or through «include» relationships (e.g., 'Vaata kõiki ootel või mitteaktiivseid autosid' is included by 'Aktiveeri auto')."
     },
     {
       "rule_id": "G6.1",

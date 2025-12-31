@@ -19,7 +19,7 @@
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "Within each use case diagram, the use case names appear distinct. Page 2 includes 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Vaata k\u00f5iki autosid', and 'Vaata autode koondaruannet'. Page 3 includes 'Registreeri auto', 'L\u00f5peta auto', 'Muuda autot', 'Aktiveeri auto', 'Muuda auto mittaktiivseks', 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid autosid', and 'Unusta auto'. No two or more use cases clearly describe the same activity for the same actor."
+      "justification": "Within each use case diagram, the use case names appear distinct. Page 2 includes 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Vaata kõiki autosid', and 'Vaata autode koondaruannet'. Page 3 includes 'Registreeri auto', 'Lõpeta auto', 'Muuda autot', 'Aktiveeri auto', 'Muuda auto mittaktiivseks', 'Vaata kõiki ootel või mitteaktiivseid autosid', and 'Unusta auto'. No two or more use cases clearly describe the same activity for the same actor."
     },
     {
       "rule_id": "G6.2",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names on pages 2 and 3 consistently appear to start with verbs in a similar imperative style (e.g., 'Tuvasta', 'Vaata', 'Registreeri', 'L\u00f5peta', 'Muuda', 'Aktiveeri', 'Unusta'). No inconsistent naming form is explicitly visible."
+      "justification": "Use case names on pages 2 and 3 consistently appear to start with verbs in a similar imperative style (e.g., 'Tuvasta', 'Vaata', 'Registreeri', 'Lõpeta', 'Muuda', 'Aktiveeri', 'Unusta'). No inconsistent naming form is explicitly visible."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "The state diagram on page 9 lists states such as 'Aktiivne', 'Mitteaktiivne', 'L\u00f5petatud', 'Ootel', and 'Unustatud' with an initial 'Algus'. The PDF content does not explicitly show any state that is clearly unreachable, so no unambiguous violation can be confirmed."
+      "justification": "The state diagram on page 9 lists states such as 'Aktiivne', 'Mitteaktiivne', 'Lõpetatud', 'Ootel', and 'Unustatud' with an initial 'Algus'. The PDF content does not explicitly show any state that is clearly unreachable, so no unambiguous violation can be confirmed."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "The activity diagram on page 4 shows a sequence of actions and decision points (e.g., 'Vaata k\u00f5iki autosid...', 'Otsi autot...', 'Vali auto', 'L\u00f5peta valitud auto'). There is no explicit indication of an action that cannot be reached."
+      "justification": "The activity diagram on page 4 shows a sequence of actions and decision points (e.g., 'Vaata kõiki autosid...', 'Otsi autot...', 'Vali auto', 'Lõpeta valitud auto'). There is no explicit indication of an action that cannot be reached."
     },
     {
       "rule_id": "G15.3",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names on pages 2 and 3 start with active verbs. The activity actions visible by name on page 4 also appear verb-led (e.g., 'Vaata', 'Otsi', 'Vali', 'L\u00f5peta'). No use case oval or activity action is explicitly shown with a non-verb-leading name."
+      "justification": "Use case names on pages 2 and 3 start with active verbs. The activity actions visible by name on page 4 also appear verb-led (e.g., 'Vaata', 'Otsi', 'Vali', 'Lõpeta'). No use case oval or activity action is explicitly shown with a non-verb-leading name."
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Class names shown in class diagrams (e.g., 'Isik', 'T\u00f6\u00f6taja', 'Auto', 'Klient', 'Kasutajakonto', 'Klassifikaator') appear to start with uppercase letters and are not clearly pluralized individual entity names. No explicit violation is visible."
+      "justification": "Class names shown in class diagrams (e.g., 'Isik', 'Töötaja', 'Auto', 'Klient', 'Kasutajakonto', 'Klassifikaator') appear to start with uppercase letters and are not clearly pluralized individual entity names. No explicit violation is visible."
     },
     {
       "rule_id": "N3.2",

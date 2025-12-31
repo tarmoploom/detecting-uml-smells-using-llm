@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": true,
-      "justification": "On the Use Case Diagram 'Autode halduse funktsionaalne alls\u00fcsteem (Muuda)' (Page 3), the use case 'Lisa auto' is not associated with any actor. While it has an \u00abinclude\u00bb relationship to another use case, it lacks a direct or inherited association to an initiating actor like 'Autode haldur'."
+      "justification": "On the Use Case Diagram 'Autode halduse funktsionaalne allsüsteem (Muuda)' (Page 3), the use case 'Lisa auto' is not associated with any actor. While it has an «include» relationship to another use case, it lacks a direct or inherited association to an initiating actor like 'Autode haldur'."
     },
     {
       "rule_id": "G6.1",
@@ -49,13 +49,13 @@
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "In the Activity Diagram 'Auto l\u00f5petamise tegevusdiagramm' (Page 4), all actions are reachable through the decision flows."
+      "justification": "In the Activity Diagram 'Auto lõpetamise tegevusdiagramm' (Page 4), all actions are reachable through the decision flows."
     },
     {
       "rule_id": "G15.3",
       "actual": false,
       "detected": true,
-      "justification": "On the Class Diagram 'T\u00f6\u00f6tajate register' (Page 10), the association between the class 'T\u00f6\u00f6taja_rolli_omamine' and the class 'T\u00f6\u00f6taja_roll' shows a multiplicity of '1' at the 'T\u00f6\u00f6taja_roll' end, but implies a missing multiplicity indicator (e.g., 0..*) at the 'T\u00f6\u00f6taja_rolli_omamine' end."
+      "justification": "On the Class Diagram 'Töötajate register' (Page 10), the association between the class 'Töötaja_rolli_omamine' and the class 'Töötaja_roll' shows a multiplicity of '1' at the 'Töötaja_roll' end, but implies a missing multiplicity indicator (e.g., 0..*) at the 'Töötaja_rolli_omamine' end."
     },
     {
       "rule_id": "S1.1",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Class names (e.g., 'Isik', 'Auto', 'T\u00f6\u00f6taja') are properly capitalized and singular."
+      "justification": "Class names (e.g., 'Isik', 'Auto', 'Töötaja') are properly capitalized and singular."
     },
     {
       "rule_id": "N3.2",

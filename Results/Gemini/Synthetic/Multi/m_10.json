@@ -37,7 +37,7 @@
       "rule_id": "G8.1",
       "actual": true,
       "detected": true,
-      "justification": "Inconsistent naming form found on Page 2. The use case 'Aktiivsed autod' is a noun phrase, while others like 'Vaata k\u00f5iki autosid' and 'Tuvasta kasutaja' are verb phrases."
+      "justification": "Inconsistent naming form found on Page 2. The use case 'Aktiivsed autod' is a noun phrase, while others like 'Vaata kõiki autosid' and 'Tuvasta kasutaja' are verb phrases."
     },
     {
       "rule_id": "G15.1",

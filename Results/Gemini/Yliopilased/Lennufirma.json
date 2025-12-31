@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "All use cases in the 'Lendude funktsionaalne alls\u00fcsteem' diagram (Page 2) are connected to an actor, either directly or via 'include' relationships to use cases that are connected to actors."
+      "justification": "All use cases in the 'Lendude funktsionaalne allsüsteem' diagram (Page 2) are connected to an actor, either directly or via 'include' relationships to use cases that are connected to actors."
     },
     {
       "rule_id": "G6.1",
@@ -37,7 +37,7 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case naming is consistent on Page 2, using the imperative verb form (e.g., 'Vaata', 'Registreeri', 'T\u00fchista')."
+      "justification": "Use case naming is consistent on Page 2, using the imperative verb form (e.g., 'Vaata', 'Registreeri', 'Tühista')."
     },
     {
       "rule_id": "G15.1",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": true,
       "detected": false,
-      "justification": "All use cases and activity actions start with a verb (e.g., 'Vaata', 'Algatab', 'M\u00e4\u00e4rab')."
+      "justification": "All use cases and activity actions start with a verb (e.g., 'Vaata', 'Algatab', 'Määrab')."
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": true,
       "detected": true,
-      "justification": "The class/table name 'kuup\u00e4evade_vahemiku_maandumiskeeld' (Page 14 and Page 23) starts with a lowercase letter."
+      "justification": "The class/table name 'kuupäevade_vahemiku_maandumiskeeld' (Page 14 and Page 23) starts with a lowercase letter."
     },
     {
       "rule_id": "N3.2",

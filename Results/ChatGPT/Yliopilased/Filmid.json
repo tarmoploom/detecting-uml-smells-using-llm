@@ -13,13 +13,13 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "On the use-case diagram 'Filmide funktsionaalne alls\u00fcsteem' (page 2), each listed use case (e.g., 'L\u00f5peta film', 'Registreeri film', 'Vaata k\u00f5iki filme', 'Unusta film') is drawn within the system boundary alongside several actors. The PDF text does not explicitly show any use case oval that is clearly isolated from all actors, so no unambiguous violation is visible."
+      "justification": "On the use-case diagram 'Filmide funktsionaalne allsüsteem' (page 2), each listed use case (e.g., 'Lõpeta film', 'Registreeri film', 'Vaata kõiki filme', 'Unusta film') is drawn within the system boundary alongside several actors. The PDF text does not explicitly show any use case oval that is clearly isolated from all actors, so no unambiguous violation is visible."
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "The use cases on the use-case diagram (page 2) have distinct meanings: for example, 'L\u00f5peta film', 'Unusta film', 'Aktiveeri film', 'Muuda film' and 'Muuda film mittaktiivseks' describe different actions. There are no pairs of use cases whose names clearly describe the same activity while being associated with the same actor."
+      "justification": "The use cases on the use-case diagram (page 2) have distinct meanings: for example, 'Lõpeta film', 'Unusta film', 'Aktiveeri film', 'Muuda film' and 'Muuda film mittaktiivseks' describe different actions. There are no pairs of use cases whose names clearly describe the same activity while being associated with the same actor."
     },
     {
       "rule_id": "G6.2",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use-case names on the use-case diagram (page 2) are phrased in a consistent verb-object style, such as 'Aktiveeri film', 'L\u00f5peta film', 'Registreeri film', 'Vaata filmide koondaruannet', 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid filme'. There is no mixture of clearly noun-only names alongside verb-based names."
+      "justification": "All use-case names on the use-case diagram (page 2) are phrased in a consistent verb-object style, such as 'Aktiveeri film', 'Lõpeta film', 'Registreeri film', 'Vaata filmide koondaruannet', 'Vaata kõiki ootel või mitteaktiivseid filme'. There is no mixture of clearly noun-only names alongside verb-based names."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "The state diagram 'Filmi seisundidiagramm' on page 11 shows multiple named states ('Ootel', 'Aktiivne', 'Mitteaktiivne', 'L\u00f5petatud', 'Unustatud') together with narrative transition descriptions between them and from an initial node. The diagram text and structure do not reveal any state that is obviously isolated from all incoming paths, so no unreachable state can be clearly identified. "
+      "justification": "The state diagram 'Filmi seisundidiagramm' on page 11 shows multiple named states ('Ootel', 'Aktiivne', 'Mitteaktiivne', 'Lõpetatud', 'Unustatud') together with narrative transition descriptions between them and from an initial node. The diagram text and structure do not reveal any state that is obviously isolated from all incoming paths, so no unreachable state can be clearly identified. "
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "In the activity diagrams for finishing and activating a film (pages 3 and 4), all named actions (e.g., 'Vaata k\u00f5iki filme, mida saab l\u00f5petada', 'Otsi film', 'Vali film', 'L\u00f5peta valitud film', 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid filme', 'Aktiveeri valitud film') appear as part of the main flow with incoming and outgoing control flows implied by the surrounding decisions and start/end nodes. There is no action node text that is clearly disconnected from the rest of the flow."
+      "justification": "In the activity diagrams for finishing and activating a film (pages 3 and 4), all named actions (e.g., 'Vaata kõiki filme, mida saab lõpetada', 'Otsi film', 'Vali film', 'Lõpeta valitud film', 'Vaata kõiki ootel või mitteaktiivseid filme', 'Aktiveeri valitud film') appear as part of the main flow with incoming and outgoing control flows implied by the surrounding decisions and start/end nodes. There is no action node text that is clearly disconnected from the rest of the flow."
     },
     {
       "rule_id": "G15.3",
@@ -61,7 +61,7 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The use-case diagram 'Filmide funktsionaalne alls\u00fcsteem' (page 2) shows at least 11 use cases ('Tuvasta kasutaja', 'Vaata filmide koondaruannet', 'L\u00f5peta film', 'Registreeri film', 'Muuda film', 'Aktiveeri film', 'Muuda film mittaktiivseks', 'Vaata aktiivseid filme', 'Vaata k\u00f5iki filme', 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid filme', 'Unusta film'), exceeding the threshold of 10 central elements on a single diagram. "
+      "justification": "The use-case diagram 'Filmide funktsionaalne allsüsteem' (page 2) shows at least 11 use cases ('Tuvasta kasutaja', 'Vaata filmide koondaruannet', 'Lõpeta film', 'Registreeri film', 'Muuda film', 'Aktiveeri film', 'Muuda film mittaktiivseks', 'Vaata aktiivseid filme', 'Vaata kõiki filme', 'Vaata kõiki ootel või mitteaktiivseid filme', 'Unusta film'), exceeding the threshold of 10 central elements on a single diagram. "
     },
     {
       "rule_id": "S1.2",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": true,
       "detected": true,
-      "justification": "Most use cases and activity actions start with active verbs (e.g., 'L\u00f5peta film', 'Registreeri film', 'Otsi film', 'Vali film'). However, in the film activation activity diagram on page 4, there are actions labelled 'Filmi aktiveerimine eba\u00f5nnestub' and 'Filmi aktiveerimine edukas', which begin with a noun phrase ('Filmi aktiveerimine') rather than an active verb, violating the naming rule for action nodes. "
+      "justification": "Most use cases and activity actions start with active verbs (e.g., 'Lõpeta film', 'Registreeri film', 'Otsi film', 'Vali film'). However, in the film activation activity diagram on page 4, there are actions labelled 'Filmi aktiveerimine ebaõnnestub' and 'Filmi aktiveerimine edukas', which begin with a noun phrase ('Filmi aktiveerimine') rather than an active verb, violating the naming rule for action nodes. "
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All entity class and table names start with uppercase letters and are singular in form (e.g., 'Isik', 'Klient', 'T\u00f6\u00f6taja', 'Film', 'Filmi_kategooria', 'Isiku_seisundi_liik'). Register names that are plural (e.g., 'Klassifikaatorite register') represent domain registers and are excluded per the interpretation rules."
+      "justification": "All entity class and table names start with uppercase letters and are singular in form (e.g., 'Isik', 'Klient', 'Töötaja', 'Film', 'Filmi_kategooria', 'Isiku_seisundi_liik'). Register names that are plural (e.g., 'Klassifikaatorite register') represent domain registers and are excluded per the interpretation rules."
     },
     {
       "rule_id": "N3.2",

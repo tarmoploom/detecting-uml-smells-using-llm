@@ -13,13 +13,13 @@
       "rule_id": "G5.2",
       "actual": true,
       "detected": false,
-      "justification": "All use cases in the diagrams are associated with actors, either directly or indirectly through 'include' relationships (e.g., 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid autosid' is included by use cases connected to 'Autode haldur')."
+      "justification": "All use cases in the diagrams are associated with actors, either directly or indirectly through 'include' relationships (e.g., 'Vaata kõiki ootel või mitteaktiivseid autosid' is included by use cases connected to 'Autode haldur')."
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "No distinct use cases with synonymous names associated with the same actor were found. Names like 'Vaata aktiivseid autosid' and 'Vaata k\u00f5iki autosid' represent different specific activities."
+      "justification": "No distinct use cases with synonymous names associated with the same actor were found. Names like 'Vaata aktiivseid autosid' and 'Vaata kõiki autosid' represent different specific activities."
     },
     {
       "rule_id": "G6.2",
@@ -43,13 +43,13 @@
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the 'Auto seisundidiagramm' (Page 9), all states ('Ootel', 'Aktiivne', 'Mitteaktiivne', 'Unustatud', 'L\u00f5petatud') are reachable via transitions from the start node."
+      "justification": "In the 'Auto seisundidiagramm' (Page 9), all states ('Ootel', 'Aktiivne', 'Mitteaktiivne', 'Unustatud', 'Lõpetatud') are reachable via transitions from the start node."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "In the 'Auto l\u00f5petamise tegevusdiagramm' (Page 4), all actions are reachable through the decision branches."
+      "justification": "In the 'Auto lõpetamise tegevusdiagramm' (Page 4), all actions are reachable through the decision branches."
     },
     {
       "rule_id": "G15.3",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All use case and activity action names start with an active verb (e.g., 'Vaata', 'Otsi', 'Vali', 'L\u00f5peta')."
+      "justification": "All use case and activity action names start with an active verb (e.g., 'Vaata', 'Otsi', 'Vali', 'Lõpeta')."
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Class names start with uppercase letters and are singular (e.g., 'Isik', 'Auto', 'T\u00f6\u00f6taja')."
+      "justification": "Class names start with uppercase letters and are singular (e.g., 'Isik', 'Auto', 'Töötaja')."
     },
     {
       "rule_id": "N3.2",

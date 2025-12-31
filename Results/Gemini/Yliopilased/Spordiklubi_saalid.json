@@ -7,7 +7,7 @@
       "rule_id": "G5.1",
       "actual": true,
       "detected": true,
-      "justification": "The diagram 'Saali eluts\u00fcklid (transformed)' on page 18 is empty, containing no elements inside the package/diagram frame."
+      "justification": "The diagram 'Saali elutsüklid (transformed)' on page 18 is empty, containing no elements inside the package/diagram frame."
     },
     {
       "rule_id": "G5.2",
@@ -31,13 +31,13 @@
       "rule_id": "G6.3",
       "actual": false,
       "detected": false,
-      "justification": "No redundant data copies were found. While multiple classifier tables (e.g., Riik, Saali_t\u00fc\u00fcp) share column names like 'nimetus' and 'on_aktiivne', they store distinct domain data, not redundant copies of the same values."
+      "justification": "No redundant data copies were found. While multiple classifier tables (e.g., Riik, Saali_tüüp) share column names like 'nimetus' and 'on_aktiivne', they store distinct domain data, not redundant copies of the same values."
     },
     {
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case naming is consistent; all use cases on page 2 start with a verb (e.g., 'Vaata', 'Tuvasta', 'L\u00f5peta', 'Registreeri')."
+      "justification": "Use case naming is consistent; all use cases on page 2 start with a verb (e.g., 'Vaata', 'Tuvasta', 'Lõpeta', 'Registreeri')."
     },
     {
       "rule_id": "G15.1",
@@ -61,7 +61,7 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The use case diagram 'Saalide funktsionaalne alls\u00fcsteem' on page 2 contains 11 central use case elements (ovals), which exceeds the limit of fewer than 10."
+      "justification": "The use case diagram 'Saalide funktsionaalne allsüsteem' on page 2 contains 11 central use case elements (ovals), which exceeds the limit of fewer than 10."
     },
     {
       "rule_id": "S1.2",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases and activity actions start with active verbs (e.g., 'Vaata', 'L\u00f5peta', 'Otsi')."
+      "justification": "All use cases and activity actions start with active verbs (e.g., 'Vaata', 'Lõpeta', 'Otsi')."
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Class names (e.g., Isik, Saal, T\u00f6\u00f6taja) start with capital letters and are singular."
+      "justification": "Class names (e.g., Isik, Saal, Töötaja) start with capital letters and are singular."
     },
     {
       "rule_id": "N3.2",
@@ -103,7 +103,7 @@
       "rule_id": "N3.3",
       "actual": false,
       "detected": false,
-      "justification": "Database table names are singular (e.g., 'Klient', 'Saal', 'T\u00f6\u00f6taja')."
+      "justification": "Database table names are singular (e.g., 'Klient', 'Saal', 'Töötaja')."
     },
     {
       "rule_id": "N4.1",

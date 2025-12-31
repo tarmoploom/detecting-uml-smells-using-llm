@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "All use cases in the 'Tubade funktsionaalne alls\u00fcsteem' diagram (Page 2) are connected to actors or are part of include relationships initiated by connected use cases."
+      "justification": "All use cases in the 'Tubade funktsionaalne allsüsteem' diagram (Page 2) are connected to actors or are part of include relationships initiated by connected use cases."
     },
     {
       "rule_id": "G6.1",
@@ -37,13 +37,13 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases follow a consistent naming convention, starting with a verb in the imperative mood (e.g., 'Vaata', 'L\u00f5peta', 'Registreeri')."
+      "justification": "All use cases follow a consistent naming convention, starting with a verb in the imperative mood (e.g., 'Vaata', 'Lõpeta', 'Registreeri')."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the state diagram (Page 10), all states (including 'Unustatud' and 'L\u00f5petatud') are reachable from the Start state ('Alg')."
+      "justification": "In the state diagram (Page 10), all states (including 'Unustatud' and 'Lõpetatud') are reachable from the Start state ('Alg')."
     },
     {
       "rule_id": "G15.2",
@@ -61,7 +61,7 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The use case diagram 'Tubade funktsionaalne alls\u00fcsteem' (Page 2) contains 11 central use case elements (ovals), which exceeds the threshold of 10."
+      "justification": "The use case diagram 'Tubade funktsionaalne allsüsteem' (Page 2) contains 11 central use case elements (ovals), which exceeds the threshold of 10."
     },
     {
       "rule_id": "S1.2",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All use case and activity action names start with an active verb (e.g., 'Vaata', 'Otsi', 'L\u00f5peta')."
+      "justification": "All use case and activity action names start with an active verb (e.g., 'Vaata', 'Otsi', 'Lõpeta')."
     },
     {
       "rule_id": "N1.2",

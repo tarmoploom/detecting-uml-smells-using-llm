@@ -13,19 +13,19 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "On the use case diagram (Page 2: Laadimispunktide funktsionaalne alls\u00fcsteem), all 11 use case ovals are associated with at least one actor. Actors include Juhataja, Laadimispunktide haldur, Uudistaja, Hooldustehnik, and Klient. The 'Tuvasta kasutaja' use case is connected via \u00abinclude\u00bb relationships and to the S\u00fcsteem actor."
+      "justification": "On the use case diagram (Page 2: Laadimispunktide funktsionaalne allsüsteem), all 11 use case ovals are associated with at least one actor. Actors include Juhataja, Laadimispunktide haldur, Uudistaja, Hooldustehnik, and Klient. The 'Tuvasta kasutaja' use case is connected via «include» relationships and to the Süsteem actor."
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "On the use case diagram (Page 2), all use case names are unique and describe distinct activities: Tuvasta kasutaja, Vaata laadimispunktide koondaruannet, L\u00f5peta laadimispunkt, Registreeri laadimispunkt, Muuda laadimispunkti, Aktiveeri laadimispunkt, Muuda laadimispunkt mittaktiivseks, Vaata aktiivseid laadimispunkte, Vaata k\u00f5iki laadimispunkte, Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid laadimispunkte, Unusta laadimispunkt. No duplicate activities with the same actor exist."
+      "justification": "On the use case diagram (Page 2), all use case names are unique and describe distinct activities: Tuvasta kasutaja, Vaata laadimispunktide koondaruannet, Lõpeta laadimispunkt, Registreeri laadimispunkt, Muuda laadimispunkti, Aktiveeri laadimispunkt, Muuda laadimispunkt mittaktiivseks, Vaata aktiivseid laadimispunkte, Vaata kõiki laadimispunkte, Vaata kõiki ootel või mitteaktiivseid laadimispunkte, Unusta laadimispunkt. No duplicate activities with the same actor exist."
     },
     {
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "On the package diagram (Page 1), each package (Isikute register, Klassifikaatorite register, T\u00f6\u00f6tajate register, Laadimispunktide register, Klientide register, Pakettide register) contains uniquely named elements. No duplicate element names within the same package were found."
+      "justification": "On the package diagram (Page 1), each package (Isikute register, Klassifikaatorite register, Töötajate register, Laadimispunktide register, Klientide register, Pakettide register) contains uniquely named elements. No duplicate element names within the same package were found."
     },
     {
       "rule_id": "G6.3",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "On the use case diagram (Page 2), all use case names follow a consistent verb-first naming pattern in Estonian: Tuvasta (Identify), Vaata (View), L\u00f5peta (End), Registreeri (Register), Muuda (Modify), Aktiveeri (Activate), Unusta (Forget). All 11 use cases start with imperative verbs."
+      "justification": "On the use case diagram (Page 2), all use case names follow a consistent verb-first naming pattern in Estonian: Tuvasta (Identify), Vaata (View), Lõpeta (End), Registreeri (Register), Muuda (Modify), Aktiveeri (Activate), Unusta (Forget). All 11 use cases start with imperative verbs."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "On the state diagram (Page 11: Laadimispunkti seisundidiagramm), all 5 states are reachable: 'Ootel' from initial state 'Alg', 'Aktiivne' from 'Ootel' and 'Mitteaktiivne', 'Mitteaktiivne' from 'Aktiivne', 'L\u00f5petatud' from 'Aktiivne' and 'Mitteaktiivne', 'Unustatud' from 'Ootel'. Every state has at least one incoming transition."
+      "justification": "On the state diagram (Page 11: Laadimispunkti seisundidiagramm), all 5 states are reachable: 'Ootel' from initial state 'Alg', 'Aktiivne' from 'Ootel' and 'Mitteaktiivne', 'Mitteaktiivne' from 'Aktiivne', 'Lõpetatud' from 'Aktiivne' and 'Mitteaktiivne', 'Unustatud' from 'Ootel'. Every state has at least one incoming transition."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "On the activity diagrams (Pages 3-4), all actions are reachable from the start node 'Algus'. Page 3 actions: Vaata k\u00f5iki laadimispunkte mida saab l\u00f5petada, Otsi laadimispunkti, Vali laadimispunkt, L\u00f5peta valitud laadimispunkt - all connected via decision nodes and control flow. Page 4 follows the same pattern with all actions reachable."
+      "justification": "On the activity diagrams (Pages 3-4), all actions are reachable from the start node 'Algus'. Page 3 actions: Vaata kõiki laadimispunkte mida saab lõpetada, Otsi laadimispunkti, Vali laadimispunkt, Lõpeta valitud laadimispunkt - all connected via decision nodes and control flow. Page 4 follows the same pattern with all actions reachable."
     },
     {
       "rule_id": "G15.3",
@@ -61,13 +61,13 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "DETECTED on 3 diagrams:\n1. Page 2 (Laadimispunktide funktsionaalne alls\u00fcsteem): Contains 11 use cases: Tuvasta kasutaja, Vaata laadimispunktide koondaruannet, L\u00f5peta laadimispunkt, Registreeri laadimispunkt, Muuda laadimispunkti, Aktiveeri laadimispunkt, Muuda laadimispunkt mittaktiivseks, Vaata aktiivseid laadimispunkte, Vaata k\u00f5iki laadimispunkte, Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid laadimispunkte, Unusta laadimispunkt. Threshold is \u226510. 11 \u2265 10, therefore smell IS present.\n2. Page 10 (Laadimispunktide register): Contains 10 classes: Isik, T\u00f6\u00f6taja, Laadimispunkt, Laadimispunkti_seisundi_liik, Laadimispunkti_kategooria, Laadimispunkti_kategooria_omamine, Laadimispunkti_kategooria_t\u00fc\u00fcp, Laadimispunkti_s\u00f5iduki_t\u00fc\u00fcp, Pakett, Laadimispunkti_pakett. Threshold is \u226510. 10 \u2265 10, therefore smell IS present.\n3. Page 15 (Klassifikaatorite register transformed): Contains 10 tables: Laadimispunkti_kategooria_tyyp, Isiku_seisundi_liik, Kliendi_seisundi_liik, Laadimispunkti_kategooria, Laadimispunkti_seisundi_liik, Riik, Tootaja_roll, Tootaja_seisundi_liik, Laadimispunkti_soiduki_tyyp, Paketi_seisundi_liik. Threshold is \u226510. 10 \u2265 10, therefore smell IS present."
+      "justification": "DETECTED on 3 diagrams:\n1. Page 2 (Laadimispunktide funktsionaalne allsüsteem): Contains 11 use cases: Tuvasta kasutaja, Vaata laadimispunktide koondaruannet, Lõpeta laadimispunkt, Registreeri laadimispunkt, Muuda laadimispunkti, Aktiveeri laadimispunkt, Muuda laadimispunkt mittaktiivseks, Vaata aktiivseid laadimispunkte, Vaata kõiki laadimispunkte, Vaata kõiki ootel või mitteaktiivseid laadimispunkte, Unusta laadimispunkt. Threshold is ≥10. 11 ≥ 10, therefore smell IS present.\n2. Page 10 (Laadimispunktide register): Contains 10 classes: Isik, Töötaja, Laadimispunkt, Laadimispunkti_seisundi_liik, Laadimispunkti_kategooria, Laadimispunkti_kategooria_omamine, Laadimispunkti_kategooria_tüüp, Laadimispunkti_sõiduki_tüüp, Pakett, Laadimispunkti_pakett. Threshold is ≥10. 10 ≥ 10, therefore smell IS present.\n3. Page 15 (Klassifikaatorite register transformed): Contains 10 tables: Laadimispunkti_kategooria_tyyp, Isiku_seisundi_liik, Kliendi_seisundi_liik, Laadimispunkti_kategooria, Laadimispunkti_seisundi_liik, Riik, Tootaja_roll, Tootaja_seisundi_liik, Laadimispunkti_soiduki_tyyp, Paketi_seisundi_liik. Threshold is ≥10. 10 ≥ 10, therefore smell IS present."
     },
     {
       "rule_id": "S1.2",
       "actual": true,
       "detected": true,
-      "justification": "DETECTED on 3 diagrams:\n1. Page 9 (T\u00f6\u00f6tajate register): T\u00f6\u00f6taja has 6 visual connection lines: (1) to Isik, (2) self-reference mentor/juhendatav, (3) to T\u00f6\u00f6taja_seisundi_liik, (4) to T\u00f6\u00f6taja_rolli_omamine, (5) to Laadimispunkt +registreerija, (6) to Laadimispunkt +viimane muutja. Threshold is \u22656. 6 \u2265 6, therefore smell IS present.\n2. Page 10 (Laadimispunktide register): Laadimispunkt has 6 visual connection lines: (1) to T\u00f6\u00f6taja +registreerija, (2) to T\u00f6\u00f6taja +viimane muutja, (3) to Laadimispunkti_seisundi_liik, (4) to Laadimispunkti_kategooria_omamine, (5) to Laadimispunkti_s\u00f5iduki_t\u00fc\u00fcp, (6) to Laadimispunkti_pakett. Threshold is \u22656. 6 \u2265 6, therefore smell IS present.\n3. Page 17 (Laadimispunktide register transformed): Laadimispunkt table has 6 visual connection lines: (1) to Laadimispunkti_soiduki_tyyp, (2) to Laadimispunkti_seisundi_liik, (3) to Tootaja +registreerija, (4) to Tootaja +viimane_muutja, (5) to Laadimispunkti_kategooria_omamine, (6) to Laadimispunkti_pakett. Threshold is \u22656. 6 \u2265 6, therefore smell IS present."
+      "justification": "DETECTED on 3 diagrams:\n1. Page 9 (Töötajate register): Töötaja has 6 visual connection lines: (1) to Isik, (2) self-reference mentor/juhendatav, (3) to Töötaja_seisundi_liik, (4) to Töötaja_rolli_omamine, (5) to Laadimispunkt +registreerija, (6) to Laadimispunkt +viimane muutja. Threshold is ≥6. 6 ≥ 6, therefore smell IS present.\n2. Page 10 (Laadimispunktide register): Laadimispunkt has 6 visual connection lines: (1) to Töötaja +registreerija, (2) to Töötaja +viimane muutja, (3) to Laadimispunkti_seisundi_liik, (4) to Laadimispunkti_kategooria_omamine, (5) to Laadimispunkti_sõiduki_tüüp, (6) to Laadimispunkti_pakett. Threshold is ≥6. 6 ≥ 6, therefore smell IS present.\n3. Page 17 (Laadimispunktide register transformed): Laadimispunkt table has 6 visual connection lines: (1) to Laadimispunkti_soiduki_tyyp, (2) to Laadimispunkti_seisundi_liik, (3) to Tootaja +registreerija, (4) to Tootaja +viimane_muutja, (5) to Laadimispunkti_kategooria_omamine, (6) to Laadimispunkti_pakett. Threshold is ≥6. 6 ≥ 6, therefore smell IS present."
     },
     {
       "rule_id": "S2.1",
@@ -79,25 +79,25 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "On the use case diagram (Page 2), all use cases start with active verbs in Estonian imperative form: Tuvasta, Vaata, L\u00f5peta, Registreeri, Muuda, Aktiveeri, Unusta. On activity diagrams (Pages 3-4), all actions start with verbs: Vaata, Otsi, Vali, L\u00f5peta, Aktiveeri, Salvesta. No noun-first or passive form names were found."
+      "justification": "On the use case diagram (Page 2), all use cases start with active verbs in Estonian imperative form: Tuvasta, Vaata, Lõpeta, Registreeri, Muuda, Aktiveeri, Unusta. On activity diagrams (Pages 3-4), all actions start with verbs: Vaata, Otsi, Vali, Lõpeta, Aktiveeri, Salvesta. No noun-first or passive form names were found."
     },
     {
       "rule_id": "N1.2",
       "actual": false,
       "detected": false,
-      "justification": "All class, table, attribute, and use case names have more than 3 characters. Shortest names found: 'Isik' (4 chars), 'Riik' (4 chars), 'kood' (4 chars), 'hind' (4 chars). All names have \u22654 characters. Threshold is \u22643. Since minimum found is 4, which is > 3, smell is NOT present."
+      "justification": "All class, table, attribute, and use case names have more than 3 characters. Shortest names found: 'Isik' (4 chars), 'Riik' (4 chars), 'kood' (4 chars), 'hind' (4 chars). All names have ≥4 characters. Threshold is ≤3. Since minimum found is 4, which is > 3, smell is NOT present."
     },
     {
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All class names start with uppercase letters and are singular: Isik, Kasutajakonto, Klassifikaator, Riik, T\u00f6\u00f6taja, T\u00f6\u00f6taja_roll, T\u00f6\u00f6taja_rolli_omamine, T\u00f6\u00f6taja_seisundi_liik, Laadimispunkt, Laadimispunkti_kategooria, Laadimispunkti_pakett, Klient, Pakett. No lowercase starts or plural forms found."
+      "justification": "All class names start with uppercase letters and are singular: Isik, Kasutajakonto, Klassifikaator, Riik, Töötaja, Töötaja_roll, Töötaja_rolli_omamine, Töötaja_seisundi_liik, Laadimispunkt, Laadimispunkti_kategooria, Laadimispunkti_pakett, Klient, Pakett. No lowercase starts or plural forms found."
     },
     {
       "rule_id": "N3.2",
       "actual": false,
       "detected": false,
-      "justification": "All attribute and column names start with lowercase letters: e_meil, eesnimi, elukoht, isikukood, perenimi, reg_aeg, s\u00fcnni_kp, viimase_muutm_aeg, parool, on_aktiivne, nimetus, kood, hind, maksimaalne_kw, alguse_aeg, l\u00f5pu_aeg. PK_/FK_/IXFK_ prefixes are indicators, not part of the column names themselves."
+      "justification": "All attribute and column names start with lowercase letters: e_meil, eesnimi, elukoht, isikukood, perenimi, reg_aeg, sünni_kp, viimase_muutm_aeg, parool, on_aktiivne, nimetus, kood, hind, maksimaalne_kw, alguse_aeg, lõpu_aeg. PK_/FK_/IXFK_ prefixes are indicators, not part of the column names themselves."
     },
     {
       "rule_id": "N3.3",

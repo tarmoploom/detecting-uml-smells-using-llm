@@ -13,19 +13,19 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "On the use-case diagram 'Arhet\u00fc\u00fcpide funktsionaalne alls\u00fcsteem', all listed use cases (e.g., 'Koosta arhet\u00fc\u00fcp', 'Muuda kinnitamata arhet\u00fc\u00fcpi', 'Esita arhet\u00fc\u00fcp') appear inside the system boundary and there is no unambiguous evidence of any use case being completely unconnected to actors; the text extraction does not show any use case explicitly lacking all actor associations, so this smell cannot be confirmed."
+      "justification": "On the use-case diagram 'Arhetüüpide funktsionaalne allsüsteem', all listed use cases (e.g., 'Koosta arhetüüp', 'Muuda kinnitamata arhetüüpi', 'Esita arhetüüp') appear inside the system boundary and there is no unambiguous evidence of any use case being completely unconnected to actors; the text extraction does not show any use case explicitly lacking all actor associations, so this smell cannot be confirmed."
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "The use-case diagram does not contain two or more use cases whose names describe the same activity for the same actor; names like 'Koosta arhet\u00fc\u00fcp', 'Esita arhet\u00fc\u00fcp', 'Kinnita arhet\u00fc\u00fcp', 'Muuda kinnitamata arhet\u00fc\u00fcpi', and 'Muuda kinnitatud arhet\u00fc\u00fcpi' each describe distinct actions and are not simple synonyms for the same activity."
+      "justification": "The use-case diagram does not contain two or more use cases whose names describe the same activity for the same actor; names like 'Koosta arhetüüp', 'Esita arhetüüp', 'Kinnita arhetüüp', 'Muuda kinnitamata arhetüüpi', and 'Muuda kinnitatud arhetüüpi' each describe distinct actions and are not simple synonyms for the same activity."
     },
     {
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "No package diagram shows multiple model elements with exactly the same primary element name within the same package; repeated classifier-type labels such as 'Klassifikaator' or 'Klassifikaatori t\u00fc\u00fcp' are treated as metadata and not separate model elements, and there is no clear case of two distinct elements with the same name in the same package."
+      "justification": "No package diagram shows multiple model elements with exactly the same primary element name within the same package; repeated classifier-type labels such as 'Klassifikaator' or 'Klassifikaatori tüüp' are treated as metadata and not separate model elements, and there is no clear case of two distinct elements with the same name in the same package."
     },
     {
       "rule_id": "G6.3",
@@ -37,37 +37,37 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use-case names follow a consistent imperative-verb form such as 'Koosta arhet\u00fc\u00fcp', 'Muuda kinnitamata arhet\u00fc\u00fcpi', 'Kustuta arhet\u00fc\u00fcp', 'L\u00fckka tagasi arhet\u00fc\u00fcp', 'Vaata kinnitatud arhet\u00fc\u00fcpe', 'Esita arhet\u00fc\u00fcp', and 'Kinnita arhet\u00fc\u00fcp'; there is no mixture of fundamentally different naming forms (e.g., noun-only names versus verb-phrase names). "
+      "justification": "Use-case names follow a consistent imperative-verb form such as 'Koosta arhetüüp', 'Muuda kinnitamata arhetüüpi', 'Kustuta arhetüüp', 'Lükka tagasi arhetüüp', 'Vaata kinnitatud arhetüüpe', 'Esita arhetüüp', and 'Kinnita arhetüüp'; there is no mixture of fundamentally different naming forms (e.g., noun-only names versus verb-phrase names). "
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the state diagram 'Arhet\u00fc\u00fcbi seisundidiagramm', all states ('Koostamisel', 'Esitatud', 'Kinnitatud', 'Tagasi l\u00fckatud', 'Kustutatud') have incoming transitions from either the initial state or another state (e.g., 'Tehnik / Muutja koostab arhet\u00fc\u00fcbi /OP1' to 'Koostamisel', 'Tehnik esitab arhet\u00fc\u00fcbi /OP2' to 'Esitatud', 'Muutja kinnitab arhet\u00fc\u00fcbi /OP3' to 'Kinnitatud'), so no state is clearly unreachable."
+      "justification": "In the state diagram 'Arhetüübi seisundidiagramm', all states ('Koostamisel', 'Esitatud', 'Kinnitatud', 'Tagasi lükatud', 'Kustutatud') have incoming transitions from either the initial state or another state (e.g., 'Tehnik / Muutja koostab arhetüübi /OP1' to 'Koostamisel', 'Tehnik esitab arhetüübi /OP2' to 'Esitatud', 'Muutja kinnitab arhetüübi /OP3' to 'Kinnitatud'), so no state is clearly unreachable."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "In both activity diagrams ('Esitatud arhet\u00fc\u00fcbi kinnitamise tegevusdiagramm' and 'Kinnitatud arhet\u00fc\u00fcbi muutmise tegevusdiagramm stsenaariumid'), each action node such as 'Vaatab k\u00f5ikide arhet\u00fc\u00fcpide nimekirja', 'Otsib kinnitamiseks arhet\u00fc\u00fcpi', 'Vaatab esitatud arhet\u00fc\u00fcbi detaile', 'Kinnitab arhet\u00fc\u00fcbi', 'L\u00fckkab tagasi arhet\u00fc\u00fcbi', 'Vaatab kinnitatud arhet\u00fc\u00fcpide nimekirja', 'Valib potentsiaalselt ebat\u00e4psete andmetega kinnitatud arhet\u00fc\u00fcbi', 'Teeb muudatusi arhet\u00fc\u00fcbi andmetes' is connected by a flow from a preceding node; there is no action that is isolated or unreachable."
+      "justification": "In both activity diagrams ('Esitatud arhetüübi kinnitamise tegevusdiagramm' and 'Kinnitatud arhetüübi muutmise tegevusdiagramm stsenaariumid'), each action node such as 'Vaatab kõikide arhetüüpide nimekirja', 'Otsib kinnitamiseks arhetüüpi', 'Vaatab esitatud arhetüübi detaile', 'Kinnitab arhetüübi', 'Lükkab tagasi arhetüübi', 'Vaatab kinnitatud arhetüüpide nimekirja', 'Valib potentsiaalselt ebatäpsete andmetega kinnitatud arhetüübi', 'Teeb muudatusi arhetüübi andmetes' is connected by a flow from a preceding node; there is no action that is isolated or unreachable."
     },
     {
       "rule_id": "G15.3",
       "actual": false,
       "detected": false,
-      "justification": "On the conceptual class diagrams, associations between classes (for example, between 'Arhet\u00fc\u00fcp', 'Hoone', and 'Isik' in both the 'Kontseptuaalne eskiismudel' and 'Arhet\u00fc\u00fcpide register' diagrams, and between 'Isik' and 'Kasutaja_liik' or 'Hoone' and 'Kasutusotstarve') explicitly show multiplicities such as '0..*', '1', or '0..1'. On the database diagrams, inter-table relationships are drawn as standard FK connectors (often annotated with \u00abFK\u00bb and implied crow\u2019s-foot style) and are explicitly exempt from this rule. There is no unambiguous UML-style relationship line between classes or tables that lacks multiplicity indicators at both ends."
+      "justification": "On the conceptual class diagrams, associations between classes (for example, between 'Arhetüüp', 'Hoone', and 'Isik' in both the 'Kontseptuaalne eskiismudel' and 'Arhetüüpide register' diagrams, and between 'Isik' and 'Kasutaja_liik' or 'Hoone' and 'Kasutusotstarve') explicitly show multiplicities such as '0..*', '1', or '0..1'. On the database diagrams, inter-table relationships are drawn as standard FK connectors (often annotated with «FK» and implied crow’s-foot style) and are explicitly exempt from this rule. There is no unambiguous UML-style relationship line between classes or tables that lacks multiplicity indicators at both ends."
     },
     {
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The use-case diagram 'Arhet\u00fc\u00fcpide funktsionaalne alls\u00fcsteem' shows 10 distinct use cases ('Tuv asta kasutaja', 'Koosta arhet\u00fc\u00fcp', 'Muuda kinnitamata arhet\u00fc\u00fcpi', 'Kustuta arhet\u00fc\u00fcp', 'L\u00fckka tagasi arhet\u00fc\u00fcp', 'Muuda kinnitatud arhet\u00fc\u00fcpi', 'Vaata kinnitatud arhet\u00fc\u00fcpe', 'Vaata kinnitamata arhet\u00fc\u00fcpe', 'Esita arhet\u00fc\u00fcp', 'Kinnita arhet\u00fc\u00fcp') on a single diagram, reaching the threshold of 10 central elements, so this size smell is present. "
+      "justification": "The use-case diagram 'Arhetüüpide funktsionaalne allsüsteem' shows 10 distinct use cases ('Tuv asta kasutaja', 'Koosta arhetüüp', 'Muuda kinnitamata arhetüüpi', 'Kustuta arhetüüp', 'Lükka tagasi arhetüüp', 'Muuda kinnitatud arhetüüpi', 'Vaata kinnitatud arhetüüpe', 'Vaata kinnitamata arhetüüpe', 'Esita arhetüüp', 'Kinnita arhetüüp') on a single diagram, reaching the threshold of 10 central elements, so this size smell is present. "
     },
     {
       "rule_id": "S1.2",
       "actual": false,
       "detected": false,
-      "justification": "No class or table on any single class/database diagram has 6 or more distinct visible relationship lines: conceptual classes such as 'Arhet\u00fc\u00fcp', 'Hoone', and 'Isik' have at most around four or five associations on their respective diagrams, and database tables like 'Arhetuup', 'Isik', and 'Hoone' each participate in fewer than six separately drawn FK connector lines; there is no evidence of an element connected by 6 or more distinct lines."
+      "justification": "No class or table on any single class/database diagram has 6 or more distinct visible relationship lines: conceptual classes such as 'Arhetüüp', 'Hoone', and 'Isik' have at most around four or five associations on their respective diagrams, and database tables like 'Arhetuup', 'Isik', and 'Hoone' each participate in fewer than six separately drawn FK connector lines; there is no evidence of an element connected by 6 or more distinct lines."
     },
     {
       "rule_id": "S2.1",
@@ -79,25 +79,25 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All clearly action-like use-case and activity-node names begin with an active verb in Estonian (e.g., 'Koosta arhet\u00fc\u00fcp', 'Muuda kinnitamata arhet\u00fc\u00fcpi', 'Kustuta arhet\u00fc\u00fcp', 'L\u00fckka tagasi arhet\u00fc\u00fcbi', 'Vaata kinnitatud arhet\u00fc\u00fcpe', 'Vaatab k\u00f5ikide arhet\u00fc\u00fcpide nimekirja', 'Otsib kinnitamiseks arhet\u00fc\u00fcpi', 'Kinnitab arhet\u00fc\u00fcbi', 'L\u00fckkab tagasi arhet\u00fc\u00fcbi'); question-style labels such as 'Kas leidus?' and 'Kas j\u00e4tkata?' correspond to decision nodes rather than actions. There is no unambiguous case where a use-case name or action node name fails to start with an active verb."
+      "justification": "All clearly action-like use-case and activity-node names begin with an active verb in Estonian (e.g., 'Koosta arhetüüp', 'Muuda kinnitamata arhetüüpi', 'Kustuta arhetüüp', 'Lükka tagasi arhetüübi', 'Vaata kinnitatud arhetüüpe', 'Vaatab kõikide arhetüüpide nimekirja', 'Otsib kinnitamiseks arhetüüpi', 'Kinnitab arhetüübi', 'Lükkab tagasi arhetüübi'); question-style labels such as 'Kas leidus?' and 'Kas jätkata?' correspond to decision nodes rather than actions. There is no unambiguous case where a use-case name or action node name fails to start with an active verb."
     },
     {
       "rule_id": "N1.2",
       "actual": false,
       "detected": false,
-      "justification": "No class, table, attribute, or use-case name in the diagrams is three characters or shorter; names are longer identifiers such as 'Arhet\u00fc\u00fcp', 'Isik', 'Hoone', 'Kasutusotstarve', 'arhetuup_id', 'kasutajanimi', and 'korruste_arvu_alumine_piir', and there are no visible domain element names like 'id' or 'usr' used alone."
+      "justification": "No class, table, attribute, or use-case name in the diagrams is three characters or shorter; names are longer identifiers such as 'Arhetüüp', 'Isik', 'Hoone', 'Kasutusotstarve', 'arhetuup_id', 'kasutajanimi', and 'korruste_arvu_alumine_piir', and there are no visible domain element names like 'id' or 'usr' used alone."
     },
     {
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All class and table names that represent singular domain entities start with an uppercase letter and are singular, such as 'Arhet\u00fc\u00fcp', 'Hoone', 'Isik', 'Arhetuup', 'Kasutaja_liik', 'Kasutusotstarve', 'Arhetuubi_alamtuup', and 'Arhetuubi_seisundi_liik'; plural names are used only in register/package labels like 'Isikute register' or 'Hoonete register', which are domain registers and explicitly exempt from this rule."
+      "justification": "All class and table names that represent singular domain entities start with an uppercase letter and are singular, such as 'Arhetüüp', 'Hoone', 'Isik', 'Arhetuup', 'Kasutaja_liik', 'Kasutusotstarve', 'Arhetuubi_alamtuup', and 'Arhetuubi_seisundi_liik'; plural names are used only in register/package labels like 'Isikute register' or 'Hoonete register', which are domain registers and explicitly exempt from this rule."
     },
     {
       "rule_id": "N3.2",
       "actual": false,
       "detected": false,
-      "justification": "Attribute and column names consistently start with lowercase letters (for example, 'nimetus', 'kood', 'kasutuselev\u00f5tu_aasta_alumine_piir', 'eesnimi', 'email', 'parool', 'ehitusalune_pindala', 'korterite_arv', 'arhetuup_id', 'hoone_id', 'kasutaja_liik_kood', 'arhetuubi_seisund_kood'); uppercase prefixes like 'PK*' or 'FK_' appear only in constraint or index names, not as attribute/column names, and are outside the scope of this rule."
+      "justification": "Attribute and column names consistently start with lowercase letters (for example, 'nimetus', 'kood', 'kasutuselevõtu_aasta_alumine_piir', 'eesnimi', 'email', 'parool', 'ehitusalune_pindala', 'korterite_arv', 'arhetuup_id', 'hoone_id', 'kasutaja_liik_kood', 'arhetuubi_seisund_kood'); uppercase prefixes like 'PK*' or 'FK_' appear only in constraint or index names, not as attribute/column names, and are outside the scope of this rule."
     },
     {
       "rule_id": "N3.3",

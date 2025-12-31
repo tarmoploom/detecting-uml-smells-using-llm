@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "The only explicit use case diagram, 'Tubade funktsionaalne alls\u00fcsteem' (page 2), shows all named use case ovals (e.g., 'Tuvasta kasutaja', 'Registreeri tuba', 'Unusta tuba') inside the system boundary with association lines connecting them to at least one actor; no use case is clearly left without a linked actor."
+      "justification": "The only explicit use case diagram, 'Tubade funktsionaalne allsüsteem' (page 2), shows all named use case ovals (e.g., 'Tuvasta kasutaja', 'Registreeri tuba', 'Unusta tuba') inside the system boundary with association lines connecting them to at least one actor; no use case is clearly left without a linked actor."
     },
     {
       "rule_id": "G6.1",
@@ -25,7 +25,7 @@
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "The package diagram 'Tubade FASiga seotud p\u00e4devusalad ja registrid' (page 1) contains uniquely named model elements within its package, such as 'Tubade funktsionaalne alls\u00fcsteem', 'Isikute register', 'Klassifikaatorite register', 'Tubade register', 'T\u00f6\u00f6tajate register', and 'Klientide register'; there are no multiple elements with the same primary name in the same package."
+      "justification": "The package diagram 'Tubade FASiga seotud pädevusalad ja registrid' (page 1) contains uniquely named model elements within its package, such as 'Tubade funktsionaalne allsüsteem', 'Isikute register', 'Klassifikaatorite register', 'Tubade register', 'Töötajate register', and 'Klientide register'; there are no multiple elements with the same primary name in the same package."
     },
     {
       "rule_id": "G6.3",
@@ -43,13 +43,13 @@
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "The state diagram 'Toa seisundidiagramm' (page 10) shows transitions from the initial pseudostate into an ordinary state and transitions between all named states ('Ootel', 'Aktiivne', 'Mitteaktiivne', 'Unustatud', 'L\u00f5petatud'); no state is clearly isolated from the rest of the graph."
+      "justification": "The state diagram 'Toa seisundidiagramm' (page 10) shows transitions from the initial pseudostate into an ordinary state and transitions between all named states ('Ootel', 'Aktiivne', 'Mitteaktiivne', 'Unustatud', 'Lõpetatud'); no state is clearly isolated from the rest of the graph."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "In the activity diagram 'Toa l\u00f5petamise tegevusdiagramm' (page 3), each action node such as 'Vaata k\u00f5iki tube, mida saab l\u00f5petada', 'Otsi tuba', 'Vali tuba', and 'L\u00f5peta valitud tuba' lies on a path that starts at 'Algus' and leads towards 'L\u00f5pp'; there is no action node that is unreachable."
+      "justification": "In the activity diagram 'Toa lõpetamise tegevusdiagramm' (page 3), each action node such as 'Vaata kõiki tube, mida saab lõpetada', 'Otsi tuba', 'Vali tuba', and 'Lõpeta valitud tuba' lies on a path that starts at 'Algus' and leads towards 'Lõpp'; there is no action node that is unreachable."
     },
     {
       "rule_id": "G15.3",
@@ -61,7 +61,7 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The use case diagram 'Tubade funktsionaalne alls\u00fcsteem' (page 2) contains at least 11 central elements in the form of distinct use cases ('Tuvasta kasutaja', 'Registreeri tuba', 'Aktiveeri tuba', 'Muuda tuba', 'Muuda tuba mittaktiivseks', 'L\u00f5peta tuba', 'Unusta tuba', 'Vaata aktiivseid tube', 'Vaata k\u00f5iki tube', 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid tube', 'Vaata tubade koondaruannet'), exceeding the threshold of 10 central elements on a single diagram."
+      "justification": "The use case diagram 'Tubade funktsionaalne allsüsteem' (page 2) contains at least 11 central elements in the form of distinct use cases ('Tuvasta kasutaja', 'Registreeri tuba', 'Aktiveeri tuba', 'Muuda tuba', 'Muuda tuba mittaktiivseks', 'Lõpeta tuba', 'Unusta tuba', 'Vaata aktiivseid tube', 'Vaata kõiki tube', 'Vaata kõiki ootel või mitteaktiivseid tube', 'Vaata tubade koondaruannet'), exceeding the threshold of 10 central elements on a single diagram."
     },
     {
       "rule_id": "S1.2",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All use case names on the use case diagram (page 2) and the activity actions on the activity diagram (page 3) start with active verbs in Estonian such as 'Tuvasta', 'Registreeri', 'Aktiveeri', 'Muuda', 'L\u00f5peta', 'Unusta', 'Vaata', 'Otsi', and 'Vali'; there are no use cases or actions whose names begin with a non-verb."
+      "justification": "All use case names on the use case diagram (page 2) and the activity actions on the activity diagram (page 3) start with active verbs in Estonian such as 'Tuvasta', 'Registreeri', 'Aktiveeri', 'Muuda', 'Lõpeta', 'Unusta', 'Vaata', 'Otsi', and 'Vali'; there are no use cases or actions whose names begin with a non-verb."
     },
     {
       "rule_id": "N1.2",

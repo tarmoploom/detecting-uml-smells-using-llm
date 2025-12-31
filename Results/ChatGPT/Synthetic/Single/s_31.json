@@ -19,7 +19,7 @@
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "No explicit pair of use cases with names describing the same activity and associated with the same actor is clearly visible in the use case diagrams on pages 2-3. The use case names appear distinct, such as 'Vaata aktiivseid autosid', 'Vaata k\u00f5iki autosid', and 'Vaata autode koondaruannet' on page 2, and separate management actions on page 3."
+      "justification": "No explicit pair of use cases with names describing the same activity and associated with the same actor is clearly visible in the use case diagrams on pages 2-3. The use case names appear distinct, such as 'Vaata aktiivseid autosid', 'Vaata kõiki autosid', and 'Vaata autode koondaruannet' on page 2, and separate management actions on page 3."
     },
     {
       "rule_id": "G6.2",
@@ -37,13 +37,13 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case naming appears consistent in form within the use case diagrams. On page 2, use cases start with active verbs like 'Tuvasta' and 'Vaata'. On page 3, use cases also start with verbs like 'Registreeri', 'L\u00f5peta', 'Muuda', 'Aktiveeri', 'Vaata', and 'Unusta'."
+      "justification": "Use case naming appears consistent in form within the use case diagrams. On page 2, use cases start with active verbs like 'Tuvasta' and 'Vaata'. On page 3, use cases also start with verbs like 'Registreeri', 'Lõpeta', 'Muuda', 'Aktiveeri', 'Vaata', and 'Unusta'."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "The state diagram on page 9 lists states such as 'Aktiivne', 'Mitteaktiivne', 'L\u00f5petatud', 'Ootel', and 'Unustatud' with an initial node 'Algus'. No state is explicitly shown as unreachable based on the visible information."
+      "justification": "The state diagram on page 9 lists states such as 'Aktiivne', 'Mitteaktiivne', 'Lõpetatud', 'Ootel', and 'Unustatud' with an initial node 'Algus'. No state is explicitly shown as unreachable based on the visible information."
     },
     {
       "rule_id": "G15.2",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names on pages 2-3 start with active verbs such as 'Tuvasta', 'Vaata', 'Registreeri', 'L\u00f5peta', 'Muuda', 'Aktiveeri', and 'Unusta'. Activity actions visible on page 4 also appear to begin with verbs such as 'Vaata', 'Otsi', 'Vali', and 'L\u00f5peta'."
+      "justification": "Use case names on pages 2-3 start with active verbs such as 'Tuvasta', 'Vaata', 'Registreeri', 'Lõpeta', 'Muuda', 'Aktiveeri', and 'Unusta'. Activity actions visible on page 4 also appear to begin with verbs such as 'Vaata', 'Otsi', 'Vali', and 'Lõpeta'."
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Class names in the class diagrams (pages 5-13) appear to start with uppercase letters and are not clearly plural, for example 'Isik', 'T\u00f6\u00f6taja', 'Auto', 'Klient', and 'Klassifikaator'."
+      "justification": "Class names in the class diagrams (pages 5-13) appear to start with uppercase letters and are not clearly plural, for example 'Isik', 'Töötaja', 'Auto', 'Klient', and 'Klassifikaator'."
     },
     {
       "rule_id": "N3.2",

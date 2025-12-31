@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": true,
-      "justification": "In the use case diagram 'Autode halduse funktsionaalne alls\u00fcsteem (Muuda)' (Page 3), the use case 'Lisa auto' is visually present but is not associated with any actor, nor is it connected via include/extend relationships to other use cases."
+      "justification": "In the use case diagram 'Autode halduse funktsionaalne allsüsteem (Muuda)' (Page 3), the use case 'Lisa auto' is visually present but is not associated with any actor, nor is it connected via include/extend relationships to other use cases."
     },
     {
       "rule_id": "G6.1",
@@ -49,7 +49,7 @@
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "All actions in the 'Auto l\u00f5petamise tegevusdiagramm' (Page 4) are reachable via the defined decision paths."
+      "justification": "All actions in the 'Auto lõpetamise tegevusdiagramm' (Page 4) are reachable via the defined decision paths."
     },
     {
       "rule_id": "G15.3",

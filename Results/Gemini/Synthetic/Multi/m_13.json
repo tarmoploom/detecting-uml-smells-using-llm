@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "All use cases are associated with actors either directly, through generalization ('Tuvasta kasutaja'), or via inclusion ('Vaata k\u00f5iki ootel...')."
+      "justification": "All use cases are associated with actors either directly, through generalization ('Tuvasta kasutaja'), or via inclusion ('Vaata kõiki ootel...')."
     },
     {
       "rule_id": "G6.1",
@@ -37,13 +37,13 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Naming is consistent. Use cases primarily use the 'Verb Object' form (e.g., 'Aktiveeri auto', 'L\u00f5peta auto', 'Vaata aktiivseid autosid')."
+      "justification": "Naming is consistent. Use cases primarily use the 'Verb Object' form (e.g., 'Aktiveeri auto', 'Lõpeta auto', 'Vaata aktiivseid autosid')."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the state diagram (Page 9), all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, L\u00f5petatud) are reachable via transitions from the start state."
+      "justification": "In the state diagram (Page 9), all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, Lõpetatud) are reachable via transitions from the start state."
     },
     {
       "rule_id": "G15.2",

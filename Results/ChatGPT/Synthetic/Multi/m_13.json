@@ -19,7 +19,7 @@
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "No two or more use cases with names describing the same activity and associated with the same actor were clearly visible. The use case names on page 2 (e.g., 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Vaata k\u00f5iki autosid', 'Vaata autode koondaruannet') and page 3 (e.g., 'Registreeri auto', 'L\u00f5peta auto', 'Muuda autot', 'Aktiveeri auto', 'Unusta auto') appear distinct. "
+      "justification": "No two or more use cases with names describing the same activity and associated with the same actor were clearly visible. The use case names on page 2 (e.g., 'Tuvasta kasutaja', 'Vaata aktiivseid autosid', 'Vaata kõiki autosid', 'Vaata autode koondaruannet') and page 3 (e.g., 'Registreeri auto', 'Lõpeta auto', 'Muuda autot', 'Aktiveeri auto', 'Unusta auto') appear distinct. "
     },
     {
       "rule_id": "G6.2",
@@ -37,13 +37,13 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case naming form appears consistent. The use case names on pages 2 and 3 largely begin with verbs in the same style (e.g., 'Tuvasta', 'Vaata', 'Registreeri', 'L\u00f5peta', 'Muuda', 'Aktiveeri', 'Unusta'), so no inconsistent form was clearly visible. "
+      "justification": "Use case naming form appears consistent. The use case names on pages 2 and 3 largely begin with verbs in the same style (e.g., 'Tuvasta', 'Vaata', 'Registreeri', 'Lõpeta', 'Muuda', 'Aktiveeri', 'Unusta'), so no inconsistent form was clearly visible. "
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "No state that cannot be reached was explicitly and unambiguously visible in the state diagram. The 'Auto seisundidiagramm' on page 9 shows multiple states (e.g., Ootel, Aktiivne, Mitteaktiivne, L\u00f5petatud, Unustatud) and a start node, but the PDF text does not clearly demonstrate an unreachable state. "
+      "justification": "No state that cannot be reached was explicitly and unambiguously visible in the state diagram. The 'Auto seisundidiagramm' on page 9 shows multiple states (e.g., Ootel, Aktiivne, Mitteaktiivne, Lõpetatud, Unustatud) and a start node, but the PDF text does not clearly demonstrate an unreachable state. "
     },
     {
       "rule_id": "G15.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "No class name was clearly visible that starts with a lowercase letter or is plural. Class names across pages 5-13 (e.g., 'Isik', 'T\u00f6\u00f6taja', 'Auto', 'Klient', 'Klassifikaator') appear capitalized and singular. "
+      "justification": "No class name was clearly visible that starts with a lowercase letter or is plural. Class names across pages 5-13 (e.g., 'Isik', 'Töötaja', 'Auto', 'Klient', 'Klassifikaator') appear capitalized and singular. "
     },
     {
       "rule_id": "N3.2",

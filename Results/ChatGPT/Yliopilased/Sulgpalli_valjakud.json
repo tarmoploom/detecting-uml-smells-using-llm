@@ -13,19 +13,19 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "On the 'V\u00e4ljakute funktsionaalne alls\u00fcsteem' use case diagram (page 2), each use case oval inside the 'S\u00fcsteem' boundary is connected by at least one association line to one or more actors (e.g., 'Registreeri v\u00e4ljak', 'Vaata aktiivseid v\u00e4ljakuid', 'Unusta v\u00e4ljak'); there is no use case without a direct actor association. "
+      "justification": "On the 'Väljakute funktsionaalne allsüsteem' use case diagram (page 2), each use case oval inside the 'Süsteem' boundary is connected by at least one association line to one or more actors (e.g., 'Registreeri väljak', 'Vaata aktiivseid väljakuid', 'Unusta väljak'); there is no use case without a direct actor association. "
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "The use cases on the main use case diagram have distinct meanings: actions like 'Registreeri v\u00e4ljak', 'Aktiveeri v\u00e4ljak', 'L\u00f5peta v\u00e4ljak', 'Unusta v\u00e4ljak', and the various 'Vaata ... v\u00e4ljakuid' clearly describe different activities (registration, activation, termination, forgetting, and several different views), and no two use cases with the same actor obviously describe the same activity. "
+      "justification": "The use cases on the main use case diagram have distinct meanings: actions like 'Registreeri väljak', 'Aktiveeri väljak', 'Lõpeta väljak', 'Unusta väljak', and the various 'Vaata ... väljakuid' clearly describe different activities (registration, activation, termination, forgetting, and several different views), and no two use cases with the same actor obviously describe the same activity. "
     },
     {
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "In the package/overview diagram 'V\u00e4ljakute FASiga seotud p\u00e4devusalad ja registrid' (page 1), each package lists unique contained element names (e.g., within 'Klassifikaatorite register' there is only one 'Klassifikaator', alongside other uniquely named classifiers), and there are no multiple model elements with the same primary name in the same package. "
+      "justification": "In the package/overview diagram 'Väljakute FASiga seotud pädevusalad ja registrid' (page 1), each package lists unique contained element names (e.g., within 'Klassifikaatorite register' there is only one 'Klassifikaator', alongside other uniquely named classifiers), and there are no multiple model elements with the same primary name in the same package. "
     },
     {
       "rule_id": "G6.3",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names on the 'V\u00e4ljakute funktsionaalne alls\u00fcsteem' diagram consistently use a verb-first form such as 'Tuvasta kasutaja', 'Registreeri v\u00e4ljak', 'Muuda v\u00e4ljak', 'Aktiveeri v\u00e4ljak', 'Vaata k\u00f5iki v\u00e4ljakuid', and 'Unusta v\u00e4ljak'; there are no noun-only or inconsistent naming forms among the use cases. "
+      "justification": "Use case names on the 'Väljakute funktsionaalne allsüsteem' diagram consistently use a verb-first form such as 'Tuvasta kasutaja', 'Registreeri väljak', 'Muuda väljak', 'Aktiveeri väljak', 'Vaata kõiki väljakuid', and 'Unusta väljak'; there are no noun-only or inconsistent naming forms among the use cases. "
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the 'V\u00e4ljaku seisundidiagramm' state diagram (page 11), each state (Ootel, Aktiivne, Mitteaktiivne, L\u00f5petatud, Unustatud) has at least one incoming transition from either the initial node or from another state, as indicated by the arrows annotated with conditions and operation codes like '/OP1', '/OP2', '/OP3', '/OP4', and '/OP5'; therefore, no state is unreachable. "
+      "justification": "In the 'Väljaku seisundidiagramm' state diagram (page 11), each state (Ootel, Aktiivne, Mitteaktiivne, Lõpetatud, Unustatud) has at least one incoming transition from either the initial node or from another state, as indicated by the arrows annotated with conditions and operation codes like '/OP1', '/OP2', '/OP3', '/OP4', and '/OP5'; therefore, no state is unreachable. "
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "Both activity diagrams, 'V\u00e4ljakute l\u00f5petamise tegevusdiagramm' and 'V\u00e4ljakute aktiveerimise tegevusdiagramm' (pages 3 and 4), show every action node (e.g., 'Vaata k\u00f5iki v\u00e4ljakuid, mida saab l\u00f5petada', 'Otsi v\u00e4ljakut', 'Vali v\u00e4ljak', 'L\u00f5peta valitud v\u00e4ljak', 'Vaata k\u00f5iki v\u00e4ljakuid, mida saab aktiveerida', 'Kuva k\u00f5ik ootel v\u00f5i mitteaktiivsed v\u00e4ljakud', 'Aktiveeri valitud v\u00e4ljak') with an incoming control flow from the initial node or from a previous action/decision, so there are no unreachable actions. "
+      "justification": "Both activity diagrams, 'Väljakute lõpetamise tegevusdiagramm' and 'Väljakute aktiveerimise tegevusdiagramm' (pages 3 and 4), show every action node (e.g., 'Vaata kõiki väljakuid, mida saab lõpetada', 'Otsi väljakut', 'Vali väljak', 'Lõpeta valitud väljak', 'Vaata kõiki väljakuid, mida saab aktiveerida', 'Kuva kõik ootel või mitteaktiivsed väljakud', 'Aktiveeri valitud väljak') with an incoming control flow from the initial node or from a previous action/decision, so there are no unreachable actions. "
     },
     {
       "rule_id": "G15.3",
@@ -61,7 +61,7 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The 'V\u00e4ljakute funktsionaalne alls\u00fcsteem' use case diagram (page 2) contains at least 11 use cases inside a single system boundary, including 'Tuvasta kasutaja', 'Registreeri v\u00e4ljak', 'Muuda v\u00e4ljak', 'Aktiveeri v\u00e4ljak', 'Muuda v\u00e4ljak mittaktiivseks', 'L\u00f5peta v\u00e4ljak', 'Unusta v\u00e4ljak', 'Vaata aktiivseid v\u00e4ljakuid', 'Vaata k\u00f5iki v\u00e4ljakuid', 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid v\u00e4ljakuid', and 'Vaata v\u00e4ljakute koondaruannet', which exceeds the threshold of 10 central elements on one diagram. "
+      "justification": "The 'Väljakute funktsionaalne allsüsteem' use case diagram (page 2) contains at least 11 use cases inside a single system boundary, including 'Tuvasta kasutaja', 'Registreeri väljak', 'Muuda väljak', 'Aktiveeri väljak', 'Muuda väljak mittaktiivseks', 'Lõpeta väljak', 'Unusta väljak', 'Vaata aktiivseid väljakuid', 'Vaata kõiki väljakuid', 'Vaata kõiki ootel või mitteaktiivseid väljakuid', and 'Vaata väljakute koondaruannet', which exceeds the threshold of 10 central elements on one diagram. "
     },
     {
       "rule_id": "S1.2",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All use case names and activity actions start with active verbs: examples include 'Tuvasta kasutaja', 'Registreeri v\u00e4ljak', 'Muuda v\u00e4ljak', 'Aktiveeri v\u00e4ljak', 'Vaata k\u00f5iki v\u00e4ljakuid, mida saab l\u00f5petada', 'Otsi v\u00e4ljakut', 'Vali v\u00e4ljak', 'L\u00f5peta valitud v\u00e4ljak', 'Kuva k\u00f5ik ootel v\u00f5i mitteaktiivsed v\u00e4ljakud', and 'Aktiveeri valitud v\u00e4ljak'; there are no use cases or activity actions whose names fail to start with an active verb. "
+      "justification": "All use case names and activity actions start with active verbs: examples include 'Tuvasta kasutaja', 'Registreeri väljak', 'Muuda väljak', 'Aktiveeri väljak', 'Vaata kõiki väljakuid, mida saab lõpetada', 'Otsi väljakut', 'Vali väljak', 'Lõpeta valitud väljak', 'Kuva kõik ootel või mitteaktiivsed väljakud', and 'Aktiveeri valitud väljak'; there are no use cases or activity actions whose names fail to start with an active verb. "
     },
     {
       "rule_id": "N1.2",
@@ -103,7 +103,7 @@
       "rule_id": "N3.3",
       "actual": false,
       "detected": false,
-      "justification": "Database tables representing domain entities in the transformed register diagrams use singular names such as 'Isik', 'Klient', 'Valjak', 'Tootaja', 'Valjaku_kategooria', and 'Valjaku_seisundi_liik'; plural forms appear only in higher-level register names like 'Isikute register' or 'T\u00f6\u00f6tajate register', which per the interpretation rules are treated as register containers rather than individual tables. "
+      "justification": "Database tables representing domain entities in the transformed register diagrams use singular names such as 'Isik', 'Klient', 'Valjak', 'Tootaja', 'Valjaku_kategooria', and 'Valjaku_seisundi_liik'; plural forms appear only in higher-level register names like 'Isikute register' or 'Töötajate register', which per the interpretation rules are treated as register containers rather than individual tables. "
     },
     {
       "rule_id": "N4.1",

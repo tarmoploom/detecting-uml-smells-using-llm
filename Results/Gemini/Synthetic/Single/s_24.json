@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "All top-level use cases are associated with actors. Included use cases (e.g., 'Vaata k\u00f5iki ootel...') are reachable via the actors associated with the base use cases ('Aktiveeri auto', 'Muuda auto mitteaktiivseks')."
+      "justification": "All top-level use cases are associated with actors. Included use cases (e.g., 'Vaata kõiki ootel...') are reachable via the actors associated with the base use cases ('Aktiveeri auto', 'Muuda auto mitteaktiivseks')."
     },
     {
       "rule_id": "G6.1",
@@ -37,13 +37,13 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Naming is consistent. All use cases begin with an imperative verb in Estonian (e.g., 'Vaata', 'Tuvasta', 'Registreeri', 'Muuda', 'L\u00f5peta')."
+      "justification": "Naming is consistent. All use cases begin with an imperative verb in Estonian (e.g., 'Vaata', 'Tuvasta', 'Registreeri', 'Muuda', 'Lõpeta')."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the State Diagram (Page 9), all states ('Ootel', 'Unustatud', 'Aktiivne', 'Mitteaktiivne', 'L\u00f5petatud') are reachable from the Start node via defined transitions."
+      "justification": "In the State Diagram (Page 9), all states ('Ootel', 'Unustatud', 'Aktiivne', 'Mitteaktiivne', 'Lõpetatud') are reachable from the Start node via defined transitions."
     },
     {
       "rule_id": "G15.2",

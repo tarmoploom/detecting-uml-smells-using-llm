@@ -13,13 +13,13 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": true,
-      "justification": "On page 3 'Kaupade funktsionaalne alls\u00fcsteem', the use case 'Tuvasta kasutaja' (Identify user) is a visual oval element that has no direct actor association - it only has \u00abinclude\u00bb relationships from other use cases ('Registreeri kaup' and 'Muuda kaup'). Per the rule, a use case oval must have at least 1 actor association, but 'Tuvasta kasutaja' has ZERO direct actor associations."
+      "justification": "On page 3 'Kaupade funktsionaalne allsüsteem', the use case 'Tuvasta kasutaja' (Identify user) is a visual oval element that has no direct actor association - it only has «include» relationships from other use cases ('Registreeri kaup' and 'Muuda kaup'). Per the rule, a use case oval must have at least 1 actor association, but 'Tuvasta kasutaja' has ZERO direct actor associations."
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "On page 3 'Kaupade funktsionaalne alls\u00fcsteem', all use cases have distinct activity names. No two use cases describe the same activity with the same actor association."
+      "justification": "On page 3 'Kaupade funktsionaalne allsüsteem', all use cases have distinct activity names. No two use cases describe the same activity with the same actor association."
     },
     {
       "rule_id": "G6.2",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "On page 3 'Kaupade funktsionaalne alls\u00fcsteem', all use cases follow a consistent naming pattern starting with an active verb: Vaata (View), L\u00f5peta (End), Registreeri (Register), Muuda (Change), Aktiveeri (Activate), Unusta (Forget), Tuvasta (Identify). All 11 use cases start with verbs."
+      "justification": "On page 3 'Kaupade funktsionaalne allsüsteem', all use cases follow a consistent naming pattern starting with an active verb: Vaata (View), Lõpeta (End), Registreeri (Register), Muuda (Change), Aktiveeri (Activate), Unusta (Forget), Tuvasta (Identify). All 11 use cases start with verbs."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "On page 11 'Kauba seisundidiagramm', all 6 states (Alg, Ootel, Aktiivne, Mitteaktiivne, L\u00f5petatud, Unustatud) are reachable. Alg is the initial state with outgoing transition to Ootel. From Ootel, transitions lead to Aktiivne and Unustatud. From Aktiivne, transitions lead to Mitteaktiivne and L\u00f5petatud. From Mitteaktiivne, transitions lead back to Aktiivne and to L\u00f5petatud. Every state has at least one incoming transition path."
+      "justification": "On page 11 'Kauba seisundidiagramm', all 6 states (Alg, Ootel, Aktiivne, Mitteaktiivne, Lõpetatud, Unustatud) are reachable. Alg is the initial state with outgoing transition to Ootel. From Ootel, transitions lead to Aktiivne and Unustatud. From Aktiivne, transitions lead to Mitteaktiivne and Lõpetatud. From Mitteaktiivne, transitions lead back to Aktiivne and to Lõpetatud. Every state has at least one incoming transition path."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "On page 4 'Kauba l\u00f5petamise tegevusdiagramm' and page 5 'Kauba aktiveerimise tegevusdiagramm', all actions are reachable from the start node (Algus) via decision nodes and flow arrows. Each activity diagram has a connected flow from start to all actions."
+      "justification": "On page 4 'Kauba lõpetamise tegevusdiagramm' and page 5 'Kauba aktiveerimise tegevusdiagramm', all actions are reachable from the start node (Algus) via decision nodes and flow arrows. Each activity diagram has a connected flow from start to all actions."
     },
     {
       "rule_id": "G15.3",
@@ -61,13 +61,13 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "Multiple diagrams exceed the threshold of \u226510 central elements:\n\n1. Page 2 'Kaupade register_suur': 17 classes counted (Kasutajakonto, Isik, Riik, Isiku_seisundi_liik, T\u00f6\u00f6taja, T\u00f6\u00f6taja_roll, T\u00f6\u00f6taja_seisundi_liik, Kaup, Kauba_seisundi_liik, Kauba_kategooria, Kauba_kategooria_omamine, Kauba_kategooria_t\u00fc\u00fcp, T\u00f6\u00f6taja_rolli_omamine, Kauba_variant, V\u00e4rv, Klient, Kauba_tootja). 17 \u2265 10, smell IS present.\n\n2. Page 3 'Kaupade funktsionaalne alls\u00fcsteem': 11 use cases counted (Vaata kaupade koondaruannet, L\u00f5peta kaup, Registreeri kaup, Muuda kaup, Aktiveeri kaup, Muuda kaup mittaktiivseks, Vaata aktiivseid kaupasid, Vaata k\u00f5iki kaupasid, Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid kaupasid, Unusta kaup, Tuvasta kasutaja). 11 \u2265 10, smell IS present.\n\n3. Page 8 'Klassifikaatorite register': 11 classes counted (Klassifikaator, Kliendi_seisundi_liik, Riik, Kauba_seisundi_liik, T\u00f6\u00f6taja_seisundi_liik, Isiku_seisundi_liik, T\u00f6\u00f6taja_roll, Kauba_kategooria, Kauba_kategooria_t\u00fc\u00fcp, V\u00e4rv, Kauba_tootja). 11 \u2265 10, smell IS present.\n\n4. Page 10 'Kaupade register': 10 classes counted (Kaup, Kauba_kategooria_omamine, Kauba_seisundi_liik, Kauba_kategooria_t\u00fc\u00fcp, Kauba_kategooria, Isik, T\u00f6\u00f6taja, Kauba_variant, V\u00e4rv, Kauba_tootja). 10 \u2265 10, smell IS present.\n\n5. Pages 14-15 'Klassifikaatorite register (transformed)': 10 tables counted (Isiku_seisundi_liik, Kauba_kategooria, Kauba_kategooria_tyyp, Kauba_seisundi_liik, Kauba_tootja, Kliendi_seisundi_liik, Riik, Tootaja_roll, Tootaja_seisundi_liik, Varv). 10 \u2265 10, smell IS present."
+      "justification": "Multiple diagrams exceed the threshold of ≥10 central elements:\n\n1. Page 2 'Kaupade register_suur': 17 classes counted (Kasutajakonto, Isik, Riik, Isiku_seisundi_liik, Töötaja, Töötaja_roll, Töötaja_seisundi_liik, Kaup, Kauba_seisundi_liik, Kauba_kategooria, Kauba_kategooria_omamine, Kauba_kategooria_tüüp, Töötaja_rolli_omamine, Kauba_variant, Värv, Klient, Kauba_tootja). 17 ≥ 10, smell IS present.\n\n2. Page 3 'Kaupade funktsionaalne allsüsteem': 11 use cases counted (Vaata kaupade koondaruannet, Lõpeta kaup, Registreeri kaup, Muuda kaup, Aktiveeri kaup, Muuda kaup mittaktiivseks, Vaata aktiivseid kaupasid, Vaata kõiki kaupasid, Vaata kõiki ootel või mitteaktiivseid kaupasid, Unusta kaup, Tuvasta kasutaja). 11 ≥ 10, smell IS present.\n\n3. Page 8 'Klassifikaatorite register': 11 classes counted (Klassifikaator, Kliendi_seisundi_liik, Riik, Kauba_seisundi_liik, Töötaja_seisundi_liik, Isiku_seisundi_liik, Töötaja_roll, Kauba_kategooria, Kauba_kategooria_tüüp, Värv, Kauba_tootja). 11 ≥ 10, smell IS present.\n\n4. Page 10 'Kaupade register': 10 classes counted (Kaup, Kauba_kategooria_omamine, Kauba_seisundi_liik, Kauba_kategooria_tüüp, Kauba_kategooria, Isik, Töötaja, Kauba_variant, Värv, Kauba_tootja). 10 ≥ 10, smell IS present.\n\n5. Pages 14-15 'Klassifikaatorite register (transformed)': 10 tables counted (Isiku_seisundi_liik, Kauba_kategooria, Kauba_kategooria_tyyp, Kauba_seisundi_liik, Kauba_tootja, Kliendi_seisundi_liik, Riik, Tootaja_roll, Tootaja_seisundi_liik, Varv). 10 ≥ 10, smell IS present."
     },
     {
       "rule_id": "S1.2",
       "actual": true,
       "detected": true,
-      "justification": "On pages 16-17 'Kaupade register (transformed)', the Kaup table has exactly 6 visual connection lines to other tables:\n1. FK_Kaup_Kauba_seisundi_liik \u2192 Kauba_seisundi_liik\n2. FK_Kaup_Kauba_tootja \u2192 Kauba_tootja\n3. FK_registreerija \u2192 Tootaja\n4. FK_viimane_muutja \u2192 Tootaja\n5. FK_Kauba_kategooria_omamine_Kaup \u2190 Kauba_kategooria_omamine\n6. FK_Kauba_variant_Kaup \u2190 Kauba_variant\n\nCounted 6 visible connection lines from Kaup. Threshold is \u22656. 6 \u2265 6, therefore smell IS present."
+      "justification": "On pages 16-17 'Kaupade register (transformed)', the Kaup table has exactly 6 visual connection lines to other tables:\n1. FK_Kaup_Kauba_seisundi_liik → Kauba_seisundi_liik\n2. FK_Kaup_Kauba_tootja → Kauba_tootja\n3. FK_registreerija → Tootaja\n4. FK_viimane_muutja → Tootaja\n5. FK_Kauba_kategooria_omamine_Kaup ← Kauba_kategooria_omamine\n6. FK_Kauba_variant_Kaup ← Kauba_variant\n\nCounted 6 visible connection lines from Kaup. Threshold is ≥6. 6 ≥ 6, therefore smell IS present."
     },
     {
       "rule_id": "S2.1",
@@ -79,19 +79,19 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases on page 3 start with active verbs in Estonian: Vaata (View), L\u00f5peta (End), Registreeri (Register), Muuda (Change), Aktiveeri (Activate), Unusta (Forget), Tuvasta (Identify). All actions on pages 4-5 activity diagrams also start with active verbs: Vaata, Otsi (Search), Vali (Select), L\u00f5peta, Aktiveeri. No noun-first or passive form names found."
+      "justification": "All use cases on page 3 start with active verbs in Estonian: Vaata (View), Lõpeta (End), Registreeri (Register), Muuda (Change), Aktiveeri (Activate), Unusta (Forget), Tuvasta (Identify). All actions on pages 4-5 activity diagrams also start with active verbs: Vaata, Otsi (Search), Vali (Select), Lõpeta, Aktiveeri. No noun-first or passive form names found."
     },
     {
       "rule_id": "N1.2",
       "actual": false,
       "detected": false,
-      "justification": "All class, table, attribute, and use case names have \u22654 characters. Shortest names found: 'Isik' (4 chars), 'Kaup' (4 chars), 'Riik' (4 chars), 'V\u00e4rv'/'Varv' (4 chars). Threshold is \u22643 characters. Since all names have 4+ characters, 4 > 3, smell is NOT present."
+      "justification": "All class, table, attribute, and use case names have ≥4 characters. Shortest names found: 'Isik' (4 chars), 'Kaup' (4 chars), 'Riik' (4 chars), 'Värv'/'Varv' (4 chars). Threshold is ≤3 characters. Since all names have 4+ characters, 4 > 3, smell is NOT present."
     },
     {
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All class names start with uppercase letters (e.g., Isik, Kaup, T\u00f6\u00f6taja, Klassifikaator) and are singular forms. No lowercase-starting class names or plural class names were found."
+      "justification": "All class names start with uppercase letters (e.g., Isik, Kaup, Töötaja, Klassifikaator) and are singular forms. No lowercase-starting class names or plural class names were found."
     },
     {
       "rule_id": "N3.2",

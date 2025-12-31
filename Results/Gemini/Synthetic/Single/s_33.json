@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "All use cases are associated with actors either directly (e.g., 'Registreeri auto' to 'Autode haldur') or indirectly via '<<include>>' relationships (e.g., 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid autosid' is included by 'Aktiveeri auto', which connects to an actor)."
+      "justification": "All use cases are associated with actors either directly (e.g., 'Registreeri auto' to 'Autode haldur') or indirectly via '<<include>>' relationships (e.g., 'Vaata kõiki ootel või mitteaktiivseid autosid' is included by 'Aktiveeri auto', which connects to an actor)."
     },
     {
       "rule_id": "G6.1",
@@ -43,7 +43,7 @@
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the state diagram (Page 9), all states ('Ootel', 'Aktiivne', 'Mitteaktiivne', 'Unustatud', 'L\u00f5petatud') are reachable from the 'Algus' state via valid transitions."
+      "justification": "In the state diagram (Page 9), all states ('Ootel', 'Aktiivne', 'Mitteaktiivne', 'Unustatud', 'Lõpetatud') are reachable from the 'Algus' state via valid transitions."
     },
     {
       "rule_id": "G15.2",
@@ -67,7 +67,7 @@
       "rule_id": "S1.2",
       "actual": false,
       "detected": false,
-      "justification": "No single class or table has 6 or more visual connection lines on a specific diagram. The highest count observed is 5 (e.g., 'Klassifikaator' on Page 7 and 'T\u00f6\u00f6taja' on Page 5)."
+      "justification": "No single class or table has 6 or more visual connection lines on a specific diagram. The highest count observed is 5 (e.g., 'Klassifikaator' on Page 7 and 'Töötaja' on Page 5)."
     },
     {
       "rule_id": "S2.1",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases and activity diagram actions start with active verbs (e.g., 'Vaata', 'Otsi', 'Vali', 'L\u00f5peta')."
+      "justification": "All use cases and activity diagram actions start with active verbs (e.g., 'Vaata', 'Otsi', 'Vali', 'Lõpeta')."
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Class names are correctly capitalized and singular (e.g., 'Auto', 'Isik', 'T\u00f6\u00f6taja')."
+      "justification": "Class names are correctly capitalized and singular (e.g., 'Auto', 'Isik', 'Töötaja')."
     },
     {
       "rule_id": "N3.2",

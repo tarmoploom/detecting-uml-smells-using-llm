@@ -19,13 +19,13 @@
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "The use case names on pages 2 and 3 do not clearly describe the same activity with different wording for the same actor (e.g., 'Vaata aktiivseid autosid' vs 'Vaata k\u00f5iki autosid' are distinct); no explicit same-activity duplicates are visible."
+      "justification": "The use case names on pages 2 and 3 do not clearly describe the same activity with different wording for the same actor (e.g., 'Vaata aktiivseid autosid' vs 'Vaata kõiki autosid' are distinct); no explicit same-activity duplicates are visible."
     },
     {
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "In the package diagram on page 1, the listed elements within packages (e.g., Autode register, Isikute register, Klassifikaatorite register, T\u00f6\u00f6tajate register, Klientide register) do not show multiple model elements with the same primary name in the same package; no explicit duplicates are visible."
+      "justification": "In the package diagram on page 1, the listed elements within packages (e.g., Autode register, Isikute register, Klassifikaatorite register, Töötajate register, Klientide register) do not show multiple model elements with the same primary name in the same package; no explicit duplicates are visible."
     },
     {
       "rule_id": "G6.3",
@@ -37,13 +37,13 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names on pages 2 and 3 appear consistently verb-based (e.g., 'Tuvasta', 'Vaata', 'Registreeri', 'L\u00f5peta', 'Muuda', 'Aktiveeri', 'Unusta'), so no inconsistent form is explicitly visible."
+      "justification": "Use case names on pages 2 and 3 appear consistently verb-based (e.g., 'Tuvasta', 'Vaata', 'Registreeri', 'Lõpeta', 'Muuda', 'Aktiveeri', 'Unusta'), so no inconsistent form is explicitly visible."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "The state diagram on page 9 lists states such as 'Aktiivne', 'Mitteaktiivne', 'L\u00f5petatud', 'Ootel', and 'Unustatud' with an initial 'Algus', but no state is explicitly shown as unreachable in the available content."
+      "justification": "The state diagram on page 9 lists states such as 'Aktiivne', 'Mitteaktiivne', 'Lõpetatud', 'Ootel', and 'Unustatud' with an initial 'Algus', but no state is explicitly shown as unreachable in the available content."
     },
     {
       "rule_id": "G15.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Class names visible in class diagrams (e.g., 'Isik', 'T\u00f6\u00f6taja', 'Auto', 'Klient', 'Klassifikaator') appear to start with uppercase letters and are not explicitly plural within the meaning of this rule."
+      "justification": "Class names visible in class diagrams (e.g., 'Isik', 'Töötaja', 'Auto', 'Klient', 'Klassifikaator') appear to start with uppercase letters and are not explicitly plural within the meaning of this rule."
     },
     {
       "rule_id": "N3.2",

@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "All use cases in the 'Autode funktsionaalne alls\u00fcsteem' diagram (Page 2) are connected to actors either directly or via '<<include>>' relationships (e.g., 'Tuvasta kasutaja' is included by use cases connected to actors)."
+      "justification": "All use cases in the 'Autode funktsionaalne allsüsteem' diagram (Page 2) are connected to actors either directly or via '<<include>>' relationships (e.g., 'Tuvasta kasutaja' is included by use cases connected to actors)."
     },
     {
       "rule_id": "G6.1",
@@ -43,7 +43,7 @@
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the State Diagram (Page 8), all states ('Ootel', 'Aktiivne', 'Mitteaktiivne', 'Unustatud', 'L\u00f5petatud') are reachable from the Start node via the defined transitions."
+      "justification": "In the State Diagram (Page 8), all states ('Ootel', 'Aktiivne', 'Mitteaktiivne', 'Unustatud', 'Lõpetatud') are reachable from the Start node via the defined transitions."
     },
     {
       "rule_id": "G15.2",
@@ -61,7 +61,7 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "The Use Case diagram 'Autode funktsionaalne alls\u00fcsteem' on Page 2 contains 11 central use case elements (ovals), which exceeds the threshold of 10 allowed elements per diagram."
+      "justification": "The Use Case diagram 'Autode funktsionaalne allsüsteem' on Page 2 contains 11 central use case elements (ovals), which exceeds the threshold of 10 allowed elements per diagram."
     },
     {
       "rule_id": "S1.2",

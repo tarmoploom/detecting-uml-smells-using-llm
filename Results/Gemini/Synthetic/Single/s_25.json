@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "All use cases in the diagrams are associated with actors, either directly or via '<<include>>' relationships (e.g., 'Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid autosid' is included by user-triggered use cases)."
+      "justification": "All use cases in the diagrams are associated with actors, either directly or via '<<include>>' relationships (e.g., 'Vaata kõiki ootel või mitteaktiivseid autosid' is included by user-triggered use cases)."
     },
     {
       "rule_id": "G6.1",
@@ -49,13 +49,13 @@
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "All actions in the 'Auto l\u00f5petamise tegevusdiagramm' are reachable through the defined decision flows."
+      "justification": "All actions in the 'Auto lõpetamise tegevusdiagramm' are reachable through the defined decision flows."
     },
     {
       "rule_id": "G15.3",
       "actual": false,
       "detected": true,
-      "justification": "On the 'Autode register (Klassifikaator)' diagram (Page 12), the association between the 'Auto' class and the 'Auto_k\u00fctuse_liik' class lacks a multiplicity indicator (e.g., '0..*') on the 'Auto' end of the relationship line."
+      "justification": "On the 'Autode register (Klassifikaator)' diagram (Page 12), the association between the 'Auto' class and the 'Auto_kütuse_liik' class lacks a multiplicity indicator (e.g., '0..*') on the 'Auto' end of the relationship line."
     },
     {
       "rule_id": "S1.1",

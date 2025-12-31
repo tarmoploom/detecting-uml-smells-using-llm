@@ -19,7 +19,7 @@
       "rule_id": "G6.1",
       "actual": true,
       "detected": false,
-      "justification": "While there are use cases with similar names (e.g., 'Vaata k\u00f5iki autosid' vs 'Vaata aktiivseid autosid'), they describe distinct scopes of activity (viewing a full set vs. a subset) rather than being synonyms for the exact same activity."
+      "justification": "While there are use cases with similar names (e.g., 'Vaata kõiki autosid' vs 'Vaata aktiivseid autosid'), they describe distinct scopes of activity (viewing a full set vs. a subset) rather than being synonyms for the exact same activity."
     },
     {
       "rule_id": "G6.2",
@@ -37,13 +37,13 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases are named consistently using the imperative verb form (e.g., 'Registreeri', 'Vaata', 'Muuda', 'L\u00f5peta')."
+      "justification": "All use cases are named consistently using the imperative verb form (e.g., 'Registreeri', 'Vaata', 'Muuda', 'Lõpeta')."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the state diagram (Page 9), all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, L\u00f5petatud) are reachable from the Start node via the defined transitions."
+      "justification": "In the state diagram (Page 9), all states (Ootel, Aktiivne, Mitteaktiivne, Unustatud, Lõpetatud) are reachable from the Start node via the defined transitions."
     },
     {
       "rule_id": "G15.2",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases and activity actions start with active verbs (e.g., 'Vaata', 'Otsi', 'Vali', 'L\u00f5peta')."
+      "justification": "All use cases and activity actions start with active verbs (e.g., 'Vaata', 'Otsi', 'Vali', 'Lõpeta')."
     },
     {
       "rule_id": "N1.2",

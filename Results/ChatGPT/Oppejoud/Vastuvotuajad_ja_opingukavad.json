@@ -7,19 +7,19 @@
       "rule_id": "G5.1",
       "actual": true,
       "detected": true,
-      "justification": "The diagram '\u00d5pingukavade alls\u00fcsteem' on page 16 and the heading page '\u00d5pingukavade AB disaini diagramm (\u00f5pingukava s\u00fcndmus)' on page 28 contain only the diagram titles and no visible classes, tables, use cases, states, or relationships, so the model includes empty diagrams. "
+      "justification": "The diagram 'Õpingukavade allsüsteem' on page 16 and the heading page 'Õpingukavade AB disaini diagramm (õpingukava sündmus)' on page 28 contain only the diagram titles and no visible classes, tables, use cases, states, or relationships, so the model includes empty diagrams. "
     },
     {
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "In the use case diagrams '\u00d5pingukavade alls\u00fcsteemi kasutusjuhtude diagramm' (page 17) and 'Vastuv\u00f5tuaegade alls\u00fcsteemi kasutusjuhtude diagramm' (page 18), every named use case appears in the midst of association multiplicities, include-relations, or textual descriptions that reference actors (e.g., 'identifitseerib ennast', 'arvab kuulajaskonnast v\u00e4lja'), and there is no clearly isolated use case oval without any actor connections."
+      "justification": "In the use case diagrams 'Õpingukavade allsüsteemi kasutusjuhtude diagramm' (page 17) and 'Vastuvõtuaegade allsüsteemi kasutusjuhtude diagramm' (page 18), every named use case appears in the midst of association multiplicities, include-relations, or textual descriptions that reference actors (e.g., 'identifitseerib ennast', 'arvab kuulajaskonnast välja'), and there is no clearly isolated use case oval without any actor connections."
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "Across both use case diagrams, each use case name describes a distinct activity (such as '\u00d5pingukava koostamine', 'Tuvasta kasutaja', 'Teatele vastamine', 'Lisa vastuv\u00f5tuaeg', 'T\u00fchista vastuv\u00f5tule tulek') and there is no pair of differently worded use cases that obviously describe the same activity while being associated with the same actor."
+      "justification": "Across both use case diagrams, each use case name describes a distinct activity (such as 'Õpingukava koostamine', 'Tuvasta kasutaja', 'Teatele vastamine', 'Lisa vastuvõtuaeg', 'Tühista vastuvõtule tulek') and there is no pair of differently worded use cases that obviously describe the same activity while being associated with the same actor."
     },
     {
       "rule_id": "G6.2",
@@ -37,49 +37,49 @@
       "rule_id": "G8.1",
       "actual": true,
       "detected": true,
-      "justification": "Use case naming is inconsistent: some use cases start with an imperative verb, such as 'Tuvasta kasutaja', 'Registreeri vastuv\u00f5tule tulek', 'T\u00fchista vastuv\u00f5tule tulek', 'Lisa vastuv\u00f5tuaeg', while others are noun or noun-phrase forms like '\u00d5pingukava koostamine', '\u00d5pingukava esitamine', 'Semestrite haldamine', '\u00d5pingukavade kinnitamine', and 'Kuulajaskonna vaatamine' on pages 17\u201318."
+      "justification": "Use case naming is inconsistent: some use cases start with an imperative verb, such as 'Tuvasta kasutaja', 'Registreeri vastuvõtule tulek', 'Tühista vastuvõtule tulek', 'Lisa vastuvõtuaeg', while others are noun or noun-phrase forms like 'Õpingukava koostamine', 'Õpingukava esitamine', 'Semestrite haldamine', 'Õpingukavade kinnitamine', and 'Kuulajaskonna vaatamine' on pages 17–18."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the state diagrams '\u00d5pingukava seisundidiagramm' (pages 4 and 9) and 'Vastuv\u00f5tuaja seisundidiagramm' (pages 12 and 14), all listed states (e.g., 'Koostamisel', 'Aktuaalne', 'T\u00e4iendamisel', 'Kustutatud', 'Vaba', 'H\u00f5ivatud', 'Aegunud', 'T\u00fchistatud') have associated transition descriptions and appear as part of the transition structure; there is no state that is clearly isolated without any incoming transition from an initial state."
+      "justification": "In the state diagrams 'Õpingukava seisundidiagramm' (pages 4 and 9) and 'Vastuvõtuaja seisundidiagramm' (pages 12 and 14), all listed states (e.g., 'Koostamisel', 'Aktuaalne', 'Täiendamisel', 'Kustutatud', 'Vaba', 'Hõivatud', 'Aegunud', 'Tühistatud') have associated transition descriptions and appear as part of the transition structure; there is no state that is clearly isolated without any incoming transition from an initial state."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "The activity diagrams '\u00d5pingukava koostamise tegevusdiagramm' (page 15), 'Vastuv\u00f5tule tuleku registreerimine' (page 19), and 'Vastuv\u00f5tule tuleku t\u00fchistamine' (page 20) show each action node (such as '\u00d5pingukava koostamine', 'Eksmatrikuleerimine', 'Registreerib enda vastuv\u00f5tule tuleku', 'Valib t\u00fchistatava vastuv\u00f5tule tuleku') described in the flow of decisions and guards; no action appears as a standalone node without incoming control flow from earlier steps."
+      "justification": "The activity diagrams 'Õpingukava koostamise tegevusdiagramm' (page 15), 'Vastuvõtule tuleku registreerimine' (page 19), and 'Vastuvõtule tuleku tühistamine' (page 20) show each action node (such as 'Õpingukava koostamine', 'Eksmatrikuleerimine', 'Registreerib enda vastuvõtule tuleku', 'Valib tühistatava vastuvõtule tuleku') described in the flow of decisions and guards; no action appears as a standalone node without incoming control flow from earlier steps."
     },
     {
       "rule_id": "G15.3",
       "actual": false,
       "detected": true,
-      "justification": "On the class-style overview diagrams '\u00d5pingukavade FASiga seotud p\u00e4devusalad ja registrid' (page 2) and 'Vastuv\u00f5tuaegade FASiga seotud p\u00e4devusalad ja registrid' (page 3), relationships between the central subsystem box and the surrounding register classes and actors are drawn with textual labels like 'Loeb' and 'Teenindab' but have no multiplicity indicators (no '1' or '0..*') and no crow's-foot or FK notation at either end, so these relationships lack multiplicities on both ends. "
+      "justification": "On the class-style overview diagrams 'Õpingukavade FASiga seotud pädevusalad ja registrid' (page 2) and 'Vastuvõtuaegade FASiga seotud pädevusalad ja registrid' (page 3), relationships between the central subsystem box and the surrounding register classes and actors are drawn with textual labels like 'Loeb' and 'Teenindab' but have no multiplicity indicators (no '1' or '0..*') and no crow's-foot or FK notation at either end, so these relationships lack multiplicities on both ends. "
     },
     {
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "Several class/database diagrams display ten or more central elements. For example, the conceptual diagram '\u00d5pingukavade_registri_kontseptuaalne_diagramm_1' on page 6 contains at least 17 entities (Isik, Amet, Aine_\u00f5pingukavas, \u00d5ppekava, \u00d5pingukava, \u00dcli\u00f5pilane, Piirang, etc.), and the database design diagrams for \u00d5pingukava and \u00d5ppekava on pages 30\u201331 each include more than ten tables."
+      "justification": "Several class/database diagrams display ten or more central elements. For example, the conceptual diagram 'Õpingukavade_registri_kontseptuaalne_diagramm_1' on page 6 contains at least 17 entities (Isik, Amet, Aine_õpingukavas, Õppekava, Õpingukava, Üliõpilane, Piirang, etc.), and the database design diagrams for Õpingukava and Õppekava on pages 30–31 each include more than ten tables."
     },
     {
       "rule_id": "S1.2",
       "actual": true,
       "detected": false,
-      "justification": "Across the class and database diagrams, no single class or table is visibly connected to six or more distinct relationship lines on the same diagram; even heavily connected elements like '\u00d5pingukava' in the \u00d5pingukava AB design diagram (page 30) appear to have at most five separate connectors to other tables."
+      "justification": "Across the class and database diagrams, no single class or table is visibly connected to six or more distinct relationship lines on the same diagram; even heavily connected elements like 'Õpingukava' in the Õpingukava AB design diagram (page 30) appear to have at most five separate connectors to other tables."
     },
     {
       "rule_id": "S2.1",
       "actual": true,
       "detected": false,
-      "justification": "The diagrams generally place related elements in relatively compact clusters (for example, tables arranged around '\u00d5pingukava' on page 30 and the cluster around 'Vastuv\u00f5tt' on page 26), and there is no clear instance where the distance between a related pair is more than twice the apparent average distance between elements on the same diagram."
+      "justification": "The diagrams generally place related elements in relatively compact clusters (for example, tables arranged around 'Õpingukava' on page 30 and the cluster around 'Vastuvõtt' on page 26), and there is no clear instance where the distance between a related pair is more than twice the apparent average distance between elements on the same diagram."
     },
     {
       "rule_id": "N1.1",
       "actual": true,
       "detected": true,
-      "justification": "Many use case names and activity actions do not begin with an active verb. Examples include '\u00d5pingukava koostamine', '\u00d5pingukava esitamine', 'Semestrite haldamine', '\u00d5pingukavade kinnitamine', and '\u00d5pingukavade muutmine mitteaktuaalseks' in the use case diagram on page 17 and the action 'Esitamata j\u00e4tmise p\u00f5hjendamine' in the activity diagram on page 15, all of which start with a noun phrase rather than a verb."
+      "justification": "Many use case names and activity actions do not begin with an active verb. Examples include 'Õpingukava koostamine', 'Õpingukava esitamine', 'Semestrite haldamine', 'Õpingukavade kinnitamine', and 'Õpingukavade muutmine mitteaktuaalseks' in the use case diagram on page 17 and the action 'Esitamata jätmise põhjendamine' in the activity diagram on page 15, all of which start with a noun phrase rather than a verb."
     },
     {
       "rule_id": "N1.2",
@@ -103,7 +103,7 @@
       "rule_id": "N3.3",
       "actual": false,
       "detected": false,
-      "justification": "Database table/entity names that represent singular domain objects are given in singular form (e.g., 'Isik', 'Yliopilane', 'Tootaja', 'Ruum', 'Hoone', 'Vastuvott', 'Oppekava'); the plural words are used only in register names like 'Isikute register' or '\u00dcli\u00f5pilaste register', which are domain registers and are exempt from this rule."
+      "justification": "Database table/entity names that represent singular domain objects are given in singular form (e.g., 'Isik', 'Yliopilane', 'Tootaja', 'Ruum', 'Hoone', 'Vastuvott', 'Oppekava'); the plural words are used only in register names like 'Isikute register' or 'Üliõpilaste register', which are domain registers and are exempt from this rule."
     },
     {
       "rule_id": "N4.1",

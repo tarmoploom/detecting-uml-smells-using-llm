@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": true,
-      "justification": "On page 2 (Use case diagram 'Laudade funktsionaalne allsusteem'), the use case 'Tuvasta kasutaja' (marked as 'from Labivad huvid') has ZERO direct actor associations. It only has \u00abinclude\u00bb relationships from other use cases ('Lopeta laud' and 'Registreeri laud') but no actor is directly connected to it."
+      "justification": "On page 2 (Use case diagram 'Laudade funktsionaalne allsusteem'), the use case 'Tuvasta kasutaja' (marked as 'from Labivad huvid') has ZERO direct actor associations. It only has «include» relationships from other use cases ('Lopeta laud' and 'Registreeri laud') but no actor is directly connected to it."
     },
     {
       "rule_id": "G6.1",
@@ -49,7 +49,7 @@
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "On page 3 (Activity diagram 'laua lopetamise tegevusdiagramm'), all actions are reachable from Algus (start): Vaata koiki laudu \u2192 Otsi lauda \u2192 Vali laud \u2192 Lopeta valitud lauda. On page 4 (Activity diagram 'laua aktiveerimise tegevusdiagramm'), all actions are reachable: Soovib vaadata \u2192 Kuvab lauad \u2192 Valib laua \u2192 Annab korralduse \u2192 Aktiveerib/Teatab. No unreachable actions found."
+      "justification": "On page 3 (Activity diagram 'laua lopetamise tegevusdiagramm'), all actions are reachable from Algus (start): Vaata koiki laudu → Otsi lauda → Vali laud → Lopeta valitud lauda. On page 4 (Activity diagram 'laua aktiveerimise tegevusdiagramm'), all actions are reachable: Soovib vaadata → Kuvab lauad → Valib laua → Annab korralduse → Aktiveerib/Teatab. No unreachable actions found."
     },
     {
       "rule_id": "G15.3",
@@ -61,13 +61,13 @@
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "On page 2 (Use case diagram 'Laudade funktsionaalne allsusteem'), counted 11 use cases: 1) Vaata laudade koondaruannet, 2) Lopeta laud, 3) Registreeri laud, 4) Muuda laud, 5) Aktiveeri laud, 6) Muuda lauda mitetaktiivseks, 7) Vaata aktiivseid laudu, 8) Vaata koiki laudu, 9) Vaata koiki ootel voi mitteaktiivseid laudu, 10) Unusta laud, 11) Tuvasta kasutaja. Threshold is \u226510. Since 11 \u2265 10, smell IS present. Note: Actors are not counted as central elements."
+      "justification": "On page 2 (Use case diagram 'Laudade funktsionaalne allsusteem'), counted 11 use cases: 1) Vaata laudade koondaruannet, 2) Lopeta laud, 3) Registreeri laud, 4) Muuda laud, 5) Aktiveeri laud, 6) Muuda lauda mitetaktiivseks, 7) Vaata aktiivseid laudu, 8) Vaata koiki laudu, 9) Vaata koiki ootel voi mitteaktiivseid laudu, 10) Unusta laud, 11) Tuvasta kasutaja. Threshold is ≥10. Since 11 ≥ 10, smell IS present. Note: Actors are not counted as central elements."
     },
     {
       "rule_id": "S1.2",
       "actual": false,
       "detected": false,
-      "justification": "Counted visual connections for each table/class across all diagrams. Maximum connections found: Page 10 (Laudade register) - Laud has 5 visible lines (to Tootaja x2, Laua_seisundi_liik, laua_kategooria_omamine, Ruum). Page 14 (transformed) - laud has 5 visible lines. Page 15 (transformed) - Isik has 5 visible lines (to Isiku_seisundi_liik, Riik, from Kasutajakonto, Tootaja, Klient). Maximum is 5. Threshold is \u22656. Since 5 < 6, smell is NOT present."
+      "justification": "Counted visual connections for each table/class across all diagrams. Maximum connections found: Page 10 (Laudade register) - Laud has 5 visible lines (to Tootaja x2, Laua_seisundi_liik, laua_kategooria_omamine, Ruum). Page 14 (transformed) - laud has 5 visible lines. Page 15 (transformed) - Isik has 5 visible lines (to Isiku_seisundi_liik, Riik, from Kasutajakonto, Tootaja, Klient). Maximum is 5. Threshold is ≥6. Since 5 < 6, smell is NOT present."
     },
     {
       "rule_id": "S2.1",
@@ -85,7 +85,7 @@
       "rule_id": "N1.2",
       "actual": false,
       "detected": false,
-      "justification": "All class, table, attribute, and use case names have 4 or more characters. Shortest names found: 'Isik' (4 chars), 'Laud' (4 chars), 'Ruum' (4 chars), 'Riik' (4 chars), 'kood' (4 chars). Threshold is \u22643 characters. Since minimum length is 4, which is > 3, smell is NOT present."
+      "justification": "All class, table, attribute, and use case names have 4 or more characters. Shortest names found: 'Isik' (4 chars), 'Laud' (4 chars), 'Ruum' (4 chars), 'Riik' (4 chars), 'kood' (4 chars). Threshold is ≤3 characters. Since minimum length is 4, which is > 3, smell is NOT present."
     },
     {
       "rule_id": "N3.1",

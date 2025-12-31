@@ -13,19 +13,19 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": true,
-      "justification": "On page 2 'V\u00e4ljakute funktsionaalne alls\u00fcsteem' use case diagram, the use case 'Tuvasta kasutaja' (oval element) has NO direct actor associations. It only has \u00abinclude\u00bb relationships from other use cases but no line connecting it directly to any actor. All other actors (V\u00e4ljakute haldur, Juhataja, Uudistaja, Klient, Treener, Hooldust\u00f6\u00f6taja) connect to other use cases but not to 'Tuvasta kasutaja'."
+      "justification": "On page 2 'Väljakute funktsionaalne allsüsteem' use case diagram, the use case 'Tuvasta kasutaja' (oval element) has NO direct actor associations. It only has «include» relationships from other use cases but no line connecting it directly to any actor. All other actors (Väljakute haldur, Juhataja, Uudistaja, Klient, Treener, Hooldustöötaja) connect to other use cases but not to 'Tuvasta kasutaja'."
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "On page 2 use case diagram, all 11 use cases have unique activity names: Tuvasta kasutaja, Vaata v\u00e4ljakute koondaruannet, L\u00f5peta v\u00e4ljak, Registreeri v\u00e4ljak, Muuda v\u00e4ljak, Aktiveeri v\u00e4ljak, Muuda v\u00e4ljak mittaktiivseks, Vaata aktiivseid v\u00e4ljakuid, Vaata k\u00f5iki v\u00e4ljakuid, Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid v\u00e4ljakuid, Unusta v\u00e4ljak. No duplicate activities with same actor found."
+      "justification": "On page 2 use case diagram, all 11 use cases have unique activity names: Tuvasta kasutaja, Vaata väljakute koondaruannet, Lõpeta väljak, Registreeri väljak, Muuda väljak, Aktiveeri väljak, Muuda väljak mittaktiivseks, Vaata aktiivseid väljakuid, Vaata kõiki väljakuid, Vaata kõiki ootel või mitteaktiivseid väljakuid, Unusta väljak. No duplicate activities with same actor found."
     },
     {
       "rule_id": "G6.2",
       "actual": false,
       "detected": false,
-      "justification": "On page 1 package diagram, each package contains uniquely named elements. For example, 'Klassifikaatorite register' contains: Isiku_seisundi_liik, Klassifikaator, Kliendi_seisundi_liik, Riik, T\u00f6\u00f6taja_roll, T\u00f6\u00f6taja_seisundi_liik, V\u00e4ljaku_kategooria, V\u00e4ljaku_kategooria_t\u00fc\u00fcp, V\u00e4ljaku_seisundi_liik, V\u00e4ljaku_t\u00fc\u00fcp - all unique names within that package."
+      "justification": "On page 1 package diagram, each package contains uniquely named elements. For example, 'Klassifikaatorite register' contains: Isiku_seisundi_liik, Klassifikaator, Kliendi_seisundi_liik, Riik, Töötaja_roll, Töötaja_seisundi_liik, Väljaku_kategooria, Väljaku_kategooria_tüüp, Väljaku_seisundi_liik, Väljaku_tüüp - all unique names within that package."
     },
     {
       "rule_id": "G6.3",
@@ -37,61 +37,61 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "On page 2 use case diagram, all 11 use cases follow consistent verb-first naming pattern in Estonian: Tuvasta (identify), Vaata (view), L\u00f5peta (end), Registreeri (register), Muuda (modify), Aktiveeri (activate), Unusta (forget). All start with imperative verb form."
+      "justification": "On page 2 use case diagram, all 11 use cases follow consistent verb-first naming pattern in Estonian: Tuvasta (identify), Vaata (view), Lõpeta (end), Registreeri (register), Muuda (modify), Aktiveeri (activate), Unusta (forget). All start with imperative verb form."
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "On page 11 'V\u00e4ljaku seisundidiagramm' state diagram, all 6 states are reachable: Alg (initial) \u2192 Ootel (via registration), Ootel \u2192 Aktiivne (via activation), Ootel \u2192 Unustatud (via forget), Aktiivne \u2192 Mitteaktiivne (via deactivation), Aktiivne \u2192 L\u00f5petatud (via termination), Mitteaktiivne \u2192 Aktiivne (via reactivation), Mitteaktiivne \u2192 L\u00f5petatud (via termination). Every state has incoming transitions."
+      "justification": "On page 11 'Väljaku seisundidiagramm' state diagram, all 6 states are reachable: Alg (initial) → Ootel (via registration), Ootel → Aktiivne (via activation), Ootel → Unustatud (via forget), Aktiivne → Mitteaktiivne (via deactivation), Aktiivne → Lõpetatud (via termination), Mitteaktiivne → Aktiivne (via reactivation), Mitteaktiivne → Lõpetatud (via termination). Every state has incoming transitions."
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "On pages 3-4 activity diagrams, all actions are reachable from the start node (Algus). Page 3: Algus \u2192 Vaata k\u00f5iki v\u00e4ljakuid \u2192 decision nodes \u2192 Otsi v\u00e4ljak/Vali v\u00e4ljak \u2192 L\u00f5peta valitud v\u00e4ljak \u2192 L\u00f5pp. Page 4: Algus \u2192 Vaata k\u00f5iki v\u00e4ljakuid \u2192 decision nodes \u2192 Otsi v\u00e4ljak/Vali v\u00e4ljak \u2192 Aktiveeri valitud v\u00e4ljak \u2192 L\u00f5pp. All paths connect from start."
+      "justification": "On pages 3-4 activity diagrams, all actions are reachable from the start node (Algus). Page 3: Algus → Vaata kõiki väljakuid → decision nodes → Otsi väljak/Vali väljak → Lõpeta valitud väljak → Lõpp. Page 4: Algus → Vaata kõiki väljakuid → decision nodes → Otsi väljak/Vali väljak → Aktiveeri valitud väljak → Lõpp. All paths connect from start."
     },
     {
       "rule_id": "G15.3",
       "actual": false,
       "detected": false,
-      "justification": "Reviewing class diagrams (pages 5-12) and database diagrams (pages 13-18), relationships show multiplicity indicators on both ends. Examples: Page 5 shows '0..*' and '1' multiplicities; Page 10 shows multiplicities like '0..*', '1' on V\u00e4ljak relationships; Database diagrams show '0..*' and '1' on FK relationships. All visible relationships have multiplicity on both ends."
+      "justification": "Reviewing class diagrams (pages 5-12) and database diagrams (pages 13-18), relationships show multiplicity indicators on both ends. Examples: Page 5 shows '0..*' and '1' multiplicities; Page 10 shows multiplicities like '0..*', '1' on Väljak relationships; Database diagrams show '0..*' and '1' on FK relationships. All visible relationships have multiplicity on both ends."
     },
     {
       "rule_id": "S1.1",
       "actual": true,
       "detected": true,
-      "justification": "On page 2 'V\u00e4ljakute funktsionaalne alls\u00fcsteem' use case diagram, counted 11 use cases (central elements): 1. Tuvasta kasutaja, 2. Vaata v\u00e4ljakute koondaruannet, 3. L\u00f5peta v\u00e4ljak, 4. Registreeri v\u00e4ljak, 5. Muuda v\u00e4ljak, 6. Aktiveeri v\u00e4ljak, 7. Muuda v\u00e4ljak mittaktiivseks, 8. Vaata aktiivseid v\u00e4ljakuid, 9. Vaata k\u00f5iki v\u00e4ljakuid, 10. Vaata k\u00f5iki ootel v\u00f5i mitteaktiivseid v\u00e4ljakuid, 11. Unusta v\u00e4ljak. Threshold is \u226510. Since 11 \u2265 10, smell IS present. (Note: Actors are not counted as central elements per rule.)"
+      "justification": "On page 2 'Väljakute funktsionaalne allsüsteem' use case diagram, counted 11 use cases (central elements): 1. Tuvasta kasutaja, 2. Vaata väljakute koondaruannet, 3. Lõpeta väljak, 4. Registreeri väljak, 5. Muuda väljak, 6. Aktiveeri väljak, 7. Muuda väljak mittaktiivseks, 8. Vaata aktiivseid väljakuid, 9. Vaata kõiki väljakuid, 10. Vaata kõiki ootel või mitteaktiivseid väljakuid, 11. Unusta väljak. Threshold is ≥10. Since 11 ≥ 10, smell IS present. (Note: Actors are not counted as central elements per rule.)"
     },
     {
       "rule_id": "S1.2",
       "actual": false,
       "detected": false,
-      "justification": "Counted visual connections for each class/table on all diagram pages. Page 13 'Isikute register (transformed)': Isik has 5 connections (to Isiku_seisundi_liik, Riik, Klient, Tootaja, Kasutajakonto). Page 18 'V\u00e4ljakute register (transformed)': V\u00e4ljak has 5 connections (to Tootaja\u00d72, V\u00e4ljaku_seisundi_liik, V\u00e4ljaku_tyyp, V\u00e4ljaku_kategooria_omamine). Maximum is 5 connections. Threshold is \u22656. Since 5 < 6, smell is NOT present."
+      "justification": "Counted visual connections for each class/table on all diagram pages. Page 13 'Isikute register (transformed)': Isik has 5 connections (to Isiku_seisundi_liik, Riik, Klient, Tootaja, Kasutajakonto). Page 18 'Väljakute register (transformed)': Väljak has 5 connections (to Tootaja×2, Väljaku_seisundi_liik, Väljaku_tyyp, Väljaku_kategooria_omamine). Maximum is 5 connections. Threshold is ≥6. Since 5 < 6, smell is NOT present."
     },
     {
       "rule_id": "S2.1",
       "actual": true,
       "detected": false,
-      "justification": "Visual inspection of diagram layouts shows related elements are positioned reasonably close together within each diagram. Without precise measurements available from the PDF text representation, no clear evidence of any relationship distance exceeding 2\u00d7 the average element distance was found."
+      "justification": "Visual inspection of diagram layouts shows related elements are positioned reasonably close together within each diagram. Without precise measurements available from the PDF text representation, no clear evidence of any relationship distance exceeding 2× the average element distance was found."
     },
     {
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases on page 2 start with active verbs in Estonian imperative form: Tuvasta, Vaata, L\u00f5peta, Registreeri, Muuda, Aktiveeri, Unusta. All actions in activity diagrams (pages 3-4) also start with verbs: Vaata, Otsi, Vali, L\u00f5peta, Aktiveeri. No use case or action starts with a noun or passive form."
+      "justification": "All use cases on page 2 start with active verbs in Estonian imperative form: Tuvasta, Vaata, Lõpeta, Registreeri, Muuda, Aktiveeri, Unusta. All actions in activity diagrams (pages 3-4) also start with verbs: Vaata, Otsi, Vali, Lõpeta, Aktiveeri. No use case or action starts with a noun or passive form."
     },
     {
       "rule_id": "N1.2",
       "actual": false,
       "detected": false,
-      "justification": "All class, table, attribute, and use case names have \u22654 characters. Shortest names found: 'Isik' (4 chars), 'Riik' (4 chars), 'V\u00e4ljak' (7 chars). Attribute names like 'reg_aeg' (7 chars), 'nimetus' (7 chars), 'parool' (6 chars) all exceed 3 characters. Threshold is \u22643. Since minimum found is 4, which is > 3, smell is NOT present."
+      "justification": "All class, table, attribute, and use case names have ≥4 characters. Shortest names found: 'Isik' (4 chars), 'Riik' (4 chars), 'Väljak' (7 chars). Attribute names like 'reg_aeg' (7 chars), 'nimetus' (7 chars), 'parool' (6 chars) all exceed 3 characters. Threshold is ≤3. Since minimum found is 4, which is > 3, smell is NOT present."
     },
     {
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All class names start with uppercase and are singular: Isik, T\u00f6\u00f6taja, V\u00e4ljak, Kasutajakonto, Klassifikaator, Riik, Klient, Isiku_seisundi_liik, V\u00e4ljaku_kategooria, etc. No class name starts with lowercase letter and none are plural."
+      "justification": "All class names start with uppercase and are singular: Isik, Töötaja, Väljak, Kasutajakonto, Klassifikaator, Riik, Klient, Isiku_seisundi_liik, Väljaku_kategooria, etc. No class name starts with lowercase letter and none are plural."
     },
     {
       "rule_id": "N3.2",
@@ -103,7 +103,7 @@
       "rule_id": "N3.3",
       "actual": false,
       "detected": false,
-      "justification": "All database table names in transformed diagrams (pages 13-18) are singular: Isik, Kasutajakonto, Riik, Klient, Tootaja, Tootaja_roll, Tootaja_rolli_omamine, Isiku_seisundi_liik, Kliendi_seisundi_liik, Tootaja_seisundi_liik, V\u00e4ljaku_seisundi_liik, V\u00e4ljak, V\u00e4ljaku_kategooria, V\u00e4ljaku_tyyp, V\u00e4ljaku_kategooria_tyyp, V\u00e4ljaku_kategooria_omamine. No plural table names found."
+      "justification": "All database table names in transformed diagrams (pages 13-18) are singular: Isik, Kasutajakonto, Riik, Klient, Tootaja, Tootaja_roll, Tootaja_rolli_omamine, Isiku_seisundi_liik, Kliendi_seisundi_liik, Tootaja_seisundi_liik, Väljaku_seisundi_liik, Väljak, Väljaku_kategooria, Väljaku_tyyp, Väljaku_kategooria_tyyp, Väljaku_kategooria_omamine. No plural table names found."
     },
     {
       "rule_id": "N4.1",

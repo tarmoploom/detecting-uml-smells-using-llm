@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All class names use PascalCase and are singular (e.g., 'Isik', 'T\u00f6\u00f6taja', 'Auto')."
+      "justification": "All class names use PascalCase and are singular (e.g., 'Isik', 'Töötaja', 'Auto')."
     },
     {
       "rule_id": "N3.2",

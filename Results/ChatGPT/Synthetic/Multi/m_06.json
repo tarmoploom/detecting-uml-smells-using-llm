@@ -19,7 +19,7 @@
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "Across the use case diagrams, no two or more use cases with clearly synonymous names associated with the same actor are explicitly visible. The names such as 'Registreeri auto', 'L\u00f5peta auto', 'Muuda autot', and 'Aktiveeri auto' appear to describe distinct activities. "
+      "justification": "Across the use case diagrams, no two or more use cases with clearly synonymous names associated with the same actor are explicitly visible. The names such as 'Registreeri auto', 'Lõpeta auto', 'Muuda autot', and 'Aktiveeri auto' appear to describe distinct activities. "
     },
     {
       "rule_id": "G6.2",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": true,
       "detected": true,
-      "justification": "The use case diagram on page 2 mixes naming forms: several use cases start with active verbs (e.g., 'Tuvasta kasutaja', 'Vaata k\u00f5iki autosid', 'Vaata autode koondaruannet') while 'Aktiivsed autod' appears as a noun/adjective phrase. This is an explicit inconsistent form within the same diagram. "
+      "justification": "The use case diagram on page 2 mixes naming forms: several use cases start with active verbs (e.g., 'Tuvasta kasutaja', 'Vaata kõiki autosid', 'Vaata autode koondaruannet') while 'Aktiivsed autod' appears as a noun/adjective phrase. This is an explicit inconsistent form within the same diagram. "
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "In the state diagram on page 9, states such as 'Ootel', 'Aktiivne', 'Mitteaktiivne', 'L\u00f5petatud', and 'Unustatud' are shown, but the PDF does not provide explicit evidence that any state is unreachable. Without an unambiguous unreachable indication, this rule is not triggered. "
+      "justification": "In the state diagram on page 9, states such as 'Ootel', 'Aktiivne', 'Mitteaktiivne', 'Lõpetatud', and 'Unustatud' are shown, but the PDF does not provide explicit evidence that any state is unreachable. Without an unambiguous unreachable indication, this rule is not triggered. "
     },
     {
       "rule_id": "G15.2",
       "actual": true,
       "detected": false,
-      "justification": "The activity diagram on page 4 shows a connected flow with actions like 'Otsi autot', 'Vali auto', and 'L\u00f5peta valitud auto'. No action is explicitly shown as unreachable. "
+      "justification": "The activity diagram on page 4 shows a connected flow with actions like 'Otsi autot', 'Vali auto', and 'Lõpeta valitud auto'. No action is explicitly shown as unreachable. "
     },
     {
       "rule_id": "G15.3",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "No class name is clearly shown starting with a lowercase letter or being plural for a singular domain object. The main entity classes such as 'Isik', 'T\u00f6\u00f6taja', 'Auto', and 'Klient' appear singular and capitalized. Plural register labels are not treated as violations per the interpretation rules. "
+      "justification": "No class name is clearly shown starting with a lowercase letter or being plural for a singular domain object. The main entity classes such as 'Isik', 'Töötaja', 'Auto', and 'Klient' appear singular and capitalized. Plural register labels are not treated as violations per the interpretation rules. "
     },
     {
       "rule_id": "N3.2",

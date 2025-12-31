@@ -37,7 +37,7 @@
       "rule_id": "G8.1",
       "actual": true,
       "detected": true,
-      "justification": "Inconsistent naming is found in the Use Case diagrams (Page 3). 'Auto registreerimine' (Car registration) is a Noun phrase, whereas other use cases like 'L\u00f5peta auto' (Finish car) and 'Aktiveeri auto' (Activate car) use an active Verb phrase."
+      "justification": "Inconsistent naming is found in the Use Case diagrams (Page 3). 'Auto registreerimine' (Car registration) is a Noun phrase, whereas other use cases like 'Lõpeta auto' (Finish car) and 'Aktiveeri auto' (Activate car) use an active Verb phrase."
     },
     {
       "rule_id": "G15.1",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "All class names (e.g., Isik, Auto, T\u00f6\u00f6taja) start with an uppercase letter and are singular."
+      "justification": "All class names (e.g., Isik, Auto, Töötaja) start with an uppercase letter and are singular."
     },
     {
       "rule_id": "N3.2",

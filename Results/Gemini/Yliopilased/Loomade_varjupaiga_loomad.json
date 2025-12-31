@@ -13,13 +13,13 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "All use cases in the 'Loomade funktsionaalne alls\u00fcsteem' diagram (Page 2) are associated with actors (Klient, Loomade haldur, Juhataja, Uudistaja) or connected via inclusion."
+      "justification": "All use cases in the 'Loomade funktsionaalne allsüsteem' diagram (Page 2) are associated with actors (Klient, Loomade haldur, Juhataja, Uudistaja) or connected via inclusion."
     },
     {
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "No distinct use cases with synonymous names (like 'Add' vs 'Register' for the same entity) were found. 'Registreeri loom' is unique. 'Vaata aktiivseid loomi' and 'Vaata k\u00f5iki loomi' represent different filtering scopes, not identical synonyms."
+      "justification": "No distinct use cases with synonymous names (like 'Add' vs 'Register' for the same entity) were found. 'Registreeri loom' is unique. 'Vaata aktiivseid loomi' and 'Vaata kõiki loomi' represent different filtering scopes, not identical synonyms."
     },
     {
       "rule_id": "G6.2",
@@ -37,7 +37,7 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases (Page 2) follow a consistent 'Verb + Noun' naming convention (e.g., 'Registreeri loom', 'M\u00e4rgi loom surnuks', 'Vaata k\u00f5iki loomi')."
+      "justification": "All use cases (Page 2) follow a consistent 'Verb + Noun' naming convention (e.g., 'Registreeri loom', 'Märgi loom surnuks', 'Vaata kõiki loomi')."
     },
     {
       "rule_id": "G15.1",
@@ -79,7 +79,7 @@
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "All use cases and activity diagram actions start with active verbs (e.g., 'Vaata', 'Otsi', 'Registreeri', 'L\u00f5peta')."
+      "justification": "All use cases and activity diagram actions start with active verbs (e.g., 'Vaata', 'Otsi', 'Registreeri', 'Lõpeta')."
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Class names (e.g., 'Isik', 'T\u00f6\u00f6taja', 'Loom') are capitalized and singular."
+      "justification": "Class names (e.g., 'Isik', 'Töötaja', 'Loom') are capitalized and singular."
     },
     {
       "rule_id": "N3.2",

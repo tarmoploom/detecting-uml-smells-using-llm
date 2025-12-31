@@ -19,7 +19,7 @@
       "rule_id": "G6.1",
       "actual": false,
       "detected": false,
-      "justification": "No explicit pairs of use cases with names describing the same activity and associated with the same actor are clearly visible. The use cases on pages 2 and 3 appear to be distinct actions (e.g., 'Registreeri auto', 'Muuda autot', 'L\u00f5peta auto', 'Unusta auto', 'Vaata aktiivseid autosid'). Associations to a single identical actor are not explicitly shown in the text, so no unambiguous duplication can be confirmed. "
+      "justification": "No explicit pairs of use cases with names describing the same activity and associated with the same actor are clearly visible. The use cases on pages 2 and 3 appear to be distinct actions (e.g., 'Registreeri auto', 'Muuda autot', 'Lõpeta auto', 'Unusta auto', 'Vaata aktiivseid autosid'). Associations to a single identical actor are not explicitly shown in the text, so no unambiguous duplication can be confirmed. "
     },
     {
       "rule_id": "G6.2",
@@ -37,19 +37,19 @@
       "rule_id": "G8.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names on pages 2 and 3 appear to follow a consistent verb-led form (e.g., 'Vaata...', 'Tuvasta...', 'Registreeri...', 'Muuda...', 'Aktiveeri...', 'L\u00f5peta...', 'Unusta...'). No inconsistent naming form is clearly visible. "
+      "justification": "Use case names on pages 2 and 3 appear to follow a consistent verb-led form (e.g., 'Vaata...', 'Tuvasta...', 'Registreeri...', 'Muuda...', 'Aktiveeri...', 'Lõpeta...', 'Unusta...'). No inconsistent naming form is clearly visible. "
     },
     {
       "rule_id": "G15.1",
       "actual": false,
       "detected": false,
-      "justification": "The state diagram on page 9 shows states such as 'Aktiivne', 'Mitteaktiivne', 'L\u00f5petatud', 'Ootel', and 'Unustatud'. The parsed content and available visual do not clearly demonstrate any state that cannot be reached, so no explicit violation is visible. "
+      "justification": "The state diagram on page 9 shows states such as 'Aktiivne', 'Mitteaktiivne', 'Lõpetatud', 'Ootel', and 'Unustatud'. The parsed content and available visual do not clearly demonstrate any state that cannot be reached, so no explicit violation is visible. "
     },
     {
       "rule_id": "G15.2",
       "actual": false,
       "detected": false,
-      "justification": "The activity diagram on page 4 lists a coherent sequence of actions and decision points (e.g., 'Vaata...', 'Otsi autot', 'Vali auto', 'L\u00f5peta valitud auto'). There is no explicit indication of an action that cannot be reached. "
+      "justification": "The activity diagram on page 4 lists a coherent sequence of actions and decision points (e.g., 'Vaata...', 'Otsi autot', 'Vali auto', 'Lõpeta valitud auto'). There is no explicit indication of an action that cannot be reached. "
     },
     {
       "rule_id": "G15.3",
@@ -73,13 +73,13 @@
       "rule_id": "S2.1",
       "actual": false,
       "detected": false,
-      "justification": "The rule requires comparing distances between related elements to the diagram\u2019s average spacing. This cannot be determined unambiguously from the available textual extraction, and no explicit layout evidence of extreme separation is provided. "
+      "justification": "The rule requires comparing distances between related elements to the diagram’s average spacing. This cannot be determined unambiguously from the available textual extraction, and no explicit layout evidence of extreme separation is provided. "
     },
     {
       "rule_id": "N1.1",
       "actual": false,
       "detected": false,
-      "justification": "Use case names on pages 2 and 3 start with active verbs in Estonian (e.g., 'Tuvasta', 'Vaata', 'Registreeri', 'Muuda', 'Aktiveeri', 'L\u00f5peta', 'Unusta'). Activity actions on page 4 also appear verb-led (e.g., 'Vaata', 'Otsi', 'Vali', 'L\u00f5peta'). No clear non-verb-starting use case or action is visible. "
+      "justification": "Use case names on pages 2 and 3 start with active verbs in Estonian (e.g., 'Tuvasta', 'Vaata', 'Registreeri', 'Muuda', 'Aktiveeri', 'Lõpeta', 'Unusta'). Activity actions on page 4 also appear verb-led (e.g., 'Vaata', 'Otsi', 'Vali', 'Lõpeta'). No clear non-verb-starting use case or action is visible. "
     },
     {
       "rule_id": "N1.2",
@@ -91,7 +91,7 @@
       "rule_id": "N3.1",
       "actual": false,
       "detected": false,
-      "justification": "Visible class/entity names such as 'Isik', 'T\u00f6\u00f6taja', 'Auto', 'Klient', 'Kasutajakonto', and 'Klassifikaator' start with uppercase letters and are not obviously plural. Plural-sounding register titles (e.g., 'Isikute register', 'Autode register') are domain register names and are excluded by the interpretation rules. "
+      "justification": "Visible class/entity names such as 'Isik', 'Töötaja', 'Auto', 'Klient', 'Kasutajakonto', and 'Klassifikaator' start with uppercase letters and are not obviously plural. Plural-sounding register titles (e.g., 'Isikute register', 'Autode register') are domain register names and are excluded by the interpretation rules. "
     },
     {
       "rule_id": "N3.2",

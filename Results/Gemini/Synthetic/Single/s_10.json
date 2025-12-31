@@ -13,7 +13,7 @@
       "rule_id": "G5.2",
       "actual": false,
       "detected": false,
-      "justification": "All use cases are associated with actors either directly (e.g., 'Vaata aktiivseid autosid' -> 'Klient') or indirectly via <<include>> relationships (e.g., 'Vaata k\u00f5iki ootel...' is included by 'Aktiveeri auto' which is connected to 'Autode haldur')."
+      "justification": "All use cases are associated with actors either directly (e.g., 'Vaata aktiivseid autosid' -> 'Klient') or indirectly via <<include>> relationships (e.g., 'Vaata kõiki ootel...' is included by 'Aktiveeri auto' which is connected to 'Autode haldur')."
     },
     {
       "rule_id": "G6.1",
@@ -55,7 +55,7 @@
       "rule_id": "G15.3",
       "actual": false,
       "detected": false,
-      "justification": "Class and database relationships display multiplicities at both ends where applicable (e.g., Page 5: T\u00f6\u00f6taja 1 -- 0..* Auto; Page 14: Isik 1 -- 0..* Riik)."
+      "justification": "Class and database relationships display multiplicities at both ends where applicable (e.g., Page 5: Töötaja 1 -- 0..* Auto; Page 14: Isik 1 -- 0..* Riik)."
     },
     {
       "rule_id": "S1.1",
