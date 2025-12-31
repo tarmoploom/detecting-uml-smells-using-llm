@@ -1,16 +1,45 @@
-(Hoonete_typoloogia, Kaubad_turuplatsil, Kobarkino, Kultuurireisid, Labor, Lennufirma, Myygid, Padel, Tarkvaraarenduse_tellimused, Tooaeg) ->
-
 Arvestatud omaloomingu projektid õppeainest "Andmebaasid I" 2025. aasta kevadest.
 
-Esitatud on kõige viimane mudelite versioon.
+Esitatud on kõige viimane mudelite versioon:
+
+Hoonete_typoloogia
+Kaubad_turuplatsil
+Kobarkino
+Kultuurireisid
+Labor
+Lennufirma
+Myygid
+Padel
+Tarkvaraarenduse_tellimused
+Tooaeg
 
 
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-
-
-Ülejäänud failid ->
 
 Arvestatud töövihiku projektid õppeainest "Andmebaasid I" 2025. aasta kevadest.
 Valitud on projektid, mis said arvestuse peale eksamisessiooni algust.
 
-Esitatud on kõige viimane mudelite versioon.
+Esitatud on kõige viimane mudelite versioon:
+
+E_poe_kaubad
+Filmid
+Juuksurisalongi_treeningud
+Kasvuhooned
+Kliiniku_treeningud
+Laadimispunktid
+Lao_hoiuruumid
+Loomade_varjupaiga_loomad
+Padelivaljakud
+Pakiautomaadid
+Pakiautomaadid2
+Parkimiskohad
+Parkimiskohad2
+Peoruumid
+Restorani_lauad
+Restorani_lauad2
+Ronimisseinad
+Spordiklubi_saalid
+Spordiklubi_treeningud
+Sulgpalli_valjakud
+Tenniseklubi_valjakud
