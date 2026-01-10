@@ -315,7 +315,7 @@ def plot_paranoia_heatmap(df):
 
         plt.title('Paranoia Check: False Positive Rate (Dark Red = High Hallucination)', fontsize=14, pad=20)
         plt.xlabel("LLM Model", fontsize=12)
-        plt.ylabel("UML Smell Rule", fontsize=12)
+        plt.ylabel("Smell Rule ID", fontsize=12)
     
         # Keep labels horizontal
         plt.yticks(rotation=0)
