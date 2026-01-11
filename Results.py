@@ -83,7 +83,7 @@ def calculate_metrics(df, grouping_col=None):
             'Precision': precision_score(y_true, y_pred, zero_division=0),
             'Recall': recall_score(y_true, y_pred, zero_division=0),
             'F1-Score': f1_score(y_true, y_pred, zero_division=0),
-            'Sample_Size': len(subset)
+            'Sample Size': len(subset)
         }
         
         if grouping_col:
