@@ -94,7 +94,7 @@ def calculate_metrics(df, grouping_col=None):
     return pd.DataFrame(results)
 
 
-def plot_confusion_matrix_per_llm(df, title_prefix="Overall"):
+def plot_confusion_matrix_per_llm(df, title_prefix="Koondtulemused"):
     """
     Plots a row of confusion matrices, one for each LLM.
     """
@@ -114,7 +114,7 @@ def plot_confusion_matrix_per_llm(df, title_prefix="Overall"):
         ax.set_xlabel('Prediction')
         ax.set_ylabel('Smell')
     
-    plt.suptitle(f'{title_prefix} Confusion Matrices', y=1.05, fontsize=16)
+    plt.suptitle(f'Segadusmaatriks - {title_prefix}', y=1.05, fontsize=16)
     plt.tight_layout()
     plt.show()
     # Force a blank space after the plot
