@@ -20,4 +20,15 @@ The goal of this project is to test and analyze the detection of "Model Smells" 
 
 ---
 
+## License
+
+This project is licensed under multiple licenses:
+
+- **Source Code**: The source code is licensed under the **MIT License**.
+- **Data**: The datasets found in the `Data/` directory are licensed under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.
+
+See the `LICENSE` file in each respective directory for full details.
+
+---
+
 _Created by Tarmo Ploom for TalTech - Tallinn University of Technology, 2025._
