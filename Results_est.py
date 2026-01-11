@@ -82,7 +82,7 @@ def calculate_metrics(df, grouping_col=None):
             'Üldine täpsus': accuracy_score(y_true, y_pred),
             'Täpsus': precision_score(y_true, y_pred, zero_division=0),
             'Saagis': recall_score(y_true, y_pred, zero_division=0),
-            'F1-Skoor': f1_score(y_true, y_pred, zero_division=0),
+            'F1-skoor': f1_score(y_true, y_pred, zero_division=0),
             'Valim': len(subset)
         }
         
@@ -127,7 +127,7 @@ def plot_benchmark_bars(metrics_df, title):
     """
     # Melt the dataframe for Seaborn plotting
     melted = metrics_df.melt(id_vars=['Keelemudel'], 
-                             value_vars=['Üldine täpsus', 'Täpsus', 'Saagis', 'F1-Skoor'], 
+                             value_vars=['Üldine täpsus', 'Täpsus', 'Saagis', 'F1-skoor'], 
                              var_name='Metric', value_name='Score')
     
     plt.figure(figsize=(9, 6))
@@ -173,7 +173,7 @@ def plot_custom_aggregates(df, custom_aggregates):
 
         # 1. Calculate Metrics
         group_metrics = calculate_metrics(group_df, grouping_col='Keelemudel')
-        display(group_metrics.style.format(formatter, subset=['Üldine täpsus', 'Täpsus', 'Saagis', 'F1-Skoor']))
+        display(group_metrics.style.format(formatter, subset=['Üldine täpsus', 'Täpsus', 'Saagis', 'F1-skoor']))
     
         # 2. Plot Bar Chart
         plot_benchmark_bars(group_metrics, f"Performance: {group_name}")
@@ -207,7 +207,7 @@ def plot_per_category(df, target_order):
         # Define a formatting function: 2 decimals, replace dot with comma
         formatter = lambda x: "{:.2f}".format(x).replace(".", ",")
 
-        display(cat_metrics.style.format(formatter, subset=['Üldine täpsus', 'Täpsus', 'Saagis', 'F1-Skoor']))
+        display(cat_metrics.style.format(formatter, subset=['Üldine täpsus', 'Täpsus', 'Saagis', 'F1-skoor']))
     
         # Plot Bar Chart
         plot_benchmark_bars(cat_metrics, f"Performance: {cat}")
