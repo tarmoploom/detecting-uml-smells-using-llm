@@ -23,13 +23,13 @@ The goal of this project is to test and evaluate the capability of Large Languag
 
 ---
 
-## Acknowledgements
+### 🎓 Acknowledgements
 
 This project uses a **condensed selection** of model smell rules adapted from the [Catalog of Model Smells](https://github.com/erki77/model-smells), based on the paper **"On Finding Model Smells Based on Code Smells"** (Eessaar & Käosaar, 2018).
 
 ---
 
-## License
+### ⚖️ Licensing
 
 This project is licensed under multiple licenses:
 
