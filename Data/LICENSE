@@ -9,21 +9,20 @@ If you use this dataset in your own work, **you are required to cite the origina
 
 Please use the following citation:
 
-> **Ploom, T**. (2026). _Suurte keelemudelite rakendamine mudelite halbade lõhnade tuvastamiseks UML skeemides_ Detecting Model Smells in UML Diagrams Using Large Language Models [Unpublished Bachelor's thesis]. TalTech - Tallinn University of Technology.
+> **Ploom, T**. (2025). _Suurte keelemudelite rakendamine mudelite halbade lõhnade tuvastamiseks UML skeemides_ (Detecting Model Smells in UML Diagrams Using Large Language Models) [Bachelor's thesis, Tallinn University of Technology].
 
 ### Preferred BibTeX format:
 
 ```bibtex
-@mastersthesis{Ploom2026,
+@thesis{Ploom2025,
   author   = {Ploom, T},
   title    = {Suurte keelemudelite rakendamine mudelite halbade lõhnade tuvastamiseks UML skeemides},
   school   = {TalTech - Tallinn University of Technology},
-  year     = {2026},
+  year     = {2025},
   type     = {Bachelor's Thesis},
   language = {estonian},
-  note     = {Unpublished thesis. Title in English: Detecting Model Smells in UML Diagrams Using Large Language Models}
+  note     = {Title in English: Detecting Model Smells in UML Diagrams Using Large Language Models}
 }
-
 
 ---
 **License Full Text:**

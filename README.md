@@ -3,16 +3,17 @@
 This repository contains the source code, test data, and results for Bachelor's thesis:<br/>
 **"Detecting Model Smells in UML Diagrams Using Large Language Models"**.<br/>
 
-This repository is under construction until ~18.01.2026 regarding full version of Readme & view for Results.ipynb.
+This repository is under construction until ~18.01.2026 regarding full version of Results.ipynb.
 
 ### 📄 Project Overview
 
-The goal of this project is to test and analyze the detection of "Model Smells" (design flaws) in UML diagrams using LLMs (e.g., Gemini, Claude, ChatGPT).
+The goal of this project is to test and evaluate the capability of Large Language Models to detect quality issues, commonly known as "model smells," in Unified Modeling Language (UML) diagrams provided in PDF format.
 
 - **Input:** UML diagrams (PDF) + Prompts (TXT).
 - **Engine:** Large Language Models (LLMs).
 - **Output:** JSON-structured analysis including empirical testing of identifying smells like _Redundancy_, _Inconsistencies_, etc.
-- **Analysis:** Detailed results and comparisons are processed in **Jupyter Notebooks**.
+- **Results:** Individual JSON response files for each LLM are stored in the `Results/` directory.
+- **Analysis:** Detailed results and comparisons are processed via the **Jupyter Notebook** (`Results.ipynb`).
 
 ### 🛠️ Tech Stack
 
@@ -22,12 +23,18 @@ The goal of this project is to test and analyze the detection of "Model Smells" 
 
 ---
 
+## Acknowledgements
+
+This project uses a **condensed selection** of model smell rules adapted from the [Catalog of Model Smells](https://github.com/erki77/model-smells), based on the paper **"On Finding Model Smells Based on Code Smells"** (Eessaar & Käosaar, 2018).
+
+---
+
 ## License
 
 This project is licensed under multiple licenses:
 
 - **Source Code**: The source code is licensed under the **MIT License**.
-- **Data**: The datasets found in the `Data/` directory are licensed under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.
+- **Data**: The datasets found in the `Data/` directory and **its** sub-directories are licensed under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.
 
 See the `LICENSE` file in each respective directory for full details.
 
