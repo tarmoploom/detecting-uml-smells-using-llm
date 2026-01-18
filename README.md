@@ -3,8 +3,6 @@
 This repository contains the source code, test data, and results for Bachelor's thesis:<br/>
 **"Detecting Model Smells in UML Diagrams Using Large Language Models"**.<br/>
 
-This repository is under construction until ~18.01.2026 regarding full version of Results.ipynb.
-
 ### 📄 Project Overview
 
 The goal of this project is to test and evaluate the capability of Large Language Models to detect quality issues, commonly known as "model smells," in Unified Modeling Language (UML) diagrams provided in PDF format.

@@ -332,8 +332,6 @@ def plot_paranoia_heatmap(df):
 def plot_strategy_map(df, custom_aggregates):
     for group_name, target_categories in custom_aggregates.items():
         print(" ")
-        print(f"--- Analysis for {group_name} ---")
-        print(" ")
         
         # Filter the main dataframe for only the categories in this group
         group_df = df[df['Category'].isin(target_categories)]
@@ -379,7 +377,7 @@ def plot_strategy_map(df, custom_aggregates):
                 horizontalalignment='right', color='orange', alpha=0.8, weight='bold')
 
         # Style
-        plt.title('LLM Strategy Map: Who is playing how?', fontsize=16)
+        plt.title(group_name, fontsize=16)
         plt.xlim(0, 1.05)
         plt.ylim(0, 1.05)
         plt.grid(True, linestyle='--')
