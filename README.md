@@ -7,7 +7,7 @@ This repository contains the source code, test data, and results for Bachelor's 
 
 The goal of this project is to test and evaluate the capability of Large Language Models to detect quality issues, commonly known as "model smells," in Unified Modeling Language (UML) diagrams provided in PDF format.
 
-- **Input:** UML diagrams (PDF) + Prompts (TXT).
+- **Input:** UML diagram (PDF) + Prompt (TXT).
 - **Engine:** Large Language Models (LLMs).
 - **Output:** JSON-structured analysis including empirical testing of identifying smells like _Redundancy_, _Inconsistencies_, etc.
 - **Results:** Individual JSON response files for each LLM are stored in the `Results/` directory.
@@ -32,10 +32,10 @@ This project uses a **condensed selection** of model smell rules adapted from th
 This project is licensed under multiple licenses:
 
 - **Source Code**: The source code is licensed under the **MIT License**.
-- **Data**: The datasets found in the `Data/` directory and **its** sub-directories are licensed under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.
+- **Data**: The datasets found in the `Data/` directory and **its** subdirectories are licensed under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.
 
 See the `LICENSE` file in each respective directory for full details.
 
 ---
 
-_Created by Tarmo Ploom for TalTech - Tallinn University of Technology, 2025._
+_Created by Tarmo Ploom as part of a Bachelor's Thesis at Tallinn University of Technology, 2025._

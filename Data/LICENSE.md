@@ -1,23 +1,23 @@
 # Data License
 
-The dataset in this folder is licensed under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.
+The datasets found in this directory and **its** subdirectories are licensed under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.
 
 ## ⚠️ Attribution Requirement (Viitamiskohustus)
 
-The data in this repository is part of a Bachelor's thesis.
+The data in this repository is part of a Bachelor's Thesis.
 If you use this dataset in your own work, **you are required to cite the original thesis**.
 
 Please use the following citation:
 
-> **Ploom, T**. (2025). _Suurte keelemudelite rakendamine mudelite halbade lõhnade tuvastamiseks UML skeemides_ (Detecting Model Smells in UML Diagrams Using Large Language Models) [Bachelor's thesis, Tallinn University of Technology].
+> **Ploom, T.** (2025). _Suurte keelemudelite rakendamine mudelite halbade lõhnade tuvastamiseks UML skeemides_ (Detecting Model Smells in UML Diagrams Using Large Language Models) [Bachelor's thesis, Tallinn University of Technology].
 
 ### Preferred BibTeX format:
 
 ```bibtex
 @thesis{Ploom2025,
-  author   = {Ploom, T},
+  author   = {Ploom, Tarmo},
   title    = {Suurte keelemudelite rakendamine mudelite halbade lõhnade tuvastamiseks UML skeemides},
-  school   = {TalTech - Tallinn University of Technology},
+  school   = {Tallinn University of Technology},
   year     = {2025},
   type     = {Bachelor's Thesis},
   language = {estonian},
@@ -27,6 +27,5 @@ Please use the following citation:
 ---
 **License Full Text:**
 You can find the full text of the CC BY 4.0 license at: https://creativecommons.org/licenses/by/4.0/
-
 
 ```
